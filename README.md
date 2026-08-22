@@ -112,8 +112,9 @@ Deux règles à connaître :
   rattachée est signalée au build sans le faire échouer :
   `⚠ 1 cover(s) match no record`.
 - **`assets/` est la source, `public/covers`, `public/artists` et `public/logo.webp`
-  sont générés** et ignorés par git. Ne dépose rien directement dans `public/`, ce serait
-  écrasé.
+  sont générés** et ignorés par git. `public/covers` et `public/artists` sont **vidés à
+  chaque build** : un fichier renommé ou supprimé dans `assets/` disparaît vraiment, il ne
+  reste pas déployé indéfiniment. Ne dépose donc rien directement dans `public/`.
 - **`assets/brand/`** est à part : ces fichiers atterrissent à la racine du site sous leur
   propre nom. `logo.webp` sert de logo dans le JSON-LD **et d'image de partage par défaut**
   — c'est ce qui remplace `og-cover.svg`, que Facebook, LinkedIn, WhatsApp et Slack

@@ -91,6 +91,27 @@ export default function ArtistPage() {
         <div className="shell grid gap-12 py-20 lg:grid-cols-12 lg:gap-16 lg:py-28">
           <Reveal className="lg:col-span-3">
             <p className="label">Profile</p>
+
+            {/* Only artists with a photo get one; the rest keep the plain label
+                the column has always shown, with nothing standing in for it. */}
+            {artist.image && (
+              <figure className="mt-6 border border-white/10">
+                <div
+                  className="h-[3px] w-full"
+                  style={{ background: artist.accent }}
+                  aria-hidden="true"
+                />
+                <img
+                  src={artist.image}
+                  alt={`${artist.name} — portrait`}
+                  width={1000}
+                  height={1250}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-[4/5] w-full object-cover"
+                />
+              </figure>
+            )}
           </Reveal>
 
           <div className="lg:col-span-6">

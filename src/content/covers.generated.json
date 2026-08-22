@@ -1,5 +1,10 @@
 {
   "covers": {
+    "solarbazaarrituals": "/covers/solar-bazaar-rituals.webp",
+    "serpentcosmopolis": "/covers/serpent-cosmopolis.webp",
+    "velvetsunempire": "/covers/velvet-sun-empire.webp",
+    "microtonicoasiscollapse": "/covers/microtonic-oasis-collapse.webp",
+    "electriclotusdreams": "/covers/electric-lotus-dreams.webp",
     "dirttemple": "/covers/dirt-temple.webp",
     "fireandice": "/covers/fire-ice.webp",
     "afterthefeed": "/covers/after-the-feed.webp",
@@ -12,7 +17,9 @@
     "timeleaksthroughhands": "/covers/time-leaks-through-hands.webp",
     "primordialtransmission": "/covers/primordial-transmission.webp",
     "wedontfade": "/covers/we-don-t-fade.webp",
+    "thelastdiscopreacher": "/covers/the-last-disco-preacher.webp",
     "achoirfortheoneswhodisappeared": "/covers/a-choir-for-the-ones-who-disappeared.webp",
+    "blackchromereanimations": "/covers/black-chrome-reanimations.webp",
     "dancelikeyousurvived": "/covers/dance-like-you-survived.webp",
     "aftertheimpact": "/covers/after-the-impact.webp",
     "erebionsdominion": "/covers/erebion-s-dominion.webp",
@@ -24,12 +31,14 @@
     "thehalocorruptionprotocol": "/covers/the-halo-corruption-protocol.webp",
     "thewoundsoftomorrow": "/covers/the-wounds-of-tomorrow.webp",
     "afterimage": "/covers/afterimage.webp",
-    "chromesyndicatedreams": "/covers/chrome-syndicate-dreams.webp"
+    "chromesyndicatedreams": "/covers/chrome-syndicate-dreams.webp",
+    "gildedrituals": "/covers/gilded-rituals.webp"
   },
   "portraits": {
     "grafenberg": "/artists/grafenberg.webp"
   },
   "brand": {
-    "logo": "/logo.webp"
+    "logo": "/logo.webp",
+    "logo-seul": "/logo-seul.webp"
   }
 }

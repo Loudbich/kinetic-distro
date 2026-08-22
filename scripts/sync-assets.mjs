@@ -5,23 +5,38 @@
  * Copies hand-supplied artwork out of `assets/` and into `public/`, where a
  * static host can actually serve it, and writes a manifest the catalogue reads.
  *
- *   assets/covers/<Artist>/<Artist> - <Title>.webp   ->  public/covers/<slug>.webp
- *   assets/artists/<Artist>.webp                     ->  public/artists/<slug>.webp
+ *   assets/covers/<any folders>/<Artist> - <Title>.webp
+ *                                             ->  public/covers/<slug>.webp
+ *   assets/artists/<Artist>.webp              ->  public/artists/<slug>.webp
+ *   assets/brand/logo.webp                    ->  public/logo.webp
  *
- * Why the two folders instead of dropping files straight into public/:
- * `assets/` is for humans. Names can have capitals, spaces and accents, and are
- * grouped per artist so a folder stays readable at fifty records. This script
- * does the normalising, so nobody has to remember a slug to file a cover.
+ * Why not drop files straight into public/: `assets/` is for humans. Names can
+ * have capitals, spaces and accents, and covers can be nested however suits
+ * whoever files them — this script does the normalising, so nobody has to
+ * remember a slug to file a cover.
  *
- * Matching is on the normalised title, not the slug, because a synced record's
- * slug is derived at runtime — the title is what both sides already agree on.
+ * Covers are matched on the normalised title rather than the slug, because a
+ * synced record's slug is derived at runtime; the title is what both sides
+ * already agree on. Folder names are ignored entirely.
+ *
+ * public/covers and public/artists are wholly owned by this script and cleared
+ * on every run, so a renamed source file cannot leave a stale copy behind.
  *
  *   npm run assets            copy and write the manifest
  *   npm run assets -- --check report only, write nothing (used by the audit)
  * -----------------------------------------------------------------------------
  */
 
-import { copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
+import {
+  copyFileSync,
+  existsSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+  rmSync,
+  statSync,
+  writeFileSync,
+} from 'node:fs';
 import { dirname, extname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { norm } from './lib/attribution.mjs';
@@ -195,6 +210,33 @@ function syncPortraits() {
 }
 
 /* -------------------------------------------------------------------------- */
+
+/**
+ * Clears what a previous run wrote, so a renamed or deleted source file does
+ * not leave its old copy behind to be deployed forever. `covers/` and
+ * `artists/` are wholly generated and can go as a whole; brand files sit at the
+ * root next to hand-maintained ones (CNAME, favicon.svg), so only the exact
+ * files the last manifest recorded are removed.
+ */
+function clearPrevious() {
+  if (CHECK) return;
+
+  rmSync(join(PUBLIC, 'covers'), { recursive: true, force: true });
+  rmSync(join(PUBLIC, 'artists'), { recursive: true, force: true });
+
+  if (!existsSync(MANIFEST)) return;
+  try {
+    const previous = JSON.parse(readFileSync(MANIFEST, 'utf8'));
+    for (const url of Object.values(previous.brand ?? {})) {
+      rmSync(join(PUBLIC, String(url).replace(/^\//, '')), { force: true });
+    }
+  } catch {
+    // An unreadable manifest is not a reason to stop; worst case a stale brand
+    // file survives, and the next successful run removes it.
+  }
+}
+
+clearPrevious();
 
 const titles = knownTitles();
 const covers = syncCovers(titles);

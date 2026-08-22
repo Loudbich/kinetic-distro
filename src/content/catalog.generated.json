@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T14:34:45.988Z",
+  "generatedAt": "2026-08-22T15:18:34.883Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
   "trackCount": 645,
@@ -1376,9 +1376,9 @@
         },
         {
           "id": "2256819041",
-          "title": "Tha last disco preacher",
+          "title": "The last disco preacher",
           "url": "https://soundcloud.com/broken_shaman/sets/tha-last-disco-preacher",
-          "date": "2026-06-22",
+          "date": "2026-06-01",
           "artwork": "https://i1.sndcdn.com/artworks-eAxpiNVPXBJ2600g-lPaAQA-t500x500.jpg",
           "trackCount": 11,
           "isAlbum": true,
