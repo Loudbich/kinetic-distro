@@ -108,20 +108,6 @@ export default function Roster() {
         </ul>
       </section>
 
-      <section className="shell py-20 text-center lg:py-28">
-        <Reveal>
-          <p className="label mb-6">Not on this list yet?</p>
-          <h2 className="display mx-auto max-w-3xl text-balance text-4xl leading-none sm:text-5xl lg:text-6xl">
-            The roster is small on purpose
-          </h2>
-          <p className="mx-auto mt-6 max-w-xl text-chrome">
-            We take on a handful of projects a year so each one gets real attention.
-          </p>
-          <Link to="/demos/" className="btn-signal mt-9">
-            Submit a demo
-          </Link>
-        </Reveal>
-      </section>
     </>
   );
 }

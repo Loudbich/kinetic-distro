@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { site } from '../content/site';
 import PageHeader from '../components/PageHeader';
 import Reveal from '../components/Reveal';
@@ -10,13 +9,6 @@ const desks = [
     k: 'General & label',
     v: site.email,
     d: 'Partnerships, licensing, sync, anything that does not fit elsewhere.',
-  },
-  {
-    k: 'Demos & signings',
-    v: site.demoEmail,
-    d: 'Read the submission guidelines first — it doubles your odds.',
-    to: '/demos/',
-    toLabel: 'Submission guidelines',
   },
   {
     k: 'Press & radio',
@@ -60,11 +52,6 @@ export default function Contact() {
                   {d.v}
                 </a>
                 <p className="mt-5 text-sm leading-relaxed text-chrome-400">{d.d}</p>
-                {d.to && (
-                  <Link to={d.to} className="label link-underline mt-7 inline-block hover:!text-paper">
-                    {d.toLabel} →
-                  </Link>
-                )}
               </Reveal>
             ))}
           </ul>

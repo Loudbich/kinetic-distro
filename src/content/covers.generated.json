@@ -36,11 +36,14 @@
     "gildedrituals": "/covers/gilded-rituals.webp"
   },
   "portraits": {
+    "anatolian-mirage": "/artists/anatolian-mirage.webp",
     "broken-shaman": "/artists/broken-shaman.webp",
     "chromabone": "/artists/chromabone.webp",
     "grafenberg": "/artists/grafenberg.webp",
     "hollow-static": "/artists/hollow-static.webp",
+    "iron-covenant": "/artists/iron-covenant.webp",
     "love-cult": "/artists/love-cult.webp",
+    "lykke": "/artists/lykke.webp",
     "nosfera-disco-club": "/artists/nosfera-disco-club.webp",
     "vein-mirror": "/artists/vein-mirror.webp"
   },

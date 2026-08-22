@@ -17,7 +17,7 @@
  * -----------------------------------------------------------------------------
  */
 
-import { artists, services, site, type Artist, type Release } from '../content/site';
+import { artists, site, type Artist, type Release } from '../content/site';
 import brandAssets from '../content/covers.generated.json';
 import { allReleases, releasesForArtist } from '../content/catalog';
 
@@ -473,43 +473,6 @@ export function releaseSeo(release: Release): RouteSeo {
   };
 }
 
-export function distributionSeo(): RouteSeo {
-  return {
-    path: '/distribution',
-    title: 'Distribution & label services — Kinetic Distro',
-    description:
-      'Digital distribution, label services, creative direction and release campaigns. Artists keep their masters, deals are per-release, reporting is raw store data.',
-    ogType: 'website',
-    graph: [
-      organizationEntity(),
-      websiteEntity(),
-      {
-        ...webPage('/distribution', 'Distribution & label services', 'What Kinetic Distro does for its artists.'),
-        '@type': 'CollectionPage',
-      },
-      breadcrumb([HOME, { name: 'Distribution', path: '/distribution' }]),
-      {
-        '@type': 'OfferCatalog',
-        '@id': `${abs('/distribution')}#services`,
-        name: 'Kinetic Distro services',
-        provider: { '@id': ID.organization },
-        itemListElement: services.map((s, i) => ({
-          '@type': 'Offer',
-          position: i + 1,
-          itemOffered: {
-            '@type': 'Service',
-            '@id': `${abs('/distribution')}#service-${s.id}`,
-            name: s.title,
-            description: s.summary,
-            serviceType: s.title,
-            provider: { '@id': ID.organization },
-          },
-        })),
-      },
-    ],
-  };
-}
-
 export function aboutSeo(): RouteSeo {
   return {
     path: '/about',
@@ -530,64 +493,10 @@ export function aboutSeo(): RouteSeo {
   };
 }
 
-export function demosSeo(): RouteSeo {
-  return {
-    path: '/demos',
-    title: 'Demo submissions — send your music to Kinetic Distro',
-    description:
-      'How to submit a demo to Kinetic Distro: one private link, three tracks, and the world behind them. Every submission is answered within two weeks.',
-    ogType: 'website',
-    graph: [
-      organizationEntity(),
-      websiteEntity(),
-      webPage('/demos', 'Demo submissions', 'Submission guidelines for artists.'),
-      breadcrumb([HOME, { name: 'Demos', path: '/demos' }]),
-      {
-        '@type': 'FAQPage',
-        '@id': `${abs('/demos')}#faq`,
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name: 'How do I submit a demo to Kinetic Distro?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: `Send one private streaming link with a maximum of three tracks, in the order you want them heard, plus two or three sentences on what the project is, to ${site.demoEmail}.`,
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'How long does Kinetic Distro take to answer a demo?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'Every submission is read and answered within two weeks, including rejections.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'Does Kinetic Distro take ownership of the masters?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: 'No. Masters stay with the artist. Deals are made per release, splits are agreed in writing before release, and reporting is raw store data.',
-            },
-          },
-          {
-            '@type': 'Question',
-            name: 'What genres does Kinetic Distro sign?',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text: `Genre is not the filter. The roster runs from dark synthwave and ritual electronics to thrash metal, Scandinavian pop and cinematic score — ${artists.length} projects in total.`,
-            },
-          },
-        ],
-      },
-    ],
-  };
-}
-
 export function contactSeo(): RouteSeo {
   return {
     path: '/contact',
-    title: 'Contact Kinetic Distro — label, demos, press',
+    title: 'Contact Kinetic Distro — label and press',
     description:
       'Get in touch with Kinetic Distro for label enquiries, demo submissions, press, sync and licensing.',
     ogType: 'website',
@@ -604,7 +513,6 @@ export function contactSeo(): RouteSeo {
         '@id': ID.organization,
         contactPoint: [
           { '@type': 'ContactPoint', contactType: 'general enquiries', email: site.email, availableLanguage: ['en', 'fr'] },
-          { '@type': 'ContactPoint', contactType: 'A&R / demos', email: site.demoEmail, availableLanguage: ['en', 'fr'] },
           { '@type': 'ContactPoint', contactType: 'press', email: site.pressEmail, availableLanguage: ['en', 'fr'] },
         ],
       },
@@ -633,9 +541,7 @@ export function allRoutes(): RouteSeo[] {
     homeSeo(),
     rosterSeo(),
     releasesSeo(),
-    distributionSeo(),
     aboutSeo(),
-    demosSeo(),
     contactSeo(),
     ...artists.map(artistSeo),
     ...allReleases.map(releaseSeo),

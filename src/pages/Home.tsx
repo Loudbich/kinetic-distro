@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { artists, services, site } from '../content/site';
+import { artists, site } from '../content/site';
 import { allReleases, latestTracks } from '../content/catalog';
 import { LabelTrackFeed } from '../components/TrackFeed';
 import Cover from '../components/Cover';
@@ -62,8 +62,8 @@ export default function Home() {
                   <Link to="/roster/" className="btn-signal">
                     See the roster
                   </Link>
-                  <Link to="/demos/" className="btn-ghost">
-                    Send a demo
+                  <Link to="/releases/" className="btn-ghost">
+                    The catalogue
                   </Link>
                 </div>
               </div>
@@ -246,49 +246,22 @@ export default function Home() {
         </div>
       </section>
 
-      {/* --------------------------------------------------------- SERVICES */}
-      <section className="border-b border-white/10 bg-ink-800">
-        <div className="shell py-20 lg:py-28">
-          <Reveal>
-            <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
-              <h2 className="display text-balance text-4xl leading-none sm:text-5xl lg:text-6xl">
-                More than a<br />
-                distribution pipe
-              </h2>
-              <Link to="/distribution/" className="label link-underline hover:!text-paper">
-                What we do →
-              </Link>
-            </div>
-          </Reveal>
-          <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
-            {services.map((s, i) => (
-              <Reveal key={s.id} delay={i * 70} className="bg-ink-800 p-7">
-                <p className="label accent-text mb-6">{s.id}</p>
-                <h3 className="display-tight text-xl leading-tight">{s.title}</h3>
-                <p className="mt-4 text-sm leading-relaxed text-chrome-400">{s.summary}</p>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* -------------------------------------------------------------- CTA */}
       <section className="relative overflow-hidden">
         <div className="shell py-24 text-center lg:py-32">
           <Reveal>
-            <p className="label mb-8">Open call</p>
+            <p className="label mb-8">The catalogue</p>
             <h2 className="display mx-auto max-w-4xl text-balance text-5xl leading-[0.9] sm:text-6xl lg:text-8xl">
-              Show us the
+              Every record,
               <br />
-              whole world<span className="accent-text">.</span>
+              one frame<span className="accent-text">.</span>
             </h2>
             <p className="mx-auto mt-8 max-w-xl text-lg text-chrome">
-              We sign concepts, not singles. If your project has a universe behind it, we want to hear
-              it.
+              {site.manifestoLines[2]}
             </p>
             <div className="mt-10 flex flex-wrap justify-center gap-3">
-              <Link to="/demos/" className="btn-signal">
-                Submit a demo
+              <Link to="/releases/" className="btn-signal">
+                Browse the catalogue
               </Link>
               <Link to="/contact/" className="btn-ghost">
                 Get in touch

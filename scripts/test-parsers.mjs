@@ -296,7 +296,7 @@ test('maps an api-v2 set onto the site shape', () => {
 
   assert.equal(out.id, '2285385039');
   assert.equal(out.date, '2026-08-18', 'falls back to display_date when release_date is null');
-  assert.equal(out.artwork, 'https://i1.sndcdn.com/artworks-upyLB-t500x500.jpg');
+  assert.equal(out.artwork, 'https://i1.sndcdn.com/artworks-upyLB-t1080x1080.jpg', 'upsized past 500px');
   assert.equal(out.isAlbum, true);
   assert.equal(out.setType, 'album');
   assert.deepEqual(out.tracklist, ['Switch//ON', 'Boot Sequence']);

@@ -13,7 +13,7 @@ Stack : **Vite 8 + React 19 + TypeScript + Tailwind CSS 3 + React Router 7**
 ```bash
 npm install
 npm run dev        # http://localhost:5173
-npm run build      # artwork, typecheck, compile, pré-rend 85 pages HTML, sitemap
+npm run build      # artwork, typecheck, compile, pré-rend 83 pages HTML, sitemap
 npm run preview:static  # sert dist/ comme le fera la prod (à utiliser pour vérifier)
 npm run audit      # audit SEO du dist/ construit
 npm run sync       # récupère le catalogue depuis SoundCloud
@@ -37,7 +37,6 @@ Aucun composant n'a besoin d'être modifié pour ajouter un artiste, une sortie 
 | `artists[]` | Le roster complet — une entrée = une page `/roster/<slug>` créée automatiquement |
 | `attribution.ts` | À qui appartient chaque disque publié sur le compte du label (voir §9) |
 | `releases[]` | Le catalogue — une entrée = une page `/releases/<slug>` créée automatiquement |
-| `services[]` | Les 4 blocs de la page Distribution (repris en teaser sur la home) |
 | `releases[].notes` | Les notes de pochette — reprises automatiquement du descriptif SoundCloud |
 | `nav[]` | Le menu principal (header + footer + drawer mobile) |
 
@@ -154,8 +153,13 @@ Deux règles à connaître :
   Si plusieurs formats du même logo cohabitent (`Logo.png` et `logo.webp`), le script
   choisit **le transparent d'abord, puis le plus léger**.
 
-Une pochette fournie à la main l'emporte toujours sur celle de SoundCloud (limitée à
-500 px). À défaut d'image, la pochette générative prend le relais.
+Une pochette fournie à la main l'emporte toujours sur celle de SoundCloud. À défaut
+d'image, la pochette générative prend le relais.
+
+Les pochettes reprises de SoundCloud sont demandées en **1080 px** (`-t1080x1080`) et non
+en 500 : une page album affiche sa pochette autour de 500 px CSS, ce qu'un fichier de
+500 px ne peut pas remplir sur un écran HiDPI — le rendu était visiblement plus mou que
+celui des visuels fournis en 1000 px.
 
 Formats acceptés : `.webp`, `.avif`, `.jpg`, `.png`. Préfère le WebP carré en 1400 px —
 le PNG passe, mais pèse dix fois plus lourd pour un rendu identique.
@@ -190,7 +194,7 @@ Classes utilitaires maison dans `src/index.css` : `.display`, `.display-tight`, 
 
 ### Le site est pré-rendu, pas un SPA aveugle
 
-`npm run build` génère **85 vrais fichiers HTML**, un par URL, chacun avec son propre
+`npm run build` génère **83 vrais fichiers HTML**, un par URL, chacun avec son propre
 `<title>`, sa meta description, son canonical, ses balises Open Graph et son JSON-LD —
 plus le corps de page entièrement rendu.
 
@@ -218,7 +222,7 @@ pré-rendu.)*
 ### Le graphe d'entités
 
 Chaque page porte un `@graph` schema.org dont les entités se référencent par `@id` stable
-plutôt que d'être dupliquées. **895 entités uniques, 2275 références, 0 référence orpheline.**
+plutôt que d'être dupliquées. **885 entités uniques, 2262 références, 0 référence orpheline.**
 
 | Type de page | Entités déclarées |
 |---|---|
@@ -228,9 +232,7 @@ plutôt que d'être dupliquées. **895 entités uniques, 2275 références, 0 r�
 | Page artiste | + `ProfilePage`, `BreadcrumbList`, `MusicGroup` complet, ses `MusicAlbum` |
 | Catalogue | + `CollectionPage`, `ItemList` de tous les `MusicAlbum` |
 | Page album | + `ItemPage`, `BreadcrumbList`, `MusicAlbum` + un `MusicRecording` par piste |
-| Distribution | + `OfferCatalog` de 4 `Service` |
 | About | + `AboutPage` pointant sur l'`Organization` |
-| Demos | + `FAQPage` (4 questions éligibles aux rich results) |
 | Contact | + `ContactPage`, 3 `ContactPoint` |
 
 Le label est le **hub du graphe** : chaque album pointe vers lui via `recordLabel`, chaque
@@ -405,7 +407,7 @@ as besoin.
 
 ---
 
-## 6bis. Écouter sur le site
+## 7. Écouter sur le site
 
 Le lecteur SoundCloud est intégré, mais **il ne se charge qu'au clic**.
 
@@ -435,16 +437,6 @@ simplement ses liens sortants.
 
 ---
 
-## 7. Le formulaire de démos
-
-`src/pages/Demos.tsx` n'utilise **aucun backend** : il compose un email pré-rempli dans le client
-mail du visiteur (`mailto:`). Rien n'est stocké, rien ne transite par un tiers.
-
-Pour passer sur un vrai endpoint (Formspree, Netlify Forms, API maison), remplacer le corps de
-`onSubmit` par un `fetch()` — le commentaire dans le fichier indique l'emplacement exact.
-
----
-
 ## 8. Structure
 
 ```
@@ -471,12 +463,12 @@ src/
 ├── App.tsx             routes partagées client + pré-rendu
 ├── entry-server.tsx    entrée de pré-rendu
 ├── pages/              Home, Roster, ArtistPage, Releases, ReleasePage,
-│                       Distribution, About, Demos, Contact, NotFound
+│                       About, Contact, NotFound
 ├── index.css           design system
 └── main.tsx            hydratation
 
 scripts/
-├── prerender.mjs         génère les 85 pages HTML + le sitemap
+├── prerender.mjs         génère les 83 pages HTML + le sitemap
 ├── audit-seo.mjs         audit SEO du dist/ construit
 ├── serve-static.mjs      serveur local fidèle à la prod
 ├── sync-soundcloud.mjs   la synchro
@@ -648,7 +640,13 @@ des artistes — ce sont leurs propres textes. Restent à valider dans `src/cont
   dans `sources.ts` si un profil apparaît.
 - **Hollow Static** vient d'être ajouté au roster : bio et couleur d'accent (`#7C9EE0`)
   sont reprises du texte de présentation du label, à relire.
-- Les **4 disques sans crédit automatique** listés par `npm run sync` attendent une
-  décision dans `src/content/attribution.ts` (voir §9).
-- Les **emails** utilisent maintenant `@kinetic-distro.com` — à créer chez ton registrar
-  ou à rediriger, sinon les liens `mailto:` du site pointent dans le vide.
+- Les **disques sans crédit automatique** signalés par `npm run sync` attendent une
+  décision dans `src/content/attribution.ts` (voir §9). Il n'y en a aucun actuellement.
+- **Unmade Scores** est le seul artiste sans portrait — sa fiche affiche le visuel
+  génératif en attendant.
+- Les **emails** utilisent `@kinetic-distro.com` — à créer chez ton registrar ou à
+  rediriger, sinon les liens `mailto:` du site pointent dans le vide. Il n'en reste que
+  deux : `contact@` et `press@`.
+- Les pages **/demos/ et /distribution/ ont été retirées** : le label n'est pas ouvert aux
+  artistes extérieurs. Elles renvoient désormais un vrai 404, ce qui est le bon signal pour
+  du contenu supprimé — Google les déréférencera d'elles-mêmes.

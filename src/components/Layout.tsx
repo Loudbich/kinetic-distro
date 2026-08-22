@@ -215,11 +215,6 @@ function Footer() {
                 {site.email}
               </a>
             </li>
-            <li>
-              <a href={`mailto:${site.demoEmail}`} className="link-underline text-sm text-chrome hover:text-paper">
-                {site.demoEmail}
-              </a>
-            </li>
           </ul>
         </div>
       </div>

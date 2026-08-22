@@ -15,7 +15,6 @@ export const site = {
   location: 'France',
   founded: '2024',
   email: 'contact@kinetic-distro.com',
-  demoEmail: 'demos@kinetic-distro.com',
   pressEmail: 'press@kinetic-distro.com',
   shortDescription:
     'An independent music label and creative distribution platform dedicated to pushing the boundaries of sound, identity and artistic storytelling in the digital age.',
@@ -451,65 +450,12 @@ export const releasesByArtist = (slug: string) =>
   releases.filter((r) => r.artistSlugs.includes(slug));
 
 /* -------------------------------------------------------------------------- */
-/* SERVICES                                                                    */
-/* -------------------------------------------------------------------------- */
-
-export const services = [
-  {
-    id: '01',
-    title: 'Digital distribution',
-    summary: 'Your record on every platform that matters, with metadata that actually holds up.',
-    points: [
-      'Delivery to Spotify, Apple Music, Bandcamp, Deezer, YouTube Music, Beatport and 40+ stores',
-      'Clean metadata, ISRC and UPC handling, correct credits and contributor roles',
-      'Release scheduling, pre-saves and territory management',
-      'Transparent reporting — you see the same numbers we do',
-    ],
-  },
-  {
-    id: '02',
-    title: 'Label services',
-    summary: 'The infrastructure of a label, without giving up your masters.',
-    points: [
-      'Catalogue and cat-number management',
-      'Rights registration and royalty splits between collaborators',
-      'Release strategy, single sequencing and campaign calendars',
-      'Physical run coordination — vinyl, tape and merch partners',
-    ],
-  },
-  {
-    id: '03',
-    title: 'Creative direction',
-    summary: 'Records arrive as worlds. We help build the rest of the world around them.',
-    points: [
-      'Artwork direction, typography and visual identity systems',
-      'Video, visualiser and AI-assisted visual production',
-      'Artist positioning, bio and press-kit writing',
-      'Web presence — landing pages and dedicated artist sites',
-    ],
-  },
-  {
-    id: '04',
-    title: 'Audience & release campaigns',
-    summary: 'Deliberate, measured growth instead of noise.',
-    points: [
-      'Editorial and playlist pitching',
-      'Press and radio outreach, premiere placement',
-      'Paid acquisition when — and only when — the numbers justify it',
-      'Community building on Bandcamp, SoundCloud and Discord',
-    ],
-  },
-] as const;
-
-/* -------------------------------------------------------------------------- */
 /* NAVIGATION                                                                  */
 /* -------------------------------------------------------------------------- */
 
 export const nav = [
   { label: 'Roster', to: '/roster/' },
   { label: 'Releases', to: '/releases/' },
-  { label: 'Distribution', to: '/distribution/' },
   { label: 'About', to: '/about/' },
-  { label: 'Demos', to: '/demos/' },
   { label: 'Contact', to: '/contact/' },
 ] as const;

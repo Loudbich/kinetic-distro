@@ -77,8 +77,16 @@ export async function fetchUserSets(get, { userId, clientId, pageSize = 50, maxP
   return sets;
 }
 
-/** SoundCloud serves a 100×100 crop by default; every size shares one stem. */
-const upsize = (url) => (url || '').replace(/-(?:large|t\d+x\d+)\.jpg$/, '-t500x500.jpg');
+/**
+ * SoundCloud serves a small crop by default; every size shares one stem, so the
+ * larger one is a rename away.
+ *
+ * 1080 rather than 500: a release page shows its cover around 500 CSS pixels
+ * wide, which a 500px file cannot fill on any HiDPI screen — it was visibly
+ * soft next to the hand-supplied 1000px artwork. Records with their own cover
+ * never reach this; it is the fallback for the ones without.
+ */
+const upsize = (url) => (url || '').replace(/-(?:large|t\d+x\d+)\.jpg$/, '-t1080x1080.jpg');
 
 /**
  * Normalises an api-v2 set into the shape the site already consumes.

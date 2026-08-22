@@ -147,10 +147,6 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
                 the roster
               </h2>
             </div>
-            <p className="max-w-xs text-sm leading-relaxed text-chrome-400">
-              Pulled straight from the artists' SoundCloud feeds. This list updates itself — nothing
-              here was typed by hand. Press play to listen without leaving the page.
-            </p>
           </div>
         </Reveal>
 
