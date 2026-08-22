@@ -35,7 +35,7 @@ const escapeAttr = (s) =>
 /** JSON-LD must never be able to close its own <script> tag. */
 const escapeJsonLd = (s) => s.replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026');
 
-function headFor(route, base, shareImage) {
+function headFor(route, base, shareImage, favicon) {
   const url = route.canonical;
   const image = route.image
     ? route.image.startsWith('http')
@@ -43,7 +43,13 @@ function headFor(route, base, shareImage) {
       : base + route.image
     : base + shareImage;
 
+  const mime =
+    { '.png': 'image/png', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.jpg': 'image/jpeg' }[
+      favicon.slice(favicon.lastIndexOf('.')).toLowerCase()
+    ] ?? 'image/png';
+
   const tags = [
+    `<link rel="icon" type="${mime}" href="${escapeAttr(favicon)}" />`,
     `<title>${escapeAttr(route.title)}</title>`,
     `<meta name="description" content="${escapeAttr(route.description)}" />`,
     `<meta name="robots" content="${route.noIndex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'}" />`,
@@ -105,7 +111,7 @@ async function main() {
   }
 
   const entry = pathToFileURL(join(SSR, 'entry-server.js')).href;
-  const { render, routes: getRoutes, baseUrl, shareImage } = await import(entry);
+  const { render, routes: getRoutes, baseUrl, shareImage, favicon } = await import(entry);
 
   const template = readFileSync(join(DIST, 'index.html'), 'utf8');
 
@@ -128,7 +134,7 @@ async function main() {
     }
 
     const page = template
-      .replace(/ *<!--seo-start-->[\s\S]*?<!--seo-end-->/, headFor(route, baseUrl, shareImage))
+      .replace(/ *<!--seo-start-->[\s\S]*?<!--seo-end-->/, headFor(route, baseUrl, shareImage, favicon))
       .replace('<!--app-html-->', html);
 
     const out = outPathFor(route.path);

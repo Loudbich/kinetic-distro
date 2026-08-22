@@ -64,6 +64,14 @@ const assetUrl = (path: string) =>
  */
 export const SHARE_IMAGE = (brandAssets.brand as Record<string, string>).logo ?? '/og-cover.svg';
 
+/**
+ * The browser tab icon — the mark alone, since a full lockup is unreadable at
+ * 16px. Taken from the manifest rather than written into the HTML: the file's
+ * extension changes whenever the logo is re-exported in another format, and a
+ * hardcoded path silently 404s the moment it does.
+ */
+export const FAVICON = (brandAssets.brand as Record<string, string>)['logo-seul'] ?? '/og-cover.svg';
+
 /* -------------------------------------------------------------------------- */
 /* Stable entity ids                                                           */
 /* -------------------------------------------------------------------------- */
