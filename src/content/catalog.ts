@@ -17,7 +17,7 @@
 import generated from './catalog.generated.json';
 import art from './covers.generated.json';
 import { attributionFor } from './attribution';
-import { artists, releases, site, type Release } from './site';
+import { artists, releases, site, vinyl, type Release } from './site';
 
 /* -------------------------------------------------------------------------- */
 /* Types                                                                       */
@@ -154,6 +154,17 @@ const coverFor = (title: string): string | undefined =>
 export const portraitFor = (slug: string): string | undefined =>
   (art.portraits as Record<string, string>)[slug];
 
+export type KeyVisual = { url: string; width?: number; height?: number };
+
+/**
+ * The artist's wide key visual — the same file the home carousel shows, so a
+ * slide and an artist page can never drift apart.
+ */
+export const keyVisualFor = (slug: string): { wide: KeyVisual; mobile?: KeyVisual } | undefined => {
+  const entry = (art.carousel as Record<string, { wide?: KeyVisual; mobile?: KeyVisual }>)[slug];
+  return entry?.wide ? { wide: entry.wide, mobile: entry.mobile } : undefined;
+};
+
 /**
  * Who a record is credited to, in order of authority: a hand-written entry in
  * attribution.ts, then the credit the sync derived.
@@ -281,6 +292,7 @@ const derived: Release[] = mergePlaylists(
       tracklist: playlist.tracklist?.length ? playlist.tracklist : undefined,
       listenUrl: playlist.url,
       streamUrl: playlist.url,
+      vinylUrl: vinyl[slugify(playlist.title) || `set-${playlist.id}`],
       image: coverFor(playlist.title) ?? playlist.artwork ?? undefined,
     } satisfies Release;
   });
@@ -301,6 +313,7 @@ const curated: Release[] = releases.map((r) => ({
   // an artist's own site, a profile. The player needs the record itself, so it
   // gets the matched SoundCloud set instead of guessing from that link.
   streamUrl: r.streamUrl ?? syncedByTitle.get(norm(r.title))?.url,
+  vinylUrl: r.vinylUrl ?? vinyl[r.slug],
 }));
 
 /** Everything the site should list: curated first, then anything new from SoundCloud. */

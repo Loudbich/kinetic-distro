@@ -33,7 +33,8 @@
     "thewoundsoftomorrow": "/covers/the-wounds-of-tomorrow.webp",
     "afterimage": "/covers/afterimage.webp",
     "chromesyndicatedreams": "/covers/chrome-syndicate-dreams.webp",
-    "gildedrituals": "/covers/gilded-rituals.webp"
+    "gildedrituals": "/covers/gilded-rituals.webp",
+    "loveandvenomtastethesame": "/covers/love-and-venom-taste-the-same.webp"
   },
   "portraits": {
     "anatolian-mirage": "/artists/anatolian-mirage.webp",
@@ -45,6 +46,7 @@
     "love-cult": "/artists/love-cult.webp",
     "lykke": "/artists/lykke.webp",
     "nosfera-disco-club": "/artists/nosfera-disco-club.webp",
+    "unmade-scores": "/artists/unmade-scores.webp",
     "vein-mirror": "/artists/vein-mirror.webp"
   },
   "brand": {
@@ -55,15 +57,22 @@
     "anatolian-mirage": {
       "wide": {
         "url": "/carousel/anatolian-mirage.webp",
-        "width": 5632,
-        "height": 2496
+        "width": 3840,
+        "height": 1608
       }
     },
     "broken-shaman": {
       "wide": {
         "url": "/carousel/broken-shaman.webp",
-        "width": 5792,
-        "height": 2432
+        "width": 3840,
+        "height": 1608
+      }
+    },
+    "chromabone": {
+      "wide": {
+        "url": "/carousel/chromabone.webp",
+        "width": 3840,
+        "height": 1608
       }
     },
     "grafenberg": {
@@ -73,9 +82,44 @@
         "height": 1608
       }
     },
+    "hollow-static": {
+      "wide": {
+        "url": "/carousel/hollow-static.webp",
+        "width": 3840,
+        "height": 1608
+      }
+    },
+    "iron-covenant": {
+      "wide": {
+        "url": "/carousel/iron-covenant.webp",
+        "width": 3840,
+        "height": 1608
+      }
+    },
+    "love-cult": {
+      "wide": {
+        "url": "/carousel/love-cult.webp",
+        "width": 3840,
+        "height": 1608
+      }
+    },
+    "lykke": {
+      "wide": {
+        "url": "/carousel/lykke.webp",
+        "width": 3840,
+        "height": 1608
+      }
+    },
     "nosfera-disco-club": {
       "wide": {
         "url": "/carousel/nosfera-disco-club.webp",
+        "width": 3840,
+        "height": 1608
+      }
+    },
+    "unmade-scores": {
+      "wide": {
+        "url": "/carousel/unmade-scores.webp",
         "width": 3840,
         "height": 1608
       }

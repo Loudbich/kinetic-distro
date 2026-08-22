@@ -180,6 +180,9 @@ d'autre à faire : l'ordre suit le roster (pas le disque), et un fichier qui ne 
 aucun artiste est signalé au build sans être publié — c'est ce qui écarte les masters PNG
 de 23 Mo et les sorties d'upscaler qui traînent dans le dossier.
 
+Le même visuel coiffe la page de l'artiste : une seule source, donc une diapositive et la
+page vers laquelle elle mène ne peuvent pas diverger.
+
 La section est dimensionnée à ~88 % de la hauteur d'écran : elle domine l'arrivée, mais
 laisse apparaître le début du bloc suivant pour signaler qu'il y a une suite.
 
@@ -664,9 +667,11 @@ changé, pour éviter les commits vides quotidiens.
 Les bios, localisations et titres viennent maintenant **directement des profils SoundCloud**
 des artistes — ce sont leurs propres textes. Restent à valider dans `src/content/site.ts` :
 
-- Les **numéros de catalogue** (KD-001 → KD-007) sont une convention proposée, classée par
-  date de sortie croissante.
-- La date de *No Saints, No Proof* (2026-03-01) est une estimation.
+- Les **numéros de catalogue** (KD-001 → KD-007) suivent l'ordre de sortie réel — vérifié
+  contre les dates de publication SoundCloud.
+- Les **pressages vinyle** se déclarent dans la table `vinyl` de `site.ts`, indexée par slug
+  de sortie. Une table à part parce qu'un pressage peut concerner n'importe quel disque, y
+  compris un disque venu de la synchro et qui n'a pas d'entrée écrite à la main.
 - L'**année de création** du label (2024) et les liens Instagram / YouTube / Spotify.
 - **Love Cult** et **Hollow Static** n'ont pas de profil SoundCloud propre — leurs fiches
   sont rédigées à la main et leurs disques sont hébergés par le compte du label. Ajoute-les

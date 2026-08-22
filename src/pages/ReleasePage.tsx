@@ -129,6 +129,16 @@ export default function ReleasePage() {
                 >
                   Buy on Bandcamp ↗
                 </a>
+                {release.vinylUrl && (
+                  <a
+                    href={release.vinylUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="btn-ghost"
+                  >
+                    Vinyl ↗
+                  </a>
+                )}
               </div>
             </Reveal>
           </div>

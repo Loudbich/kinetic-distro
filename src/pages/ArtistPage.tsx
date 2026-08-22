@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { artists, getArtist } from '../content/site';
-import { releasesForArtist, syncedFor, tracksForArtist } from '../content/catalog';
+import { keyVisualFor, releasesForArtist, syncedFor, tracksForArtist } from '../content/catalog';
 import { ArtistTrackFeed } from '../components/TrackFeed';
 import Cover from '../components/Cover';
 import Marquee from '../components/Marquee';
@@ -30,6 +30,7 @@ export default function ArtistPage() {
   const discography = releasesForArtist(artist.slug);
   const synced = syncedFor(artist.slug);
   const tracks = tracksForArtist(artist.slug, 10);
+  const visual = keyVisualFor(artist.slug);
   const index = artists.findIndex((a) => a.slug === artist.slug);
   const next = artists[(index + 1) % artists.length];
 
@@ -37,8 +38,37 @@ export default function ArtistPage() {
     <>
       <Seo route={artistSeo(artist)} />
 
+      {/* The artist's key visual — the same file the home carousel shows, so a
+          slide and the page it leads to can never drift apart. When there is no
+          visual the page starts on its hero exactly as before, which is why the
+          top padding moves with the banner rather than being duplicated. */}
+      {visual && (
+        <section className="relative border-b border-white/10 pt-[68px]">
+          <div className="relative aspect-[16/9] w-full sm:aspect-[21/9] lg:aspect-[2.39/1]">
+            <picture>
+              {visual.mobile && <source media="(max-width: 639px)" srcSet={visual.mobile.url} />}
+              <img
+                src={visual.wide.url}
+                alt={`${artist.name} — ${artist.tagline}`}
+                width={visual.wide.width}
+                height={visual.wide.height}
+                fetchPriority="high"
+                decoding="async"
+                className="h-full w-full object-cover"
+              />
+            </picture>
+            <div
+              className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink via-ink/25 to-transparent"
+              aria-hidden="true"
+            />
+          </div>
+        </section>
+      )}
+
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-white/10 pt-[68px] noise">
+      <section
+        className={`relative overflow-hidden border-b border-white/10 noise ${visual ? '' : 'pt-[68px]'}`}
+      >
         <div className="pointer-events-none absolute inset-0 grid-lines opacity-70" aria-hidden="true" />
         <div
           className="pointer-events-none absolute -left-[15%] top-0 h-[55vw] w-[55vw] rounded-full opacity-[0.16] blur-[130px]"

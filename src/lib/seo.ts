@@ -217,6 +217,19 @@ export const albumEntity = (release: Release, { deep = false } = {}) => {
   };
 
   if (release.image) entity.image = assetUrl(release.image);
+
+  // A pressing is a real product with a real place to buy it — worth declaring,
+  // and the only part of a release that search engines can show as an offer.
+  if (release.vinylUrl) {
+    entity.offers = {
+      '@type': 'Offer',
+      url: release.vinylUrl,
+      itemCondition: 'https://schema.org/NewCondition',
+      availability: 'https://schema.org/InStock',
+      seller: { '@id': ID.organization },
+    };
+    entity.releaseOf = { '@type': 'MusicRelease', musicReleaseFormat: 'https://schema.org/VinylFormat' };
+  }
   if (release.tracklist?.length) entity.numTracks = release.tracklist.length;
 
   if (deep && release.tracklist?.length) {

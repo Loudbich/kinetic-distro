@@ -304,6 +304,8 @@ export type Release = {
    * send people and may point at Bandcamp or an artist's own site.
    */
   streamUrl?: string;
+  /** Where a physical pressing can be ordered, when one exists. */
+  vinylUrl?: string;
   listenUrl: string;
   featured?: boolean;
   /** Optional: drop a file in /public/covers and reference it, e.g. "/covers/kd-006.jpg".
@@ -409,7 +411,7 @@ export const releases: Release[] = [
     title: 'Love and Venom Taste the Same',
     artistSlugs: ['vein-mirror'],
     artistDisplay: 'VEIN//Mirror',
-    date: '2026-04-09',
+    date: '2026-04-18',
     format: 'Digital · 10 tracks',
     type: 'Album',
     blurb:
@@ -435,7 +437,7 @@ export const releases: Release[] = [
     title: 'No Saints, No Proof',
     artistSlugs: ['grafenberg'],
     artistDisplay: 'Grafenberg',
-    date: '2026-03-01',
+    date: '2025-09-03',
     format: 'Digital · Full album',
     type: 'Album',
     blurb:
@@ -443,6 +445,23 @@ export const releases: Release[] = [
     listenUrl: 'https://grafenberg.ovh',
   },
 ];
+
+/* -------------------------------------------------------------------------- */
+/* PHYSICAL EDITIONS                                                           */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Records that exist on vinyl, keyed by release slug.
+ *
+ * A separate map rather than a field on the release, because a pressing can
+ * happen to any record — including one that came from the SoundCloud sync and
+ * has no hand-written entry to put the link on. The slug is what the URL of the
+ * release page uses, so it is the one identifier both kinds already share.
+ */
+export const vinyl: Record<string, string> = {
+  'no-saints-no-proof': 'https://elasticstage.com/soundcloud/releases/grafenberg-no-saints-no-proof-album',
+  'the-error-gospel': 'https://elasticstage.com/soundcloud/releases/grafenberg-the-error-gospel-album',
+};
 
 export const getRelease = (slug: string) => releases.find((r) => r.slug === slug);
 

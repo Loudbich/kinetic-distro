@@ -104,6 +104,15 @@ const titleCandidates = (filename) => {
   if (loose) out.push(loose[2].trim());
 
   out.push(stem);
+
+  // Export suffixes an image editor leaves behind — `…_Artwork`, `…-cover`,
+  // `… final`. Stripped as an extra candidate rather than in place, so a record
+  // genuinely called "Artwork" is unaffected.
+  for (const c of [...out]) {
+    const trimmed = c.replace(/[\s_-]*(artwork|cover|final|master|v\d+)$/i, '').trim();
+    if (trimmed && trimmed !== c) out.push(trimmed);
+  }
+
   return [...new Set(out)];
 };
 
@@ -313,9 +322,14 @@ function syncCarousel(rosterSlugs) {
   const slides = {};
   const unmatched = [];
 
+  // Only the export formats. The folder also holds PSDs, PNG masters and
+  // upscaler output; matching those would report a dozen files as errors on
+  // every build, which is the fastest way to teach everyone to ignore warnings.
+  const SLIDE_EXT = new Set(['.webp', '.avif']);
+
   const collect = (dir, kind) => {
     for (const file of listFiles(dir)) {
-      if (file.isDirectory() || !IMAGE_EXT.has(extname(file.name).toLowerCase())) continue;
+      if (file.isDirectory() || !SLIDE_EXT.has(extname(file.name).toLowerCase())) continue;
 
       const stem = file.name.slice(0, -extname(file.name).length);
       const slug = slugify(stem);
