@@ -1,0 +1,140 @@
+import type { FeedTrack, SyncedTrack } from '../content/catalog';
+import { fmtDate } from '../lib/format';
+import Reveal from './Reveal';
+
+const fmtDuration = (sec: number | null) => {
+  if (!sec) return '';
+  const m = Math.floor(sec / 60);
+  const s = String(sec % 60).padStart(2, '0');
+  return `${m}:${s}`;
+};
+
+/* -------------------------------------------------------------------------- */
+
+type ArtistFeedProps = {
+  tracks: SyncedTrack[];
+  accent: string;
+  profileUrl?: string;
+};
+
+/** Compact list used on an artist page — everything is already their colour. */
+export function ArtistTrackFeed({ tracks, accent, profileUrl }: ArtistFeedProps) {
+  if (!tracks.length) return null;
+
+  return (
+    <section className="border-b border-white/10">
+      <div className="shell py-20 lg:py-28">
+        <Reveal>
+          <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
+            <div>
+              <p className="label mb-4">Latest on SoundCloud</p>
+              <p className="font-mono text-sm text-chrome-400">
+                Synced automatically — {tracks.length} recent tracks
+              </p>
+            </div>
+            {profileUrl && (
+              <a
+                href={profileUrl}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="label link-underline hover:!text-paper"
+              >
+                Full profile ↗
+              </a>
+            )}
+          </div>
+        </Reveal>
+
+        <ul className="grid gap-x-12 sm:grid-cols-2">
+          {tracks.map((t, i) => (
+            <Reveal as="li" key={t.id} delay={Math.min(i, 6) * 45}>
+              <a
+                href={t.url}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="group flex items-center gap-5 border-b border-white/10 py-4 transition-colors hover:bg-white/[0.03]"
+              >
+                <span className="label w-7 shrink-0">{String(i + 1).padStart(2, '0')}</span>
+                <span className="min-w-0 flex-1">
+                  <span
+                    className="block truncate text-[15px] transition-colors"
+                    style={{ color: undefined }}
+                  >
+                    <span className="group-hover:text-[color:var(--hl)]" style={{ ['--hl' as string]: accent }}>
+                      {t.title}
+                    </span>
+                  </span>
+                  {t.date && <span className="mt-0.5 block font-mono text-[11px] text-chrome-300">{fmtDate(t.date)}</span>}
+                </span>
+                <span className="shrink-0 font-mono text-[11px] text-chrome-300">{fmtDuration(t.durationSec)}</span>
+                <span className="shrink-0 text-chrome-400 transition-transform duration-300 group-hover:translate-x-1">↗</span>
+              </a>
+            </Reveal>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
+
+/* -------------------------------------------------------------------------- */
+
+/** Cross-roster feed used on the home page. */
+export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
+  if (!tracks.length) return null;
+
+  return (
+    <section className="border-b border-white/10">
+      <div className="shell py-20 lg:py-28">
+        <Reveal>
+          <div className="mb-12 flex flex-wrap items-end justify-between gap-6">
+            <div>
+              <span className="mb-4 flex items-center gap-2.5">
+                <span className="h-2 w-2 animate-flicker accent-bg" />
+                <span className="label">Live feed</span>
+              </span>
+              <h2 className="display text-4xl leading-none sm:text-5xl">
+                Fresh from
+                <br />
+                the roster
+              </h2>
+            </div>
+            <p className="max-w-xs text-sm leading-relaxed text-chrome-400">
+              Pulled straight from the artists' SoundCloud feeds. This list updates itself — nothing
+              here was typed by hand.
+            </p>
+          </div>
+        </Reveal>
+
+        <ul className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+          {tracks.map((t, i) => (
+            <Reveal as="li" key={t.id} delay={(i % 4) * 60} className="bg-ink">
+              <a
+                href={t.url}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="group relative flex h-full flex-col justify-between gap-8 p-6 transition-colors hover:bg-ink-700"
+              >
+                <span
+                  className="absolute inset-x-0 top-0 h-[3px] origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"
+                  style={{ background: t.accent }}
+                  aria-hidden="true"
+                />
+                <span className="label" style={{ color: t.accent }}>
+                  {t.artistName}
+                </span>
+                <span>
+                  <span className="block text-lg leading-snug">{t.title}</span>
+                  <span className="mt-2 flex items-center gap-3 font-mono text-[11px] text-chrome-300">
+                    {t.date && <span>{fmtDate(t.date)}</span>}
+                    {t.durationSec && <span>{fmtDuration(t.durationSec)}</span>}
+                  </span>
+                </span>
+              </a>
+            </Reveal>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}

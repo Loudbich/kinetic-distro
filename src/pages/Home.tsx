@@ -1,0 +1,302 @@
+import { Link } from 'react-router-dom';
+import { artists, services, site } from '../content/site';
+import { allReleases, latestTracks } from '../content/catalog';
+import { LabelTrackFeed } from '../components/TrackFeed';
+import Cover from '../components/Cover';
+import Marquee from '../components/Marquee';
+import Reveal from '../components/Reveal';
+import Seo from '../components/Seo';
+import { homeSeo } from '../lib/seo';
+
+const fmtDate = (iso: string) =>
+  new Date(iso).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
+
+export default function Home() {
+  const featured = allReleases.find((r) => r.featured) ?? allReleases[0];
+  const featuredArtist = artists.find((a) => a.slug === featured.artistSlugs[0]);
+  const latest = allReleases.slice(0, 5);
+  const feed = latestTracks(8);
+
+  return (
+    <>
+      <Seo route={homeSeo()} />
+
+      {/* ---------------------------------------------------------------- HERO */}
+      <section className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden pt-[68px] noise">
+        <div className="pointer-events-none absolute inset-0 grid-lines" aria-hidden="true" />
+        <div
+          className="pointer-events-none absolute -right-[10%] top-[8%] h-[46vw] w-[46vw] rounded-full opacity-[0.14] blur-[120px]"
+          style={{ background: 'var(--accent)' }}
+          aria-hidden="true"
+        />
+
+        <div className="shell relative flex flex-1 flex-col justify-center pb-10 pt-16">
+          <Reveal>
+            <div className="mb-10 flex flex-wrap items-center gap-x-5 gap-y-2">
+              <span className="flex items-center gap-2.5">
+                <span className="h-2 w-2 animate-flicker accent-bg" />
+                <span className="label">Transmitting from {site.location}</span>
+              </span>
+              <span className="label hidden sm:inline">Est. {site.founded}</span>
+              <span className="label hidden sm:inline">{artists.length} projects</span>
+            </div>
+          </Reveal>
+
+          <Reveal delay={90}>
+            <h1 className="display text-[15.5vw] leading-[0.8] tracking-tightest">
+              Kinetic
+              <br />
+              Distro<span className="accent-text">.</span>
+            </h1>
+          </Reveal>
+
+          <Reveal delay={200}>
+            <div className="mt-12 grid gap-10 border-t border-white/10 pt-10 lg:grid-cols-12">
+              <p className="text-balance text-xl leading-snug lg:col-span-6 lg:text-2xl">
+                An independent label and creative distribution platform for artists who arrive with a
+                whole world, not just a track.
+              </p>
+              <div className="lg:col-span-4 lg:col-start-8">
+                <p className="text-chrome">{site.manifestoLines[0]}</p>
+                <div className="mt-7 flex flex-wrap gap-3">
+                  <Link to="/roster/" className="btn-signal">
+                    See the roster
+                  </Link>
+                  <Link to="/demos/" className="btn-ghost">
+                    Send a demo
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+
+        <Marquee
+          items={artists.map((a) => a.name)}
+          className="display border-t border-white/10 py-4 text-2xl text-white/25 sm:text-[2rem]"
+        />
+      </section>
+
+      {/* ------------------------------------------------- FEATURED RELEASE */}
+      <section className="border-b border-white/10 bg-ink-800">
+        <div className="shell py-20 lg:py-28">
+          <Reveal>
+            <div className="mb-12 flex items-end justify-between gap-6">
+              <p className="label">Latest transmission</p>
+              <Link to="/releases/" className="label link-underline hover:!text-paper">
+                All releases →
+              </Link>
+            </div>
+          </Reveal>
+
+          <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+            <Reveal className="lg:col-span-6" delay={60}>
+              <Link to={`/releases/${featured.slug}/`} className="group block">
+                <Cover
+                  seed={featured.slug}
+                  accent={featuredArtist?.accent ?? '#FF4D12'}
+                  label={`${featured.artistDisplay} — ${featured.title}`}
+                  image={featured.image}
+                  className="aspect-square w-full border border-white/10"
+                />
+              </Link>
+            </Reveal>
+
+            <Reveal className="flex flex-col justify-center lg:col-span-6" delay={140}>
+              <p className="label mb-5">
+                {featured.catalog} · {featured.type} · {fmtDate(featured.date)}
+              </p>
+              <h2 className="display text-5xl leading-[0.9] sm:text-6xl lg:text-7xl">{featured.title}</h2>
+              <p className="mt-5 font-mono text-sm text-chrome">{featured.artistDisplay}</p>
+              <p className="mt-8 max-w-lg text-lg leading-relaxed text-chrome">{featured.blurb}</p>
+
+              {featured.tracklist && (
+                <ol className="mt-10 grid max-w-lg grid-cols-1 gap-x-10 sm:grid-cols-2">
+                  {featured.tracklist.map((t, i) => (
+                    <li
+                      key={t}
+                      className="flex items-baseline gap-3 border-b border-white/10 py-2.5 font-mono text-[13px] text-chrome"
+                    >
+                      <span className="text-chrome-300">{String(i + 1).padStart(2, '0')}</span>
+                      <span className="text-paper/90">{t}</span>
+                    </li>
+                  ))}
+                </ol>
+              )}
+
+              <div className="mt-10 flex flex-wrap gap-3">
+                <a href={featured.listenUrl} target="_blank" rel="noreferrer noopener" className="btn-signal">
+                  Listen now ↗
+                </a>
+                <Link to={`/releases/${featured.slug}/`} className="btn-ghost">
+                  Release details
+                </Link>
+              </div>
+            </Reveal>
+          </div>
+        </div>
+      </section>
+
+      <LabelTrackFeed tracks={feed} />
+
+      {/* ------------------------------------------------------- MANIFESTO */}
+      <section className="border-b border-white/10">
+        <div className="shell py-20 lg:py-28">
+          <Reveal>
+            <p className="label mb-12">What we are</p>
+          </Reveal>
+          <div className="grid gap-x-16 gap-y-12 lg:grid-cols-3">
+            {site.manifestoLines.map((line, i) => (
+              <Reveal key={line} delay={i * 90}>
+                <p className="label mb-6 accent-text">0{i + 1}</p>
+                <p className="display-tight text-balance text-2xl leading-tight sm:text-3xl">{line}</p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ----------------------------------------------------------- ROSTER */}
+      <section className="border-b border-white/10 bg-ink-800">
+        <div className="shell py-20 lg:py-28">
+          <Reveal>
+            <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
+              <div>
+                <p className="label mb-6">The roster</p>
+                <h2 className="display text-5xl leading-none sm:text-6xl lg:text-7xl">
+                  {artists.length} distinct
+                  <br />
+                  sonic universes
+                </h2>
+              </div>
+              <Link to="/roster/" className="label link-underline hover:!text-paper">
+                Full roster →
+              </Link>
+            </div>
+          </Reveal>
+
+          <ul className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
+            {artists.map((a, i) => (
+              <Reveal as="li" key={a.slug} delay={(i % 4) * 70} className="bg-ink-800">
+                <Link
+                  to={`/roster/${a.slug}/`}
+                  className="group relative flex h-full flex-col justify-between gap-10 p-7 transition-colors duration-500 hover:bg-ink-700"
+                  style={{ ['--accent' as string]: a.accent }}
+                >
+                  <span
+                    className="absolute inset-x-0 top-0 h-[3px] origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"
+                    style={{ background: a.accent }}
+                    aria-hidden="true"
+                  />
+                  <span className="label">{a.genre}</span>
+                  <span>
+                    <span className="display-tight block text-2xl leading-tight transition-colors duration-300 group-hover:text-[color:var(--accent)] sm:text-[1.75rem]">
+                      {a.name}
+                    </span>
+                    <span className="mt-3 block text-sm leading-snug text-chrome-400">{a.tagline}</span>
+                  </span>
+                </Link>
+              </Reveal>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* --------------------------------------------------------- RELEASES */}
+      <section className="border-b border-white/10">
+        <div className="shell py-20 lg:py-28">
+          <Reveal>
+            <p className="label mb-12">Recent catalogue</p>
+          </Reveal>
+
+          <ul>
+            {latest.map((r, i) => {
+              const artist = artists.find((a) => a.slug === r.artistSlugs[0]);
+              return (
+                <Reveal as="li" key={r.slug} delay={i * 60}>
+                  <Link
+                    to={`/releases/${r.slug}/`}
+                    className="group grid grid-cols-12 items-center gap-4 border-b border-white/10 py-6 transition-colors hover:bg-white/[0.03] sm:py-7"
+                  >
+                    <span className="label col-span-3 sm:col-span-2">{r.catalog}</span>
+                    <span className="col-span-9 sm:col-span-4">
+                      <span
+                        className="display-tight block text-xl transition-colors sm:text-2xl"
+                        style={{ color: undefined }}
+                      >
+                        <span className="group-hover:text-[color:var(--accent)] transition-colors" style={{ ['--accent' as string]: artist?.accent }}>
+                          {r.title}
+                        </span>
+                      </span>
+                    </span>
+                    <span className="col-span-8 font-mono text-[13px] text-chrome sm:col-span-3">
+                      {r.artistDisplay}
+                    </span>
+                    <span className="col-span-4 text-right font-mono text-[13px] text-chrome-400 sm:col-span-2 sm:text-left">
+                      {fmtDate(r.date)}
+                    </span>
+                    <span className="hidden justify-end text-chrome-400 transition-transform duration-300 group-hover:translate-x-1 sm:col-span-1 sm:flex">
+                      →
+                    </span>
+                  </Link>
+                </Reveal>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+
+      {/* --------------------------------------------------------- SERVICES */}
+      <section className="border-b border-white/10 bg-ink-800">
+        <div className="shell py-20 lg:py-28">
+          <Reveal>
+            <div className="mb-14 flex flex-wrap items-end justify-between gap-6">
+              <h2 className="display text-balance text-4xl leading-none sm:text-5xl lg:text-6xl">
+                More than a<br />
+                distribution pipe
+              </h2>
+              <Link to="/distribution/" className="label link-underline hover:!text-paper">
+                What we do →
+              </Link>
+            </div>
+          </Reveal>
+          <div className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+            {services.map((s, i) => (
+              <Reveal key={s.id} delay={i * 70} className="bg-ink-800 p-7">
+                <p className="label accent-text mb-6">{s.id}</p>
+                <h3 className="display-tight text-xl leading-tight">{s.title}</h3>
+                <p className="mt-4 text-sm leading-relaxed text-chrome-400">{s.summary}</p>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* -------------------------------------------------------------- CTA */}
+      <section className="relative overflow-hidden">
+        <div className="shell py-24 text-center lg:py-32">
+          <Reveal>
+            <p className="label mb-8">Open call</p>
+            <h2 className="display mx-auto max-w-4xl text-balance text-5xl leading-[0.9] sm:text-6xl lg:text-8xl">
+              Show us the
+              <br />
+              whole world<span className="accent-text">.</span>
+            </h2>
+            <p className="mx-auto mt-8 max-w-xl text-lg text-chrome">
+              We sign concepts, not singles. If your project has a universe behind it, we want to hear
+              it.
+            </p>
+            <div className="mt-10 flex flex-wrap justify-center gap-3">
+              <Link to="/demos/" className="btn-signal">
+                Submit a demo
+              </Link>
+              <Link to="/contact/" className="btn-ghost">
+                Get in touch
+              </Link>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+    </>
+  );
+}

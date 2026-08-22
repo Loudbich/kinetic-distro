@@ -1,0 +1,184 @@
+/* Self-hosted variable fonts — no third-party requests (GDPR/CNIL friendly). */
+@import '@fontsource-variable/archivo/wdth.css';
+@import '@fontsource-variable/jetbrains-mono/wght.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --accent: #ff4d12;
+    --accent-rgb: 255, 77, 18;
+  }
+
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-paper font-sans;
+    font-stretch: 100%;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: #08090a;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #08090a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2f35;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--accent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* ---- Typography system ---- */
+  .display {
+    font-family: 'Archivo Variable', 'Archivo', 'Arial Black', sans-serif;
+    font-stretch: 120%;
+    font-weight: 800;
+    letter-spacing: -0.035em;
+    line-height: 0.86;
+    text-transform: uppercase;
+  }
+
+  .display-tight {
+    font-family: 'Archivo Variable', 'Archivo', 'Arial Black', sans-serif;
+    font-stretch: 78%;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 0.94;
+    text-transform: uppercase;
+  }
+
+  .label {
+    @apply font-mono text-[11px] uppercase tracking-kinetic text-chrome-400;
+  }
+
+  /* Scroll reveal — hidden only when JS is running (see index.html inline script),
+     so crawlers and no-JS readers always get fully visible content. */
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(26px);
+    transition:
+      opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms),
+      transform 0.8s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0ms);
+  }
+  .js .reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  .rule {
+    @apply border-t border-white/10;
+  }
+
+  /* ---- Layout ---- */
+  .shell {
+    @apply mx-auto w-full max-w-grid px-5 sm:px-8 lg:px-12;
+  }
+
+  /* ---- Surfaces ---- */
+  .grid-lines {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 25% 100%;
+  }
+
+  .noise {
+    position: relative;
+  }
+  .noise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.32'/%3E%3C/svg%3E");
+  }
+
+  /* ---- Interactive ---- */
+  .btn {
+    @apply inline-flex items-center justify-center gap-3 font-mono text-[11px] uppercase tracking-kinetic
+           px-6 py-4 transition-all duration-300 border;
+  }
+  .btn-signal {
+    @apply btn border-transparent text-ink;
+    background: var(--accent);
+  }
+  .btn-signal:hover {
+    filter: brightness(1.14);
+    transform: translateY(-2px);
+  }
+  .btn-ghost {
+    @apply btn border-white/20 text-paper hover:border-white/60 hover:bg-white/5;
+  }
+
+  .link-underline {
+    background-image: linear-gradient(var(--accent), var(--accent));
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .link-underline:hover {
+    background-size: 100% 1px;
+  }
+
+  .accent-text {
+    color: var(--accent);
+  }
+  .accent-bg {
+    background-color: var(--accent);
+  }
+  .accent-border {
+    border-color: var(--accent);
+  }
+}
+
+@layer utilities {
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

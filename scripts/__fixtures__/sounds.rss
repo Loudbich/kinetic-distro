@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Broken Shaman</title>
+    <link>https://soundcloud.com/broken_shaman</link>
+    <description><![CDATA[The ritual never ended. It only changed form.]]></description>
+    <itunes:author>Broken Shaman</itunes:author>
+    <itunes:image href="https://i1.sndcdn.com/avatars-000000000-abcdef-original.jpg"/>
+    <item>
+      <title><![CDATA[Chrome Pulse]]></title>
+      <link>https://soundcloud.com/broken_shaman/chrome-pulse</link>
+      <pubDate>Tue, 18 Aug 2026 09:12:00 +0000</pubDate>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/1234567890</guid>
+      <itunes:duration>03:41</itunes:duration>
+      <itunes:image href="https://i1.sndcdn.com/artworks-111-large.jpg"/>
+      <enclosure url="https://feeds.soundcloud.com/stream/1234567890-broken-shaman-chrome-pulse.mp3" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Ghost Interface (feat. Jack &amp; Razor)</title>
+      <link>https://soundcloud.com/broken_shaman/ghost-interface</link>
+      <pubDate>Mon, 03 Aug 2026 18:00:00 +0000</pubDate>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/999</guid>
+      <itunes:duration>1:02:07</itunes:duration>
+      <enclosure url="https://feeds.soundcloud.com/stream/999-ghost.mp3" length="0" type="audio/mpeg"/>
+    </item>
+    <item>
+      <title>Sur&#233;veillance Bloom</title>
+      <link>https://soundcloud.com/broken_shaman/surveillance-bloom</link>
+      <pubDate>Sat, 22 Aug 2026 07:30:00 +0000</pubDate>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/555</guid>
+      <itunes:duration>221</itunes:duration>
+      <itunes:image href="https://i1.sndcdn.com/artworks-555-t67x67.png"/>
+      <enclosure url="https://feeds.soundcloud.com/stream/555-bloom.mp3" length="0" type="audio/mpeg"/>
+    </item>
+  </channel>
+</rss>
