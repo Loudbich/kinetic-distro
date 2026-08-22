@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && npm run build:client && npm run build:ssr && npm run prerender",
+    "build": "npm run assets && tsc -b && npm run build:client && npm run build:ssr && npm run prerender",
     "lint": "oxlint",
     "preview": "vite preview",
     "sync": "node scripts/sync-soundcloud.mjs",
+    "assets": "node scripts/sync-assets.mjs",
+    "attribution": "node scripts/build-attribution.mjs",
     "resolve": "node scripts/resolve-user-id.mjs",
     "test": "node scripts/test-parsers.mjs",
     "build:client": "vite build",

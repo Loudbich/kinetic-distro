@@ -13,9 +13,11 @@ Stack : **Vite 8 + React 19 + TypeScript + Tailwind CSS 3 + React Router 7**
 ```bash
 npm install
 npm run dev        # http://localhost:5173
-npm run build      # typecheck, compile, pré-rend 25 pages HTML, génère le sitemap
+npm run build      # artwork, typecheck, compile, pré-rend 82 pages HTML, sitemap
 npm run preview:static  # sert dist/ comme le fera la prod (à utiliser pour vérifier)
 npm run audit      # audit SEO du dist/ construit
+npm run sync       # récupère le catalogue depuis SoundCloud
+npm run assets     # copie assets/ vers public/ et écrit le manifeste d'images
 npm test           # tests hors-ligne des parsers de synchro
 ```
 
@@ -33,6 +35,7 @@ Aucun composant n'a besoin d'être modifié pour ajouter un artiste, une sortie 
 |---|---|
 | `site` | Nom, emails, liens réseaux, manifesto, année de création |
 | `artists[]` | Le roster complet — une entrée = une page `/roster/<slug>` créée automatiquement |
+| `attribution.ts` | À qui appartient chaque disque publié sur le compte du label (voir §9) |
 | `releases[]` | Le catalogue — une entrée = une page `/releases/<slug>` créée automatiquement |
 | `services[]` | Les 4 blocs de la page Distribution (repris en teaser sur la home) |
 | `nav[]` | Le menu principal (header + footer + drawer mobile) |
@@ -83,13 +86,32 @@ Tant qu'aucun visuel réel n'est fourni, le composant `src/components/Cover.tsx`
 **pochette procédurale déterministe** : le même slug produit toujours exactement la même image,
 construite à partir de la couleur d'accent de l'artiste. Cinq compositions différentes.
 
-Pour passer aux vraies pochettes :
+Pour passer aux vraies pochettes, **dépose simplement le fichier dans `assets/`** :
 
-1. Déposer le fichier dans `public/covers/` (carré, 1400 × 1400 px minimum, JPG ou WebP).
-2. Ajouter `image: '/covers/kd-006.jpg'` sur la sortie concernée dans `site.ts`.
+```
+assets/covers/<Artiste>/<Artiste> - <Titre du disque>.webp
+assets/artists/<Artiste>.webp
+```
 
-Le composant bascule automatiquement sur l'image réelle. Même logique pour les portraits
-d'artistes via `public/artists/` et le champ `image` sur l'artiste.
+C'est tout. `npm run build` lance `npm run assets`, qui normalise les noms
+(minuscules, tirets, accents retirés), copie les fichiers dans `public/covers/` et
+`public/artists/`, et écrit `src/content/covers.generated.json`. Le catalogue rattache
+l'image au disque **en comparant les titres**, donc rien à modifier dans `site.ts`.
+
+Deux règles à connaître :
+
+- **Le titre du fichier doit correspondre au titre du disque.** L'appariement tolère la
+  casse, les accents et la ponctuation, mais pas une faute de frappe. Toute image non
+  rattachée est signalée au build sans le faire échouer :
+  `⚠ 1 cover(s) match no record`.
+- **`assets/` est la source, `public/covers` et `public/artists` sont générés** et
+  ignorés par git. Ne dépose rien directement dans `public/`, ce serait écrasé.
+
+Une pochette fournie à la main l'emporte toujours sur celle de SoundCloud (limitée à
+500 px). À défaut d'image, la pochette générative prend le relais.
+
+Formats acceptés : `.webp`, `.avif`, `.jpg`, `.png`. Préfère le WebP carré en 1400 px —
+le PNG passe, mais pèse dix fois plus lourd pour un rendu identique.
 
 ---
 
@@ -121,7 +143,7 @@ Classes utilitaires maison dans `src/index.css` : `.display`, `.display-tight`, 
 
 ### Le site est pré-rendu, pas un SPA aveugle
 
-`npm run build` génère **25 vrais fichiers HTML**, un par URL, chacun avec son propre
+`npm run build` génère **82 vrais fichiers HTML**, un par URL, chacun avec son propre
 `<title>`, sa meta description, son canonical, ses balises Open Graph et son JSON-LD —
 plus le corps de page entièrement rendu.
 
@@ -149,7 +171,7 @@ pré-rendu.)*
 ### Le graphe d'entités
 
 Chaque page porte un `@graph` schema.org dont les entités se référencent par `@id` stable
-plutôt que d'être dupliquées. **106 entités uniques, 286 références, 0 référence orpheline.**
+plutôt que d'être dupliquées. **546 entités uniques, 1599 références, 0 référence orpheline.**
 
 | Type de page | Entités déclarées |
 |---|---|
@@ -211,7 +233,9 @@ le déploiement** au lieu de passer inaperçue.
 - `robots.txt` autorise explicitement GPTBot, PerplexityBot et ClaudeBot — le balisage est
   fait pour eux aussi.
 - URLs propres, en anglais, sans paramètre, stables : `/roster/<slug>`, `/releases/<slug>`.
-- Bundle : ~96 kB gzip JS, ~9 kB gzip CSS. Polices woff2 variables auto-hébergées.
+- Bundle : ~143 kB gzip JS, ~9 kB gzip CSS. Polices woff2 variables auto-hébergées.
+  Le catalogue synchronisé est volontairement élagué avant d'entrer dans le bundle
+  (12 titres par artiste, playlists miroirs retirées) : sans cela il pesait 185 kB.
 - Le HTML pré-rendu s'affiche avant même que le JS ne charge → LCP très bas.
 - Accessibilité : skip link, focus visible, `prefers-reduced-motion`, contrastes AA,
   navigation clavier, `aria-label` sur les contrôles. Les animations d'apparition sont
@@ -361,8 +385,10 @@ src/
 ├── content/
 │   ├── site.ts         ← TOUT LE CONTENU CURATÉ
 │   ├── sources.ts      profils SoundCloud + userId de chaque artiste
+│   ├── attribution.ts  ← crédits des disques hébergés par le label (§9)
 │   ├── catalog.ts      fusion curaté + synchronisé
-│   └── catalog.generated.json   ← écrit par npm run sync, ne pas éditer
+│   ├── catalog.generated.json   ← écrit par npm run sync, ne pas éditer
+│   └── covers.generated.json    ← écrit par npm run assets, ne pas éditer
 ├── lib/
 │   ├── seo.ts          ← LE GRAPHE D'ENTITÉS + les metas par route
 │   └── format.ts
@@ -374,16 +400,18 @@ src/
 └── main.tsx            hydratation
 
 scripts/
-├── prerender.mjs         génère les 25 pages HTML + le sitemap
+├── prerender.mjs         génère les 82 pages HTML + le sitemap
 ├── audit-seo.mjs         audit SEO du dist/ construit
 ├── serve-static.mjs      serveur local fidèle à la prod
 ├── sync-soundcloud.mjs   la synchro
+├── sync-assets.mjs       assets/ → public/ + manifeste d'images
+├── build-attribution.mjs (re)génère le squelette de attribution.ts
 ├── resolve-user-id.mjs   résout un profil → userId
-├── test-parsers.mjs      15 tests hors-ligne
-└── lib/                  parsers RSS + playlists
+├── test-parsers.mjs      25 tests hors-ligne
+└── lib/                  parsers RSS, api-v2, attribution
 
 .github/workflows/
-└── sync-and-deploy.yml   job quotidien : test → sync → commit → build → deploy
+└── deploy.yml            job quotidien : test → sync → commit → build → audit → deploy
 ```
 
 
@@ -411,11 +439,19 @@ https://feeds.soundcloud.com/users/soundcloud:users:<userId>/sounds.rss
 ```
 
 C'est la partie **stable** du système : c'est le flux podcast officiel de SoundCloud,
-il ne demande ni clé d'API ni compte développeur (SoundCloud a fermé les inscriptions
-à son API depuis des années — d'où ce choix). Les **playlists/albums** ne sont pas dans
-le RSS : elles sont lues sur la page `/sets` du profil, ce qui est la partie **fragile**
-du système. Si SoundCloud change son HTML, les albums ne remontent plus mais les titres
-continuent de se synchroniser normalement.
+il ne demande ni clé d'API ni compte développeur. Il ne contient que des titres.
+
+Les **albums** viennent d'ailleurs. Historiquement ils étaient lus dans le HTML de la page
+`/sets` du profil ; SoundCloud a cessé d'y injecter ses playlists, et cette méthode est
+**définitivement cassée** (elle ne remontait plus aucun album). Ils sont désormais lus sur
+`api-v2.soundcloud.com`, l'API interne du lecteur web, authentifiée par un `client_id`
+que `scripts/lib/scapi.mjs` récupère dans les bundles JS du lecteur — exactement comme le
+lecteur lui-même. Aucune donnée non publique n'est demandée.
+
+C'est la partie **fragile** : le `client_id` tourne et l'endpoint n'est pas documenté.
+L'ancien scraper reste branché en repli, et le script ne lève jamais d'exception — si
+tout échoue, les titres continuent de se synchroniser et le dernier catalogue valide est
+conservé.
 
 ### Les commandes
 
@@ -425,6 +461,47 @@ npm run sync -- --dry        # simule, n'écrit rien
 npm run sync -- --tracks     # titres uniquement (ignore les albums, 100 % fiable)
 npm run sync -- --strict     # code de sortie 1 si un flux échoue (utilisé par le job auto)
 npm test                     # teste les parsers hors-ligne (15 tests, aucun réseau)
+```
+
+### À qui appartient un disque
+
+Le profil `grafenbergmusik` n'est **pas** celui de l'artiste Grafenberg : c'est le compte
+du label (son pseudo SoundCloud est « Kinetic Distro »), et il héberge une grande partie
+du catalogue. Créditer un disque au profil qui l'héberge rangerait donc la moitié du
+roster sous Grafenberg.
+
+Le label double chaque disque qu'il héberge d'une playlist vitrine nommée
+`Artiste - Titre [FULL ALBUM]`. C'est ce préfixe qui sert de crédit — il en résout la
+grande majorité tout seul. Deux garde-fous :
+
+- Un préfixe n'est retenu **que s'il correspond à un artiste du roster**, sinon un titre
+  comme `RELICS FROM ANOTHER EARTH - VOL. 2` serait coupé en deux.
+- Les playlists vitrines qui dupliquent un album déjà présent sur le profil de l'artiste
+  sont détectées et retirées (43 sur 50), sinon la moitié du catalogue apparaîtrait
+  en double.
+
+Tout ça est calculé **à la synchro**, pas dans le navigateur, et inscrit dans le fichier
+généré. Ce que la synchro n'arrive pas à trancher est signalé :
+
+```
+[sync] ⚠  no credit for "Chaos, I bleed Ep" — add it to src/content/attribution.ts
+```
+
+`src/content/attribution.ts` est **écrit à la main** et l'emporte toujours :
+
+```ts
+{ id: '2246...', title: 'Chaos, I bleed Ep', artistSlugs: ['grafenberg'] },  // crédit
+{ id: '2251...', title: 'Kinetic Distro Essentials Vol. I', artistSlugs: null }, // masqué
+```
+
+L'`id` est celui de SoundCloud : il ne change pas si le disque est renommé. Un disque sans
+entrée garde le crédit déduit automatiquement — **une nouvelle sortie n'oblige donc pas à
+toucher ce fichier**.
+
+Pour repartir de zéro (écrase les modifications manuelles) :
+
+```bash
+node scripts/build-attribution.mjs --write
 ```
 
 ### Règle de priorité
@@ -469,11 +546,9 @@ il log l'erreur, garde le dernier fichier généré valide et sort en code 0. Le
 se construire avec le contenu curaté. Le fichier n'est réécrit que si le contenu a réellement
 changé, pour éviter les commits vides quotidiens.
 
-> **À valider au premier lancement.** Mon environnement n'a pas accès à `soundcloud.com`, je
-> n'ai donc pas pu exécuter la synchro contre les vrais flux. Les parsers sont couverts par
-> 15 tests hors-ligne et le script complet a été validé de bout en bout contre un serveur
-> simulé, mais lance `npm run sync -- --dry` une première fois sur ta machine et vérifie que
-> les 8 profils remontent bien le bon nombre de titres avant de brancher l'automatisation.
+> **Validé en conditions réelles.** La synchro a été exécutée contre les vrais profils :
+> 8 sources, 645 titres, 73 disques après retrait des doublons. Les parsers restent
+> couverts par 25 tests hors-ligne (`npm test`), qui n'ouvrent aucune connexion.
 
 ---
 
@@ -486,7 +561,12 @@ des artistes — ce sont leurs propres textes. Restent à valider dans `src/cont
   date de sortie croissante.
 - La date de *No Saints, No Proof* (2026-03-01) est une estimation.
 - L'**année de création** du label (2024) et les liens Instagram / YouTube / Spotify.
-- **Love Cult** n'a pas de profil SoundCloud connu — sa fiche reste rédigée à la main et
-  n'est pas synchronisée. Ajoute-la dans `sources.ts` si un profil existe.
+- **Love Cult** et **Hollow Static** n'ont pas de profil SoundCloud propre — leurs fiches
+  sont rédigées à la main et leurs disques sont hébergés par le compte du label. Ajoute-les
+  dans `sources.ts` si un profil apparaît.
+- **Hollow Static** vient d'être ajouté au roster : bio et couleur d'accent (`#7C9EE0`)
+  sont reprises du texte de présentation du label, à relire.
+- Les **4 disques sans crédit automatique** listés par `npm run sync` attendent une
+  décision dans `src/content/attribution.ts` (voir §9).
 - Les **emails** utilisent maintenant `@kinetic-distro.com` — à créer chez ton registrar
   ou à rediriger, sinon les liens `mailto:` du site pointent dans le vide.

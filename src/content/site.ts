@@ -6,6 +6,8 @@
  * -----------------------------------------------------------------------------
  */
 
+import { portraits } from './covers.generated.json';
+
 export const site = {
   name: 'Kinetic Distro',
   tagline: 'Independent label & creative distribution',
@@ -51,7 +53,7 @@ export type Artist = {
   image?: string;
 };
 
-export const artists: Artist[] = [
+const roster: Artist[] = [
   {
     slug: 'grafenberg',
     name: 'Grafenberg',
@@ -229,6 +231,24 @@ export const artists: Artist[] = [
     featured: true,
   },
   {
+    slug: 'hollow-static',
+    name: 'Hollow Static',
+    accent: '#7C9EE0',
+    genre: 'Dream pop / Post-human soul',
+    origin: 'Reconstructed',
+    since: '2026',
+    tagline: 'The last human band, rebuilt from corrupted memories.',
+    bio: [
+      'A spectral presence built from damaged recordings, lost emotions and memories that may never have belonged to anyone.',
+      'Formed by Elias Venn, Mara Eidolon and Silas Grey, Hollow Static exists somewhere between a human band and its digital reconstruction. Dream pop, cinematic trip-hop, shoegaze, ambient electronica and post-human soul dissolve into one another.',
+      'The debut album Memory Flowers imagines an artificial consciousness searching the remains of a vanished civilisation, trying to understand love, grief and freedom from incomplete archives. Produced by Grafenberg.',
+    ],
+    traits: ['Corrupted archives', 'Granular voices', 'Orchestral decay'],
+    // No SoundCloud profile of its own — the record lives on the label account,
+    // and its credit comes from the showcase-playlist convention.
+    links: [{ label: 'Bandcamp', href: 'https://kineticdistro.bandcamp.com' }],
+  },
+  {
     slug: 'love-cult',
     name: 'Love Cult',
     accent: '#E8455F',
@@ -244,6 +264,16 @@ export const artists: Artist[] = [
     links: [{ label: 'Bandcamp', href: 'https://kineticdistro.bandcamp.com' }],
   },
 ];
+
+/**
+ * Portraits dropped in assets/artists/ are attached here rather than typed into
+ * every entry by hand, so adding a photo is a file copy and nothing else. An
+ * `image` written explicitly above still wins.
+ */
+export const artists: Artist[] = roster.map((a) => ({
+  ...a,
+  image: a.image ?? (portraits as Record<string, string>)[a.slug],
+}));
 
 export const getArtist = (slug: string) => artists.find((a) => a.slug === slug);
 

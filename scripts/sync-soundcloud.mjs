@@ -23,6 +23,8 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseSoundCloudRss } from './lib/rss.mjs';
 import { parsePlaylistsFromProfile } from './lib/playlists.mjs';
+import { resolveClientId, fetchUserSets, mapSet } from './lib/scapi.mjs';
+import { annotateCatalogue, readRoster } from './lib/attribution.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, '..');
@@ -78,22 +80,40 @@ function readSources() {
 
 /* -------------------------------------------------------------------------- */
 
-async function syncArtist(source) {
+/**
+ * Sets come from api-v2 when a client_id could be recovered, and from the old
+ * profile scraper otherwise. The scraper is kept purely as a fallback: as of
+ * the last check it returns nothing, because SoundCloud no longer ships
+ * playlists in the server-rendered page — but if api-v2 closes and the markup
+ * comes back, the sync keeps working without a code change.
+ */
+async function fetchSets(source, clientId) {
+  if (clientId) {
+    try {
+      const raw = await fetchUserSets(get, { userId: source.userId, clientId });
+      return raw.map(mapSet);
+    } catch (err) {
+      warn(`${source.slug}: api-v2 sets failed (${err.message}) — trying the profile page`);
+    }
+  }
+
+  try {
+    const html = await get(`https://soundcloud.com/${source.handle}/sets`);
+    return parsePlaylistsFromProfile(html);
+  } catch (err) {
+    warn(`${source.slug}: sets unavailable (${err.message}) — tracks still synced`);
+    return [];
+  }
+}
+
+async function syncArtist(source, clientId) {
   const rssUrl = `https://feeds.soundcloud.com/users/soundcloud:users:${source.userId}/sounds.rss`;
   const profileUrl = `https://soundcloud.com/${source.handle}`;
 
   const xml = await get(rssUrl);
   const { channel, tracks } = parseSoundCloudRss(xml);
 
-  let playlists = [];
-  if (!TRACKS_ONLY) {
-    try {
-      const html = await get(`${profileUrl}/sets`);
-      playlists = parsePlaylistsFromProfile(html);
-    } catch (err) {
-      warn(`${source.slug}: playlists unavailable (${err.message}) — tracks still synced`);
-    }
-  }
+  const playlists = TRACKS_ONLY ? [] : await fetchSets(source, clientId);
 
   return {
     slug: source.slug,
@@ -118,12 +138,17 @@ async function main() {
   const sources = readSources();
   log(`${sources.length} sources — ${DRY ? 'dry run' : 'writing ' + OUT.replace(root + '/', '')}`);
 
+  const clientId = TRACKS_ONLY ? null : await resolveClientId(get);
+  if (!TRACKS_ONLY) {
+    log(clientId ? 'api-v2 client_id resolved' : 'no client_id — falling back to the profile scraper');
+  }
+
   const results = [];
   const failures = [];
 
   for (const source of sources) {
     try {
-      const data = await syncArtist(source);
+      const data = await syncArtist(source, clientId);
       results.push(data);
       log(
         `${data.slug.padEnd(20)} ${String(data.trackCount).padStart(3)} tracks · ` +
@@ -140,14 +165,56 @@ async function main() {
     process.exit(STRICT ? 1 : 0);
   }
 
+  // Who each record is by — resolved here, at build time, so the browser bundle
+  // never carries the matching logic. See lib/attribution.mjs for the why.
+  const roster = readRoster(resolve(root, 'src/content/site.ts'));
+  const annotated = annotateCatalogue(
+    Object.fromEntries(results.map((a) => [a.slug, a])),
+    roster,
+  );
+
+  const sets = Object.values(annotated).flatMap((a) => a.playlists);
+  const unresolved = sets.filter((p) => p.creditSource === 'unresolved' && !p.isMirror);
+  log(
+    `credits — ${sets.filter((p) => !p.isMirror).length} records, ` +
+      `${sets.filter((p) => p.isMirror).length} label mirrors skipped, ` +
+      `${unresolved.length} unresolved`,
+  );
+  unresolved.forEach((p) => warn(`no credit for "${p.title}" — add it to src/content/attribution.ts`));
+
+  // The generated file is imported by the client bundle, so everything kept
+  // here is downloaded by every visitor. The site shows at most 10 tracks on an
+  // artist page and 2 per artist in the home feed, so a dozen is already more
+  // than any view can display — the other 630 were pure weight. `trackCount`
+  // still reports the real total.
+  const MAX_TRACKS = 12;
+  for (const artist of Object.values(annotated)) {
+    // Mirrors have done their job: they were only ever evidence for who a
+    // record is by, and that credit is now baked into the album itself. The
+    // site filters them out, so shipping them would be dead weight.
+    artist.playlists = artist.playlists.filter((p) => !p.isMirror);
+
+    artist.tracks = artist.tracks.slice(0, MAX_TRACKS).map(({ id, title, url, date, durationSec }) => ({
+      id,
+      title,
+      url,
+      date,
+      durationSec,
+      // `artwork` and `audio` are dropped: no view renders a per-track image,
+      // and playback happens on SoundCloud, not here.
+    }));
+  }
+
   const payload = {
     generatedAt: new Date().toISOString(),
-    source: 'soundcloud-rss',
+    source: 'soundcloud-rss + api-v2',
     artistCount: results.length,
+    // Totals describe the catalogue, not the trimmed file: trackCount is every
+    // track the artists have published, playlistCount every record kept.
     trackCount: results.reduce((n, a) => n + a.trackCount, 0),
-    playlistCount: results.reduce((n, a) => n + a.playlists.length, 0),
+    playlistCount: Object.values(annotated).reduce((n, a) => n + a.playlists.length, 0),
     failures,
-    artists: Object.fromEntries(results.map((a) => [a.slug, a])),
+    artists: annotated,
   };
 
   if (DRY) {
@@ -164,7 +231,7 @@ async function main() {
       log('no changes');
     } else {
       writeFileSync(OUT, next);
-      log(`written — ${payload.trackCount} tracks, ${payload.playlistCount} sets`);
+      log(`written — ${payload.playlistCount} records, ${payload.trackCount} tracks published`);
     }
   }
 

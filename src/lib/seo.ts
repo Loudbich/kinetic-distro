@@ -43,6 +43,17 @@ export const canonicalPath = (path: string) => {
 
 const abs = (path: string) => `${BASE_URL}${canonicalPath(path)}`;
 
+/**
+ * Absolute URL for a file, not a page.
+ *
+ * `abs` canonicalises to a trailing slash, which is right for routes and wrong
+ * for assets: `/artists/grafenberg.png/` is a 404, and a broken `image` is
+ * enough for a crawler to drop the whole entity. An already-absolute URL — a
+ * SoundCloud artwork, say — is passed through untouched.
+ */
+const assetUrl = (path: string) =>
+  /^https?:\/\//.test(path) ? path : `${BASE_URL}${path.startsWith('/') ? '' : '/'}${path}`;
+
 /* -------------------------------------------------------------------------- */
 /* Stable entity ids                                                           */
 /* -------------------------------------------------------------------------- */
@@ -144,7 +155,7 @@ export const artistEntity = (artist: Artist, { deep = false } = {}) => {
   }
 
   if (/^\d{4}$/.test(artist.since)) entity.foundingDate = artist.since;
-  if (artist.image) entity.image = abs(artist.image);
+  if (artist.image) entity.image = assetUrl(artist.image);
 
   if (deep && discography.length) {
     entity.album = discography.map((r) => ({ '@id': ID.album(r.slug) }));
@@ -187,7 +198,7 @@ export const albumEntity = (release: Release, { deep = false } = {}) => {
     inLanguage: 'en',
   };
 
-  if (release.image) entity.image = release.image.startsWith('http') ? release.image : abs(release.image);
+  if (release.image) entity.image = assetUrl(release.image);
   if (release.tracklist?.length) entity.numTracks = release.tracklist.length;
 
   if (deep && release.tracklist?.length) {
@@ -267,6 +278,25 @@ export type RouteSeo = {
 
 const HOME = { name: 'Home', path: '/' };
 
+/**
+ * Keeps a <title> inside the ~75 characters Google will actually render.
+ *
+ * Most of the catalogue is synced from SoundCloud, where a record can be called
+ * `The Hush Beneath the Static [Kinetic Resonance Remaster]`. Adding the artist
+ * and the label to that overflows, and an overflowing title is truncated by the
+ * search engine at whatever point it likes. Dropping the suffixes in order —
+ * label first, then artist — keeps the record's own name intact, which is the
+ * part a reader is scanning for.
+ */
+const fitTitle = (name: string, ...suffixes: string[]) => {
+  const MAX = 75;
+  for (let keep = suffixes.length; keep > 0; keep--) {
+    const candidate = [name, ...suffixes.slice(0, keep)].join(' — ');
+    if (candidate.length <= MAX) return candidate;
+  }
+  return name;
+};
+
 export function homeSeo(): RouteSeo {
   return {
     path: '/',
@@ -332,7 +362,7 @@ export function artistSeo(artist: Artist): RouteSeo {
 
   return {
     path,
-    title: `${artist.name} — ${artist.genre} on Kinetic Distro`,
+    title: fitTitle(artist.name, artist.genre, 'Kinetic Distro'),
     description: `${artist.tagline} ${artist.bio[0]}`.slice(0, 300),
     ogType: 'profile',
     image: artist.image,
@@ -393,7 +423,7 @@ export function releaseSeo(release: Release): RouteSeo {
 
   return {
     path,
-    title: `${release.title} — ${release.artistDisplay} | Kinetic Distro`,
+    title: fitTitle(release.title, release.artistDisplay, 'Kinetic Distro'),
     description: `${release.artistDisplay} — ${release.title} (${release.catalog}, ${release.date.slice(
       0,
       4,
