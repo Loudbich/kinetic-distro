@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { artists, getArtist } from '../content/site';
 import { allReleases, findRelease } from '../content/catalog';
 import Cover from '../components/Cover';
+import Player from '../components/Player';
 import Reveal from '../components/Reveal';
 import Seo from '../components/Seo';
 import { releaseSeo } from '../lib/seo';
@@ -98,14 +99,27 @@ export default function ReleasePage() {
                 ))}
               </dl>
 
-              <div className="mt-10 flex flex-wrap gap-3">
+              {/* streamUrl is the record's own SoundCloud set. listenUrl is not
+                  usable here: on hand-written entries it points at a profile or
+                  an artist's site, which would play the wrong thing. */}
+              {release.streamUrl && (
+                <Player
+                  url={release.streamUrl}
+                  title={release.title}
+                  accent={accent}
+                  variant="set"
+                  className="mt-10"
+                />
+              )}
+
+              <div className="mt-6 flex flex-wrap gap-3">
                 <a
                   href={release.listenUrl}
                   target="_blank"
                   rel="noreferrer noopener"
                   className="btn-signal"
                 >
-                  Listen ↗
+                  Open on SoundCloud ↗
                 </a>
                 <a
                   href="https://kineticdistro.bandcamp.com"

@@ -299,6 +299,12 @@ export type Release = {
    */
   notes?: string[];
   tracklist?: string[];
+  /**
+   * The record's own SoundCloud permalink, used by the on-page player. Filled
+   * from the sync — kept apart from `listenUrl`, which is where the buttons
+   * send people and may point at Bandcamp or an artist's own site.
+   */
+  streamUrl?: string;
   listenUrl: string;
   featured?: boolean;
   /** Optional: drop a file in /public/covers and reference it, e.g. "/covers/kd-006.jpg".

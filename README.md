@@ -144,10 +144,15 @@ Deux règles à connaître :
     pas le SVG dans les cartes).
   - `logo_seul.webp` — la marque seule. Utilisée dans l'en-tête et comme favicon.
 
-  Les deux fichiers sont fournis **détourés sur fond noir**. Ils sont affichés en
-  `mix-blend-mode: screen`, ce qui fait disparaître exactement le fond noir sur le fond
-  `#08090A` du site sans toucher au dégradé argenté. Ça ne tient que parce que le site est
-  sombre par construction — un fond clair exigerait des fichiers à fond transparent.
+  **La transparence est détectée au build**, pas supposée. Un fichier détouré est posé
+  tel quel ; un fichier livré sur fond noir est affiché en `mix-blend-mode: screen`, ce qui
+  fait disparaître exactement le fond sur le `#08090A` du site sans toucher au dégradé
+  argenté. Tu peux donc ré-exporter un logo en transparent : le rendu se corrige seul,
+  sans toucher au code. Les dimensions sont lues dans le fichier pour la même raison — un
+  ré-export à une autre taille ne peut pas laisser un ratio périmé dans le HTML.
+
+  Si plusieurs formats du même logo cohabitent (`Logo.png` et `logo.webp`), le script
+  choisit **le transparent d'abord, puis le plus léger**.
 
 Une pochette fournie à la main l'emporte toujours sur celle de SoundCloud (limitée à
 500 px). À défaut d'image, la pochette générative prend le relais.
@@ -397,6 +402,36 @@ Le projet reste portable : `deploy/apache/.htaccess` contient la configuration A
 équivalente (réécritures, gzip, cache immuable sur les assets hashés) pour un hébergement
 mutualisé type OVH. Il n'est pas copié dans `dist/` — déplace-le dans `public/` si tu en
 as besoin.
+
+---
+
+## 6bis. Écouter sur le site
+
+Le lecteur SoundCloud est intégré, mais **il ne se charge qu'au clic**.
+
+C'est un choix délibéré et cohérent avec le reste : les polices sont auto-hébergées pour
+éviter tout transfert d'IP vers un tiers, or un iframe SoundCloud posé sur chaque page
+transmettrait l'adresse IP de chaque visiteur et poserait ses cookies **avant que
+quiconque ait demandé à écouter**. Ici, rien ne contacte SoundCloud tant qu'on n'a pas
+appuyé sur lecture — et aucune page ne paie le coût d'un lecteur que personne n'utilise.
+
+| Où | Quoi |
+|---|---|
+| Page d'un disque | Le disque entier, avec sa tracklist (`variant="set"`) |
+| Flux d'un artiste | Chaque titre, lecture sur place |
+| Flux de la home | Chaque titre, lecture sur place |
+
+Un seul lecteur à la fois par flux : appuyer sur un second titre remplace le premier au
+lieu d'en empiler deux.
+
+**`streamUrl` et `listenUrl` sont deux choses différentes.** `listenUrl` est la
+destination des boutons — Bandcamp, le site de l'artiste, ce que tu veux. `streamUrl` est
+le permalien SoundCloud du disque, rempli automatiquement par la synchro, et c'est lui que
+le lecteur utilise. Sans cette séparation, le lecteur de *No Saints, No Proof* jouait le
+profil de l'artiste au lieu de l'album.
+
+Le lecteur ne s'affiche que si un `streamUrl` existe. Un disque absent de SoundCloud garde
+simplement ses liens sortants.
 
 ---
 

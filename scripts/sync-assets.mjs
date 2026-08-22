@@ -165,26 +165,132 @@ function syncCovers(titles) {
 }
 
 /**
+ * Whether an image carries an alpha channel.
+ *
+ * This decides how the logo is painted: a cut-out drops straight onto the page,
+ * while one matted on black needs `mix-blend-mode: screen` to dissolve the
+ * matte. Reading it from the file means re-exporting a logo with transparency
+ * fixes the rendering on its own, with no code change — and that a file only
+ * *believed* to be transparent cannot quietly ship a black rectangle.
+ *
+ * Unknown formats are reported as opaque, which is the safe assumption: the
+ * blend is harmless on artwork that has no matte to remove.
+ */
+function hasAlpha(path) {
+  const b = readFileSync(path);
+
+  // PNG: colour type 4 (grey+alpha) and 6 (RGBA) carry alpha; palette and
+  // truecolour images can declare transparency with a tRNS chunk instead.
+  if (b.length > 26 && b.toString('ascii', 1, 4) === 'PNG') {
+    const colorType = b[25];
+    if (colorType === 4 || colorType === 6) return true;
+
+    // Walk the chunk headers rather than searching the raw bytes: in a
+    // megabyte of compressed pixel data the four characters "tRNS" turn up by
+    // chance, and a plain buffer search reported an opaque logo as a cut-out.
+    for (let off = 8; off + 8 <= b.length; ) {
+      const length = b.readUInt32BE(off);
+      const type = b.toString('ascii', off + 4, off + 8);
+      if (type === 'tRNS') return true;
+      if (type === 'IDAT' || type === 'IEND') break; // tRNS always precedes IDAT
+      off += 12 + length;
+    }
+    return false;
+  }
+
+  // WebP: the extended (VP8X) header flags alpha; the lossless (VP8L) form
+  // carries its own alpha bit.
+  if (b.length > 30 && b.toString('ascii', 8, 12) === 'WEBP') {
+    const format = b.toString('ascii', 12, 16);
+    if (format === 'VP8X') return Boolean(b[20] & 0b0001_0000);
+    if (format === 'VP8L') return Boolean(b[24] & 0b0001_0000);
+    return false; // plain VP8 is always opaque
+  }
+
+  return false;
+}
+
+/**
+ * Intrinsic pixel size, so the markup can declare an aspect ratio instead of
+ * hardcoding one. Re-exporting a logo at another size then cannot introduce a
+ * layout shift that nobody thinks to look for.
+ *
+ * Returns null for anything it cannot read; the caller simply omits the hint.
+ */
+function imageSize(path) {
+  const b = readFileSync(path);
+
+  if (b.length > 24 && b.toString('ascii', 1, 4) === 'PNG') {
+    return { width: b.readUInt32BE(16), height: b.readUInt32BE(20) };
+  }
+
+  if (b.length > 30 && b.toString('ascii', 8, 12) === 'WEBP') {
+    const format = b.toString('ascii', 12, 16);
+    if (format === 'VP8X') {
+      return {
+        width: 1 + (b[24] | (b[25] << 8) | (b[26] << 16)),
+        height: 1 + (b[27] | (b[28] << 8) | (b[29] << 16)),
+      };
+    }
+    if (format === 'VP8 ') {
+      return { width: b.readUInt16LE(26) & 0x3fff, height: b.readUInt16LE(28) & 0x3fff };
+    }
+    if (format === 'VP8L') {
+      const bits = b.readUInt32LE(21);
+      return { width: (bits & 0x3fff) + 1, height: ((bits >> 14) & 0x3fff) + 1 };
+    }
+  }
+
+  return null;
+}
+
+/**
  * Brand files land at the root of the site, under their own name, because they
  * are referenced from the structured data and from share cards — URLs that
  * should stay put across redeploys rather than move with a content slug.
+ *
+ * The same logo often exists in several formats. They compete for one name, so
+ * the best one is chosen rather than whichever the filesystem happens to list
+ * last: transparency first, then the smaller file.
  */
 function syncBrand() {
   const manifest = {};
-  let copied = 0;
+  const opaque = [];
+  const best = new Map();
 
   for (const file of listFiles(join(SRC, 'brand'))) {
     if (file.isDirectory() || !IMAGE_EXT.has(extname(file.name).toLowerCase())) continue;
 
+    const path = join(SRC, 'brand', file.name);
     const stem = file.name.slice(0, -extname(file.name).length);
-    const target = `${slugify(stem)}${extname(file.name).toLowerCase()}`;
-    manifest[slugify(stem)] = `/${target}`;
+    const slug = slugify(stem);
+    const candidate = {
+      path,
+      name: file.name,
+      alpha: hasAlpha(path),
+      size: statSync(path).size,
+    };
 
-    if (!CHECK) copyFileSync(join(SRC, 'brand', file.name), join(PUBLIC, target));
-    copied++;
+    const held = best.get(slug);
+    if (!held || (candidate.alpha && !held.alpha) || (candidate.alpha === held.alpha && candidate.size < held.size)) {
+      best.set(slug, candidate);
+    }
   }
 
-  return { manifest, copied };
+  const sizes = {};
+
+  for (const [slug, file] of best) {
+    const target = `${slug}${extname(file.name).toLowerCase()}`;
+    manifest[slug] = `/${target}`;
+    if (!file.alpha) opaque.push(slug);
+
+    const size = imageSize(file.path);
+    if (size) sizes[slug] = size;
+
+    if (!CHECK) copyFileSync(file.path, join(PUBLIC, target));
+  }
+
+  return { manifest, opaque, sizes, copied: best.size, chosen: [...best.entries()] };
 }
 
 /**
@@ -262,6 +368,10 @@ log(
     `${CHECK ? ' — check only' : ' copied into public/'}`,
 );
 
+for (const [slug, file] of brand.chosen) {
+  log(`brand/${slug}: ${file.name} (${file.alpha ? 'transparent' : 'opaque, matte dissolved'}, ${Math.round(file.size / 1024)} kB)`);
+}
+
 if (portraits.unmatched.length) {
   warn(`${portraits.unmatched.length} portrait(s) match no artist in the roster — not copied:`);
   portraits.unmatched.forEach((f) => console.warn(`      ${f}`));
@@ -277,7 +387,15 @@ if (!CHECK) {
   writeFileSync(
     MANIFEST,
     JSON.stringify(
-      { covers: covers.manifest, portraits: portraits.manifest, brand: brand.manifest },
+      {
+        covers: covers.manifest,
+        portraits: portraits.manifest,
+        brand: brand.manifest,
+        /** Brand files with no alpha channel — these need the matte dissolved. */
+        brandOpaque: brand.opaque,
+        /** Intrinsic size per brand file, so the markup declares a real ratio. */
+        brandSize: brand.sizes,
+      },
       null,
       2,
     ) + '\n',

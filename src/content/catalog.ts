@@ -278,6 +278,7 @@ const derived: Release[] = mergePlaylists(
       notes,
       tracklist: playlist.tracklist?.length ? playlist.tracklist : undefined,
       listenUrl: playlist.url,
+      streamUrl: playlist.url,
       image: coverFor(playlist.title) ?? playlist.artwork ?? undefined,
     } satisfies Release;
   });
@@ -294,6 +295,10 @@ const curated: Release[] = releases.map((r) => ({
   // liner notes come from the record's SoundCloud description, so a release
   // note written once shows up in both places.
   notes: r.notes ?? toParagraphs(syncedByTitle.get(norm(r.title))?.description ?? ''),
+  // The hand-written listenUrl points wherever the label wants people sent —
+  // an artist's own site, a profile. The player needs the record itself, so it
+  // gets the matched SoundCloud set instead of guessing from that link.
+  streamUrl: r.streamUrl ?? syncedByTitle.get(norm(r.title))?.url,
 }));
 
 /** Everything the site should list: curated first, then anything new from SoundCloud. */

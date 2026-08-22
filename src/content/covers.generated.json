@@ -37,10 +37,25 @@
   },
   "portraits": {
     "broken-shaman": "/artists/broken-shaman.webp",
-    "grafenberg": "/artists/grafenberg.webp"
+    "chromabone": "/artists/chromabone.webp",
+    "grafenberg": "/artists/grafenberg.webp",
+    "hollow-static": "/artists/hollow-static.webp",
+    "love-cult": "/artists/love-cult.webp",
+    "nosfera-disco-club": "/artists/nosfera-disco-club.webp"
   },
   "brand": {
-    "logo": "/logo.webp",
-    "logo-seul": "/logo-seul.webp"
+    "logo": "/logo.png",
+    "logo-seul": "/logo-seul.png"
+  },
+  "brandOpaque": [],
+  "brandSize": {
+    "logo": {
+      "width": 1024,
+      "height": 559
+    },
+    "logo-seul": {
+      "width": 1254,
+      "height": 1254
+    }
   }
 }

@@ -1,17 +1,26 @@
 import brand from '../content/covers.generated.json';
 
 const assets = brand.brand as Record<string, string>;
+const opaque = new Set(brand.brandOpaque as string[]);
+const sizes = brand.brandSize as Record<string, { width: number; height: number }>;
+
+/** Intrinsic dimensions, read from the file at build time so a re-export at a
+ *  different size cannot leave the markup declaring a stale aspect ratio. */
+const dims = (name: string) => sizes[name] ?? undefined;
 
 /**
- * Both brand files are supplied matted on black. The site's ground is #08090A,
- * so dropping them in as-is leaves a visible black rectangle around the mark.
- * `screen` blending solves it exactly: black contributes nothing, so the matte
- * dissolves into whatever is behind it, while the silver artwork is untouched.
+ * A logo supplied matted on black leaves a visible rectangle on the site's
+ * #08090A ground. `screen` blending removes it exactly — black contributes
+ * nothing, so the matte dissolves while the silver artwork is untouched — but
+ * it is only applied where it is needed: the build reads the alpha channel and
+ * lists the files that lack one, so a proper cut-out is painted normally and
+ * re-exporting a logo with transparency needs no code change.
  *
- * This holds because the site is dark by design — it would need transparent
- * source files to survive a light background.
+ * The blend only works because the site is dark by design; a light background
+ * would need genuine transparency.
  */
-const dissolveMatte = { mixBlendMode: 'screen' as const };
+const paint = (name: string) =>
+  opaque.has(name) ? ({ mixBlendMode: 'screen' } as const) : undefined;
 
 type Props = { className?: string; withText?: boolean };
 
@@ -24,10 +33,10 @@ export function Mark({ className = 'h-7 w-7' }: Props) {
     <img
       src={assets['logo-seul']}
       alt=""
-      width={200}
-      height={200}
+      width={dims('logo-seul')?.width}
+      height={dims('logo-seul')?.height}
       className={className}
-      style={dissolveMatte}
+      style={paint('logo-seul')}
       aria-hidden="true"
     />
   );
@@ -61,10 +70,10 @@ export function FullLogo({ className = '' }: Props) {
     <img
       src={assets.logo}
       alt="Kinetic Distro — global audio network"
-      width={1024}
-      height={559}
+      width={dims('logo')?.width}
+      height={dims('logo')?.height}
       className={className}
-      style={dissolveMatte}
+      style={paint('logo')}
     />
   );
 }

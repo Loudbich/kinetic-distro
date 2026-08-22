@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import type { FeedTrack, SyncedTrack } from '../content/catalog';
 import { fmtDate } from '../lib/format';
+import Player from './Player';
 import Reveal from './Reveal';
 
 const fmtDuration = (sec: number | null) => {
@@ -8,6 +10,37 @@ const fmtDuration = (sec: number | null) => {
   const s = String(sec % 60).padStart(2, '0');
   return `${m}:${s}`;
 };
+
+/**
+ * A play control and the link out are separate elements on purpose: a button
+ * nested inside an anchor is invalid, and the two do different things. The link
+ * still opens SoundCloud, so the feed keeps working with JavaScript off — the
+ * button only ever adds the option of staying here.
+ */
+function PlayButton({ accent, label, onClick }: { accent: string; label: string; onClick: () => void }) {
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      aria-label={`Play ${label}`}
+      className="group/play relative flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/15 transition-colors hover:border-transparent"
+      style={{ ['--pa' as string]: accent }}
+    >
+      <span
+        className="flex h-full w-full items-center justify-center rounded-full opacity-0 transition-opacity group-hover/play:opacity-100"
+        style={{ background: accent }}
+        aria-hidden="true"
+      />
+      <svg
+        viewBox="0 0 24 24"
+        className="absolute h-3.5 w-3.5 fill-chrome transition-colors group-hover/play:fill-ink"
+        aria-hidden="true"
+      >
+        <path d="M8 5v14l11-7z" />
+      </svg>
+    </button>
+  );
+}
 
 /* -------------------------------------------------------------------------- */
 
@@ -19,6 +52,10 @@ type ArtistFeedProps = {
 
 /** Compact list used on an artist page — everything is already their colour. */
 export function ArtistTrackFeed({ tracks, accent, profileUrl }: ArtistFeedProps) {
+  // One at a time: a second press replaces the first player rather than leaving
+  // two of them loaded and audible.
+  const [playing, setPlaying] = useState<string | null>(null);
+
   if (!tracks.length) return null;
 
   return (
@@ -48,27 +85,36 @@ export function ArtistTrackFeed({ tracks, accent, profileUrl }: ArtistFeedProps)
         <ul className="grid gap-x-12 sm:grid-cols-2">
           {tracks.map((t, i) => (
             <Reveal as="li" key={t.id} delay={Math.min(i, 6) * 45}>
-              <a
-                href={t.url}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="group flex items-center gap-5 border-b border-white/10 py-4 transition-colors hover:bg-white/[0.03]"
-              >
-                <span className="label w-7 shrink-0">{String(i + 1).padStart(2, '0')}</span>
-                <span className="min-w-0 flex-1">
-                  <span
-                    className="block truncate text-[15px] transition-colors"
-                    style={{ color: undefined }}
-                  >
-                    <span className="group-hover:text-[color:var(--hl)]" style={{ ['--hl' as string]: accent }}>
-                      {t.title}
-                    </span>
+              {playing === t.id ? (
+                <div className="border-b border-white/10 py-4">
+                  <Player url={t.url} title={t.title} accent={accent} immediate />
+                </div>
+              ) : (
+                <div className="group flex items-center gap-4 border-b border-white/10 py-4 transition-colors hover:bg-white/[0.03]">
+                  <span className="relative flex items-center">
+                    <PlayButton accent={accent} label={t.title} onClick={() => setPlaying(t.id)} />
                   </span>
-                  {t.date && <span className="mt-0.5 block font-mono text-[11px] text-chrome-300">{fmtDate(t.date)}</span>}
-                </span>
-                <span className="shrink-0 font-mono text-[11px] text-chrome-300">{fmtDuration(t.durationSec)}</span>
-                <span className="shrink-0 text-chrome-400 transition-transform duration-300 group-hover:translate-x-1">↗</span>
-              </a>
+                  <span className="min-w-0 flex-1">
+                    <a
+                      href={t.url}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="block truncate text-[15px] transition-colors hover:text-[color:var(--hl)]"
+                      style={{ ['--hl' as string]: accent }}
+                    >
+                      {t.title}
+                    </a>
+                    {t.date && (
+                      <span className="mt-0.5 block font-mono text-[11px] text-chrome-300">
+                        {fmtDate(t.date)}
+                      </span>
+                    )}
+                  </span>
+                  <span className="shrink-0 font-mono text-[11px] text-chrome-300">
+                    {fmtDuration(t.durationSec)}
+                  </span>
+                </div>
+              )}
             </Reveal>
           ))}
         </ul>
@@ -81,6 +127,8 @@ export function ArtistTrackFeed({ tracks, accent, profileUrl }: ArtistFeedProps)
 
 /** Cross-roster feed used on the home page. */
 export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
+  const [playing, setPlaying] = useState<string | null>(null);
+
   if (!tracks.length) return null;
 
   return (
@@ -101,7 +149,7 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-chrome-400">
               Pulled straight from the artists' SoundCloud feeds. This list updates itself — nothing
-              here was typed by hand.
+              here was typed by hand. Press play to listen without leaving the page.
             </p>
           </div>
         </Reveal>
@@ -109,28 +157,42 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
         <ul className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
           {tracks.map((t, i) => (
             <Reveal as="li" key={t.id} delay={(i % 4) * 60} className="bg-ink">
-              <a
-                href={t.url}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="group relative flex h-full flex-col justify-between gap-8 p-6 transition-colors hover:bg-ink-700"
-              >
-                <span
-                  className="absolute inset-x-0 top-0 h-[3px] origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"
-                  style={{ background: t.accent }}
-                  aria-hidden="true"
-                />
-                <span className="label" style={{ color: t.accent }}>
-                  {t.artistName}
-                </span>
-                <span>
-                  <span className="block text-lg leading-snug">{t.title}</span>
-                  <span className="mt-2 flex items-center gap-3 font-mono text-[11px] text-chrome-300">
-                    {t.date && <span>{fmtDate(t.date)}</span>}
-                    {t.durationSec && <span>{fmtDuration(t.durationSec)}</span>}
+              {playing === t.id ? (
+                <div className="flex h-full items-center p-4">
+                  <Player url={t.url} title={t.title} accent={t.accent} immediate className="w-full" />
+                </div>
+              ) : (
+                <div className="group relative flex h-full flex-col justify-between gap-8 p-6 transition-colors hover:bg-ink-700">
+                  <span
+                    className="absolute inset-x-0 top-0 h-[3px] origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"
+                    style={{ background: t.accent }}
+                    aria-hidden="true"
+                  />
+                  <span className="flex items-start justify-between gap-4">
+                    <span className="label" style={{ color: t.accent }}>
+                      {t.artistName}
+                    </span>
+                    <span className="relative flex items-center">
+                      <PlayButton accent={t.accent} label={t.title} onClick={() => setPlaying(t.id)} />
+                    </span>
                   </span>
-                </span>
-              </a>
+                  <span>
+                    <a
+                      href={t.url}
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      className="block text-lg leading-snug transition-colors hover:text-[color:var(--hl)]"
+                      style={{ ['--hl' as string]: t.accent }}
+                    >
+                      {t.title}
+                    </a>
+                    <span className="mt-2 flex items-center gap-3 font-mono text-[11px] text-chrome-300">
+                      {t.date && <span>{fmtDate(t.date)}</span>}
+                      {t.durationSec && <span>{fmtDuration(t.durationSec)}</span>}
+                    </span>
+                  </span>
+                </div>
+              )}
             </Reveal>
           ))}
         </ul>

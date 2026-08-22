@@ -10,4 +10,4 @@ dist-ssr
 # Artwork copied out of assets/ at build time — assets/ is the source of truth.
 public/covers
 public/artists
-public/logo.webp
+public/logo*
