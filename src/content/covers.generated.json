@@ -52,6 +52,20 @@
     "logo-seul": "/logo-seul.png"
   },
   "carousel": {
+    "anatolian-mirage": {
+      "wide": {
+        "url": "/carousel/anatolian-mirage.webp",
+        "width": 5632,
+        "height": 2496
+      }
+    },
+    "broken-shaman": {
+      "wide": {
+        "url": "/carousel/broken-shaman.webp",
+        "width": 5792,
+        "height": 2432
+      }
+    },
     "grafenberg": {
       "wide": {
         "url": "/carousel/grafenberg.webp",

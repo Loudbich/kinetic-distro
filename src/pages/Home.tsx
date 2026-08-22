@@ -22,8 +22,14 @@ export default function Home() {
     <>
       <Seo route={homeSeo()} />
 
-      {/* ---------------------------------------------------------------- HERO */}
-      <section className="relative flex min-h-[100svh] flex-col justify-end overflow-hidden pt-[68px] noise">
+      {/* The carousel leads the page: the artists are what a visitor should meet
+          first. The label's own statement follows immediately underneath, which
+          is also where the h1 lives — the slides carry the artist names in
+          type, and a second display heading over them would be unreadable. */}
+      <Carousel hero />
+
+      {/* ------------------------------------------------------------ IDENTITY */}
+      <section className="relative overflow-hidden border-b border-white/10 noise">
         <div className="pointer-events-none absolute inset-0 grid-lines" aria-hidden="true" />
         <div
           className="pointer-events-none absolute -right-[10%] top-[8%] h-[46vw] w-[46vw] rounded-full opacity-[0.14] blur-[120px]"
@@ -31,9 +37,9 @@ export default function Home() {
           aria-hidden="true"
         />
 
-        <div className="shell relative flex flex-1 flex-col justify-center pb-10 pt-16">
+        <div className="shell relative py-16 lg:py-20">
           <Reveal>
-            <div className="mb-10 flex flex-wrap items-center gap-x-5 gap-y-2">
+            <div className="mb-8 flex flex-wrap items-center gap-x-5 gap-y-2">
               <span className="flex items-center gap-2.5">
                 <span className="h-2 w-2 animate-flicker accent-bg" />
                 <span className="label">Transmitting from {site.location}</span>
@@ -44,7 +50,7 @@ export default function Home() {
           </Reveal>
 
           <Reveal delay={90}>
-            <h1 className="display text-[15.5vw] leading-[0.8] tracking-tightest">
+            <h1 className="display text-[11vw] leading-[0.82] tracking-tightest sm:text-[9vw] lg:text-[6rem]">
               Kinetic
               <br />
               Distro<span className="accent-text">.</span>
@@ -52,7 +58,7 @@ export default function Home() {
           </Reveal>
 
           <Reveal delay={200}>
-            <div className="mt-12 grid gap-10 border-t border-white/10 pt-10 lg:grid-cols-12">
+            <div className="mt-10 grid gap-10 border-t border-white/10 pt-10 lg:grid-cols-12">
               <p className="text-balance text-xl leading-snug lg:col-span-6 lg:text-2xl">
                 An independent label and creative distribution platform for artists who arrive with a
                 whole world, not just a track.
@@ -77,9 +83,6 @@ export default function Home() {
           className="display border-t border-white/10 py-4 text-2xl text-white/25 sm:text-[2rem]"
         />
       </section>
-
-      {/* ------------------------------------------------------- CAROUSEL */}
-      <Carousel />
 
       {/* ------------------------------------------------- FEATURED RELEASE */}
       <section className="border-b border-white/10 bg-ink-800">

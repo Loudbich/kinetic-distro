@@ -48,9 +48,20 @@ const INTERVAL = 6500;
  * width, which loses whatever the picture was about; 16:9 trims it without
  * gutting it. Drop files in assets/Caroussel/mobile and this switches itself.
  */
-const mobileRatio = slides.every((s) => s.mobile) ? 'aspect-[4/5]' : 'aspect-[16/9]';
+const hasMobileArt = slides.every((s) => s.mobile);
+const mobileRatio = hasMobileArt ? 'aspect-[4/5]' : 'aspect-[16/9]';
 
-export default function Carousel() {
+/**
+ * As the first thing on the page the carousel has to fill the screen, but the
+ * wide art cannot be stretched to phone height without showing a sliver of its
+ * middle. So the tall treatment waits for the portrait crops; until they exist
+ * a phone gets a shorter band that still leads the page.
+ */
+// Sized so the whole section — header padding and controls included — lands
+// just under the viewport, leaving the next block visible as a hint to scroll.
+const heroHeight = hasMobileArt ? 'min-h-[72svh] sm:min-h-[74svh]' : 'min-h-[52svh] sm:min-h-[74svh]';
+
+export default function Carousel({ hero = false }: { hero?: boolean }) {
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
   const region = useRef<HTMLDivElement>(null);
@@ -74,7 +85,7 @@ export default function Carousel() {
 
   return (
     <section
-      className="relative border-b border-white/10 bg-ink"
+      className={`relative border-b border-white/10 bg-ink ${hero ? "pt-[68px]" : ""}`}
       aria-roledescription="carousel"
       aria-label="Kinetic Distro artists"
     >
@@ -90,7 +101,9 @@ export default function Carousel() {
       >
         {/* The ratio is set by the box, not the image, so switching to a
             portrait crop on small screens cannot shift the layout. */}
-        <div className={`relative w-full ${mobileRatio} sm:aspect-[21/9] lg:aspect-[2.39/1]`}>
+        <div
+          className={`relative w-full ${mobileRatio} sm:aspect-[21/9] lg:aspect-[2.39/1] ${hero ? heroHeight : ''}`}
+        >
           {slides.map((slide, i) => (
             <div
               key={slide.slug}

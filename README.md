@@ -170,10 +170,18 @@ le PNG passe, mais pèse dix fois plus lourd pour un rendu identique.
 
 ### Le carrousel de la page d'accueil
 
+**Le carrousel est le premier élément de la page** : c'est le roster qu'un visiteur doit
+rencontrer en arrivant. Le bloc d'identité du label (et le `h1`) suit immédiatement en
+dessous — les visuels portent déjà le nom de l'artiste en grande typo, un second titrage
+par-dessus serait illisible.
+
 Une image nommée d'après un artiste dans `assets/Caroussel/` devient une diapositive. Rien
 d'autre à faire : l'ordre suit le roster (pas le disque), et un fichier qui ne correspond à
 aucun artiste est signalé au build sans être publié — c'est ce qui écarte les masters PNG
 de 23 Mo et les sorties d'upscaler qui traînent dans le dossier.
+
+La section est dimensionnée à ~88 % de la hauteur d'écran : elle domine l'arrivée, mais
+laisse apparaître le début du bloc suivant pour signaler qu'il y a une suite.
 
 Les visuels larges (~2.39:1) deviennent une bande très fine sur un téléphone. Deux
 comportements, choisis automatiquement :
