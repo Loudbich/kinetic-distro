@@ -76,8 +76,20 @@ const walkImages = (dir, base = dir) => {
  */
 const titleCandidates = (filename) => {
   const stem = filename.slice(0, -extname(filename).length).trim();
-  const m = stem.match(/^(.{2,40}?)\s*(?: - | _ | — | – )\s*(.+)$/);
-  return m ? [m[2].trim(), stem] : [stem];
+  const out = [];
+
+  // The tidy form first, then a dash with the spacing gone astray
+  // (`Broken Shaman -A Choir…`), then the stem untouched. Being generous costs
+  // nothing: a candidate is only accepted if it matches an actual record, so a
+  // bad split simply falls through to the next one.
+  const spaced = stem.match(/^(.{2,40}?)\s*(?: - | _ | — | – )\s*(.+)$/);
+  if (spaced) out.push(spaced[2].trim());
+
+  const loose = stem.match(/^(.{2,40}?)\s*[-_—–]\s*(.+)$/);
+  if (loose) out.push(loose[2].trim());
+
+  out.push(stem);
+  return [...new Set(out)];
 };
 
 /* -------------------------------------------------------------------------- */

@@ -8,6 +8,13 @@
     "noarmor": "/covers/no-armor.webp",
     "velvetpredator": "/covers/velvet-predator.webp",
     "coldcalculus": "/covers/cold-calculus.webp",
+    "signalsfromaburningplanet": "/covers/signals-from-a-burning-planet.webp",
+    "timeleaksthroughhands": "/covers/time-leaks-through-hands.webp",
+    "primordialtransmission": "/covers/primordial-transmission.webp",
+    "wedontfade": "/covers/we-don-t-fade.webp",
+    "achoirfortheoneswhodisappeared": "/covers/a-choir-for-the-ones-who-disappeared.webp",
+    "dancelikeyousurvived": "/covers/dance-like-you-survived.webp",
+    "aftertheimpact": "/covers/after-the-impact.webp",
     "erebionsdominion": "/covers/erebion-s-dominion.webp",
     "ghostfrequenciesforlostmachines": "/covers/ghost-frequencies-for-lost-machines.webp",
     "nosaintsnoproof": "/covers/no-saints-no-proof.webp",
@@ -16,7 +23,8 @@
     "theerrorgospel": "/covers/the-error-gospel.webp",
     "thehalocorruptionprotocol": "/covers/the-halo-corruption-protocol.webp",
     "thewoundsoftomorrow": "/covers/the-wounds-of-tomorrow.webp",
-    "afterimage": "/covers/afterimage.webp"
+    "afterimage": "/covers/afterimage.webp",
+    "chromesyndicatedreams": "/covers/chrome-syndicate-dreams.webp"
   },
   "portraits": {
     "grafenberg": "/artists/grafenberg.webp"
