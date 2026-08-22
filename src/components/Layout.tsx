@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation } from 'react-router-dom';
 import { nav, site } from '../content/site';
-import { Logo, Mark } from './Logo';
+import { FullLogo, Logo } from './Logo';
 import Marquee from './Marquee';
 
 /* -------------------------------------------------------------------------- */
@@ -165,7 +165,7 @@ function Footer() {
 
       <div className="shell grid gap-12 py-16 lg:grid-cols-12 lg:py-20">
         <div className="lg:col-span-5">
-          <Mark className="h-10 w-10 accent-text" />
+          <FullLogo className="w-52 max-w-full" />
           <p className="mt-6 max-w-sm text-balance text-lg leading-snug text-chrome">
             {site.shortDescription}
           </p>

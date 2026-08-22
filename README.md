@@ -38,6 +38,7 @@ Aucun composant n'a besoin d'être modifié pour ajouter un artiste, une sortie 
 | `attribution.ts` | À qui appartient chaque disque publié sur le compte du label (voir §9) |
 | `releases[]` | Le catalogue — une entrée = une page `/releases/<slug>` créée automatiquement |
 | `services[]` | Les 4 blocs de la page Distribution (repris en teaser sur la home) |
+| `releases[].notes` | Les notes de pochette — reprises automatiquement du descriptif SoundCloud |
 | `nav[]` | Le menu principal (header + footer + drawer mobile) |
 
 ### Ajouter un artiste
@@ -58,6 +59,21 @@ Aucun composant n'a besoin d'être modifié pour ajouter un artiste, une sortie 
   image: '/artists/nouveau.jpg',   // optionnel
 }
 ```
+
+### Les descriptifs des disques
+
+Deux textes cohabitent, et ils n'ont pas le même rôle :
+
+- **`blurb`** — une ou deux phrases. C'est ce qui alimente les vignettes du catalogue et la
+  meta description de la page. Écrit à la main pour les entrées curées, sinon repris du
+  premier paragraphe du descriptif SoundCloud.
+- **`notes`** — le descriptif complet, découpé en paragraphes, affiché en section « Notes »
+  sur la page du disque. **Repris automatiquement du descriptif SoundCloud**, y compris
+  pour les disques décrits à la main : tu écris ton texte de sortie une fois sur
+  SoundCloud, il apparaît aux deux endroits.
+
+Pour forcer un texte différent de celui de SoundCloud, renseigne `notes: ['…', '…']` sur la
+sortie dans `site.ts` — un tableau de paragraphes, qui l'emporte sur la synchro.
 
 ### Ajouter une sortie
 
@@ -92,6 +108,7 @@ Pour passer aux vraies pochettes, **dépose simplement le fichier dans `assets/`
 assets/covers/<...n'importe quelle arborescence...>/<Artiste> - <Titre du disque>.webp
 assets/artists/<Artiste>.webp
 assets/brand/logo.webp
+assets/brand/logo_seul.webp
 ```
 
 **L'arborescence sous `assets/covers/` est libre.** Le script descend à n'importe quelle
@@ -115,10 +132,22 @@ Deux règles à connaître :
   sont générés** et ignorés par git. `public/covers` et `public/artists` sont **vidés à
   chaque build** : un fichier renommé ou supprimé dans `assets/` disparaît vraiment, il ne
   reste pas déployé indéfiniment. Ne dépose donc rien directement dans `public/`.
+- **Le nom d'un portrait doit correspondre à un artiste du roster** (`Broken Shaman.webp`
+  → `broken-shaman`). Un fichier qui ne correspond à personne est signalé et **n'est pas
+  copié** — sans ça, une image déposée par erreur se retrouve publiée sans qu'aucune page
+  ne puisse l'afficher.
 - **`assets/brand/`** est à part : ces fichiers atterrissent à la racine du site sous leur
-  propre nom. `logo.webp` sert de logo dans le JSON-LD **et d'image de partage par défaut**
-  — c'est ce qui remplace `og-cover.svg`, que Facebook, LinkedIn, WhatsApp et Slack
-  ignoraient purement et simplement (ils ne rendent pas le SVG dans les cartes).
+  propre nom.
+  - `logo.webp` — le lockup complet. Utilisé en pied de page, comme logo dans le JSON-LD,
+    et **comme image de partage par défaut** : c'est ce qui remplace `og-cover.svg`, que
+    Facebook, LinkedIn, WhatsApp et Slack ignoraient purement et simplement (ils ne rendent
+    pas le SVG dans les cartes).
+  - `logo_seul.webp` — la marque seule. Utilisée dans l'en-tête et comme favicon.
+
+  Les deux fichiers sont fournis **détourés sur fond noir**. Ils sont affichés en
+  `mix-blend-mode: screen`, ce qui fait disparaître exactement le fond noir sur le fond
+  `#08090A` du site sans toucher au dégradé argenté. Ça ne tient que parce que le site est
+  sombre par construction — un fond clair exigerait des fichiers à fond transparent.
 
 Une pochette fournie à la main l'emporte toujours sur celle de SoundCloud (limitée à
 500 px). À défaut d'image, la pochette générative prend le relais.

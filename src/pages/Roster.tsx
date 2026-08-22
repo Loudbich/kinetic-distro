@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { artists } from '../content/site';
 import { releasesForArtist } from '../content/catalog';
+import Cover from '../components/Cover';
 import PageHeader from '../components/PageHeader';
 import Reveal from '../components/Reveal';
 import Seo from '../components/Seo';
@@ -69,7 +70,17 @@ export default function Roster() {
                       {String(i + 1).padStart(2, '0')}
                     </span>
 
-                    <span className="col-span-10 sm:col-span-5">
+                    <span className="col-span-10 flex items-center gap-5 sm:col-span-5">
+                      {/* Cover falls back to its generative artwork when an
+                          artist has no photo yet, so the slot is always filled
+                          and every name stays on the same left edge. */}
+                      <Cover
+                        seed={a.slug}
+                        accent={a.accent}
+                        image={a.image}
+                        label={a.name}
+                        className="h-14 w-14 shrink-0 border border-white/10 sm:h-16 sm:w-16"
+                      />
                       <span
                         className="display block text-3xl leading-none transition-colors duration-300 sm:text-4xl lg:text-5xl"
                         style={{ color: isActive ? a.accent : undefined }}

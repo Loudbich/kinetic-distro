@@ -290,7 +290,14 @@ export type Release = {
   date: string; // ISO
   format: string;
   type: 'Album' | 'EP' | 'Single' | 'Compilation' | 'Remix album';
+  /** One or two sentences. Feeds cards and the meta description. */
   blurb: string;
+  /**
+   * The full liner notes, one string per paragraph. Filled automatically from
+   * the record's SoundCloud description when there is one, so the label writes
+   * a release note once and it appears in both places.
+   */
+  notes?: string[];
   tracklist?: string[];
   listenUrl: string;
   featured?: boolean;

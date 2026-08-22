@@ -121,6 +121,26 @@ export default function ReleasePage() {
         </div>
       </section>
 
+      {/* Liner notes — the label's own release text, straight from SoundCloud.
+          The opening paragraph is already shown above as the blurb, so it is
+          skipped here rather than printed twice. */}
+      {release.notes && release.notes.length > 1 && (
+        <section className="border-b border-white/10">
+          <div className="shell grid gap-12 py-20 lg:grid-cols-12 lg:py-24">
+            <Reveal className="lg:col-span-3">
+              <p className="label">Notes</p>
+            </Reveal>
+            <div className="lg:col-span-9 lg:max-w-3xl">
+              {release.notes.slice(1).map((p, i) => (
+                <Reveal key={i} delay={Math.min(i, 6) * 60}>
+                  <p className={`leading-relaxed text-chrome ${i === 0 ? '' : 'mt-6'}`}>{p}</p>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {release.tracklist && (
         <section className="border-b border-white/10 bg-ink-800">
           <div className="shell grid gap-12 py-20 lg:grid-cols-12 lg:py-24">

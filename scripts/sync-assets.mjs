@@ -39,7 +39,7 @@ import {
 } from 'node:fs';
 import { dirname, extname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { norm } from './lib/attribution.mjs';
+import { norm, readRoster } from './lib/attribution.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = resolve(root, 'assets');
@@ -187,17 +187,31 @@ function syncBrand() {
   return { manifest, copied };
 }
 
-function syncPortraits() {
+/**
+ * Portraits are matched to a roster slug by filename — `Broken Shaman.webp`
+ * belongs to `broken-shaman`. A file that matches nobody is reported and left
+ * where it is: copying it would publish a stray image that no page can ever
+ * show, which is how an accidental drop ends up deployed forever.
+ */
+function syncPortraits(rosterSlugs) {
   const outDir = join(PUBLIC, 'artists');
   const manifest = {};
+  const unmatched = [];
   let copied = 0;
 
   for (const file of listFiles(join(SRC, 'artists'))) {
     if (file.isDirectory() || !IMAGE_EXT.has(extname(file.name).toLowerCase())) continue;
 
     const stem = file.name.slice(0, -extname(file.name).length);
-    const target = `${slugify(stem)}${extname(file.name).toLowerCase()}`;
-    manifest[slugify(stem)] = `/artists/${target}`;
+    const slug = slugify(stem);
+
+    if (!rosterSlugs.has(slug)) {
+      unmatched.push(`${file.name}  (read as "${slug}")`);
+      continue;
+    }
+
+    const target = `${slug}${extname(file.name).toLowerCase()}`;
+    manifest[slug] = `/artists/${target}`;
 
     if (!CHECK) {
       mkdirSync(outDir, { recursive: true });
@@ -206,7 +220,7 @@ function syncPortraits() {
     copied++;
   }
 
-  return { manifest, copied };
+  return { manifest, unmatched, copied };
 }
 
 /* -------------------------------------------------------------------------- */
@@ -240,13 +254,18 @@ clearPrevious();
 
 const titles = knownTitles();
 const covers = syncCovers(titles);
-const portraits = syncPortraits();
+const portraits = syncPortraits(new Set(readRoster(resolve(root, 'src/content/site.ts')).map((a) => a.slug)));
 const brand = syncBrand();
 
 log(
   `${covers.copied} cover(s), ${portraits.copied} portrait(s), ${brand.copied} brand file(s)` +
     `${CHECK ? ' — check only' : ' copied into public/'}`,
 );
+
+if (portraits.unmatched.length) {
+  warn(`${portraits.unmatched.length} portrait(s) match no artist in the roster — not copied:`);
+  portraits.unmatched.forEach((f) => console.warn(`      ${f}`));
+}
 
 if (covers.unmatched.length) {
   warn(`${covers.unmatched.length} cover(s) match no record — check the spelling against the release title:`);

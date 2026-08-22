@@ -211,6 +211,30 @@ const nameFor = (slug: string, fallback: string) =>
   artists.find((a) => a.slug === slug)?.name ?? fallback;
 
 /**
+ * A SoundCloud description split into paragraphs.
+ *
+ * These run to a couple of thousand characters across several paragraphs, so
+ * rendering the raw string in one <p> ran them together into a wall of text.
+ * Blank lines separate paragraphs; single newlines are line breaks inside one
+ * and are left as spaces.
+ */
+const toParagraphs = (description: string): string[] | undefined => {
+  const paragraphs = description
+    .split(/\n\s*\n/)
+    .map((p) => p.replace(/\s*\n\s*/g, ' ').trim())
+    .filter(Boolean);
+  return paragraphs.length ? paragraphs : undefined;
+};
+
+/** Synced records by normalised title, so a curated entry can find its own notes. */
+const syncedByTitle = new Map(
+  Object.values(data.artists ?? {})
+    .flatMap((a) => a.playlists ?? [])
+    .filter((p) => !p.isMirror)
+    .map((p) => [norm(p.title), p] as const),
+);
+
+/**
  * SoundCloud's classification mapped onto the site's vocabulary.
  *
  * `setType` is the signal that matters: `isAlbum` is also true for EPs, so
@@ -233,6 +257,7 @@ const derived: Release[] = mergePlaylists(
   .sort((a, b) => ((b.playlist.date ?? '') > (a.playlist.date ?? '') ? 1 : -1))
   .map(({ playlist, slugs }) => {
     autoIndex += 1;
+    const notes = toParagraphs(playlist.description ?? '');
     // No credited artist means a label release \u2014 a roster-wide compilation.
     const display = slugs.length
       ? slugs.map((s) => nameFor(s, playlist.title)).join(' \u00D7 ')
@@ -246,9 +271,11 @@ const derived: Release[] = mergePlaylists(
       date: playlist.date ?? new Date().toISOString().slice(0, 10),
       format: playlist.trackCount ? `Digital \u00B7 ${playlist.trackCount} tracks` : 'Digital',
       type: releaseType(playlist),
-      blurb:
-        playlist.description?.trim() ||
-        `${playlist.title} \u2014 published by ${display} on SoundCloud.`,
+      // The opening paragraph is the summary; the whole description becomes the
+      // liner notes. Using the full text as the blurb turned every card and
+      // every meta description into a two-thousand-character block.
+      blurb: notes?.[0] || `${playlist.title} \u2014 published by ${display} on SoundCloud.`,
+      notes,
       tracklist: playlist.tracklist?.length ? playlist.tracklist : undefined,
       listenUrl: playlist.url,
       image: coverFor(playlist.title) ?? playlist.artwork ?? undefined,
@@ -260,7 +287,14 @@ const derived: Release[] = mergePlaylists(
  * artwork manifest when they do not name one — so dropping a file in
  * assets/covers/ is enough, with no edit to site.ts.
  */
-const curated: Release[] = releases.map((r) => ({ ...r, image: r.image ?? coverFor(r.title) }));
+const curated: Release[] = releases.map((r) => ({
+  ...r,
+  image: r.image ?? coverFor(r.title),
+  // The hand-written blurb stays — it is the short form the cards want. The
+  // liner notes come from the record's SoundCloud description, so a release
+  // note written once shows up in both places.
+  notes: r.notes ?? toParagraphs(syncedByTitle.get(norm(r.title))?.description ?? ''),
+}));
 
 /** Everything the site should list: curated first, then anything new from SoundCloud. */
 export const allReleases: Release[] = [...curated, ...derived].sort((a, b) =>
