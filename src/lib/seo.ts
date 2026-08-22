@@ -18,6 +18,7 @@
  */
 
 import { artists, services, site, type Artist, type Release } from '../content/site';
+import brandAssets from '../content/covers.generated.json';
 import { allReleases, releasesForArtist } from '../content/catalog';
 
 /**
@@ -53,6 +54,15 @@ const abs = (path: string) => `${BASE_URL}${canonicalPath(path)}`;
  */
 const assetUrl = (path: string) =>
   /^https?:\/\//.test(path) ? path : `${BASE_URL}${path.startsWith('/') ? '' : '/'}${path}`;
+
+/**
+ * The image used when a page has none of its own.
+ *
+ * Falls back to og-cover.svg only if no logo has been supplied, because most
+ * social networks — Facebook, LinkedIn, WhatsApp, Slack — silently ignore SVG
+ * in share cards and render no image at all.
+ */
+export const SHARE_IMAGE = (brandAssets.brand as Record<string, string>).logo ?? '/og-cover.svg';
 
 /* -------------------------------------------------------------------------- */
 /* Stable entity ids                                                           */
@@ -90,7 +100,7 @@ export const organizationEntity = () => ({
   logo: {
     '@type': 'ImageObject',
     '@id': `${BASE_URL}/#logo`,
-    url: `${BASE_URL}/og-cover.svg`,
+    url: assetUrl(SHARE_IMAGE),
     caption: site.name,
   },
   image: { '@id': `${BASE_URL}/#logo` },
@@ -290,8 +300,17 @@ const HOME = { name: 'Home', path: '/' };
  */
 const fitTitle = (name: string, ...suffixes: string[]) => {
   const MAX = 75;
-  for (let keep = suffixes.length; keep > 0; keep--) {
-    const candidate = [name, ...suffixes.slice(0, keep)].join(' — ');
+
+  // A label compilation is credited to the label, so `Title — Kinetic Distro —
+  // Kinetic Distro` would be the natural build. Anything already said is
+  // dropped rather than repeated.
+  const parts: string[] = [name];
+  for (const s of suffixes) {
+    if (s && !parts.some((p) => p.toLowerCase() === s.toLowerCase())) parts.push(s);
+  }
+
+  for (let keep = parts.length; keep > 1; keep--) {
+    const candidate = parts.slice(0, keep).join(' — ');
     if (candidate.length <= MAX) return candidate;
   }
   return name;

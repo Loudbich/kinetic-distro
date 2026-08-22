@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { BASE_URL, canonicalPath, jsonLd, type RouteSeo } from '../lib/seo';
+import { BASE_URL, SHARE_IMAGE, canonicalPath, jsonLd, type RouteSeo } from '../lib/seo';
 
 /**
  * Keeps <head> correct during client-side navigation.
@@ -42,7 +42,7 @@ export default function Seo({ route }: { route: RouteSeo }) {
       ? route.image.startsWith('http')
         ? route.image
         : BASE_URL + route.image
-      : `${BASE_URL}/og-cover.svg`;
+      : BASE_URL + SHARE_IMAGE;
 
     document.title = route.title;
 

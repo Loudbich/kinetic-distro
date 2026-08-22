@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 import assert from 'node:assert/strict';
 import { parseSoundCloudRss, upsizeArtwork } from './lib/rss.mjs';
 import { parsePlaylistsFromProfile } from './lib/playlists.mjs';
-import { resolveClientId, fetchUserSets, mapSet } from './lib/scapi.mjs';
+import { resolveClientId, fetchUserSets, mapSet, hydrateTracklists } from './lib/scapi.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const fixture = (name) => readFileSync(resolve(__dirname, '__fixtures__', name), 'utf8');
@@ -313,6 +313,56 @@ test('drops the id-only track stubs api-v2 returns past the first page', () => {
   });
   assert.deepEqual(out.tracklist, ['Real']);
   assert.equal(out.trackCount, 40, 'the count still reflects the whole set');
+});
+
+await testAsync('fills in stub tracks and restores the running order', async () => {
+  const set = {
+    tracklist: ['One', 'Two'],
+    trackIds: ['1', '2', '3', '4'],
+  };
+  // The endpoint answers in its own order — deliberately not the requested one.
+  const get = async (url) => {
+    assert.ok(url.includes('ids=3,4'), 'only the unknown ids are requested');
+    return JSON.stringify([
+      { id: 4, title: 'Four' },
+      { id: 3, title: 'Three' },
+    ]);
+  };
+
+  await hydrateTracklists(get, [set], { clientId: 'KEY' });
+  assert.deepEqual(set.tracklist, ['One', 'Two', 'Three', 'Four']);
+  assert.equal(set.trackIds, undefined, 'ordering scaffolding is stripped');
+});
+
+await testAsync('batches ids across every set at once', async () => {
+  const sets = [
+    { tracklist: [], trackIds: ['1', '2'] },
+    { tracklist: [], trackIds: ['3'] },
+  ];
+  let calls = 0;
+  const get = async () => {
+    calls++;
+    return JSON.stringify([
+      { id: 1, title: 'A' },
+      { id: 2, title: 'B' },
+      { id: 3, title: 'C' },
+    ]);
+  };
+
+  await hydrateTracklists(get, sets, { clientId: 'KEY' });
+  assert.equal(calls, 1, 'one request, not one per set');
+  assert.deepEqual(sets[0].tracklist, ['A', 'B']);
+  assert.deepEqual(sets[1].tracklist, ['C']);
+});
+
+await testAsync('a failed batch keeps the titles already known', async () => {
+  const set = { tracklist: ['One'], trackIds: ['1', '2'] };
+  const get = async () => {
+    throw new Error('HTTP 500');
+  };
+
+  await hydrateTracklists(get, [set], { clientId: 'KEY' });
+  assert.deepEqual(set.tracklist, ['One'], 'partial list survives');
 });
 
 console.log(`\n${passed} passed${process.exitCode ? ' — with failures' : ''}\n`);

@@ -100,7 +100,63 @@ export function mapSet(raw) {
     isAlbum: Boolean(raw.is_album),
     setType: raw.set_type || (raw.is_album ? 'album' : 'playlist'),
     description: typeof raw.description === 'string' ? raw.description : '',
-    // Beyond the first page of a long set, api-v2 returns id-only stubs.
+    // api-v2 hydrates only the first five tracks of a set; the rest arrive as
+    // id-only stubs. Both are kept: `tracklist` is what is known so far, and
+    // `trackIds` preserves the running order so hydrateTracklists can fill the
+    // gaps and rebuild the list in the right sequence.
     tracklist: tracks.map((t) => (t && typeof t.title === 'string' ? t.title : null)).filter(Boolean),
+    trackIds: tracks.map((t) => (t && t.id != null ? String(t.id) : null)).filter(Boolean),
   };
+}
+
+/**
+ * Fills in the tracks api-v2 left as stubs.
+ *
+ * Without this, 67 of 73 records list five tracks out of ten or twelve — and
+ * those lists are what become MusicRecording entities in the structured data,
+ * so a truncated one is a wrong one rather than merely a short one.
+ *
+ * Ids are gathered across every set and fetched in batches, which turns roughly
+ * seventy requests into a couple. The endpoint answers in its own order, so
+ * results are indexed by id and each tracklist is rebuilt from `trackIds`.
+ *
+ * Fails soft: on error the sets keep the partial lists they already had.
+ */
+export async function hydrateTracklists(get, sets, { clientId, batchSize = 50 } = {}) {
+  const known = new Map();
+  const wanted = new Set();
+
+  for (const set of sets) {
+    // The hydrated titles are the first N in order, so they pair with the first
+    // N ids. Anything past that is a stub that has to be fetched.
+    set.tracklist.forEach((title, i) => {
+      if (set.trackIds[i]) known.set(set.trackIds[i], title);
+    });
+    set.trackIds.forEach((id) => {
+      if (!known.has(id)) wanted.add(id);
+    });
+  }
+
+  const ids = [...wanted];
+  for (let i = 0; i < ids.length; i += batchSize) {
+    const batch = ids.slice(i, i + batchSize);
+    try {
+      const rows = JSON.parse(
+        await get(`https://api-v2.soundcloud.com/tracks?ids=${batch.join(',')}&client_id=${clientId}`),
+      );
+      for (const row of rows ?? []) {
+        if (row && typeof row.title === 'string') known.set(String(row.id), row.title);
+      }
+    } catch {
+      // A failed batch costs those titles, not the sync.
+    }
+  }
+
+  for (const set of sets) {
+    const rebuilt = set.trackIds.map((id) => known.get(id)).filter(Boolean);
+    if (rebuilt.length >= set.tracklist.length) set.tracklist = rebuilt;
+    delete set.trackIds; // ordering scaffolding — never needed by the site
+  }
+
+  return sets;
 }

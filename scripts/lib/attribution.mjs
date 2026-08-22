@@ -20,11 +20,18 @@ import { readFileSync } from 'node:fs';
 /** The roster slug whose SoundCloud profile is really the label account. */
 export const LABEL_PROFILE_SLUG = 'grafenberg';
 
+/**
+ * Comparison key for titles. `&` becomes `and` before punctuation is stripped,
+ * because the two spellings are used interchangeably — `Fire & Ice` on
+ * SoundCloud, `Fire and Ice` on the artwork filename — and would otherwise
+ * normalise to different keys.
+ */
 export const norm = (s) =>
   String(s)
     .toLowerCase()
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
+    .replace(/&/g, 'and')
     .replace(/[^a-z0-9]+/g, '');
 
 /** `(Full Album)`, `[FULL EP]` and friends are decoration, not part of a title. */

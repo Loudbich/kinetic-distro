@@ -23,7 +23,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseSoundCloudRss } from './lib/rss.mjs';
 import { parsePlaylistsFromProfile } from './lib/playlists.mjs';
-import { resolveClientId, fetchUserSets, mapSet } from './lib/scapi.mjs';
+import { resolveClientId, fetchUserSets, mapSet, hydrateTracklists } from './lib/scapi.mjs';
 import { annotateCatalogue, readRoster } from './lib/attribution.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -165,6 +165,18 @@ async function main() {
     process.exit(STRICT ? 1 : 0);
   }
 
+  // Tracklists arrive five-deep from api-v2. Completed in one pass over every
+  // set at once so this costs a couple of requests rather than one per record.
+  if (clientId && !TRACKS_ONLY) {
+    const sets = results.flatMap((a) => a.playlists).filter((p) => p.trackIds);
+    if (sets.length) {
+      const before = sets.reduce((n, p) => n + p.tracklist.length, 0);
+      await hydrateTracklists(get, sets, { clientId });
+      const after = sets.reduce((n, p) => n + p.tracklist.length, 0);
+      log(`tracklists — ${before} titles known, ${after} after hydration`);
+    }
+  }
+
   // Who each record is by — resolved here, at build time, so the browser bundle
   // never carries the matching logic. See lib/attribution.mjs for the why.
   const roster = readRoster(resolve(root, 'src/content/site.ts'));
@@ -173,8 +185,17 @@ async function main() {
     roster,
   );
 
+  // Records already settled by hand are not "unresolved" — warning about them
+  // every run would train everyone to ignore the warning that matters.
+  const decided = new Set(
+    [...readFileSync(resolve(root, 'src/content/attribution.ts'), 'utf8').matchAll(/id: '([^']+)'/g)]
+      .map((m) => m[1]),
+  );
+
   const sets = Object.values(annotated).flatMap((a) => a.playlists);
-  const unresolved = sets.filter((p) => p.creditSource === 'unresolved' && !p.isMirror);
+  const unresolved = sets.filter(
+    (p) => p.creditSource === 'unresolved' && !p.isMirror && !decided.has(p.id),
+  );
   log(
     `credits — ${sets.filter((p) => !p.isMirror).length} records, ` +
       `${sets.filter((p) => p.isMirror).length} label mirrors skipped, ` +

@@ -17,7 +17,7 @@
 import generated from './catalog.generated.json';
 import art from './covers.generated.json';
 import { attributionFor } from './attribution';
-import { artists, releases, type Release } from './site';
+import { artists, releases, site, type Release } from './site';
 
 /* -------------------------------------------------------------------------- */
 /* Types                                                                       */
@@ -139,6 +139,7 @@ const artKey = (s: string) =>
     .toLowerCase()
     .normalize('NFD')
     .replace(/[̀-ͯ]/g, '')
+    .replace(/&/g, 'and')
     .replace(/[^a-z0-9]+/g, '');
 
 /**
@@ -153,19 +154,25 @@ export const portraitFor = (slug: string): string | undefined =>
 
 /**
  * Who a record is credited to, in order of authority: a hand-written entry in
- * attribution.ts, then the credit the sync derived, then nothing.
+ * attribution.ts, then the credit the sync derived.
  *
- * Returns null when the record should not be listed at all — either hidden on
- * purpose, or credited to nobody the roster knows about, which would otherwise
- * produce a release with no artist page behind it.
+ * Three outcomes:
+ *   ['grafenberg']  credited to those artists
+ *   []              a label release — a compilation across the roster, which
+ *                   belongs to no single artist but still belongs on the site
+ *   null            not listed at all
+ *
+ * The empty array only ever comes from a deliberate hand-written entry. A
+ * credit the sync could not resolve stays null, because a release pointing at
+ * an artist page that does not exist is worse than one that is missing.
  */
 const creditFor = (playlist: SyncedPlaylist): string[] | null => {
   const override = attributionFor(playlist.id);
-  const slugs = override === undefined ? playlist.credit : override;
-  if (!slugs?.length) return null;
+  if (override === null) return null;
+  if (override) return override.length ? override.filter((s) => rosterSlugs.has(s)) : [];
 
-  const known = slugs.filter((s) => rosterSlugs.has(s));
-  return known.length ? known : null;
+  const synced = playlist.credit?.filter((s) => rosterSlugs.has(s)) ?? [];
+  return synced.length ? synced : null;
 };
 
 /* -------------------------------------------------------------------------- */
@@ -203,6 +210,19 @@ const mergePlaylists = (playlists: SyncedPlaylist[]) => {
 const nameFor = (slug: string, fallback: string) =>
   artists.find((a) => a.slug === slug)?.name ?? fallback;
 
+/**
+ * SoundCloud's classification mapped onto the site's vocabulary.
+ *
+ * `setType` is the signal that matters: `isAlbum` is also true for EPs, so
+ * reading it alone filed every EP in the catalogue as an album.
+ */
+const releaseType = (playlist: SyncedPlaylist): Release['type'] => {
+  if (playlist.setType === 'ep') return 'EP';
+  if (playlist.setType === 'single') return 'Single';
+  if (/\bremix(es)?\b/i.test(playlist.title)) return 'Remix album';
+  return playlist.isAlbum ? 'Album' : 'Compilation';
+};
+
 const derived: Release[] = mergePlaylists(
   Object.values(data.artists ?? {})
     .flatMap((artist) => artist.playlists ?? [])
@@ -213,7 +233,10 @@ const derived: Release[] = mergePlaylists(
   .sort((a, b) => ((b.playlist.date ?? '') > (a.playlist.date ?? '') ? 1 : -1))
   .map(({ playlist, slugs }) => {
     autoIndex += 1;
-    const display = slugs.map((s) => nameFor(s, playlist.title)).join(' \u00D7 ');
+    // No credited artist means a label release \u2014 a roster-wide compilation.
+    const display = slugs.length
+      ? slugs.map((s) => nameFor(s, playlist.title)).join(' \u00D7 ')
+      : site.name;
     return {
       slug: slugify(playlist.title) || `set-${playlist.id}`,
       catalog: `SC-${String(autoIndex).padStart(3, '0')}`,
@@ -222,7 +245,7 @@ const derived: Release[] = mergePlaylists(
       artistDisplay: display,
       date: playlist.date ?? new Date().toISOString().slice(0, 10),
       format: playlist.trackCount ? `Digital \u00B7 ${playlist.trackCount} tracks` : 'Digital',
-      type: playlist.isAlbum ? 'Album' : 'Compilation',
+      type: releaseType(playlist),
       blurb:
         playlist.description?.trim() ||
         `${playlist.title} \u2014 published by ${display} on SoundCloud.`,

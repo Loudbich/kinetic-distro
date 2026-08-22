@@ -13,7 +13,7 @@ Stack : **Vite 8 + React 19 + TypeScript + Tailwind CSS 3 + React Router 7**
 ```bash
 npm install
 npm run dev        # http://localhost:5173
-npm run build      # artwork, typecheck, compile, pré-rend 82 pages HTML, sitemap
+npm run build      # artwork, typecheck, compile, pré-rend 85 pages HTML, sitemap
 npm run preview:static  # sert dist/ comme le fera la prod (à utiliser pour vérifier)
 npm run audit      # audit SEO du dist/ construit
 npm run sync       # récupère le catalogue depuis SoundCloud
@@ -89,9 +89,15 @@ construite à partir de la couleur d'accent de l'artiste. Cinq compositions diff
 Pour passer aux vraies pochettes, **dépose simplement le fichier dans `assets/`** :
 
 ```
-assets/covers/<Artiste>/<Artiste> - <Titre du disque>.webp
+assets/covers/<...n'importe quelle arborescence...>/<Artiste> - <Titre du disque>.webp
 assets/artists/<Artiste>.webp
+assets/brand/logo.webp
 ```
+
+**L'arborescence sous `assets/covers/` est libre.** Le script descend à n'importe quelle
+profondeur et **ne lit que le nom du fichier** — tu peux donc classer par artiste, par
+artiste puis par album (`Broken Shaman/01 - Dirt temple/…`), ou à plat. Seul le nom du
+fichier compte.
 
 C'est tout. `npm run build` lance `npm run assets`, qui normalise les noms
 (minuscules, tirets, accents retirés), copie les fichiers dans `public/covers/` et
@@ -101,11 +107,17 @@ l'image au disque **en comparant les titres**, donc rien à modifier dans `site.
 Deux règles à connaître :
 
 - **Le titre du fichier doit correspondre au titre du disque.** L'appariement tolère la
-  casse, les accents et la ponctuation, mais pas une faute de frappe. Toute image non
+  casse, les accents, la ponctuation et l'équivalence `&` / `and` (`Fire & Ice` =
+  `Fire and Ice`), mais pas une faute de frappe. Toute image non
   rattachée est signalée au build sans le faire échouer :
   `⚠ 1 cover(s) match no record`.
-- **`assets/` est la source, `public/covers` et `public/artists` sont générés** et
-  ignorés par git. Ne dépose rien directement dans `public/`, ce serait écrasé.
+- **`assets/` est la source, `public/covers`, `public/artists` et `public/logo.webp`
+  sont générés** et ignorés par git. Ne dépose rien directement dans `public/`, ce serait
+  écrasé.
+- **`assets/brand/`** est à part : ces fichiers atterrissent à la racine du site sous leur
+  propre nom. `logo.webp` sert de logo dans le JSON-LD **et d'image de partage par défaut**
+  — c'est ce qui remplace `og-cover.svg`, que Facebook, LinkedIn, WhatsApp et Slack
+  ignoraient purement et simplement (ils ne rendent pas le SVG dans les cartes).
 
 Une pochette fournie à la main l'emporte toujours sur celle de SoundCloud (limitée à
 500 px). À défaut d'image, la pochette générative prend le relais.
@@ -143,7 +155,7 @@ Classes utilitaires maison dans `src/index.css` : `.display`, `.display-tight`, 
 
 ### Le site est pré-rendu, pas un SPA aveugle
 
-`npm run build` génère **82 vrais fichiers HTML**, un par URL, chacun avec son propre
+`npm run build` génère **85 vrais fichiers HTML**, un par URL, chacun avec son propre
 `<title>`, sa meta description, son canonical, ses balises Open Graph et son JSON-LD —
 plus le corps de page entièrement rendu.
 
@@ -171,7 +183,7 @@ pré-rendu.)*
 ### Le graphe d'entités
 
 Chaque page porte un `@graph` schema.org dont les entités se référencent par `@id` stable
-plutôt que d'être dupliquées. **546 entités uniques, 1599 références, 0 référence orpheline.**
+plutôt que d'être dupliquées. **895 entités uniques, 2275 références, 0 référence orpheline.**
 
 | Type de page | Entités déclarées |
 |---|---|
@@ -233,19 +245,18 @@ le déploiement** au lieu de passer inaperçue.
 - `robots.txt` autorise explicitement GPTBot, PerplexityBot et ClaudeBot — le balisage est
   fait pour eux aussi.
 - URLs propres, en anglais, sans paramètre, stables : `/roster/<slug>`, `/releases/<slug>`.
-- Bundle : ~143 kB gzip JS, ~9 kB gzip CSS. Polices woff2 variables auto-hébergées.
+- Bundle : ~148 kB gzip JS, ~9 kB gzip CSS. Polices woff2 variables auto-hébergées.
   Le catalogue synchronisé est volontairement élagué avant d'entrer dans le bundle
-  (12 titres par artiste, playlists miroirs retirées) : sans cela il pesait 185 kB.
+  (12 titres par artiste, playlists miroirs retirées) : sans cela il pesait 185 kB, et les tracklists sont désormais complètes.
 - Le HTML pré-rendu s'affiche avant même que le JS ne charge → LCP très bas.
 - Accessibilité : skip link, focus visible, `prefers-reduced-motion`, contrastes AA,
   navigation clavier, `aria-label` sur les contrôles. Les animations d'apparition sont
   conditionnées à une classe `html.js` : **sans JavaScript, rien n'est masqué en
   `opacity: 0`** — aucun risque de « texte caché » aux yeux d'un crawler.
 
-> **À faire avant mise en ligne :** remplacer `https://kineticdistro.com` par le domaine
-> réel dans **un seul endroit** — la constante `BASE_URL` en haut de `src/lib/seo.ts` —
-> puis dans `public/robots.txt`. Et remplacer `og-cover.svg` par un PNG 1200 × 630
-> (plusieurs réseaux ignorent le SVG dans les cartes de partage).
+> **Image de partage :** `assets/brand/logo.webp` (1024 × 559) remplace désormais
+> `og-cover.svg`. Les réseaux recommandent 1200 × 630 — le logo actuel passe, mais une
+> version à cette taille serait légèrement mieux rendue.
 
 ---
 
@@ -400,7 +411,7 @@ src/
 └── main.tsx            hydratation
 
 scripts/
-├── prerender.mjs         génère les 82 pages HTML + le sitemap
+├── prerender.mjs         génère les 85 pages HTML + le sitemap
 ├── audit-seo.mjs         audit SEO du dist/ construit
 ├── serve-static.mjs      serveur local fidèle à la prod
 ├── sync-soundcloud.mjs   la synchro
@@ -487,12 +498,18 @@ généré. Ce que la synchro n'arrive pas à trancher est signalé :
 [sync] ⚠  no credit for "Chaos, I bleed Ep" — add it to src/content/attribution.ts
 ```
 
-`src/content/attribution.ts` est **écrit à la main** et l'emporte toujours :
+`src/content/attribution.ts` est **écrit à la main** et l'emporte toujours. Trois cas :
 
 ```ts
-{ id: '2246...', title: 'Chaos, I bleed Ep', artistSlugs: ['grafenberg'] },  // crédit
-{ id: '2251...', title: 'Kinetic Distro Essentials Vol. I', artistSlugs: null }, // masqué
+{ id: '2073582450', artistSlugs: ['grafenberg'] },   // crédité à un ou plusieurs artistes
+{ id: '2273020805', artistSlugs: [] },               // sortie du label, sans artiste
+{ id: '2258698208', artistSlugs: null },             // masqué du site
 ```
+
+Le tableau vide sert aux **compilations du label** — `Kinetic Distro Essentials Vol. I`
+n'appartient à aucun artiste mais a sa place au catalogue. Il ne vient jamais de la
+synchro : un crédit qu'elle n'a pas su résoudre reste `null`, parce qu'une sortie pointant
+vers une page artiste inexistante est pire qu'une sortie absente.
 
 L'`id` est celui de SoundCloud : il ne change pas si le disque est renommé. Un disque sans
 entrée garde le crédit déduit automatiquement — **une nouvelle sortie n'oblige donc pas à

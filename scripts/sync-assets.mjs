@@ -52,15 +52,32 @@ const listFiles = (dir) =>
     ? readdirSync(dir, { withFileTypes: true })
     : [];
 
+/** Every image under a directory, at any depth. */
+const walkImages = (dir, base = dir) => {
+  const out = [];
+  for (const entry of listFiles(dir)) {
+    const full = join(dir, entry.name);
+    if (entry.isDirectory()) out.push(...walkImages(full, base));
+    else if (IMAGE_EXT.has(extname(entry.name).toLowerCase())) {
+      out.push({ path: full, name: entry.name, rel: full.slice(base.length + 1) });
+    }
+  }
+  return out;
+};
+
 /**
- * `Grafenberg - No Saints, No Proof.webp` inside `covers/Grafenberg/` names the
- * artist twice. Either spelling is accepted; the part after the separator wins.
+ * The candidate titles a filename could be naming, best first.
+ *
+ * Files are filed however suits the person filing them — `Grafenberg/…` one
+ * artist deep, `Broken Shaman/01 - Dirt temple/…` two deep — so folders are
+ * ignored entirely and only the filename is read. `Artist - Title.webp` is the
+ * house convention, but the separator also appears inside real titles, so the
+ * whole stem is offered as a fallback and whichever matches a record wins.
  */
-const titleFromFilename = (filename, folder) => {
-  const stem = filename.slice(0, -extname(filename).length);
+const titleCandidates = (filename) => {
+  const stem = filename.slice(0, -extname(filename).length).trim();
   const m = stem.match(/^(.{2,40}?)\s*(?: - | _ | — | – )\s*(.+)$/);
-  if (m && norm(m[1]) === norm(folder)) return m[2].trim();
-  return m ? m[2].trim() : stem.trim();
+  return m ? [m[2].trim(), stem] : [stem];
 };
 
 /* -------------------------------------------------------------------------- */
@@ -98,34 +115,49 @@ function syncCovers(titles) {
   const unmatched = [];
   let copied = 0;
 
-  for (const folder of listFiles(join(SRC, 'covers'))) {
-    // Files may sit directly in covers/ or be grouped in a per-artist folder.
-    const dir = folder.isDirectory() ? join(SRC, 'covers', folder.name) : join(SRC, 'covers');
-    const files = folder.isDirectory() ? listFiles(dir) : [folder];
+  for (const file of walkImages(join(SRC, 'covers'))) {
+    const candidates = titleCandidates(file.name);
+    const key = candidates.map(norm).find((k) => titles.has(k));
 
-    for (const file of files) {
-      if (file.isDirectory() || !IMAGE_EXT.has(extname(file.name).toLowerCase())) continue;
-
-      const title = titleFromFilename(file.name, folder.isDirectory() ? folder.name : '');
-      const key = norm(title);
-
-      if (!titles.has(key)) {
-        unmatched.push(`${folder.isDirectory() ? folder.name + '/' : ''}${file.name}  (read as "${title}")`);
-        continue;
-      }
-
-      const target = `${slugify(titles.get(key))}${extname(file.name).toLowerCase()}`;
-      manifest[key] = `/covers/${target}`;
-
-      if (!CHECK) {
-        mkdirSync(outDir, { recursive: true });
-        copyFileSync(join(dir, file.name), join(outDir, target));
-      }
-      copied++;
+    if (!key) {
+      unmatched.push(`${file.rel}  (read as "${candidates[0]}")`);
+      continue;
     }
+
+    const target = `${slugify(titles.get(key))}${extname(file.name).toLowerCase()}`;
+    manifest[key] = `/covers/${target}`;
+
+    if (!CHECK) {
+      mkdirSync(outDir, { recursive: true });
+      copyFileSync(file.path, join(outDir, target));
+    }
+    copied++;
   }
 
   return { manifest, unmatched, copied };
+}
+
+/**
+ * Brand files land at the root of the site, under their own name, because they
+ * are referenced from the structured data and from share cards — URLs that
+ * should stay put across redeploys rather than move with a content slug.
+ */
+function syncBrand() {
+  const manifest = {};
+  let copied = 0;
+
+  for (const file of listFiles(join(SRC, 'brand'))) {
+    if (file.isDirectory() || !IMAGE_EXT.has(extname(file.name).toLowerCase())) continue;
+
+    const stem = file.name.slice(0, -extname(file.name).length);
+    const target = `${slugify(stem)}${extname(file.name).toLowerCase()}`;
+    manifest[slugify(stem)] = `/${target}`;
+
+    if (!CHECK) copyFileSync(join(SRC, 'brand', file.name), join(PUBLIC, target));
+    copied++;
+  }
+
+  return { manifest, copied };
 }
 
 function syncPortraits() {
@@ -155,8 +187,12 @@ function syncPortraits() {
 const titles = knownTitles();
 const covers = syncCovers(titles);
 const portraits = syncPortraits();
+const brand = syncBrand();
 
-log(`${covers.copied} cover(s), ${portraits.copied} portrait(s)${CHECK ? ' — check only' : ' copied into public/'}`);
+log(
+  `${covers.copied} cover(s), ${portraits.copied} portrait(s), ${brand.copied} brand file(s)` +
+    `${CHECK ? ' — check only' : ' copied into public/'}`,
+);
 
 if (covers.unmatched.length) {
   warn(`${covers.unmatched.length} cover(s) match no record — check the spelling against the release title:`);
@@ -167,7 +203,11 @@ if (!CHECK) {
   mkdirSync(dirname(MANIFEST), { recursive: true });
   writeFileSync(
     MANIFEST,
-    JSON.stringify({ covers: covers.manifest, portraits: portraits.manifest }, null, 2) + '\n',
+    JSON.stringify(
+      { covers: covers.manifest, portraits: portraits.manifest, brand: brand.manifest },
+      null,
+      2,
+    ) + '\n',
   );
 }
 

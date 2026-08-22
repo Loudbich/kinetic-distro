@@ -1,14 +1,27 @@
 {
   "covers": {
+    "dirttemple": "/covers/dirt-temple.webp",
+    "fireandice": "/covers/fire-ice.webp",
+    "afterthefeed": "/covers/after-the-feed.webp",
+    "youwerebornready": "/covers/you-were-born-ready.webp",
+    "ironmonkexecution": "/covers/iron-monk-execution.webp",
+    "noarmor": "/covers/no-armor.webp",
+    "velvetpredator": "/covers/velvet-predator.webp",
+    "coldcalculus": "/covers/cold-calculus.webp",
     "erebionsdominion": "/covers/erebion-s-dominion.webp",
     "ghostfrequenciesforlostmachines": "/covers/ghost-frequencies-for-lost-machines.webp",
     "nosaintsnoproof": "/covers/no-saints-no-proof.webp",
     "parallelsintheory": "/covers/parallel-sin-theory.webp",
+    "theeasternskylighttapes": "/covers/the-eastern-skylight-tapes.webp",
     "theerrorgospel": "/covers/the-error-gospel.webp",
     "thehalocorruptionprotocol": "/covers/the-halo-corruption-protocol.webp",
-    "thewoundsoftomorrow": "/covers/the-wounds-of-tomorrow.webp"
+    "thewoundsoftomorrow": "/covers/the-wounds-of-tomorrow.webp",
+    "afterimage": "/covers/afterimage.webp"
   },
   "portraits": {
-    "grafenberg": "/artists/grafenberg.png"
+    "grafenberg": "/artists/grafenberg.webp"
+  },
+  "brand": {
+    "logo": "/logo.webp"
   }
 }

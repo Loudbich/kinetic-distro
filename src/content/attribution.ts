@@ -76,7 +76,8 @@ export const setAttributions: SetAttribution[] = [
     // 2026-07-24 · 54 tracks · NO CREDIT FOUND — decide by hand
     id: '2273020805',
     title: 'Kinetic Distro Essentials Vol. I',
-    artistSlugs: null,
+    // decided by hand: label compilation - a way in to the whole roster, by no single artist
+    artistSlugs: [],
   },
   {
     // 2026-07-24 · 10 tracks · credited from the showcase
@@ -106,7 +107,8 @@ export const setAttributions: SetAttribution[] = [
     // 2026-07-08 · 2 tracks · credited from the title
     id: '2265085661',
     title: 'Piano in the snow (Chromabone Remixes)',
-    artistSlugs: ['broken-shaman'],
+    // decided by hand: a Chromabone remix - credited to Chromabone, not the source artist
+    artistSlugs: ['chromabone'],
   },
   {
     // 2026-07-08 · 10 tracks · credited from the profile
@@ -124,13 +126,15 @@ export const setAttributions: SetAttribution[] = [
     // 2026-06-25 · 10 tracks · credited from the title
     id: '2258698208',
     title: 'Where the center collapse',
-    artistSlugs: ['vein-mirror'],
+    // decided by hand: hidden: same record as 'Where the Centers Collapse', published twice
+    artistSlugs: null,
   },
   {
     // 2026-06-25 · 10 tracks · NO CREDIT FOUND — decide by hand
     id: '2258697887',
     title: 'Where the Centers Collapse',
-    artistSlugs: null,
+    // decided by hand: kept: the album, correctly titled, at the clean permalink
+    artistSlugs: ['vein-mirror'],
   },
   {
     // 2026-06-22 · 11 tracks · credited from the profile
@@ -148,7 +152,8 @@ export const setAttributions: SetAttribution[] = [
     // 2026-06-16 · 3 tracks · NO CREDIT FOUND — decide by hand
     id: '2254020032',
     title: 'The Night That Ate The Stars [Chromabone Remixes]',
-    artistSlugs: null,
+    // decided by hand: a Chromabone remix - credited to Chromabone, not the source artist
+    artistSlugs: ['chromabone'],
   },
   {
     // 2026-06-13 · 11 tracks · credited from the showcase
@@ -466,7 +471,8 @@ export const setAttributions: SetAttribution[] = [
     // 2025-08-30 · 2 tracks · NO CREDIT FOUND — decide by hand
     id: '2073582450',
     title: 'Chaos, I bleed Ep',
-    artistSlugs: null,
+    // decided by hand: a Grafenberg EP
+    artistSlugs: ['grafenberg'],
   },
 ];
 

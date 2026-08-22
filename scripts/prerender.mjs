@@ -35,13 +35,13 @@ const escapeAttr = (s) =>
 /** JSON-LD must never be able to close its own <script> tag. */
 const escapeJsonLd = (s) => s.replace(/</g, '\\u003c').replace(/>/g, '\\u003e').replace(/&/g, '\\u0026');
 
-function headFor(route, base) {
+function headFor(route, base, shareImage) {
   const url = route.canonical;
   const image = route.image
     ? route.image.startsWith('http')
       ? route.image
       : base + route.image
-    : `${base}/og-cover.svg`;
+    : base + shareImage;
 
   const tags = [
     `<title>${escapeAttr(route.title)}</title>`,
@@ -105,7 +105,7 @@ async function main() {
   }
 
   const entry = pathToFileURL(join(SSR, 'entry-server.js')).href;
-  const { render, routes: getRoutes, baseUrl } = await import(entry);
+  const { render, routes: getRoutes, baseUrl, shareImage } = await import(entry);
 
   const template = readFileSync(join(DIST, 'index.html'), 'utf8');
 
@@ -128,7 +128,7 @@ async function main() {
     }
 
     const page = template
-      .replace(/ *<!--seo-start-->[\s\S]*?<!--seo-end-->/, headFor(route, baseUrl))
+      .replace(/ *<!--seo-start-->[\s\S]*?<!--seo-end-->/, headFor(route, baseUrl, shareImage))
       .replace('<!--app-html-->', html);
 
     const out = outPathFor(route.path);
