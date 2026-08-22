@@ -17,7 +17,11 @@ export default function PageHeader({ eyebrow, title, intro, meta }: Props) {
           <p className="label mb-8">{eyebrow}</p>
         </Reveal>
         <Reveal delay={80}>
-          <h1 className="display text-balance text-[13vw] leading-[0.84] sm:text-[9vw] lg:text-[6.5rem] xl:text-[8rem]">
+          {/* `break-words` is a safety net, not a style: a single long word
+              ("transmission.", "conversation.") at 13vw was wider than a phone
+              and scrolled the whole page sideways. It only ever engages when a
+              word would otherwise overflow. */}
+          <h1 className="display text-balance break-words text-[11.5vw] leading-[0.84] sm:text-[9vw] lg:text-[6.5rem] xl:text-[8rem]">
             {title}
           </h1>
         </Reveal>

@@ -3,6 +3,7 @@ import { artists, site } from '../content/site';
 import { allReleases, latestTracks } from '../content/catalog';
 import { LabelTrackFeed } from '../components/TrackFeed';
 import Cover from '../components/Cover';
+import Carousel from '../components/Carousel';
 import Marquee from '../components/Marquee';
 import Reveal from '../components/Reveal';
 import Seo from '../components/Seo';
@@ -76,6 +77,9 @@ export default function Home() {
           className="display border-t border-white/10 py-4 text-2xl text-white/25 sm:text-[2rem]"
         />
       </section>
+
+      {/* ------------------------------------------------------- CAROUSEL */}
+      <Carousel />
 
       {/* ------------------------------------------------- FEATURED RELEASE */}
       <section className="border-b border-white/10 bg-ink-800">

@@ -215,15 +215,18 @@ async function main() {
     // site filters them out, so shipping them would be dead weight.
     artist.playlists = artist.playlists.filter((p) => !p.isMirror);
 
-    artist.tracks = artist.tracks.slice(0, MAX_TRACKS).map(({ id, title, url, date, durationSec }) => ({
-      id,
-      title,
-      url,
-      date,
-      durationSec,
-      // `artwork` and `audio` are dropped: no view renders a per-track image,
-      // and playback happens on SoundCloud, not here.
-    }));
+    artist.tracks = artist.tracks
+      .slice(0, MAX_TRACKS)
+      .map(({ id, title, url, date, durationSec, artwork }) => ({
+        id,
+        title,
+        url,
+        date,
+        durationSec,
+        artwork,
+        // `audio` is dropped: playback happens in SoundCloud's own widget, so
+        // the stream URL is never read here and it is the longest field of all.
+      }));
   }
 
   const payload = {

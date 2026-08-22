@@ -10,4 +10,10 @@ dist-ssr
 # Artwork copied out of assets/ at build time — assets/ is the source of truth.
 public/covers
 public/artists
+public/carousel
 public/logo*
+
+# Carousel masters and upscaler output — 23 MB PNGs the site never serves.
+# Slides are exported as .webp; only those belong in the repo.
+assets/Caroussel/*.png
+assets/Caroussel/mobile/*.png

@@ -294,6 +294,68 @@ function syncBrand() {
 }
 
 /**
+ * Home-page carousel slides — one wide key visual per artist, matched to a
+ * roster slug by filename exactly like a portrait.
+ *
+ *   assets/Caroussel/VEIN MIRROR.webp          the wide slide
+ *   assets/Caroussel/mobile/VEIN MIRROR.webp   optional portrait crop
+ *
+ * The wide art is around 2.39:1, which on a phone becomes a letterbox strip a
+ * few centimetres tall. A file dropped in `mobile/` is used below the `sm`
+ * breakpoint instead; without one the wide crop is simply reused.
+ *
+ * Where several files claim the same slug, the smallest wins — the folder also
+ * accumulates 23 MB PNG masters and upscaler output beside the exported webp,
+ * and none of that belongs on a web page.
+ */
+function syncCarousel(rosterSlugs) {
+  const outDir = join(PUBLIC, 'carousel');
+  const slides = {};
+  const unmatched = [];
+
+  const collect = (dir, kind) => {
+    for (const file of listFiles(dir)) {
+      if (file.isDirectory() || !IMAGE_EXT.has(extname(file.name).toLowerCase())) continue;
+
+      const stem = file.name.slice(0, -extname(file.name).length);
+      const slug = slugify(stem);
+      if (!rosterSlugs.has(slug)) {
+        unmatched.push(`${kind === 'mobile' ? 'mobile/' : ''}${file.name}  (read as "${slug}")`);
+        continue;
+      }
+
+      const path = join(dir, file.name);
+      const size = statSync(path).size;
+      const held = slides[slug]?.[kind];
+      if (held && held.size <= size) continue;
+
+      slides[slug] = { ...slides[slug], [kind]: { path, name: file.name, size } };
+    }
+  };
+
+  collect(join(SRC, 'Caroussel'), 'wide');
+  collect(join(SRC, 'Caroussel', 'mobile'), 'mobile');
+
+  const manifest = {};
+  for (const [slug, variants] of Object.entries(slides)) {
+    if (!variants.wide) continue; // a mobile crop alone is not a slide
+    manifest[slug] = {};
+
+    for (const [kind, file] of Object.entries(variants)) {
+      const target = `${slug}${kind === 'mobile' ? '-mobile' : ''}${extname(file.name).toLowerCase()}`;
+      manifest[slug][kind] = { url: `/carousel/${target}`, ...(imageSize(file.path) ?? {}) };
+
+      if (!CHECK) {
+        mkdirSync(outDir, { recursive: true });
+        copyFileSync(file.path, join(outDir, target));
+      }
+    }
+  }
+
+  return { manifest, unmatched, copied: Object.keys(manifest).length };
+}
+
+/**
  * Portraits are matched to a roster slug by filename — `Broken Shaman.webp`
  * belongs to `broken-shaman`. A file that matches nobody is reported and left
  * where it is: copying it would publish a stray image that no page can ever
@@ -343,6 +405,7 @@ function clearPrevious() {
 
   rmSync(join(PUBLIC, 'covers'), { recursive: true, force: true });
   rmSync(join(PUBLIC, 'artists'), { recursive: true, force: true });
+  rmSync(join(PUBLIC, 'carousel'), { recursive: true, force: true });
 
   if (!existsSync(MANIFEST)) return;
   try {
@@ -360,16 +423,23 @@ clearPrevious();
 
 const titles = knownTitles();
 const covers = syncCovers(titles);
-const portraits = syncPortraits(new Set(readRoster(resolve(root, 'src/content/site.ts')).map((a) => a.slug)));
+const rosterSlugs = new Set(readRoster(resolve(root, 'src/content/site.ts')).map((a) => a.slug));
+const portraits = syncPortraits(rosterSlugs);
+const carousel = syncCarousel(rosterSlugs);
 const brand = syncBrand();
 
 log(
-  `${covers.copied} cover(s), ${portraits.copied} portrait(s), ${brand.copied} brand file(s)` +
+  `${covers.copied} cover(s), ${portraits.copied} portrait(s), ${carousel.copied} carousel slide(s), ${brand.copied} brand file(s)` +
     `${CHECK ? ' — check only' : ' copied into public/'}`,
 );
 
 for (const [slug, file] of brand.chosen) {
   log(`brand/${slug}: ${file.name} (${file.alpha ? 'transparent' : 'opaque, matte dissolved'}, ${Math.round(file.size / 1024)} kB)`);
+}
+
+if (carousel.unmatched.length) {
+  warn(`${carousel.unmatched.length} carousel file(s) match no artist — not copied:`);
+  carousel.unmatched.forEach((f) => console.warn(`      ${f}`));
 }
 
 if (portraits.unmatched.length) {
@@ -391,6 +461,7 @@ if (!CHECK) {
         covers: covers.manifest,
         portraits: portraits.manifest,
         brand: brand.manifest,
+        carousel: carousel.manifest,
         /** Brand files with no alpha channel — these need the matte dissolved. */
         brandOpaque: brand.opaque,
         /** Intrinsic size per brand file, so the markup declares a real ratio. */

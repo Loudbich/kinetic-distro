@@ -3,6 +3,12 @@ type Props = {
   accent: string;
   label?: string;
   image?: string;
+  /**
+   * Where to anchor the crop. Album art is square and centres fine, but a
+   * portrait squeezed into a square slot loses the head at 50% — 'top' keeps
+   * the face.
+   */
+  focus?: 'center' | 'top';
   className?: string;
 };
 
@@ -27,7 +33,7 @@ const S = 400;
  * Generative placeholder artwork — full-bleed, deterministic, one of five compositions.
  * Swap for real covers by adding `image: '/covers/kd-00x.jpg'` in src/content/site.ts.
  */
-export default function Cover({ seed, accent, label, image, className = '' }: Props) {
+export default function Cover({ seed, accent, label, image, focus = 'center', className = '' }: Props) {
   if (image) {
     return (
       <div className={`relative overflow-hidden bg-ink-700 ${className}`}>
@@ -35,6 +41,8 @@ export default function Cover({ seed, accent, label, image, className = '' }: Pr
           src={image}
           alt={label ?? ''}
           loading="lazy"
+          decoding="async"
+          style={{ objectPosition: focus === 'top' ? '50% 20%' : undefined }}
           className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.04]"
         />
       </div>

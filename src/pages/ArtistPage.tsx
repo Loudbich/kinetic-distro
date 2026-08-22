@@ -55,7 +55,7 @@ export default function ArtistPage() {
 
           <Reveal delay={70}>
             <h1
-              className="display mt-10 text-balance text-[12vw] leading-[0.84] sm:text-[9vw] lg:text-[7.5rem]"
+              className="display mt-10 text-balance break-words text-[11vw] leading-[0.84] sm:text-[9vw] lg:text-[7.5rem]"
               style={{ color: artist.accent }}
             >
               {artist.name}
@@ -212,7 +212,7 @@ export default function ArtistPage() {
           <div className="shell">
             <p className="label mb-6">Next project</p>
             <h2
-              className="display text-balance text-5xl leading-none transition-colors sm:text-6xl lg:text-8xl"
+              className="display text-balance break-words text-4xl leading-none transition-colors sm:text-6xl lg:text-8xl"
               style={{ color: undefined }}
             >
               <span

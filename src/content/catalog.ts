@@ -24,9 +24,10 @@ import { artists, releases, site, type Release } from './site';
 /* -------------------------------------------------------------------------- */
 
 /**
- * Only the fields a view actually renders. The sync deliberately drops the rest
- * (per-track artwork, stream URLs) and caps the list — this file is imported by
- * the client bundle, so anything kept here is downloaded by every visitor.
+ * Only the fields a view actually renders. The sync drops the rest — the stream
+ * URL above all, which is long and unused because playback runs in SoundCloud's
+ * own widget — and caps the list, because this file is imported by the client
+ * bundle and anything kept here is downloaded by every visitor.
  */
 export type SyncedTrack = {
   id: string;
@@ -34,6 +35,7 @@ export type SyncedTrack = {
   url: string;
   date: string | null;
   durationSec: number | null;
+  artwork: string;
 };
 
 export type SyncedPlaylist = {

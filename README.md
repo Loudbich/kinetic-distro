@@ -106,6 +106,8 @@ Pour passer aux vraies pochettes, **dépose simplement le fichier dans `assets/`
 ```
 assets/covers/<...n'importe quelle arborescence...>/<Artiste> - <Titre du disque>.webp
 assets/artists/<Artiste>.webp
+assets/Caroussel/<Artiste>.webp          ← visuel large du carrousel (home)
+assets/Caroussel/mobile/<Artiste>.webp   ← version verticale, optionnelle
 assets/brand/logo.webp
 assets/brand/logo_seul.webp
 ```
@@ -163,6 +165,29 @@ celui des visuels fournis en 1000 px.
 
 Formats acceptés : `.webp`, `.avif`, `.jpg`, `.png`. Préfère le WebP carré en 1400 px —
 le PNG passe, mais pèse dix fois plus lourd pour un rendu identique.
+
+---
+
+### Le carrousel de la page d'accueil
+
+Une image nommée d'après un artiste dans `assets/Caroussel/` devient une diapositive. Rien
+d'autre à faire : l'ordre suit le roster (pas le disque), et un fichier qui ne correspond à
+aucun artiste est signalé au build sans être publié — c'est ce qui écarte les masters PNG
+de 23 Mo et les sorties d'upscaler qui traînent dans le dossier.
+
+Les visuels larges (~2.39:1) deviennent une bande très fine sur un téléphone. Deux
+comportements, choisis automatiquement :
+
+- **Sans version mobile** — la boîte passe en 16:9 sur petit écran. Le visuel est rogné,
+  mais reste lisible. Un 4:5 n'en montrerait qu'un sixième de la largeur.
+- **Avec une version mobile** dans `assets/Caroussel/mobile/` — la boîte passe en 4:5 et
+  utilise ce fichier sous 640 px. Le passage se fait tout seul dès que **tous** les
+  artistes en ont une.
+
+Le carrousel avance seul toutes les 6,5 s, mais s'arrête au survol, au focus clavier et
+quand l'onglet passe en arrière-plan. Il **ne démarre pas du tout** si le visiteur a activé
+`prefers-reduced-motion`. Toutes les diapositives sont dans le HTML pré-rendu, donc un
+crawler sans JavaScript voit chaque artiste et chaque lien.
 
 ---
 

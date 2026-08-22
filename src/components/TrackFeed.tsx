@@ -82,17 +82,34 @@ export function ArtistTrackFeed({ tracks, accent, profileUrl }: ArtistFeedProps)
           </div>
         </Reveal>
 
-        <ul className="grid gap-x-12 sm:grid-cols-2">
+        {/* `minmax(0,1fr)` via grid-cols-1: a grid track defaults to `auto`, so a
+            long unbreakable track title stretched the column and scrolled the
+            page — 793px wide inside a 365px screen. */}
+        <ul className="grid grid-cols-1 gap-x-12 sm:grid-cols-2">
           {tracks.map((t, i) => (
-            <Reveal as="li" key={t.id} delay={Math.min(i, 6) * 45}>
+            <Reveal as="li" key={t.id} delay={Math.min(i, 6) * 45} className="min-w-0">
               {playing === t.id ? (
                 <div className="border-b border-white/10 py-4">
                   <Player url={t.url} title={t.title} accent={accent} immediate />
                 </div>
               ) : (
                 <div className="group flex items-center gap-4 border-b border-white/10 py-4 transition-colors hover:bg-white/[0.03]">
-                  <span className="relative flex items-center">
-                    <PlayButton accent={accent} label={t.title} onClick={() => setPlaying(t.id)} />
+                  <span className="relative block h-12 w-12 shrink-0 overflow-hidden border border-white/10 bg-ink-700">
+                    {t.artwork && (
+                      <img
+                        src={t.artwork}
+                        alt=""
+                        width={500}
+                        height={500}
+                        loading="lazy"
+                        decoding="async"
+                        className="h-full w-full object-cover"
+                        aria-hidden="true"
+                      />
+                    )}
+                    <span className="absolute inset-0 flex items-center justify-center bg-ink/45">
+                      <PlayButton accent={accent} label={t.title} onClick={() => setPlaying(t.id)} />
+                    </span>
                   </span>
                   <span className="min-w-0 flex-1">
                     <a
@@ -158,21 +175,35 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
                   <Player url={t.url} title={t.title} accent={t.accent} immediate className="w-full" />
                 </div>
               ) : (
-                <div className="group relative flex h-full flex-col justify-between gap-8 p-6 transition-colors hover:bg-ink-700">
+                <div className="group relative flex h-full flex-col p-6 transition-colors hover:bg-ink-700">
                   <span
                     className="absolute inset-x-0 top-0 h-[3px] origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"
                     style={{ background: t.accent }}
                     aria-hidden="true"
                   />
-                  <span className="flex items-start justify-between gap-4">
-                    <span className="label" style={{ color: t.accent }}>
-                      {t.artistName}
-                    </span>
-                    <span className="relative flex items-center">
+                  <span className="relative mb-6 block aspect-square w-full overflow-hidden border border-white/10 bg-ink-700">
+                    {t.artwork && (
+                      <img
+                        src={t.artwork}
+                        alt=""
+                        width={500}
+                        height={500}
+                        loading="lazy"
+                        decoding="async"
+                        className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.04]"
+                        aria-hidden="true"
+                      />
+                    )}
+                    {/* The control sits on the artwork, where a play button is
+                        expected, rather than floating beside the artist name. */}
+                    <span className="absolute bottom-3 right-3 flex items-center">
                       <PlayButton accent={t.accent} label={t.title} onClick={() => setPlaying(t.id)} />
                     </span>
                   </span>
-                  <span>
+                  <span className="label mb-3 block" style={{ color: t.accent }}>
+                    {t.artistName}
+                  </span>
+                  <span className="mt-auto block">
                     <a
                       href={t.url}
                       target="_blank"

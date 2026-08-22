@@ -51,6 +51,29 @@
     "logo": "/logo.png",
     "logo-seul": "/logo-seul.png"
   },
+  "carousel": {
+    "grafenberg": {
+      "wide": {
+        "url": "/carousel/grafenberg.webp",
+        "width": 3840,
+        "height": 1608
+      }
+    },
+    "nosfera-disco-club": {
+      "wide": {
+        "url": "/carousel/nosfera-disco-club.webp",
+        "width": 3840,
+        "height": 1608
+      }
+    },
+    "vein-mirror": {
+      "wide": {
+        "url": "/carousel/vein-mirror.webp",
+        "width": 3840,
+        "height": 1608
+      }
+    }
+  },
   "brandOpaque": [],
   "brandSize": {
     "logo": {

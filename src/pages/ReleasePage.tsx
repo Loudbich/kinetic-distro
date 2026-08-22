@@ -62,7 +62,7 @@ export default function ReleasePage() {
               <p className="label mb-6">
                 {release.catalog} · {release.type}
               </p>
-              <h1 className="display text-balance text-[10vw] leading-[0.86] sm:text-[7vw] lg:text-[5rem]">
+              <h1 className="display text-balance break-words text-[9vw] leading-[0.86] sm:text-[7vw] lg:text-[5rem]">
                 {release.title}
               </h1>
             </Reveal>
@@ -187,7 +187,7 @@ export default function ReleasePage() {
         >
           <div className="shell">
             <p className="label mb-6">Next in catalogue · {next.catalog}</p>
-            <h2 className="display text-balance text-4xl leading-none sm:text-5xl lg:text-7xl">
+            <h2 className="display text-balance break-words text-4xl leading-none sm:text-5xl lg:text-7xl">
               {next.title}
               <span className="ml-6 inline-block text-chrome-400 transition-transform duration-300 group-hover:translate-x-3">
                 →
