@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-22T17:02:13.926Z",
+  "generatedAt": "2026-08-22T19:20:28.635Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
-  "trackCount": 645,
+  "trackCount": 644,
   "playlistCount": 73,
   "failures": [],
   "artists": {
@@ -16,7 +16,7 @@
       "description": "Kinetic Distro is an independent music label and creative distribution platform dedicated to pushing the boundaries of sound, identity, and artistic storytelling in the digital age.\n\nBuilt on a vision of movement and transformation, Kinetic Distro operates at the intersection of genres, cultures, and eras—curating a diverse roster of artists who each embody a distinct sonic universe. From cinematic electronic landscapes to hypnotic techno, neo-soul narratives, experimental pop, and heavy sonic architectures, the label thrives on contrast, evolution, and cohesion.\n\nThe roster includes projects such as Grafenberg, Broken Shaman, Chromabone, Nosfera Disco Club, VEIN//Mirror, Iron Covenant, Anatolian Mirage, and Lykke—each representing a unique dimension of the Kinetic Distro ecosystem. Rather than following trends, the label builds immersive worlds, where every release contributes to a larger, interconnected artistic continuum.\n\nKinetic Distro is not just a distributor—it is a creative engine. Through meticulous curation, visual identity development, and narrative-driven releases, the label transforms music into experiences. Each project is approached as a living entity, evolving across albums, concepts, and aesthetic directions.\n\nDriven by independence and a commitment to artistic integrity, Kinetic Distro embraces modern production tools, global influences, and a release strategy designed for the streaming era—while maintaining a strong emphasis on authenticity and long-term vision.\n\nAt its core, Kinetic Distro is about momentum: sound in motion, ideas in evolution, and artists in constant transformation.",
       "avatar": "https://i1.sndcdn.com/avatars-PHRs78KRNfZuMsC6-bG5D1Q-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 303,
+      "trackCount": 302,
       "latestDate": "2026-08-19",
       "tracks": [
         {
