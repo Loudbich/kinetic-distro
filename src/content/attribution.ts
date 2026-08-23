@@ -31,6 +31,12 @@ export type SetAttribution = {
 
 export const setAttributions: SetAttribution[] = [
   {
+    // 2026-08-23 · the remaster, republished on the label's own account
+    id: '2288036985',
+    title: 'The Halo Corruption Protocol [Remastered]',
+    artistSlugs: ['grafenberg'],
+  },
+  {
     // 2026-08-18 · 11 tracks · credited from the showcase
     id: '2285385039',
     title: 'CHROME SYNDICATE DREAMS',
@@ -279,7 +285,9 @@ export const setAttributions: SetAttribution[] = [
     // 2026-04-18 · 10 tracks · credited from the showcase
     id: '2224002737',
     title: 'The halo corruption protocol',
-    artistSlugs: ['grafenberg'],
+    // decided by hand: superseded by the 2026 remaster, which Kinetic Distro
+    // controls; keeping both would list the same album twice
+    artistSlugs: null,
   },
   {
     // 2026-04-16 · 10 tracks · credited from the profile

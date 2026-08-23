@@ -502,7 +502,7 @@ export const streaming: Record<string, { label: string; href: string }[]> = {
     { label: 'Apple Music', href: 'https://music.apple.com/album/1859408397' },
     { label: 'Deezer', href: 'https://www.deezer.com/album/872363392' },
   ],
-  'the-halo-corruption-protocol': [
+  'the-halo-corruption-protocol-remastered': [
     { label: 'Spotify', href: 'https://open.spotify.com/album/5UDPLk8UOfPxBJkMH5zVcQ' },
     { label: 'Apple Music', href: 'https://music.apple.com/album/1880789591' },
   ],

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-23T07:55:48.133Z",
+  "generatedAt": "2026-08-23T16:40:58.878Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
-  "trackCount": 644,
-  "playlistCount": 73,
+  "trackCount": 664,
+  "playlistCount": 74,
   "failures": [],
   "artists": {
     "grafenberg": {
@@ -16,107 +16,133 @@
       "description": "Kinetic Distro is an independent music label and creative distribution platform dedicated to pushing the boundaries of sound, identity, and artistic storytelling in the digital age.\n\nBuilt on a vision of movement and transformation, Kinetic Distro operates at the intersection of genres, cultures, and eras—curating a diverse roster of artists who each embody a distinct sonic universe. From cinematic electronic landscapes to hypnotic techno, neo-soul narratives, experimental pop, and heavy sonic architectures, the label thrives on contrast, evolution, and cohesion.\n\nThe roster includes projects such as Grafenberg, Broken Shaman, Chromabone, Nosfera Disco Club, VEIN//Mirror, Iron Covenant, Anatolian Mirage, and Lykke—each representing a unique dimension of the Kinetic Distro ecosystem. Rather than following trends, the label builds immersive worlds, where every release contributes to a larger, interconnected artistic continuum.\n\nKinetic Distro is not just a distributor—it is a creative engine. Through meticulous curation, visual identity development, and narrative-driven releases, the label transforms music into experiences. Each project is approached as a living entity, evolving across albums, concepts, and aesthetic directions.\n\nDriven by independence and a commitment to artistic integrity, Kinetic Distro embraces modern production tools, global influences, and a release strategy designed for the streaming era—while maintaining a strong emphasis on authenticity and long-term vision.\n\nAt its core, Kinetic Distro is about momentum: sound in motion, ideas in evolution, and artists in constant transformation.",
       "avatar": "https://i1.sndcdn.com/avatars-PHRs78KRNfZuMsC6-bG5D1Q-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 302,
-      "latestDate": "2026-08-19",
+      "trackCount": 322,
+      "latestDate": "2026-08-23",
       "tracks": [
         {
-          "id": "2384477862",
-          "title": "Anatolian Mirage - Golden road echoes [Chromabone's neon dervish remix]",
-          "url": "https://soundcloud.com/grafenbergmusik/anatolian-mirage-golden-road",
-          "date": "2026-08-19",
-          "durationSec": 337,
-          "artwork": "https://i1.sndcdn.com/artworks-TrCQLe219Axz0uwj-X1I3CA-t500x500.jpg"
+          "id": "2386792764",
+          "title": "STATIC CROWN [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/7d3e0158-b684-4638-8e72-2822dcfa9832",
+          "date": "2026-08-23",
+          "durationSec": 257,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2384381067",
-          "title": "Grafenberg x Broken Shaman - Last Transmission [Chromabone's hacked signal remix feat. Nyla Vey]",
-          "url": "https://soundcloud.com/grafenbergmusik/grafenberg-x-broken-shaman",
-          "date": "2026-08-19",
-          "durationSec": 289,
-          "artwork": "https://i1.sndcdn.com/artworks-xJxh5fetno2WWIdN-HQ9Pog-t500x500.jpg"
+          "id": "2386792761",
+          "title": "FIRMWARE LITANY [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/0e909f41-757e-4524-8606-779694970531",
+          "date": "2026-08-23",
+          "durationSec": 304,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2383700892",
-          "title": "Data seduction",
-          "url": "https://soundcloud.com/grafenbergmusik/data-seduction-6",
-          "date": "2026-08-18",
-          "durationSec": 248,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
+          "id": "2386792758",
+          "title": "PULSE OF THE DAMAGED CORE [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/da801d4e-4fe2-46d7-a06d-13b5abaf9978",
+          "date": "2026-08-23",
+          "durationSec": 312,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2383700889",
-          "title": "Chrome pulse",
-          "url": "https://soundcloud.com/grafenbergmusik/chrome-pulse-3",
-          "date": "2026-08-18",
-          "durationSec": 244,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
+          "id": "2386792755",
+          "title": "PROTOCOL INIT. //  ZERO SANCTITY [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/protocol-init-zero-sanctity-remastered-1",
+          "date": "2026-08-23",
+          "durationSec": 251,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2383700886",
-          "title": "System collapse ritual",
-          "url": "https://soundcloud.com/grafenbergmusik/system-collapse-ritual-10",
-          "date": "2026-08-18",
-          "durationSec": 284,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
+          "id": "2386792752",
+          "title": "EXIT RITUAL // SHUTDOWN LITURGY [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/exit-ritual-shutdown-liturgy-remastered-10",
+          "date": "2026-08-23",
+          "durationSec": 256,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2383700883",
-          "title": "Surveillance bloom",
-          "url": "https://soundcloud.com/grafenbergmusik/surveillance-bloom-8",
-          "date": "2026-08-18",
-          "durationSec": 245,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
+          "id": "2386792749",
+          "title": "ZERO CHURCH ARCHITECTURE [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/fff09f55-8d54-4b9c-b2ae-c3c3354fc70e",
+          "date": "2026-08-23",
+          "durationSec": 297,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2383700880",
-          "title": "Ghost interface (feat. Jack Razor Haldane)",
-          "url": "https://soundcloud.com/grafenbergmusik/ghost-interface-feat-jack-razor-haldane-5",
-          "date": "2026-08-18",
-          "durationSec": 245,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
+          "id": "2386792746",
+          "title": "HEAVEN IN SYSTEM FAILURE [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/28aaa17b-848a-42bf-978c-af5fc33f6d6a",
+          "date": "2026-08-23",
+          "durationSec": 321,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2383700877",
-          "title": "Firewall kiss",
-          "url": "https://soundcloud.com/grafenbergmusik/firewall-kiss-7",
-          "date": "2026-08-18",
-          "durationSec": 244,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
+          "id": "2386792743",
+          "title": "BLESSED CORRUPTION [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/b2c89b4e-1601-4cd2-8be8-9120a5c05cf1",
+          "date": "2026-08-23",
+          "durationSec": 257,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2383700874",
-          "title": "Black market heartware",
-          "url": "https://soundcloud.com/grafenbergmusik/black-market-heartware-4",
-          "date": "2026-08-18",
-          "durationSec": 250,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
+          "id": "2386792740",
+          "title": "SANCTIFIED ERROR STATE [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/5f1ba0b9-f193-4bd0-a17e-3a7cef59361c",
+          "date": "2026-08-23",
+          "durationSec": 214,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2383700871",
-          "title": "Neural overdrive",
-          "url": "https://soundcloud.com/grafenbergmusik/neural-overdrive-9",
-          "date": "2026-08-18",
-          "durationSec": 232,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
+          "id": "2386792737",
+          "title": "DIVINITY IN DEBUG MODE [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/c63d2872-2fa2-4743-9c16-6cff83f0c711",
+          "date": "2026-08-23",
+          "durationSec": 311,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2383700868",
-          "title": "Switch//ON",
-          "url": "https://soundcloud.com/grafenbergmusik/switchon-1",
-          "date": "2026-08-18",
-          "durationSec": 283,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
+          "id": "2386790694",
+          "title": "STATIC CROWN (Remastered)",
+          "url": "https://soundcloud.com/grafenbergmusik/static-crown-remastered-3",
+          "date": "2026-08-23",
+          "durationSec": 257,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2383700865",
-          "title": "Last transmission",
-          "url": "https://soundcloud.com/grafenbergmusik/last-transmission-11",
-          "date": "2026-08-18",
-          "durationSec": 286,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
+          "id": "2386790691",
+          "title": "FIRMWARE LITANY (Remastered)",
+          "url": "https://soundcloud.com/grafenbergmusik/firmware-litany-remastered-5",
+          "date": "2026-08-23",
+          "durationSec": 304,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         }
       ],
       "playlists": [
+        {
+          "id": "2288036985",
+          "title": "The Halo Corruption Protocol [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/sets/the-halo-corruption-protocol",
+          "date": "2026-08-23",
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Originally transmitted in March 2026, The Halo Corruption Protocol returns in its definitive form.\n\nRebuilt from the original production stems and completely remastered in 24-bit, this Enhanced Edition restores the depth, impact and internal detail of Grafenberg’s fourth album. Every voice, composition and lyric remains intact, but the entire sonic architecture has been rebuilt to reveal the album as it was always meant to exist.\n\nAcross ten interconnected tracks, sacred language is absorbed by machines and returned as corrupted code. Halos become surveillance devices, firmware becomes liturgy, damaged systems seek divinity, and technological collapse turns into a form of revelation.\n\nFrom the cold activation of “Protocol Init. // Zero Sanctity” to the terminal ceremony of “Exit Ritual // Shutdown Liturgy”, the album unfolds as a complete cybernetic ritual: initiation, conversion, sanctification, corruption, system failure and final shutdown.\n\nDark synthesizers, industrial electronics, ritual vocals, distorted guitar textures, cinematic atmospheres and luminous 1980s melodic signals collide inside a machine-cathedral that can no longer distinguish grace from corruption.\n\nThis is not a rewrite of the album.\n\nThis is its definitive transmission.\n\nCREDITS\n\nWritten, composed, produced and arranged by Grafenberg\nLead vocals by Nyla Vey\nMixed and remastered in 24-bit by Grafenberg from the original stems\nArt direction by Grafenberg\nArtwork and release design by Kinetic Distro\n\nOriginally released in March 2026\nEnhanced Edition independently reissued through Kinetic Distro\n\nEvery voice. Every version. Every corrupted truth.\n\n© 2026 Kinetic Distro\n℗ 2026 Kinetic Distro\nAll rights reserved.\n\nhttps://grafenberg.ovh\nhttps://kineticdistro.bandcamp.com",
+          "tracklist": [
+            "PROTOCOL INIT. //  ZERO SANCTITY [Remastered]",
+            "BLESSED CORRUPTION [Remastered]",
+            "STATIC CROWN [Remastered]",
+            "ZERO CHURCH ARCHITECTURE [Remastered]",
+            "FIRMWARE LITANY [Remastered]",
+            "SANCTIFIED ERROR STATE [Remastered]",
+            "DIVINITY IN DEBUG MODE [Remastered]",
+            "PULSE OF THE DAMAGED CORE [Remastered]",
+            "HEAVEN IN SYSTEM FAILURE [Remastered]",
+            "EXIT RITUAL // SHUTDOWN LITURGY [Remastered]"
+          ],
+          "credit": null,
+          "creditSource": "unresolved",
+          "isMirror": false
+        },
         {
           "id": "2285385039",
           "title": "CHROME SYNDICATE DREAMS",
