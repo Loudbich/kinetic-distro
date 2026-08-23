@@ -225,6 +225,19 @@ export const albumEntity = (release: Release, { deep = false } = {}) => {
 
   if (release.image) entity.image = assetUrl(release.image);
 
+  // The same record on the streaming services. This is what stops a search
+  // engine treating the Spotify, Apple Music and Deezer pages as three separate
+  // albums that happen to share a title.
+  // Built in one place: a second `entity.sameAs = …` further down used to
+  // overwrite this one, leaving every album with a single link.
+  const elsewhere = [
+    ...(release.streamingLinks?.map((l) => l.href) ?? []),
+    release.streamUrl,
+    release.listenUrl?.startsWith('http') ? release.listenUrl : undefined,
+  ].filter(Boolean) as string[];
+
+  if (elsewhere.length) entity.sameAs = [...new Set(elsewhere)];
+
   // A pressing is a real product with a real place to buy it — worth declaring,
   // and the only part of a release that search engines can show as an offer.
   if (release.vinylUrl) {
@@ -256,10 +269,6 @@ export const albumEntity = (release: Release, { deep = false } = {}) => {
         },
       })),
     };
-  }
-
-  if (release.listenUrl?.startsWith('http')) {
-    entity.sameAs = [release.listenUrl];
   }
 
   return entity;

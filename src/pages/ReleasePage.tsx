@@ -140,6 +140,29 @@ export default function ReleasePage() {
                   </a>
                 )}
               </div>
+
+              {/* Links to this exact record, not to the artist's profile —
+                  sending someone from an album page to a profile makes them
+                  hunt for the record again. */}
+              {release.streamingLinks?.length ? (
+                <div className="mt-8 border-t border-white/10 pt-6">
+                  <p className="label mb-4">Also on</p>
+                  <ul className="flex flex-wrap gap-x-6 gap-y-2">
+                    {release.streamingLinks.map((l) => (
+                      <li key={l.href}>
+                        <a
+                          href={l.href}
+                          target="_blank"
+                          rel="noreferrer noopener"
+                          className="link-underline text-sm text-chrome hover:text-paper"
+                        >
+                          {l.label} ↗
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ) : null}
             </Reveal>
           </div>
         </div>

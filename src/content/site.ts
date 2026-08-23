@@ -316,6 +316,8 @@ export type Release = {
   streamUrl?: string;
   /** Where a physical pressing can be ordered, when one exists. */
   vinylUrl?: string;
+  /** Streaming pages for this exact record — see the `streaming` table below. */
+  streamingLinks?: { label: string; href: string }[];
   listenUrl: string;
   featured?: boolean;
   /** Optional: drop a file in /public/covers and reference it, e.g. "/covers/kd-006.jpg".
@@ -475,6 +477,44 @@ export const vinyl: Record<string, string> = {
     'https://elasticstage.com/soundcloud/releases/vein-mirror-love-and-venom-taste-the-same-album',
   'solar-bazaar-rituals':
     'https://elasticstage.com/soundcloud/releases/anatolian-mirage-solar-bazaar-rituals-album',
+};
+
+/**
+ * Streaming pages for a record, keyed by release slug.
+ *
+ * Deliberately per-record rather than per-artist: the profile links on a roster
+ * page point at the artist, and sending someone from an album page to a profile
+ * makes them find the record again themselves. These also become the album's
+ * `sameAs`, which is what lets a search engine tie this page to the same record
+ * on Spotify, Apple Music and Deezer instead of treating them as four things.
+ *
+ * URLs are stored without a locale prefix so they resolve to the visitor's own
+ * store.
+ */
+export const streaming: Record<string, { label: string; href: string }[]> = {
+  'no-saints-no-proof': [
+    { label: 'Spotify', href: 'https://open.spotify.com/album/1Rc7HhHY8dFrqlrQePv1TZ' },
+    { label: 'Apple Music', href: 'https://music.apple.com/album/1838489546' },
+    { label: 'Deezer', href: 'https://www.deezer.com/album/818044871' },
+  ],
+  'the-error-gospel': [
+    { label: 'Spotify', href: 'https://open.spotify.com/album/3qVJ5DKNUxGIkeIjgLXZQW' },
+    { label: 'Apple Music', href: 'https://music.apple.com/album/1859408397' },
+    { label: 'Deezer', href: 'https://www.deezer.com/album/872363392' },
+  ],
+  'the-halo-corruption-protocol': [
+    { label: 'Spotify', href: 'https://open.spotify.com/album/5UDPLk8UOfPxBJkMH5zVcQ' },
+    { label: 'Apple Music', href: 'https://music.apple.com/album/1880789591' },
+  ],
+  'solar-bazaar-rituals': [
+    { label: 'Apple Music', href: 'https://music.apple.com/album/1880794723' },
+  ],
+  'love-and-venom-taste-the-same': [
+    { label: 'Apple Music', href: 'https://music.apple.com/album/1880799064' },
+  ],
+  'the-hush-beneath-the-static-kinetic-resonance-remaster': [
+    { label: 'Apple Music', href: 'https://music.apple.com/album/1886228843' },
+  ],
 };
 
 export const getRelease = (slug: string) => releases.find((r) => r.slug === slug);

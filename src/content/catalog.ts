@@ -17,7 +17,7 @@
 import generated from './catalog.generated.json';
 import art from './covers.generated.json';
 import { attributionFor } from './attribution';
-import { artists, releases, site, vinyl, type Release } from './site';
+import { artists, releases, site, streaming, vinyl, type Release } from './site';
 
 /* -------------------------------------------------------------------------- */
 /* Types                                                                       */
@@ -293,6 +293,7 @@ const derived: Release[] = mergePlaylists(
       listenUrl: playlist.url,
       streamUrl: playlist.url,
       vinylUrl: vinyl[slugify(playlist.title) || `set-${playlist.id}`],
+      streamingLinks: streaming[slugify(playlist.title) || `set-${playlist.id}`],
       image: coverFor(playlist.title) ?? playlist.artwork ?? undefined,
     } satisfies Release;
   });
@@ -313,7 +314,13 @@ const curated: Release[] = releases.map((r) => ({
   // an artist's own site, a profile. The player needs the record itself, so it
   // gets the matched SoundCloud set instead of guessing from that link.
   streamUrl: r.streamUrl ?? syncedByTitle.get(norm(r.title))?.url,
+  // Same inheritance as the notes: a curated entry that does not spell out its
+  // tracklist takes the synced one rather than showing none. Four records were
+  // silently dropping a complete tracklist this way — and with it their
+  // MusicRecording entities and numTracks.
+  tracklist: r.tracklist ?? syncedByTitle.get(norm(r.title))?.tracklist,
   vinylUrl: r.vinylUrl ?? vinyl[r.slug],
+  streamingLinks: r.streamingLinks ?? streaming[r.slug],
 }));
 
 /** Everything the site should list: curated first, then anything new from SoundCloud. */
