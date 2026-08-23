@@ -14,7 +14,9 @@ export const site = {
   domain: 'www.kinetic-distro.com',
   location: 'France',
   founded: '2024',
-  email: 'contact@kinetic-distro.com',
+  // The domain is hosted at OVH on a plan with no mailboxes, so the label's
+  // address lives on a domain that does have one.
+  email: 'kinetic-distro@firelovers.fr',
   pressEmail: 'press@kinetic-distro.com',
   shortDescription:
     'An independent music label and creative distribution platform dedicated to pushing the boundaries of sound, identity and artistic storytelling in the digital age.',

@@ -124,15 +124,20 @@ l'image au disque **en comparant les titres**, donc rien à modifier dans `site.
 
 ### Le ré-encodage
 
-Dépose ce que ton logiciel exporte, sans t'occuper du poids : chaque image est convertie
+Dépose ce que ton logiciel exporte, sans t'occuper du poids : chaque image est servie
 en WebP à une largeur que la maquette utilise réellement, et **jamais agrandie** — une
 source petite reste petite plutôt que d'être gonflée en fichier plus lourd et plus flou.
 Les sources dans `assets/` ne sont jamais modifiées.
 
+**Un fichier déjà en WebP et déjà assez petit est copié tel quel**, sans ré-encodage. Un
+second passage avec perte sur une image qui en a déjà subi un ne fait que l'adoucir sans
+rien gagner : une pochette de 202 ko en ressortait à 227 ko, plus lourde *et* dégradée.
+Tes pochettes exportées en WebP 1000 px sont donc publiées à l'octet près.
+
 | Élément | Largeurs produites | Pourquoi |
 |---|---|---|
 | Carrousel (large) | 768 / 1280 / 1920 | Pleine largeur : c'est la seule image dont la taille d'affichage varie vraiment |
-| Carrousel (mobile) | 640 / 960 | |
+| Carrousel (mobile) | 640 / 960 | Visuels verticaux 9:16, dans `assets/Caroussel/mobile/` |
 | Pochettes | 1000 | ~700 px sur grand écran, ~380 sur mobile — 1000 couvre les deux en 2× |
 | Portraits | 800 | Image de colonne, jamais plus de ~400 px |
 | Logo (lockup) | 640 | Affiché à 208 px |
@@ -142,9 +147,14 @@ Le carrousel reçoit un `srcset` : un téléphone télécharge le fichier de 768
 de 1920 destiné à un écran large. Les autres n'en ont qu'une seule largeur — un second
 fichier y coûterait plus en requêtes qu'il ne ferait gagner en octets.
 
-Ordres de grandeur constatés : la marque passe de 769 à **24 ko**, une diapositive de
-carrousel de ~580 ko à **34 ko** sur téléphone. L'encodage ajoute une dizaine de secondes
-au build.
+Ordres de grandeur constatés : la marque passe de 769 à **25 ko**, une diapositive de
+carrousel large de ~580 ko à **66 ko** en version téléphone. L'encodage ajoute une dizaine
+de secondes au build.
+
+**Le format mobile du carrousel suit les fichiers.** Sans visuel vertical, la boîte se
+contente d'un 16:9 ; dès que les 11 artistes en ont un, elle passe en 9:16 et les affiche
+entiers. Sur une page artiste le même visuel sert de bandeau en 4:5 — plus court, pour que
+le nom de l'artiste ne soit pas repoussé hors de l'écran.
 
 Deux règles à connaître :
 
@@ -706,9 +716,10 @@ des artistes — ce sont leurs propres textes. Restent à valider dans `src/cont
   décision dans `src/content/attribution.ts` (voir §9). Il n'y en a aucun actuellement.
 - **Unmade Scores** est le seul artiste sans portrait — sa fiche affiche le visuel
   génératif en attendant.
-- Les **emails** utilisent `@kinetic-distro.com` — à créer chez ton registrar ou à
-  rediriger, sinon les liens `mailto:` du site pointent dans le vide. Il n'en reste que
-  deux : `contact@` et `press@`.
+- L'adresse de contact est `kinetic-distro@firelovers.fr` — l'hébergement OVH du domaine
+  ne permet pas de créer de boîte mail. **`press@kinetic-distro.com` reste dans ce cas** :
+  il est encore affiché sur la page Contact et déclaré dans le JSON-LD, mais il n'existe
+  pas. À rediriger, ou à remplacer par la même adresse.
 - Les pages **/demos/ et /distribution/ ont été retirées** : le label n'est pas ouvert aux
   artistes extérieurs. Elles renvoient désormais un vrai 404, ce qui est le bon signal pour
   du contenu supprimé — Google les déréférencera d'elles-mêmes.

@@ -44,7 +44,11 @@ export default function ArtistPage() {
           top padding moves with the banner rather than being duplicated. */}
       {visual && (
         <section className="relative border-b border-white/10 pt-[68px]">
-          <div className="relative aspect-[16/9] w-full sm:aspect-[21/9] lg:aspect-[2.39/1]">
+          {/* A banner, not a hero: with a portrait crop it takes 4:5 rather than
+              the full 9:16, so the artist's name is not pushed off the screen. */}
+          <div
+            className={`relative w-full ${visual.mobile ? 'aspect-[4/5]' : 'aspect-[16/9]'} sm:aspect-[21/9] lg:aspect-[2.39/1]`}
+          >
             <picture>
               {visual.mobile && (
                 <source

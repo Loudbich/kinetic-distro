@@ -303,14 +303,17 @@ async function syncCarousel(rosterSlugs) {
   const slides = {};
   const unmatched = [];
 
-  // Only the export formats. The folder also holds PSDs, PNG masters and
-  // upscaler output; matching those would report a dozen files as errors on
-  // every build, which is the fastest way to teach everyone to ignore warnings.
-  const SLIDE_EXT = new Set(['.webp', '.avif']);
+  // The root of the folder also holds PSDs, PNG masters and upscaler output, so
+  // only the export formats count there — matching the rest would report a
+  // dozen files as errors on every build, which is the fastest way to teach
+  // everyone to ignore warnings. `mobile/` holds nothing but slides, so it
+  // takes any image format.
+  const ROOT_EXT = new Set(['.webp', '.avif']);
 
   const collect = (dir, kind) => {
+    const allowed = kind === 'mobile' ? IMAGE_EXT : ROOT_EXT;
     for (const file of listFiles(dir)) {
-      if (file.isDirectory() || !SLIDE_EXT.has(extname(file.name).toLowerCase())) continue;
+      if (file.isDirectory() || !allowed.has(extname(file.name).toLowerCase())) continue;
 
       const stem = file.name.slice(0, -extname(file.name).length);
       const slug = slugify(stem);

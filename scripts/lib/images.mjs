@@ -5,16 +5,21 @@
  * visuals, a 1254px logo shown at 28, a 5000px cover. Copying those verbatim
  * shipped megabytes for pictures the layout draws a few hundred pixels wide.
  *
- * Every asset is re-encoded to WebP at a width the design actually uses, and
- * never enlarged — a small source stays small rather than being blown up into a
+ * Every asset is served as WebP at a width the design actually uses, and never
+ * enlarged — a small source stays small rather than being blown up into a
  * bigger, blurrier file.
+ *
+ * A source that is already WebP and already small enough is copied untouched.
+ * Re-encoding it would be a second lossy pass over an image that has been
+ * through one already: visible softening for no gain, and in one measured case
+ * a 202 kB cover came out at 227 kB — larger AND worse.
  *
  * Sources are left untouched. `assets/` remains the archive; only what the site
  * serves is reduced.
  * -----------------------------------------------------------------------------
  */
 
-import { mkdirSync } from 'node:fs';
+import { copyFileSync, mkdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import sharp from 'sharp';
 
@@ -28,17 +33,17 @@ import sharp from 'sharp';
  */
 export const PRESETS = {
   /** Full-bleed hero — the only image whose display width really varies. */
-  carousel: { widths: [768, 1280, 1920], quality: 78 },
+  carousel: { widths: [768, 1280, 1920], quality: 88 },
   /** Portrait crop for phones; never wider than a large phone at 3x. */
-  carouselMobile: { widths: [640, 960], quality: 78 },
+  carouselMobile: { widths: [640, 960], quality: 88 },
   /** Drawn at ~700px on a wide screen, ~380 on a phone. 1000 covers both at 2x. */
-  cover: { widths: [1000], quality: 82 },
+  cover: { widths: [1000], quality: 90 },
   /** A column image, never more than ~400px wide. */
-  portrait: { widths: [800], quality: 82 },
+  portrait: { widths: [800], quality: 88 },
   /** The footer lockup, drawn at 208px. */
-  logo: { widths: [640], quality: 88 },
+  logo: { widths: [640], quality: 92 },
   /** The header mark, drawn at 28px — and the favicon. */
-  mark: { widths: [256], quality: 90 },
+  mark: { widths: [256], quality: 92 },
 };
 
 /**
@@ -54,6 +59,22 @@ export async function emit(source, { outDir, publicPath, baseName, preset }) {
   mkdirSync(outDir, { recursive: true });
 
   const meta = await sharp(source).metadata();
+
+  // Already the right format at a size the layout can use: copy it. A second
+  // lossy pass would only soften an image that is already as small as the
+  // design needs.
+  const widest = widths[widths.length - 1];
+  if (/\.webp$/i.test(source) && (meta.width ?? 0) <= widest) {
+    mkdirSync(outDir, { recursive: true });
+    const file = `${baseName}.webp`;
+    copyFileSync(source, join(outDir, file));
+    return {
+      primary: { url: `${publicPath}/${file}`, width: meta.width, height: meta.height },
+      bytes: statSync(source).size,
+      passthrough: true,
+    };
+  }
+
   const variants = [];
   let bytes = 0;
 

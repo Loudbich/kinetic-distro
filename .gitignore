@@ -14,7 +14,7 @@ public/carousel
 public/logo*
 
 # Carousel masters and upscaler output — 23 MB PNGs the site never serves.
-# Slides are exported as .webp; only those belong in the repo.
+# Only the root is affected: assets/Caroussel/mobile holds real slides, and
+# those arrive as PNG.
 assets/Caroussel/*.png
-assets/Caroussel/mobile/*.png
 assets/**/*.psd

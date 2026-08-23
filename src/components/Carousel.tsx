@@ -49,7 +49,10 @@ const INTERVAL = 6500;
  * gutting it. Drop files in assets/Caroussel/mobile and this switches itself.
  */
 const hasMobileArt = slides.every((s) => s.mobile);
-const mobileRatio = hasMobileArt ? 'aspect-[4/5]' : 'aspect-[16/9]';
+// The portrait crops are 9:16, so the box takes that shape and shows them
+// whole. Without them a 2.39:1 visual is trimmed to 16:9 — a 9:16 box would
+// show a vertical sliver of its middle.
+const mobileRatio = hasMobileArt ? 'aspect-[9/16]' : 'aspect-[16/9]';
 
 /**
  * As the first thing on the page the carousel has to fill the screen, but the
@@ -59,7 +62,9 @@ const mobileRatio = hasMobileArt ? 'aspect-[4/5]' : 'aspect-[16/9]';
  */
 // Sized so the whole section — header padding and controls included — lands
 // just under the viewport, leaving the next block visible as a hint to scroll.
-const heroHeight = hasMobileArt ? 'min-h-[72svh] sm:min-h-[74svh]' : 'min-h-[52svh] sm:min-h-[74svh]';
+// With portrait art the 9:16 box is already tall enough to lead the page, so
+// only the short fallback needs a floor.
+const heroHeight = hasMobileArt ? 'sm:min-h-[74svh]' : 'min-h-[52svh] sm:min-h-[74svh]';
 
 export default function Carousel({ hero = false }: { hero?: boolean }) {
   const [index, setIndex] = useState(0);
