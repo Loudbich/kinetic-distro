@@ -315,6 +315,13 @@ L'`Organization` porte `additionalType: wikidata.org/wiki/Q18127` (le concept «
 discographique ») — un signal de désambiguïsation explicite pour la réconciliation
 d'entités.
 
+L'`Organization` déclare aussi **`Teopolis Records` en `alternateName`**. C'est le nom sous
+lequel le label a publié avant d'être renommé, et il reste le crédit ℗ de tous les disques
+de cette période — sur les plateformes de streaming comme dans les métadonnées SoundCloud.
+Sans cette déclaration, un moteur voit deux labels là où il n'y en a qu'un, et les 29
+disques concernés alimentent une seconde entité à moitié construite au lieu de consolider
+celle-ci.
+
 ### Ce qui manque encore pour un vrai Knowledge Panel
 
 Le balisage est complet, mais un panneau de connaissances ne se déclenche pas sur du

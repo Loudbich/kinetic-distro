@@ -100,7 +100,14 @@ export const organizationEntity = () => ({
   '@id': ID.organization,
   additionalType: 'https://www.wikidata.org/wiki/Q18127',
   name: site.name,
-  alternateName: 'Kinetic Distro Records',
+  /**
+   * Teopolis Records is the name the label released under before the rename,
+   * and it is still the ℗ credit on every record from that period — on the
+   * streaming platforms as well as in the SoundCloud metadata. Declaring it
+   * here tells a search engine the two names are one entity, so those releases
+   * consolidate onto the label instead of forming a second, half-built one.
+   */
+  alternateName: ['Kinetic Distro Records', 'Teopolis Records'],
   url: `${BASE_URL}/`,
   description: site.shortDescription,
   slogan: site.tagline,
