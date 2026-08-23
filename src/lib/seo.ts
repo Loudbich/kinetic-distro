@@ -526,7 +526,6 @@ export function contactSeo(): RouteSeo {
         '@id': ID.organization,
         contactPoint: [
           { '@type': 'ContactPoint', contactType: 'general enquiries', email: site.email, availableLanguage: ['en', 'fr'] },
-          { '@type': 'ContactPoint', contactType: 'press', email: site.pressEmail, availableLanguage: ['en', 'fr'] },
         ],
       },
     ],

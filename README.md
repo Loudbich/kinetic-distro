@@ -129,10 +129,12 @@ en WebP à une largeur que la maquette utilise réellement, et **jamais agrandie
 source petite reste petite plutôt que d'être gonflée en fichier plus lourd et plus flou.
 Les sources dans `assets/` ne sont jamais modifiées.
 
-**Un fichier déjà en WebP et déjà assez petit est copié tel quel**, sans ré-encodage. Un
-second passage avec perte sur une image qui en a déjà subi un ne fait que l'adoucir sans
-rien gagner : une pochette de 202 ko en ressortait à 227 ko, plus lourde *et* dégradée.
-Tes pochettes exportées en WebP 1000 px sont donc publiées à l'octet près.
+**Un fichier déjà en WebP et déjà à peu près à la bonne taille est copié tel quel**, sans
+ré-encodage — la tolérance est de 25 % au-dessus de la largeur cible. Un second passage
+avec perte sur une image qui en a déjà subi un ne fait que l'adoucir sans rien gagner, et
+sur un WebP déjà efficace il l'alourdit : une pochette de 202 ko ressortait à 227 ko, une
+diapositive verticale de 189 ko à 239 ko. Tes exports WebP sont donc publiés à l'octet
+près.
 
 | Élément | Largeurs produites | Pourquoi |
 |---|---|---|
@@ -716,10 +718,9 @@ des artistes — ce sont leurs propres textes. Restent à valider dans `src/cont
   décision dans `src/content/attribution.ts` (voir §9). Il n'y en a aucun actuellement.
 - **Unmade Scores** est le seul artiste sans portrait — sa fiche affiche le visuel
   génératif en attendant.
-- L'adresse de contact est `kinetic-distro@firelovers.fr` — l'hébergement OVH du domaine
-  ne permet pas de créer de boîte mail. **`press@kinetic-distro.com` reste dans ce cas** :
-  il est encore affiché sur la page Contact et déclaré dans le JSON-LD, mais il n'existe
-  pas. À rediriger, ou à remplacer par la même adresse.
+- **Une seule adresse : `kinetic-distro@firelovers.fr`.** L'hébergement OVH du domaine ne
+  permet pas de créer de boîte mail, donc l'adresse du label vit sur un domaine qui en a
+  une. L'ancienne `press@kinetic-distro.com` a été retirée du site et du JSON-LD.
 - Les pages **/demos/ et /distribution/ ont été retirées** : le label n'est pas ouvert aux
   artistes extérieurs. Elles renvoient désormais un vrai 404, ce qui est le bon signal pour
   du contenu supprimé — Google les déréférencera d'elles-mêmes.

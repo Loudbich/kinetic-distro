@@ -6,14 +6,9 @@ import { contactSeo } from '../lib/seo';
 
 const desks = [
   {
-    k: 'General & label',
+    k: 'Label & press',
     v: site.email,
-    d: 'Partnerships, licensing, sync, anything that does not fit elsewhere.',
-  },
-  {
-    k: 'Press & radio',
-    v: site.pressEmail,
-    d: 'Promos, interviews, premieres and press kits.',
+    d: 'Partnerships, licensing, sync, promos, interviews — one inbox, read by a person.',
   },
 ];
 

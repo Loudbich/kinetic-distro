@@ -315,8 +315,11 @@ async function syncCarousel(rosterSlugs) {
     for (const file of listFiles(dir)) {
       if (file.isDirectory() || !allowed.has(extname(file.name).toLowerCase())) continue;
 
+      // `grafenberg-mobile.webp` and `Grafenberg.png` name the same artist; the
+      // folder already says which crop this is, so the suffix is redundant and
+      // is dropped rather than being required either way.
       const stem = file.name.slice(0, -extname(file.name).length);
-      const slug = slugify(stem);
+      const slug = slugify(stem).replace(/-mobile$/, '');
       if (!rosterSlugs.has(slug)) {
         unmatched.push(`${kind === 'mobile' ? 'mobile/' : ''}${file.name}  (read as "${slug}")`);
         continue;

@@ -60,10 +60,15 @@ export async function emit(source, { outDir, publicPath, baseName, preset }) {
 
   const meta = await sharp(source).metadata();
 
-  // Already the right format at a size the layout can use: copy it. A second
-  // lossy pass would only soften an image that is already as small as the
-  // design needs.
-  const widest = widths[widths.length - 1];
+  // Already the right format at roughly the right size: copy it. A second lossy
+  // pass would only soften an image that has been through one already, and on a
+  // WebP that is already efficient it can come out heavier — a 1080px slide
+  // re-encoded to 960 measured 239 kB against the source's 189.
+  //
+  // The tolerance is what makes this useful rather than pedantic: an export at
+  // 1080 for a 960 target is the right file, and shipping the extra 120px costs
+  // nothing next to re-compressing it.
+  const widest = widths[widths.length - 1] * 1.25;
   if (/\.webp$/i.test(source) && (meta.width ?? 0) <= widest) {
     mkdirSync(outDir, { recursive: true });
     const file = `${baseName}.webp`;

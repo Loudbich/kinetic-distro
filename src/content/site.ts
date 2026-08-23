@@ -15,9 +15,9 @@ export const site = {
   location: 'France',
   founded: '2024',
   // The domain is hosted at OVH on a plan with no mailboxes, so the label's
-  // address lives on a domain that does have one.
+  // address lives on a domain that does have one. It is the only address: a
+  // separate press@ was listed for a while and never existed.
   email: 'kinetic-distro@firelovers.fr',
-  pressEmail: 'press@kinetic-distro.com',
   shortDescription:
     'An independent music label and creative distribution platform dedicated to pushing the boundaries of sound, identity and artistic storytelling in the digital age.',
   manifestoLines: [
