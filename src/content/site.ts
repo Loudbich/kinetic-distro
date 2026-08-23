@@ -78,6 +78,7 @@ const roster: Artist[] = [
       { label: 'Deezer', href: 'https://www.deezer.com/artist/7926446' },
       { label: 'Tidal', href: 'https://tidal.com/artist/6925135' },
       { label: 'Qobuz', href: 'https://www.qobuz.com/fr-fr/interpreter/grafenberg/2260278' },
+      { label: 'Amazon Music', href: 'https://music.amazon.com/artists/B00XILPXG4' },
     ],
     featured: true,
   },
