@@ -46,9 +46,17 @@ export default function ArtistPage() {
         <section className="relative border-b border-white/10 pt-[68px]">
           <div className="relative aspect-[16/9] w-full sm:aspect-[21/9] lg:aspect-[2.39/1]">
             <picture>
-              {visual.mobile && <source media="(max-width: 639px)" srcSet={visual.mobile.url} />}
+              {visual.mobile && (
+                <source
+                  media="(max-width: 639px)"
+                  srcSet={visual.mobile.srcset ?? visual.mobile.url}
+                  sizes="100vw"
+                />
+              )}
               <img
                 src={visual.wide.url}
+                srcSet={visual.wide.srcset}
+                sizes="100vw"
                 alt={`${artist.name} — ${artist.tagline}`}
                 width={visual.wide.width}
                 height={visual.wide.height}

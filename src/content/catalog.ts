@@ -154,7 +154,7 @@ const coverFor = (title: string): string | undefined =>
 export const portraitFor = (slug: string): string | undefined =>
   (art.portraits as Record<string, string>)[slug];
 
-export type KeyVisual = { url: string; width?: number; height?: number };
+export type KeyVisual = { url: string; width?: number; height?: number; srcset?: string };
 
 /**
  * The artist's wide key visual — the same file the home carousel shows, so a

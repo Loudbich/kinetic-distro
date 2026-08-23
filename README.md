@@ -17,7 +17,7 @@ npm run build      # artwork, typecheck, compile, pré-rend 83 pages HTML, sitem
 npm run preview:static  # sert dist/ comme le fera la prod (à utiliser pour vérifier)
 npm run audit      # audit SEO du dist/ construit
 npm run sync       # récupère le catalogue depuis SoundCloud
-npm run assets     # copie assets/ vers public/ et écrit le manifeste d'images
+npm run assets     # ré-encode assets/ vers public/ et écrit le manifeste d'images
 npm test           # tests hors-ligne des parsers de synchro
 ```
 
@@ -118,9 +118,33 @@ artiste puis par album (`Broken Shaman/01 - Dirt temple/…`), ou à plat. Seul 
 fichier compte.
 
 C'est tout. `npm run build` lance `npm run assets`, qui normalise les noms
-(minuscules, tirets, accents retirés), copie les fichiers dans `public/covers/` et
-`public/artists/`, et écrit `src/content/covers.generated.json`. Le catalogue rattache
+(minuscules, tirets, accents retirés), **ré-encode chaque image**, écrit le résultat dans
+`public/` et met à jour `src/content/covers.generated.json`. Le catalogue rattache
 l'image au disque **en comparant les titres**, donc rien à modifier dans `site.ts`.
+
+### Le ré-encodage
+
+Dépose ce que ton logiciel exporte, sans t'occuper du poids : chaque image est convertie
+en WebP à une largeur que la maquette utilise réellement, et **jamais agrandie** — une
+source petite reste petite plutôt que d'être gonflée en fichier plus lourd et plus flou.
+Les sources dans `assets/` ne sont jamais modifiées.
+
+| Élément | Largeurs produites | Pourquoi |
+|---|---|---|
+| Carrousel (large) | 768 / 1280 / 1920 | Pleine largeur : c'est la seule image dont la taille d'affichage varie vraiment |
+| Carrousel (mobile) | 640 / 960 | |
+| Pochettes | 1000 | ~700 px sur grand écran, ~380 sur mobile — 1000 couvre les deux en 2× |
+| Portraits | 800 | Image de colonne, jamais plus de ~400 px |
+| Logo (lockup) | 640 | Affiché à 208 px |
+| Marque | 256 | Affichée à 28 px, et sert de favicon |
+
+Le carrousel reçoit un `srcset` : un téléphone télécharge le fichier de 768 px, pas celui
+de 1920 destiné à un écran large. Les autres n'en ont qu'une seule largeur — un second
+fichier y coûterait plus en requêtes qu'il ne ferait gagner en octets.
+
+Ordres de grandeur constatés : la marque passe de 769 à **24 ko**, une diapositive de
+carrousel de ~580 ko à **34 ko** sur téléphone. L'encodage ajoute une dizaine de secondes
+au build.
 
 Deux règles à connaître :
 

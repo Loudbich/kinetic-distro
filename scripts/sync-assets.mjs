@@ -28,7 +28,6 @@
  */
 
 import {
-  copyFileSync,
   existsSync,
   mkdirSync,
   readdirSync,
@@ -40,6 +39,7 @@ import {
 import { dirname, extname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { norm, readRoster } from './lib/attribution.mjs';
+import { emit, kb } from './lib/images.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const SRC = resolve(root, 'assets');
@@ -145,11 +145,12 @@ function knownTitles() {
 
 /* -------------------------------------------------------------------------- */
 
-function syncCovers(titles) {
+async function syncCovers(titles) {
   const outDir = join(PUBLIC, 'covers');
   const manifest = {};
   const unmatched = [];
   let copied = 0;
+  let bytes = 0;
 
   for (const file of walkImages(join(SRC, 'covers'))) {
     const candidates = titleCandidates(file.name);
@@ -160,17 +161,23 @@ function syncCovers(titles) {
       continue;
     }
 
-    const target = `${slugify(titles.get(key))}${extname(file.name).toLowerCase()}`;
-    manifest[key] = `/covers/${target}`;
-
-    if (!CHECK) {
-      mkdirSync(outDir, { recursive: true });
-      copyFileSync(file.path, join(outDir, target));
+    const baseName = slugify(titles.get(key));
+    if (CHECK) {
+      manifest[key] = `/covers/${baseName}.webp`;
+    } else {
+      const out = await emit(file.path, {
+        outDir,
+        publicPath: '/covers',
+        baseName,
+        preset: 'cover',
+      });
+      manifest[key] = out.primary.url;
+      bytes += out.bytes;
     }
     copied++;
   }
 
-  return { manifest, unmatched, copied };
+  return { manifest, unmatched, copied, bytes };
 }
 
 /**
@@ -220,40 +227,6 @@ function hasAlpha(path) {
 }
 
 /**
- * Intrinsic pixel size, so the markup can declare an aspect ratio instead of
- * hardcoding one. Re-exporting a logo at another size then cannot introduce a
- * layout shift that nobody thinks to look for.
- *
- * Returns null for anything it cannot read; the caller simply omits the hint.
- */
-function imageSize(path) {
-  const b = readFileSync(path);
-
-  if (b.length > 24 && b.toString('ascii', 1, 4) === 'PNG') {
-    return { width: b.readUInt32BE(16), height: b.readUInt32BE(20) };
-  }
-
-  if (b.length > 30 && b.toString('ascii', 8, 12) === 'WEBP') {
-    const format = b.toString('ascii', 12, 16);
-    if (format === 'VP8X') {
-      return {
-        width: 1 + (b[24] | (b[25] << 8) | (b[26] << 16)),
-        height: 1 + (b[27] | (b[28] << 8) | (b[29] << 16)),
-      };
-    }
-    if (format === 'VP8 ') {
-      return { width: b.readUInt16LE(26) & 0x3fff, height: b.readUInt16LE(28) & 0x3fff };
-    }
-    if (format === 'VP8L') {
-      const bits = b.readUInt32LE(21);
-      return { width: (bits & 0x3fff) + 1, height: ((bits >> 14) & 0x3fff) + 1 };
-    }
-  }
-
-  return null;
-}
-
-/**
  * Brand files land at the root of the site, under their own name, because they
  * are referenced from the structured data and from share cards — URLs that
  * should stay put across redeploys rather than move with a content slug.
@@ -262,7 +235,7 @@ function imageSize(path) {
  * the best one is chosen rather than whichever the filesystem happens to list
  * last: transparency first, then the smaller file.
  */
-function syncBrand() {
+async function syncBrand() {
   const manifest = {};
   const opaque = [];
   const best = new Map();
@@ -287,19 +260,27 @@ function syncBrand() {
   }
 
   const sizes = {};
+  let bytes = 0;
 
   for (const [slug, file] of best) {
-    const target = `${slug}${extname(file.name).toLowerCase()}`;
-    manifest[slug] = `/${target}`;
+    manifest[slug] = `/${slug}.webp`;
     if (!file.alpha) opaque.push(slug);
 
-    const size = imageSize(file.path);
-    if (size) sizes[slug] = size;
+    if (CHECK) continue;
 
-    if (!CHECK) copyFileSync(file.path, join(PUBLIC, target));
+    // The mark is drawn at 28px and doubles as the favicon; the lockup at 208.
+    const out = await emit(file.path, {
+      outDir: PUBLIC,
+      publicPath: '',
+      baseName: slug,
+      preset: slug.includes('seul') || slug.includes('mark') ? 'mark' : 'logo',
+    });
+    manifest[slug] = out.primary.url;
+    sizes[slug] = { width: out.primary.width, height: out.primary.height };
+    bytes += out.bytes;
   }
 
-  return { manifest, opaque, sizes, copied: best.size, chosen: [...best.entries()] };
+  return { manifest, opaque, sizes, copied: best.size, bytes, chosen: [...best.entries()] };
 }
 
 /**
@@ -317,7 +298,7 @@ function syncBrand() {
  * accumulates 23 MB PNG masters and upscaler output beside the exported webp,
  * and none of that belongs on a web page.
  */
-function syncCarousel(rosterSlugs) {
+async function syncCarousel(rosterSlugs) {
   const outDir = join(PUBLIC, 'carousel');
   const slides = {};
   const unmatched = [];
@@ -351,22 +332,32 @@ function syncCarousel(rosterSlugs) {
   collect(join(SRC, 'Caroussel', 'mobile'), 'mobile');
 
   const manifest = {};
+  let bytes = 0;
+
   for (const [slug, variants] of Object.entries(slides)) {
     if (!variants.wide) continue; // a mobile crop alone is not a slide
     manifest[slug] = {};
 
     for (const [kind, file] of Object.entries(variants)) {
-      const target = `${slug}${kind === 'mobile' ? '-mobile' : ''}${extname(file.name).toLowerCase()}`;
-      manifest[slug][kind] = { url: `/carousel/${target}`, ...(imageSize(file.path) ?? {}) };
+      const baseName = `${slug}${kind === 'mobile' ? '-mobile' : ''}`;
 
-      if (!CHECK) {
-        mkdirSync(outDir, { recursive: true });
-        copyFileSync(file.path, join(outDir, target));
+      if (CHECK) {
+        manifest[slug][kind] = { url: `/carousel/${baseName}.webp` };
+        continue;
       }
+
+      const out = await emit(file.path, {
+        outDir,
+        publicPath: '/carousel',
+        baseName,
+        preset: kind === 'mobile' ? 'carouselMobile' : 'carousel',
+      });
+      manifest[slug][kind] = { ...out.primary, srcset: out.srcset };
+      bytes += out.bytes;
     }
   }
 
-  return { manifest, unmatched, copied: Object.keys(manifest).length };
+  return { manifest, unmatched, copied: Object.keys(manifest).length, bytes };
 }
 
 /**
@@ -375,11 +366,12 @@ function syncCarousel(rosterSlugs) {
  * where it is: copying it would publish a stray image that no page can ever
  * show, which is how an accidental drop ends up deployed forever.
  */
-function syncPortraits(rosterSlugs) {
+async function syncPortraits(rosterSlugs) {
   const outDir = join(PUBLIC, 'artists');
   const manifest = {};
   const unmatched = [];
   let copied = 0;
+  let bytes = 0;
 
   for (const file of listFiles(join(SRC, 'artists'))) {
     if (file.isDirectory() || !IMAGE_EXT.has(extname(file.name).toLowerCase())) continue;
@@ -392,17 +384,22 @@ function syncPortraits(rosterSlugs) {
       continue;
     }
 
-    const target = `${slug}${extname(file.name).toLowerCase()}`;
-    manifest[slug] = `/artists/${target}`;
-
-    if (!CHECK) {
-      mkdirSync(outDir, { recursive: true });
-      copyFileSync(join(SRC, 'artists', file.name), join(outDir, target));
+    if (CHECK) {
+      manifest[slug] = `/artists/${slug}.webp`;
+    } else {
+      const out = await emit(join(SRC, 'artists', file.name), {
+        outDir,
+        publicPath: '/artists',
+        baseName: slug,
+        preset: 'portrait',
+      });
+      manifest[slug] = out.primary.url;
+      bytes += out.bytes;
     }
     copied++;
   }
 
-  return { manifest, unmatched, copied };
+  return { manifest, unmatched, copied, bytes };
 }
 
 /* -------------------------------------------------------------------------- */
@@ -436,15 +433,18 @@ function clearPrevious() {
 clearPrevious();
 
 const titles = knownTitles();
-const covers = syncCovers(titles);
 const rosterSlugs = new Set(readRoster(resolve(root, 'src/content/site.ts')).map((a) => a.slug));
-const portraits = syncPortraits(rosterSlugs);
-const carousel = syncCarousel(rosterSlugs);
-const brand = syncBrand();
+
+const covers = await syncCovers(titles);
+const portraits = await syncPortraits(rosterSlugs);
+const carousel = await syncCarousel(rosterSlugs);
+const brand = await syncBrand();
+
+const totalBytes = covers.bytes + portraits.bytes + carousel.bytes + brand.bytes;
 
 log(
   `${covers.copied} cover(s), ${portraits.copied} portrait(s), ${carousel.copied} carousel slide(s), ${brand.copied} brand file(s)` +
-    `${CHECK ? ' — check only' : ' copied into public/'}`,
+    `${CHECK ? ' — check only' : ` encoded into public/ — ${kb(totalBytes)} total`}`,
 );
 
 for (const [slug, file] of brand.chosen) {

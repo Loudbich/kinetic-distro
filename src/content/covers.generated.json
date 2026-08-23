@@ -50,97 +50,108 @@
     "vein-mirror": "/artists/vein-mirror.webp"
   },
   "brand": {
-    "logo": "/logo.png",
-    "logo-seul": "/logo-seul.png"
+    "logo": "/logo.webp",
+    "logo-seul": "/logo-seul.webp"
   },
   "carousel": {
     "anatolian-mirage": {
       "wide": {
-        "url": "/carousel/anatolian-mirage.webp",
-        "width": 3840,
-        "height": 1608
+        "url": "/carousel/anatolian-mirage-1920.webp",
+        "width": 1920,
+        "height": 804,
+        "srcset": "/carousel/anatolian-mirage-768.webp 768w, /carousel/anatolian-mirage-1280.webp 1280w, /carousel/anatolian-mirage-1920.webp 1920w"
       }
     },
     "broken-shaman": {
       "wide": {
-        "url": "/carousel/broken-shaman.webp",
-        "width": 3840,
-        "height": 1608
+        "url": "/carousel/broken-shaman-1920.webp",
+        "width": 1920,
+        "height": 804,
+        "srcset": "/carousel/broken-shaman-768.webp 768w, /carousel/broken-shaman-1280.webp 1280w, /carousel/broken-shaman-1920.webp 1920w"
       }
     },
     "chromabone": {
       "wide": {
-        "url": "/carousel/chromabone.webp",
-        "width": 3840,
-        "height": 1608
+        "url": "/carousel/chromabone-1920.webp",
+        "width": 1920,
+        "height": 804,
+        "srcset": "/carousel/chromabone-768.webp 768w, /carousel/chromabone-1280.webp 1280w, /carousel/chromabone-1920.webp 1920w"
       }
     },
     "grafenberg": {
       "wide": {
-        "url": "/carousel/grafenberg.webp",
-        "width": 3840,
-        "height": 1608
+        "url": "/carousel/grafenberg-1920.webp",
+        "width": 1920,
+        "height": 804,
+        "srcset": "/carousel/grafenberg-768.webp 768w, /carousel/grafenberg-1280.webp 1280w, /carousel/grafenberg-1920.webp 1920w"
       }
     },
     "hollow-static": {
       "wide": {
-        "url": "/carousel/hollow-static.webp",
-        "width": 3840,
-        "height": 1608
+        "url": "/carousel/hollow-static-1920.webp",
+        "width": 1920,
+        "height": 804,
+        "srcset": "/carousel/hollow-static-768.webp 768w, /carousel/hollow-static-1280.webp 1280w, /carousel/hollow-static-1920.webp 1920w"
       }
     },
     "iron-covenant": {
       "wide": {
-        "url": "/carousel/iron-covenant.webp",
-        "width": 3840,
-        "height": 1608
+        "url": "/carousel/iron-covenant-1920.webp",
+        "width": 1920,
+        "height": 804,
+        "srcset": "/carousel/iron-covenant-768.webp 768w, /carousel/iron-covenant-1280.webp 1280w, /carousel/iron-covenant-1920.webp 1920w"
       }
     },
     "love-cult": {
       "wide": {
-        "url": "/carousel/love-cult.webp",
-        "width": 3840,
-        "height": 1608
+        "url": "/carousel/love-cult-1920.webp",
+        "width": 1920,
+        "height": 804,
+        "srcset": "/carousel/love-cult-768.webp 768w, /carousel/love-cult-1280.webp 1280w, /carousel/love-cult-1920.webp 1920w"
       }
     },
     "lykke": {
       "wide": {
-        "url": "/carousel/lykke.webp",
-        "width": 3840,
-        "height": 1608
+        "url": "/carousel/lykke-1920.webp",
+        "width": 1920,
+        "height": 804,
+        "srcset": "/carousel/lykke-768.webp 768w, /carousel/lykke-1280.webp 1280w, /carousel/lykke-1920.webp 1920w"
       }
     },
     "nosfera-disco-club": {
       "wide": {
-        "url": "/carousel/nosfera-disco-club.webp",
-        "width": 3840,
-        "height": 1608
+        "url": "/carousel/nosfera-disco-club-1920.webp",
+        "width": 1920,
+        "height": 804,
+        "srcset": "/carousel/nosfera-disco-club-768.webp 768w, /carousel/nosfera-disco-club-1280.webp 1280w, /carousel/nosfera-disco-club-1920.webp 1920w"
       }
     },
     "unmade-scores": {
       "wide": {
-        "url": "/carousel/unmade-scores.webp",
-        "width": 3840,
-        "height": 1608
+        "url": "/carousel/unmade-scores-1920.webp",
+        "width": 1920,
+        "height": 804,
+        "srcset": "/carousel/unmade-scores-768.webp 768w, /carousel/unmade-scores-1280.webp 1280w, /carousel/unmade-scores-1920.webp 1920w"
       }
     },
     "vein-mirror": {
       "wide": {
-        "url": "/carousel/vein-mirror.webp",
-        "width": 3840,
-        "height": 1608
+        "url": "/carousel/vein-mirror-1920.webp",
+        "width": 1920,
+        "height": 804,
+        "srcset": "/carousel/vein-mirror-768.webp 768w, /carousel/vein-mirror-1280.webp 1280w, /carousel/vein-mirror-1920.webp 1920w"
       }
     }
   },
   "brandOpaque": [],
   "brandSize": {
     "logo": {
-      "width": 1024,
-      "height": 559
+      "width": 640,
+      "height": 349
     },
     "logo-seul": {
-      "width": 1254,
-      "height": 1254
+      "width": 256,
+      "height": 256
     }
   }
 }

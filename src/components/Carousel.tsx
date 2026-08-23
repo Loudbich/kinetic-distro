@@ -23,7 +23,7 @@ import Reveal from './Reveal';
  * -----------------------------------------------------------------------------
  */
 
-type Variant = { url: string; width?: number; height?: number };
+type Variant = { url: string; width?: number; height?: number; srcset?: string };
 type Slide = { slug: string; name: string; tagline: string; accent: string; wide: Variant; mobile?: Variant };
 
 const manifest = art.carousel as Record<string, { wide?: Variant; mobile?: Variant }>;
@@ -113,9 +113,20 @@ export default function Carousel({ hero = false }: { hero?: boolean }) {
               aria-hidden={i === index ? undefined : true}
             >
               <picture>
-                {slide.mobile && <source media="(max-width: 639px)" srcSet={slide.mobile.url} />}
+                {slide.mobile && (
+                  <source
+                    media="(max-width: 639px)"
+                    srcSet={slide.mobile.srcset ?? slide.mobile.url}
+                    sizes="100vw"
+                  />
+                )}
                 <img
                   src={slide.wide.url}
+                  srcSet={slide.wide.srcset}
+                  // The slide runs edge to edge, so the browser can pick from
+                  // the viewport alone — a phone takes the 768px file rather
+                  // than the 1920 one built for a wide display.
+                  sizes="100vw"
                   alt={`${slide.name} — ${slide.tagline}`}
                   width={slide.wide.width}
                   height={slide.wide.height}
