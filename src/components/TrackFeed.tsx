@@ -167,7 +167,7 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
           </div>
         </Reveal>
 
-        <ul className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
+        <ul className="grid grid-cols-1 gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
           {tracks.map((t, i) => (
             <Reveal as="li" key={t.id} delay={(i % 4) * 60} className="bg-ink">
               {playing === t.id ? (

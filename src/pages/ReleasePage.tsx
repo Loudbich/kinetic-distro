@@ -43,7 +43,7 @@ export default function ReleasePage() {
           aria-hidden="true"
         />
 
-        <div className="shell relative grid gap-12 py-16 lg:grid-cols-12 lg:gap-16 lg:py-24">
+        <div className="shell relative grid grid-cols-1 gap-12 py-16 lg:grid-cols-12 lg:gap-16 lg:py-24">
           <Reveal className="lg:col-span-5">
             <Link to="/releases/" className="label link-underline mb-8 inline-block hover:!text-paper">
               ← Catalogue
@@ -150,7 +150,7 @@ export default function ReleasePage() {
           skipped here rather than printed twice. */}
       {release.notes && release.notes.length > 1 && (
         <section className="border-b border-white/10">
-          <div className="shell grid gap-12 py-20 lg:grid-cols-12 lg:py-24">
+          <div className="shell grid grid-cols-1 gap-12 py-20 lg:grid-cols-12 lg:py-24">
             <Reveal className="lg:col-span-3">
               <p className="label">Notes</p>
             </Reveal>
@@ -167,7 +167,7 @@ export default function ReleasePage() {
 
       {release.tracklist && (
         <section className="border-b border-white/10 bg-ink-800">
-          <div className="shell grid gap-12 py-20 lg:grid-cols-12 lg:py-24">
+          <div className="shell grid grid-cols-1 gap-12 py-20 lg:grid-cols-12 lg:py-24">
             <Reveal className="lg:col-span-3">
               <p className="label">Tracklist</p>
               <p className="mt-4 font-mono text-sm text-chrome-400">

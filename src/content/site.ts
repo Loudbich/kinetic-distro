@@ -461,6 +461,10 @@ export const releases: Release[] = [
 export const vinyl: Record<string, string> = {
   'no-saints-no-proof': 'https://elasticstage.com/soundcloud/releases/grafenberg-no-saints-no-proof-album',
   'the-error-gospel': 'https://elasticstage.com/soundcloud/releases/grafenberg-the-error-gospel-album',
+  'love-and-venom-taste-the-same':
+    'https://elasticstage.com/soundcloud/releases/vein-mirror-love-and-venom-taste-the-same-album',
+  'solar-bazaar-rituals':
+    'https://elasticstage.com/soundcloud/releases/anatolian-mirage-solar-bazaar-rituals-album',
 };
 
 export const getRelease = (slug: string) => releases.find((r) => r.slug === slug);

@@ -163,7 +163,7 @@ function Footer() {
         className="display border-b border-white/10 py-4 text-2xl text-white/15 sm:text-3xl"
       />
 
-      <div className="shell grid gap-12 py-16 lg:grid-cols-12 lg:py-20">
+      <div className="shell grid grid-cols-1 gap-12 py-16 lg:grid-cols-12 lg:py-20">
         <div className="lg:col-span-5">
           <FullLogo className="w-52 max-w-full" />
           <p className="mt-6 max-w-sm text-balance text-lg leading-snug text-chrome">

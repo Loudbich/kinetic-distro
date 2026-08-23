@@ -118,7 +118,7 @@ export default function ArtistPage() {
 
       {/* BIO */}
       <section className="border-b border-white/10 bg-ink-800">
-        <div className="shell grid gap-12 py-20 lg:grid-cols-12 lg:gap-16 lg:py-28">
+        <div className="shell grid grid-cols-1 gap-12 py-20 lg:grid-cols-12 lg:gap-16 lg:py-28">
           <Reveal className="lg:col-span-3">
             <p className="label">Profile</p>
 
@@ -195,7 +195,7 @@ export default function ArtistPage() {
             <Reveal>
               <p className="label mb-12">Discography</p>
             </Reveal>
-            <ul className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
               {discography.map((r, i) => (
                 <Reveal as="li" key={r.slug} delay={i * 70}>
                   <Link to={`/releases/${r.slug}/`} className="group block">

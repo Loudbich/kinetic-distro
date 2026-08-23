@@ -58,7 +58,7 @@ export default function Home() {
           </Reveal>
 
           <Reveal delay={200}>
-            <div className="mt-10 grid gap-10 border-t border-white/10 pt-10 lg:grid-cols-12">
+            <div className="mt-10 grid grid-cols-1 gap-10 border-t border-white/10 pt-10 lg:grid-cols-12">
               <p className="text-balance text-xl leading-snug lg:col-span-6 lg:text-2xl">
                 An independent label and creative distribution platform for artists who arrive with a
                 whole world, not just a track.
@@ -96,7 +96,7 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16">
             <Reveal className="lg:col-span-6" delay={60}>
               <Link to={`/releases/${featured.slug}/`} className="group block">
                 <Cover
@@ -152,7 +152,7 @@ export default function Home() {
           <Reveal>
             <p className="label mb-12">What we are</p>
           </Reveal>
-          <div className="grid gap-x-16 gap-y-12 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-16 gap-y-12 lg:grid-cols-3">
             {site.manifestoLines.map((line, i) => (
               <Reveal key={line} delay={i * 90}>
                 <p className="label mb-6 accent-text">0{i + 1}</p>
@@ -182,7 +182,7 @@ export default function Home() {
             </div>
           </Reveal>
 
-          <ul className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="grid grid-cols-1 gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
             {artists.map((a, i) => (
               <Reveal as="li" key={a.slug} delay={(i % 4) * 70} className="bg-ink-800">
                 <Link

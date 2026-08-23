@@ -41,7 +41,7 @@ export default function Contact() {
 
       <section className="border-b border-white/10 bg-ink-800">
         <div className="shell py-20 lg:py-28">
-          <ul className="grid gap-px border border-white/10 bg-white/10 lg:grid-cols-3">
+          <ul className="grid grid-cols-1 gap-px border border-white/10 bg-white/10 lg:grid-cols-3">
             {desks.map((d, i) => (
               <Reveal as="li" key={d.k} delay={i * 80} className="bg-ink-800 p-8 lg:p-10">
                 <p className="label mb-8">{d.k}</p>
@@ -59,7 +59,7 @@ export default function Contact() {
       </section>
 
       <section className="border-b border-white/10">
-        <div className="shell grid gap-12 py-20 lg:grid-cols-12 lg:py-28">
+        <div className="shell grid grid-cols-1 gap-12 py-20 lg:grid-cols-12 lg:py-28">
           <Reveal className="lg:col-span-4">
             <p className="label mb-6">Elsewhere</p>
             <h2 className="display text-4xl leading-none sm:text-5xl">

@@ -54,7 +54,7 @@ export default function About() {
       />
 
       <section className="border-b border-white/10 bg-ink-800">
-        <div className="shell grid gap-12 py-20 lg:grid-cols-12 lg:gap-16 lg:py-28">
+        <div className="shell grid grid-cols-1 gap-12 py-20 lg:grid-cols-12 lg:gap-16 lg:py-28">
           <Reveal className="lg:col-span-3">
             <p className="label">The idea</p>
           </Reveal>
@@ -95,7 +95,7 @@ export default function About() {
           <Reveal>
             <p className="label mb-14">Principles</p>
           </Reveal>
-          <ul className="grid gap-x-16 gap-y-14 lg:grid-cols-2">
+          <ul className="grid grid-cols-1 gap-x-16 gap-y-14 lg:grid-cols-2">
             {principles.map((p, i) => (
               <Reveal as="li" key={p.n} delay={(i % 2) * 90}>
                 <p className="label accent-text mb-6">{p.n}</p>
@@ -113,13 +113,13 @@ export default function About() {
       />
 
       <section className="border-b border-white/10 bg-ink-800">
-        <div className="shell grid gap-12 py-20 lg:grid-cols-12 lg:py-28">
+        <div className="shell grid grid-cols-1 gap-12 py-20 lg:grid-cols-12 lg:py-28">
           <Reveal className="lg:col-span-4">
             <p className="label mb-6">Where to find us</p>
             <h2 className="display text-4xl leading-none sm:text-5xl">Listen first</h2>
           </Reveal>
           <div className="lg:col-span-8">
-            <ul className="grid gap-px border border-white/10 bg-white/10 sm:grid-cols-2">
+            <ul className="grid grid-cols-1 gap-px border border-white/10 bg-white/10 sm:grid-cols-2">
               {[
                 { l: 'Bandcamp', h: site.links.bandcamp, d: 'Full catalogue, direct support' },
                 { l: 'SoundCloud', h: site.links.soundcloud, d: 'Streams, remixes, works in progress' },

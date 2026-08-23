@@ -64,7 +64,7 @@ export default function Releases() {
       <section className="border-b border-white/10">
         <div className="shell py-16 lg:py-20">
           {view === 'grid' ? (
-            <ul className="grid gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+            <ul className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
               {sorted.map((r, i) => {
                 const artist = artists.find((a) => a.slug === r.artistSlugs[0]);
                 return (
