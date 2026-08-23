@@ -321,8 +321,16 @@ Le balisage est complet, mais un panneau de connaissances ne se déclenche pas s
 balisage seul. Il faut des **corroborations externes**, et c'est du travail hors-site :
 
 1. **Remplir `site.links`** dans `site.ts` — Instagram, YouTube, Spotify sont encore à `#`
-   et sont donc exclus du `sameAs`. Le `sameAs` est le mécanisme principal de
+   et sont donc exclus du `sameAs` du **label**. Le `sameAs` est le mécanisme principal de
    réconciliation : plus il est fourni, mieux l'entité est identifiée.
+
+   Côté **artistes**, c'est déjà en place : les profils de streaming ajoutés dans
+   `artists[].links` alimentent automatiquement leur `sameAs`. Grafenberg en compte huit
+   (site officiel, SoundCloud, Bandcamp, Spotify, Apple Music, Deezer, Tidal, Qobuz), ce
+   qui est exactement ce qu'un moteur attend pour rattacher un artiste à son entité.
+   Les URLs sont volontairement **sans préfixe de langue** : une entité canonique ne doit
+   pas être liée à une région, et la forme neutre redirige vers le pays du visiteur.
+   Exception, Qobuz, qui renvoie 404 sans locale — le lien y garde `fr-fr`.
 2. **Créer une entrée MusicBrainz** pour le label et chaque artiste, puis ajouter les URLs
    au `sameAs`. MusicBrainz alimente une bonne partie des bases d'entités musicales.
 3. **Créer un élément Wikidata** pour Kinetic Distro (avec la propriété P856 « site

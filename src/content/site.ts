@@ -73,6 +73,11 @@ const roster: Artist[] = [
       { label: 'Official site', href: 'https://grafenberg.ovh' },
       { label: 'SoundCloud', href: 'https://soundcloud.com/grafenbergmusik' },
       { label: 'Bandcamp', href: 'https://kineticdistro.bandcamp.com' },
+      { label: 'Spotify', href: 'https://open.spotify.com/artist/5jslSprlKPY4AT9Gk6yD3c' },
+      { label: 'Apple Music', href: 'https://music.apple.com/artist/1838489224' },
+      { label: 'Deezer', href: 'https://www.deezer.com/artist/7926446' },
+      { label: 'Tidal', href: 'https://tidal.com/artist/6925135' },
+      { label: 'Qobuz', href: 'https://www.qobuz.com/fr-fr/interpreter/grafenberg/2260278' },
     ],
     featured: true,
   },
@@ -151,6 +156,7 @@ const roster: Artist[] = [
     links: [
       { label: 'SoundCloud', href: 'https://soundcloud.com/vein-mirror' },
       { label: 'Bandcamp', href: 'https://kineticdistro.bandcamp.com' },
+      { label: 'Apple Music', href: 'https://music.apple.com/artist/1880796943' },
     ],
   },
   {
@@ -189,6 +195,7 @@ const roster: Artist[] = [
     links: [
       { label: 'SoundCloud', href: 'https://soundcloud.com/anatolian_mirage' },
       { label: 'Bandcamp', href: 'https://kineticdistro.bandcamp.com' },
+      { label: 'Apple Music', href: 'https://music.apple.com/artist/1880792477' },
     ],
     featured: true,
   },
