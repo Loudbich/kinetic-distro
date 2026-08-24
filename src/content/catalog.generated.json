@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-23T16:40:58.878Z",
+  "generatedAt": "2026-08-24T05:49:39.218Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
-  "trackCount": 664,
+  "trackCount": 654,
   "playlistCount": 74,
   "failures": [],
   "artists": {
@@ -16,7 +16,7 @@
       "description": "Kinetic Distro is an independent music label and creative distribution platform dedicated to pushing the boundaries of sound, identity, and artistic storytelling in the digital age.\n\nBuilt on a vision of movement and transformation, Kinetic Distro operates at the intersection of genres, cultures, and eras—curating a diverse roster of artists who each embody a distinct sonic universe. From cinematic electronic landscapes to hypnotic techno, neo-soul narratives, experimental pop, and heavy sonic architectures, the label thrives on contrast, evolution, and cohesion.\n\nThe roster includes projects such as Grafenberg, Broken Shaman, Chromabone, Nosfera Disco Club, VEIN//Mirror, Iron Covenant, Anatolian Mirage, and Lykke—each representing a unique dimension of the Kinetic Distro ecosystem. Rather than following trends, the label builds immersive worlds, where every release contributes to a larger, interconnected artistic continuum.\n\nKinetic Distro is not just a distributor—it is a creative engine. Through meticulous curation, visual identity development, and narrative-driven releases, the label transforms music into experiences. Each project is approached as a living entity, evolving across albums, concepts, and aesthetic directions.\n\nDriven by independence and a commitment to artistic integrity, Kinetic Distro embraces modern production tools, global influences, and a release strategy designed for the streaming era—while maintaining a strong emphasis on authenticity and long-term vision.\n\nAt its core, Kinetic Distro is about momentum: sound in motion, ideas in evolution, and artists in constant transformation.",
       "avatar": "https://i1.sndcdn.com/avatars-PHRs78KRNfZuMsC6-bG5D1Q-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 322,
+      "trackCount": 312,
       "latestDate": "2026-08-23",
       "tracks": [
         {
@@ -100,20 +100,20 @@
           "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         },
         {
-          "id": "2386790694",
-          "title": "STATIC CROWN (Remastered)",
-          "url": "https://soundcloud.com/grafenbergmusik/static-crown-remastered-3",
-          "date": "2026-08-23",
-          "durationSec": 257,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
+          "id": "2384477862",
+          "title": "Anatolian Mirage - Golden road echoes [Chromabone's neon dervish remix]",
+          "url": "https://soundcloud.com/grafenbergmusik/anatolian-mirage-golden-road",
+          "date": "2026-08-19",
+          "durationSec": 337,
+          "artwork": "https://i1.sndcdn.com/artworks-TrCQLe219Axz0uwj-X1I3CA-t500x500.jpg"
         },
         {
-          "id": "2386790691",
-          "title": "FIRMWARE LITANY (Remastered)",
-          "url": "https://soundcloud.com/grafenbergmusik/firmware-litany-remastered-5",
-          "date": "2026-08-23",
-          "durationSec": 304,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
+          "id": "2384381067",
+          "title": "Grafenberg x Broken Shaman - Last Transmission [Chromabone's hacked signal remix feat. Nyla Vey]",
+          "url": "https://soundcloud.com/grafenbergmusik/grafenberg-x-broken-shaman",
+          "date": "2026-08-19",
+          "durationSec": 289,
+          "artwork": "https://i1.sndcdn.com/artworks-xJxh5fetno2WWIdN-HQ9Pog-t500x500.jpg"
         }
       ],
       "playlists": [
@@ -324,7 +324,7 @@
           "url": "https://soundcloud.com/grafenbergmusik/sets/kinetic-distro-essentials-vol",
           "date": "2026-07-24",
           "artwork": "https://i1.sndcdn.com/artworks-gB7qKfzpQSmxZy5d-M7oFnQ-t1080x1080.jpg",
-          "trackCount": 54,
+          "trackCount": 51,
           "isAlbum": false,
           "setType": "playlist",
           "description": "Welcome to the first official chapter of the Kinetic Distro universe.\n\nKinetic Distro Essentials Vol. I brings together the defining tracks from the label’s core artists, a curated journey through dark disco, cinematic electronica, coldwave, synth-driven storytelling, ritual soundscapes and genre-defying productions.\n\nFeaturing Nosfera Disco Club, Grafenberg, Broken Shaman, VEIN//MIRROR, Anatolian Mirage and Chromabone, this compilation showcases the unique identity of each project while revealing the artistic vision that unites them all: bold ideas, uncompromising creativity and immersive worlds.\n\nEvery release explores a different dimension. Together, they form one universe.\n\nTurn up the volume and discover the sound of Kinetic Distro.\n\nOne label. Six visions. Endless worlds.",
@@ -339,7 +339,6 @@
             "Phantom lovers",
             "Last Corner - Light If I Fall Tonight",
             "Glass Pulse Prophetess",
-            "Protocol Init - Zero Sanctity",
             "When the Rust Begins to Pray",
             "Afterimage",
             "Tape Ghost Mirage (Chromabone Phantom Bandwidth Remix)",
@@ -379,8 +378,6 @@
             "Steel horizon",
             "Holy fever",
             "Midnight sacrament",
-            "Static Crown",
-            "Firmware Litany",
             "Glass hearts",
             "The Hat - The Angry River (Grafenberg Remix)"
           ],
@@ -880,7 +877,7 @@
           "title": "The Mirror Era",
           "url": "https://soundcloud.com/grafenbergmusik/sets/the-mirror-era",
           "date": "2026-04-24",
-          "artwork": "https://i1.sndcdn.com/artworks-gUgh9ieeMVDzJgtz-9UvO9Q-t1080x1080.jpg",
+          "artwork": "https://i1.sndcdn.com/artworks-8cpndWu7MVJRFk20-en7rjQ-t1080x1080.jpg",
           "trackCount": 10,
           "isAlbum": true,
           "setType": "album",
@@ -999,22 +996,11 @@
           "url": "https://soundcloud.com/grafenbergmusik/sets/grafenberg-the-halo-corruption",
           "date": "2026-04-18",
           "artwork": "https://i1.sndcdn.com/artworks-15zbz4yRu4uerKU0-kUTXiQ-t1080x1080.jpg",
-          "trackCount": 10,
+          "trackCount": 0,
           "isAlbum": false,
           "setType": "playlist",
           "description": "Grafenberg – The Halo Corruption Protocol\n\nWhat was once sacred is now compromised.\n\nThe Halo Corruption Protocol is a descent into a fractured system where divinity has been rewritten, corrupted, and repurposed into code. This fourth chapter in the Grafenberg universe pushes deeper into a dark fusion of electronic architecture, industrial textures, and ritualistic sound design.\n\nEach track functions like a fragment of a broken program:\n– corrupted signals\n– sanctified errors\n– digital liturgies collapsing in real time\n\nFrom the cold precision of Protocol Init – Zero Sanctity to the terminal collapse of Shutdown Liturgy, the album unfolds as a cybernetic rite, where faith and machine merge into something unstable… and irreversible.\n\nThis is not just music.\nThis is a system failure disguised as transcendence.\n\nThemes:\nCorruption of purity • Synthetic spirituality • Machine theology • Controlled collapse\n\nSound signature:\nIndustrial electronic • Dark cinematic • Ritual ambient • Post-digital textures\n\nWelcome to the protocol.\nThere is no recovery.",
-          "tracklist": [
-            "Protocol Init - Zero Sanctity",
-            "Blessed Corruption",
-            "Static Crown",
-            "Zero Church Architecture",
-            "Firmware Litany",
-            "Sanctified Error State",
-            "Divinity in Debug Mode",
-            "Pulse of the Damaged Core",
-            "Heaven in System Failure",
-            "Exit Ritual - Shutdown Liturgy"
-          ],
+          "tracklist": [],
           "credit": [
             "grafenberg"
           ],
@@ -2256,7 +2242,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/neon-zombies-6",
           "date": "2026-02-06",
           "durationSec": 286,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         },
         {
           "id": "2261397659",
@@ -2264,7 +2250,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/dance-of-the-undead-3",
           "date": "2026-02-06",
           "durationSec": 187,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         },
         {
           "id": "2261397656",
@@ -2272,7 +2258,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/blood-moon-boogie-9",
           "date": "2026-02-06",
           "durationSec": 214,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         },
         {
           "id": "2261397653",
@@ -2280,7 +2266,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/ghouls-of-midnight-2",
           "date": "2026-02-06",
           "durationSec": 126,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         },
         {
           "id": "2261397650",
@@ -2288,7 +2274,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/seance-in-red-7",
           "date": "2026-02-06",
           "durationSec": 209,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         },
         {
           "id": "2261397647",
@@ -2296,7 +2282,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/purgatory-discotheque-12",
           "date": "2026-02-06",
           "durationSec": 227,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         },
         {
           "id": "2261397644",
@@ -2304,7 +2290,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/graveyard-groove-5",
           "date": "2026-02-06",
           "durationSec": 228,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         },
         {
           "id": "2261397641",
@@ -2312,7 +2298,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/phantom-lovers-8",
           "date": "2026-02-06",
           "durationSec": 264,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         },
         {
           "id": "2261397638",
@@ -2320,7 +2306,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/forever-in-the-afterclub-13",
           "date": "2026-02-06",
           "durationSec": 284,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         },
         {
           "id": "2261397635",
@@ -2328,7 +2314,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/night-of-the-chromabones-10",
           "date": "2026-02-06",
           "durationSec": 204,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         },
         {
           "id": "2261397632",
@@ -2336,7 +2322,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/the-floor-remembers-1",
           "date": "2026-02-06",
           "durationSec": 279,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         },
         {
           "id": "2261397629",
@@ -2344,7 +2330,7 @@
           "url": "https://soundcloud.com/nosfera_disco_club/the-last-waltz-of-the-damned-11",
           "date": "2026-02-06",
           "durationSec": 260,
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t500x500.png"
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t500x500.jpg"
         }
       ],
       "playlists": [
@@ -2353,7 +2339,7 @@
           "title": "The ghouls of midnight",
           "url": "https://soundcloud.com/nosfera_disco_club/sets/the-ghouls-of-midnight",
           "date": "2026-02-06",
-          "artwork": "https://i1.sndcdn.com/artworks-GV54lxB8ytgQun2j-bvjR5Q-t1080x1080.jpg",
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
           "trackCount": 13,
           "isAlbum": true,
           "setType": "album",
@@ -2384,7 +2370,7 @@
           "title": "Red veins on the dancefloor",
           "url": "https://soundcloud.com/nosfera_disco_club/sets/red-veins-on-the-dancefloor",
           "date": "2026-01-08",
-          "artwork": "https://i1.sndcdn.com/artworks-jjtNRrORBRNVQPXO-X2SldQ-t1080x1080.jpg",
+          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
           "trackCount": 10,
           "isAlbum": true,
           "setType": "album",
