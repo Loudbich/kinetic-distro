@@ -327,6 +327,29 @@ export type Release = {
 
 export const releases: Release[] = [
   {
+    slug: 'circuits-in-silence',
+    catalog: 'KD-008',
+    title: 'Circuits in Silence',
+    artistSlugs: ['grafenberg'],
+    artistDisplay: 'Grafenberg',
+    // SoundCloud also carries a `release_date` of 2025-07-10, which reads as a
+    // day/month mix-up of the same date; the upload and the stores both say
+    // 7 October.
+    date: '2025-10-07',
+    format: 'Digital · Single · 5:15',
+    type: 'Single',
+    blurb:
+      'Cosmic slow techno: analog warmth against digital cold, and the memory of love preserved in code.',
+    notes: [
+      'There was a time when memories had a heartbeat. When love could be touched, before it was uploaded into the ether. Now only fragments remain, pulses trapped in wires, whispers echoing through broken code.',
+      'Circuits in Silence drifts through that liminal space where emotion becomes electricity. It breathes in slow motion, analog warmth against digital cold, longing wrapped in reverb. The voice is distant, dissolving, a ghost in the current calling from somewhere between loss and infinity.',
+      'As the rhythm unfolds, time bends. Each beat stretches into eternity, each silence hums with memory. It is a signal for the soul, a requiem for connections that never fully die.',
+      'Somewhere beyond the neon rain, the bass keeps going — because even in silence, the circuits remember.',
+    ],
+    listenUrl: 'https://soundcloud.com/grafenbergmusik/circuits-in-silence',
+    streamUrl: 'https://soundcloud.com/grafenbergmusik/circuits-in-silence',
+  },
+  {
     slug: 'chrome-syndicate-dreams',
     catalog: 'KD-007',
     title: 'Chrome Syndicate Dreams',
@@ -492,6 +515,13 @@ export const vinyl: Record<string, string> = {
  * store.
  */
 export const streaming: Record<string, { label: string; href: string }[]> = {
+  'circuits-in-silence': [
+    { label: 'Spotify', href: 'https://open.spotify.com/track/0ZVVYNqcHSIww4DSEMMUxi' },
+    {
+      label: 'Apple Music',
+      href: 'https://music.apple.com/se/album/circuits-in-silence-single/1844816231',
+    },
+  ],
   'no-saints-no-proof': [
     { label: 'Spotify', href: 'https://open.spotify.com/album/1Rc7HhHY8dFrqlrQePv1TZ' },
     { label: 'Apple Music', href: 'https://music.apple.com/album/1838489546' },

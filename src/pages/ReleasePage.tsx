@@ -139,6 +139,7 @@ export default function ReleasePage() {
                     Vinyl ↗
                   </a>
                 )}
+
               </div>
 
               {/* Links to this exact record, not to the artist's profile —
