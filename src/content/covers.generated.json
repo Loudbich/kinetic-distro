@@ -62,145 +62,156 @@
   "carousel": {
     "anatolian-mirage": {
       "wide": {
-        "url": "/carousel/anatolian-mirage-1920.webp",
-        "width": 1920,
-        "height": 804,
-        "srcset": "/carousel/anatolian-mirage-768.webp 768w, /carousel/anatolian-mirage-1280.webp 1280w, /carousel/anatolian-mirage-1920.webp 1920w"
+        "url": "/carousel/anatolian-mirage-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/anatolian-mirage-768.webp 768w, /carousel/anatolian-mirage-1280.webp 1280w, /carousel/anatolian-mirage-1920.webp 1920w, /carousel/anatolian-mirage-2560.webp 2560w, /carousel/anatolian-mirage-3840.webp 3840w"
       },
       "mobile": {
-        "url": "/carousel/anatolian-mirage-mobile.webp",
+        "url": "/carousel/anatolian-mirage-mobile-1080.webp",
         "width": 1080,
-        "height": 1920
+        "height": 1920,
+        "srcset": "/carousel/anatolian-mirage-mobile-640.webp 640w, /carousel/anatolian-mirage-mobile-1080.webp 1080w"
       }
     },
     "broken-shaman": {
       "wide": {
-        "url": "/carousel/broken-shaman-1920.webp",
-        "width": 1920,
-        "height": 804,
-        "srcset": "/carousel/broken-shaman-768.webp 768w, /carousel/broken-shaman-1280.webp 1280w, /carousel/broken-shaman-1920.webp 1920w"
+        "url": "/carousel/broken-shaman-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/broken-shaman-768.webp 768w, /carousel/broken-shaman-1280.webp 1280w, /carousel/broken-shaman-1920.webp 1920w, /carousel/broken-shaman-2560.webp 2560w, /carousel/broken-shaman-3840.webp 3840w"
       },
       "mobile": {
-        "url": "/carousel/broken-shaman-mobile.webp",
+        "url": "/carousel/broken-shaman-mobile-1080.webp",
         "width": 1080,
-        "height": 1920
+        "height": 1920,
+        "srcset": "/carousel/broken-shaman-mobile-640.webp 640w, /carousel/broken-shaman-mobile-1080.webp 1080w"
       }
     },
     "chromabone": {
       "wide": {
-        "url": "/carousel/chromabone-1920.webp",
-        "width": 1920,
-        "height": 804,
-        "srcset": "/carousel/chromabone-768.webp 768w, /carousel/chromabone-1280.webp 1280w, /carousel/chromabone-1920.webp 1920w"
+        "url": "/carousel/chromabone-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/chromabone-768.webp 768w, /carousel/chromabone-1280.webp 1280w, /carousel/chromabone-1920.webp 1920w, /carousel/chromabone-2560.webp 2560w, /carousel/chromabone-3840.webp 3840w"
       },
       "mobile": {
-        "url": "/carousel/chromabone-mobile.webp",
+        "url": "/carousel/chromabone-mobile-1080.webp",
         "width": 1080,
-        "height": 1920
+        "height": 1920,
+        "srcset": "/carousel/chromabone-mobile-640.webp 640w, /carousel/chromabone-mobile-1080.webp 1080w"
       }
     },
     "grafenberg": {
       "wide": {
-        "url": "/carousel/grafenberg-1920.webp",
-        "width": 1920,
-        "height": 804,
-        "srcset": "/carousel/grafenberg-768.webp 768w, /carousel/grafenberg-1280.webp 1280w, /carousel/grafenberg-1920.webp 1920w"
+        "url": "/carousel/grafenberg-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/grafenberg-768.webp 768w, /carousel/grafenberg-1280.webp 1280w, /carousel/grafenberg-1920.webp 1920w, /carousel/grafenberg-2560.webp 2560w, /carousel/grafenberg-3840.webp 3840w"
       },
       "mobile": {
-        "url": "/carousel/grafenberg-mobile.webp",
+        "url": "/carousel/grafenberg-mobile-1080.webp",
         "width": 1080,
-        "height": 1920
+        "height": 1920,
+        "srcset": "/carousel/grafenberg-mobile-640.webp 640w, /carousel/grafenberg-mobile-1080.webp 1080w"
       }
     },
     "hollow-static": {
       "wide": {
-        "url": "/carousel/hollow-static-1920.webp",
-        "width": 1920,
-        "height": 804,
-        "srcset": "/carousel/hollow-static-768.webp 768w, /carousel/hollow-static-1280.webp 1280w, /carousel/hollow-static-1920.webp 1920w"
+        "url": "/carousel/hollow-static-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/hollow-static-768.webp 768w, /carousel/hollow-static-1280.webp 1280w, /carousel/hollow-static-1920.webp 1920w, /carousel/hollow-static-2560.webp 2560w, /carousel/hollow-static-3840.webp 3840w"
       },
       "mobile": {
-        "url": "/carousel/hollow-static-mobile.webp",
+        "url": "/carousel/hollow-static-mobile-1080.webp",
         "width": 1080,
-        "height": 1920
+        "height": 1920,
+        "srcset": "/carousel/hollow-static-mobile-640.webp 640w, /carousel/hollow-static-mobile-1080.webp 1080w"
       }
     },
     "iron-covenant": {
       "wide": {
-        "url": "/carousel/iron-covenant-1920.webp",
-        "width": 1920,
-        "height": 804,
-        "srcset": "/carousel/iron-covenant-768.webp 768w, /carousel/iron-covenant-1280.webp 1280w, /carousel/iron-covenant-1920.webp 1920w"
+        "url": "/carousel/iron-covenant-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/iron-covenant-768.webp 768w, /carousel/iron-covenant-1280.webp 1280w, /carousel/iron-covenant-1920.webp 1920w, /carousel/iron-covenant-2560.webp 2560w, /carousel/iron-covenant-3840.webp 3840w"
       },
       "mobile": {
-        "url": "/carousel/iron-covenant-mobile.webp",
+        "url": "/carousel/iron-covenant-mobile-1080.webp",
         "width": 1080,
-        "height": 1920
+        "height": 1920,
+        "srcset": "/carousel/iron-covenant-mobile-640.webp 640w, /carousel/iron-covenant-mobile-1080.webp 1080w"
       }
     },
     "love-cult": {
       "wide": {
-        "url": "/carousel/love-cult-1920.webp",
-        "width": 1920,
-        "height": 804,
-        "srcset": "/carousel/love-cult-768.webp 768w, /carousel/love-cult-1280.webp 1280w, /carousel/love-cult-1920.webp 1920w"
+        "url": "/carousel/love-cult-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/love-cult-768.webp 768w, /carousel/love-cult-1280.webp 1280w, /carousel/love-cult-1920.webp 1920w, /carousel/love-cult-2560.webp 2560w, /carousel/love-cult-3840.webp 3840w"
       },
       "mobile": {
-        "url": "/carousel/love-cult-mobile.webp",
+        "url": "/carousel/love-cult-mobile-1080.webp",
         "width": 1080,
-        "height": 1920
+        "height": 1920,
+        "srcset": "/carousel/love-cult-mobile-640.webp 640w, /carousel/love-cult-mobile-1080.webp 1080w"
       }
     },
     "lykke": {
       "wide": {
-        "url": "/carousel/lykke-1920.webp",
-        "width": 1920,
-        "height": 804,
-        "srcset": "/carousel/lykke-768.webp 768w, /carousel/lykke-1280.webp 1280w, /carousel/lykke-1920.webp 1920w"
+        "url": "/carousel/lykke-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/lykke-768.webp 768w, /carousel/lykke-1280.webp 1280w, /carousel/lykke-1920.webp 1920w, /carousel/lykke-2560.webp 2560w, /carousel/lykke-3840.webp 3840w"
       },
       "mobile": {
-        "url": "/carousel/lykke-mobile.webp",
+        "url": "/carousel/lykke-mobile-1080.webp",
         "width": 1080,
-        "height": 1920
+        "height": 1920,
+        "srcset": "/carousel/lykke-mobile-640.webp 640w, /carousel/lykke-mobile-1080.webp 1080w"
       }
     },
     "nosfera-disco-club": {
       "wide": {
-        "url": "/carousel/nosfera-disco-club-1920.webp",
-        "width": 1920,
-        "height": 804,
-        "srcset": "/carousel/nosfera-disco-club-768.webp 768w, /carousel/nosfera-disco-club-1280.webp 1280w, /carousel/nosfera-disco-club-1920.webp 1920w"
+        "url": "/carousel/nosfera-disco-club-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/nosfera-disco-club-768.webp 768w, /carousel/nosfera-disco-club-1280.webp 1280w, /carousel/nosfera-disco-club-1920.webp 1920w, /carousel/nosfera-disco-club-2560.webp 2560w, /carousel/nosfera-disco-club-3840.webp 3840w"
       },
       "mobile": {
-        "url": "/carousel/nosfera-disco-club-mobile.webp",
+        "url": "/carousel/nosfera-disco-club-mobile-1080.webp",
         "width": 1080,
-        "height": 1920
+        "height": 1920,
+        "srcset": "/carousel/nosfera-disco-club-mobile-640.webp 640w, /carousel/nosfera-disco-club-mobile-1080.webp 1080w"
       }
     },
     "unmade-scores": {
       "wide": {
-        "url": "/carousel/unmade-scores-1920.webp",
-        "width": 1920,
-        "height": 804,
-        "srcset": "/carousel/unmade-scores-768.webp 768w, /carousel/unmade-scores-1280.webp 1280w, /carousel/unmade-scores-1920.webp 1920w"
+        "url": "/carousel/unmade-scores-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/unmade-scores-768.webp 768w, /carousel/unmade-scores-1280.webp 1280w, /carousel/unmade-scores-1920.webp 1920w, /carousel/unmade-scores-2560.webp 2560w, /carousel/unmade-scores-3840.webp 3840w"
       },
       "mobile": {
-        "url": "/carousel/unmade-scores-mobile.webp",
+        "url": "/carousel/unmade-scores-mobile-1080.webp",
         "width": 1080,
-        "height": 1920
+        "height": 1920,
+        "srcset": "/carousel/unmade-scores-mobile-640.webp 640w, /carousel/unmade-scores-mobile-1080.webp 1080w"
       }
     },
     "vein-mirror": {
       "wide": {
-        "url": "/carousel/vein-mirror-1920.webp",
-        "width": 1920,
-        "height": 804,
-        "srcset": "/carousel/vein-mirror-768.webp 768w, /carousel/vein-mirror-1280.webp 1280w, /carousel/vein-mirror-1920.webp 1920w"
+        "url": "/carousel/vein-mirror-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/vein-mirror-768.webp 768w, /carousel/vein-mirror-1280.webp 1280w, /carousel/vein-mirror-1920.webp 1920w, /carousel/vein-mirror-2560.webp 2560w, /carousel/vein-mirror-3840.webp 3840w"
       },
       "mobile": {
-        "url": "/carousel/vein-mirror-mobile.webp",
+        "url": "/carousel/vein-mirror-mobile-1080.webp",
         "width": 1080,
-        "height": 1920
+        "height": 1920,
+        "srcset": "/carousel/vein-mirror-mobile-640.webp 640w, /carousel/vein-mirror-mobile-1080.webp 1080w"
       }
     }
   },

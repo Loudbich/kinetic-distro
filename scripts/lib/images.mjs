@@ -9,10 +9,14 @@
  * enlarged — a small source stays small rather than being blown up into a
  * bigger, blurrier file.
  *
- * A source that is already WebP and already small enough is copied untouched.
- * Re-encoding it would be a second lossy pass over an image that has been
- * through one already: visible softening for no gain, and in one measured case
- * a 202 kB cover came out at 227 kB — larger AND worse.
+ * At its own full width a WebP source is copied untouched — re-encoding it is a
+ * second lossy pass over an image that has been through one already: visible
+ * softening for no gain, and in one measured case a 202 kB cover came out at
+ * 227 kB, larger AND worse. Smaller variants beside it are genuinely resized.
+ *
+ * The widths go up to what the source can supply, not to what seems enough. A
+ * full-bleed 3840px visual capped at 1920 was being upscaled twofold on any
+ * HiDPI desktop, which looks exactly like bad compression and is not.
  *
  * Sources are left untouched. `assets/` remains the archive; only what the site
  * serves is reduced.
@@ -33,9 +37,9 @@ import sharp from 'sharp';
  */
 export const PRESETS = {
   /** Full-bleed hero — the only image whose display width really varies. */
-  carousel: { widths: [768, 1280, 1920], quality: 88 },
+  carousel: { widths: [768, 1280, 1920, 2560, 3840], quality: 88 },
   /** Portrait crop for phones; never wider than a large phone at 3x. */
-  carouselMobile: { widths: [640, 960], quality: 88 },
+  carouselMobile: { widths: [640, 1080, 1440], quality: 88 },
   /** Drawn at ~700px on a wide screen, ~380 on a phone. 1000 covers both at 2x. */
   cover: { widths: [1000], quality: 90 },
   /** A column image, never more than ~400px wide. */
@@ -59,52 +63,46 @@ export async function emit(source, { outDir, publicPath, baseName, preset }) {
   mkdirSync(outDir, { recursive: true });
 
   const meta = await sharp(source).metadata();
+  const sourceWidth = meta.width ?? 0;
+  const sourceIsWebp = /\.webp$/i.test(source);
 
-  // Already the right format at roughly the right size: copy it. A second lossy
-  // pass would only soften an image that has been through one already, and on a
-  // WebP that is already efficient it can come out heavier — a 1080px slide
-  // re-encoded to 960 measured 239 kB against the source's 189.
-  //
-  // The tolerance is what makes this useful rather than pedantic: an export at
-  // 1080 for a 960 target is the right file, and shipping the extra 120px costs
-  // nothing next to re-compressing it.
-  const widest = widths[widths.length - 1] * 1.25;
-  if (/\.webp$/i.test(source) && (meta.width ?? 0) <= widest) {
-    mkdirSync(outDir, { recursive: true });
-    const file = `${baseName}.webp`;
-    copyFileSync(source, join(outDir, file));
-    return {
-      primary: { url: `${publicPath}/${file}`, width: meta.width, height: meta.height },
-      bytes: statSync(source).size,
-      passthrough: true,
-    };
-  }
+  // Which widths this source can actually supply. Anything at or above its own
+  // width collapses onto the source size — enlarging would only produce a
+  // heavier blur — and duplicates are dropped.
+  const targets = [...new Set(widths.map((w) => Math.min(w, sourceWidth) || w))].sort((x, y) => x - y);
+  const multi = targets.length > 1;
 
   const variants = [];
   let bytes = 0;
 
-  for (const target of widths) {
-    // Never enlarge: a 200px source asked for at 768 would just be a heavier
-    // blur. The suffix is dropped on the only-width case so URLs stay tidy.
-    const width = Math.min(target, meta.width ?? target);
-    const suffix = widths.length > 1 ? `-${width}` : '';
-    const file = `${baseName}${suffix}.webp`;
+  for (const width of targets) {
+    const file = `${baseName}${multi ? `-${width}` : ''}.webp`;
+    const out = join(outDir, file);
+
+    // At full size a WebP source is its own best variant: re-encoding it is a
+    // second lossy pass over an image that has been through one already, and on
+    // an efficient file it can even come out heavier. Below full size there is
+    // real work to do, so it is encoded.
+    if (sourceIsWebp && width === sourceWidth) {
+      copyFileSync(source, out);
+      bytes += statSync(source).size;
+      variants.push({ url: `${publicPath}/${file}`, width, height: meta.height });
+      continue;
+    }
 
     const info = await sharp(source)
       .resize({ width, withoutEnlargement: true })
       .webp({ quality, effort: 5 })
-      .toFile(join(outDir, file));
+      .toFile(out);
 
     bytes += info.size;
     variants.push({ url: `${publicPath}/${file}`, width: info.width, height: info.height });
-
-    if (width < target) break; // the source ran out; wider entries would duplicate it
   }
 
   const primary = variants[variants.length - 1];
   return {
     primary,
-    srcset: variants.length > 1 ? variants.map((v) => `${v.url} ${v.width}w`).join(', ') : undefined,
+    srcset: multi ? variants.map((v) => `${v.url} ${v.width}w`).join(', ') : undefined,
     bytes,
   };
 }

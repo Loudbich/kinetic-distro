@@ -128,10 +128,13 @@ export default function Carousel({ hero = false }: { hero?: boolean }) {
                 <img
                   src={slide.wide.url}
                   srcSet={slide.wide.srcset}
-                  // The slide runs edge to edge, so the browser can pick from
-                  // the viewport alone — a phone takes the 768px file rather
-                  // than the 1920 one built for a wide display.
-                  sizes="100vw"
+                  // Slightly over 100vw on purpose. The slide runs edge to edge,
+                  // but `object-cover` scales the picture to fill a box that is
+                  // taller than its own ratio, so the painted image is wider
+                  // than the viewport — measured at 110vw on a 1440 screen. A
+                  // flat 100vw hint makes the browser pick one candidate too
+                  // small and upscale it.
+                  sizes="115vw"
                   alt={`${slide.name} — ${slide.tagline}`}
                   width={slide.wide.width}
                   height={slide.wide.height}
