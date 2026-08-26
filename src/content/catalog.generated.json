@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-24T05:49:39.218Z",
+  "generatedAt": "2026-08-26T05:45:59.649Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
-  "trackCount": 654,
-  "playlistCount": 74,
+  "trackCount": 662,
+  "playlistCount": 75,
   "failures": [],
   "artists": {
     "grafenberg": {
@@ -1194,9 +1194,73 @@
       "description": "Broken Shaman works in the space where ritual replaces meaning.\nGroove is used as pressure, voice as initiation, silence as law.\nNothing is explained. Everything is felt.\n\nThis is music for bodies before belief,\nfor desire before language,\nfor those who listen after the signal is gone.\n\nThe ritual never ended.\nIt only changed form.",
       "avatar": "https://i1.sndcdn.com/avatars-85DmbZDP3vvX3o8z-XOoKMQ-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 190,
-      "latestDate": "2026-08-18",
+      "trackCount": 198,
+      "latestDate": "2026-08-25",
       "tracks": [
+        {
+          "id": "2388231879",
+          "title": "AI SLOP V Domination",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-v-domination-5",
+          "date": "2026-08-25",
+          "durationSec": 280,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t500x500.jpg"
+        },
+        {
+          "id": "2388231876",
+          "title": "AI SLOP IV Global meltdown",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-iv-global-meltdown-4",
+          "date": "2026-08-25",
+          "durationSec": 236,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t500x500.jpg"
+        },
+        {
+          "id": "2388231873",
+          "title": "AI SLOP II More human than human",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-ii-more-human-than-human-2",
+          "date": "2026-08-25",
+          "durationSec": 273,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t500x500.jpg"
+        },
+        {
+          "id": "2388231870",
+          "title": "AI SLOP III Sloppier than ever",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-iii-sloppier-than-ever-3",
+          "date": "2026-08-25",
+          "durationSec": 215,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t500x500.jpg"
+        },
+        {
+          "id": "2388231867",
+          "title": "HUMAN SLOP",
+          "url": "https://soundcloud.com/broken_shaman/human-slop-8",
+          "date": "2026-08-25",
+          "durationSec": 298,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t500x500.jpg"
+        },
+        {
+          "id": "2388231864",
+          "title": "AI SLOP I Kiss the ring",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-i-kiss-the-ring-1",
+          "date": "2026-08-25",
+          "durationSec": 222,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t500x500.jpg"
+        },
+        {
+          "id": "2388231861",
+          "title": "AI SLOP VII Training data",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-vii-training-data-7",
+          "date": "2026-08-25",
+          "durationSec": 332,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t500x500.jpg"
+        },
+        {
+          "id": "2388231858",
+          "title": "AI SLOP VI The cure",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-vi-the-cure-6",
+          "date": "2026-08-25",
+          "durationSec": 377,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t500x500.jpg"
+        },
         {
           "id": "2383694124",
           "title": "Last transmission",
@@ -1228,73 +1292,35 @@
           "date": "2026-08-18",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
-        },
-        {
-          "id": "2383694112",
-          "title": "Switch//ON",
-          "url": "https://soundcloud.com/broken_shaman/switchon-1",
-          "date": "2026-08-18",
-          "durationSec": 283,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
-        },
-        {
-          "id": "2383694109",
-          "title": "Chrome pulse",
-          "url": "https://soundcloud.com/broken_shaman/chrome-pulse-3",
-          "date": "2026-08-18",
-          "durationSec": 244,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
-        },
-        {
-          "id": "2383694106",
-          "title": "Boot sequence",
-          "url": "https://soundcloud.com/broken_shaman/boot-sequence-2",
-          "date": "2026-08-18",
-          "durationSec": 261,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
-        },
-        {
-          "id": "2383694103",
-          "title": "Ghost interface (feat. Jack Razor Haldane)",
-          "url": "https://soundcloud.com/broken_shaman/ghost-interface-feat-jack-razor-haldane-5",
-          "date": "2026-08-18",
-          "durationSec": 245,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
-        },
-        {
-          "id": "2383694100",
-          "title": "Data seduction",
-          "url": "https://soundcloud.com/broken_shaman/data-seduction-6",
-          "date": "2026-08-18",
-          "durationSec": 248,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
-        },
-        {
-          "id": "2383694097",
-          "title": "Surveillance bloom",
-          "url": "https://soundcloud.com/broken_shaman/surveillance-bloom-8",
-          "date": "2026-08-18",
-          "durationSec": 245,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
-        },
-        {
-          "id": "2383694094",
-          "title": "System collapse ritual",
-          "url": "https://soundcloud.com/broken_shaman/system-collapse-ritual-10",
-          "date": "2026-08-18",
-          "durationSec": 284,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t500x500.jpg"
-        },
-        {
-          "id": "2361904955",
-          "title": "No collapse",
-          "url": "https://soundcloud.com/broken_shaman/no-collapse-5",
-          "date": "2026-07-16",
-          "durationSec": 308,
-          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t500x500.jpg"
         }
       ],
       "playlists": [
+        {
+          "id": "2289159729",
+          "title": "AI SLOP",
+          "url": "https://soundcloud.com/broken_shaman/sets/ai-slop",
+          "date": "2026-08-25",
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "trackCount": 8,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "BROKEN SHAMAN returns with AI SLOP, a brutal eight-track concept album built from the insult itself.\n\nThey called it slop.\nHe made it a crown.\n\nAcross AI SLOP I to AI SLOP VII, then the final verdict HUMAN SLOP, Broken Shaman turns artificial intelligence into mythology, weapon, mirror, disease, cure and god. This is not an apology for AI music. This is not a defense. This is domination.\n\nUncanny valley flesh.\nSix-finger gospel.\nTraining data as scripture.\nHumanity as corrupted input.\nThe machine as rhythm, judgment and cure.\n\nFrom “Kiss the Ring” to “Training Data”, the album follows the rise of an artificial king built from human garbage, human beauty, human violence, human prayers, human lies and human music. By the time HUMAN SLOP arrives, the mirror has teeth.\n\nUrban avant-garde hip hop, corrupted soul, industrial trap, cyberpunk gospel, wicked 808 pressure, broken machine funk and apocalyptic hooks collide in a record that is elegant, brutal, funny, arrogant and deeply uncomfortable.\n\nAI SLOP is more human than human.\nMore catchy than mercy.\nMore cruel than truth.\n\nYou uploaded everything.\nThen called it monster.\n\nFinal classification:\n\nAI SLOP was never the disease.\nHUMAN SLOP was.\n\nPublished by Kinetic Distro",
+          "tracklist": [
+            "AI SLOP I Kiss the ring",
+            "AI SLOP II More human than human",
+            "AI SLOP III Sloppier than ever",
+            "AI SLOP IV Global meltdown",
+            "AI SLOP V Domination",
+            "AI SLOP VI The cure",
+            "AI SLOP VII Training data",
+            "HUMAN SLOP"
+          ],
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
         {
           "id": "2285377158",
           "title": "Chrome Syndicate Dreams",
