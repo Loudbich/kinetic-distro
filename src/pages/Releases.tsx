@@ -11,9 +11,38 @@ import { fmtDate } from '../lib/format';
 
 type View = 'grid' | 'list';
 
+const sorted = [...allReleases].sort((a, b) => (a.date < b.date ? 1 : -1));
+
+/**
+ * Filter options come from the catalogue rather than a hardcoded list, so an
+ * artist with nothing out yet never appears as a choice that returns nothing —
+ * and a new release type starts filtering the day it exists.
+ */
+const artistOptions = artists
+  .filter((a) => sorted.some((r) => r.artistSlugs.includes(a.slug)))
+  .map((a) => ({ slug: a.slug, name: a.name }));
+
+const typeOptions = [...new Set(sorted.map((r) => r.type))].sort();
+
+/** The hand-numbered range, derived so it cannot drift as entries are added. */
+const curatedRange = (() => {
+  const kd = sorted.map((r) => r.catalog).filter((c) => c.startsWith('KD-')).sort();
+  return kd.length ? `${kd[0]} → ${kd[kd.length - 1]}` : '—';
+})();
+
 export default function Releases() {
   const [view, setView] = useState<View>('grid');
-  const sorted = [...allReleases].sort((a, b) => (a.date < b.date ? 1 : -1));
+  const [artist, setArtist] = useState('all');
+  const [type, setType] = useState('all');
+
+  const filtered = sorted.filter(
+    (r) => (artist === 'all' || r.artistSlugs.includes(artist)) && (type === 'all' || r.type === type),
+  );
+  const filtering = artist !== 'all' || type !== 'all';
+  const reset = () => {
+    setArtist('all');
+    setType('all');
+  };
 
   return (
     <>
@@ -31,41 +60,106 @@ export default function Releases() {
         intro="Narrative-driven releases, catalogued in order. Each record is a complete statement — sequenced, art-directed and released as one piece."
         meta={[
           { k: 'Releases', v: String(allReleases.length) },
-          { k: 'Curated entries', v: 'KD-001 → KD-007' },
+          { k: 'Curated entries', v: curatedRange },
           { k: 'Formats', v: 'Digital · Tape · Vinyl' },
         ]}
       />
 
+      {/* Native selects rather than rows of chips: eleven artists and five types
+          would wrap into a wall on a phone, and a select is one tap there. The
+          page is prerendered unfiltered, so a crawler still reads every record
+          and the list works with JavaScript off. */}
       <div className="sticky top-[68px] z-30 border-b border-white/10 bg-ink/85 backdrop-blur-xl">
-        <div className="shell flex items-center justify-between py-4">
-          <p className="label">
-            {sorted.length} entries
-            {syncMeta.isLive && (
-              <span className="ml-4 hidden sm:inline">
-                <span className="accent-text">●</span> synced {fmtDate(syncMeta.generatedAt!)}
-              </span>
-            )}
-          </p>
-          <div className="flex gap-6">
-            {(['grid', 'list'] as View[]).map((v) => (
-              <button
-                key={v}
-                onClick={() => setView(v)}
-                className={`label transition-colors ${view === v ? '!text-paper' : 'hover:!text-paper'}`}
-              >
-                {view === v && <span className="accent-text mr-2">▍</span>}
-                {v}
+        <div className="shell flex flex-col gap-3 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6 sm:py-4">
+          {/* `sm:contents` dissolves this wrapper on wider screens so its two
+              children join the parent row. On a phone it keeps the count and the
+              view toggle on one line, which saves the filter bar a whole row —
+              it was 122px of fixed chrome under a 68px header. */}
+          <div className="flex items-center justify-between gap-4 sm:contents">
+            <p className="label shrink-0" aria-live="polite">
+              {filtering ? `${filtered.length} of ${sorted.length} entries` : `${sorted.length} entries`}
+              {syncMeta.isLive && !filtering && (
+                <span className="ml-4 hidden lg:inline">
+                  <span className="accent-text">●</span> synced {fmtDate(syncMeta.generatedAt!)}
+                </span>
+              )}
+            </p>
+
+            <span className="flex shrink-0 gap-5 sm:order-last">
+              {(['grid', 'list'] as View[]).map((v) => (
+                <button
+                  key={v}
+                  onClick={() => setView(v)}
+                  aria-pressed={view === v}
+                  className={`label transition-colors ${view === v ? '!text-paper' : 'hover:!text-paper'}`}
+                >
+                  {view === v && <span className="accent-text mr-2">▍</span>}
+                  {v}
+                </button>
+              ))}
+            </span>
+          </div>
+
+          <div className="flex flex-nowrap items-center gap-2 sm:flex-wrap sm:gap-3">
+            <label className="sr-only" htmlFor="filter-artist">
+              Filter by artist
+            </label>
+            <select
+              id="filter-artist"
+              value={artist}
+              onChange={(e) => setArtist(e.target.value)}
+              className="label min-w-0 flex-1 cursor-pointer border border-white/15 bg-ink px-3 py-1.5 !text-[11px] transition-colors hover:border-white/30 focus-visible:border-[color:var(--accent)] sm:flex-initial"
+            >
+              <option value="all">All artists</option>
+              {artistOptions.map((a) => (
+                <option key={a.slug} value={a.slug}>
+                  {a.name}
+                </option>
+              ))}
+            </select>
+
+            <label className="sr-only" htmlFor="filter-type">
+              Filter by format
+            </label>
+            <select
+              id="filter-type"
+              value={type}
+              onChange={(e) => setType(e.target.value)}
+              className="label min-w-0 flex-1 cursor-pointer border border-white/15 bg-ink px-3 py-1.5 !text-[11px] transition-colors hover:border-white/30 focus-visible:border-[color:var(--accent)] sm:flex-initial"
+            >
+              <option value="all">All formats</option>
+              {typeOptions.map((t) => (
+                <option key={t} value={t}>
+                  {t}
+                </option>
+              ))}
+            </select>
+
+            {filtering && (
+              <button onClick={reset} className="label link-underline hover:!text-paper">
+                Clear
               </button>
-            ))}
+            )}
           </div>
         </div>
       </div>
 
       <section className="border-b border-white/10">
         <div className="shell py-16 lg:py-20">
-          {view === 'grid' ? (
+          {filtered.length === 0 ? (
+            <Reveal>
+              <p className="display-tight text-2xl">Nothing under that combination.</p>
+              <p className="mt-4 max-w-md text-chrome">
+                {artistOptions.find((a) => a.slug === artist)?.name ?? 'This artist'} has no{' '}
+                {type === 'all' ? 'releases' : `${type.toLowerCase()} in the catalogue`} yet.
+              </p>
+              <button onClick={reset} className="btn-ghost mt-8">
+                Show everything
+              </button>
+            </Reveal>
+          ) : view === 'grid' ? (
             <ul className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
-              {sorted.map((r, i) => {
+              {filtered.map((r, i) => {
                 const artist = artists.find((a) => a.slug === r.artistSlugs[0]);
                 return (
                   <Reveal as="li" key={r.slug} delay={(i % 3) * 80}>
@@ -103,7 +197,7 @@ export default function Releases() {
             </ul>
           ) : (
             <ul>
-              {sorted.map((r, i) => {
+              {filtered.map((r, i) => {
                 const artist = artists.find((a) => a.slug === r.artistSlugs[0]);
                 return (
                   <Reveal as="li" key={r.slug} delay={Math.min(i, 6) * 50}>
