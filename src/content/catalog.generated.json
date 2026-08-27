@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T05:45:59.649Z",
+  "generatedAt": "2026-08-27T16:25:53.541Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
   "trackCount": 662,
@@ -324,7 +324,7 @@
           "url": "https://soundcloud.com/grafenbergmusik/sets/kinetic-distro-essentials-vol",
           "date": "2026-07-24",
           "artwork": "https://i1.sndcdn.com/artworks-gB7qKfzpQSmxZy5d-M7oFnQ-t1080x1080.jpg",
-          "trackCount": 51,
+          "trackCount": 54,
           "isAlbum": false,
           "setType": "playlist",
           "description": "Welcome to the first official chapter of the Kinetic Distro universe.\n\nKinetic Distro Essentials Vol. I brings together the defining tracks from the label’s core artists, a curated journey through dark disco, cinematic electronica, coldwave, synth-driven storytelling, ritual soundscapes and genre-defying productions.\n\nFeaturing Nosfera Disco Club, Grafenberg, Broken Shaman, VEIN//MIRROR, Anatolian Mirage and Chromabone, this compilation showcases the unique identity of each project while revealing the artistic vision that unites them all: bold ideas, uncompromising creativity and immersive worlds.\n\nEvery release explores a different dimension. Together, they form one universe.\n\nTurn up the volume and discover the sound of Kinetic Distro.\n\nOne label. Six visions. Endless worlds.",
@@ -379,7 +379,10 @@
             "Holy fever",
             "Midnight sacrament",
             "Glass hearts",
-            "The Hat - The Angry River (Grafenberg Remix)"
+            "The Hat - The Angry River (Grafenberg Remix)",
+            "Grafenberg x Broken Shaman - Last Transmission [Chromabone's hacked signal remix feat. Nyla Vey]",
+            "Switch//ON",
+            "System collapse ritual"
           ],
           "credit": null,
           "creditSource": "unresolved",
