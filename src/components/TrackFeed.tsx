@@ -199,7 +199,7 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
           {/* STAGE — sticky on a phone so the artwork stays in view while the
               index below it is scanned. */}
-          <Reveal className="sticky top-[84px] z-10 mx-auto w-full max-w-sm lg:static lg:col-span-5 lg:max-w-none">
+          <Reveal className="mx-auto w-full max-w-sm lg:col-span-5 lg:max-w-none">
             {playing === current.id ? (
               <div className="border border-white/10 bg-ink p-4">
                 <Player url={current.url} title={current.title} accent={current.accent} immediate />
@@ -276,9 +276,21 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
           <ol className="lg:col-span-7">
             {tracks.map((t, i) => (
               <Reveal as="li" key={t.id} delay={Math.min(i, 6) * 45} className="min-w-0">
-                <button
-                  type="button"
-                  onClick={() => select(i)}
+                {/* A real link, so the row is a destination and not just a
+                    switch — but on a touch screen there is no hover to preview
+                    with, so the first tap only brings the record to the stage
+                    and the second one follows the link. On a pointer device
+                    hover has already selected it, so a click leaves at once. */}
+                <a
+                  href={t.url}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  onClick={(e) => {
+                    if (i !== active) {
+                      e.preventDefault();
+                      select(i);
+                    }
+                  }}
                   onMouseEnter={() => select(i)}
                   onFocus={() => select(i)}
                   aria-current={i === active ? 'true' : undefined}
@@ -307,7 +319,13 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
                   <span className="shrink-0 font-mono text-[11px] text-chrome-300">
                     {t.date && fmtDate(t.date)}
                   </span>
-                </button>
+                  <span
+                    className="shrink-0 text-chrome-400 transition-transform duration-300 group-hover:translate-x-1"
+                    aria-hidden="true"
+                  >
+                    ↗
+                  </span>
+                </a>
               </Reveal>
             ))}
           </ol>
