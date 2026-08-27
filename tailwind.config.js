@@ -54,6 +54,12 @@ export default {
           '45%': { opacity: '0.4' },
           '50%': { opacity: '1' },
         },
+        // The accent rule that draws itself across the top of the feed stage
+        // each time the artwork changes.
+        sweep: {
+          '0%': { transform: 'scaleX(0)' },
+          '100%': { transform: 'scaleX(1)' },
+        },
       },
       animation: {
         marquee: 'marquee 38s linear infinite',
@@ -61,6 +67,7 @@ export default {
         scan: 'scan 5.5s linear infinite',
         rise: 'rise 0.7s cubic-bezier(0.22,1,0.36,1) both',
         flicker: 'flicker 4s ease-in-out infinite',
+        sweep: 'sweep 0.7s cubic-bezier(0.22,1,0.36,1) both',
       },
     },
   },

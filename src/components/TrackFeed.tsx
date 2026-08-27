@@ -142,11 +142,37 @@ export function ArtistTrackFeed({ tracks, accent, profileUrl }: ArtistFeedProps)
 
 /* -------------------------------------------------------------------------- */
 
-/** Cross-roster feed used on the home page. */
+/**
+ * Cross-roster feed — one record per artist, shown as an index beside a stage.
+ *
+ * A grid of eight equal cards gave every artist the same small square and no
+ * focus. Here the roster is a numbered index and the highlighted entry fills a
+ * large stage; moving down the list wipes the next artwork over the previous
+ * one with `clip-path`, in the direction of travel, rather than crossfading.
+ *
+ * Every row is a real button and every track keeps its link out, so the section
+ * is fully readable prerendered and without JavaScript: the first entry is the
+ * one on the stage, and the index is a list of eight links either way.
+ *
+ * It does not advance on its own. The hero carousel already does, and two
+ * things moving unbidden on one page is noise rather than life.
+ */
 export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
+  const [active, setActive] = useState(0);
+  const [previous, setPrevious] = useState(0);
   const [playing, setPlaying] = useState<string | null>(null);
 
   if (!tracks.length) return null;
+
+  const current = tracks[active];
+  // Which way the curtain travels. Reading down the index should feel like the
+  // artwork is pushed up from below, and back up like it drops from above.
+  const descending = active >= previous;
+
+  const select = (i: number) => {
+    setPrevious(active);
+    setActive(i);
+  };
 
   return (
     <section className="border-b border-white/10">
@@ -164,65 +190,128 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
                 the roster
               </h2>
             </div>
+            <p className="max-w-xs text-sm leading-relaxed text-chrome-400">
+              One record each, straight from the artists&rsquo; own feeds.
+            </p>
           </div>
         </Reveal>
 
-        <ul className="grid grid-cols-1 gap-px border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
-          {tracks.map((t, i) => (
-            <Reveal as="li" key={t.id} delay={(i % 4) * 60} className="bg-ink">
-              {playing === t.id ? (
-                <div className="flex h-full items-center p-4">
-                  <Player url={t.url} title={t.title} accent={t.accent} immediate className="w-full" />
-                </div>
-              ) : (
-                <div className="group relative flex h-full flex-col p-6 transition-colors hover:bg-ink-700">
-                  <span
-                    className="absolute inset-x-0 top-0 h-[3px] origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"
-                    style={{ background: t.accent }}
-                    aria-hidden="true"
-                  />
-                  <span className="relative mb-6 block aspect-square w-full overflow-hidden border border-white/10 bg-ink-700">
-                    {t.artwork && (
+        <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
+          {/* STAGE — sticky on a phone so the artwork stays in view while the
+              index below it is scanned. */}
+          <Reveal className="sticky top-[84px] z-10 mx-auto w-full max-w-sm lg:static lg:col-span-5 lg:max-w-none">
+            {playing === current.id ? (
+              <div className="border border-white/10 bg-ink p-4">
+                <Player url={current.url} title={current.title} accent={current.accent} immediate />
+              </div>
+            ) : (
+              <div className="relative aspect-square w-full overflow-hidden border border-white/10 bg-ink-700">
+                {/* A curtain, not a crossfade: the incoming panel slides over
+                    the outgoing one while its artwork lags behind, which reads
+                    as the picture being uncovered rather than pushed.
+                    `transform` rather than `clip-path` — Chrome will not
+                    interpolate out of a degenerate `inset()` rectangle, so the
+                    clip-path version simply never animated. */}
+                {tracks.map((t, i) => {
+                  const parked = descending ? 1 : -1;
+                  return (
+                    <div
+                      key={t.id}
+                      aria-hidden="true"
+                      className="absolute inset-0 overflow-hidden motion-safe:transition-transform motion-safe:duration-[700ms] motion-safe:ease-[cubic-bezier(.22,1,.36,1)]"
+                      style={{
+                        transform: i === active ? 'translateY(0)' : `translateY(${parked * 100}%)`,
+                        zIndex: i === active ? 2 : i === previous ? 1 : 0,
+                      }}
+                    >
                       <img
                         src={t.artwork}
                         alt=""
                         width={500}
                         height={500}
-                        loading="lazy"
+                        loading={i === 0 ? 'eager' : 'lazy'}
                         decoding="async"
-                        className="h-full w-full object-cover transition-transform duration-[900ms] ease-[cubic-bezier(.22,1,.36,1)] group-hover:scale-[1.04]"
-                        aria-hidden="true"
+                        className="h-full w-full object-cover motion-safe:transition-transform motion-safe:duration-[700ms] motion-safe:ease-[cubic-bezier(.22,1,.36,1)]"
+                        style={{
+                          transform: i === active ? 'translateY(0)' : `translateY(${parked * -28}%)`,
+                        }}
                       />
-                    )}
-                    {/* The control sits on the artwork, where a play button is
-                        expected, rather than floating beside the artist name. */}
-                    <span className="absolute bottom-3 right-3 flex items-center">
-                      <PlayButton accent={t.accent} label={t.title} onClick={() => setPlaying(t.id)} />
-                    </span>
-                  </span>
-                  <span className="label mb-3 block" style={{ color: t.accent }}>
-                    {t.artistName}
-                  </span>
-                  <span className="mt-auto block">
-                    <a
-                      href={t.url}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="block text-lg leading-snug transition-colors hover:text-[color:var(--hl)]"
-                      style={{ ['--hl' as string]: t.accent }}
+                    </div>
+                  );
+                })}
+
+                <span
+                  key={`bar-${current.id}`}
+                  className="absolute inset-x-0 top-0 z-[3] h-[3px] origin-left motion-safe:animate-sweep"
+                  style={{ background: current.accent }}
+                  aria-hidden="true"
+                />
+
+                <span className="absolute bottom-4 right-4 z-[3] flex items-center">
+                  <PlayButton
+                    accent={current.accent}
+                    label={current.title}
+                    onClick={() => setPlaying(current.id)}
+                  />
+                </span>
+              </div>
+            )}
+
+            <p className="mt-5 min-h-[3.25rem]" aria-live="polite">
+              <span className="label block" style={{ color: current.accent }}>
+                {current.artistName}
+              </span>
+              <a
+                href={current.url}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="link-underline mt-1.5 block text-lg leading-snug"
+              >
+                {current.title}
+              </a>
+            </p>
+          </Reveal>
+
+          {/* INDEX */}
+          <ol className="lg:col-span-7">
+            {tracks.map((t, i) => (
+              <Reveal as="li" key={t.id} delay={Math.min(i, 6) * 45} className="min-w-0">
+                <button
+                  type="button"
+                  onClick={() => select(i)}
+                  onMouseEnter={() => select(i)}
+                  onFocus={() => select(i)}
+                  aria-current={i === active ? 'true' : undefined}
+                  className="group relative flex w-full items-center gap-4 border-b border-white/10 py-4 text-left transition-colors hover:bg-white/[0.03]"
+                >
+                  <span
+                    className="absolute left-0 top-0 h-full w-[2px] origin-top transition-transform duration-500"
+                    style={{
+                      background: t.accent,
+                      transform: i === active ? 'scaleY(1)' : 'scaleY(0)',
+                    }}
+                    aria-hidden="true"
+                  />
+                  <span className="label w-7 shrink-0 pl-3">{String(i + 1).padStart(2, '0')}</span>
+
+                  <span className="min-w-0 flex-1">
+                    <span
+                      className="label block transition-colors"
+                      style={{ color: i === active ? t.accent : undefined }}
                     >
-                      {t.title}
-                    </a>
-                    <span className="mt-2 flex items-center gap-3 font-mono text-[11px] text-chrome-300">
-                      {t.date && <span>{fmtDate(t.date)}</span>}
-                      {t.durationSec && <span>{fmtDuration(t.durationSec)}</span>}
+                      {t.artistName}
                     </span>
+                    <span className="mt-1 block truncate text-[15px] sm:text-base">{t.title}</span>
                   </span>
-                </div>
-              )}
-            </Reveal>
-          ))}
-        </ul>
+
+                  <span className="shrink-0 font-mono text-[11px] text-chrome-300">
+                    {t.date && fmtDate(t.date)}
+                  </span>
+                </button>
+              </Reveal>
+            ))}
+          </ol>
+        </div>
       </div>
     </section>
   );

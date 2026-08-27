@@ -16,7 +16,7 @@ export default function Home() {
   const featured = allReleases.find((r) => r.featured) ?? allReleases[0];
   const featuredArtist = artists.find((a) => a.slug === featured.artistSlugs[0]);
   const latest = allReleases.slice(0, 5);
-  const feed = latestTracks(8);
+  const feed = latestTracks(8, 1);
 
   return (
     <>
