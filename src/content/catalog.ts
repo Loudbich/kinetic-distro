@@ -148,8 +148,10 @@ const artKey = (s: string) =>
  * A hand-supplied cover always beats SoundCloud's, which is capped at 500px and
  * often carries the platform's own framing.
  */
-const coverFor = (title: string): string | undefined =>
-  (art.covers as Record<string, string>)[artKey(title)];
+type CoverAsset = { url: string; srcset?: string };
+
+const coverFor = (title: string): CoverAsset | undefined =>
+  (art.covers as Record<string, CoverAsset>)[artKey(title)];
 
 export const portraitFor = (slug: string): string | undefined =>
   (art.portraits as Record<string, string>)[slug];
@@ -294,7 +296,8 @@ const derived: Release[] = mergePlaylists(
       streamUrl: playlist.url,
       vinylUrl: vinyl[slugify(playlist.title) || `set-${playlist.id}`],
       streamingLinks: streaming[slugify(playlist.title) || `set-${playlist.id}`],
-      image: coverFor(playlist.title) ?? playlist.artwork ?? undefined,
+      image: coverFor(playlist.title)?.url ?? playlist.artwork ?? undefined,
+      imageSrcset: coverFor(playlist.title)?.srcset,
     } satisfies Release;
   });
 
@@ -305,7 +308,8 @@ const derived: Release[] = mergePlaylists(
  */
 const curated: Release[] = releases.map((r) => ({
   ...r,
-  image: r.image ?? coverFor(r.title),
+  image: r.image ?? coverFor(r.title)?.url,
+  imageSrcset: r.imageSrcset ?? coverFor(r.title)?.srcset,
   // The hand-written blurb stays — it is the short form the cards want. The
   // liner notes come from the record's SoundCloud description, so a release
   // note written once shows up in both places.

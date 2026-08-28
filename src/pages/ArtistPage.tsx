@@ -215,6 +215,7 @@ export default function ArtistPage() {
                       seed={r.slug}
                       accent={artist.accent}
                       image={r.image}
+                      srcset={r.imageSrcset}
                       label={r.title}
                       className="aspect-square w-full border border-white/10"
                     />

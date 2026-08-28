@@ -172,6 +172,7 @@ export default function Releases() {
                         seed={r.slug}
                         accent={artist?.accent ?? '#FF4D12'}
                         image={r.image}
+                        srcset={r.imageSrcset}
                         label={r.title}
                         className="aspect-square w-full border border-white/10"
                       />

@@ -1,47 +1,173 @@
 {
   "covers": {
-    "solarbazaarrituals": "/covers/solar-bazaar-rituals.webp",
-    "serpentcosmopolis": "/covers/serpent-cosmopolis.webp",
-    "velvetsunempire": "/covers/velvet-sun-empire.webp",
-    "microtonicoasiscollapse": "/covers/microtonic-oasis-collapse.webp",
-    "electriclotusdreams": "/covers/electric-lotus-dreams.webp",
-    "dirttemple": "/covers/dirt-temple.webp",
-    "fireandice": "/covers/fire-ice.webp",
-    "afterthefeed": "/covers/after-the-feed.webp",
-    "youwerebornready": "/covers/you-were-born-ready.webp",
-    "ironmonkexecution": "/covers/iron-monk-execution.webp",
-    "noarmor": "/covers/no-armor.webp",
-    "velvetpredator": "/covers/velvet-predator.webp",
-    "coldcalculus": "/covers/cold-calculus.webp",
-    "signalsfromaburningplanet": "/covers/signals-from-a-burning-planet.webp",
-    "timeleaksthroughhands": "/covers/time-leaks-through-hands.webp",
-    "primordialtransmission": "/covers/primordial-transmission.webp",
-    "wedontfade": "/covers/we-don-t-fade.webp",
-    "thelastdiscopreacher": "/covers/the-last-disco-preacher.webp",
-    "achoirfortheoneswhodisappeared": "/covers/a-choir-for-the-ones-who-disappeared.webp",
-    "blackchromereanimations": "/covers/black-chrome-reanimations.webp",
-    "dancelikeyousurvived": "/covers/dance-like-you-survived.webp",
-    "aftertheimpact": "/covers/after-the-impact.webp",
-    "kineticdistroessentialsvoli": "/covers/kinetic-distro-essentials-vol-i.webp",
-    "circuitsinsilence": "/covers/circuits-in-silence.webp",
-    "erebionsdominion": "/covers/erebion-s-dominion.webp",
-    "ghostfrequenciesforlostmachines": "/covers/ghost-frequencies-for-lost-machines.webp",
-    "nosaintsnoproof": "/covers/no-saints-no-proof.webp",
-    "parallelsintheory": "/covers/parallel-sin-theory.webp",
-    "theeasternskylighttapes": "/covers/the-eastern-skylight-tapes.webp",
-    "theerrorgospel": "/covers/the-error-gospel.webp",
-    "thehalocorruptionprotocol": "/covers/the-halo-corruption-protocol.webp",
-    "thewoundsoftomorrow": "/covers/the-wounds-of-tomorrow.webp",
-    "whatthesystemmissed": "/covers/what-the-system-missed.webp",
-    "afterimage": "/covers/afterimage.webp",
-    "chromesyndicatedreams": "/covers/chrome-syndicate-dreams.webp",
-    "gildedrituals": "/covers/gilded-rituals.webp",
-    "redveinsonthedancefloor": "/covers/red-veins-on-the-dancefloor.webp",
-    "theghoulsofmidnight": "/covers/the-ghouls-of-midnight.webp",
-    "themirrorera": "/covers/the-mirror-era.webp",
-    "necropolisnocturna": "/covers/necropolis-nocturna.webp",
-    "thetouchera": "/covers/the-touch-era.webp",
-    "loveandvenomtastethesame": "/covers/love-and-venom-taste-the-same.webp"
+    "solarbazaarrituals": {
+      "url": "/covers/solar-bazaar-rituals-1000.webp",
+      "srcset": "/covers/solar-bazaar-rituals-700.webp 700w, /covers/solar-bazaar-rituals-1000.webp 1000w"
+    },
+    "serpentcosmopolis": {
+      "url": "/covers/serpent-cosmopolis-1000.webp",
+      "srcset": "/covers/serpent-cosmopolis-700.webp 700w, /covers/serpent-cosmopolis-1000.webp 1000w"
+    },
+    "velvetsunempire": {
+      "url": "/covers/velvet-sun-empire-1000.webp",
+      "srcset": "/covers/velvet-sun-empire-700.webp 700w, /covers/velvet-sun-empire-1000.webp 1000w"
+    },
+    "microtonicoasiscollapse": {
+      "url": "/covers/microtonic-oasis-collapse-1000.webp",
+      "srcset": "/covers/microtonic-oasis-collapse-700.webp 700w, /covers/microtonic-oasis-collapse-1000.webp 1000w"
+    },
+    "electriclotusdreams": {
+      "url": "/covers/electric-lotus-dreams-1000.webp",
+      "srcset": "/covers/electric-lotus-dreams-700.webp 700w, /covers/electric-lotus-dreams-1000.webp 1000w"
+    },
+    "dirttemple": {
+      "url": "/covers/dirt-temple-1000.webp",
+      "srcset": "/covers/dirt-temple-700.webp 700w, /covers/dirt-temple-1000.webp 1000w"
+    },
+    "fireandice": {
+      "url": "/covers/fire-ice-1000.webp",
+      "srcset": "/covers/fire-ice-700.webp 700w, /covers/fire-ice-1000.webp 1000w"
+    },
+    "afterthefeed": {
+      "url": "/covers/after-the-feed-1000.webp",
+      "srcset": "/covers/after-the-feed-700.webp 700w, /covers/after-the-feed-1000.webp 1000w"
+    },
+    "youwerebornready": {
+      "url": "/covers/you-were-born-ready-1000.webp",
+      "srcset": "/covers/you-were-born-ready-700.webp 700w, /covers/you-were-born-ready-1000.webp 1000w"
+    },
+    "ironmonkexecution": {
+      "url": "/covers/iron-monk-execution-1000.webp",
+      "srcset": "/covers/iron-monk-execution-700.webp 700w, /covers/iron-monk-execution-1000.webp 1000w"
+    },
+    "noarmor": {
+      "url": "/covers/no-armor-1000.webp",
+      "srcset": "/covers/no-armor-700.webp 700w, /covers/no-armor-1000.webp 1000w"
+    },
+    "velvetpredator": {
+      "url": "/covers/velvet-predator-1000.webp",
+      "srcset": "/covers/velvet-predator-700.webp 700w, /covers/velvet-predator-1000.webp 1000w"
+    },
+    "coldcalculus": {
+      "url": "/covers/cold-calculus-1000.webp",
+      "srcset": "/covers/cold-calculus-700.webp 700w, /covers/cold-calculus-1000.webp 1000w"
+    },
+    "signalsfromaburningplanet": {
+      "url": "/covers/signals-from-a-burning-planet-1000.webp",
+      "srcset": "/covers/signals-from-a-burning-planet-700.webp 700w, /covers/signals-from-a-burning-planet-1000.webp 1000w"
+    },
+    "timeleaksthroughhands": {
+      "url": "/covers/time-leaks-through-hands-1500.webp",
+      "srcset": "/covers/time-leaks-through-hands-700.webp 700w, /covers/time-leaks-through-hands-1000.webp 1000w, /covers/time-leaks-through-hands-1500.webp 1500w"
+    },
+    "primordialtransmission": {
+      "url": "/covers/primordial-transmission-1000.webp",
+      "srcset": "/covers/primordial-transmission-700.webp 700w, /covers/primordial-transmission-1000.webp 1000w"
+    },
+    "wedontfade": {
+      "url": "/covers/we-don-t-fade-1000.webp",
+      "srcset": "/covers/we-don-t-fade-700.webp 700w, /covers/we-don-t-fade-1000.webp 1000w"
+    },
+    "thelastdiscopreacher": {
+      "url": "/covers/the-last-disco-preacher-1000.webp",
+      "srcset": "/covers/the-last-disco-preacher-700.webp 700w, /covers/the-last-disco-preacher-1000.webp 1000w"
+    },
+    "achoirfortheoneswhodisappeared": {
+      "url": "/covers/a-choir-for-the-ones-who-disappeared-1000.webp",
+      "srcset": "/covers/a-choir-for-the-ones-who-disappeared-700.webp 700w, /covers/a-choir-for-the-ones-who-disappeared-1000.webp 1000w"
+    },
+    "blackchromereanimations": {
+      "url": "/covers/black-chrome-reanimations-1000.webp",
+      "srcset": "/covers/black-chrome-reanimations-700.webp 700w, /covers/black-chrome-reanimations-1000.webp 1000w"
+    },
+    "dancelikeyousurvived": {
+      "url": "/covers/dance-like-you-survived-1000.webp",
+      "srcset": "/covers/dance-like-you-survived-700.webp 700w, /covers/dance-like-you-survived-1000.webp 1000w"
+    },
+    "aftertheimpact": {
+      "url": "/covers/after-the-impact-1000.webp",
+      "srcset": "/covers/after-the-impact-700.webp 700w, /covers/after-the-impact-1000.webp 1000w"
+    },
+    "kineticdistroessentialsvoli": {
+      "url": "/covers/kinetic-distro-essentials-vol-i-1000.webp",
+      "srcset": "/covers/kinetic-distro-essentials-vol-i-700.webp 700w, /covers/kinetic-distro-essentials-vol-i-1000.webp 1000w"
+    },
+    "circuitsinsilence": {
+      "url": "/covers/circuits-in-silence-1000.webp",
+      "srcset": "/covers/circuits-in-silence-700.webp 700w, /covers/circuits-in-silence-1000.webp 1000w"
+    },
+    "erebionsdominion": {
+      "url": "/covers/erebion-s-dominion-1000.webp",
+      "srcset": "/covers/erebion-s-dominion-700.webp 700w, /covers/erebion-s-dominion-1000.webp 1000w"
+    },
+    "ghostfrequenciesforlostmachines": {
+      "url": "/covers/ghost-frequencies-for-lost-machines-1000.webp",
+      "srcset": "/covers/ghost-frequencies-for-lost-machines-700.webp 700w, /covers/ghost-frequencies-for-lost-machines-1000.webp 1000w"
+    },
+    "nosaintsnoproof": {
+      "url": "/covers/no-saints-no-proof-1000.webp",
+      "srcset": "/covers/no-saints-no-proof-700.webp 700w, /covers/no-saints-no-proof-1000.webp 1000w"
+    },
+    "parallelsintheory": {
+      "url": "/covers/parallel-sin-theory-1000.webp",
+      "srcset": "/covers/parallel-sin-theory-700.webp 700w, /covers/parallel-sin-theory-1000.webp 1000w"
+    },
+    "theeasternskylighttapes": {
+      "url": "/covers/the-eastern-skylight-tapes-1000.webp",
+      "srcset": "/covers/the-eastern-skylight-tapes-700.webp 700w, /covers/the-eastern-skylight-tapes-1000.webp 1000w"
+    },
+    "theerrorgospel": {
+      "url": "/covers/the-error-gospel-1000.webp",
+      "srcset": "/covers/the-error-gospel-700.webp 700w, /covers/the-error-gospel-1000.webp 1000w"
+    },
+    "thehalocorruptionprotocol": {
+      "url": "/covers/the-halo-corruption-protocol-1000.webp",
+      "srcset": "/covers/the-halo-corruption-protocol-700.webp 700w, /covers/the-halo-corruption-protocol-1000.webp 1000w"
+    },
+    "thewoundsoftomorrow": {
+      "url": "/covers/the-wounds-of-tomorrow-1000.webp",
+      "srcset": "/covers/the-wounds-of-tomorrow-700.webp 700w, /covers/the-wounds-of-tomorrow-1000.webp 1000w"
+    },
+    "whatthesystemmissed": {
+      "url": "/covers/what-the-system-missed-1500.webp",
+      "srcset": "/covers/what-the-system-missed-700.webp 700w, /covers/what-the-system-missed-1000.webp 1000w, /covers/what-the-system-missed-1500.webp 1500w"
+    },
+    "afterimage": {
+      "url": "/covers/afterimage-1000.webp",
+      "srcset": "/covers/afterimage-700.webp 700w, /covers/afterimage-1000.webp 1000w"
+    },
+    "chromesyndicatedreams": {
+      "url": "/covers/chrome-syndicate-dreams-1000.webp",
+      "srcset": "/covers/chrome-syndicate-dreams-700.webp 700w, /covers/chrome-syndicate-dreams-1000.webp 1000w"
+    },
+    "gildedrituals": {
+      "url": "/covers/gilded-rituals-1000.webp",
+      "srcset": "/covers/gilded-rituals-700.webp 700w, /covers/gilded-rituals-1000.webp 1000w"
+    },
+    "redveinsonthedancefloor": {
+      "url": "/covers/red-veins-on-the-dancefloor-1000.webp",
+      "srcset": "/covers/red-veins-on-the-dancefloor-700.webp 700w, /covers/red-veins-on-the-dancefloor-1000.webp 1000w"
+    },
+    "theghoulsofmidnight": {
+      "url": "/covers/the-ghouls-of-midnight-1000.webp",
+      "srcset": "/covers/the-ghouls-of-midnight-700.webp 700w, /covers/the-ghouls-of-midnight-1000.webp 1000w"
+    },
+    "themirrorera": {
+      "url": "/covers/the-mirror-era-1000.webp",
+      "srcset": "/covers/the-mirror-era-700.webp 700w, /covers/the-mirror-era-1000.webp 1000w"
+    },
+    "necropolisnocturna": {
+      "url": "/covers/necropolis-nocturna-1000.webp",
+      "srcset": "/covers/necropolis-nocturna-700.webp 700w, /covers/necropolis-nocturna-1000.webp 1000w"
+    },
+    "thetouchera": {
+      "url": "/covers/the-touch-era-1000.webp",
+      "srcset": "/covers/the-touch-era-700.webp 700w, /covers/the-touch-era-1000.webp 1000w"
+    },
+    "loveandvenomtastethesame": {
+      "url": "/covers/love-and-venom-taste-the-same-1000.webp",
+      "srcset": "/covers/love-and-venom-taste-the-same-700.webp 700w, /covers/love-and-venom-taste-the-same-1000.webp 1000w"
+    }
   },
   "portraits": {
     "anatolian-mirage": "/artists/anatolian-mirage.webp",

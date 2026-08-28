@@ -163,7 +163,7 @@ async function syncCovers(titles) {
 
     const baseName = slugify(titles.get(key));
     if (CHECK) {
-      manifest[key] = `/covers/${baseName}.webp`;
+      manifest[key] = { url: `/covers/${baseName}.webp` };
     } else {
       const out = await emit(file.path, {
         outDir,
@@ -171,7 +171,7 @@ async function syncCovers(titles) {
         baseName,
         preset: 'cover',
       });
-      manifest[key] = out.primary.url;
+      manifest[key] = { url: out.primary.url, srcset: out.srcset };
       bytes += out.bytes;
     }
     copied++;

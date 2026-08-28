@@ -52,6 +52,7 @@ export default function ReleasePage() {
               seed={release.slug}
               accent={accent}
               image={release.image}
+              srcset={release.imageSrcset}
               label={release.title}
               className="aspect-square w-full border border-white/10"
             />

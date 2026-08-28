@@ -3,6 +3,8 @@ type Props = {
   accent: string;
   label?: string;
   image?: string;
+  /** Candidate widths, so a phone is not sent the file a wide screen needs. */
+  srcset?: string;
   /**
    * Where to anchor the crop. Album art is square and centres fine, but a
    * portrait squeezed into a square slot loses the head at 50% — 'top' keeps
@@ -33,12 +35,16 @@ const S = 400;
  * Generative placeholder artwork — full-bleed, deterministic, one of five compositions.
  * Swap for real covers by adding `image: '/covers/kd-00x.jpg'` in src/content/site.ts.
  */
-export default function Cover({ seed, accent, label, image, focus = 'center', className = '' }: Props) {
+export default function Cover({ seed, accent, label, image, srcset, focus = 'center', className = '' }: Props) {
   if (image) {
     return (
       <div className={`relative overflow-hidden bg-ink-700 ${className}`}>
         <img
           src={image}
+          srcSet={srcset}
+          // Roughly what the layout draws a cover at: a little under half the
+          // width on a wide screen, nearly the full width on a phone.
+          sizes={srcset ? '(min-width: 1024px) 45vw, 90vw' : undefined}
           alt={label ?? ''}
           loading="lazy"
           decoding="async"

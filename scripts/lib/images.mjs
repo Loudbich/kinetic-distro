@@ -40,8 +40,13 @@ export const PRESETS = {
   carousel: { widths: [768, 1280, 1920, 2560, 3840], quality: 88 },
   /** Portrait crop for phones; never wider than a large phone at 3x. */
   carouselMobile: { widths: [640, 1080, 1440], quality: 88 },
-  /** Drawn at ~700px on a wide screen, ~380 on a phone. 1000 covers both at 2x. */
-  cover: { widths: [1000], quality: 90 },
+  /**
+   * Drawn at 720px at its largest — the featured record on the home page — and
+   * at 480 in the catalogue grid, 325 on a phone. 720 at 2x is 1440 device
+   * pixels, so 1000 was being enlarged where it shows biggest; 1500 covers it
+   * with room, and the smaller steps keep a phone off the large file.
+   */
+  cover: { widths: [700, 1000, 1500], quality: 90 },
   /** A column image, never more than ~400px wide. */
   portrait: { widths: [800], quality: 88 },
   /** The footer lockup, drawn at 208px. */

@@ -107,6 +107,7 @@ export default function Home() {
                   accent={featuredArtist?.accent ?? '#FF4D12'}
                   label={`${featured.artistDisplay} — ${featured.title}`}
                   image={featured.image}
+                  srcset={featured.imageSrcset}
                   className="aspect-square w-full border border-white/10"
                 />
               </Link>

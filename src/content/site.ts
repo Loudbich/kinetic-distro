@@ -323,6 +323,8 @@ export type Release = {
   /** Optional: drop a file in /public/covers and reference it, e.g. "/covers/kd-006.jpg".
    *  If omitted, a generative cover is rendered from the catalogue number. */
   image?: string;
+  /** Candidate widths for the cover, so a phone is not sent the largest file. */
+  imageSrcset?: string;
 };
 
 export const releases: Release[] = [
