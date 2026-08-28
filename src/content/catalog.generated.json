@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-27T16:25:53.541Z",
+  "generatedAt": "2026-08-28T11:05:10.690Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
-  "trackCount": 662,
-  "playlistCount": 75,
+  "trackCount": 672,
+  "playlistCount": 76,
   "failures": [],
   "artists": {
     "grafenberg": {
@@ -16,9 +16,89 @@
       "description": "Kinetic Distro is an independent music label and creative distribution platform dedicated to pushing the boundaries of sound, identity, and artistic storytelling in the digital age.\n\nBuilt on a vision of movement and transformation, Kinetic Distro operates at the intersection of genres, cultures, and eras—curating a diverse roster of artists who each embody a distinct sonic universe. From cinematic electronic landscapes to hypnotic techno, neo-soul narratives, experimental pop, and heavy sonic architectures, the label thrives on contrast, evolution, and cohesion.\n\nThe roster includes projects such as Grafenberg, Broken Shaman, Chromabone, Nosfera Disco Club, VEIN//Mirror, Iron Covenant, Anatolian Mirage, and Lykke—each representing a unique dimension of the Kinetic Distro ecosystem. Rather than following trends, the label builds immersive worlds, where every release contributes to a larger, interconnected artistic continuum.\n\nKinetic Distro is not just a distributor—it is a creative engine. Through meticulous curation, visual identity development, and narrative-driven releases, the label transforms music into experiences. Each project is approached as a living entity, evolving across albums, concepts, and aesthetic directions.\n\nDriven by independence and a commitment to artistic integrity, Kinetic Distro embraces modern production tools, global influences, and a release strategy designed for the streaming era—while maintaining a strong emphasis on authenticity and long-term vision.\n\nAt its core, Kinetic Distro is about momentum: sound in motion, ideas in evolution, and artists in constant transformation.",
       "avatar": "https://i1.sndcdn.com/avatars-PHRs78KRNfZuMsC6-bG5D1Q-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 312,
-      "latestDate": "2026-08-23",
+      "trackCount": 322,
+      "latestDate": "2026-08-28",
       "tracks": [
+        {
+          "id": "2390185542",
+          "title": "She accepts (feat. Nehir Sedef)",
+          "url": "https://soundcloud.com/grafenbergmusik/she-accepts-feat-nehir-sedef-8",
+          "date": "2026-08-28",
+          "durationSec": 253,
+          "artwork": "https://i1.sndcdn.com/artworks-WCiDzKTkTmLwK3Vv-jWH5gw-t500x500.jpg"
+        },
+        {
+          "id": "2390185539",
+          "title": "She walks through neon silence (feat. Nyla Vey)",
+          "url": "https://soundcloud.com/grafenbergmusik/she-walks-through-neon-silence-feat-nyla-vey-1",
+          "date": "2026-08-28",
+          "durationSec": 283,
+          "artwork": "https://i1.sndcdn.com/artworks-WCiDzKTkTmLwK3Vv-jWH5gw-t500x500.jpg"
+        },
+        {
+          "id": "2390185536",
+          "title": "She was part of the system (feat. Nyla Vey)",
+          "url": "https://soundcloud.com/grafenbergmusik/she-was-part-of-the-system-feat-nyla-vey-3",
+          "date": "2026-08-28",
+          "durationSec": 229,
+          "artwork": "https://i1.sndcdn.com/artworks-vCR0gmWp7iHzm3Mz-bC35cA-t500x500.jpg"
+        },
+        {
+          "id": "2390185533",
+          "title": "Running doesn't erase data (feat. Nyla Vey)",
+          "url": "https://soundcloud.com/grafenbergmusik/running-doesnt-erase-data-feat-nyla-vey-5",
+          "date": "2026-08-28",
+          "durationSec": 228,
+          "artwork": "https://i1.sndcdn.com/artworks-WCiDzKTkTmLwK3Vv-jWH5gw-t500x500.jpg"
+        },
+        {
+          "id": "2390185530",
+          "title": "Something was not erased (feat. Nehir Sedef)",
+          "url": "https://soundcloud.com/grafenbergmusik/something-was-not-erased-feat-nehir-sedef-10",
+          "date": "2026-08-28",
+          "durationSec": 248,
+          "artwork": "https://i1.sndcdn.com/artworks-WCiDzKTkTmLwK3Vv-jWH5gw-t500x500.jpg"
+        },
+        {
+          "id": "2390185527",
+          "title": "The system offers a deal (feat. Nyla Vey)",
+          "url": "https://soundcloud.com/grafenbergmusik/the-system-offers-a-deal-feat-nyla-vey-7",
+          "date": "2026-08-28",
+          "durationSec": 254,
+          "artwork": "https://i1.sndcdn.com/artworks-WCiDzKTkTmLwK3Vv-jWH5gw-t500x500.jpg"
+        },
+        {
+          "id": "2390185524",
+          "title": "The city watches her leave (feat. Nehir Sedef)",
+          "url": "https://soundcloud.com/grafenbergmusik/the-city-watches-her-leave-feat-nehir-sedef-2",
+          "date": "2026-08-28",
+          "durationSec": 226,
+          "artwork": "https://i1.sndcdn.com/artworks-WCiDzKTkTmLwK3Vv-jWH5gw-t500x500.jpg"
+        },
+        {
+          "id": "2390185521",
+          "title": "It knows her better than she does (feat. Nyla Vey)",
+          "url": "https://soundcloud.com/grafenbergmusik/it-knows-her-better-than-she-does-feat-nyla-vey-6",
+          "date": "2026-08-28",
+          "durationSec": 249,
+          "artwork": "https://i1.sndcdn.com/artworks-WCiDzKTkTmLwK3Vv-jWH5gw-t500x500.jpg"
+        },
+        {
+          "id": "2390185518",
+          "title": "She refuses (feat. Nehir Sedef)",
+          "url": "https://soundcloud.com/grafenbergmusik/she-refuses-feat-nehir-sedef-9",
+          "date": "2026-08-28",
+          "durationSec": 227,
+          "artwork": "https://i1.sndcdn.com/artworks-WCiDzKTkTmLwK3Vv-jWH5gw-t500x500.jpg"
+        },
+        {
+          "id": "2390185515",
+          "title": "The system learns to feel (feat. Nehir Sedef)",
+          "url": "https://soundcloud.com/grafenbergmusik/the-system-learns-to-feel-feat-nehir-sedef-4",
+          "date": "2026-08-28",
+          "durationSec": 203,
+          "artwork": "https://i1.sndcdn.com/artworks-WCiDzKTkTmLwK3Vv-jWH5gw-t500x500.jpg"
+        },
         {
           "id": "2386792764",
           "title": "STATIC CROWN [Remastered]",
@@ -34,89 +114,35 @@
           "date": "2026-08-23",
           "durationSec": 304,
           "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
-        },
-        {
-          "id": "2386792758",
-          "title": "PULSE OF THE DAMAGED CORE [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/da801d4e-4fe2-46d7-a06d-13b5abaf9978",
-          "date": "2026-08-23",
-          "durationSec": 312,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
-        },
-        {
-          "id": "2386792755",
-          "title": "PROTOCOL INIT. //  ZERO SANCTITY [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/protocol-init-zero-sanctity-remastered-1",
-          "date": "2026-08-23",
-          "durationSec": 251,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
-        },
-        {
-          "id": "2386792752",
-          "title": "EXIT RITUAL // SHUTDOWN LITURGY [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/exit-ritual-shutdown-liturgy-remastered-10",
-          "date": "2026-08-23",
-          "durationSec": 256,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
-        },
-        {
-          "id": "2386792749",
-          "title": "ZERO CHURCH ARCHITECTURE [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/fff09f55-8d54-4b9c-b2ae-c3c3354fc70e",
-          "date": "2026-08-23",
-          "durationSec": 297,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
-        },
-        {
-          "id": "2386792746",
-          "title": "HEAVEN IN SYSTEM FAILURE [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/28aaa17b-848a-42bf-978c-af5fc33f6d6a",
-          "date": "2026-08-23",
-          "durationSec": 321,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
-        },
-        {
-          "id": "2386792743",
-          "title": "BLESSED CORRUPTION [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/b2c89b4e-1601-4cd2-8be8-9120a5c05cf1",
-          "date": "2026-08-23",
-          "durationSec": 257,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
-        },
-        {
-          "id": "2386792740",
-          "title": "SANCTIFIED ERROR STATE [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/5f1ba0b9-f193-4bd0-a17e-3a7cef59361c",
-          "date": "2026-08-23",
-          "durationSec": 214,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
-        },
-        {
-          "id": "2386792737",
-          "title": "DIVINITY IN DEBUG MODE [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/c63d2872-2fa2-4743-9c16-6cff83f0c711",
-          "date": "2026-08-23",
-          "durationSec": 311,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
-        },
-        {
-          "id": "2384477862",
-          "title": "Anatolian Mirage - Golden road echoes [Chromabone's neon dervish remix]",
-          "url": "https://soundcloud.com/grafenbergmusik/anatolian-mirage-golden-road",
-          "date": "2026-08-19",
-          "durationSec": 337,
-          "artwork": "https://i1.sndcdn.com/artworks-TrCQLe219Axz0uwj-X1I3CA-t500x500.jpg"
-        },
-        {
-          "id": "2384381067",
-          "title": "Grafenberg x Broken Shaman - Last Transmission [Chromabone's hacked signal remix feat. Nyla Vey]",
-          "url": "https://soundcloud.com/grafenbergmusik/grafenberg-x-broken-shaman",
-          "date": "2026-08-19",
-          "durationSec": 289,
-          "artwork": "https://i1.sndcdn.com/artworks-xJxh5fetno2WWIdN-HQ9Pog-t500x500.jpg"
         }
       ],
       "playlists": [
+        {
+          "id": "2290424559",
+          "title": "What the system missed",
+          "url": "https://soundcloud.com/grafenbergmusik/sets/what-the-system-missed",
+          "date": "2026-08-28",
+          "artwork": "https://i1.sndcdn.com/artworks-5yHGhPNMWpWqMwyL-csly4A-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "WHAT THE SYSTEM MISSED\n\nGrafenberg, Album IX\n\nAt some point, every system reaches the limits of what it can understand.\n\nWHAT THE SYSTEM MISSED begins there.\n\nGrafenberg's ninth album marks a profound shift in the project's evolution. The dancefloor recedes almost completely, leaving behind a more intimate, exposed and cinematic form of electronic music where synthesizers no longer simply carry melodies, they sculpt space.\n\nRhythms become sparse and precise. Piano fragments emerge from silence. Delayed guitars drift through vast electronic architectures. Every texture is given room to breathe, allowing the words to become the true centre of gravity.\n\nAnd at the heart of the album stand two voices.\n\nNyla Vey, the voice of Grafenberg, delivers some of her most intimate and vulnerable performances yet. Her presence is controlled, crystalline and intensely introspective, moving between sung melodies, restrained declarations and moments where the boundary between voice and thought almost disappears.\n\nFacing her is Nehir Sedef, vocalist of Anatolian Mirage.\n\nNehir does not enter the record as a conventional guest. She becomes a second perspective within the same emotional architecture. Where Nyla can feel luminous, precise and almost weightless, Nehir introduces another texture, warmer, darker and more instinctive.\n\nThey are not opposites.\n\nThey are reflections.\n\nTwo voices moving through the same questions from different directions.\n\nMemory. Identity. Prediction. Erasure. Desire. The strange distance between what a person experiences and what a system believes it understands.\n\nThroughout the album, their presence creates a quiet duality between control and instinct, abstraction and sensation, what can be measured and what can only be felt.\n\nThere is no battle between humanity and technology here.\n\nNo machine is destroyed.\n\nNo rebellion saves the world.\n\nThe system continues to function.\n\nIt observes.\n\nIt classifies.\n\nIt predicts.\n\nIt corrects.\n\nAnd still, something escapes.\n\nAcross ten tracks, WHAT THE SYSTEM MISSED gradually strips away everything unnecessary until only that question remains: if every memory, behaviour and emotion could eventually be mapped, would that map ever become the person themselves?\n\nThe closing track, “Something Was Not Erased,” offers no grand revelation.\n\nOnly evidence.\n\nSomething remained.\n\nSomething beneath the code.\n\nSomething neither Nyla nor Nehir can completely name.\n\nAnd perhaps that is precisely the point.\n\nWHAT THE SYSTEM MISSED is not an album about defeating the machine.\n\nIt is an album about discovering the part of us the machine never found.\n\nA nocturnal cinematic electronic record designed to be experienced from beginning to end.\n\nPreferably in the dark.\n\nPreferably with headphones.\n\nAnd with a few seconds of silence after the final chord.",
+          "tracklist": [
+            "She walks through neon silence (feat. Nyla Vey)",
+            "The city watches her leave (feat. Nehir Sedef)",
+            "She was part of the system (feat. Nyla Vey)",
+            "The system learns to feel (feat. Nehir Sedef)",
+            "Running doesn't erase data (feat. Nyla Vey)",
+            "It knows her better than she does (feat. Nyla Vey)",
+            "The system offers a deal (feat. Nyla Vey)",
+            "She accepts (feat. Nehir Sedef)",
+            "She refuses (feat. Nehir Sedef)",
+            "Something was not erased (feat. Nehir Sedef)"
+          ],
+          "credit": null,
+          "creditSource": "unresolved",
+          "isMirror": false
+        },
         {
           "id": "2288036985",
           "title": "The Halo Corruption Protocol [Remastered]",

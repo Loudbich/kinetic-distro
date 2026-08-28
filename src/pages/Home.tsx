@@ -13,7 +13,10 @@ const fmtDate = (iso: string) =>
   new Date(iso).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
 
 export default function Home() {
-  const featured = allReleases.find((r) => r.featured) ?? allReleases[0];
+  // The section is headed "Latest transmission", so it shows the latest record.
+  // It used to take the first entry flagged `featured` in site.ts, which meant a
+  // flag set once in March kept a new album off the home page.
+  const featured = allReleases[0];
   const featuredArtist = artists.find((a) => a.slug === featured.artistSlugs[0]);
   const latest = allReleases.slice(0, 5);
   const feed = latestTracks(8, 1);

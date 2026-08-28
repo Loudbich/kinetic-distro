@@ -31,6 +31,14 @@ export type SetAttribution = {
 
 export const setAttributions: SetAttribution[] = [
   {
+    // Published on the label account with no artist prefix and no showcase
+    // playlist, so nothing in the title could say who it is by.
+    // decided by hand: a Grafenberg album
+    id: '2290424559',
+    title: 'What the system missed',
+    artistSlugs: ['grafenberg'],
+  },
+  {
     // 2026-08-23 · the remaster, republished on the label's own account
     id: '2288036985',
     title: 'The Halo Corruption Protocol [Remastered]',
