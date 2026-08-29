@@ -325,6 +325,8 @@ export type Release = {
   image?: string;
   /** Candidate widths for the cover, so a phone is not sent the largest file. */
   imageSrcset?: string;
+  /** The record is offered as a free download on SoundCloud. */
+  freeDownload?: boolean;
 };
 
 export const releases: Release[] = [

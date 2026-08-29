@@ -60,8 +60,18 @@ export default function ReleasePage() {
 
           <div className="flex flex-col justify-center lg:col-span-7">
             <Reveal delay={70}>
-              <p className="label mb-6">
-                {release.catalog} · {release.type}
+              <p className="label mb-6 flex flex-wrap items-center gap-x-2 gap-y-2">
+                <span>
+                  {release.catalog} · {release.type}
+                </span>
+                {release.freeDownload && (
+                  <span
+                    className="border px-2 py-0.5"
+                    style={{ borderColor: accent, color: accent }}
+                  >
+                    Free download
+                  </span>
+                )}
               </p>
               <h1 className="display text-balance break-words text-[9vw] leading-[0.86] sm:text-[7vw] lg:text-[5rem]">
                 {release.title}

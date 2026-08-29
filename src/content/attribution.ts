@@ -31,6 +31,15 @@ export type SetAttribution = {
 
 export const setAttributions: SetAttribution[] = [
   {
+    // The title names Grafenberg, whose record is being remixed, so the sync
+    // credited him. Same call as the other Chromabone remix EPs: the remixer
+    // is the artist here.
+    // decided by hand: a Chromabone remix of Grafenberg
+    id: '2290947459',
+    title: 'The city watches her leave (feat. Nehir Sedef) Chromabone remixes',
+    artistSlugs: ['chromabone'],
+  },
+  {
     // Published on the label account with no artist prefix and no showcase
     // playlist, so nothing in the title could say who it is by.
     // decided by hand: a Grafenberg album

@@ -120,6 +120,15 @@ const titleCandidates = (filename) => {
 /* What the site knows about                                                   */
 /* -------------------------------------------------------------------------- */
 
+/**
+ * A title with every parenthesised or bracketed aside removed.
+ *
+ * A record is published as `The city watches her leave (feat. Nehir Sedef)
+ * Chromabone remixes` while its artwork file is named without the guest credit.
+ * Neither spelling is wrong, so the aside is dropped for a second look.
+ */
+const looseKey = (title) => norm(String(title).replace(/[([][^)\]]*[)\]]/g, ' '));
+
 /** Curated titles from site.ts plus every synced record, keyed by normalised title. */
 function knownTitles() {
   const titles = new Map();
@@ -143,6 +152,23 @@ function knownTitles() {
   return titles;
 }
 
+/**
+ * Loose key -> the records that share it, used only when an exact match fails.
+ *
+ * A key claimed by more than one record is dropped rather than guessed at:
+ * `X` and `X (Remastered)` collapse together here, and attaching one record's
+ * artwork to the other is worse than reporting the file as unmatched.
+ */
+function looseIndex(titles) {
+  const byLoose = new Map();
+  for (const title of titles.values()) {
+    const k = looseKey(title);
+    if (!k) continue;
+    byLoose.set(k, byLoose.has(k) ? null : title);
+  }
+  return byLoose;
+}
+
 /* -------------------------------------------------------------------------- */
 
 async function syncCovers(titles) {
@@ -152,18 +178,28 @@ async function syncCovers(titles) {
   let copied = 0;
   let bytes = 0;
 
+  const loose = looseIndex(titles);
+
   for (const file of walkImages(join(SRC, 'covers'))) {
     const candidates = titleCandidates(file.name);
-    const key = candidates.map(norm).find((k) => titles.has(k));
 
-    if (!key) {
+    // Both spellings of each candidate, matched against both indexes. The two
+    // sides bracket differently — the file writes `(Chromabone remixes)` where
+    // the record leaves it bare and parenthesises a guest credit instead — so
+    // the file's exact key can land on a record's loose one and vice versa.
+    const keys = candidates.flatMap((c) => [norm(c), looseKey(c)]).filter(Boolean);
+    const title =
+      keys.map((k) => titles.get(k)).find(Boolean) ??
+      keys.map((k) => loose.get(k)).find(Boolean);
+
+    if (!title) {
       unmatched.push(`${file.rel}  (read as "${candidates[0]}")`);
       continue;
     }
 
-    const baseName = slugify(titles.get(key));
+    const baseName = slugify(title);
     if (CHECK) {
-      manifest[key] = { url: `/covers/${baseName}.webp` };
+      manifest[norm(title)] = { url: `/covers/${baseName}.webp` };
     } else {
       const out = await emit(file.path, {
         outDir,
@@ -171,7 +207,7 @@ async function syncCovers(titles) {
         baseName,
         preset: 'cover',
       });
-      manifest[key] = { url: out.primary.url, srcset: out.srcset };
+      manifest[norm(title)] = { url: out.primary.url, srcset: out.srcset };
       bytes += out.bytes;
     }
     copied++;

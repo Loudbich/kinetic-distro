@@ -114,6 +114,10 @@ export function mapSet(raw) {
     // gaps and rebuild the list in the right sequence.
     tracklist: tracks.map((t) => (t && typeof t.title === 'string' ? t.title : null)).filter(Boolean),
     trackIds: tracks.map((t) => (t && t.id != null ? String(t.id) : null)).filter(Boolean),
+    // Whether the label is giving the record away. Read from the tracks api-v2
+    // hydrated on the set — enough to know a free download is on offer, which
+    // is all the site claims.
+    freeDownload: tracks.some((t) => t && t.downloadable && t.has_downloads_left),
   };
 }
 

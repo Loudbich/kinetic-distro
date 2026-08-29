@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-28T11:58:40.196Z",
+  "generatedAt": "2026-08-29T10:39:49.653Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
-  "trackCount": 672,
-  "playlistCount": 76,
+  "trackCount": 674,
+  "playlistCount": 77,
   "failures": [],
   "artists": {
     "grafenberg": {
@@ -14,11 +14,27 @@
       "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:50014017/sounds.rss",
       "displayName": "Kinetic Distro",
       "description": "Kinetic Distro is an independent music label and creative distribution platform dedicated to pushing the boundaries of sound, identity, and artistic storytelling in the digital age.\n\nBuilt on a vision of movement and transformation, Kinetic Distro operates at the intersection of genres, cultures, and eras—curating a diverse roster of artists who each embody a distinct sonic universe. From cinematic electronic landscapes to hypnotic techno, neo-soul narratives, experimental pop, and heavy sonic architectures, the label thrives on contrast, evolution, and cohesion.\n\nThe roster includes projects such as Grafenberg, Broken Shaman, Chromabone, Nosfera Disco Club, VEIN//Mirror, Iron Covenant, Anatolian Mirage, and Lykke—each representing a unique dimension of the Kinetic Distro ecosystem. Rather than following trends, the label builds immersive worlds, where every release contributes to a larger, interconnected artistic continuum.\n\nKinetic Distro is not just a distributor—it is a creative engine. Through meticulous curation, visual identity development, and narrative-driven releases, the label transforms music into experiences. Each project is approached as a living entity, evolving across albums, concepts, and aesthetic directions.\n\nDriven by independence and a commitment to artistic integrity, Kinetic Distro embraces modern production tools, global influences, and a release strategy designed for the streaming era—while maintaining a strong emphasis on authenticity and long-term vision.\n\nAt its core, Kinetic Distro is about momentum: sound in motion, ideas in evolution, and artists in constant transformation.",
-      "avatar": "https://i1.sndcdn.com/avatars-PHRs78KRNfZuMsC6-bG5D1Q-t500x500.jpg",
+      "avatar": "https://i1.sndcdn.com/avatars-vjnVHNbXPvzPFHgz-u7GsOQ-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 322,
-      "latestDate": "2026-08-28",
+      "trackCount": 324,
+      "latestDate": "2026-08-29",
       "tracks": [
+        {
+          "id": "2390756736",
+          "title": "The city watches her leave (Chromabone & Grafenberg After the Lights Remix)",
+          "url": "https://soundcloud.com/grafenbergmusik/the-city-watches-her-leave-chromabone-grafenberg-after-the-lights-remix-2",
+          "date": "2026-08-29",
+          "durationSec": 229,
+          "artwork": "https://i1.sndcdn.com/artworks-UhmnPvHxcYIfdiUH-qrMhGw-t500x500.jpg"
+        },
+        {
+          "id": "2390756733",
+          "title": "The city watches her leave (Chromabone Neon Exit Remix)",
+          "url": "https://soundcloud.com/grafenbergmusik/the-city-watches-her-leave-chromabone-neon-exit-remix-1",
+          "date": "2026-08-29",
+          "durationSec": 229,
+          "artwork": "https://i1.sndcdn.com/artworks-UhmnPvHxcYIfdiUH-qrMhGw-t500x500.jpg"
+        },
         {
           "id": "2390185542",
           "title": "She accepts (feat. Nehir Sedef)",
@@ -98,25 +114,30 @@
           "date": "2026-08-28",
           "durationSec": 203,
           "artwork": "https://i1.sndcdn.com/artworks-0SQWuAPTqxHNWbQt-s4kqSA-t500x500.jpg"
-        },
-        {
-          "id": "2386792764",
-          "title": "STATIC CROWN [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/7d3e0158-b684-4638-8e72-2822dcfa9832",
-          "date": "2026-08-23",
-          "durationSec": 257,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
-        },
-        {
-          "id": "2386792761",
-          "title": "FIRMWARE LITANY [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/0e909f41-757e-4524-8606-779694970531",
-          "date": "2026-08-23",
-          "durationSec": 304,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t500x500.jpg"
         }
       ],
       "playlists": [
+        {
+          "id": "2290947459",
+          "title": "The city watches her leave (feat. Nehir Sedef) Chromabone remixes",
+          "url": "https://soundcloud.com/grafenbergmusik/sets/grafenberg-the-city-watches",
+          "date": "2026-08-29",
+          "artwork": "https://i1.sndcdn.com/artworks-UhmnPvHxcYIfdiUH-qrMhGw-t1080x1080.jpg",
+          "trackCount": 2,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "One song. Two completely different exits.\n\nFor “The City Watches Her Leave”, Chromabone delivers two radically different reinterpretations of Grafenberg’s original.\n\nThe first remix pushes the track into a catchy 80s-flavoured house universe: bright analog synths, tight drums, a driving bassline and an immediate nocturnal energy. The melancholy of the original is still there, but this time the city is moving.\n\nThen everything changes.\n\nFor “The City Watches Her Leave (Chromabone & Grafenberg After the Lights Remix)”, Chromabone is joined by Grafenberg for a much more stripped-back and intimate reconstruction.\n\nThe club disappears.\n\nThe electronics retreat.\n\nWhat remains is raw drums, majestic piano, sweeping strings and space.\n\nNehir Sedef’s voice is left almost completely exposed inside an arrangement that feels less like a remix and more like the final scene of the same story. Every drum hit carries weight. Every silence matters. The orchestral elements slowly replace the synthetic architecture until the track becomes something stark, cinematic and deeply human.\n\nTwo remixes.\n\nOne built for movement.\n\nOne built for stillness.\n\nOne watches the city glow.\n\nThe other begins after the lights go out.\n\nAnd as a thank you to everyone who has been listening, supporting and following our music, both remixes are available as free downloads on SoundCloud.\n\nTake them.\n\nKeep them.\n\nPlay them loud.\n\nThank you for being part of the journey.",
+          "tracklist": [
+            "The city watches her leave (Chromabone Neon Exit Remix)",
+            "The city watches her leave (Chromabone & Grafenberg After the Lights Remix)"
+          ],
+          "freeDownload": true,
+          "credit": [
+            "grafenberg"
+          ],
+          "creditSource": "title",
+          "isMirror": false
+        },
         {
           "id": "2290424559",
           "title": "What the system missed",
@@ -139,6 +160,7 @@
             "She refuses (feat. Nehir Sedef)",
             "Something was not erased (feat. Nehir Sedef)"
           ],
+          "freeDownload": false,
           "credit": null,
           "creditSource": "unresolved",
           "isMirror": false
@@ -165,6 +187,7 @@
             "HEAVEN IN SYSTEM FAILURE [Remastered]",
             "EXIT RITUAL // SHUTDOWN LITURGY [Remastered]"
           ],
+          "freeDownload": false,
           "credit": null,
           "creditSource": "unresolved",
           "isMirror": false
@@ -192,6 +215,7 @@
             "System collapse ritual",
             "Last transmission"
           ],
+          "freeDownload": false,
           "credit": [
             "grafenberg",
             "broken-shaman"
@@ -223,6 +247,7 @@
             "Hearts in Blooming Light",
             "Lotusfire Horizon"
           ],
+          "freeDownload": false,
           "credit": [
             "anatolian-mirage"
           ],
@@ -251,6 +276,7 @@
             "Kiss me in another timeline",
             "She wrote the code of love"
           ],
+          "freeDownload": false,
           "credit": [
             "grafenberg"
           ],
@@ -279,6 +305,7 @@
             "Midnight sacrament",
             "No exit from love"
           ],
+          "freeDownload": false,
           "credit": [
             "love-cult"
           ],
@@ -291,7 +318,7 @@
           "url": "https://soundcloud.com/grafenbergmusik/sets/chromabone-black-chrome",
           "date": "2026-07-27",
           "artwork": "https://i1.sndcdn.com/artworks-BO3JZQ1zaJNSGQtb-E8tjow-t1080x1080.jpg",
-          "trackCount": 12,
+          "trackCount": 13,
           "isAlbum": false,
           "setType": "playlist",
           "description": "All remixes produced by Chromabone for Kinetic Distro\n\nKinetic Distro gathers its most dangerous transformations into one dedicated playlist, entirely shaped by the incomparable, indestructible and increasingly revered Chromabone.\n\nWhenever a new album enters the Kinetic universe, Chromabone selects one track, dismantles it, studies its pulse, rewires its nervous system and sends it back into the world with a new body.\n\nThese are not simple remixes.\n\nThey are reanimations.\n\nAcross this playlist, Chromabone crosses the full Kinetic Distro roster and adapts his production to each artist without erasing their identity. The frozen emotion of Broken Shaman, the cosmic decadence of Grafenberg, the dying skies of Vein//Mirror, the nocturnal rituals of Nosfera Disco Club, the reconstructed memories of Hollow Static and every future addition to the label are absorbed into his black chrome machinery.\n\nPiano becomes impact.\nGrief becomes movement.\nDisco becomes ritual.\nMemory becomes voltage.\nThe dead learn to dance, and sometimes, they even learn to fly.\n\nFrom cinematic electronic reworks and dark French-touch mutations to Berlin peak-time pressure, gothic club music, hypnotic techno and corrupted disco, Chromabone approaches every remix as a new transmission. He preserves the emotional core of the original while introducing deeper bass, synthetic tension, metallic textures and the unmistakable darkness of his production.\n\nOne label.\nMany worlds.\nOne machine capable of reconnecting them all.\n\nAll remixes produced by Chromabone.\nAll original tracks released through Kinetic Distro.\n\nNo saints. No proof. Only remixes.",
@@ -307,8 +334,10 @@
             "Teopolis (Chromabone's Bonewave Remix)",
             "Love'em All (Chromabone's Catacomb Remix)",
             "Grafenberg x Broken Shaman - Last Transmission [Chromabone's hacked signal remix feat. Nyla Vey]",
-            "Anatolian Mirage - Golden road echoes [Chromabone's neon dervish remix]"
+            "Anatolian Mirage - Golden road echoes [Chromabone's neon dervish remix]",
+            "The city watches her leave (Chromabone Neon Exit Remix)"
           ],
+          "freeDownload": false,
           "credit": [
             "chromabone"
           ],
@@ -338,6 +367,7 @@
             "A sky without birds",
             "A sky without birds (second memory)"
           ],
+          "freeDownload": false,
           "credit": [
             "hollow-static"
           ],
@@ -410,6 +440,7 @@
             "Switch//ON",
             "System collapse ritual"
           ],
+          "freeDownload": false,
           "credit": null,
           "creditSource": "unresolved",
           "isMirror": false
@@ -436,6 +467,7 @@
             "Stay close until it hurts",
             "Body still warm"
           ],
+          "freeDownload": false,
           "credit": [
             "nosfera-disco-club"
           ],
@@ -464,6 +496,7 @@
             "Silent voltage",
             "After the impact"
           ],
+          "freeDownload": false,
           "credit": [
             "chromabone",
             "broken-shaman"
@@ -493,6 +526,7 @@
             "Through the Veins of the Dying Sky",
             "Where the Quiet Learns to Breathe"
           ],
+          "freeDownload": false,
           "credit": [
             "vein-mirror"
           ],
@@ -513,6 +547,7 @@
             "Broken Shaman - Piano in the Snow (Chromabone's Black Ice Requiem)",
             "Broken Shaman - Piano in the Snow (Chromabone's Dead Winter Ceremony)"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -541,6 +576,7 @@
             "Something Else Is Using My Hands",
             "We Become the Shape That Survived the Fall"
           ],
+          "freeDownload": false,
           "credit": [
             "vein-mirror"
           ],
@@ -569,6 +605,7 @@
             "Something Else Is Using My Hands",
             "We Become the Shape That Survived the Fall"
           ],
+          "freeDownload": false,
           "credit": null,
           "creditSource": "unresolved",
           "isMirror": false
@@ -588,6 +625,7 @@
             "The Night That Ate The Stars (Chromabones Event Horizon Ritual Remix)",
             "The Night That Ate The Stars (Chromabones Graveyard Orbit Remix)"
           ],
+          "freeDownload": false,
           "credit": null,
           "creditSource": "unresolved",
           "isMirror": false
@@ -614,6 +652,7 @@
             "The night that ate the stars",
             "Heartbeat of the hollow"
           ],
+          "freeDownload": false,
           "credit": [
             "nosfera-disco-club"
           ],
@@ -643,6 +682,7 @@
             "The last version of me",
             "Variant godmode [BONUS TRACK]"
           ],
+          "freeDownload": false,
           "credit": [
             "grafenberg"
           ],
@@ -671,6 +711,7 @@
             "Gary Beck - Space (Chromabone Silent Orbit Remix)",
             "Maetrik - The Reason (Chromabone Corrupted Logic Remix)"
           ],
+          "freeDownload": false,
           "credit": [
             "chromabone"
           ],
@@ -700,6 +741,7 @@
             "The last pulse of light",
             "We bleed into the future"
           ],
+          "freeDownload": false,
           "credit": [
             "grafenberg"
           ],
@@ -728,6 +770,7 @@
             "Less is a weapon",
             "We set the floor on fire (feat. Nyla Vey)"
           ],
+          "freeDownload": false,
           "credit": [
             "chromabone",
             "broken-shaman"
@@ -753,6 +796,7 @@
             "Teopolis (2015 Original Mix)",
             "Love'em All (2015 Original Mix)"
           ],
+          "freeDownload": false,
           "credit": [
             "grafenberg"
           ],
@@ -781,6 +825,7 @@
             "Nhar - The Swallow (Chromabone's Glass Feather Revision)",
             "Dj Hyperactive -  Wide Open (Chromabone's Hex Transmission Remix)"
           ],
+          "freeDownload": false,
           "credit": [
             "chromabone"
           ],
@@ -809,6 +854,7 @@
             "Vesper Ash Communion",
             "Seraph Error Ritual"
           ],
+          "freeDownload": false,
           "credit": [
             "vein-mirror"
           ],
@@ -837,6 +883,7 @@
             "I'm Better But I m Not Over You",
             "Some Goodbyes Don't Mean Forever"
           ],
+          "freeDownload": false,
           "credit": [
             "vein-mirror"
           ],
@@ -865,6 +912,7 @@
             "The machine that dreamed of light",
             "Last broadcast from nowhere"
           ],
+          "freeDownload": false,
           "credit": [
             "grafenberg"
           ],
@@ -895,6 +943,7 @@
             "City of Thousand Snakes",
             "Myth Drifter"
           ],
+          "freeDownload": false,
           "credit": [
             "anatolian-mirage"
           ],
@@ -923,6 +972,7 @@
             "Posthumous Dance",
             "The mirror doesn't blink"
           ],
+          "freeDownload": false,
           "credit": [
             "nosfera-disco-club"
           ],
@@ -951,6 +1001,7 @@
             "Motor Moon Communion (Chromabone Lunar Engine Remix)",
             "Seraph on the Faultline (Chromabone Fallen Halo Remix)"
           ],
+          "freeDownload": false,
           "credit": [
             "chromabone"
           ],
@@ -979,6 +1030,7 @@
             "Magnolia Voss - Some missions deserve a song",
             "Graves under glass - No clean exit"
           ],
+          "freeDownload": false,
           "credit": [
             "unmade-scores"
           ],
@@ -996,6 +1048,7 @@
           "setType": "playlist",
           "description": "A cinematic neo-soul ritual where love and venom dissolve into the same pulse.\n\nLove and Venom Taste the Same is a dark, sensual and cinematic neo-soul album.\nBlending the raw emotional weight of modern soul with the shadowy pulse of trip-hop, Vein//Mirror explores the fragile boundary where desire, pain, devotion and decay merge into the same feeling.\n\nWarm, intimate vocals drift over slow-burning grooves, deep basslines and atmospheric textures — drawing from neo-R&B, neo-blues and cinematic sound design. Each track unfolds like a nocturnal ritual, both tender and corrosive, where love wounds as deeply as it heals.\n\nThis album is not built for quick consumption.\nIt invites stillness, closeness, and late-night listening — where emotion lingers longer than melody.\n\nHeadphones recommended.",
           "tracklist": [],
+          "freeDownload": false,
           "credit": [
             "vein-mirror"
           ],
@@ -1013,6 +1066,7 @@
           "setType": "playlist",
           "description": "The sand is warm.\nThe crescent is gold.\nAnd the groove has started.\n\nSolar Bazaar Rituals — the first Anatolian Mirage album — is out now.\nA contemporary reading of Anatolian roots, carved into neon rhythm and ritual bass.",
           "tracklist": [],
+          "freeDownload": false,
           "credit": [
             "anatolian-mirage"
           ],
@@ -1030,6 +1084,7 @@
           "setType": "playlist",
           "description": "Grafenberg – The Halo Corruption Protocol\n\nWhat was once sacred is now compromised.\n\nThe Halo Corruption Protocol is a descent into a fractured system where divinity has been rewritten, corrupted, and repurposed into code. This fourth chapter in the Grafenberg universe pushes deeper into a dark fusion of electronic architecture, industrial textures, and ritualistic sound design.\n\nEach track functions like a fragment of a broken program:\n– corrupted signals\n– sanctified errors\n– digital liturgies collapsing in real time\n\nFrom the cold precision of Protocol Init – Zero Sanctity to the terminal collapse of Shutdown Liturgy, the album unfolds as a cybernetic rite, where faith and machine merge into something unstable… and irreversible.\n\nThis is not just music.\nThis is a system failure disguised as transcendence.\n\nThemes:\nCorruption of purity • Synthetic spirituality • Machine theology • Controlled collapse\n\nSound signature:\nIndustrial electronic • Dark cinematic • Ritual ambient • Post-digital textures\n\nWelcome to the protocol.\nThere is no recovery.",
           "tracklist": [],
+          "freeDownload": false,
           "credit": [
             "grafenberg"
           ],
@@ -1058,6 +1113,7 @@
             "Last human touch",
             "Lights still on"
           ],
+          "freeDownload": false,
           "credit": [
             "grafenberg",
             "broken-shaman"
@@ -1088,6 +1144,7 @@
             "Remnants of memory",
             "Silent Redemption"
           ],
+          "freeDownload": false,
           "credit": [
             "grafenberg"
           ],
@@ -1131,6 +1188,7 @@
             "My Friend Of Misery (Grafenberg's fucked up vision remix)",
             "The Hat - The Angry River (Grafenberg Remix)"
           ],
+          "freeDownload": false,
           "credit": [
             "grafenberg"
           ],
@@ -1159,6 +1217,7 @@
             "Black voltage psalm",
             "Mother of static"
           ],
+          "freeDownload": false,
           "credit": [
             "grafenberg"
           ],
@@ -1187,6 +1246,7 @@
             "Motor Moon Communion",
             "Seraph on the Faultline"
           ],
+          "freeDownload": false,
           "credit": [
             "grafenberg"
           ],
@@ -1207,6 +1267,7 @@
             "Grafenberg - Chaos, I bleed (Original Ritual Cut)",
             "Grafenberg - Chaos, I bleed (Anatolian Night Drive Remix)"
           ],
+          "freeDownload": false,
           "credit": null,
           "creditSource": "unresolved",
           "isMirror": false
@@ -1344,6 +1405,7 @@
             "AI SLOP VII Training data",
             "HUMAN SLOP"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1373,6 +1435,7 @@
             "System collapse ritual",
             "Last transmission"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman",
             "grafenberg"
@@ -1402,6 +1465,7 @@
             "Silent voltage",
             "After the impact"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman",
             "chromabone"
@@ -1431,6 +1495,7 @@
             "Requiem for a shaman who couldnt cry",
             "When the orchestra burns"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1459,6 +1524,7 @@
             "Frequency break",
             "New constellation"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1488,6 +1554,7 @@
             "Last dance before sunrise",
             "Black powa revival [BONUS TRACK]"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1516,6 +1583,7 @@
             "Save me from myself",
             "Stay until the sky breaks"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1544,6 +1612,7 @@
             "Less is a weapon",
             "We set the floor on fire (feat. Nyla Vey)"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman",
             "chromabone"
@@ -1573,6 +1642,7 @@
             "Before the silence",
             "After the silence"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1601,6 +1671,7 @@
             "Mercy in Blackwater (Broken Shaman Paid Homage Remix)",
             "Wicked Game"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1629,6 +1700,7 @@
             "Tomorrow Needs a Witness",
             "What's Still Going On"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1657,6 +1729,7 @@
             "King in the open",
             "Endame theology"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1685,6 +1758,7 @@
             "Last human touch",
             "Lights still on"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman",
             "grafenberg"
@@ -1714,6 +1788,7 @@
             "Teeth in the apple",
             "Stay until the morning breaks"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1743,6 +1818,7 @@
             "Sunday again",
             "What stays"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1771,6 +1847,7 @@
             "In the same body",
             "The fifth element"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1799,6 +1876,7 @@
             "She Undoes Me",
             "Toxic afterglow"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1825,6 +1903,7 @@
             "Signal misremembered",
             "The long breath"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1853,6 +1932,7 @@
             "14 minutes",
             "Code name : APOCALYPSE"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -1880,6 +1960,7 @@
             "Laughing In The Smoke",
             "This Is Hell"
           ],
+          "freeDownload": false,
           "credit": [
             "broken-shaman"
           ],
@@ -2023,6 +2104,7 @@
             "Hallucinated Halay",
             "Collapse of the Golden Oasis"
           ],
+          "freeDownload": false,
           "credit": [
             "anatolian-mirage"
           ],
@@ -2053,6 +2135,7 @@
             "The Orchard of Burning Salt",
             "Last River Under Glass"
           ],
+          "freeDownload": false,
           "credit": [
             "anatolian-mirage"
           ],
@@ -2193,6 +2276,7 @@
             "Closed Circuit",
             "After Function (Bonus Track)"
           ],
+          "freeDownload": false,
           "credit": [
             "iron-covenant"
           ],
@@ -2219,6 +2303,7 @@
             "After the spire",
             "Rupture Doctrine"
           ],
+          "freeDownload": false,
           "credit": [
             "iron-covenant"
           ],
@@ -2245,6 +2330,7 @@
             "Tightrope Logic",
             "Still Standing"
           ],
+          "freeDownload": false,
           "credit": [
             "iron-covenant"
           ],
@@ -2268,6 +2354,7 @@
             "Dead weight",
             "Stand together"
           ],
+          "freeDownload": false,
           "credit": [
             "iron-covenant"
           ],
@@ -2414,6 +2501,7 @@
             "Purgatory discotheque",
             "Forever in the afterclub"
           ],
+          "freeDownload": false,
           "credit": [
             "nosfera-disco-club"
           ],
@@ -2442,6 +2530,7 @@
             "Dead disco forever",
             "The last red glow"
           ],
+          "freeDownload": false,
           "credit": [
             "nosfera-disco-club"
           ],
@@ -2583,6 +2672,7 @@
             "Stained Glass in the Mouth of the Sky",
             "Where the Last Light Learns to Break"
           ],
+          "freeDownload": false,
           "credit": [
             "vein-mirror"
           ],
@@ -2611,6 +2701,7 @@
             "The Horizon Made of Broken Steel",
             "When the Rust Begins to Pray"
           ],
+          "freeDownload": false,
           "credit": [
             "vein-mirror"
           ],
@@ -2628,6 +2719,7 @@
           "setType": "album",
           "description": "The Hush Beneath the Static is a slow descent into the space that remains after noise fades.\n\nThis album explores the tension between signal and silence, presence and absence, intimacy and distance. Built on warm analog textures, cinematic guitar lines, deep sub-bass and restrained electronic rhythms, VEIN//MIRROR crafts a sound that is contemplative, emotional and quietly powerful.\n\nEach track unfolds like a suspended moment — breath held, pulse softened — where longing, memory and fragile connection drift beneath layers of static. The voice moves with restraint and vulnerability, guiding the listener through landscapes shaped by dusk, reflection and quiet transformation.\n\nThe Hush Beneath the Static is not about impact — it is about resonance.\nNot collapse, but what survives after it.\nA record made for late hours, empty spaces, and the subtle gravity of things left unspoken.",
           "tracklist": [],
+          "freeDownload": false,
           "credit": [
             "vein-mirror"
           ],
@@ -2767,6 +2859,7 @@
             "No need to promise",
             "Before the fall"
           ],
+          "freeDownload": false,
           "credit": [
             "lykke"
           ],
@@ -2793,6 +2886,7 @@
             "The world between us",
             "After the applause"
           ],
+          "freeDownload": false,
           "credit": [
             "lykke"
           ],
@@ -2819,6 +2913,7 @@
             "Hearts Don't Lie",
             "After The Glow"
           ],
+          "freeDownload": false,
           "credit": [
             "lykke"
           ],
@@ -2960,6 +3055,7 @@
             "Magnolia Voss - Some missions deserve a song",
             "Graves under glass - No clean exit"
           ],
+          "freeDownload": false,
           "credit": [
             "unmade-scores"
           ],
@@ -2988,6 +3084,7 @@
             "Last Corner - Light If I Fall Tonight",
             "Final count avenue - Stand Back Up Final Round"
           ],
+          "freeDownload": false,
           "credit": [
             "unmade-scores"
           ],
@@ -3017,6 +3114,7 @@
             "Celeste Blackwood - Bond never apologizes",
             "Helena Cross - When elegance fails"
           ],
+          "freeDownload": false,
           "credit": [
             "unmade-scores"
           ],

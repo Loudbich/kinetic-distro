@@ -49,6 +49,8 @@ export type SyncedPlaylist = {
   setType: string;
   description: string;
   tracklist: string[];
+  /** True when SoundCloud is offering the record as a free download. */
+  freeDownload?: boolean;
   /**
    * Roster slugs this record is by — worked out at sync time, because the
    * hosting profile is not the credit: `grafenbergmusik` is the label's own
@@ -298,6 +300,7 @@ const derived: Release[] = mergePlaylists(
       streamingLinks: streaming[slugify(playlist.title) || `set-${playlist.id}`],
       image: coverFor(playlist.title)?.url ?? playlist.artwork ?? undefined,
       imageSrcset: coverFor(playlist.title)?.srcset,
+      freeDownload: playlist.freeDownload,
     } satisfies Release;
   });
 
@@ -310,6 +313,7 @@ const curated: Release[] = releases.map((r) => ({
   ...r,
   image: r.image ?? coverFor(r.title)?.url,
   imageSrcset: r.imageSrcset ?? coverFor(r.title)?.srcset,
+  freeDownload: r.freeDownload ?? syncedByTitle.get(norm(r.title))?.freeDownload,
   // The hand-written blurb stays — it is the short form the cards want. The
   // liner notes come from the record's SoundCloud description, so a release
   // note written once shows up in both places.
