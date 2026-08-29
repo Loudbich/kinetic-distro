@@ -36,6 +36,8 @@ export type SyncedTrack = {
   date: string | null;
   durationSec: number | null;
   artwork: string;
+  /** Play count, on tracks that came from the most-played list. */
+  plays?: number;
 };
 
 export type SyncedPlaylist = {
@@ -79,6 +81,8 @@ export type SyncedArtist = {
   trackCount: number;
   latestDate: string | null;
   tracks: SyncedTrack[];
+  /** The account's most-played tracks, in SoundCloud's own ranking. */
+  topTracks: SyncedTrack[];
   playlists: SyncedPlaylist[];
 };
 
@@ -375,12 +379,16 @@ export type FeedTrack = SyncedTrack & {
  */
 const releaseByTrack = new Map<string, Release>();
 for (const release of allReleases) {
+  // A label compilation credits nobody, so it cannot say who made a track — and
+  // being recent it would otherwise claim every track it gathers and strip them
+  // all of an artist. Kinetic Distro Essentials alone swallowed 54 of them.
+  if (!release.artistSlugs.length) continue;
+
   for (const title of release.tracklist ?? []) {
     const key = artKey(title);
     // `allReleases` is newest first, so the newest claimant keeps the title. A
     // remix can genuinely sit on two records — its own single and a later
-    // compilation — and in a feed called "fresh" the recent one is the useful
-    // answer.
+    // compilation — and the recent one is the more useful answer.
     if (!releaseByTrack.has(key)) releaseByTrack.set(key, release);
   }
 }
@@ -395,43 +403,47 @@ for (const release of allReleases) {
  * A track nobody can be credited for is left out rather than filed under
  * whoever happens to host it.
  */
-export const latestTracks = (limit = 8, perArtist = 2): FeedTrack[] => {
-  const seen = new Map<string, number>();
+/**
+ * Each artist's most-played track.
+ *
+ * Sorted on play count rather than the order SoundCloud returns: its "Popular
+ * tracks" shelf has a ranking of its own, and on the label account the track
+ * with 39k plays sits ninth in it. Play count is what "the artist's best"
+ * means to anyone reading the page.
+ *
+ * Credit comes from the record containing the track, as everywhere else, so an
+ * artist with no SoundCloud account of their own still gets their best track
+ * out of the label's list.
+ */
+export const popularTracks = (limit = 8): FeedTrack[] => {
+  const best = new Map<string, FeedTrack>();
 
-  return Object.values(data.artists ?? {})
-    .flatMap((profile) =>
-      (profile.tracks ?? []).map((track) => ({
-        track,
-        // The record's credit first; failing that, the profile is the artist —
-        // true everywhere except the label's own account.
-        release: releaseByTrack.get(artKey(track.title)),
-        slugs:
-          releaseByTrack.get(artKey(track.title))?.artistSlugs ??
-          (profile.slug === LABEL_PROFILE ? [] : [profile.slug]),
-      })),
-    )
-    .flatMap(({ track, slugs, release }) =>
-      slugs
-        .map((slug) => artists.find((a) => a.slug === slug))
-        .filter(Boolean)
-        .map((a) => ({
+  for (const profile of Object.values(data.artists ?? {})) {
+    for (const track of profile.topTracks ?? []) {
+      const release = releaseByTrack.get(artKey(track.title));
+      const slugs =
+        release?.artistSlugs ?? (profile.slug === LABEL_PROFILE ? [] : [profile.slug]);
+
+      for (const slug of slugs) {
+        const artist = artists.find((a) => a.slug === slug);
+        if (!artist) continue;
+
+        const held = best.get(slug);
+        if (held && (held.plays ?? 0) >= (track.plays ?? 0)) continue;
+
+        best.set(slug, {
           ...track,
-          artistSlug: a!.slug,
-          artistName: a!.name,
-          accent: a!.accent,
+          artistSlug: artist.slug,
+          artistName: artist.name,
+          accent: artist.accent,
           releaseTitle: release?.title,
           releaseSlug: release?.slug,
-        })),
-    )
-    .sort((a, b) => ((b.date ?? '') > (a.date ?? '') ? 1 : -1))
-    .filter((t) => {
-      // Cap each artist so one prolific week cannot swallow the whole feed.
-      const n = seen.get(t.artistSlug) ?? 0;
-      if (n >= perArtist) return false;
-      seen.set(t.artistSlug, n + 1);
-      return true;
-    })
-    .slice(0, limit);
+        });
+      }
+    }
+  }
+
+  return [...best.values()].sort((a, b) => (b.plays ?? 0) - (a.plays ?? 0)).slice(0, limit);
 };
 
 export const tracksForArtist = (slug: string, limit = 10): SyncedTrack[] =>

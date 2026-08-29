@@ -23,7 +23,7 @@ import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parseSoundCloudRss } from './lib/rss.mjs';
 import { parsePlaylistsFromProfile } from './lib/playlists.mjs';
-import { resolveClientId, fetchUserSets, mapSet, hydrateTracklists } from './lib/scapi.mjs';
+import { resolveClientId, fetchUserSets, mapSet, hydrateTracklists, fetchTopTracks } from './lib/scapi.mjs';
 import { annotateCatalogue, readRoster } from './lib/attribution.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -114,6 +114,7 @@ async function syncArtist(source, clientId) {
   const { channel, tracks } = parseSoundCloudRss(xml);
 
   const playlists = TRACKS_ONLY ? [] : await fetchSets(source, clientId);
+  const topTracks = clientId ? await fetchTopTracks(get, { userId: source.userId, clientId }) : [];
 
   return {
     slug: source.slug,
@@ -128,6 +129,7 @@ async function syncArtist(source, clientId) {
     trackCount: tracks.length,
     latestDate: tracks[0]?.date ?? null,
     tracks,
+    topTracks,
     playlists,
   };
 }
@@ -214,6 +216,16 @@ async function main() {
     // record is by, and that credit is now baked into the album itself. The
     // site filters them out, so shipping them would be dead weight.
     artist.playlists = artist.playlists.filter((p) => !p.isMirror);
+
+    // The most-played list spans every artist an account hosts, so it is kept
+    // long enough for each of them to be represented once credits are resolved
+    // at build time.
+    artist.topTracks = (artist.topTracks ?? []).slice(0, 30);
+
+    // The most-played list spans every artist the account hosts, so it is kept
+    // long enough for each of them to be represented once the credits are
+    // resolved at build time.
+    artist.topTracks = (artist.topTracks ?? []).slice(0, 30);
 
     artist.tracks = artist.tracks
       .slice(0, MAX_TRACKS)

@@ -183,16 +183,16 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
             <div>
               <span className="mb-4 flex items-center gap-2.5">
                 <span className="h-2 w-2 animate-flicker accent-bg" />
-                <span className="label">Live feed</span>
+                <span className="label">Most played</span>
               </span>
               <h2 className="display text-4xl leading-none sm:text-5xl">
-                Fresh from
+                The tracks
                 <br />
-                the roster
+                that travelled
               </h2>
             </div>
             <p className="max-w-xs text-sm leading-relaxed text-chrome-400">
-              One record each, straight from the artists&rsquo; own feeds.
+              One per artist, ranked by plays on SoundCloud.
             </p>
           </div>
         </Reveal>
@@ -331,7 +331,7 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
                   </span>
 
                   <span className="hidden shrink-0 font-mono text-[11px] text-chrome-300 sm:block">
-                    {t.date && fmtDate(t.date)}
+                    {t.plays ? `${t.plays.toLocaleString('en')} plays` : t.date && fmtDate(t.date)}
                   </span>
                   <span
                     className="shrink-0 text-chrome-400 transition-transform duration-300 group-hover:translate-x-1"

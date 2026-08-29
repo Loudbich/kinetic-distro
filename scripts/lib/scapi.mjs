@@ -95,6 +95,39 @@ const upsize = (url) => (url || '').replace(/-(?:large|t\d+x\d+)\.jpg$/, '-t1080
  * it when the uploader sets it explicitly — so `display_date` is the field that
  * actually reflects when a record went out.
  */
+/**
+ * A profile's most-played tracks — the "Popular tracks" shelf on SoundCloud.
+ *
+ * The endpoint returns its own ranking, which is not play order: on the label
+ * account the track with 39k plays comes ninth. Callers sort by play count
+ * themselves, which is what "the artist's best" actually means.
+ *
+ * Fails soft like everything else here: no top tracks is a feed that falls back
+ * on recency, not a broken build.
+ */
+export async function fetchTopTracks(get, { userId, clientId, limit = 30 }) {
+  try {
+    const data = JSON.parse(
+      await get(
+        `https://api-v2.soundcloud.com/users/${userId}/toptracks?client_id=${clientId}&limit=${limit}`,
+      ),
+    );
+    return (data.collection ?? [])
+      .filter((t) => t && typeof t.title === 'string')
+      .map((t) => ({
+        id: String(t.id),
+        title: t.title,
+        url: t.permalink_url,
+        date: (t.display_date || t.created_at || '').slice(0, 10) || null,
+        durationSec: t.duration ? Math.round(t.duration / 1000) : null,
+        artwork: upsize(t.artwork_url || ''),
+        plays: t.playback_count ?? 0,
+      }));
+  } catch {
+    return [];
+  }
+}
+
 export function mapSet(raw) {
   const tracks = Array.isArray(raw.tracks) ? raw.tracks : [];
 

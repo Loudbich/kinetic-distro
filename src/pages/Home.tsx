@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { artists, site } from '../content/site';
-import { allReleases, latestTracks } from '../content/catalog';
+import { allReleases, popularTracks } from '../content/catalog';
 import { LabelTrackFeed } from '../components/TrackFeed';
 import Cover from '../components/Cover';
 import Carousel from '../components/Carousel';
@@ -19,7 +19,7 @@ export default function Home() {
   const featured = allReleases[0];
   const featuredArtist = artists.find((a) => a.slug === featured.artistSlugs[0]);
   const latest = allReleases.slice(0, 5);
-  const feed = latestTracks(8, 1);
+  const feed = popularTracks(8);
 
   return (
     <>
