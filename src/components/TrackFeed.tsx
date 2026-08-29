@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import type { FeedTrack, SyncedTrack } from '../content/catalog';
 import { fmtDate } from '../lib/format';
 import Player from './Player';
@@ -269,6 +270,14 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
               >
                 {current.title}
               </a>
+              {current.releaseTitle && current.releaseSlug && (
+                <Link
+                  to={`/releases/${current.releaseSlug}/`}
+                  className="link-underline mt-1.5 block font-mono text-[12px] text-chrome-400"
+                >
+                  from {current.releaseTitle}
+                </Link>
+              )}
             </p>
           </Reveal>
 
@@ -314,9 +323,14 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
                       {t.artistName}
                     </span>
                     <span className="mt-1 block truncate text-[15px] sm:text-base">{t.title}</span>
+                    {t.releaseTitle && (
+                      <span className="mt-0.5 block truncate font-mono text-[11px] text-chrome-400">
+                        {t.releaseTitle}
+                      </span>
+                    )}
                   </span>
 
-                  <span className="shrink-0 font-mono text-[11px] text-chrome-300">
+                  <span className="hidden shrink-0 font-mono text-[11px] text-chrome-300 sm:block">
                     {t.date && fmtDate(t.date)}
                   </span>
                   <span

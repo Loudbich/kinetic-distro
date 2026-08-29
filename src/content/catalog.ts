@@ -132,6 +132,9 @@ const curatedTitles = new Set(releases.map((r) => norm(r.title)));
 
 const rosterSlugs = new Set(artists.map((a) => a.slug));
 
+/** The roster slug whose SoundCloud account is really the label's. */
+const LABEL_PROFILE = 'grafenberg';
+
 /**
  * Artwork key. Deliberately NOT `norm` — that one strips bracketed text so a
  * `[Remaster]` suffix cannot stop a synced record matching its curated twin,
@@ -347,22 +350,89 @@ export const releasesForArtist = (slug: string) =>
 /* Latest tracks                                                               */
 /* -------------------------------------------------------------------------- */
 
-export type FeedTrack = SyncedTrack & { artistSlug: string; artistName: string; accent: string };
+export type FeedTrack = SyncedTrack & {
+  artistSlug: string;
+  artistName: string;
+  accent: string;
+  /** The record this track is taken from, when it belongs to one. */
+  releaseTitle?: string;
+  releaseSlug?: string;
+};
 
-export const latestTracks = (limit = 8, perArtist = 2): FeedTrack[] =>
-  Object.values(data.artists ?? {})
-    .flatMap((artist) => {
-      const rosterEntry = artists.find((a) => a.slug === artist.slug);
-      // Cap each artist so one prolific week cannot swallow the whole feed.
-      return (artist.tracks ?? []).slice(0, perArtist).map((track) => ({
-        ...track,
-        artistSlug: artist.slug,
-        artistName: rosterEntry?.name ?? artist.displayName,
-        accent: rosterEntry?.accent ?? '#FF4D12',
-      }));
-    })
+/**
+ * Which artist a track belongs to, taken from the record that contains it.
+ *
+ * A loose track on the label account says nothing about who made it — `She
+ * accepts (feat. Nehir Sedef)` could be anyone's — but it appears in the
+ * tracklist of a release whose credit is already settled, hand-written
+ * overrides included. That is why this lives here and not in the sync: at sync
+ * time the overrides in attribution.ts have not been applied yet, so a track
+ * would inherit the credit its record had *before* correction.
+ *
+ * Keyed with `artKey`, which keeps parenthesised text: `norm` would collapse
+ * `(feat. Nehir Sedef)` and `(Chromabone Neon Exit Remix)` onto one key and
+ * hand a remix to the artist being remixed.
+ */
+const releaseByTrack = new Map<string, Release>();
+for (const release of allReleases) {
+  for (const title of release.tracklist ?? []) {
+    const key = artKey(title);
+    // `allReleases` is newest first, so the newest claimant keeps the title. A
+    // remix can genuinely sit on two records — its own single and a later
+    // compilation — and in a feed called "fresh" the recent one is the useful
+    // answer.
+    if (!releaseByTrack.has(key)) releaseByTrack.set(key, release);
+  }
+}
+
+/**
+ * The newest tracks, grouped by the artist they are credited to.
+ *
+ * Not by hosting profile: `grafenbergmusik` is the label's account and carries
+ * most of the roster, so grouping by profile put a Chromabone remix under
+ * Grafenberg's name and let it push his own album out of the feed entirely.
+ *
+ * A track nobody can be credited for is left out rather than filed under
+ * whoever happens to host it.
+ */
+export const latestTracks = (limit = 8, perArtist = 2): FeedTrack[] => {
+  const seen = new Map<string, number>();
+
+  return Object.values(data.artists ?? {})
+    .flatMap((profile) =>
+      (profile.tracks ?? []).map((track) => ({
+        track,
+        // The record's credit first; failing that, the profile is the artist —
+        // true everywhere except the label's own account.
+        release: releaseByTrack.get(artKey(track.title)),
+        slugs:
+          releaseByTrack.get(artKey(track.title))?.artistSlugs ??
+          (profile.slug === LABEL_PROFILE ? [] : [profile.slug]),
+      })),
+    )
+    .flatMap(({ track, slugs, release }) =>
+      slugs
+        .map((slug) => artists.find((a) => a.slug === slug))
+        .filter(Boolean)
+        .map((a) => ({
+          ...track,
+          artistSlug: a!.slug,
+          artistName: a!.name,
+          accent: a!.accent,
+          releaseTitle: release?.title,
+          releaseSlug: release?.slug,
+        })),
+    )
     .sort((a, b) => ((b.date ?? '') > (a.date ?? '') ? 1 : -1))
+    .filter((t) => {
+      // Cap each artist so one prolific week cannot swallow the whole feed.
+      const n = seen.get(t.artistSlug) ?? 0;
+      if (n >= perArtist) return false;
+      seen.set(t.artistSlug, n + 1);
+      return true;
+    })
     .slice(0, limit);
+};
 
 export const tracksForArtist = (slug: string, limit = 10): SyncedTrack[] =>
   (syncedFor(slug)?.tracks ?? []).slice(0, limit);
