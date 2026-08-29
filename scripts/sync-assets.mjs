@@ -52,6 +52,24 @@ const IMAGE_EXT = new Set(['.webp', '.jpg', '.jpeg', '.png', '.avif']);
 const log = (...a) => console.log('[assets]', ...a);
 const warn = (...a) => console.warn('[assets] ⚠ ', ...a);
 
+/**
+ * Files that could not be read as images at all.
+ *
+ * One bad file should cost its own slot and nothing else. A 46 MB WAV saved
+ * with a .webp extension took the whole build down before this existed, which
+ * is a deploy lost to a drag-and-drop slip.
+ */
+const unusable = [];
+
+async function tryEmit(source, options, label) {
+  try {
+    return await emit(source, options);
+  } catch (err) {
+    unusable.push(`${label} — ${err.message}`);
+    return null;
+  }
+}
+
 /* -------------------------------------------------------------------------- */
 
 const slugify = (s) =>
@@ -201,12 +219,12 @@ async function syncCovers(titles) {
     if (CHECK) {
       manifest[norm(title)] = { url: `/covers/${baseName}.webp` };
     } else {
-      const out = await emit(file.path, {
-        outDir,
-        publicPath: '/covers',
-        baseName,
-        preset: 'cover',
-      });
+      const out = await tryEmit(
+        file.path,
+        { outDir, publicPath: '/covers', baseName, preset: 'cover' },
+        file.rel,
+      );
+      if (!out) continue;
       manifest[norm(title)] = { url: out.primary.url, srcset: out.srcset };
       bytes += out.bytes;
     }
@@ -305,12 +323,17 @@ async function syncBrand() {
     if (CHECK) continue;
 
     // The mark is drawn at 28px and doubles as the favicon; the lockup at 208.
-    const out = await emit(file.path, {
-      outDir: PUBLIC,
-      publicPath: '',
-      baseName: slug,
-      preset: slug.includes('seul') || slug.includes('mark') ? 'mark' : 'logo',
-    });
+    const out = await tryEmit(
+      file.path,
+      {
+        outDir: PUBLIC,
+        publicPath: '',
+        baseName: slug,
+        preset: slug.includes('seul') || slug.includes('mark') ? 'mark' : 'logo',
+      },
+      `brand/${file.name}`,
+    );
+    if (!out) continue;
     manifest[slug] = out.primary.url;
     sizes[slug] = { width: out.primary.width, height: out.primary.height };
     bytes += out.bytes;
@@ -380,7 +403,10 @@ async function syncCarousel(rosterSlugs) {
     if (!variants.wide) continue; // a mobile crop alone is not a slide
     manifest[slug] = {};
 
-    for (const [kind, file] of Object.entries(variants)) {
+    // Wide first, and abandon the slug if it fails: a portrait crop with no
+    // landscape counterpart cannot be shown anywhere, so encoding it would only
+    // publish a file nothing links to.
+    for (const [kind, file] of [['wide', variants.wide], ['mobile', variants.mobile]].filter(([, f]) => f)) {
       const baseName = `${slug}${kind === 'mobile' ? '-mobile' : ''}`;
 
       if (CHECK) {
@@ -388,15 +414,29 @@ async function syncCarousel(rosterSlugs) {
         continue;
       }
 
-      const out = await emit(file.path, {
-        outDir,
-        publicPath: '/carousel',
-        baseName,
-        preset: kind === 'mobile' ? 'carouselMobile' : 'carousel',
-      });
+      const out = await tryEmit(
+        file.path,
+        {
+          outDir,
+          publicPath: '/carousel',
+          baseName,
+          preset: kind === 'mobile' ? 'carouselMobile' : 'carousel',
+        },
+        `Caroussel/${kind === 'mobile' ? 'mobile/' : ''}${file.name}`,
+      );
+      if (!out) {
+        if (kind === 'wide') break;
+        continue;
+      }
       manifest[slug][kind] = { ...out.primary, srcset: out.srcset };
       bytes += out.bytes;
     }
+  }
+
+  // An entry with no wide variant is not a slide; drop it so nothing downstream
+  // has to keep re-checking for one.
+  for (const [slug, entry] of Object.entries(manifest)) {
+    if (!entry.wide) delete manifest[slug];
   }
 
   return { manifest, unmatched, copied: Object.keys(manifest).length, bytes };
@@ -429,12 +469,12 @@ async function syncPortraits(rosterSlugs) {
     if (CHECK) {
       manifest[slug] = `/artists/${slug}.webp`;
     } else {
-      const out = await emit(join(SRC, 'artists', file.name), {
-        outDir,
-        publicPath: '/artists',
-        baseName: slug,
-        preset: 'portrait',
-      });
+      const out = await tryEmit(
+        join(SRC, 'artists', file.name),
+        { outDir, publicPath: '/artists', baseName: slug, preset: 'portrait' },
+        `artists/${file.name}`,
+      );
+      if (!out) continue;
       manifest[slug] = out.primary.url;
       bytes += out.bytes;
     }
@@ -491,6 +531,11 @@ log(
 
 for (const [slug, file] of brand.chosen) {
   log(`brand/${slug}: ${file.name} (${file.alpha ? 'transparent' : 'opaque, matte dissolved'}, ${Math.round(file.size / 1024)} kB)`);
+}
+
+if (unusable.length) {
+  warn(`${unusable.length} file(s) could not be read as an image — not published:`);
+  unusable.forEach((f) => console.warn(`      ${f}`));
 }
 
 if (carousel.unmatched.length) {

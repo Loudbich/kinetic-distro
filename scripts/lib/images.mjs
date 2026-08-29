@@ -69,7 +69,9 @@ export async function emit(source, { outDir, publicPath, baseName, preset }) {
 
   const meta = await sharp(source).metadata();
   const sourceWidth = meta.width ?? 0;
-  const sourceIsWebp = /\.webp$/i.test(source);
+  // The real format, not the extension. A WAV renamed to .webp would otherwise
+  // pass the filename test and be copied to public/ as a carousel slide.
+  const sourceIsWebp = meta.format === 'webp';
 
   // Which widths this source can actually supply. Anything at or above its own
   // width collapses onto the source size — enlarging would only produce a
