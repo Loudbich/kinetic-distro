@@ -19,3 +19,7 @@ public/logo*
 assets/Caroussel/*.png
 assets/Caroussel/mobile/*.png
 assets/**/*.psd
+# A 552 MB Photoshop document landed in assets/covers named `Covers`, with no
+# extension at all. The build skips it for lack of an image extension, but git
+# would not have.
+assets/covers/Covers

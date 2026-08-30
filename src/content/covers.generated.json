@@ -204,6 +204,10 @@
       "url": "/covers/the-touch-era-1000.webp",
       "srcset": "/covers/the-touch-era-700.webp 700w, /covers/the-touch-era-1000.webp 1000w"
     },
+    "thehousebeyondthewater": {
+      "url": "/covers/the-house-beyond-the-water-1500.webp",
+      "srcset": "/covers/the-house-beyond-the-water-700.webp 700w, /covers/the-house-beyond-the-water-1000.webp 1000w, /covers/the-house-beyond-the-water-1500.webp 1500w"
+    },
     "loveandvenomtastethesame": {
       "url": "/covers/love-and-venom-taste-the-same-1000.webp",
       "srcset": "/covers/love-and-venom-taste-the-same-700.webp 700w, /covers/love-and-venom-taste-the-same-1000.webp 1000w"
@@ -371,6 +375,14 @@
         "width": 941,
         "height": 1672,
         "srcset": "/carousel/nosfera-disco-club-mobile-640.webp 640w, /carousel/nosfera-disco-club-mobile-941.webp 941w"
+      }
+    },
+    "nyla-vey": {
+      "wide": {
+        "url": "/carousel/nyla-vey-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/nyla-vey-768.webp 768w, /carousel/nyla-vey-1280.webp 1280w, /carousel/nyla-vey-1920.webp 1920w, /carousel/nyla-vey-2560.webp 2560w, /carousel/nyla-vey-3840.webp 3840w"
       }
     },
     "unmade-scores": {

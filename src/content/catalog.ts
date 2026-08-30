@@ -316,11 +316,22 @@ const derived: Release[] = mergePlaylists(
  * artwork manifest when they do not name one — so dropping a file in
  * assets/covers/ is enough, with no edit to site.ts.
  */
+/**
+ * The build date, so an announced record can be told from a released one.
+ *
+ * Evaluated once at build time rather than in the browser: the pages are
+ * prerendered, so a date read at render time would be frozen at whatever it was
+ * when the HTML was written. The nightly job rebuilds, so a record stops being
+ * upcoming on its release day without anyone touching it.
+ */
+const BUILD_DATE = new Date().toISOString().slice(0, 10);
+
 const curated: Release[] = releases.map((r) => ({
   ...r,
   image: r.image ?? coverFor(r.title)?.url,
   imageSrcset: r.imageSrcset ?? coverFor(r.title)?.srcset,
   freeDownload: r.freeDownload ?? syncedByTitle.get(norm(r.title))?.freeDownload,
+  upcoming: r.date > BUILD_DATE,
   // The hand-written blurb stays — it is the short form the cards want. The
   // liner notes come from the record's SoundCloud description, so a release
   // note written once shows up in both places.

@@ -64,6 +64,11 @@ export default function ReleasePage() {
                 <span>
                   {release.catalog} · {release.type}
                 </span>
+                {release.upcoming && (
+                  <span className="border px-2 py-0.5" style={{ borderColor: accent, color: accent }}>
+                    Out {fmtDate(release.date)}
+                  </span>
+                )}
                 {release.freeDownload && (
                   <span
                     className="border px-2 py-0.5"

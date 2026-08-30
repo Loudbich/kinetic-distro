@@ -240,6 +240,24 @@ const roster: Artist[] = [
     featured: true,
   },
   {
+    slug: 'nyla-vey',
+    name: 'Nyla Vey',
+    accent: '#A9E5DA',
+    genre: 'Ethereal pop / Chamber',
+    origin: 'Heard here before',
+    since: '2026',
+    tagline: 'Does a memory have to be accurate to be true?',
+    bio: [
+      'Nyla Vey was a guest voice on this label before she was an artist on it — the presence at the edge of other people’s records, now at the centre of her own.',
+      'Her solo work steps away from the electronic glow of those appearances and into a world built from harp, piano, violins, cello, distant choirs, water, birds, rain and silence. At the centre of everything is her voice: intimate, sensual, fragile and sometimes almost unbearably close.',
+      'The House Beyond The Water is an album about memory, and what happens when memory refuses to remain still. Luminous ethereal pop, intimate chamber music and subtle experimental production — impossibly wide one moment, almost claustrophobically intimate the next.',
+    ],
+    traits: ['Harp and piano', 'Voice at close range', 'Memory as subject'],
+    // No SoundCloud profile of her own yet; the record is published by the label.
+    links: [{ label: 'Bandcamp', href: 'https://kineticdistro.bandcamp.com' }],
+    featured: true,
+  },
+  {
     slug: 'hollow-static',
     name: 'Hollow Static',
     accent: '#7C9EE0',
@@ -327,9 +345,45 @@ export type Release = {
   imageSrcset?: string;
   /** The record is offered as a free download on SoundCloud. */
   freeDownload?: boolean;
+  /** Announced but not out yet — its date is still in the future. */
+  upcoming?: boolean;
 };
 
 export const releases: Release[] = [
+  {
+    slug: 'the-house-beyond-the-water',
+    catalog: 'KD-009',
+    title: 'The House Beyond The Water',
+    artistSlugs: ['nyla-vey'],
+    artistDisplay: 'Nyla Vey',
+    date: '2026-09-01',
+    format: 'Digital · 10 tracks',
+    type: 'Album',
+    blurb:
+      'The debut solo album. Harp, piano and strings around a voice at very close range — an album about memory, and what happens when memory refuses to remain still.',
+    notes: [
+      'The House Beyond The Water is the debut solo album from Nyla Vey, opening a completely new chapter within the Kinetic Distro universe. Across ten songs, Nyla steps away from the electronic glow of her previous appearances and enters a world built from harp, piano, violins, cello, distant choirs, water, birds, rain and silence. At the centre of everything is her voice: intimate, sensual, fragile and sometimes almost unbearably close.',
+      'A house beyond the water. White birds returning every year. A light that once belonged to someone. A voice heard in an empty hallway. Rain that seems to speak. A garden that remembers more than we do. A name beneath the waves. A door whose destination has disappeared.',
+      'Nyla searches for someone throughout the record, but the album never tells us exactly who that person was. Perhaps a lover, perhaps family, perhaps childhood itself — perhaps someone who only exists now because she remembers them. And even those memories gradually become unreliable.',
+      'By the time the album reaches its final songs the question is no longer whether everything happened exactly as Nyla remembers it. It becomes something more human: does a memory have to be accurate to be true?',
+      'Musically it moves between luminous ethereal pop, intimate chamber music and subtle experimental production. Harp and piano provide the emotional foundation, while strings, glass percussion, analogue textures and enormous layers of Nyla’s own voice build a world that can feel impossibly wide one moment and almost claustrophobically intimate the next. There are moments of pure light. There are moments where the music almost disappears completely.',
+      'Not an attempt to reconstruct the past. An attempt to preserve its light.',
+    ],
+    tracklist: [
+      'The House Beyond The Water',
+      'White Birds',
+      'Where The Light Used To Live',
+      'Someone Was Singing',
+      'A Language Made Of Rain',
+      'The Garden After Midnight',
+      'Your Name Beneath The Waves',
+      'Nothing Ever Leaves The Sea',
+      'I Remember A Door',
+      'Before The River Forgot Us',
+    ],
+    listenUrl: 'https://kineticdistro.bandcamp.com',
+    featured: true,
+  },
   {
     slug: 'circuits-in-silence',
     catalog: 'KD-008',

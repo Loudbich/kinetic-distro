@@ -13,7 +13,9 @@ const fmtDate = (iso: string) =>
   new Date(iso).toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' });
 
 export default function Home() {
-  // The section is headed "Latest transmission", so it shows the latest record.
+  // The section shows the newest record by date. That can be one that has been
+  // announced but is not out yet, so the heading and the date line both say so
+  // rather than presenting a release date as a thing that already happened.
   // It used to take the first entry flagged `featured` in site.ts, which meant a
   // flag set once in March kept a new album off the home page.
   const featured = allReleases[0];
@@ -92,7 +94,7 @@ export default function Home() {
         <div className="shell py-20 lg:py-28">
           <Reveal>
             <div className="mb-12 flex items-end justify-between gap-6">
-              <p className="label">Latest transmission</p>
+              <p className="label">{featured.upcoming ? 'Next transmission' : 'Latest transmission'}</p>
               <Link to="/releases/" className="label link-underline hover:!text-paper">
                 All releases →
               </Link>
@@ -115,7 +117,8 @@ export default function Home() {
 
             <Reveal className="flex flex-col justify-center lg:col-span-6" delay={140}>
               <p className="label mb-5">
-                {featured.catalog} · {featured.type} · {fmtDate(featured.date)}
+                {featured.catalog} · {featured.type} ·{' '}
+                {featured.upcoming ? `Out ${fmtDate(featured.date)}` : fmtDate(featured.date)}
               </p>
               {/* `break-words` is a safety net: a release title is data, and this one
                   runs to sixty characters. At 5xl with no break opportunity it
