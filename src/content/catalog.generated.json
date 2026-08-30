@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T20:17:32.805Z",
+  "generatedAt": "2026-08-30T20:25:07.390Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
   "trackCount": 674,
@@ -232,7 +232,7 @@
           "date": "2026-07-16",
           "durationSec": 459,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 470
+          "plays": 471
         },
         {
           "id": "2294824403",
