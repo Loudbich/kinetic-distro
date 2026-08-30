@@ -227,6 +227,10 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
                     >
                       <img
                         src={t.artwork}
+                        srcSet={t.artworkSrcset}
+                        // The stage is a little under half the width on a wide
+                        // screen and nearly the full width on a phone.
+                        sizes={t.artworkSrcset ? '(min-width: 1024px) 40vw, 90vw' : undefined}
                         alt=""
                         width={500}
                         height={500}

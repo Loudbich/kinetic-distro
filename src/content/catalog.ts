@@ -361,6 +361,8 @@ export type FeedTrack = SyncedTrack & {
   /** The record this track is taken from, when it belongs to one. */
   releaseTitle?: string;
   releaseSlug?: string;
+  /** Candidate widths for the artwork, when it comes from a supplied cover. */
+  artworkSrcset?: string;
 };
 
 /**
@@ -438,6 +440,11 @@ export const popularTracks = (limit = 8): FeedTrack[] => {
           accent: artist.accent,
           releaseTitle: release?.title,
           releaseSlug: release?.slug,
+          // The record's own cover, which is the supplied 1000–1500px artwork
+          // where there is one. SoundCloud's per-track image is capped well
+          // below what this module draws and showed visibly soft.
+          artwork: release?.image ?? track.artwork,
+          artworkSrcset: release?.imageSrcset,
         });
       }
     }
