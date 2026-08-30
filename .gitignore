@@ -23,3 +23,6 @@ assets/**/*.psd
 # extension at all. The build skips it for lack of an image extension, but git
 # would not have.
 assets/covers/Covers
+
+# Sources Photoshop sans extension (50 Mo) — le pipeline ne lit que les .webp
+assets/Caroussel/mobile/Mobile

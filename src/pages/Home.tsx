@@ -199,20 +199,37 @@ export default function Home() {
               <Reveal as="li" key={a.slug} delay={(i % 4) * 70} className="bg-ink-800">
                 <Link
                   to={`/roster/${a.slug}/`}
-                  className="group relative flex h-full flex-col justify-between gap-10 p-7 transition-colors duration-500 hover:bg-ink-700"
+                  className="group relative flex h-full flex-col transition-colors duration-500 hover:bg-ink-700"
                   style={{ ['--accent' as string]: a.accent }}
                 >
                   <span
-                    className="absolute inset-x-0 top-0 h-[3px] origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"
+                    className="absolute inset-x-0 top-0 z-10 h-[3px] origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"
                     style={{ background: a.accent }}
                     aria-hidden="true"
                   />
-                  <span className="label">{a.genre}</span>
-                  <span>
-                    <span className="display-tight block text-2xl leading-tight transition-colors duration-300 group-hover:text-[color:var(--accent)] sm:text-[1.75rem]">
-                      {a.name}
+                  {/* The portrait, not the carousel key visual: those already
+                      lead this page as the hero, and they carry the artist name
+                      in type, which would repeat the heading right below them.
+                      `focus="top"` keeps the face when the square crop bites,
+                      and an artist with no portrait yet falls through to the
+                      generative pattern in their own accent rather than a hole
+                      in the grid. */}
+                  <Cover
+                    seed={a.slug}
+                    accent={a.accent}
+                    image={a.image}
+                    label={a.name}
+                    focus="top"
+                    className="aspect-[4/5] w-full sm:aspect-square"
+                  />
+                  <span className="flex flex-1 flex-col justify-between gap-8 p-7">
+                    <span className="label">{a.genre}</span>
+                    <span className="block">
+                      <span className="display-tight block text-2xl leading-tight transition-colors duration-300 group-hover:text-[color:var(--accent)] sm:text-[1.75rem]">
+                        {a.name}
+                      </span>
+                      <span className="mt-3 block text-sm leading-snug text-chrome-400">{a.tagline}</span>
                     </span>
-                    <span className="mt-3 block text-sm leading-snug text-chrome-400">{a.tagline}</span>
                   </span>
                 </Link>
               </Reveal>
