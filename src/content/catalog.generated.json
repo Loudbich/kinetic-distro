@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T10:27:11.275Z",
+  "generatedAt": "2026-08-30T13:57:10.331Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
   "trackCount": 674,
@@ -124,7 +124,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 2972
+          "plays": 2975
         },
         {
           "id": "2360407937",
@@ -142,7 +142,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2691
+          "plays": 2692
         },
         {
           "id": "2360372888",
@@ -151,7 +151,7 @@
           "date": "2026-07-14",
           "durationSec": 272,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2579
+          "plays": 2580
         },
         {
           "id": "2347189901",
@@ -241,7 +241,7 @@
           "date": "2026-04-01",
           "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
-          "plays": 3867
+          "plays": 3868
         },
         {
           "id": "2369060990",
@@ -250,7 +250,7 @@
           "date": "2026-07-27",
           "durationSec": 261,
           "artwork": "https://i1.sndcdn.com/artworks-k1OJ8ATzyjrfqfcG-f9MDzw-t1080x1080.jpg",
-          "plays": 399
+          "plays": 401
         },
         {
           "id": "2340614657",
@@ -259,7 +259,7 @@
           "date": "2026-06-16",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-mArOQIlnmrKLu9QQ-RdBfcg-large.png",
-          "plays": 382
+          "plays": 384
         },
         {
           "id": "2360372882",
@@ -1691,7 +1691,7 @@
           "date": "2026-08-25",
           "durationSec": 378,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 1118
+          "plays": 1123
         },
         {
           "id": "2294824532",
@@ -1754,7 +1754,7 @@
           "date": "2026-06-22",
           "durationSec": 302,
           "artwork": "https://i1.sndcdn.com/artworks-eAxpiNVPXBJ2600g-lPaAQA-large.png",
-          "plays": 367
+          "plays": 369
         },
         {
           "id": "2343857450",
@@ -1898,7 +1898,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3348
+          "plays": 3349
         },
         {
           "id": "2383694124",
@@ -1907,7 +1907,7 @@
           "date": "2026-08-18",
           "durationSec": 287,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
-          "plays": 277
+          "plays": 279
         },
         {
           "id": "2270107739",
@@ -1916,7 +1916,7 @@
           "date": "2026-02-20",
           "durationSec": 190,
           "artwork": "https://i1.sndcdn.com/artworks-a0bOleOADejbgtol-0lQiSQ-large.png",
-          "plays": 2620
+          "plays": 2621
         },
         {
           "id": "2343857453",
@@ -4575,7 +4575,7 @@
           "date": "2026-02-15",
           "durationSec": 234,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 260
+          "plays": 261
         },
         {
           "id": "2266921847",
