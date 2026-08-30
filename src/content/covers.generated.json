@@ -80,9 +80,25 @@
       "url": "/covers/black-chrome-reanimations-1000.webp",
       "srcset": "/covers/black-chrome-reanimations-700.webp 700w, /covers/black-chrome-reanimations-1000.webp 1000w"
     },
+    "pianointhesnowchromaboneremixes": {
+      "url": "/covers/piano-in-the-snow-chromabone-remixes-1000.webp",
+      "srcset": "/covers/piano-in-the-snow-chromabone-remixes-700.webp 700w, /covers/piano-in-the-snow-chromabone-remixes-1000.webp 1000w"
+    },
+    "nosaintsnoproofrevisited": {
+      "url": "/covers/no-saints-no-proof-revisited-1000.webp",
+      "srcset": "/covers/no-saints-no-proof-revisited-700.webp 700w, /covers/no-saints-no-proof-revisited-1000.webp 1000w"
+    },
     "thecitywatchesherleavefeatnehirsedefchromaboneremixes": {
       "url": "/covers/the-city-watches-her-leave-feat-nehir-sedef-chromabone-remixes-1500.webp",
       "srcset": "/covers/the-city-watches-her-leave-feat-nehir-sedef-chromabone-remixes-700.webp 700w, /covers/the-city-watches-her-leave-feat-nehir-sedef-chromabone-remixes-1000.webp 1000w, /covers/the-city-watches-her-leave-feat-nehir-sedef-chromabone-remixes-1500.webp 1500w"
+    },
+    "thenightthatatethestarschromaboneremixes": {
+      "url": "/covers/the-night-that-ate-the-stars-chromabone-remixes-1000.webp",
+      "srcset": "/covers/the-night-that-ate-the-stars-chromabone-remixes-700.webp 700w, /covers/the-night-that-ate-the-stars-chromabone-remixes-1000.webp 1000w"
+    },
+    "relicsfromanotherearthvoli": {
+      "url": "/covers/relics-from-another-earth-vol-i-1000.webp",
+      "srcset": "/covers/relics-from-another-earth-vol-i-700.webp 700w, /covers/relics-from-another-earth-vol-i-1000.webp 1000w"
     },
     "dancelikeyousurvived": {
       "url": "/covers/dance-like-you-survived-1000.webp",
@@ -144,6 +160,10 @@
       "url": "/covers/chrome-syndicate-dreams-1000.webp",
       "srcset": "/covers/chrome-syndicate-dreams-700.webp 700w, /covers/chrome-syndicate-dreams-1000.webp 1000w"
     },
+    "memoryflowers": {
+      "url": "/covers/memory-flowers-1000.webp",
+      "srcset": "/covers/memory-flowers-700.webp 700w, /covers/memory-flowers-1000.webp 1000w"
+    },
     "gildedrituals": {
       "url": "/covers/gilded-rituals-1000.webp",
       "srcset": "/covers/gilded-rituals-700.webp 700w, /covers/gilded-rituals-1000.webp 1000w"
@@ -171,6 +191,26 @@
     "loveandvenomtastethesame": {
       "url": "/covers/love-and-venom-taste-the-same-1000.webp",
       "srcset": "/covers/love-and-venom-taste-the-same-700.webp 700w, /covers/love-and-venom-taste-the-same-1000.webp 1000w"
+    },
+    "thehushbeneaththestatic": {
+      "url": "/covers/the-hush-beneath-the-static-1000.webp",
+      "srcset": "/covers/the-hush-beneath-the-static-700.webp 700w, /covers/the-hush-beneath-the-static-1000.webp 1000w"
+    },
+    "veinsoflightveinsofrust": {
+      "url": "/covers/veins-of-light-veins-of-rust-1000.webp",
+      "srcset": "/covers/veins-of-light-veins-of-rust-700.webp 700w, /covers/veins-of-light-veins-of-rust-1000.webp 1000w"
+    },
+    "zerocathedral": {
+      "url": "/covers/zero-cathedral-1000.webp",
+      "srcset": "/covers/zero-cathedral-700.webp 700w, /covers/zero-cathedral-1000.webp 1000w"
+    },
+    "inmemoryofwhatneverwas": {
+      "url": "/covers/in-memory-of-what-never-was-1000.webp",
+      "srcset": "/covers/in-memory-of-what-never-was-700.webp 700w, /covers/in-memory-of-what-never-was-1000.webp 1000w"
+    },
+    "wherethecenterscollapse": {
+      "url": "/covers/where-the-centers-collapse-1000.webp",
+      "srcset": "/covers/where-the-centers-collapse-700.webp 700w, /covers/where-the-centers-collapse-1000.webp 1000w"
     }
   },
   "portraits": {

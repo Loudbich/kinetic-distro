@@ -18,7 +18,7 @@ export default function Home() {
   // flag set once in March kept a new album off the home page.
   const featured = allReleases[0];
   const featuredArtist = artists.find((a) => a.slug === featured.artistSlugs[0]);
-  const latest = allReleases.slice(0, 5);
+  const latest = allReleases.slice(0, 10);
   const feed = popularTracks(8);
 
   return (
@@ -117,7 +117,12 @@ export default function Home() {
               <p className="label mb-5">
                 {featured.catalog} · {featured.type} · {fmtDate(featured.date)}
               </p>
-              <h2 className="display text-5xl leading-[0.9] sm:text-6xl lg:text-7xl">{featured.title}</h2>
+              {/* `break-words` is a safety net: a release title is data, and this one
+                  runs to sixty characters. At 5xl with no break opportunity it
+                  scrolled the whole page sideways on a phone. */}
+              <h2 className="display text-balance break-words text-4xl leading-[0.9] sm:text-5xl lg:text-7xl">
+                {featured.title}
+              </h2>
               <p className="mt-5 font-mono text-sm text-chrome">{featured.artistDisplay}</p>
               <p className="mt-8 max-w-lg text-lg leading-relaxed text-chrome">{featured.blurb}</p>
 
@@ -225,28 +230,55 @@ export default function Home() {
               const artist = artists.find((a) => a.slug === r.artistSlugs[0]);
               return (
                 <Reveal as="li" key={r.slug} delay={i * 60}>
+                  {/* Flex on a phone, grid from `sm` up — the same shape the
+                      roster rows use. A 12-column grid at this width pushed the
+                      title beside the artwork while the artist and date wrapped
+                      back to the page margin, leaving each row out of line with
+                      itself. */}
                   <Link
                     to={`/releases/${r.slug}/`}
-                    className="group grid grid-cols-12 items-center gap-4 border-b border-white/10 py-6 transition-colors hover:bg-white/[0.03] sm:py-7"
+                    className="group flex items-center gap-4 border-b border-white/10 py-4 transition-colors hover:bg-white/[0.03] sm:grid sm:grid-cols-12 sm:py-5"
                   >
-                    <span className="label col-span-3 sm:col-span-2">{r.catalog}</span>
-                    <span className="col-span-9 sm:col-span-4">
-                      <span
-                        className="display-tight block text-xl transition-colors sm:text-2xl"
-                        style={{ color: undefined }}
-                      >
-                        <span className="group-hover:text-[color:var(--accent)] transition-colors" style={{ ['--accent' as string]: artist?.accent }}>
-                          {r.title}
+                    <Cover
+                      seed={r.slug}
+                      accent={artist?.accent ?? '#FF4D12'}
+                      image={r.image}
+                      srcset={r.imageSrcset}
+                      label={`${r.artistDisplay} — ${r.title}`}
+                      className="h-16 w-16 shrink-0 border border-white/10 sm:col-span-2 lg:col-span-1"
+                    />
+
+                    <span className="min-w-0 flex-1 sm:col-span-5 sm:flex sm:items-center sm:gap-4 lg:col-span-5">
+                      <span className="label hidden shrink-0 sm:block">{r.catalog}</span>
+                      {/* `block` matters: on an inline span `min-w-0` does
+                          nothing, the title sized to its content and scrolled
+                          the page sideways. Kept truncated until `lg`, where
+                          the column is finally wide enough to let a long title
+                          wrap without turning the row into a paragraph. */}
+                      <span className="block min-w-0">
+                        <span className="display-tight block truncate text-xl transition-colors lg:whitespace-normal sm:text-2xl">
+                          <span
+                            className="transition-colors group-hover:text-[color:var(--accent)]"
+                            style={{ ['--accent' as string]: artist?.accent }}
+                          >
+                            {r.title}
+                          </span>
+                        </span>
+                        {/* On a phone the metadata belongs under the title, on
+                            the title's own left edge. */}
+                        <span className="mt-1 block truncate font-mono text-[12px] text-chrome-400 sm:hidden">
+                          {r.catalog} · {r.artistDisplay} · {fmtDate(r.date)}
                         </span>
                       </span>
                     </span>
-                    <span className="col-span-8 font-mono text-[13px] text-chrome sm:col-span-3">
+
+                    <span className="hidden font-mono text-[13px] text-chrome sm:col-span-3 sm:block">
                       {r.artistDisplay}
                     </span>
-                    <span className="col-span-4 text-right font-mono text-[13px] text-chrome-400 sm:col-span-2 sm:text-left">
+                    <span className="hidden font-mono text-[13px] text-chrome-400 sm:col-span-1 sm:block lg:col-span-2">
                       {fmtDate(r.date)}
                     </span>
-                    <span className="hidden justify-end text-chrome-400 transition-transform duration-300 group-hover:translate-x-1 sm:col-span-1 sm:flex">
+                    <span className="shrink-0 text-chrome-400 transition-transform duration-300 group-hover:translate-x-1 sm:col-span-1 sm:flex sm:justify-end">
                       →
                     </span>
                   </Link>
