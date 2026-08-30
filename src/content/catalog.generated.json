@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T14:51:04.906Z",
+  "generatedAt": "2026-08-30T17:42:50.767Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
   "trackCount": 674,
@@ -124,7 +124,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 2975
+          "plays": 2976
         },
         {
           "id": "2360407937",
@@ -142,7 +142,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2692
+          "plays": 2694
         },
         {
           "id": "2360372888",
@@ -196,7 +196,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 39209
+          "plays": 39212
         },
         {
           "id": "2324978264",
@@ -214,7 +214,7 @@
           "date": "2026-06-13",
           "durationSec": 248,
           "artwork": "https://i1.sndcdn.com/artworks-yu6juuousuwq56IS-WOn4kA-large.png",
-          "plays": 674
+          "plays": 677
         },
         {
           "id": "2338584194",
@@ -1664,7 +1664,7 @@
           "date": "2026-07-16",
           "durationSec": 319,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2533
+          "plays": 2535
         },
         {
           "id": "2348797784",
@@ -1691,7 +1691,7 @@
           "date": "2026-08-25",
           "durationSec": 378,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 1129
+          "plays": 1133
         },
         {
           "id": "2294824532",
@@ -1754,7 +1754,7 @@
           "date": "2026-06-22",
           "durationSec": 302,
           "artwork": "https://i1.sndcdn.com/artworks-eAxpiNVPXBJ2600g-lPaAQA-large.png",
-          "plays": 369
+          "plays": 370
         },
         {
           "id": "2343857450",
@@ -2640,7 +2640,7 @@
           "date": "2026-04-09",
           "durationSec": 255,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 558
+          "plays": 559
         },
         {
           "id": "2277808430",
