@@ -164,6 +164,22 @@
       "url": "/covers/memory-flowers-1000.webp",
       "srcset": "/covers/memory-flowers-700.webp 700w, /covers/memory-flowers-1000.webp 1000w"
     },
+    "forgedinconcrete": {
+      "url": "/covers/forged-in-concrete-1000.webp",
+      "srcset": "/covers/forged-in-concrete-700.webp 700w, /covers/forged-in-concrete-1000.webp 1000w"
+    },
+    "ashesandwires": {
+      "url": "/covers/ashes-wires-1000.webp",
+      "srcset": "/covers/ashes-wires-700.webp 700w, /covers/ashes-wires-1000.webp 1000w"
+    },
+    "cathedralsofnoise": {
+      "url": "/covers/cathedrals-of-noise-1000.webp",
+      "srcset": "/covers/cathedrals-of-noise-700.webp 700w, /covers/cathedrals-of-noise-1000.webp 1000w"
+    },
+    "blackdiscipline": {
+      "url": "/covers/black-discipline-1000.webp",
+      "srcset": "/covers/black-discipline-700.webp 700w, /covers/black-discipline-1000.webp 1000w"
+    },
     "gildedrituals": {
       "url": "/covers/gilded-rituals-1000.webp",
       "srcset": "/covers/gilded-rituals-700.webp 700w, /covers/gilded-rituals-1000.webp 1000w"
