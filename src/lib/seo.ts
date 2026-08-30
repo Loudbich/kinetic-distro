@@ -147,12 +147,31 @@ export const websiteEntity = () => ({
 /* Artist + album entities                                                     */
 /* -------------------------------------------------------------------------- */
 
+const COUNTRIES: [RegExp, string][] = [
+  [/France/i, 'FR'],
+  [/\bUS\b|United States/i, 'US'],
+  [/\bTR\b|Türkiye|Turkey/i, 'TR'],
+  [/Scandinavia|Sweden|Norway|Denmark/i, 'SE'],
+  [/Belgium|Brussels/i, 'BE'],
+  [/England|Britain|British|United Kingdom|\bUK\b/i, 'GB'],
+  [/Italy|Italian/i, 'IT'],
+  [/China/i, 'CN'],
+  [/Transylvania|Romania/i, 'RO'],
+];
+
+/**
+ * Several artists have a compound origin — "United States / Italy",
+ * "Transylvania / China". schema.org takes one founding country, so the one
+ * named first wins rather than whichever pattern happens to be listed first
+ * here: the label writes the primary origin first.
+ */
 const countryOf = (origin: string) => {
-  if (/France/i.test(origin)) return 'FR';
-  if (/US$|United States/i.test(origin)) return 'US';
-  if (/TR$|Türkiye|Turkey/i.test(origin)) return 'TR';
-  if (/Scandinavia|Sweden|Norway|Denmark/i.test(origin)) return 'SE';
-  return undefined;
+  let best: { at: number; code: string } | undefined;
+  for (const [re, code] of COUNTRIES) {
+    const at = origin.search(re);
+    if (at !== -1 && (!best || at < best.at)) best = { at, code };
+  }
+  return best?.code;
 };
 
 export const artistEntity = (artist: Artist, { deep = false } = {}) => {
@@ -177,6 +196,14 @@ export const artistEntity = (artist: Artist, { deep = false } = {}) => {
       name: artist.origin,
       address: { '@type': 'PostalAddress', addressCountry: country },
     };
+  }
+
+  if (artist.members?.length) {
+    entity.member = artist.members.map((m) => ({
+      '@type': 'OrganizationRole',
+      roleName: m.role,
+      member: { '@type': 'Person', name: m.name },
+    }));
   }
 
   if (/^\d{4}$/.test(artist.since)) entity.foundingDate = artist.since;

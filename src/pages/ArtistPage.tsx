@@ -158,10 +158,19 @@ export default function ArtistPage() {
 
           <div className="lg:col-span-6">
             {artist.bio.map((p, i) => (
-              <Reveal key={i} delay={i * 80}>
+              // The official bios run to twenty-odd paragraphs, so the stagger
+              // is capped: at 80ms a piece the last one would arrive two
+              // seconds after entering view, long after it had been read past.
+              <Reveal key={i} delay={Math.min(i, 6) * 80}>
                 <p
                   className={`text-chrome ${
-                    i === 0 ? 'text-xl leading-relaxed text-paper lg:text-2xl' : 'mt-6 leading-relaxed'
+                    i === 0
+                      ? 'text-xl leading-relaxed text-paper lg:text-2xl'
+                      : // Single-line beats — "Basslines matter." — are a
+                        // deliberate cadence in the label's copy, not separate
+                        // thoughts. A full paragraph gap between them reads as
+                        // a list; a tight one reads the way it was written.
+                        `leading-relaxed ${p.length < 70 ? 'mt-2' : 'mt-6'}`
                   }`}
                 >
                   {p}
@@ -171,6 +180,23 @@ export default function ArtistPage() {
           </div>
 
           <Reveal className="lg:col-span-3" delay={120}>
+            {artist.members && artist.members.length > 0 && (
+              <>
+                <p className="label mb-5">Line-up</p>
+                <ul className="mb-10 space-y-3">
+                  {artist.members.map((m) => (
+                    <li key={m.name} className="text-sm leading-snug">
+                      <span className="block text-paper">{m.name}</span>
+                      <span className="block text-chrome-400">
+                        {m.role}
+                        {m.origin ? ` · ${m.origin}` : ''}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+
             <p className="label mb-5">Signature</p>
             <ul className="space-y-3">
               {artist.traits.map((t) => (
