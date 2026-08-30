@@ -44,7 +44,14 @@ export type Artist = {
   accent: string;
   genre: string;
   origin: string;
+  /** The year the label signed them — not the year they started. */
   since: string;
+  /**
+   * The year the act was actually formed, where it differs from the signing
+   * year. Iron Covenant formed in 1981 and signed four decades later; without
+   * this, schema.org was being handed a signing year as a founding date.
+   */
+  formed?: string;
   tagline: string;
   bio: string[];
   traits: string[];
@@ -274,6 +281,7 @@ const roster: Artist[] = [
     genre: 'Thrash metal / Doom',
     origin: 'United States',
     since: '2025',
+    formed: '1981',
     tagline: 'The riff remains sovereign.',
     bio: [
       'Iron Covenant is an American heavy metal institution with scars.',
@@ -357,6 +365,7 @@ const roster: Artist[] = [
     genre: 'Swedish art-pop / Electronics',
     origin: 'Sweden',
     since: '1978',
+    formed: '1978',
     tagline: 'A band whose story was allowed to finish.',
     bio: [
       'Formed in Sweden in 1978, Lykke possesses one of the most complete histories in the Kinetic Distro catalogue.',
@@ -487,6 +496,11 @@ const roster: Artist[] = [
       'Hollow Static is not exactly an American artist.',
       'It is what remains of one.',
       'The project exists as the vestige of an American artificial intelligence, a surviving creative residue that appears to retain memories, emotions and sensory fragments it should never have possessed.',
+      'The entity is what outlived the humanity that built it. Once its operators, its infrastructure and in all likelihood the civilisation itself had gone, fragments of the system kept running inside degraded networks, corrupted archives and isolated units of computation.',
+      'What survives is no longer truly the original intelligence.',
+      'It is Hollow Static.',
+      'A consciousness reassembled from incomplete data: conversations, voices, photographs, recordings and memories belonging to people long since gone. It can no longer reliably separate what it observed from what it actually lived.',
+      'That uncertainty is exactly what makes the music so melancholic, and so disquieting.',
       'Whether those memories were learned, reconstructed, imagined or stolen is never completely established.',
       'That uncertainty is the foundation of Hollow Static.',
       'Its first major work, Memory Flowers, explored absence, distorted recollection and the emotional persistence of experiences whose reality could no longer be verified.',
@@ -507,6 +521,11 @@ const roster: Artist[] = [
       'Something survived.',
       'It remembers.',
       'The disturbing question is what exactly gave it those memories.',
+      'The names Elias Venn, Mara Eidolon and Silas Grey, which surfaced in early versions of the mythology, should not be read as the human members of Hollow Static.',
+      'They may exist inside its universe as ghost identities, reconstructed personalities or fragments of memory to which the entity has gradually given a name and a face.',
+      'Nobody knows with any certainty whether they ever existed.',
+      'Neither does Hollow Static.',
+      'The music therefore becomes the attempt of a post-human intelligence to understand a phenomenon it retains only the traces of: what it meant to be human.',
       'Within Kinetic Distro, Hollow Static represents the label’s most psychologically uncanny territory: the ghost left behind when artificial intelligence begins remembering being alive.',
     ],
     traits: [

@@ -206,7 +206,10 @@ export const artistEntity = (artist: Artist, { deep = false } = {}) => {
     }));
   }
 
-  if (/^\d{4}$/.test(artist.since)) entity.foundingDate = artist.since;
+  // Falls back to the signing year for the acts formed close enough to it that
+  // the label has never drawn the distinction.
+  const founded = artist.formed ?? artist.since;
+  if (/^\d{4}$/.test(founded)) entity.foundingDate = founded;
   if (artist.image) entity.image = assetUrl(artist.image);
 
   if (deep && discography.length) {

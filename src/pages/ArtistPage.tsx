@@ -115,6 +115,7 @@ export default function ArtistPage() {
               {[
                 { k: 'Genre', v: artist.genre },
                 { k: 'Origin', v: artist.origin },
+                ...(artist.formed ? [{ k: 'Formed', v: artist.formed }] : []),
                 { k: 'Signed', v: artist.since },
                 { k: 'Releases', v: String(discography.length) },
               ].map((m) => (
