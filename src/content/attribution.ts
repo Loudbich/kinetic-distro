@@ -31,6 +31,13 @@ export type SetAttribution = {
 
 export const setAttributions: SetAttribution[] = [
   {
+    // Nyla Vey's debut, hosted on the label account with no "Artist - Title"
+    // showcase playlist to derive the credit from.
+    id: '2292859170',
+    title: 'The house beyond the water',
+    artistSlugs: ['nyla-vey'],
+  },
+  {
     // The title names Grafenberg, whose record is being remixed, so the sync
     // credited him. Same call as the other Chromabone remix EPs: the remixer
     // is the artist here.

@@ -670,7 +670,8 @@ export const releases: Release[] = [
       'I Remember A Door',
       'Before The River Forgot Us',
     ],
-    listenUrl: 'https://kineticdistro.bandcamp.com',
+    streamUrl: 'https://soundcloud.com/grafenbergmusik/sets/the-house-beyond-the-water',
+    listenUrl: 'https://kineticdistro.bandcamp.com/album/the-house-beyond-the-water',
     featured: true,
   },
   {
