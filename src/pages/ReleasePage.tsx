@@ -138,7 +138,7 @@ export default function ReleasePage() {
                   Open on SoundCloud ↗
                 </a>
                 <a
-                  href="https://kineticdistro.bandcamp.com"
+                  href={release.bandcampUrl ?? 'https://kineticdistro.bandcamp.com'}
                   target="_blank"
                   rel="noreferrer noopener"
                   className="btn-ghost"

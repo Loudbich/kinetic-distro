@@ -623,6 +623,11 @@ export type Release = {
   streamUrl?: string;
   /** Where a physical pressing can be ordered, when one exists. */
   vinylUrl?: string;
+  /**
+   * The record's own Bandcamp page — see the `bandcamp` table below. Without
+   * one, "Buy on Bandcamp" falls back to the label's shop front.
+   */
+  bandcampUrl?: string;
   /** Streaming pages for this exact record — see the `streaming` table below. */
   streamingLinks?: { label: string; href: string }[];
   listenUrl: string;
@@ -671,7 +676,7 @@ export const releases: Release[] = [
       'Before The River Forgot Us',
     ],
     streamUrl: 'https://soundcloud.com/grafenbergmusik/sets/the-house-beyond-the-water',
-    listenUrl: 'https://kineticdistro.bandcamp.com/album/the-house-beyond-the-water',
+    listenUrl: 'https://soundcloud.com/grafenbergmusik/sets/the-house-beyond-the-water',
     featured: true,
   },
   {
@@ -841,6 +846,20 @@ export const releases: Release[] = [
  * has no hand-written entry to put the link on. The slug is what the URL of the
  * release page uses, so it is the one identifier both kinds already share.
  */
+/**
+ * A record's own Bandcamp page, keyed by release slug.
+ *
+ * "Buy on Bandcamp" used to be hardcoded to the label's shop front on every
+ * release page, so someone who wanted to buy the record they were reading
+ * about had to go and find it again. Only verified URLs belong here: a 404 is
+ * worse than the shop front, which is what an absent entry falls back to.
+ */
+export const bandcamp: Record<string, string> = {
+  'the-last-transmission': 'https://kineticdistro.bandcamp.com/album/the-last-transmission',
+  'the-house-beyond-the-water':
+    'https://kineticdistro.bandcamp.com/album/the-house-beyond-the-water',
+};
+
 export const vinyl: Record<string, string> = {
   'no-saints-no-proof': 'https://elasticstage.com/soundcloud/releases/grafenberg-no-saints-no-proof-album',
   'the-error-gospel': 'https://elasticstage.com/soundcloud/releases/grafenberg-the-error-gospel-album',

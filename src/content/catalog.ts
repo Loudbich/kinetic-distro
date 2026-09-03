@@ -17,7 +17,7 @@
 import generated from './catalog.generated.json';
 import art from './covers.generated.json';
 import { attributionFor } from './attribution';
-import { artists, releases, site, streaming, vinyl, type Release } from './site';
+import { artists, bandcamp, releases, site, streaming, vinyl, type Release } from './site';
 
 /* -------------------------------------------------------------------------- */
 /* Types                                                                       */
@@ -304,6 +304,7 @@ const derived: Release[] = mergePlaylists(
       listenUrl: playlist.url,
       streamUrl: playlist.url,
       vinylUrl: vinyl[slugify(playlist.title) || `set-${playlist.id}`],
+      bandcampUrl: bandcamp[slugify(playlist.title) || `set-${playlist.id}`],
       streamingLinks: streaming[slugify(playlist.title) || `set-${playlist.id}`],
       image: coverFor(playlist.title)?.url ?? playlist.artwork ?? undefined,
       imageSrcset: coverFor(playlist.title)?.srcset,
@@ -346,6 +347,7 @@ const curated: Release[] = releases.map((r) => ({
   // MusicRecording entities and numTracks.
   tracklist: r.tracklist ?? syncedByTitle.get(norm(r.title))?.tracklist,
   vinylUrl: r.vinylUrl ?? vinyl[r.slug],
+  bandcampUrl: r.bandcampUrl ?? bandcamp[r.slug],
   streamingLinks: r.streamingLinks ?? streaming[r.slug],
 }));
 

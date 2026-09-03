@@ -76,6 +76,10 @@
       "url": "/covers/a-choir-for-the-ones-who-disappeared-1000.webp",
       "srcset": "/covers/a-choir-for-the-ones-who-disappeared-700.webp 700w, /covers/a-choir-for-the-ones-who-disappeared-1000.webp 1000w"
     },
+    "thelasttransmission": {
+      "url": "/covers/the-last-transmission-1500.webp",
+      "srcset": "/covers/the-last-transmission-700.webp 700w, /covers/the-last-transmission-1000.webp 1000w, /covers/the-last-transmission-1500.webp 1500w"
+    },
     "blackchromereanimations": {
       "url": "/covers/black-chrome-reanimations-1000.webp",
       "srcset": "/covers/black-chrome-reanimations-700.webp 700w, /covers/black-chrome-reanimations-1000.webp 1000w"
