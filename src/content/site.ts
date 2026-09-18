@@ -855,6 +855,7 @@ export const releases: Release[] = [
  * worse than the shop front, which is what an absent entry falls back to.
  */
 export const bandcamp: Record<string, string> = {
+  'after-the-unmaking': 'https://kineticdistro.bandcamp.com/album/after-the-unmaking',
   'the-last-transmission': 'https://kineticdistro.bandcamp.com/album/the-last-transmission',
   'the-house-beyond-the-water':
     'https://kineticdistro.bandcamp.com/album/the-house-beyond-the-water',

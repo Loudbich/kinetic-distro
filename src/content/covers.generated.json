@@ -235,6 +235,10 @@
     "wherethecenterscollapse": {
       "url": "/covers/where-the-centers-collapse-1000.webp",
       "srcset": "/covers/where-the-centers-collapse-700.webp 700w, /covers/where-the-centers-collapse-1000.webp 1000w"
+    },
+    "aftertheunmaking": {
+      "url": "/covers/after-the-unmaking-1500.webp",
+      "srcset": "/covers/after-the-unmaking-700.webp 700w, /covers/after-the-unmaking-1000.webp 1000w, /covers/after-the-unmaking-1500.webp 1500w"
     }
   },
   "portraits": {

@@ -31,6 +31,12 @@ export type SetAttribution = {
 
 export const setAttributions: SetAttribution[] = [
   {
+    // Hosted on the label account, with no showcase playlist to derive it from.
+    id: '2300981067',
+    title: 'After the unmaking',
+    artistSlugs: ['vein-mirror'],
+  },
+  {
     // Nyla Vey's debut, hosted on the label account with no "Artist - Title"
     // showcase playlist to derive the credit from.
     id: '2292859170',

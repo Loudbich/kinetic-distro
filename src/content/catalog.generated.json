@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-18T09:39:32.794Z",
+  "generatedAt": "2026-09-18T10:24:32.955Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 8,
-  "trackCount": 694,
-  "playlistCount": 79,
+  "trackCount": 705,
+  "playlistCount": 80,
   "failures": [],
   "artists": {
     "grafenberg": {
@@ -16,9 +16,97 @@
       "description": "Kinetic Distro is an independent music label and creative distribution platform dedicated to pushing the boundaries of sound, identity, and artistic storytelling in the digital age.\n\nBuilt on a vision of movement and transformation, Kinetic Distro operates at the intersection of genres, cultures, and eras—curating a diverse roster of artists who each embody a distinct sonic universe. From cinematic electronic landscapes to hypnotic techno, neo-soul narratives, experimental pop, and heavy sonic architectures, the label thrives on contrast, evolution, and cohesion.\n\nThe roster includes projects such as Grafenberg, Broken Shaman, Chromabone, Nosfera Disco Club, VEIN//Mirror, Iron Covenant, Anatolian Mirage, and Lykke—each representing a unique dimension of the Kinetic Distro ecosystem. Rather than following trends, the label builds immersive worlds, where every release contributes to a larger, interconnected artistic continuum.\n\nKinetic Distro is not just a distributor—it is a creative engine. Through meticulous curation, visual identity development, and narrative-driven releases, the label transforms music into experiences. Each project is approached as a living entity, evolving across albums, concepts, and aesthetic directions.\n\nDriven by independence and a commitment to artistic integrity, Kinetic Distro embraces modern production tools, global influences, and a release strategy designed for the streaming era—while maintaining a strong emphasis on authenticity and long-term vision.\n\nAt its core, Kinetic Distro is about momentum: sound in motion, ideas in evolution, and artists in constant transformation.",
       "avatar": "https://i1.sndcdn.com/avatars-kgUviKbZi7PBDDdh-AZnynA-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 334,
-      "latestDate": "2026-09-02",
+      "trackCount": 345,
+      "latestDate": "2026-09-18",
       "tracks": [
+        {
+          "id": "2402962812",
+          "title": "I didnt lose the world, I outgrew its timing",
+          "url": "https://soundcloud.com/grafenbergmusik/i-didnt-lose-the-world-i-outgrew-its-timing-7",
+          "date": "2026-09-18",
+          "durationSec": 294,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
+        },
+        {
+          "id": "2402962809",
+          "title": "I learned to move without disturbing the order",
+          "url": "https://soundcloud.com/grafenbergmusik/i-learned-to-move-without-disturbing-the-order-9",
+          "date": "2026-09-18",
+          "durationSec": 284,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
+        },
+        {
+          "id": "2402962806",
+          "title": "The world didnt change, my access did",
+          "url": "https://soundcloud.com/grafenbergmusik/the-world-didnt-change-my-access-did-2",
+          "date": "2026-09-18",
+          "durationSec": 328,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
+        },
+        {
+          "id": "2402962803",
+          "title": "What feels natural to me no longer matches the world",
+          "url": "https://soundcloud.com/grafenbergmusik/what-feels-natural-to-me-no-longer-matches-the-world-6",
+          "date": "2026-09-18",
+          "durationSec": 303,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
+        },
+        {
+          "id": "2402962800",
+          "title": "The constant state [Bonus song]",
+          "url": "https://soundcloud.com/grafenbergmusik/the-constant-state-bonus-song-11",
+          "date": "2026-09-18",
+          "durationSec": 292,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
+        },
+        {
+          "id": "2402962797",
+          "title": "I no longer brace for what comes next",
+          "url": "https://soundcloud.com/grafenbergmusik/i-no-longer-brace-for-what-comes-next-5",
+          "date": "2026-09-18",
+          "durationSec": 315,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
+        },
+        {
+          "id": "2402962794",
+          "title": "What emerged when everything fell silent",
+          "url": "https://soundcloud.com/grafenbergmusik/what-emerged-when-everything-fell-silent-1",
+          "date": "2026-09-18",
+          "durationSec": 347,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
+        },
+        {
+          "id": "2402962791",
+          "title": "Some thresholds opened without being touched",
+          "url": "https://soundcloud.com/grafenbergmusik/some-thresholds-opened-without-being-touched-3",
+          "date": "2026-09-18",
+          "durationSec": 279,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
+        },
+        {
+          "id": "2402962788",
+          "title": "And nothing needed to be added after that",
+          "url": "https://soundcloud.com/grafenbergmusik/and-nothing-needed-to-be-added-after-that-10",
+          "date": "2026-09-18",
+          "durationSec": 278,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
+        },
+        {
+          "id": "2402962785",
+          "title": "Nothing that broke me was wasted",
+          "url": "https://soundcloud.com/grafenbergmusik/nothing-that-broke-me-was-wasted-4",
+          "date": "2026-09-18",
+          "durationSec": 278,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
+        },
+        {
+          "id": "2402962782",
+          "title": "The light didnt arrive, it was always there",
+          "url": "https://soundcloud.com/grafenbergmusik/the-light-didnt-arrive-it-was-always-there-8",
+          "date": "2026-09-18",
+          "durationSec": 328,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
+        },
         {
           "id": "2393008869",
           "title": "Your name beneath the waves",
@@ -26,94 +114,6 @@
           "date": "2026-09-02",
           "durationSec": 301,
           "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t500x500.jpg"
-        },
-        {
-          "id": "2393008866",
-          "title": "Nothing ever leaves the sea",
-          "url": "https://soundcloud.com/grafenbergmusik/nothing-ever-leaves-the-sea-8",
-          "date": "2026-09-02",
-          "durationSec": 296,
-          "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t500x500.jpg"
-        },
-        {
-          "id": "2393008863",
-          "title": "Before the river forgot us",
-          "url": "https://soundcloud.com/grafenbergmusik/before-the-river-forgot-us-10",
-          "date": "2026-09-02",
-          "durationSec": 324,
-          "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t500x500.jpg"
-        },
-        {
-          "id": "2393008860",
-          "title": "The garden after midnight",
-          "url": "https://soundcloud.com/grafenbergmusik/the-garden-after-midnight-6",
-          "date": "2026-09-02",
-          "durationSec": 337,
-          "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t500x500.jpg"
-        },
-        {
-          "id": "2393008857",
-          "title": "Where the light used to live",
-          "url": "https://soundcloud.com/grafenbergmusik/where-the-light-used-to-live-3",
-          "date": "2026-09-02",
-          "durationSec": 264,
-          "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t500x500.jpg"
-        },
-        {
-          "id": "2393008854",
-          "title": "The house beyond the water",
-          "url": "https://soundcloud.com/grafenbergmusik/the-house-beyond-the-water-1",
-          "date": "2026-09-02",
-          "durationSec": 262,
-          "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t500x500.jpg"
-        },
-        {
-          "id": "2393008851",
-          "title": "Someone was singing",
-          "url": "https://soundcloud.com/grafenbergmusik/someone-was-singing-4",
-          "date": "2026-09-02",
-          "durationSec": 297,
-          "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t500x500.jpg"
-        },
-        {
-          "id": "2393008848",
-          "title": "A language made of rain",
-          "url": "https://soundcloud.com/grafenbergmusik/a-language-made-of-rain-5",
-          "date": "2026-09-02",
-          "durationSec": 279,
-          "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t500x500.jpg"
-        },
-        {
-          "id": "2393008845",
-          "title": "I remember a door",
-          "url": "https://soundcloud.com/grafenbergmusik/i-remember-a-door-9",
-          "date": "2026-09-02",
-          "durationSec": 251,
-          "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t500x500.jpg"
-        },
-        {
-          "id": "2393008842",
-          "title": "White birds",
-          "url": "https://soundcloud.com/grafenbergmusik/white-birds-2",
-          "date": "2026-09-02",
-          "durationSec": 298,
-          "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t500x500.jpg"
-        },
-        {
-          "id": "2390756736",
-          "title": "The city watches her leave (Chromabone & Grafenberg After the Lights Remix)",
-          "url": "https://soundcloud.com/grafenbergmusik/the-city-watches-her-leave-chromabone-grafenberg-after-the-lights-remix-2",
-          "date": "2026-08-29",
-          "durationSec": 229,
-          "artwork": "https://i1.sndcdn.com/artworks-UhmnPvHxcYIfdiUH-qrMhGw-t500x500.jpg"
-        },
-        {
-          "id": "2390756733",
-          "title": "The city watches her leave (Chromabone Neon Exit Remix)",
-          "url": "https://soundcloud.com/grafenbergmusik/the-city-watches-her-leave-chromabone-neon-exit-remix-1",
-          "date": "2026-08-29",
-          "durationSec": 229,
-          "artwork": "https://i1.sndcdn.com/artworks-UhmnPvHxcYIfdiUH-qrMhGw-t500x500.jpg"
         }
       ],
       "topTracks": [
@@ -142,7 +142,7 @@
           "date": "2026-07-14",
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2800
+          "plays": 2801
         },
         {
           "id": "2360372888",
@@ -160,7 +160,7 @@
           "date": "2026-06-25",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 2506
+          "plays": 2507
         },
         {
           "id": "2347189913",
@@ -389,6 +389,34 @@
         }
       ],
       "playlists": [
+        {
+          "id": "2300981067",
+          "title": "After the unmaking",
+          "url": "https://soundcloud.com/grafenbergmusik/sets/after-the-unmaking",
+          "date": "2026-09-18",
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
+          "trackCount": 11,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "After the Unmaking begins where destruction ends.\n\nSomething survived.\n\nNot healed.\nNot restored.\nNot returned to what it was.\n\nAcross ten tracks and a final epilogue, VEIN//MIRROR explores what happens when an identity has been dismantled so completely that rebuilding it no longer makes sense. What emerges instead is something quieter, stranger and more coherent: a presence learning to exist beyond the structures that once defined it.\n\nThe world has not changed. Its access to the world has.\n\nThresholds open without force. Trauma becomes information. Fear loses its purpose. Time begins to move differently. And with every step, the distance between the entity and the ordinary world quietly expands.\n\nAt the heart of After the Unmaking lies a different understanding of transformation: perhaps enlightenment is not something we acquire. Perhaps it is what remains when everything preventing us from seeing has finally been removed.\n\nMusically, VEIN//MIRROR pushes its soul and trip-hop foundations into darker, more expansive territory. Deep sub-bass, ritualistic rhythms, spectral harmonies, fractured electronics and ascending melodic forms surround a voice that no longer fights with its double. The two have become one presence.\n\nThere is light here, but it is not warm.\n\nThere is darkness, but it is no longer threatening.\n\nThere is power, but it has no need to dominate.\n\nBy the time The Constant State closes the record, the search itself has disappeared.\n\nThe unmaking is over.\nThe silence is not empty.\nIt is full.\n\nAfter the Unmaking is the seventh album by VEIN//MIRROR, released through Kinetic Distro.",
+          "tracklist": [
+            "What emerged when everything fell silent",
+            "The world didnt change, my access did",
+            "Some thresholds opened without being touched",
+            "Nothing that broke me was wasted",
+            "I no longer brace for what comes next",
+            "What feels natural to me no longer matches the world",
+            "I didnt lose the world, I outgrew its timing",
+            "The light didnt arrive, it was always there",
+            "I learned to move without disturbing the order",
+            "The constant state [Bonus song]",
+            "And nothing needed to be added after that"
+          ],
+          "freeDownload": false,
+          "credit": null,
+          "creditSource": "unresolved",
+          "isMirror": false
+        },
         {
           "id": "2292859170",
           "title": "The house beyond the water",
@@ -1727,7 +1755,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1267
+          "plays": 1268
         },
         {
           "id": "2355716957",
@@ -1790,7 +1818,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 375
+          "plays": 377
         },
         {
           "id": "2361904943",
@@ -2687,7 +2715,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2118
+          "plays": 2119
         },
         {
           "id": "2299293830",
