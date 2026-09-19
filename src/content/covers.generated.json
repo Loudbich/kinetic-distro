@@ -315,6 +315,20 @@
         "srcset": "/carousel/nosfera-disco-club-mobile-640.webp 640w, /carousel/nosfera-disco-club-mobile-941.webp 941w"
       }
     },
+    "nyla-corvey": {
+      "wide": {
+        "url": "/carousel/nyla-corvey-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/nyla-corvey-768.webp 768w, /carousel/nyla-corvey-1280.webp 1280w, /carousel/nyla-corvey-1920.webp 1920w, /carousel/nyla-corvey-2560.webp 2560w, /carousel/nyla-corvey-3840.webp 3840w"
+      },
+      "mobile": {
+        "url": "/carousel/nyla-corvey-mobile-941.webp",
+        "width": 941,
+        "height": 1672,
+        "srcset": "/carousel/nyla-corvey-mobile-640.webp 640w, /carousel/nyla-corvey-mobile-941.webp 941w"
+      }
+    },
     "unmade-scores": {
       "wide": {
         "url": "/carousel/unmade-scores-3840.webp",
