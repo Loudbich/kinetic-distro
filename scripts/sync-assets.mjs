@@ -123,6 +123,15 @@ const titleCandidates = (filename) => {
 
   out.push(stem);
 
+  // A name can carry more than one prefix — `01 - Somerval - Gilded Rituals`
+  // puts a sequence number in front of the artist — so each split is applied
+  // again to whatever it left behind. Tails only ever get shorter, and they are
+  // appended after the fuller candidates, so a longer reading still wins.
+  for (let i = 0; i < out.length; i++) {
+    const again = out[i].match(/^(.{2,40}?)\s*(?: - | _ | — | – |[-_—–])\s*(.+)$/);
+    if (again) out.push(again[2].trim());
+  }
+
   // Export suffixes an image editor leaves behind — `…_Artwork`, `…-cover`,
   // `… final`. Stripped as an extra candidate rather than in place, so a record
   // genuinely called "Artwork" is unaffected.

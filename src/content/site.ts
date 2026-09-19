@@ -813,11 +813,7 @@ export const releases: Release[] = [
  * A record listed here shows the generative cover instead, until a new file in
  * assets/covers/ takes precedence again; at that point the entry can go.
  */
-export const withheldArtwork = new Set<string>([
-  'the-house-beyond-the-water',
-  'memory-flowers',
-  'gilded-rituals',
-]);
+export const withheldArtwork = new Set<string>(['memory-flowers']);
 
 /**
  * A record's own Bandcamp page, keyed by release slug.
