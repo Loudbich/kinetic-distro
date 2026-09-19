@@ -25,6 +25,7 @@ import { parseSoundCloudRss } from './lib/rss.mjs';
 import { parsePlaylistsFromProfile } from './lib/playlists.mjs';
 import { resolveClientId, fetchUserSets, mapSet, hydrateTracklists, fetchTopTracks } from './lib/scapi.mjs';
 import { annotateCatalogue, readRoster } from './lib/attribution.mjs';
+import { retireNames } from './lib/retired.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, '..');
@@ -189,9 +190,12 @@ async function main() {
 
   // Records already settled by hand are not "unresolved" — warning about them
   // every run would train everyone to ignore the warning that matters.
-  const decided = new Set(
-    [...readFileSync(resolve(root, 'src/content/attribution.ts'), 'utf8').matchAll(/id: '([^']+)'/g)]
-      .map((m) => m[1]),
+  const attributionSource = readFileSync(resolve(root, 'src/content/attribution.ts'), 'utf8');
+  const decided = new Set([...attributionSource.matchAll(/id: '([^']+)'/g)].map((m) => m[1]));
+  // Records the label has hidden outright (`artistSlugs: null`). `[^}]` keeps
+  // each match inside one entry.
+  const hidden = new Set(
+    [...attributionSource.matchAll(/id: '([^']+)'[^}]*?artistSlugs: null/g)].map((m) => m[1]),
   );
 
   const sets = Object.values(annotated).flatMap((a) => a.playlists);
@@ -216,6 +220,17 @@ async function main() {
     // record is by, and that credit is now baked into the album itself. The
     // site filters them out, so shipping them would be dead weight.
     artist.playlists = artist.playlists.filter((p) => !p.isMirror);
+
+    // Hidden records go the same way. The site already refused to list them,
+    // but they still shipped in the bundle — titles, descriptions, permalinks
+    // and all, which is exactly what hiding a record under a retired name is
+    // meant to prevent.
+    artist.playlists = artist.playlists.filter((p) => !hidden.has(p.id));
+
+    // The account's own bio is never shown — records carry their own notes —
+    // but it shipped in the bundle all the same, and the label account's still
+    // listed a retired act by name.
+    delete artist.description;
 
     // The most-played list spans every artist an account hosts, so it is kept
     // long enough for each of them to be represented once credits are resolved
@@ -250,7 +265,7 @@ async function main() {
     trackCount: results.reduce((n, a) => n + a.trackCount, 0),
     playlistCount: Object.values(annotated).reduce((n, a) => n + a.playlists.length, 0),
     failures,
-    artists: annotated,
+    artists: retireNames(annotated),
   };
 
   if (DRY) {

@@ -30,6 +30,36 @@ export type SetAttribution = {
 };
 
 export const setAttributions: SetAttribution[] = [
+  // Label showcase copies of records under a retired name. The sync only
+  // recognises a showcase as a duplicate when its "Artist - " prefix names a
+  // roster artist; once the name left the roster these surfaced as records of
+  // their own, uncredited — which the site would have listed as label
+  // releases. The originals are credited elsewhere in this file.
+  {
+    id: '2276068139',
+    title: 'Somerval - Gilded Rituals (showcase)',
+    artistSlugs: null,
+  },
+  {
+    id: '2274539933',
+    title: 'Residual Bloom - Memory Flowers (showcase)',
+    artistSlugs: null,
+  },
+  {
+    id: '2224042556',
+    title: 'Retired act - Cathedrals of Noise (showcase)',
+    artistSlugs: null,
+  },
+  {
+    id: '2224041740',
+    title: 'Retired act - Ashes & Wires (showcase)',
+    artistSlugs: null,
+  },
+  {
+    id: '2224035830',
+    title: 'Retired act - Forged in concrete (showcase)',
+    artistSlugs: null,
+  },
   {
     // Hosted on the label account, with no showcase playlist to derive it from.
     id: '2300981067',
@@ -37,11 +67,11 @@ export const setAttributions: SetAttribution[] = [
     artistSlugs: ['vein-mirror'],
   },
   {
-    // Nyla Vey's debut, hosted on the label account with no "Artist - Title"
+    // Nyla Corvey's debut, hosted on the label account with no "Artist - Title"
     // showcase playlist to derive the credit from.
     id: '2292859170',
     title: 'The house beyond the water',
-    artistSlugs: ['nyla-vey'],
+    artistSlugs: ['nyla-corvey'],
   },
   {
     // The title names Grafenberg, whose record is being remixed, so the sync
@@ -94,7 +124,7 @@ export const setAttributions: SetAttribution[] = [
     // 2026-07-30 · 10 tracks · credited from the showcase
     id: '2276067293',
     title: 'Gilded Rituals',
-    artistSlugs: ['love-cult'],
+    artistSlugs: ['somerval'],
   },
   {
     // 2026-07-27 · 12 tracks · credited from the showcase
@@ -106,7 +136,7 @@ export const setAttributions: SetAttribution[] = [
     // 2026-07-27 · 11 tracks · credited from the showcase
     id: '2274539654',
     title: 'Memory Flowers',
-    artistSlugs: ['hollow-static'],
+    artistSlugs: ['residual-bloom'],
   },
   {
     // 2026-07-24 · 54 tracks · NO CREDIT FOUND — decide by hand
@@ -353,7 +383,7 @@ export const setAttributions: SetAttribution[] = [
     // 2026-04-01 · 9 tracks · credited from the profile
     id: '2215328573',
     title: 'Black Discipline',
-    artistSlugs: ['iron-covenant'],
+    artistSlugs: null, // retired from the roster
   },
   {
     // 2026-03-31 · 8 tracks · credited from the profile+showcase
@@ -365,13 +395,13 @@ export const setAttributions: SetAttribution[] = [
     // 2026-03-24 · 8 tracks · credited from the profile+showcase
     id: '2211127622',
     title: 'Cathedrals of Noise',
-    artistSlugs: ['iron-covenant'],
+    artistSlugs: null, // retired from the roster
   },
   {
     // 2026-03-19 · 8 tracks · credited from the profile+showcase
     id: '2208616985',
     title: 'Ashes & Wires',
-    artistSlugs: ['iron-covenant'],
+    artistSlugs: null, // retired from the roster
   },
   {
     // 2026-03-18 · 10 tracks · credited from the profile
@@ -383,7 +413,7 @@ export const setAttributions: SetAttribution[] = [
     // 2026-03-18 · 5 tracks · credited from the profile+showcase
     id: '2207856089',
     title: 'Forged in concrete',
-    artistSlugs: ['iron-covenant'],
+    artistSlugs: null, // retired from the roster
   },
   {
     // 2026-03-18 · 10 tracks · credited from the profile

@@ -13,6 +13,7 @@ import assert from 'node:assert/strict';
 import { parseSoundCloudRss, upsizeArtwork } from './lib/rss.mjs';
 import { parsePlaylistsFromProfile } from './lib/playlists.mjs';
 import { resolveClientId, fetchUserSets, mapSet, hydrateTracklists } from './lib/scapi.mjs';
+import { retireNames } from './lib/retired.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const fixture = (name) => readFileSync(resolve(__dirname, '__fixtures__', name), 'utf8');
@@ -363,6 +364,38 @@ await testAsync('a failed batch keeps the titles already known', async () => {
 
   await hydrateTracklists(get, [set], { clientId: 'KEY' });
   assert.deepEqual(set.tracklist, ['One'], 'partial list survives');
+});
+
+console.log('\nretired names');
+
+test('rewrites a retired name inside a title, keeping the rest', () => {
+  assert.equal(
+    retireNames('She walks through neon silence (feat. Nyla Vey)'),
+    'She walks through neon silence (feat. Nyla Corvey)',
+  );
+});
+
+test('follows the case of the text it replaces', () => {
+  assert.equal(retireNames('HOLLOW STATIC returns'), 'RESIDUAL BLOOM returns');
+  assert.equal(retireNames('the love cult sessions'), 'the Somerval sessions');
+});
+
+test('leaves permalinks alone, or the link breaks', () => {
+  const url = 'https://soundcloud.com/label/she-walks-feat-nyla-vey-1';
+  assert.equal(retireNames(url), url);
+  assert.equal(retireNames('https://example.com/Hollow Static'), 'https://example.com/Hollow Static');
+});
+
+test('renames a credit slug only when it is the whole value', () => {
+  assert.deepEqual(retireNames({ credit: ['love-cult', 'grafenberg'] }), {
+    credit: ['somerval', 'grafenberg'],
+  });
+  assert.equal(retireNames('not-love-cult'), 'not-love-cult');
+});
+
+test('walks nested records without touching numbers or nulls', () => {
+  const out = retireNames({ a: [{ title: 'Hollow Static - X', plays: 12, date: null }] });
+  assert.deepEqual(out, { a: [{ title: 'Residual Bloom - X', plays: 12, date: null }] });
 });
 
 console.log(`\n${passed} passed${process.exitCode ? ' — with failures' : ''}\n`);

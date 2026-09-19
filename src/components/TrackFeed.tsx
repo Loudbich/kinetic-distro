@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import type { FeedTrack, SyncedTrack } from '../content/catalog';
 import { fmtDate } from '../lib/format';
+import Cover from './Cover';
 import Player from './Player';
 import Reveal from './Reveal';
 
@@ -225,6 +226,17 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
                         zIndex: i === active ? 2 : i === previous ? 1 : 0,
                       }}
                     >
+                      {/* A withheld sleeve leaves no artwork at all; an <img>
+                          with no src would draw the browser's broken-image box
+                          across the whole stage. */}
+                      {!t.artwork ? (
+                        <Cover
+                          seed={t.releaseSlug ?? t.id}
+                          accent={t.accent}
+                          label={t.releaseTitle ?? t.title}
+                          className="h-full w-full"
+                        />
+                      ) : (
                       <img
                         src={t.artwork}
                         srcSet={t.artworkSrcset}
@@ -241,6 +253,7 @@ export function LabelTrackFeed({ tracks }: { tracks: FeedTrack[] }) {
                           transform: i === active ? 'translateY(0)' : `translateY(${parked * -28}%)`,
                         }}
                       />
+                      )}
                     </div>
                   );
                 })}

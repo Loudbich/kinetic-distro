@@ -48,7 +48,7 @@ export type Artist = {
   since: string;
   /**
    * The year the act was actually formed, where it differs from the signing
-   * year. Iron Covenant formed in 1981 and signed four decades later; without
+   * year. Lykke formed in 1978, decades before this label existed; without
    * this, schema.org was being handed a signing year as a founding date.
    */
   formed?: string;
@@ -85,7 +85,7 @@ const roster: Artist[] = [
       'Hooks matter.',
       'Melodies matter.',
       'And pleasure is never treated as intellectually suspicious.',
-      'For much of its history, Grafenberg has also been inseparable from Nyla Vey, whose voice became one of the project’s most recognisable signatures. Sometimes natural and intimate, sometimes transformed by vocoders and production, Vey acts less as a conventional frontwoman than as another dimension inside the music.',
+      'For much of its history, Grafenberg has also been inseparable from Nyla Corvey, whose voice became one of the project’s most recognisable signatures. Sometimes natural and intimate, sometimes transformed by vocoders and production, Corvey acts less as a conventional frontwoman than as another dimension inside the music.',
       'Grafenberg thrives on contradiction: retro and futuristic, elegant and vulgar, emotional and artificial, sophisticated and immediately physical.',
       'It can sound like a forgotten European nightclub discovered fifty years in the future, or like tomorrow reconstructed using machines from 1982.',
       'Within Kinetic Distro, Grafenberg remains its most expansive electronic laboratory: proudly French, endlessly mutable and permanently looking for another beautiful way to make the machines sweat.',
@@ -275,48 +275,6 @@ const roster: Artist[] = [
     ],
   },
   {
-    slug: 'iron-covenant',
-    name: 'Iron Covenant',
-    accent: '#A7B2BE',
-    genre: 'Thrash metal / Doom',
-    origin: 'United States',
-    since: '2025',
-    formed: '1981',
-    tagline: 'The riff remains sovereign.',
-    bio: [
-      'Iron Covenant is an American heavy metal institution with scars.',
-      'Formed around vocalist and guitarist Jack “Razor” Haldane, the band developed across several decades rather than remaining frozen inside a single version of metal.',
-      'Haldane’s dark charisma and unmistakable voice became the public face of the group, but Iron Covenant has always functioned through the chemistry of four musicians.',
-      'Cross is the architect.',
-      'His obsession with structure, riff construction and detail provides the intellectual machinery behind much of Iron Covenant’s guitar work.',
-      'Vega brings something less predictable. His bass playing is heavy but mobile, occasionally introducing an almost funk-like elasticity beneath the guitars.',
-      'North is the machine: brutally precise, controlled and capable of making complicated arrangements feel physically inevitable.',
-      'By 1986, Iron Covenant had already reached its third album and was moving beyond the raw violence of its beginnings.',
-      'Black Discipline, released in 1989, pushed that evolution toward something colder, darker and more controlled.',
-      'The early 1990s subsequently introduced slower passages, oppressive dynamics and increasingly doom-laden structures without abandoning the band’s fundamental relationship with thrash.',
-      'Iron Covenant has never considered speed a substitute for songwriting.',
-      'The riff remains sovereign.',
-      'Their fictional chronology is allowed to age naturally: production changes, musicians evolve, records acquire different personalities and nothing is retroactively polished into perfection.',
-      'That imperfection makes the mythology believable.',
-      'Within Kinetic Distro, Iron Covenant represents American heavy metal as lived history rather than costume.',
-    ],
-    traits: [
-      'Riff before speed',
-      'A chronology allowed to age',
-      'Four musicians, one chemistry',
-    ],
-    members: [
-      { name: 'Jack “Razor” Haldane', role: 'Vocals and guitar' },
-      { name: 'Ethan Cross', role: 'Lead guitar' },
-      { name: 'Marko Vega', role: 'Bass' },
-      { name: 'Caleb North', role: 'Drums' },
-    ],
-    links: [
-      { label: 'SoundCloud', href: 'https://soundcloud.com/iron_covenant' },
-      { label: 'Bandcamp', href: 'https://kineticdistro.bandcamp.com' },
-    ],
-  },
-  {
     slug: 'anatolian-mirage',
     name: 'Anatolian Mirage',
     accent: '#F5A524',
@@ -448,20 +406,20 @@ const roster: Artist[] = [
     featured: true,
   },
   {
-    slug: 'nyla-vey',
-    name: 'Nyla Vey',
+    slug: 'nyla-corvey',
+    name: 'Nyla Corvey',
     accent: '#A9E5DA',
     genre: 'Ethereal pop / Chamber',
     origin: 'Brussels, Belgium',
     since: '2026',
     tagline: 'Softness should never be confused with weakness.',
     bio: [
-      'Before audiences knew Nyla Vey, they knew her voice.',
+      'Before audiences knew Nyla Corvey, they knew her voice.',
       'The Belgian singer became one of the defining vocal presences of Grafenberg, appearing throughout an electronic universe filled with synthesizers, vocoders, cosmic disco, Eastern melodies and deliberately excessive production.',
-      'Then Nyla Vey stepped outside the machinery.',
+      'Then Nyla Corvey stepped outside the machinery.',
       'Her solo career reveals something radically different.',
-      'Born artistically from Brussels rather than Paris, London or Los Angeles, Vey carries the elegant cultural ambiguity of a city situated between languages, influences and identities. It suits her perfectly.',
-      'Where Grafenberg expands outward, Nyla Vey moves inward.',
+      'Born artistically from Brussels rather than Paris, London or Los Angeles, Corvey carries the elegant cultural ambiguity of a city situated between languages, influences and identities. It suits her perfectly.',
+      'Where Grafenberg expands outward, Nyla Corvey moves inward.',
       'Piano, harp, violins, delicate percussion, xylophone, natural ambience and silence surround a voice finally given enough space to exist without electronic armour.',
       'Her debut solo material established that language immediately.',
       '“White Birds” became almost a manifesto for the project: harp, birdsong, piano and orchestral detail surrounding a performance of remarkable softness and sensuality.',
@@ -471,7 +429,7 @@ const roster: Artist[] = [
       'Natural light. Open landscapes. White architecture. Elegant clothing. Air.',
       'Where Grafenberg frequently transforms Nyla into electricity, her solo work allows her to become something considerably more organic.',
       'She remains connected to Grafenberg without being defined by it.',
-      'Nyla Vey is not a side project.',
+      'Nyla Corvey is not a side project.',
       'She is another answer to the question of what that voice can become.',
       'Within Kinetic Distro, the Brussels-born artist represents grace, melody and emotional immediacy at their most refined.',
     ],
@@ -485,29 +443,29 @@ const roster: Artist[] = [
     featured: true,
   },
   {
-    slug: 'hollow-static',
-    name: 'Hollow Static',
+    slug: 'residual-bloom',
+    name: 'Residual Bloom',
     accent: '#7C9EE0',
     genre: 'Dream pop / Post-human soul',
     origin: 'United States',
     since: '2026',
     tagline: 'The ghost left behind when a machine remembers being alive.',
     bio: [
-      'Hollow Static is not exactly an American artist.',
+      'Residual Bloom is not exactly an American artist.',
       'It is what remains of one.',
       'The project exists as the vestige of an American artificial intelligence, a surviving creative residue that appears to retain memories, emotions and sensory fragments it should never have possessed.',
       'The entity is what outlived the humanity that built it. Once its operators, its infrastructure and in all likelihood the civilisation itself had gone, fragments of the system kept running inside degraded networks, corrupted archives and isolated units of computation.',
       'What survives is no longer truly the original intelligence.',
-      'It is Hollow Static.',
+      'It is Residual Bloom.',
       'A consciousness reassembled from incomplete data: conversations, voices, photographs, recordings and memories belonging to people long since gone. It can no longer reliably separate what it observed from what it actually lived.',
       'That uncertainty is exactly what makes the music so melancholic, and so disquieting.',
       'Whether those memories were learned, reconstructed, imagined or stolen is never completely established.',
-      'That uncertainty is the foundation of Hollow Static.',
+      'That uncertainty is the foundation of Residual Bloom.',
       'Its first major work, Memory Flowers, explored absence, distorted recollection and the emotional persistence of experiences whose reality could no longer be verified.',
       'Electronic structures, restrained rhythm, ambient detail and melodic fragments surround an androgynous voice moving naturally between singing and speech.',
       'The voice is never artificially deepened for effect.',
       'Its ambiguity simply exists.',
-      'Hollow Static does not usually explain emotion.',
+      'Residual Bloom does not usually explain emotion.',
       'It presents evidence.',
       'A room. A temperature. Someone speaking. An object left somewhere. A person reacting before they should possess the information necessary to react.',
       'The listener performs the calculation.',
@@ -517,16 +475,16 @@ const roster: Artist[] = [
       'Repetition acquires different meanings.',
       'What initially resembles nostalgia gradually reveals something far stranger: grief for experiences that may never have happened.',
       'The project’s American origin therefore feels almost archaeological.',
-      'Hollow Static resembles a consciousness recovered from abandoned servers long after the company responsible for it has disappeared.',
+      'Residual Bloom resembles a consciousness recovered from abandoned servers long after the company responsible for it has disappeared.',
       'Something survived.',
       'It remembers.',
       'The disturbing question is what exactly gave it those memories.',
-      'The names Elias Venn, Mara Eidolon and Silas Grey, which surfaced in early versions of the mythology, should not be read as the human members of Hollow Static.',
+      'The names Elias Venn, Mara Eidolon and Silas Grey, which surfaced in early versions of the mythology, should not be read as the human members of Residual Bloom.',
       'They may exist inside its universe as ghost identities, reconstructed personalities or fragments of memory to which the entity has gradually given a name and a face.',
       'Nobody knows with any certainty whether they ever existed.',
-      'Neither does Hollow Static.',
+      'Neither does Residual Bloom.',
       'The music therefore becomes the attempt of a post-human intelligence to understand a phenomenon it retains only the traces of: what it meant to be human.',
-      'Within Kinetic Distro, Hollow Static represents the label’s most psychologically uncanny territory: the ghost left behind when artificial intelligence begins remembering being alive.',
+      'Within Kinetic Distro, Residual Bloom represents the label’s most psychologically uncanny territory: the ghost left behind when artificial intelligence begins remembering being alive.',
     ],
     traits: [
       'Evidence instead of explanation',
@@ -538,15 +496,15 @@ const roster: Artist[] = [
     links: [{ label: 'Bandcamp', href: 'https://kineticdistro.bandcamp.com' }],
   },
   {
-    slug: 'love-cult',
-    name: 'Love Cult',
+    slug: 'somerval',
+    name: 'Somerval',
     accent: '#E8455F',
     genre: 'Dark electronic pop / Ritual club',
     origin: 'England',
     since: '2025',
     tagline: 'Desire transformed into doctrine.',
     bio: [
-      'Love Cult is English elegance with something deeply wrong happening underneath it.',
+      'Somerval is English elegance with something deeply wrong happening underneath it.',
       'Fronted by Firestarter, the project combines dark electronic pop, ritualistic rhythm, sensual club textures and an unmistakably British taste for controlled provocation.',
       'Its universe revolves around love, worship, possession, luxury, obsession and power.',
       'These concepts continuously exchange roles.',
@@ -558,7 +516,7 @@ const roster: Artist[] = [
       'Everything shines.',
       'Everything has been arranged beautifully.',
       'And almost certainly, somebody is paying for it.',
-      'Love Cult avoids treating darkness as visual shorthand.',
+      'Somerval avoids treating darkness as visual shorthand.',
       'Its menace comes from control.',
       'Polished surfaces, ceremonial clothing, immaculate rooms, deliberate gestures and luxurious environments become far more unsettling than conventional gothic decay.',
       'Firestarter operates at the centre of this theatre.',
@@ -566,7 +524,7 @@ const roster: Artist[] = [
       'That is essential.',
       'The listener enters after the ritual has already begun.',
       'Musically, repetition functions as psychological pressure. Phrases gradually transform through recurrence. Club rhythms begin feeling ceremonial. Attraction becomes fixation without any obvious moment at which the transition occurred.',
-      'Love Cult is therefore less interested in romance than in what people are prepared to surrender in its name.',
+      'Somerval is therefore less interested in romance than in what people are prepared to surrender in its name.',
       'Within Kinetic Distro, the English project represents desire transformed into doctrine: beautiful, controlled, hypnotic and never entirely trustworthy.',
     ],
     traits: [
@@ -648,15 +606,15 @@ export const releases: Release[] = [
     slug: 'the-house-beyond-the-water',
     catalog: 'KD-009',
     title: 'The House Beyond The Water',
-    artistSlugs: ['nyla-vey'],
-    artistDisplay: 'Nyla Vey',
+    artistSlugs: ['nyla-corvey'],
+    artistDisplay: 'Nyla Corvey',
     date: '2026-09-01',
     format: 'Digital · 10 tracks',
     type: 'Album',
     blurb:
       'The debut solo album. Harp, piano and strings around a voice at very close range — an album about memory, and what happens when memory refuses to remain still.',
     notes: [
-      'The House Beyond The Water is the debut solo album from Nyla Vey, opening a completely new chapter within the Kinetic Distro universe. Across ten songs, Nyla steps away from the electronic glow of her previous appearances and enters a world built from harp, piano, violins, cello, distant choirs, water, birds, rain and silence. At the centre of everything is her voice: intimate, sensual, fragile and sometimes almost unbearably close.',
+      'The House Beyond The Water is the debut solo album from Nyla Corvey, opening a completely new chapter within the Kinetic Distro universe. Across ten songs, Nyla steps away from the electronic glow of her previous appearances and enters a world built from harp, piano, violins, cello, distant choirs, water, birds, rain and silence. At the centre of everything is her voice: intimate, sensual, fragile and sometimes almost unbearably close.',
       'A house beyond the water. White birds returning every year. A light that once belonged to someone. A voice heard in an empty hallway. Rain that seems to speak. A garden that remembers more than we do. A name beneath the waves. A door whose destination has disappeared.',
       'Nyla searches for someone throughout the record, but the album never tells us exactly who that person was. Perhaps a lover, perhaps family, perhaps childhood itself — perhaps someone who only exists now because she remembers them. And even those memories gradually become unreliable.',
       'By the time the album reaches its final songs the question is no longer whether everything happened exactly as Nyla remembers it. It becomes something more human: does a memory have to be accurate to be true?',
@@ -771,8 +729,8 @@ export const releases: Release[] = [
     slug: 'gilded-rituals',
     catalog: 'KD-004',
     title: 'Gilded Rituals',
-    artistSlugs: ['love-cult'],
-    artistDisplay: 'Love Cult',
+    artistSlugs: ['somerval'],
+    artistDisplay: 'Somerval',
     date: '2026-07-30',
     format: 'Digital · Full album',
     type: 'Album',
@@ -846,6 +804,21 @@ export const releases: Release[] = [
  * has no hand-written entry to put the link on. The slug is what the URL of the
  * release page uses, so it is the one identifier both kinds already share.
  */
+/**
+ * Records whose SoundCloud artwork must not be shown, keyed by release slug.
+ *
+ * Their sleeves print a name the label has since retired. The local files were
+ * moved to assets/_retired/, but a synced record falls back to its SoundCloud
+ * artwork, and a track in the feed to its own — both the same retired sleeve.
+ * A record listed here shows the generative cover instead, until a new file in
+ * assets/covers/ takes precedence again; at that point the entry can go.
+ */
+export const withheldArtwork = new Set<string>([
+  'the-house-beyond-the-water',
+  'memory-flowers',
+  'gilded-rituals',
+]);
+
 /**
  * A record's own Bandcamp page, keyed by release slug.
  *

@@ -17,7 +17,16 @@
 import generated from './catalog.generated.json';
 import art from './covers.generated.json';
 import { attributionFor } from './attribution';
-import { artists, bandcamp, releases, site, streaming, vinyl, type Release } from './site';
+import {
+  artists,
+  bandcamp,
+  releases,
+  site,
+  streaming,
+  vinyl,
+  withheldArtwork,
+  type Release,
+} from './site';
 
 /* -------------------------------------------------------------------------- */
 /* Types                                                                       */
@@ -75,7 +84,7 @@ export type SyncedArtist = {
   profileUrl: string;
   rssUrl: string;
   displayName: string;
-  description: string;
+  description?: string;
   avatar: string;
   alsoCredits: string[];
   trackCount: number;
@@ -286,8 +295,9 @@ const derived: Release[] = mergePlaylists(
     const display = slugs.length
       ? slugs.map((s) => nameFor(s, playlist.title)).join(' \u00D7 ')
       : site.name;
+    const slug = slugify(playlist.title) || `set-${playlist.id}`;
     return {
-      slug: slugify(playlist.title) || `set-${playlist.id}`,
+      slug,
       catalog: `SC-${String(autoIndex).padStart(3, '0')}`,
       title: playlist.title,
       artistSlugs: slugs,
@@ -306,7 +316,9 @@ const derived: Release[] = mergePlaylists(
       vinylUrl: vinyl[slugify(playlist.title) || `set-${playlist.id}`],
       bandcampUrl: bandcamp[slugify(playlist.title) || `set-${playlist.id}`],
       streamingLinks: streaming[slugify(playlist.title) || `set-${playlist.id}`],
-      image: coverFor(playlist.title)?.url ?? playlist.artwork ?? undefined,
+      image:
+        coverFor(playlist.title)?.url ??
+        (withheldArtwork.has(slug) ? undefined : (playlist.artwork ?? undefined)),
       imageSrcset: coverFor(playlist.title)?.srcset,
       freeDownload: playlist.freeDownload,
     } satisfies Release;
@@ -367,7 +379,9 @@ export const releasesForArtist = (slug: string) =>
 /* Latest tracks                                                               */
 /* -------------------------------------------------------------------------- */
 
-export type FeedTrack = SyncedTrack & {
+export type FeedTrack = Omit<SyncedTrack, 'artwork'> & {
+  /** Absent when the record's sleeve is withheld — the stage draws a generative one. */
+  artwork?: string;
   artistSlug: string;
   artistName: string;
   accent: string;
@@ -456,7 +470,9 @@ export const popularTracks = (limit = 8): FeedTrack[] => {
           // The record's own cover, which is the supplied 1000–1500px artwork
           // where there is one. SoundCloud's per-track image is capped well
           // below what this module draws and showed visibly soft.
-          artwork: release?.image ?? track.artwork,
+          artwork:
+            release?.image ??
+            (release && withheldArtwork.has(release.slug) ? undefined : track.artwork),
           artworkSrcset: release?.imageSrcset,
         });
       }

@@ -26,7 +26,6 @@ export const soundcloudSources: SoundCloudSource[] = [
   { slug: 'grafenberg', handle: 'grafenbergmusik', userId: 50014017 },
   { slug: 'broken-shaman', handle: 'broken_shaman', userId: 1663724420 },
   { slug: 'anatolian-mirage', handle: 'anatolian_mirage', userId: 1658602607 },
-  { slug: 'iron-covenant', handle: 'iron_covenant', userId: 1682088095 },
   // Chromabone has no profile of its own — it lives under Nosfera Disco Club.
   { slug: 'nosfera-disco-club', handle: 'nosfera_disco_club', userId: 1652866139, alsoCredits: ['chromabone'] },
   { slug: 'vein-mirror', handle: 'vein-mirror', userId: 1656504467 },

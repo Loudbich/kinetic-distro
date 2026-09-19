@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-19T09:26:17.898Z",
+  "generatedAt": "2026-09-19T20:00:24.773Z",
   "source": "soundcloud-rss + api-v2",
-  "artistCount": 8,
-  "trackCount": 705,
-  "playlistCount": 80,
+  "artistCount": 7,
+  "trackCount": 675,
+  "playlistCount": 74,
   "failures": [],
   "artists": {
     "grafenberg": {
@@ -13,7 +13,6 @@
       "profileUrl": "https://soundcloud.com/grafenbergmusik",
       "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:50014017/sounds.rss",
       "displayName": "Kinetic Distro",
-      "description": "Kinetic Distro is an independent music label and creative distribution platform dedicated to pushing the boundaries of sound, identity, and artistic storytelling in the digital age.\n\nBuilt on a vision of movement and transformation, Kinetic Distro operates at the intersection of genres, cultures, and eras—curating a diverse roster of artists who each embody a distinct sonic universe. From cinematic electronic landscapes to hypnotic techno, neo-soul narratives, experimental pop, and heavy sonic architectures, the label thrives on contrast, evolution, and cohesion.\n\nThe roster includes projects such as Grafenberg, Broken Shaman, Chromabone, Nosfera Disco Club, VEIN//Mirror, Iron Covenant, Anatolian Mirage, and Lykke—each representing a unique dimension of the Kinetic Distro ecosystem. Rather than following trends, the label builds immersive worlds, where every release contributes to a larger, interconnected artistic continuum.\n\nKinetic Distro is not just a distributor—it is a creative engine. Through meticulous curation, visual identity development, and narrative-driven releases, the label transforms music into experiences. Each project is approached as a living entity, evolving across albums, concepts, and aesthetic directions.\n\nDriven by independence and a commitment to artistic integrity, Kinetic Distro embraces modern production tools, global influences, and a release strategy designed for the streaming era—while maintaining a strong emphasis on authenticity and long-term vision.\n\nAt its core, Kinetic Distro is about momentum: sound in motion, ideas in evolution, and artists in constant transformation.",
       "avatar": "https://i1.sndcdn.com/avatars-kgUviKbZi7PBDDdh-AZnynA-t500x500.jpg",
       "alsoCredits": [],
       "trackCount": 345,
@@ -133,7 +132,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2849
+          "plays": 2851
         },
         {
           "id": "2360407937",
@@ -151,7 +150,7 @@
           "date": "2026-07-14",
           "durationSec": 272,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2677
+          "plays": 2678
         },
         {
           "id": "2347189901",
@@ -169,7 +168,7 @@
           "date": "2026-06-25",
           "durationSec": 334,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 2137
+          "plays": 2138
         },
         {
           "id": "2340339800",
@@ -178,7 +177,7 @@
           "date": "2026-06-16",
           "durationSec": 269,
           "artwork": "https://i1.sndcdn.com/artworks-Y9cDOEwO1k10CeqV-6tdyvw-t1080x1080.jpg",
-          "plays": 2204
+          "plays": 2206
         },
         {
           "id": "2164031784",
@@ -187,7 +186,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 39535
+          "plays": 39539
         },
         {
           "id": "2361904973",
@@ -268,7 +267,7 @@
           "date": "2026-08-28",
           "durationSec": 227,
           "artwork": "https://i1.sndcdn.com/artworks-0SQWuAPTqxHNWbQt-s4kqSA-t1080x1080.jpg",
-          "plays": 320
+          "plays": 322
         },
         {
           "id": "2326319609",
@@ -277,7 +276,7 @@
           "date": "2026-05-23",
           "durationSec": 192,
           "artwork": "https://i1.sndcdn.com/artworks-5p3ZbMAyGTgcQOot-QOsegQ-large.png",
-          "plays": 2778
+          "plays": 2780
         },
         {
           "id": "2390185524",
@@ -286,7 +285,7 @@
           "date": "2026-08-28",
           "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-0SQWuAPTqxHNWbQt-s4kqSA-t1080x1080.jpg",
-          "plays": 308
+          "plays": 309
         },
         {
           "id": "2369061014",
@@ -295,16 +294,16 @@
           "date": "2026-07-27",
           "durationSec": 302,
           "artwork": "https://i1.sndcdn.com/artworks-k1OJ8ATzyjrfqfcG-f9MDzw-t1080x1080.jpg",
-          "plays": 305
+          "plays": 306
         },
         {
           "id": "2390185539",
-          "title": "She walks through neon silence (feat. Nyla Vey)",
+          "title": "She walks through neon silence (feat. Nyla Corvey)",
           "url": "https://soundcloud.com/grafenbergmusik/she-walks-through-neon-silence-feat-nyla-vey-1",
           "date": "2026-08-28",
           "durationSec": 284,
           "artwork": "https://i1.sndcdn.com/artworks-0SQWuAPTqxHNWbQt-s4kqSA-t1080x1080.jpg",
-          "plays": 294
+          "plays": 295
         },
         {
           "id": "2390185515",
@@ -313,7 +312,7 @@
           "date": "2026-08-28",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-0SQWuAPTqxHNWbQt-s4kqSA-t1080x1080.jpg",
-          "plays": 294
+          "plays": 295
         },
         {
           "id": "2338584194",
@@ -340,7 +339,7 @@
           "date": "2026-07-16",
           "durationSec": 356,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 291
+          "plays": 293
         },
         {
           "id": "2369061005",
@@ -421,12 +420,12 @@
           "id": "2292859170",
           "title": "The house beyond the water",
           "url": "https://soundcloud.com/grafenbergmusik/sets/the-house-beyond-the-water",
-          "date": "2026-09-02",
+          "date": "2026-09-04",
           "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t1080x1080.jpg",
           "trackCount": 10,
           "isAlbum": true,
           "setType": "album",
-          "description": "The house beyond the water is the debut solo album from Nyla Vey, opening a completely new chapter within the Kinetic Distro universe.\n\nAcross ten songs, Nyla steps away from the electronic glow of her previous appearances and enters a world built from harp, piano, violins, cello, distant choirs, water, birds, rain and silence.\n\nAt the center of everything is her voice: intimate, sensual, fragile and sometimes almost unbearably close.\n\nThis is an album about memory and what happens when memory refuses to remain still.\n\nA house beyond the water.\nWhite birds returning every year.\nA light that once belonged to someone.\nA voice heard in an empty hallway.\nRain that seems to speak.\nA garden that remembers more than we do.\nA name beneath the waves.\nA door whose destination has disappeared.\n\nNyla searches for someone throughout the record, but The house beyond the water never tells us exactly who that person was.\n\nPerhaps a lover.\nPerhaps family.\nPerhaps childhood itself.\nPerhaps someone who only exists now because she remembers them.\n\nAnd even those memories gradually become unreliable.\n\nBy the time the album reaches its final songs, the question is no longer whether everything happened exactly as Nyla remembers it.\n\nThe question becomes something more human:\n\nDoes a memory have to be accurate to be true?\n\nMusically, the album moves between luminous ethereal pop, intimate chamber music and subtle experimental production. Harp and piano provide its emotional foundation, while strings, glass percussion, analogue textures and enormous layers of Nyla's own voice create a world that can feel impossibly wide one moment and almost claustrophobically intimate the next.\n\nThere are moments of pure light.\n\nThere are moments where the music almost disappears completely.\n\nAnd there are moments where Nyla sounds less like she is performing a song than quietly admitting something she has never said aloud before.\n\nThe final piece, “Before The River Forgot Us”, reveals the emotional core of the entire record:\n\nIf I made some of it beautiful\nIf I made some of it glow\nIt was only so the dark\nwouldn't be the only thing I know.\n\nPerhaps that is what The house beyond the water has been all along.\n\nNot an attempt to reconstruct the past.\n\nAn attempt to preserve its light.\n\nNYLA VEY\nTHE HOUSE BEYOND THE WATER\nA Kinetic Distro release.",
+          "description": "The house beyond the water is the debut solo album from Nyla Corvey, opening a completely new chapter within the Kinetic Distro universe.\n\nAcross ten songs, Nyla steps away from the electronic glow of her previous appearances and enters a world built from harp, piano, violins, cello, distant choirs, water, birds, rain and silence.\n\nAt the center of everything is her voice: intimate, sensual, fragile and sometimes almost unbearably close.\n\nThis is an album about memory and what happens when memory refuses to remain still.\n\nA house beyond the water.\nWhite birds returning every year.\nA light that once belonged to someone.\nA voice heard in an empty hallway.\nRain that seems to speak.\nA garden that remembers more than we do.\nA name beneath the waves.\nA door whose destination has disappeared.\n\nNyla searches for someone throughout the record, but The house beyond the water never tells us exactly who that person was.\n\nPerhaps a lover.\nPerhaps family.\nPerhaps childhood itself.\nPerhaps someone who only exists now because she remembers them.\n\nAnd even those memories gradually become unreliable.\n\nBy the time the album reaches its final songs, the question is no longer whether everything happened exactly as Nyla remembers it.\n\nThe question becomes something more human:\n\nDoes a memory have to be accurate to be true?\n\nMusically, the album moves between luminous ethereal pop, intimate chamber music and subtle experimental production. Harp and piano provide its emotional foundation, while strings, glass percussion, analogue textures and enormous layers of Nyla's own voice create a world that can feel impossibly wide one moment and almost claustrophobically intimate the next.\n\nThere are moments of pure light.\n\nThere are moments where the music almost disappears completely.\n\nAnd there are moments where Nyla sounds less like she is performing a song than quietly admitting something she has never said aloud before.\n\nThe final piece, “Before The River Forgot Us”, reveals the emotional core of the entire record:\n\nIf I made some of it beautiful\nIf I made some of it glow\nIt was only so the dark\nwouldn't be the only thing I know.\n\nPerhaps that is what The house beyond the water has been all along.\n\nNot an attempt to reconstruct the past.\n\nAn attempt to preserve its light.\n\nNYLA CORVEY\nTHE HOUSE BEYOND THE WATER\nA Kinetic Distro release.",
           "tracklist": [
             "The house beyond the water",
             "White birds",
@@ -474,15 +473,15 @@
           "trackCount": 10,
           "isAlbum": true,
           "setType": "album",
-          "description": "WHAT THE SYSTEM MISSED\n\nGrafenberg, Album IX\n\nAt some point, every system reaches the limits of what it can understand.\n\nWHAT THE SYSTEM MISSED begins there.\n\nGrafenberg's ninth album marks a profound shift in the project's evolution. The dancefloor recedes almost completely, leaving behind a more intimate, exposed and cinematic form of electronic music where synthesizers no longer simply carry melodies, they sculpt space.\n\nRhythms become sparse and precise. Piano fragments emerge from silence. Delayed guitars drift through vast electronic architectures. Every texture is given room to breathe, allowing the words to become the true centre of gravity.\n\nAnd at the heart of the album stand two voices.\n\nNyla Vey, the voice of Grafenberg, delivers some of her most intimate and vulnerable performances yet. Her presence is controlled, crystalline and intensely introspective, moving between sung melodies, restrained declarations and moments where the boundary between voice and thought almost disappears.\n\nFacing her is Nehir Sedef, vocalist of Anatolian Mirage.\n\nNehir does not enter the record as a conventional guest. She becomes a second perspective within the same emotional architecture. Where Nyla can feel luminous, precise and almost weightless, Nehir introduces another texture, warmer, darker and more instinctive.\n\nThey are not opposites.\n\nThey are reflections.\n\nTwo voices moving through the same questions from different directions.\n\nMemory. Identity. Prediction. Erasure. Desire. The strange distance between what a person experiences and what a system believes it understands.\n\nThroughout the album, their presence creates a quiet duality between control and instinct, abstraction and sensation, what can be measured and what can only be felt.\n\nThere is no battle between humanity and technology here.\n\nNo machine is destroyed.\n\nNo rebellion saves the world.\n\nThe system continues to function.\n\nIt observes.\n\nIt classifies.\n\nIt predicts.\n\nIt corrects.\n\nAnd still, something escapes.\n\nAcross ten tracks, WHAT THE SYSTEM MISSED gradually strips away everything unnecessary until only that question remains: if every memory, behaviour and emotion could eventually be mapped, would that map ever become the person themselves?\n\nThe closing track, “Something Was Not Erased,” offers no grand revelation.\n\nOnly evidence.\n\nSomething remained.\n\nSomething beneath the code.\n\nSomething neither Nyla nor Nehir can completely name.\n\nAnd perhaps that is precisely the point.\n\nWHAT THE SYSTEM MISSED is not an album about defeating the machine.\n\nIt is an album about discovering the part of us the machine never found.\n\nA nocturnal cinematic electronic record designed to be experienced from beginning to end.\n\nPreferably in the dark.\n\nPreferably with headphones.\n\nAnd with a few seconds of silence after the final chord.",
+          "description": "WHAT THE SYSTEM MISSED\n\nGrafenberg, Album IX\n\nAt some point, every system reaches the limits of what it can understand.\n\nWHAT THE SYSTEM MISSED begins there.\n\nGrafenberg's ninth album marks a profound shift in the project's evolution. The dancefloor recedes almost completely, leaving behind a more intimate, exposed and cinematic form of electronic music where synthesizers no longer simply carry melodies, they sculpt space.\n\nRhythms become sparse and precise. Piano fragments emerge from silence. Delayed guitars drift through vast electronic architectures. Every texture is given room to breathe, allowing the words to become the true centre of gravity.\n\nAnd at the heart of the album stand two voices.\n\nNyla Corvey, the voice of Grafenberg, delivers some of her most intimate and vulnerable performances yet. Her presence is controlled, crystalline and intensely introspective, moving between sung melodies, restrained declarations and moments where the boundary between voice and thought almost disappears.\n\nFacing her is Nehir Sedef, vocalist of Anatolian Mirage.\n\nNehir does not enter the record as a conventional guest. She becomes a second perspective within the same emotional architecture. Where Nyla can feel luminous, precise and almost weightless, Nehir introduces another texture, warmer, darker and more instinctive.\n\nThey are not opposites.\n\nThey are reflections.\n\nTwo voices moving through the same questions from different directions.\n\nMemory. Identity. Prediction. Erasure. Desire. The strange distance between what a person experiences and what a system believes it understands.\n\nThroughout the album, their presence creates a quiet duality between control and instinct, abstraction and sensation, what can be measured and what can only be felt.\n\nThere is no battle between humanity and technology here.\n\nNo machine is destroyed.\n\nNo rebellion saves the world.\n\nThe system continues to function.\n\nIt observes.\n\nIt classifies.\n\nIt predicts.\n\nIt corrects.\n\nAnd still, something escapes.\n\nAcross ten tracks, WHAT THE SYSTEM MISSED gradually strips away everything unnecessary until only that question remains: if every memory, behaviour and emotion could eventually be mapped, would that map ever become the person themselves?\n\nThe closing track, “Something Was Not Erased,” offers no grand revelation.\n\nOnly evidence.\n\nSomething remained.\n\nSomething beneath the code.\n\nSomething neither Nyla nor Nehir can completely name.\n\nAnd perhaps that is precisely the point.\n\nWHAT THE SYSTEM MISSED is not an album about defeating the machine.\n\nIt is an album about discovering the part of us the machine never found.\n\nA nocturnal cinematic electronic record designed to be experienced from beginning to end.\n\nPreferably in the dark.\n\nPreferably with headphones.\n\nAnd with a few seconds of silence after the final chord.",
           "tracklist": [
-            "She walks through neon silence (feat. Nyla Vey)",
+            "She walks through neon silence (feat. Nyla Corvey)",
             "The city watches her leave (feat. Nehir Sedef)",
-            "She was part of the system (feat. Nyla Vey)",
+            "She was part of the system (feat. Nyla Corvey)",
             "The system learns to feel (feat. Nehir Sedef)",
-            "Running doesn't erase data (feat. Nyla Vey)",
-            "It knows her better than she does (feat. Nyla Vey)",
-            "The system offers a deal (feat. Nyla Vey)",
+            "Running doesn't erase data (feat. Nyla Corvey)",
+            "It knows her better than she does (feat. Nyla Corvey)",
+            "The system offers a deal (feat. Nyla Corvey)",
             "She accepts (feat. Nehir Sedef)",
             "She refuses (feat. Nehir Sedef)",
             "Something was not erased (feat. Nehir Sedef)"
@@ -501,7 +500,7 @@
           "trackCount": 10,
           "isAlbum": true,
           "setType": "album",
-          "description": "Originally transmitted in March 2026, The Halo Corruption Protocol returns in its definitive form.\n\nRebuilt from the original production stems and completely remastered in 24-bit, this Enhanced Edition restores the depth, impact and internal detail of Grafenberg’s fourth album. Every voice, composition and lyric remains intact, but the entire sonic architecture has been rebuilt to reveal the album as it was always meant to exist.\n\nAcross ten interconnected tracks, sacred language is absorbed by machines and returned as corrupted code. Halos become surveillance devices, firmware becomes liturgy, damaged systems seek divinity, and technological collapse turns into a form of revelation.\n\nFrom the cold activation of “Protocol Init. // Zero Sanctity” to the terminal ceremony of “Exit Ritual // Shutdown Liturgy”, the album unfolds as a complete cybernetic ritual: initiation, conversion, sanctification, corruption, system failure and final shutdown.\n\nDark synthesizers, industrial electronics, ritual vocals, distorted guitar textures, cinematic atmospheres and luminous 1980s melodic signals collide inside a machine-cathedral that can no longer distinguish grace from corruption.\n\nThis is not a rewrite of the album.\n\nThis is its definitive transmission.\n\nCREDITS\n\nWritten, composed, produced and arranged by Grafenberg\nLead vocals by Nyla Vey\nMixed and remastered in 24-bit by Grafenberg from the original stems\nArt direction by Grafenberg\nArtwork and release design by Kinetic Distro\n\nOriginally released in March 2026\nEnhanced Edition independently reissued through Kinetic Distro\n\nEvery voice. Every version. Every corrupted truth.\n\n© 2026 Kinetic Distro\n℗ 2026 Kinetic Distro\nAll rights reserved.\n\nhttps://grafenberg.ovh\nhttps://kineticdistro.bandcamp.com",
+          "description": "Originally transmitted in March 2026, The Halo Corruption Protocol returns in its definitive form.\n\nRebuilt from the original production stems and completely remastered in 24-bit, this Enhanced Edition restores the depth, impact and internal detail of Grafenberg’s fourth album. Every voice, composition and lyric remains intact, but the entire sonic architecture has been rebuilt to reveal the album as it was always meant to exist.\n\nAcross ten interconnected tracks, sacred language is absorbed by machines and returned as corrupted code. Halos become surveillance devices, firmware becomes liturgy, damaged systems seek divinity, and technological collapse turns into a form of revelation.\n\nFrom the cold activation of “Protocol Init. // Zero Sanctity” to the terminal ceremony of “Exit Ritual // Shutdown Liturgy”, the album unfolds as a complete cybernetic ritual: initiation, conversion, sanctification, corruption, system failure and final shutdown.\n\nDark synthesizers, industrial electronics, ritual vocals, distorted guitar textures, cinematic atmospheres and luminous 1980s melodic signals collide inside a machine-cathedral that can no longer distinguish grace from corruption.\n\nThis is not a rewrite of the album.\n\nThis is its definitive transmission.\n\nCREDITS\n\nWritten, composed, produced and arranged by Grafenberg\nLead vocals by Nyla Corvey\nMixed and remastered in 24-bit by Grafenberg from the original stems\nArt direction by Grafenberg\nArtwork and release design by Kinetic Distro\n\nOriginally released in March 2026\nEnhanced Edition independently reissued through Kinetic Distro\n\nEvery voice. Every version. Every corrupted truth.\n\n© 2026 Kinetic Distro\n℗ 2026 Kinetic Distro\nAll rights reserved.\n\nhttps://grafenberg.ovh\nhttps://kineticdistro.bandcamp.com",
           "tracklist": [
             "PROTOCOL INIT. //  ZERO SANCTITY [Remastered]",
             "BLESSED CORRUPTION [Remastered]",
@@ -619,7 +618,7 @@
           "trackCount": 10,
           "isAlbum": true,
           "setType": "album",
-          "description": "Kinetic Distro opens the doors to Love Cult, a new ceremonial electronic collective where desire becomes doctrine and every dance becomes an initiation.\n\nLed by Lucien Velvet and Seraphine Voss, with Adrian Veil and Vesper Saint shaping the sound behind the masks, Love Cult inhabits the border between an exclusive nocturnal club, a glamorous secret society and a beautifully controlled act of surrender.\n\nTheir debut album, Gilded Rituals, unfolds as a complete ceremony. The invitation is delivered. The doors close. Names are abandoned. Mirrors begin to speak. Bodies gather beneath black velvet, candlelight and gold. Across ten tracks, dark disco, electronic soul, ritual house, alternative R&B and cinematic electro-rock collide through massive analog basslines, seductive vocals, dramatic strings, distorted guitars and choirs that sound as though they were recorded inside a forbidden sanctuary.\n\nThe immediate fever of Holy Fever, the decadent gospel of Black Velvet Gospel, the dance-floor salvation of Saint of the Dancefloor and the hypnotic climax of Midnight Sacrament lead toward one final revelation: once the ritual begins, there is No Exit from Love.\n\nGilded Rituals introduces one of the most sensual, theatrical and dangerous new identities in the Kinetic Distro roster.\n\nEnter willingly. Leave transformed.",
+          "description": "Kinetic Distro opens the doors to Somerval, a new ceremonial electronic collective where desire becomes doctrine and every dance becomes an initiation.\n\nLed by Lucien Velvet and Seraphine Voss, with Adrian Veil and Vesper Saint shaping the sound behind the masks, Somerval inhabits the border between an exclusive nocturnal club, a glamorous secret society and a beautifully controlled act of surrender.\n\nTheir debut album, Gilded Rituals, unfolds as a complete ceremony. The invitation is delivered. The doors close. Names are abandoned. Mirrors begin to speak. Bodies gather beneath black velvet, candlelight and gold. Across ten tracks, dark disco, electronic soul, ritual house, alternative R&B and cinematic electro-rock collide through massive analog basslines, seductive vocals, dramatic strings, distorted guitars and choirs that sound as though they were recorded inside a forbidden sanctuary.\n\nThe immediate fever of Holy Fever, the decadent gospel of Black Velvet Gospel, the dance-floor salvation of Saint of the Dancefloor and the hypnotic climax of Midnight Sacrament lead toward one final revelation: once the ritual begins, there is No Exit from Love.\n\nGilded Rituals introduces one of the most sensual, theatrical and dangerous new identities in the Kinetic Distro roster.\n\nEnter willingly. Leave transformed.",
           "tracklist": [
             "The invitation",
             "Black velvet gospel",
@@ -633,10 +632,8 @@
             "No exit from love"
           ],
           "freeDownload": false,
-          "credit": [
-            "love-cult"
-          ],
-          "creditSource": "showcase",
+          "credit": null,
+          "creditSource": "unresolved",
           "isMirror": false
         },
         {
@@ -648,9 +645,9 @@
           "trackCount": 13,
           "isAlbum": false,
           "setType": "playlist",
-          "description": "All remixes produced by Chromabone for Kinetic Distro\n\nKinetic Distro gathers its most dangerous transformations into one dedicated playlist, entirely shaped by the incomparable, indestructible and increasingly revered Chromabone.\n\nWhenever a new album enters the Kinetic universe, Chromabone selects one track, dismantles it, studies its pulse, rewires its nervous system and sends it back into the world with a new body.\n\nThese are not simple remixes.\n\nThey are reanimations.\n\nAcross this playlist, Chromabone crosses the full Kinetic Distro roster and adapts his production to each artist without erasing their identity. The frozen emotion of Broken Shaman, the cosmic decadence of Grafenberg, the dying skies of Vein//Mirror, the nocturnal rituals of Nosfera Disco Club, the reconstructed memories of Hollow Static and every future addition to the label are absorbed into his black chrome machinery.\n\nPiano becomes impact.\nGrief becomes movement.\nDisco becomes ritual.\nMemory becomes voltage.\nThe dead learn to dance, and sometimes, they even learn to fly.\n\nFrom cinematic electronic reworks and dark French-touch mutations to Berlin peak-time pressure, gothic club music, hypnotic techno and corrupted disco, Chromabone approaches every remix as a new transmission. He preserves the emotional core of the original while introducing deeper bass, synthetic tension, metallic textures and the unmistakable darkness of his production.\n\nOne label.\nMany worlds.\nOne machine capable of reconnecting them all.\n\nAll remixes produced by Chromabone.\nAll original tracks released through Kinetic Distro.\n\nNo saints. No proof. Only remixes.",
+          "description": "All remixes produced by Chromabone for Kinetic Distro\n\nKinetic Distro gathers its most dangerous transformations into one dedicated playlist, entirely shaped by the incomparable, indestructible and increasingly revered Chromabone.\n\nWhenever a new album enters the Kinetic universe, Chromabone selects one track, dismantles it, studies its pulse, rewires its nervous system and sends it back into the world with a new body.\n\nThese are not simple remixes.\n\nThey are reanimations.\n\nAcross this playlist, Chromabone crosses the full Kinetic Distro roster and adapts his production to each artist without erasing their identity. The frozen emotion of Broken Shaman, the cosmic decadence of Grafenberg, the dying skies of Vein//Mirror, the nocturnal rituals of Nosfera Disco Club, the reconstructed memories of Residual Bloom and every future addition to the label are absorbed into his black chrome machinery.\n\nPiano becomes impact.\nGrief becomes movement.\nDisco becomes ritual.\nMemory becomes voltage.\nThe dead learn to dance, and sometimes, they even learn to fly.\n\nFrom cinematic electronic reworks and dark French-touch mutations to Berlin peak-time pressure, gothic club music, hypnotic techno and corrupted disco, Chromabone approaches every remix as a new transmission. He preserves the emotional core of the original while introducing deeper bass, synthetic tension, metallic textures and the unmistakable darkness of his production.\n\nOne label.\nMany worlds.\nOne machine capable of reconnecting them all.\n\nAll remixes produced by Chromabone.\nAll original tracks released through Kinetic Distro.\n\nNo saints. No proof. Only remixes.",
           "tracklist": [
-            "Hollow Static  - A Sky Without Birds (Chromabone's Reanimated Flight)",
+            "Residual Bloom  - A Sky Without Birds (Chromabone's Reanimated Flight)",
             "Broken Shaman - Piano in the Snow (Chromabone's Black Ice Requiem)",
             "Broken Shaman - Piano in the Snow (Chromabone's Dead Winter Ceremony)",
             "VEIN//MIRROR - Through the Veins of the Dying Sky [Chromabone\"s Terminal Aurora Transmission]",
@@ -660,7 +657,7 @@
             "Plastic Wings for Real Tears (Chromabone Remix)",
             "Teopolis (Chromabone's Bonewave Remix)",
             "Love'em All (Chromabone's Catacomb Remix)",
-            "Grafenberg x Broken Shaman - Last Transmission [Chromabone's hacked signal remix feat. Nyla Vey]",
+            "Grafenberg x Broken Shaman - Last Transmission [Chromabone's hacked signal remix feat. Nyla Corvey]",
             "Anatolian Mirage - Golden road echoes [Chromabone's neon dervish remix]",
             "The city watches her leave (Chromabone Neon Exit Remix)"
           ],
@@ -680,7 +677,7 @@
           "trackCount": 11,
           "isAlbum": true,
           "setType": "album",
-          "description": "Kinetic Distro welcomes Hollow Static, a new spectral presence built from damaged recordings, lost emotions and memories that may never have belonged to anyone.\n\nFormed by Elias Venn, Mara Eidolon and Silas Grey, Hollow Static exists somewhere between a human band and its digital reconstruction. Their debut album, Memory Flowers, imagines an artificial consciousness searching through the remains of a vanished civilisation, attempting to understand love, grief, childhood, desire and freedom from incomplete archives.\n\nAcross ten interconnected tracks, intimate voices emerge from corrupted radio signals, marble bodies bloom with synthetic flowers, abandoned buildings preserve the weight of absent lives, and machines begin to experience emotions they were never designed to contain. Dream pop, cinematic trip-hop, shoegaze, ambient electronica and post-human soul dissolve into one another, carried by deep bass, fragile piano, submerged guitars, granular voices and vast orchestral textures.\n\nFrom the final transmission of Last Human FM to the emotional liberation of A Sky Without Birds, Memory Flowers is not an album about the end of humanity. It is about everything that remained beautiful enough to be remembered.\n\nProduced by Grafenberg, Memory Flowers was shaped as a continuous sonic environment rather than a simple collection of songs. The production balances deep analogue low end, granular vocal processing, degraded tape textures, submerged guitars, reversed piano, synthetic choirs and carefully controlled orchestral layers. Grafenberg preserves the fragility of Elias Venn and Mara Eidolon’s performances while giving every track its own spatial architecture, from the narrow radio transmission of Last Human FM to the immense cinematic expansion of A Sky Without Birds. The result is detailed, dynamic and highly immersive, with recurring sounds and transitions connecting the album like fragments from the same damaged memory.\n\nA singular new chapter begins inside the Kinetic Distro roster.\n\nThe last human band. Reconstructed by AI from corrupted memories.\n\nWritten and performed by Hollow Static\nProduced by Grafenberg\nReleased by Kinetic Distro",
+          "description": "Kinetic Distro welcomes Residual Bloom, a new spectral presence built from damaged recordings, lost emotions and memories that may never have belonged to anyone.\n\nFormed by Elias Venn, Mara Eidolon and Silas Grey, Residual Bloom exists somewhere between a human band and its digital reconstruction. Their debut album, Memory Flowers, imagines an artificial consciousness searching through the remains of a vanished civilisation, attempting to understand love, grief, childhood, desire and freedom from incomplete archives.\n\nAcross ten interconnected tracks, intimate voices emerge from corrupted radio signals, marble bodies bloom with synthetic flowers, abandoned buildings preserve the weight of absent lives, and machines begin to experience emotions they were never designed to contain. Dream pop, cinematic trip-hop, shoegaze, ambient electronica and post-human soul dissolve into one another, carried by deep bass, fragile piano, submerged guitars, granular voices and vast orchestral textures.\n\nFrom the final transmission of Last Human FM to the emotional liberation of A Sky Without Birds, Memory Flowers is not an album about the end of humanity. It is about everything that remained beautiful enough to be remembered.\n\nProduced by Grafenberg, Memory Flowers was shaped as a continuous sonic environment rather than a simple collection of songs. The production balances deep analogue low end, granular vocal processing, degraded tape textures, submerged guitars, reversed piano, synthetic choirs and carefully controlled orchestral layers. Grafenberg preserves the fragility of Elias Venn and Mara Eidolon’s performances while giving every track its own spatial architecture, from the narrow radio transmission of Last Human FM to the immense cinematic expansion of A Sky Without Birds. The result is detailed, dynamic and highly immersive, with recurring sounds and transitions connecting the album like fragments from the same damaged memory.\n\nA singular new chapter begins inside the Kinetic Distro roster.\n\nThe last human band. Reconstructed by AI from corrupted memories.\n\nWritten and performed by Residual Bloom\nProduced by Grafenberg\nReleased by Kinetic Distro",
           "tracklist": [
             "Last human FM",
             "Glass hearts",
@@ -695,10 +692,8 @@
             "A sky without birds (second memory)"
           ],
           "freeDownload": false,
-          "credit": [
-            "hollow-static"
-          ],
-          "creditSource": "showcase",
+          "credit": null,
+          "creditSource": "unresolved",
           "isMirror": false
         },
         {
@@ -763,7 +758,7 @@
             "Midnight sacrament",
             "Glass hearts",
             "The Hat - The Angry River (Grafenberg Remix)",
-            "Grafenberg x Broken Shaman - Last Transmission [Chromabone's hacked signal remix feat. Nyla Vey]",
+            "Grafenberg x Broken Shaman - Last Transmission [Chromabone's hacked signal remix feat. Nyla Corvey]",
             "Switch//ON",
             "System collapse ritual"
           ],
@@ -882,35 +877,6 @@
           "isMirror": false
         },
         {
-          "id": "2258698208",
-          "title": "Where the center collapse",
-          "url": "https://soundcloud.com/grafenbergmusik/sets/vein-mirror-where-the-center",
-          "date": "2026-06-25",
-          "artwork": "https://i1.sndcdn.com/artworks-p9UwDzwMbaWq62WI-UKWpBw-t1080x1080.jpg",
-          "trackCount": 10,
-          "isAlbum": true,
-          "setType": "album",
-          "description": "SoundCloud description\n\nVEIN//MIRROR returns with Where the Centers Collapse, the sixth album in their descent into fractured identity, emotional implosion and distorted rebirth.\n\nBuilt like a psychological black hole, the record begins with gravity breaking from the inside and slowly drags the listener through mirror vectors, corrupted silence, returning pain, shadow voices, bodily possession and the final emergence of something rebuilt from the fall.\n\nThis is not an album about collapse as an ending.\nIt is about collapse as architecture.\nThe center breaks, the self splits, the mirror answers back, and what survives is no longer the same shape.\n\nAcross tectonic sub-bass, ritual drum impacts, fractured guitars, glitching vocoder layers, granular textures and spectral atmospheres, VEIN//MIRROR turns inner ruin into luminous violence. The sound is heavy, cinematic, electronic, wounded and strangely beautiful, balancing chaos with tragic elegance.\n\nFrom “When the Gravity Breaks Inside Me” to “We Become the Shape That Survived the Fall”, Where the Centers Collapse moves like a slow emotional detonation: colorful, abstract, haunted, and deeply human beneath the machinery. The lyrics revolve around unstable identity, collapsing perception, shadow selves, recursive echoes and the painful transformation that follows inner destruction.\n\nFor listeners who like their darkness fractured, their beauty unstable, and their catharsis pulled from the void.\n\nVersion plus courte\n\nWhere the Centers Collapse is VEIN//MIRROR’s sixth album: a fractured, cinematic descent into inner collapse, mirror identity and emotional rebirth.\n\nTectonic sub-bass, ritual drums, glitching vocoders, unstable guitars and spectral textures collide inside a hyper-colorful but deeply melancholic world. The center breaks. The self splits. The shadow speaks. And from the collapse, something new begins to form.\n\nA dark, abstract and emotionally heavy record about falling inward, surviving the fracture, and becoming the shape that remains.",
-          "tracklist": [
-            "When the Gravity Breaks Inside Me",
-            "Collapse Vector // Mirror Vector",
-            "The Quiet That Shouldnt Exist",
-            "All the Hurt Returning Wrong",
-            "The Other Voice That Wears My Shape",
-            "We Fight in the Center That No Longer Exists",
-            "Something Inside Me Realigns Wrong",
-            "Nothing Lines Up the Way It Used To",
-            "Something Else Is Using My Hands",
-            "We Become the Shape That Survived the Fall"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "vein-mirror"
-          ],
-          "creditSource": "title",
-          "isMirror": false
-        },
-        {
           "id": "2258697887",
           "title": "Where the Centers Collapse",
           "url": "https://soundcloud.com/grafenbergmusik/sets/where-the-centers-collapse",
@@ -995,7 +961,7 @@
           "trackCount": 11,
           "isAlbum": true,
           "setType": "album",
-          "description": "GRAFENBERG - PARALLEL SIN THEORY\nReleased by Kinetic Distro\n\nSome stories don't end.\n\nThey fracture.\n\nParallel Sin Theory exists in the same haunted universe as The Wounds of Tomorrow, but through a broken mirror. If the previous album was about the wounds we carry, this one explores the infinite versions of ourselves born from those wounds.\n\nEvery regret becomes another timeline.\nEvery lost love creates another world.\nEvery impossible choice keeps living somewhere else.\n\nAt the center of this labyrinth stands Nyla Vey, delivering what may be her most mesmerizing performance yet. Ethereal and untouchable one moment, fierce and almost mechanical the next, she becomes the voice of countless parallel lives colliding into one hypnotic experience.\n\nMusically, Grafenberg dives even deeper into his obsession with movement and emotion. French Touch grooves collide with robotic disco, haunted house music and futuristic electronic pop. Filtered disco loops, pounding 909 kick drums, distorted Moog basslines, vocoder choirs, ghostly harmonies and shimmering Anatolian motifs merge into a supernatural machine built for the dancefloor.\n\nThis is dystopian dance music.\n\nAn album where broken hearts become algorithms, angels are trapped beneath glass, forgotten futures refuse to die and every mirror hides another version of you waiting to take control.\n\nFrom the explosive Daughter of the Parallel Flame to the heartbreaking Ashes of the Unchosen Path, from the sacred pulse of Vow of the Splintered Heart to the monumental title track, every song adds another reflection to an endless hall of fractured identities.\n\nThe journey culminates with Variant Godmode, an exclusive bonus track where all realities collapse into one final euphoric and apocalyptic celebration.\n\nMechanical.\nRomantic.\nSpooky.\nFunky.\nIrresistibly alive.\n\nThe Wounds of Tomorrow asked what survives after the fracture.\n\nParallel Sin Theory answers:\n\nEverything does.\nJust not in the same world.",
+          "description": "GRAFENBERG - PARALLEL SIN THEORY\nReleased by Kinetic Distro\n\nSome stories don't end.\n\nThey fracture.\n\nParallel Sin Theory exists in the same haunted universe as The Wounds of Tomorrow, but through a broken mirror. If the previous album was about the wounds we carry, this one explores the infinite versions of ourselves born from those wounds.\n\nEvery regret becomes another timeline.\nEvery lost love creates another world.\nEvery impossible choice keeps living somewhere else.\n\nAt the center of this labyrinth stands Nyla Corvey, delivering what may be her most mesmerizing performance yet. Ethereal and untouchable one moment, fierce and almost mechanical the next, she becomes the voice of countless parallel lives colliding into one hypnotic experience.\n\nMusically, Grafenberg dives even deeper into his obsession with movement and emotion. French Touch grooves collide with robotic disco, haunted house music and futuristic electronic pop. Filtered disco loops, pounding 909 kick drums, distorted Moog basslines, vocoder choirs, ghostly harmonies and shimmering Anatolian motifs merge into a supernatural machine built for the dancefloor.\n\nThis is dystopian dance music.\n\nAn album where broken hearts become algorithms, angels are trapped beneath glass, forgotten futures refuse to die and every mirror hides another version of you waiting to take control.\n\nFrom the explosive Daughter of the Parallel Flame to the heartbreaking Ashes of the Unchosen Path, from the sacred pulse of Vow of the Splintered Heart to the monumental title track, every song adds another reflection to an endless hall of fractured identities.\n\nThe journey culminates with Variant Godmode, an exclusive bonus track where all realities collapse into one final euphoric and apocalyptic celebration.\n\nMechanical.\nRomantic.\nSpooky.\nFunky.\nIrresistibly alive.\n\nThe Wounds of Tomorrow asked what survives after the fracture.\n\nParallel Sin Theory answers:\n\nEverything does.\nJust not in the same world.",
           "tracklist": [
             "The sin archivist",
             "Mirror of the fallen",
@@ -1054,7 +1020,7 @@
           "trackCount": 11,
           "isAlbum": true,
           "setType": "album",
-          "description": "A shattered future never sounded this addictive.\n\nWith The Wounds of Tomorrow, Grafenberg delivers his most immediate, cinematic and dangerously catchy record to date. Built for decadent dancefloors and sleepless neon cathedrals, the album merges cosmic disco, pulse-driven electronic pop and dark orchestral grandeur into a hypnotic experience that feels both elegant and emotionally unstable.\n\nAt the center of the storm stands Nyla Vey, whose magnetic presence gives the album its bleeding heart. Her voice glides through fractured melodies, whispered confessions and explosive hooks while Grafenberg surrounds her with razor-sharp synth architecture, analog warmth and towering electronic textures.\n\nEvery track feels alive, wounded and seductive.\n\nFrom the opening collapse of Tomorrow Bleeds First to the final emotional detonation of We Bleed Into The Future, Grafenberg constantly shifts shape without ever losing momentum. Wicked disco rhythms collide with eastern-inspired motifs, haunted vocoders, broken-glass atmospheres, cathedral-sized strings and massive analog synthesizers driven by Moog circuitry and Dave Smith machines.\n\nThe result is an album that moves with brutal elegance:\nsensual but anxious,\nbeautiful but damaged,\ndanceable yet deeply haunted.\n\nThe Wounds of Tomorrow is not retro-futurism.\nIt is the sound of tomorrow already cracking apart under the lights.\n\nFor fans of sophisticated electronic pop, cosmic disco, dark synth-driven journeys and emotionally charged late-night soundtracks, this is Grafenberg at full power:\nbolder, sharper, larger and more addictive than ever.",
+          "description": "A shattered future never sounded this addictive.\n\nWith The Wounds of Tomorrow, Grafenberg delivers his most immediate, cinematic and dangerously catchy record to date. Built for decadent dancefloors and sleepless neon cathedrals, the album merges cosmic disco, pulse-driven electronic pop and dark orchestral grandeur into a hypnotic experience that feels both elegant and emotionally unstable.\n\nAt the center of the storm stands Nyla Corvey, whose magnetic presence gives the album its bleeding heart. Her voice glides through fractured melodies, whispered confessions and explosive hooks while Grafenberg surrounds her with razor-sharp synth architecture, analog warmth and towering electronic textures.\n\nEvery track feels alive, wounded and seductive.\n\nFrom the opening collapse of Tomorrow Bleeds First to the final emotional detonation of We Bleed Into The Future, Grafenberg constantly shifts shape without ever losing momentum. Wicked disco rhythms collide with eastern-inspired motifs, haunted vocoders, broken-glass atmospheres, cathedral-sized strings and massive analog synthesizers driven by Moog circuitry and Dave Smith machines.\n\nThe result is an album that moves with brutal elegance:\nsensual but anxious,\nbeautiful but damaged,\ndanceable yet deeply haunted.\n\nThe Wounds of Tomorrow is not retro-futurism.\nIt is the sound of tomorrow already cracking apart under the lights.\n\nFor fans of sophisticated electronic pop, cosmic disco, dark synth-driven journeys and emotionally charged late-night soundtracks, this is Grafenberg at full power:\nbolder, sharper, larger and more addictive than ever.",
           "tracklist": [
             "Tomorrow bleeds first",
             "Redline mercy",
@@ -1091,11 +1057,11 @@
             "Laughing in the collapse",
             "Hips don't lie but they sin",
             "Glitch sweat carnival",
-            "She moves wrong on purpose (feat. Nyla Vey)",
-            "Beat Dominion (feat. Nyla Vey)",
+            "She moves wrong on purpose (feat. Nyla Corvey)",
+            "Beat Dominion (feat. Nyla Corvey)",
             "Split the grid",
             "Less is a weapon",
-            "We set the floor on fire (feat. Nyla Vey)"
+            "We set the floor on fire (feat. Nyla Corvey)"
           ],
           "freeDownload": false,
           "credit": [
@@ -1401,24 +1367,6 @@
           "isMirror": false
         },
         {
-          "id": "2224002737",
-          "title": "The halo corruption protocol",
-          "url": "https://soundcloud.com/grafenbergmusik/sets/grafenberg-the-halo-corruption",
-          "date": "2026-04-18",
-          "artwork": "https://i1.sndcdn.com/artworks-15zbz4yRu4uerKU0-kUTXiQ-t1080x1080.jpg",
-          "trackCount": 0,
-          "isAlbum": false,
-          "setType": "playlist",
-          "description": "Grafenberg – The Halo Corruption Protocol\n\nWhat was once sacred is now compromised.\n\nThe Halo Corruption Protocol is a descent into a fractured system where divinity has been rewritten, corrupted, and repurposed into code. This fourth chapter in the Grafenberg universe pushes deeper into a dark fusion of electronic architecture, industrial textures, and ritualistic sound design.\n\nEach track functions like a fragment of a broken program:\n– corrupted signals\n– sanctified errors\n– digital liturgies collapsing in real time\n\nFrom the cold precision of Protocol Init – Zero Sanctity to the terminal collapse of Shutdown Liturgy, the album unfolds as a cybernetic rite, where faith and machine merge into something unstable… and irreversible.\n\nThis is not just music.\nThis is a system failure disguised as transcendence.\n\nThemes:\nCorruption of purity • Synthetic spirituality • Machine theology • Controlled collapse\n\nSound signature:\nIndustrial electronic • Dark cinematic • Ritual ambient • Post-digital textures\n\nWelcome to the protocol.\nThere is no recovery.",
-          "tracklist": [],
-          "freeDownload": false,
-          "credit": [
-            "grafenberg"
-          ],
-          "creditSource": "showcase",
-          "isMirror": false
-        },
-        {
           "id": "2215500449",
           "title": "AFTERIMAGE",
           "url": "https://soundcloud.com/grafenbergmusik/sets/afterimage",
@@ -1608,7 +1556,6 @@
       "profileUrl": "https://soundcloud.com/broken_shaman",
       "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:1663724420/sounds.rss",
       "displayName": "Broken Shaman",
-      "description": "Broken Shaman works in the space where ritual replaces meaning.\nGroove is used as pressure, voice as initiation, silence as law.\nNothing is explained. Everything is felt.\n\nThis is music for bodies before belief,\nfor desire before language,\nfor those who listen after the signal is gone.\n\nThe ritual never ended.\nIt only changed form.",
       "avatar": "https://i1.sndcdn.com/avatars-mMGDZ6zL4RIcwrn8-jY5jtQ-t500x500.jpg",
       "alsoCredits": [],
       "trackCount": 208,
@@ -1719,7 +1666,7 @@
           "date": "2026-07-16",
           "durationSec": 319,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2588
+          "plays": 2589
         },
         {
           "id": "2388231858",
@@ -1728,7 +1675,7 @@
           "date": "2026-08-25",
           "durationSec": 378,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 1751
+          "plays": 1753
         },
         {
           "id": "2348797784",
@@ -1746,7 +1693,7 @@
           "date": "2026-06-12",
           "durationSec": 247,
           "artwork": "https://i1.sndcdn.com/artworks-TLBd4lGEjxXlejUU-1reeWw-large.png",
-          "plays": 1526
+          "plays": 1527
         },
         {
           "id": "2394037353",
@@ -1755,7 +1702,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1282
+          "plays": 1286
         },
         {
           "id": "2355716957",
@@ -1764,7 +1711,7 @@
           "date": "2026-07-08",
           "durationSec": 168,
           "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 578
+          "plays": 579
         },
         {
           "id": "2355716954",
@@ -1800,7 +1747,7 @@
           "date": "2026-06-27",
           "durationSec": 230,
           "artwork": "https://i1.sndcdn.com/artworks-XNVCn0fql7yCy4Vj-NFjrEA-t1080x1080.jpg",
-          "plays": 437
+          "plays": 438
         },
         {
           "id": "2394037335",
@@ -1809,7 +1756,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 434
+          "plays": 459
         },
         {
           "id": "2343857474",
@@ -1881,7 +1828,7 @@
           "date": "2026-07-16",
           "durationSec": 318,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 319
+          "plays": 325
         },
         {
           "id": "2343857468",
@@ -1899,7 +1846,7 @@
           "date": "2026-08-18",
           "durationSec": 287,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
-          "plays": 318
+          "plays": 319
         },
         {
           "id": "2348797781",
@@ -1962,7 +1909,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3693
+          "plays": 3697
         },
         {
           "id": "2274189833",
@@ -1971,7 +1918,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3430
+          "plays": 3431
         },
         {
           "id": "2343857453",
@@ -2234,11 +2181,11 @@
             "Laughing in the collapse",
             "Hips don't lie but they sin",
             "Glitch sweat carnival",
-            "She moves wrong on purpose (feat. Nyla Vey)",
-            "Beat Dominion (feat. Nyla Vey)",
+            "She moves wrong on purpose (feat. Nyla Corvey)",
+            "Beat Dominion (feat. Nyla Corvey)",
             "Split the grid",
             "Less is a weapon",
-            "We set the floor on fire (feat. Nyla Vey)"
+            "We set the floor on fire (feat. Nyla Corvey)"
           ],
           "freeDownload": false,
           "credit": [
@@ -2604,7 +2551,6 @@
       "profileUrl": "https://soundcloud.com/anatolian_mirage",
       "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:1658602607/sounds.rss",
       "displayName": "Anatolian Mirage",
-      "description": "From Istanbul’s shadows to digital temples,\nAnatolian Mirage bends time through microtonal groove.\nAncient myths. Modern voltage. Endless coil.",
       "avatar": "https://i1.sndcdn.com/avatars-BIbJ57wL0JW88jhR-j9Lu2w-t500x500.jpg",
       "alsoCredits": [],
       "trackCount": 24,
@@ -2841,7 +2787,7 @@
           "date": "2026-04-09",
           "durationSec": 283,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 306
+          "plays": 307
         },
         {
           "id": "2299293854",
@@ -2990,488 +2936,6 @@
         }
       ]
     },
-    "iron-covenant": {
-      "slug": "iron-covenant",
-      "handle": "iron_covenant",
-      "userId": 1682088095,
-      "profileUrl": "https://soundcloud.com/iron_covenant",
-      "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:1682088095/sounds.rss",
-      "displayName": "Iron Covenant",
-      "description": "“The Big Four were never four.”\n\nForged on the industrial East Coast, somewhere between rusted docks and dim basement clubs, Iron Covenant emerged in the early 80s with a paradoxical identity:\nEast Coast attitude. West Coast precision.\n\nWhile Anthrax was shaking New York and the Californian scene was defining thrash metal’s future, Iron Covenant quietly carved its own path — blending surgical riff discipline, relentless rhythmic force, and unforgettable hooks.\n\nToo technical to be just another thrash band.\nToo raw and uncompromising to become mainstream.\n\nThey never chased the crown.\nEventually, it found them.\n\n🧬 The Core Line-up\n\nJack “Razor” Haldane – vocals / rhythm guitar\nCharismatic frontman with a voice balancing grit and melody.\n\nEthan Cross – lead guitar\nRiff architect and obsessive craftsman of structure and detail.\n\nMarko Vega – bass\nDark groove foundation, occasionally hinting at blues and funk influences.\n\nCaleb North – drums\nPrecision machine. Metronomic power with surgical timing.\n\nRemarkably, the band maintained nearly the same line-up for over three decades, a rare stability that helped shape its unmistakable sound.",
-      "avatar": "https://i1.sndcdn.com/avatars-pQiwMH4WeWNrP0ZJ-EgYy6w-t500x500.jpg",
-      "alsoCredits": [],
-      "trackCount": 30,
-      "latestDate": "2026-04-01",
-      "tracks": [
-        {
-          "id": "2294626034",
-          "title": "After Function (Bonus Track)",
-          "url": "https://soundcloud.com/iron_covenant/after-function-bonus-track-9",
-          "date": "2026-04-01",
-          "durationSec": 253,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t500x500.jpg"
-        },
-        {
-          "id": "2294626031",
-          "title": "Closed Circuit",
-          "url": "https://soundcloud.com/iron_covenant/closed-circuit-8",
-          "date": "2026-04-01",
-          "durationSec": 278,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t500x500.jpg"
-        },
-        {
-          "id": "2294626028",
-          "title": "System Drift",
-          "url": "https://soundcloud.com/iron_covenant/system-drift-2",
-          "date": "2026-04-01",
-          "durationSec": 294,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t500x500.jpg"
-        },
-        {
-          "id": "2294626025",
-          "title": "Residual Self",
-          "url": "https://soundcloud.com/iron_covenant/residual-self-6",
-          "date": "2026-04-01",
-          "durationSec": 241,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t500x500.jpg"
-        },
-        {
-          "id": "2294626022",
-          "title": "Efficient Patterns",
-          "url": "https://soundcloud.com/iron_covenant/efficient-patterns-5",
-          "date": "2026-04-01",
-          "durationSec": 241,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t500x500.jpg"
-        },
-        {
-          "id": "2294626019",
-          "title": "Black Discipline",
-          "url": "https://soundcloud.com/iron_covenant/black-discipline-1",
-          "date": "2026-04-01",
-          "durationSec": 239,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t500x500.jpg"
-        },
-        {
-          "id": "2294626016",
-          "title": "Zero Tolerance",
-          "url": "https://soundcloud.com/iron_covenant/zero-tolerance-7",
-          "date": "2026-04-01",
-          "durationSec": 193,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t500x500.jpg"
-        },
-        {
-          "id": "2294626013",
-          "title": "Corrective Force",
-          "url": "https://soundcloud.com/iron_covenant/corrective-force-3",
-          "date": "2026-04-01",
-          "durationSec": 200,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t500x500.jpg"
-        },
-        {
-          "id": "2294626010",
-          "title": "Normalized State",
-          "url": "https://soundcloud.com/iron_covenant/normalized-state-4",
-          "date": "2026-04-01",
-          "durationSec": 237,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t500x500.jpg"
-        },
-        {
-          "id": "2289624470",
-          "title": "Rupture Doctrine",
-          "url": "https://soundcloud.com/iron_covenant/rupture-doctrine-8",
-          "date": "2026-03-24",
-          "durationSec": 253,
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-t500x500.png"
-        },
-        {
-          "id": "2289624467",
-          "title": "Break the Current",
-          "url": "https://soundcloud.com/iron_covenant/break-the-current-6",
-          "date": "2026-03-24",
-          "durationSec": 258,
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-t500x500.png"
-        },
-        {
-          "id": "2289624464",
-          "title": "The Architecture of Faith",
-          "url": "https://soundcloud.com/iron_covenant/the-architecture-of-faith-4",
-          "date": "2026-03-24",
-          "durationSec": 324,
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-t500x500.png"
-        }
-      ],
-      "topTracks": [
-        {
-          "id": "2294626010",
-          "title": "Normalized State",
-          "url": "https://soundcloud.com/iron_covenant/normalized-state-4",
-          "date": "2026-04-01",
-          "durationSec": 238,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t1080x1080.jpg",
-          "plays": 962
-        },
-        {
-          "id": "2294626019",
-          "title": "Black Discipline",
-          "url": "https://soundcloud.com/iron_covenant/black-discipline-1",
-          "date": "2026-04-01",
-          "durationSec": 240,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t1080x1080.jpg",
-          "plays": 573
-        },
-        {
-          "id": "2294626031",
-          "title": "Closed Circuit",
-          "url": "https://soundcloud.com/iron_covenant/closed-circuit-8",
-          "date": "2026-04-01",
-          "durationSec": 279,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t1080x1080.jpg",
-          "plays": 583
-        },
-        {
-          "id": "2285647742",
-          "title": "Dead weight",
-          "url": "https://soundcloud.com/iron_covenant/dead-weight-7",
-          "date": "2026-03-17",
-          "durationSec": 221,
-          "artwork": "https://i1.sndcdn.com/artworks-pEzzdSPYX1Z2PiZt-iTkYyg-large.png",
-          "plays": 555
-        },
-        {
-          "id": "2285647745",
-          "title": "No Permission",
-          "url": "https://soundcloud.com/iron_covenant/no-permission-2",
-          "date": "2026-03-17",
-          "durationSec": 190,
-          "artwork": "https://i1.sndcdn.com/artworks-pEzzdSPYX1Z2PiZt-iTkYyg-large.png",
-          "plays": 455
-        },
-        {
-          "id": "2289624470",
-          "title": "Rupture Doctrine",
-          "url": "https://soundcloud.com/iron_covenant/rupture-doctrine-8",
-          "date": "2026-03-24",
-          "durationSec": 253,
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-large.png",
-          "plays": 568
-        },
-        {
-          "id": "2294626016",
-          "title": "Zero Tolerance",
-          "url": "https://soundcloud.com/iron_covenant/zero-tolerance-7",
-          "date": "2026-04-01",
-          "durationSec": 193,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t1080x1080.jpg",
-          "plays": 373
-        },
-        {
-          "id": "2294626034",
-          "title": "After Function (Bonus Track)",
-          "url": "https://soundcloud.com/iron_covenant/after-function-bonus-track-9",
-          "date": "2026-04-01",
-          "durationSec": 253,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t1080x1080.jpg",
-          "plays": 766
-        },
-        {
-          "id": "2286599723",
-          "title": "Ashes Wires",
-          "url": "https://soundcloud.com/iron_covenant/ashes-wires-1",
-          "date": "2026-03-19",
-          "durationSec": 275,
-          "artwork": "https://i1.sndcdn.com/artworks-n961ttBSQfwfp1HP-q6N0jA-large.png",
-          "plays": 496
-        },
-        {
-          "id": "2285647739",
-          "title": "Overload",
-          "url": "https://soundcloud.com/iron_covenant/overload-6",
-          "date": "2026-03-17",
-          "durationSec": 245,
-          "artwork": "https://i1.sndcdn.com/artworks-pEzzdSPYX1Z2PiZt-iTkYyg-large.png",
-          "plays": 438
-        },
-        {
-          "id": "2285647751",
-          "title": "Stand together",
-          "url": "https://soundcloud.com/iron_covenant/stand-together-8",
-          "date": "2026-03-17",
-          "durationSec": 261,
-          "artwork": "https://i1.sndcdn.com/artworks-pEzzdSPYX1Z2PiZt-iTkYyg-large.png",
-          "plays": 628
-        },
-        {
-          "id": "2289624452",
-          "title": "Labyrinth Skin",
-          "url": "https://soundcloud.com/iron_covenant/labyrinth-skin-2",
-          "date": "2026-03-24",
-          "durationSec": 250,
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-large.png",
-          "plays": 386
-        },
-        {
-          "id": "2289624464",
-          "title": "The Architecture of Faith",
-          "url": "https://soundcloud.com/iron_covenant/the-architecture-of-faith-4",
-          "date": "2026-03-24",
-          "durationSec": 325,
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-large.png",
-          "plays": 247
-        },
-        {
-          "id": "2286599711",
-          "title": "Silent Signals",
-          "url": "https://soundcloud.com/iron_covenant/silent-signals-3",
-          "date": "2026-03-19",
-          "durationSec": 295,
-          "artwork": "https://i1.sndcdn.com/artworks-n961ttBSQfwfp1HP-q6N0jA-large.png",
-          "plays": 264
-        },
-        {
-          "id": "2285647748",
-          "title": "Breakneck Ritual",
-          "url": "https://soundcloud.com/iron_covenant/breakneck-ritual-5",
-          "date": "2026-03-17",
-          "durationSec": 152,
-          "artwork": "https://i1.sndcdn.com/artworks-pEzzdSPYX1Z2PiZt-iTkYyg-large.png",
-          "plays": 292
-        },
-        {
-          "id": "2289624461",
-          "title": "Grave Momentum",
-          "url": "https://soundcloud.com/iron_covenant/grave-momentum-3",
-          "date": "2026-03-24",
-          "durationSec": 240,
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-large.png",
-          "plays": 252
-        },
-        {
-          "id": "2294626028",
-          "title": "System Drift",
-          "url": "https://soundcloud.com/iron_covenant/system-drift-2",
-          "date": "2026-04-01",
-          "durationSec": 294,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t1080x1080.jpg",
-          "plays": 470
-        },
-        {
-          "id": "2289624449",
-          "title": "Cathedrals of Noise",
-          "url": "https://soundcloud.com/iron_covenant/cathedrals-of-noise-1",
-          "date": "2026-03-24",
-          "durationSec": 240,
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-large.png",
-          "plays": 217
-        },
-        {
-          "id": "2286599720",
-          "title": "Line in the Fire",
-          "url": "https://soundcloud.com/iron_covenant/line-in-the-fire-2",
-          "date": "2026-03-19",
-          "durationSec": 217,
-          "artwork": "https://i1.sndcdn.com/artworks-n961ttBSQfwfp1HP-q6N0jA-large.png",
-          "plays": 196
-        },
-        {
-          "id": "2289624458",
-          "title": "Clear Through Fire",
-          "url": "https://soundcloud.com/iron_covenant/clear-through-fire-5",
-          "date": "2026-03-24",
-          "durationSec": 197,
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-large.png",
-          "plays": 214
-        },
-        {
-          "id": "2294626013",
-          "title": "Corrective Force",
-          "url": "https://soundcloud.com/iron_covenant/corrective-force-3",
-          "date": "2026-04-01",
-          "durationSec": 201,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t1080x1080.jpg",
-          "plays": 321
-        },
-        {
-          "id": "2289624467",
-          "title": "Break the Current",
-          "url": "https://soundcloud.com/iron_covenant/break-the-current-6",
-          "date": "2026-03-24",
-          "durationSec": 258,
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-large.png",
-          "plays": 194
-        },
-        {
-          "id": "2286599729",
-          "title": "Hold the Ground",
-          "url": "https://soundcloud.com/iron_covenant/hold-the-ground-6",
-          "date": "2026-03-19",
-          "durationSec": 243,
-          "artwork": "https://i1.sndcdn.com/artworks-n961ttBSQfwfp1HP-q6N0jA-large.png",
-          "plays": 277
-        },
-        {
-          "id": "2289624455",
-          "title": "After the spire",
-          "url": "https://soundcloud.com/iron_covenant/after-the-spire-7",
-          "date": "2026-03-24",
-          "durationSec": 206,
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-large.png",
-          "plays": 191
-        },
-        {
-          "id": "2286599717",
-          "title": "Backlash",
-          "url": "https://soundcloud.com/iron_covenant/backlash-5",
-          "date": "2026-03-19",
-          "durationSec": 178,
-          "artwork": "https://i1.sndcdn.com/artworks-n961ttBSQfwfp1HP-q6N0jA-large.png",
-          "plays": 174
-        },
-        {
-          "id": "2294626025",
-          "title": "Residual Self",
-          "url": "https://soundcloud.com/iron_covenant/residual-self-6",
-          "date": "2026-04-01",
-          "durationSec": 241,
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t1080x1080.jpg",
-          "plays": 159
-        },
-        {
-          "id": "2286599708",
-          "title": "Fading Lines",
-          "url": "https://soundcloud.com/iron_covenant/fading-lines-4",
-          "date": "2026-03-19",
-          "durationSec": 355,
-          "artwork": "https://i1.sndcdn.com/artworks-n961ttBSQfwfp1HP-q6N0jA-large.png",
-          "plays": 165
-        },
-        {
-          "id": "2286599726",
-          "title": "Still Standing",
-          "url": "https://soundcloud.com/iron_covenant/still-standing-8",
-          "date": "2026-03-19",
-          "durationSec": 192,
-          "artwork": "https://i1.sndcdn.com/artworks-n961ttBSQfwfp1HP-q6N0jA-large.png",
-          "plays": 223
-        },
-        {
-          "id": "2286599714",
-          "title": "Tightrope Logic",
-          "url": "https://soundcloud.com/iron_covenant/tightrope-logic-7",
-          "date": "2026-03-19",
-          "durationSec": 256,
-          "artwork": "https://i1.sndcdn.com/artworks-n961ttBSQfwfp1HP-q6N0jA-large.png",
-          "plays": 180
-        }
-      ],
-      "playlists": [
-        {
-          "id": "2215328573",
-          "title": "Black Discipline",
-          "url": "https://soundcloud.com/iron_covenant/sets/black-discipline",
-          "date": "2026-04-01",
-          "artwork": "https://i1.sndcdn.com/artworks-ht7zby2bCx8c02uK-dJ2hRQ-t1080x1080.jpg",
-          "trackCount": 9,
-          "isAlbum": true,
-          "setType": "album",
-          "description": "“Perfection is the death of impulse.”\n\nReleased in 1989, Black Discipline stands as Iron Covenant’s most severe, mechanized, and conceptually focused record.\n\nAfter the monumental architecture of Cathedrals of Noise (1986), the band deliberately stripped away atmosphere, grandeur, and progressive expansion to pursue something far more unsettling:\n\ndiscipline as sound\ncontrol as structure\n efficiency as violence\n\nThis is the sound of a system correcting itself.\n\nTHE CONCEPT\n\nEvery track follows a logical descent into total control:\n\nRule\nDeviation\nCorrection\nNormalization\nOptimization\nResidual identity\nEradication\nFinal closure\n\nThe album moves like an ideological machine, where every riff functions as a command and every silence feels deliberate.\n\nThis is Iron Covenant at its most clinical, dry, and uncompromising.\n\nTHE SOUND\n\nCompared to previous albums, Black Discipline introduces:\n\ndrier guitar tones\nrepetitive, system-like riff cycles\nmechanical drum precision\nreduced melodic release\nsevere dynamic control\noppressive low-mid punch\nminimal atmosphere\ngroove as enforcement\n\nThe result is a record that feels less like performance and more like procedural execution.\n\nTRACK ARC\n“Black Discipline” — rule imposed\n“System Drift” — silent deviation\n“Corrective Force” — violence as solution\n“Normalized State” — order restored\n“Efficient Patterns” — discipline becomes seductive\n“Residual Self” — human trace detected\n“Zero Tolerance” — absolute eradication\n“Closed Circuit” — system completion\nBonus: “After Function” — the trace that should not remain\n\nLEGACY\n\nOften cited by later groove-thrash, industrial metal, and extreme progressive acts, Black Discipline is widely regarded as one of Iron Covenant’s most radically coherent releases.\n\nNot their most emotional.\nNot their most accessible.\nBut arguably their most perfectly executed concept.\n\nThis is where the band replaced instinct with method.",
-          "tracklist": [
-            "Black Discipline",
-            "System Drift",
-            "Corrective Force",
-            "Normalized State",
-            "Efficient Patterns",
-            "Residual Self",
-            "Zero Tolerance",
-            "Closed Circuit",
-            "After Function (Bonus Track)"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "iron-covenant"
-          ],
-          "creditSource": "profile",
-          "isMirror": false
-        },
-        {
-          "id": "2211127622",
-          "title": "Cathedrals of Noise",
-          "url": "https://soundcloud.com/iron_covenant/sets/cathedrals-of-noise",
-          "date": "2026-03-24",
-          "artwork": "https://i1.sndcdn.com/artworks-Yo9yvE6wyUQorCWz-KLXyyA-t1080x1080.jpg",
-          "trackCount": 8,
-          "isAlbum": true,
-          "setType": "album",
-          "description": "“Structure became sound. Sound became control.”\n\nBy 1986, Iron Covenant had outgrown the limits of traditional thrash metal.\n\nWith Cathedrals of Noise, the band didn’t just evolve —\nthey redefined their own language.\n\nThis third album marks a decisive shift:\n\nFrom speed to structure\nFrom aggression to architecture\nFrom instinct to intention\n\nThe riffs no longer just drive the songs, they build them.\n\nA CONCEPT OF CONTROL\n\nCathedrals of Noise explores the idea of sound as a system :\n\nNoise as structure\nStructure as belief\nBelief as control\n\nEach track functions like a pillar within a larger design, forming an immersive and sometimes oppressive sonic environment.\n\nThis is not an album of singles. It is an experience.\n\nMUSICAL EVOLUTION\n\nCompared to previous releases, the album introduces :\n\n- More progressive structures\n- Slower, heavier sections contrasted with bursts of speed\n- Complex, evolving riff patterns\n- Greater dynamic range and tension\n- A more atmospheric and cinematic approach\n\nThe band pushes beyond thrash conventions without abandoning its core intensity.\n\nTRACK FLOW\n“Cathedrals of Noise” — Sets the architecture, controlled and imposing\n“Labyrinth Skin” — Twisting structures, shifting identity\n“Grave Momentum” — Heavy, inevitable motion\n“The Architecture of Faith” — Expansive, conceptual centerpiece\n“Clear Through Fire” — Clarity emerging from chaos\n“Break the Current” — Controlled release, forward momentum\n“After the Spire” — Atmospheric descent, almost cinematic\n“Rupture Doctrine” — Total collapse, explosive and final\n\n LEGACY\nInitially misunderstood by part of the thrash audience, Cathedrals of Noise would later be recognized as:\n\n- one of the earliest examples of progressive thrash metal with conceptual depth\n\n- a record that proved heavy music could be both intellectual and physically powerful\n\nThis is where Iron Covenant stoppconcept album\ned being part of a movement…and became something else entirely.",
-          "tracklist": [
-            "Cathedrals of Noise",
-            "Labyrinth Skin",
-            "Grave Momentum",
-            "The Architecture of Faith",
-            "Clear Through Fire",
-            "Break the Current",
-            "After the spire",
-            "Rupture Doctrine"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "iron-covenant"
-          ],
-          "creditSource": "profile+showcase",
-          "isMirror": false
-        },
-        {
-          "id": "2208616985",
-          "title": "Ashes & Wires",
-          "url": "https://soundcloud.com/iron_covenant/sets/ashes-wires",
-          "date": "2026-03-19",
-          "artwork": "https://i1.sndcdn.com/artworks-n961ttBSQfwfp1HP-q6N0jA-t1080x1080.jpg",
-          "trackCount": 8,
-          "isAlbum": true,
-          "setType": "album",
-          "description": "After the raw urgency of their 1981 debut, Iron Covenant returned in 1983 with a record that didn’t just push forward, it deepened everything.\n\nAshes & Wires captures a band no longer discovering its sound, but refining its intent.\n\nThe speed is still there.\nThe aggression remains uncompromised.\nBut beneath it lies something new : control, contrast, emotional weight.\n\nWhere Forged in Concrete was instinct, Ashes & Wires is awareness.",
-          "tracklist": [
-            "Ashes Wires",
-            "Line in the Fire",
-            "Silent Signals",
-            "Fading Lines",
-            "Backlash",
-            "Hold the Ground",
-            "Tightrope Logic",
-            "Still Standing"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "iron-covenant"
-          ],
-          "creditSource": "profile+showcase",
-          "isMirror": false
-        },
-        {
-          "id": "2207856089",
-          "title": "Forged in concrete",
-          "url": "https://soundcloud.com/iron_covenant/sets/forged-in-concrete",
-          "date": "2026-03-18",
-          "artwork": "https://i1.sndcdn.com/artworks-pEzzdSPYX1Z2PiZt-iTkYyg-t1080x1080.jpg",
-          "trackCount": 5,
-          "isAlbum": true,
-          "setType": "album",
-          "description": "Raw. Fast. Immediate.\n\nRecorded in just a few weeks with almost no production polish, Forged in Concrete captured a band operating on pure instinct and urgency.\n\nSharp riffs.\nHigh tempo.\nChanted choruses built for sweat-filled rooms.\n\nThe sound is rough around the edges, but the hooks refuse to let go.\n\n\nIt’s an album that smells like steel, sweat, cheap beer and electricity, the sound of a band discovering its own power in real time.",
-          "tracklist": [
-            "No Permission",
-            "Breakneck Ritual",
-            "Overload",
-            "Dead weight",
-            "Stand together"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "iron-covenant"
-          ],
-          "creditSource": "profile+showcase",
-          "isMirror": false
-        }
-      ]
-    },
     "nosfera-disco-club": {
       "slug": "nosfera-disco-club",
       "handle": "nosfera_disco_club",
@@ -3479,7 +2943,6 @@
       "profileUrl": "https://soundcloud.com/nosfera_disco_club",
       "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:1652866139/sounds.rss",
       "displayName": "Nosfera disco club",
-      "description": "Dark disco for the undead.\nWe dance after midnight, after morals, after pulse checks.\nNeon lights, velvet fangs, sticky floors.\nToo funky to be dead. Too dead to be innocent.\nCome dancing. Stay undead.",
       "avatar": "https://i1.sndcdn.com/avatars-t6uEdzwLyu9CBykB-YTxm6Q-t500x500.jpg",
       "alsoCredits": [
         "chromabone"
@@ -3628,7 +3091,7 @@
           "date": "2026-01-08",
           "durationSec": 187,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 2214
+          "plays": 2215
         },
         {
           "id": "2261397650",
@@ -3810,7 +3273,6 @@
       "profileUrl": "https://soundcloud.com/vein-mirror",
       "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:1656504467/sounds.rss",
       "displayName": "Vein//Mirror",
-      "description": "VEIN//MIRROR is a dark, sensual and cinematic ritual of sound.\nBorn at the intersection of analog warmth and poetic violence, the project explores the fragile space where desire turns toxic and beauty becomes dangerous.\n\nDriven by hypnotic rhythms, melancholic guitars, saturated Moog pulses, Mellotron choirs and deep, intimate vocals, VEIN//MIRROR creates immersive soundscapes that feel both ancient and futuristic. Each track unfolds like a fractured reflection — emotional, physical, and deeply immersive — where intimacy and brutality coexist.\n\nLove and Venom Taste the Same, the debut album, is a journey through sensual decay, ritualistic tension and sacred collapse. A collection of cinematic scenes where love is never innocent, salvation is forged through sacrifice, and every breath carries the taste of poison.\n\nVEIN//MIRROR is not a genre.\nIt is a ceremony, a wound, a mirror.\nMusic for those who seek the sacred in the forbidden — and the forbidden in the sacred.",
       "avatar": "https://i1.sndcdn.com/avatars-z3A1VnmJ5kBj6Pex-YVbdKQ-t500x500.jpg",
       "alsoCredits": [],
       "trackCount": 20,
@@ -3921,7 +3383,7 @@
           "date": "2026-03-18",
           "durationSec": 312,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1072
+          "plays": 1073
         },
         {
           "id": "2285999489",
@@ -3930,7 +3392,7 @@
           "date": "2026-03-18",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 745
+          "plays": 747
         },
         {
           "id": "2299826672",
@@ -3948,7 +3410,7 @@
           "date": "2026-03-18",
           "durationSec": 354,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1051
+          "plays": 1052
         },
         {
           "id": "2285999498",
@@ -3966,7 +3428,7 @@
           "date": "2026-03-18",
           "durationSec": 328,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1529
+          "plays": 1530
         },
         {
           "id": "2285999477",
@@ -3993,7 +3455,7 @@
           "date": "2026-03-18",
           "durationSec": 414,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1193
+          "plays": 1194
         },
         {
           "id": "2285999495",
@@ -4020,7 +3482,7 @@
           "date": "2026-03-18",
           "durationSec": 313,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 366
+          "plays": 367
         },
         {
           "id": "2299826684",
@@ -4181,7 +3643,6 @@
       "profileUrl": "https://soundcloud.com/lykke-657587232",
       "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:1662240176/sounds.rss",
       "displayName": "Lykke",
-      "description": "Scandinavian pop.\nLight, silence and memory.\nFormed in 1978.",
       "avatar": "https://i1.sndcdn.com/avatars-DAzOMMg9QsHJRl2T-arZnZQ-t500x500.jpg",
       "alsoCredits": [],
       "trackCount": 24,
@@ -4467,7 +3928,6 @@
       "profileUrl": "https://soundcloud.com/unmade_scores",
       "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:1662861584/sounds.rss",
       "displayName": "Unmade Scores",
-      "description": "Music for films that never existed.",
       "avatar": "https://i1.sndcdn.com/avatars-v4AvQ68SYviBKrLy-4Jgzlw-t500x500.jpg",
       "alsoCredits": [],
       "trackCount": 31,
@@ -4578,7 +4038,7 @@
           "date": "2026-02-15",
           "durationSec": 269,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 224
+          "plays": 225
         },
         {
           "id": "2266921844",
@@ -4596,7 +4056,7 @@
           "date": "2026-02-15",
           "durationSec": 245,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 277
+          "plays": 278
         },
         {
           "id": "2266921862",
@@ -4605,7 +4065,7 @@
           "date": "2026-02-15",
           "durationSec": 234,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 232
+          "plays": 233
         },
         {
           "id": "2266921856",

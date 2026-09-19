@@ -144,9 +144,9 @@
       "url": "/covers/the-error-gospel-1000.webp",
       "srcset": "/covers/the-error-gospel-700.webp 700w, /covers/the-error-gospel-1000.webp 1000w"
     },
-    "thehalocorruptionprotocol": {
-      "url": "/covers/the-halo-corruption-protocol-1000.webp",
-      "srcset": "/covers/the-halo-corruption-protocol-700.webp 700w, /covers/the-halo-corruption-protocol-1000.webp 1000w"
+    "thehalocorruptionprotocolremastered": {
+      "url": "/covers/the-halo-corruption-protocol-remastered-1000.webp",
+      "srcset": "/covers/the-halo-corruption-protocol-remastered-700.webp 700w, /covers/the-halo-corruption-protocol-remastered-1000.webp 1000w"
     },
     "thewoundsoftomorrow": {
       "url": "/covers/the-wounds-of-tomorrow-1000.webp",
@@ -163,30 +163,6 @@
     "chromesyndicatedreams": {
       "url": "/covers/chrome-syndicate-dreams-1000.webp",
       "srcset": "/covers/chrome-syndicate-dreams-700.webp 700w, /covers/chrome-syndicate-dreams-1000.webp 1000w"
-    },
-    "memoryflowers": {
-      "url": "/covers/memory-flowers-1000.webp",
-      "srcset": "/covers/memory-flowers-700.webp 700w, /covers/memory-flowers-1000.webp 1000w"
-    },
-    "forgedinconcrete": {
-      "url": "/covers/forged-in-concrete-1000.webp",
-      "srcset": "/covers/forged-in-concrete-700.webp 700w, /covers/forged-in-concrete-1000.webp 1000w"
-    },
-    "ashesandwires": {
-      "url": "/covers/ashes-wires-1000.webp",
-      "srcset": "/covers/ashes-wires-700.webp 700w, /covers/ashes-wires-1000.webp 1000w"
-    },
-    "cathedralsofnoise": {
-      "url": "/covers/cathedrals-of-noise-1000.webp",
-      "srcset": "/covers/cathedrals-of-noise-700.webp 700w, /covers/cathedrals-of-noise-1000.webp 1000w"
-    },
-    "blackdiscipline": {
-      "url": "/covers/black-discipline-1000.webp",
-      "srcset": "/covers/black-discipline-700.webp 700w, /covers/black-discipline-1000.webp 1000w"
-    },
-    "gildedrituals": {
-      "url": "/covers/gilded-rituals-1000.webp",
-      "srcset": "/covers/gilded-rituals-700.webp 700w, /covers/gilded-rituals-1000.webp 1000w"
     },
     "redveinsonthedancefloor": {
       "url": "/covers/red-veins-on-the-dancefloor-1000.webp",
@@ -207,10 +183,6 @@
     "thetouchera": {
       "url": "/covers/the-touch-era-1000.webp",
       "srcset": "/covers/the-touch-era-700.webp 700w, /covers/the-touch-era-1000.webp 1000w"
-    },
-    "thehousebeyondthewater": {
-      "url": "/covers/the-house-beyond-the-water-1500.webp",
-      "srcset": "/covers/the-house-beyond-the-water-700.webp 700w, /covers/the-house-beyond-the-water-1000.webp 1000w, /covers/the-house-beyond-the-water-1500.webp 1500w"
     },
     "loveandvenomtastethesame": {
       "url": "/covers/love-and-venom-taste-the-same-1000.webp",
@@ -246,12 +218,11 @@
     "broken-shaman": "/artists/broken-shaman.webp",
     "chromabone": "/artists/chromabone.webp",
     "grafenberg": "/artists/grafenberg.webp",
-    "hollow-static": "/artists/hollow-static.webp",
-    "iron-covenant": "/artists/iron-covenant.webp",
-    "love-cult": "/artists/love-cult.webp",
     "lykke": "/artists/lykke.webp",
     "nosfera-disco-club": "/artists/nosfera-disco-club.webp",
-    "nyla-vey": "/artists/nyla-vey.webp",
+    "nyla-corvey": "/artists/nyla-corvey.webp",
+    "residual-bloom": "/artists/residual-bloom.webp",
+    "somerval": "/artists/somerval.webp",
     "unmade-scores": "/artists/unmade-scores.webp",
     "vein-mirror": "/artists/vein-mirror.webp"
   },
@@ -316,48 +287,6 @@
         "srcset": "/carousel/grafenberg-mobile-640.webp 640w, /carousel/grafenberg-mobile-1080.webp 1080w"
       }
     },
-    "hollow-static": {
-      "wide": {
-        "url": "/carousel/hollow-static-3840.webp",
-        "width": 3840,
-        "height": 1608,
-        "srcset": "/carousel/hollow-static-768.webp 768w, /carousel/hollow-static-1280.webp 1280w, /carousel/hollow-static-1920.webp 1920w, /carousel/hollow-static-2560.webp 2560w, /carousel/hollow-static-3840.webp 3840w"
-      },
-      "mobile": {
-        "url": "/carousel/hollow-static-mobile-1080.webp",
-        "width": 1080,
-        "height": 1920,
-        "srcset": "/carousel/hollow-static-mobile-640.webp 640w, /carousel/hollow-static-mobile-1080.webp 1080w"
-      }
-    },
-    "iron-covenant": {
-      "wide": {
-        "url": "/carousel/iron-covenant-3840.webp",
-        "width": 3840,
-        "height": 1608,
-        "srcset": "/carousel/iron-covenant-768.webp 768w, /carousel/iron-covenant-1280.webp 1280w, /carousel/iron-covenant-1920.webp 1920w, /carousel/iron-covenant-2560.webp 2560w, /carousel/iron-covenant-3840.webp 3840w"
-      },
-      "mobile": {
-        "url": "/carousel/iron-covenant-mobile-941.webp",
-        "width": 941,
-        "height": 1672,
-        "srcset": "/carousel/iron-covenant-mobile-640.webp 640w, /carousel/iron-covenant-mobile-941.webp 941w"
-      }
-    },
-    "love-cult": {
-      "wide": {
-        "url": "/carousel/love-cult-3840.webp",
-        "width": 3840,
-        "height": 1608,
-        "srcset": "/carousel/love-cult-768.webp 768w, /carousel/love-cult-1280.webp 1280w, /carousel/love-cult-1920.webp 1920w, /carousel/love-cult-2560.webp 2560w, /carousel/love-cult-3840.webp 3840w"
-      },
-      "mobile": {
-        "url": "/carousel/love-cult-mobile-1080.webp",
-        "width": 1080,
-        "height": 1920,
-        "srcset": "/carousel/love-cult-mobile-640.webp 640w, /carousel/love-cult-mobile-1080.webp 1080w"
-      }
-    },
     "lykke": {
       "wide": {
         "url": "/carousel/lykke-3840.webp",
@@ -384,20 +313,6 @@
         "width": 941,
         "height": 1672,
         "srcset": "/carousel/nosfera-disco-club-mobile-640.webp 640w, /carousel/nosfera-disco-club-mobile-941.webp 941w"
-      }
-    },
-    "nyla-vey": {
-      "wide": {
-        "url": "/carousel/nyla-vey-3840.webp",
-        "width": 3840,
-        "height": 1608,
-        "srcset": "/carousel/nyla-vey-768.webp 768w, /carousel/nyla-vey-1280.webp 1280w, /carousel/nyla-vey-1920.webp 1920w, /carousel/nyla-vey-2560.webp 2560w, /carousel/nyla-vey-3840.webp 3840w"
-      },
-      "mobile": {
-        "url": "/carousel/nyla-vey-mobile-941.webp",
-        "width": 941,
-        "height": 1672,
-        "srcset": "/carousel/nyla-vey-mobile-640.webp 640w, /carousel/nyla-vey-mobile-941.webp 941w"
       }
     },
     "unmade-scores": {
