@@ -188,6 +188,10 @@
       "url": "/covers/the-house-beyond-the-water-1500.webp",
       "srcset": "/covers/the-house-beyond-the-water-700.webp 700w, /covers/the-house-beyond-the-water-1000.webp 1000w, /covers/the-house-beyond-the-water-1500.webp 1500w"
     },
+    "memoryflowers": {
+      "url": "/covers/memory-flowers-1500.webp",
+      "srcset": "/covers/memory-flowers-700.webp 700w, /covers/memory-flowers-1000.webp 1000w, /covers/memory-flowers-1500.webp 1500w"
+    },
     "gildedrituals": {
       "url": "/covers/gilded-rituals-1500.webp",
       "srcset": "/covers/gilded-rituals-700.webp 700w, /covers/gilded-rituals-1000.webp 1000w, /covers/gilded-rituals-1500.webp 1500w"
@@ -335,6 +339,20 @@
         "width": 941,
         "height": 1672,
         "srcset": "/carousel/nyla-corvey-mobile-640.webp 640w, /carousel/nyla-corvey-mobile-941.webp 941w"
+      }
+    },
+    "residual-bloom": {
+      "wide": {
+        "url": "/carousel/residual-bloom-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/residual-bloom-768.webp 768w, /carousel/residual-bloom-1280.webp 1280w, /carousel/residual-bloom-1920.webp 1920w, /carousel/residual-bloom-2560.webp 2560w, /carousel/residual-bloom-3840.webp 3840w"
+      },
+      "mobile": {
+        "url": "/carousel/residual-bloom-mobile-941.webp",
+        "width": 941,
+        "height": 1672,
+        "srcset": "/carousel/residual-bloom-mobile-640.webp 640w, /carousel/residual-bloom-mobile-941.webp 941w"
       }
     },
     "somerval": {
