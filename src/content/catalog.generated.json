@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T20:34:27.580Z",
+  "generatedAt": "2026-09-19T21:10:19.946Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 675,
@@ -112,7 +112,7 @@
           "url": "https://soundcloud.com/grafenbergmusik/your-name-beneath-the-waves-7",
           "date": "2026-09-02",
           "durationSec": 301,
-          "artwork": "https://i1.sndcdn.com/artworks-sZ32MCVsg7BRuYhO-9LAGsA-t500x500.jpg"
+          "artwork": "https://i1.sndcdn.com/artworks-st4wyqXqSNlAIaIv-k3SIwQ-t500x500.jpg"
         }
       ],
       "topTracks": [
@@ -266,7 +266,7 @@
           "url": "https://soundcloud.com/grafenbergmusik/she-refuses-feat-nehir-sedef-9",
           "date": "2026-08-28",
           "durationSec": 227,
-          "artwork": "https://i1.sndcdn.com/artworks-0SQWuAPTqxHNWbQt-s4kqSA-t1080x1080.jpg",
+          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
           "plays": 322
         },
         {
@@ -284,7 +284,7 @@
           "url": "https://soundcloud.com/grafenbergmusik/the-city-watches-her-leave-feat-nehir-sedef-2",
           "date": "2026-08-28",
           "durationSec": 226,
-          "artwork": "https://i1.sndcdn.com/artworks-0SQWuAPTqxHNWbQt-s4kqSA-t1080x1080.jpg",
+          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
           "plays": 309
         },
         {
@@ -302,7 +302,7 @@
           "url": "https://soundcloud.com/grafenbergmusik/she-walks-through-neon-silence-feat-nyla-vey-1",
           "date": "2026-08-28",
           "durationSec": 284,
-          "artwork": "https://i1.sndcdn.com/artworks-0SQWuAPTqxHNWbQt-s4kqSA-t1080x1080.jpg",
+          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
           "plays": 295
         },
         {
@@ -311,7 +311,7 @@
           "url": "https://soundcloud.com/grafenbergmusik/the-system-learns-to-feel-feat-nehir-sedef-4",
           "date": "2026-08-28",
           "durationSec": 204,
-          "artwork": "https://i1.sndcdn.com/artworks-0SQWuAPTqxHNWbQt-s4kqSA-t1080x1080.jpg",
+          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
           "plays": 295
         },
         {
@@ -614,7 +614,7 @@
           "title": "Gilded Rituals",
           "url": "https://soundcloud.com/grafenbergmusik/sets/gilded-ritual",
           "date": "2026-07-30",
-          "artwork": "https://i1.sndcdn.com/artworks-tlk9G9PmGAu42lt9-kUaZUA-t1080x1080.jpg",
+          "artwork": "https://i1.sndcdn.com/artworks-M6eCVwRZJv9akiFu-oPXpjA-t1080x1080.jpg",
           "trackCount": 10,
           "isAlbum": true,
           "setType": "album",
@@ -1756,7 +1756,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 462
+          "plays": 463
         },
         {
           "id": "2343857474",
@@ -1909,7 +1909,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3697
+          "plays": 3698
         },
         {
           "id": "2274189833",
