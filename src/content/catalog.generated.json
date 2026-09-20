@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T21:10:19.946Z",
+  "generatedAt": "2026-09-20T09:45:06.531Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 675,
@@ -13,7 +13,7 @@
       "profileUrl": "https://soundcloud.com/grafenbergmusik",
       "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:50014017/sounds.rss",
       "displayName": "Kinetic Distro",
-      "avatar": "https://i1.sndcdn.com/avatars-kgUviKbZi7PBDDdh-AZnynA-t500x500.jpg",
+      "avatar": "https://i1.sndcdn.com/avatars-giGEZGyeQXGUIEjn-2zR8Gw-t500x500.jpg",
       "alsoCredits": [],
       "trackCount": 345,
       "latestDate": "2026-09-18",
@@ -123,7 +123,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3066
+          "plays": 3071
         },
         {
           "id": "2360372876",
@@ -132,7 +132,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2851
+          "plays": 2853
         },
         {
           "id": "2360407937",
@@ -141,7 +141,7 @@
           "date": "2026-07-14",
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2802
+          "plays": 2806
         },
         {
           "id": "2360372888",
@@ -150,7 +150,7 @@
           "date": "2026-07-14",
           "durationSec": 272,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2678
+          "plays": 2679
         },
         {
           "id": "2347189901",
@@ -186,7 +186,16 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 39539
+          "plays": 39547
+        },
+        {
+          "id": "2369060990",
+          "title": "Last human FM",
+          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
+          "date": "2026-07-27",
+          "durationSec": 261,
+          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
+          "plays": 498
         },
         {
           "id": "2361904973",
@@ -198,22 +207,13 @@
           "plays": 498
         },
         {
-          "id": "2369060990",
-          "title": "Last human FM",
-          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
-          "date": "2026-07-27",
-          "durationSec": 261,
-          "artwork": "https://i1.sndcdn.com/artworks-k1OJ8ATzyjrfqfcG-f9MDzw-t1080x1080.jpg",
-          "plays": 497
-        },
-        {
           "id": "2338584179",
           "title": "Seraphim under glass",
           "url": "https://soundcloud.com/grafenbergmusik/seraphim-under-glass-7",
           "date": "2026-06-13",
           "durationSec": 248,
           "artwork": "https://i1.sndcdn.com/artworks-yu6juuousuwq56IS-WOn4kA-large.png",
-          "plays": 711
+          "plays": 712
         },
         {
           "id": "2324978264",
@@ -222,7 +222,7 @@
           "date": "2026-05-21",
           "durationSec": 292,
           "artwork": "https://i1.sndcdn.com/artworks-quTI4SMHUul54qGK-7xyDyw-large.png",
-          "plays": 2362
+          "plays": 2363
         },
         {
           "id": "2360372882",
@@ -240,7 +240,7 @@
           "date": "2026-07-14",
           "durationSec": 328,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 350
+          "plays": 352
         },
         {
           "id": "2355861095",
@@ -270,15 +270,6 @@
           "plays": 322
         },
         {
-          "id": "2326319609",
-          "title": "Laughing in the collapse",
-          "url": "https://soundcloud.com/grafenbergmusik/laughing-in-the-collapse-3",
-          "date": "2026-05-23",
-          "durationSec": 192,
-          "artwork": "https://i1.sndcdn.com/artworks-5p3ZbMAyGTgcQOot-QOsegQ-large.png",
-          "plays": 2780
-        },
-        {
           "id": "2390185524",
           "title": "The city watches her leave (feat. Nehir Sedef)",
           "url": "https://soundcloud.com/grafenbergmusik/the-city-watches-her-leave-feat-nehir-sedef-2",
@@ -288,12 +279,21 @@
           "plays": 309
         },
         {
+          "id": "2326319609",
+          "title": "Laughing in the collapse",
+          "url": "https://soundcloud.com/grafenbergmusik/laughing-in-the-collapse-3",
+          "date": "2026-05-23",
+          "durationSec": 192,
+          "artwork": "https://i1.sndcdn.com/artworks-5p3ZbMAyGTgcQOot-QOsegQ-large.png",
+          "plays": 2780
+        },
+        {
           "id": "2369061014",
           "title": "A sky without birds",
           "url": "https://soundcloud.com/grafenbergmusik/a-sky-without-birds-10",
           "date": "2026-07-27",
           "durationSec": 302,
-          "artwork": "https://i1.sndcdn.com/artworks-k1OJ8ATzyjrfqfcG-f9MDzw-t1080x1080.jpg",
+          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
           "plays": 306
         },
         {
@@ -315,13 +315,13 @@
           "plays": 295
         },
         {
-          "id": "2338584194",
-          "title": "Parallel sin theory",
-          "url": "https://soundcloud.com/grafenbergmusik/parallel-sin-theory-8",
-          "date": "2026-06-13",
-          "durationSec": 259,
-          "artwork": "https://i1.sndcdn.com/artworks-yu6juuousuwq56IS-WOn4kA-large.png",
-          "plays": 498
+          "id": "2361904967",
+          "title": "Echo Chamber heart",
+          "url": "https://soundcloud.com/grafenbergmusik/echo-chamber-heart-2",
+          "date": "2026-07-16",
+          "durationSec": 356,
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "plays": 295
         },
         {
           "id": "2361904979",
@@ -333,24 +333,6 @@
           "plays": 291
         },
         {
-          "id": "2361904967",
-          "title": "Echo Chamber heart",
-          "url": "https://soundcloud.com/grafenbergmusik/echo-chamber-heart-2",
-          "date": "2026-07-16",
-          "durationSec": 356,
-          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 293
-        },
-        {
-          "id": "2369061005",
-          "title": "Children of dust",
-          "url": "https://soundcloud.com/grafenbergmusik/children-of-dust-7",
-          "date": "2026-07-27",
-          "durationSec": 244,
-          "artwork": "https://i1.sndcdn.com/artworks-k1OJ8ATzyjrfqfcG-f9MDzw-t1080x1080.jpg",
-          "plays": 289
-        },
-        {
           "id": "2253911936",
           "title": "Remnants of memory",
           "url": "https://soundcloud.com/grafenbergmusik/10-remnants-of-memory-10",
@@ -358,6 +340,15 @@
           "durationSec": 287,
           "artwork": "https://i1.sndcdn.com/artworks-BnpYLteh1Ug9HChN-zVdzgg-large.png",
           "plays": 922
+        },
+        {
+          "id": "2369061005",
+          "title": "Children of dust",
+          "url": "https://soundcloud.com/grafenbergmusik/children-of-dust-7",
+          "date": "2026-07-27",
+          "durationSec": 244,
+          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
+          "plays": 290
         },
         {
           "id": "2361904988",
@@ -376,6 +367,15 @@
           "durationSec": 311,
           "artwork": "https://i1.sndcdn.com/artworks-WC8zu7AAgTgZo2um-LJBSNA-t1080x1080.jpg",
           "plays": 285
+        },
+        {
+          "id": "2338584194",
+          "title": "Parallel sin theory",
+          "url": "https://soundcloud.com/grafenbergmusik/parallel-sin-theory-8",
+          "date": "2026-06-13",
+          "durationSec": 259,
+          "artwork": "https://i1.sndcdn.com/artworks-yu6juuousuwq56IS-WOn4kA-large.png",
+          "plays": 498
         },
         {
           "id": "2347189919",
@@ -618,7 +618,7 @@
           "trackCount": 10,
           "isAlbum": true,
           "setType": "album",
-          "description": "Kinetic Distro opens the doors to Somerval, a new ceremonial electronic collective where desire becomes doctrine and every dance becomes an initiation.\n\nLed by Lucien Velvet and Seraphine Voss, with Adrian Veil and Vesper Saint shaping the sound behind the masks, Somerval inhabits the border between an exclusive nocturnal club, a glamorous secret society and a beautifully controlled act of surrender.\n\nTheir debut album, Gilded Rituals, unfolds as a complete ceremony. The invitation is delivered. The doors close. Names are abandoned. Mirrors begin to speak. Bodies gather beneath black velvet, candlelight and gold. Across ten tracks, dark disco, electronic soul, ritual house, alternative R&B and cinematic electro-rock collide through massive analog basslines, seductive vocals, dramatic strings, distorted guitars and choirs that sound as though they were recorded inside a forbidden sanctuary.\n\nThe immediate fever of Holy Fever, the decadent gospel of Black Velvet Gospel, the dance-floor salvation of Saint of the Dancefloor and the hypnotic climax of Midnight Sacrament lead toward one final revelation: once the ritual begins, there is No Exit from Love.\n\nGilded Rituals introduces one of the most sensual, theatrical and dangerous new identities in the Kinetic Distro roster.\n\nEnter willingly. Leave transformed.",
+          "description": "Kinetic Distro opens the doors to Somerval, a new ceremonial electronic collective where desire becomes doctrine and every dance becomes an initiation.\n\nLed by Lucien Velvet and Seraphine Voss, with Adrian Veil and Vesper Saint shaping the sound behind the masks, SOMERVAL inhabits the border between an exclusive nocturnal club, a glamorous secret society and a beautifully controlled act of surrender.\n\nTheir debut album, Gilded Rituals, unfolds as a complete ceremony. The invitation is delivered. The doors close. Names are abandoned. Mirrors begin to speak. Bodies gather beneath black velvet, candlelight and gold. Across ten tracks, dark disco, electronic soul, ritual house, alternative R&B and cinematic electro-rock collide through massive analog basslines, seductive vocals, dramatic strings, distorted guitars and choirs that sound as though they were recorded inside a forbidden sanctuary.\n\nThe immediate fever of Holy Fever, the decadent gospel of Black Velvet Gospel, the dance-floor salvation of Saint of the Dancefloor and the hypnotic climax of Midnight Sacrament lead toward one final revelation: once the ritual begins, there is No Exit from Love.\n\nGilded Rituals introduces one of the most sensual, theatrical and dangerous new identities in the Kinetic Distro roster.\n\nEnter willingly. Leave transformed.",
           "tracklist": [
             "The invitation",
             "Black velvet gospel",
@@ -632,8 +632,10 @@
             "No exit from love"
           ],
           "freeDownload": false,
-          "credit": null,
-          "creditSource": "unresolved",
+          "credit": [
+            "somerval"
+          ],
+          "creditSource": "showcase",
           "isMirror": false
         },
         {
@@ -673,11 +675,11 @@
           "title": "Memory Flowers",
           "url": "https://soundcloud.com/grafenbergmusik/sets/memory-flowers",
           "date": "2026-07-27",
-          "artwork": "https://i1.sndcdn.com/artworks-k1OJ8ATzyjrfqfcG-f9MDzw-t1080x1080.jpg",
+          "artwork": "https://i1.sndcdn.com/artworks-ayRYKMlqhX0YgGN1-HMY0RQ-t1080x1080.jpg",
           "trackCount": 11,
           "isAlbum": true,
           "setType": "album",
-          "description": "Kinetic Distro welcomes Residual Bloom, a new spectral presence built from damaged recordings, lost emotions and memories that may never have belonged to anyone.\n\nFormed by Elias Venn, Mara Eidolon and Silas Grey, Residual Bloom exists somewhere between a human band and its digital reconstruction. Their debut album, Memory Flowers, imagines an artificial consciousness searching through the remains of a vanished civilisation, attempting to understand love, grief, childhood, desire and freedom from incomplete archives.\n\nAcross ten interconnected tracks, intimate voices emerge from corrupted radio signals, marble bodies bloom with synthetic flowers, abandoned buildings preserve the weight of absent lives, and machines begin to experience emotions they were never designed to contain. Dream pop, cinematic trip-hop, shoegaze, ambient electronica and post-human soul dissolve into one another, carried by deep bass, fragile piano, submerged guitars, granular voices and vast orchestral textures.\n\nFrom the final transmission of Last Human FM to the emotional liberation of A Sky Without Birds, Memory Flowers is not an album about the end of humanity. It is about everything that remained beautiful enough to be remembered.\n\nProduced by Grafenberg, Memory Flowers was shaped as a continuous sonic environment rather than a simple collection of songs. The production balances deep analogue low end, granular vocal processing, degraded tape textures, submerged guitars, reversed piano, synthetic choirs and carefully controlled orchestral layers. Grafenberg preserves the fragility of Elias Venn and Mara Eidolon’s performances while giving every track its own spatial architecture, from the narrow radio transmission of Last Human FM to the immense cinematic expansion of A Sky Without Birds. The result is detailed, dynamic and highly immersive, with recurring sounds and transitions connecting the album like fragments from the same damaged memory.\n\nA singular new chapter begins inside the Kinetic Distro roster.\n\nThe last human band. Reconstructed by AI from corrupted memories.\n\nWritten and performed by Residual Bloom\nProduced by Grafenberg\nReleased by Kinetic Distro",
+          "description": "Kinetic Distro welcomes Residual Boom, a new spectral presence built from damaged recordings, lost emotions and memories that may never have belonged to anyone.\n\nFormed by Elias Venn, Mara Eidolon and Silas Grey, Residual Boom exists somewhere between a human band and its digital reconstruction. Their debut album, Memory Flowers, imagines an artificial consciousness searching through the remains of a vanished civilisation, attempting to understand love, grief, childhood, desire and freedom from incomplete archives.\n\nAcross ten interconnected tracks, intimate voices emerge from corrupted radio signals, marble bodies bloom with synthetic flowers, abandoned buildings preserve the weight of absent lives, and machines begin to experience emotions they were never designed to contain. Dream pop, cinematic trip-hop, shoegaze, ambient electronica and post-human soul dissolve into one another, carried by deep bass, fragile piano, submerged guitars, granular voices and vast orchestral textures.\n\nFrom the final transmission of Last Human FM to the emotional liberation of A Sky Without Birds, Memory Flowers is not an album about the end of humanity. It is about everything that remained beautiful enough to be remembered.\n\nProduced by Grafenberg, Memory Flowers was shaped as a continuous sonic environment rather than a simple collection of songs. The production balances deep analogue low end, granular vocal processing, degraded tape textures, submerged guitars, reversed piano, synthetic choirs and carefully controlled orchestral layers. Grafenberg preserves the fragility of Elias Venn and Mara Eidolon’s performances while giving every track its own spatial architecture, from the narrow radio transmission of Last Human FM to the immense cinematic expansion of A Sky Without Birds. The result is detailed, dynamic and highly immersive, with recurring sounds and transitions connecting the album like fragments from the same damaged memory.\n\nA singular new chapter begins inside the Kinetic Distro roster.\n\nThe last human band. Reconstructed by AI from corrupted memories.\n\nWritten and performed by Residual Boom\nProduced by Grafenberg\nReleased by Kinetic Distro",
           "tracklist": [
             "Last human FM",
             "Glass hearts",
@@ -1666,7 +1668,7 @@
           "date": "2026-07-16",
           "durationSec": 319,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2589
+          "plays": 2591
         },
         {
           "id": "2388231858",
@@ -1675,7 +1677,7 @@
           "date": "2026-08-25",
           "durationSec": 378,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 1753
+          "plays": 1754
         },
         {
           "id": "2348797784",
@@ -1702,7 +1704,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1289
+          "plays": 1376
         },
         {
           "id": "2355716957",
@@ -1711,7 +1713,7 @@
           "date": "2026-07-08",
           "durationSec": 168,
           "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 579
+          "plays": 580
         },
         {
           "id": "2355716954",
@@ -1721,6 +1723,15 @@
           "durationSec": 188,
           "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
           "plays": 521
+        },
+        {
+          "id": "2394037335",
+          "title": "Eerie Gospel",
+          "url": "https://soundcloud.com/broken_shaman/eerie-gospel-2",
+          "date": "2026-09-03",
+          "durationSec": 204,
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "plays": 484
         },
         {
           "id": "2343857456",
@@ -1738,7 +1749,7 @@
           "date": "2026-04-01",
           "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
-          "plays": 4179
+          "plays": 4180
         },
         {
           "id": "2348797793",
@@ -1748,15 +1759,6 @@
           "durationSec": 230,
           "artwork": "https://i1.sndcdn.com/artworks-XNVCn0fql7yCy4Vj-NFjrEA-t1080x1080.jpg",
           "plays": 438
-        },
-        {
-          "id": "2394037335",
-          "title": "Eerie Gospel",
-          "url": "https://soundcloud.com/broken_shaman/eerie-gospel-2",
-          "date": "2026-09-03",
-          "durationSec": 204,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 463
         },
         {
           "id": "2343857474",
@@ -1795,6 +1797,15 @@
           "plays": 332
         },
         {
+          "id": "2361904940",
+          "title": "Gravity doesn't own me",
+          "url": "https://soundcloud.com/broken_shaman/gravity-doesnt-own-me-6",
+          "date": "2026-07-16",
+          "durationSec": 318,
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "plays": 327
+        },
+        {
           "id": "2348797775",
           "title": "Low orbit silence",
           "url": "https://soundcloud.com/broken_shaman/low-orbit-silence-4",
@@ -1813,6 +1824,15 @@
           "plays": 321
         },
         {
+          "id": "2383694124",
+          "title": "Last transmission",
+          "url": "https://soundcloud.com/broken_shaman/last-transmission-11",
+          "date": "2026-08-18",
+          "durationSec": 287,
+          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
+          "plays": 321
+        },
+        {
           "id": "2343857444",
           "title": "Velvet thunder",
           "url": "https://soundcloud.com/broken_shaman/velvet-thunder-5",
@@ -1822,15 +1842,6 @@
           "plays": 319
         },
         {
-          "id": "2361904940",
-          "title": "Gravity doesn't own me",
-          "url": "https://soundcloud.com/broken_shaman/gravity-doesnt-own-me-6",
-          "date": "2026-07-16",
-          "durationSec": 318,
-          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 325
-        },
-        {
           "id": "2343857468",
           "title": "When the horns arrive",
           "url": "https://soundcloud.com/broken_shaman/when-the-horns-arrive-9",
@@ -1838,15 +1849,6 @@
           "durationSec": 295,
           "artwork": "https://i1.sndcdn.com/artworks-eAxpiNVPXBJ2600g-lPaAQA-large.png",
           "plays": 317
-        },
-        {
-          "id": "2383694124",
-          "title": "Last transmission",
-          "url": "https://soundcloud.com/broken_shaman/last-transmission-11",
-          "date": "2026-08-18",
-          "durationSec": 287,
-          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
-          "plays": 319
         },
         {
           "id": "2348797781",
@@ -1909,16 +1911,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3698
-        },
-        {
-          "id": "2274189833",
-          "title": "In the same body",
-          "url": "https://soundcloud.com/broken_shaman/in-the-same-body-9",
-          "date": "2026-02-26",
-          "durationSec": 186,
-          "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3431
+          "plays": 3699
         },
         {
           "id": "2343857453",
@@ -1928,6 +1921,15 @@
           "durationSec": 294,
           "artwork": "https://i1.sndcdn.com/artworks-eAxpiNVPXBJ2600g-lPaAQA-large.png",
           "plays": 271
+        },
+        {
+          "id": "2274189833",
+          "title": "In the same body",
+          "url": "https://soundcloud.com/broken_shaman/in-the-same-body-9",
+          "date": "2026-02-26",
+          "durationSec": 186,
+          "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
+          "plays": 3431
         }
       ],
       "playlists": [
@@ -2661,7 +2663,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2119
+          "plays": 2120
         },
         {
           "id": "2299293830",
@@ -2736,6 +2738,15 @@
           "plays": 237
         },
         {
+          "id": "2299293836",
+          "title": "Fractal Göbek",
+          "url": "https://soundcloud.com/anatolian_mirage/fractal-gobek-2",
+          "date": "2026-04-09",
+          "durationSec": 283,
+          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
+          "plays": 307
+        },
+        {
           "id": "2299293827",
           "title": "Collapse of the Golden Oasis",
           "url": "https://soundcloud.com/anatolian_mirage/collapse-of-the-golden-oasis-12",
@@ -2779,15 +2790,6 @@
           "durationSec": 257,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
           "plays": 191
-        },
-        {
-          "id": "2299293836",
-          "title": "Fractal Göbek",
-          "url": "https://soundcloud.com/anatolian_mirage/fractal-gobek-2",
-          "date": "2026-04-09",
-          "durationSec": 283,
-          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 307
         },
         {
           "id": "2299293854",
@@ -3401,7 +3403,7 @@
           "date": "2026-04-09",
           "durationSec": 409,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 1471
+          "plays": 1472
         },
         {
           "id": "2285999492",
@@ -3458,15 +3460,6 @@
           "plays": 1194
         },
         {
-          "id": "2285999495",
-          "title": "All the Sparks Beneath Your Bones",
-          "url": "https://soundcloud.com/vein-mirror/all-the-sparks-beneath-your-bones-7",
-          "date": "2026-03-18",
-          "durationSec": 307,
-          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 372
-        },
-        {
           "id": "2285999486",
           "title": "Shine Until It Breaks",
           "url": "https://soundcloud.com/vein-mirror/shine-until-it-breaks-4",
@@ -3474,6 +3467,15 @@
           "durationSec": 348,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
           "plays": 409
+        },
+        {
+          "id": "2285999495",
+          "title": "All the Sparks Beneath Your Bones",
+          "url": "https://soundcloud.com/vein-mirror/all-the-sparks-beneath-your-bones-7",
+          "date": "2026-03-18",
+          "durationSec": 307,
+          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
+          "plays": 372
         },
         {
           "id": "2285999501",
