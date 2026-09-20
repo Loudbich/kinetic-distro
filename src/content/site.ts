@@ -831,6 +831,8 @@ export const bandcamp: Record<string, string> = {
 };
 
 export const vinyl: Record<string, string> = {
+  'chrome-syndicate-dreams':
+    'https://elasticstage.com/soundcloud/releases/grafenberg-x-broken-shaman-chrome-syndicate-dreams-album',
   'no-saints-no-proof': 'https://elasticstage.com/soundcloud/releases/grafenberg-no-saints-no-proof-album',
   'the-error-gospel': 'https://elasticstage.com/soundcloud/releases/grafenberg-the-error-gospel-album',
   'love-and-venom-taste-the-same':
