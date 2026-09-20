@@ -29,7 +29,7 @@ export const site = {
     bandcamp: 'https://kineticdistro.bandcamp.com',
     soundcloud: 'https://soundcloud.com/grafenbergmusik',
     instagram: '#',
-    youtube: '#',
+    youtube: 'https://www.youtube.com/@KineticDistro',
     spotify: '#',
   },
 } as const;
@@ -852,6 +852,9 @@ export const vinyl: Record<string, string> = {
  * store.
  */
 export const streaming: Record<string, { label: string; href: string }[]> = {
+  'the-house-beyond-the-water': [
+    { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLSdJslgAOEng' },
+  ],
   'circuits-in-silence': [
     { label: 'Spotify', href: 'https://open.spotify.com/track/0ZVVYNqcHSIww4DSEMMUxi' },
     {

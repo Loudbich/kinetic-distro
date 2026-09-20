@@ -142,6 +142,9 @@ function Header() {
             <a className="label hover:!text-paper" href={site.links.soundcloud} target="_blank" rel="noreferrer">
               SoundCloud
             </a>
+            <a className="label hover:!text-paper" href={site.links.youtube} target="_blank" rel="noreferrer">
+              YouTube
+            </a>
             <a className="label hover:!text-paper" href={`mailto:${site.email}`}>
               {site.email}
             </a>
@@ -208,6 +211,16 @@ function Footer() {
                 className="link-underline text-sm text-chrome hover:text-paper"
               >
                 SoundCloud ↗
+              </a>
+            </li>
+            <li>
+              <a
+                href={site.links.youtube}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="link-underline text-sm text-chrome hover:text-paper"
+              >
+                YouTube ↗
               </a>
             </li>
             <li>

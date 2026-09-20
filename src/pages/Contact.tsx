@@ -68,6 +68,7 @@ export default function Contact() {
               {[
                 { l: 'Bandcamp', h: site.links.bandcamp, d: 'Full catalogue · direct support' },
                 { l: 'SoundCloud', h: site.links.soundcloud, d: 'Streams · remixes · works in progress' },
+                { l: 'YouTube', h: site.links.youtube, d: 'Records in full · one playlist each' },
               ].map((x, i) => (
                 <Reveal key={x.l} delay={i * 70}>
                   <a

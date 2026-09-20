@@ -123,6 +123,7 @@ export default function About() {
               {[
                 { l: 'Bandcamp', h: site.links.bandcamp, d: 'Full catalogue, direct support' },
                 { l: 'SoundCloud', h: site.links.soundcloud, d: 'Streams, remixes, works in progress' },
+                { l: 'YouTube', h: site.links.youtube, d: 'Records in full, one playlist each' },
               ].map((x) => (
                 <li key={x.l} className="bg-ink-800">
                   <a
