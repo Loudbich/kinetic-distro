@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-20T15:06:51.173Z",
+  "generatedAt": "2026-09-20T15:21:19.219Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
-  "trackCount": 675,
+  "trackCount": 676,
   "playlistCount": 74,
   "failures": [],
   "artists": {
@@ -15,9 +15,17 @@
       "displayName": "Kinetic Distro",
       "avatar": "https://i1.sndcdn.com/avatars-giGEZGyeQXGUIEjn-2zR8Gw-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 345,
-      "latestDate": "2026-09-18",
+      "trackCount": 346,
+      "latestDate": "2026-09-20",
       "tracks": [
+        {
+          "id": "2404109157",
+          "title": "Nyla Corvey - Where The Light Used To Live (Chromabone Remix)",
+          "url": "https://soundcloud.com/grafenbergmusik/nyla-corvey-where-the-light",
+          "date": "2026-09-20",
+          "durationSec": 273,
+          "artwork": "https://i1.sndcdn.com/artworks-71b4KDAWnIcWd7pr-JusIAA-t500x500.jpg"
+        },
         {
           "id": "2402962812",
           "title": "I didnt lose the world, I outgrew its timing",
@@ -105,14 +113,6 @@
           "date": "2026-09-18",
           "durationSec": 328,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
-        },
-        {
-          "id": "2393008869",
-          "title": "Your name beneath the waves",
-          "url": "https://soundcloud.com/grafenbergmusik/your-name-beneath-the-waves-7",
-          "date": "2026-09-02",
-          "durationSec": 301,
-          "artwork": "https://i1.sndcdn.com/artworks-st4wyqXqSNlAIaIv-k3SIwQ-t500x500.jpg"
         }
       ],
       "topTracks": [
@@ -339,7 +339,7 @@
           "date": "2026-01-25",
           "durationSec": 287,
           "artwork": "https://i1.sndcdn.com/artworks-BnpYLteh1Ug9HChN-zVdzgg-large.png",
-          "plays": 923
+          "plays": 924
         },
         {
           "id": "2369061005",
@@ -644,7 +644,7 @@
           "url": "https://soundcloud.com/grafenbergmusik/sets/chromabone-black-chrome",
           "date": "2026-07-27",
           "artwork": "https://i1.sndcdn.com/artworks-BO3JZQ1zaJNSGQtb-E8tjow-t1080x1080.jpg",
-          "trackCount": 13,
+          "trackCount": 14,
           "isAlbum": false,
           "setType": "playlist",
           "description": "All remixes produced by Chromabone for Kinetic Distro\n\nKinetic Distro gathers its most dangerous transformations into one dedicated playlist, entirely shaped by the incomparable, indestructible and increasingly revered Chromabone.\n\nWhenever a new album enters the Kinetic universe, Chromabone selects one track, dismantles it, studies its pulse, rewires its nervous system and sends it back into the world with a new body.\n\nThese are not simple remixes.\n\nThey are reanimations.\n\nAcross this playlist, Chromabone crosses the full Kinetic Distro roster and adapts his production to each artist without erasing their identity. The frozen emotion of Broken Shaman, the cosmic decadence of Grafenberg, the dying skies of Vein//Mirror, the nocturnal rituals of Nosfera Disco Club, the reconstructed memories of Residual Bloom and every future addition to the label are absorbed into his black chrome machinery.\n\nPiano becomes impact.\nGrief becomes movement.\nDisco becomes ritual.\nMemory becomes voltage.\nThe dead learn to dance, and sometimes, they even learn to fly.\n\nFrom cinematic electronic reworks and dark French-touch mutations to Berlin peak-time pressure, gothic club music, hypnotic techno and corrupted disco, Chromabone approaches every remix as a new transmission. He preserves the emotional core of the original while introducing deeper bass, synthetic tension, metallic textures and the unmistakable darkness of his production.\n\nOne label.\nMany worlds.\nOne machine capable of reconnecting them all.\n\nAll remixes produced by Chromabone.\nAll original tracks released through Kinetic Distro.\n\nNo saints. No proof. Only remixes.",
@@ -661,7 +661,8 @@
             "Love'em All (Chromabone's Catacomb Remix)",
             "Grafenberg x Broken Shaman - Last Transmission [Chromabone's hacked signal remix feat. Nyla Corvey]",
             "Anatolian Mirage - Golden road echoes [Chromabone's neon dervish remix]",
-            "The city watches her leave (Chromabone Neon Exit Remix)"
+            "The city watches her leave (Chromabone Neon Exit Remix)",
+            "Nyla Corvey - Where The Light Used To Live (Chromabone Remix)"
           ],
           "freeDownload": false,
           "credit": [
@@ -1704,7 +1705,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1406
+          "plays": 1408
         },
         {
           "id": "2355716957",
@@ -1731,7 +1732,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 505
+          "plays": 506
         },
         {
           "id": "2343857456",
