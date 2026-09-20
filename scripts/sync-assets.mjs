@@ -180,6 +180,34 @@ function knownTitles() {
 }
 
 /**
+ * Track titles from every record's tracklist, keyed the same way.
+ *
+ * The label draws artwork per remix — `Nyla Corvey - Where the light used to
+ * live (Chromabone remix)` is a track on a remix album, not a record of its
+ * own — and those files had nowhere to go. A title already claimed by a record
+ * is skipped so a record's own sleeve always wins, and a title carried by two
+ * different records is dropped rather than guessed at.
+ */
+function knownTracks(releaseTitles) {
+  const generatedPath = resolve(root, 'src/content/catalog.generated.json');
+  if (!existsSync(generatedPath)) return new Map();
+
+  const byKey = new Map();
+  const data = JSON.parse(readFileSync(generatedPath, 'utf8'));
+  for (const artist of Object.values(data.artists ?? {})) {
+    for (const p of artist.playlists ?? []) {
+      if (p.isMirror) continue;
+      for (const t of p.tracklist ?? []) {
+        const k = norm(t);
+        if (!k || releaseTitles.has(k)) continue;
+        byKey.set(k, byKey.has(k) && byKey.get(k) !== t ? null : t);
+      }
+    }
+  }
+  return byKey;
+}
+
+/**
  * Loose key -> the records that share it, used only when an exact match fails.
  *
  * A key claimed by more than one record is dropped rather than guessed at:
@@ -201,11 +229,13 @@ function looseIndex(titles) {
 async function syncCovers(titles) {
   const outDir = join(PUBLIC, 'covers');
   const manifest = {};
+  const trackManifest = {};
   const unmatched = [];
   let copied = 0;
   let bytes = 0;
 
   const loose = looseIndex(titles);
+  const tracks = knownTracks(titles);
 
   for (const file of walkImages(join(SRC, 'covers'))) {
     const candidates = titleCandidates(file.name);
@@ -219,14 +249,27 @@ async function syncCovers(titles) {
       keys.map((k) => titles.get(k)).find(Boolean) ??
       keys.map((k) => loose.get(k)).find(Boolean);
 
-    if (!title) {
+    // Only once no record claims the file is it offered to the tracklists, and
+    // there the exact spelling has to match. The loose key drops parenthesised
+    // asides, which on a track is the remix credit itself — matching loosely
+    // filed a remix's artwork on the original song it was built from.
+    const track = title
+      ? null
+      : candidates
+          .map((c) => tracks.get(norm(c)))
+          .find(Boolean);
+
+    if (!title && !track) {
       unmatched.push(`${file.rel}  (read as "${candidates[0]}")`);
       continue;
     }
 
-    const baseName = slugify(title);
+    const name = title ?? track;
+    // `track-` keeps a track's file from ever landing on a record's name.
+    const baseName = title ? slugify(name) : `track-${slugify(name)}`;
+    const target = title ? manifest : trackManifest;
     if (CHECK) {
-      manifest[norm(title)] = { url: `/covers/${baseName}.webp` };
+      target[norm(name)] = { url: `/covers/${baseName}.webp` };
     } else {
       const out = await tryEmit(
         file.path,
@@ -234,13 +277,13 @@ async function syncCovers(titles) {
         file.rel,
       );
       if (!out) continue;
-      manifest[norm(title)] = { url: out.primary.url, srcset: out.srcset };
+      target[norm(name)] = { url: out.primary.url, srcset: out.srcset };
       bytes += out.bytes;
     }
     copied++;
   }
 
-  return { manifest, unmatched, copied, bytes };
+  return { manifest, trackManifest, unmatched, copied, bytes };
 }
 
 /**
@@ -569,6 +612,8 @@ if (!CHECK) {
     JSON.stringify(
       {
         covers: covers.manifest,
+        /** Artwork drawn for a single track, keyed by track title. */
+        trackCovers: covers.trackManifest,
         portraits: portraits.manifest,
         brand: brand.manifest,
         carousel: carousel.manifest,

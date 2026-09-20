@@ -225,6 +225,20 @@
       "srcset": "/covers/after-the-unmaking-700.webp 700w, /covers/after-the-unmaking-1000.webp 1000w, /covers/after-the-unmaking-1500.webp 1500w"
     }
   },
+  "trackCovers": {
+    "plasticwingsforrealtearschromaboneremix": {
+      "url": "/covers/track-plastic-wings-for-real-tears-chromabone-remix-1000.webp",
+      "srcset": "/covers/track-plastic-wings-for-real-tears-chromabone-remix-700.webp 700w, /covers/track-plastic-wings-for-real-tears-chromabone-remix-1000.webp 1000w"
+    },
+    "nylacorveywherethelightusedtolivechromaboneremix": {
+      "url": "/covers/track-nyla-corvey-where-the-light-used-to-live-chromabone-remix-1500.webp",
+      "srcset": "/covers/track-nyla-corvey-where-the-light-used-to-live-chromabone-remix-700.webp 700w, /covers/track-nyla-corvey-where-the-light-used-to-live-chromabone-remix-1000.webp 1000w, /covers/track-nyla-corvey-where-the-light-used-to-live-chromabone-remix-1500.webp 1500w"
+    },
+    "veinmirrorthroughtheveinsofthedyingskychromabonesterminalauroratransmission": {
+      "url": "/covers/track-vein-mirror-through-the-veins-of-the-dying-sky-chromabone-s-terminal-aurora-transmission-1000.webp",
+      "srcset": "/covers/track-vein-mirror-through-the-veins-of-the-dying-sky-chromabone-s-terminal-aurora-transmission-700.webp 700w, /covers/track-vein-mirror-through-the-veins-of-the-dying-sky-chromabone-s-terminal-aurora-transmission-1000.webp 1000w"
+    }
+  },
   "portraits": {
     "anatolian-mirage": "/artists/anatolian-mirage.webp",
     "broken-shaman": "/artists/broken-shaman.webp",

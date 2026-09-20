@@ -171,6 +171,16 @@ type CoverAsset = { url: string; srcset?: string };
 const coverFor = (title: string): CoverAsset | undefined =>
   (art.covers as Record<string, CoverAsset>)[artKey(title)];
 
+/**
+ * Artwork drawn for one track rather than for the record holding it.
+ *
+ * The label draws a sleeve per remix, and those tracks sit on a compilation
+ * whose own cover says nothing about them. Where a track has its own, it is the
+ * better answer than the record's.
+ */
+const trackCoverFor = (title: string): CoverAsset | undefined =>
+  (art as { trackCovers?: Record<string, CoverAsset> }).trackCovers?.[artKey(title)];
+
 export const portraitFor = (slug: string): string | undefined =>
   (art.portraits as Record<string, string>)[slug];
 
@@ -471,9 +481,10 @@ export const popularTracks = (limit = 8): FeedTrack[] => {
           // where there is one. SoundCloud's per-track image is capped well
           // below what this module draws and showed visibly soft.
           artwork:
+            trackCoverFor(track.title)?.url ??
             release?.image ??
             (release && withheldArtwork.has(release.slug) ? undefined : track.artwork),
-          artworkSrcset: release?.imageSrcset,
+          artworkSrcset: trackCoverFor(track.title)?.srcset ?? release?.imageSrcset,
         });
       }
     }
