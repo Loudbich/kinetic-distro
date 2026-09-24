@@ -238,7 +238,14 @@ async function syncCovers(titles) {
   const tracks = knownTracks(titles);
 
   for (const file of walkImages(join(SRC, 'covers'))) {
-    const candidates = titleCandidates(file.name);
+    // The folder is tried after the file, because a record is often filed in a
+    // folder named after it while the file keeps whatever the artwork was
+    // exported as — `01 - Nothing here was an accident/Artwork_Nhwaa.webp`.
+    const folder = dirname(file.rel).split(/[\/]/).pop();
+    const candidates = [
+      ...titleCandidates(file.name),
+      ...(folder && folder !== '.' ? titleCandidates(folder + extname(file.name)) : []),
+    ];
 
     // Both spellings of each candidate, matched against both indexes. The two
     // sides bracket differently — the file writes `(Chromabone remixes)` where

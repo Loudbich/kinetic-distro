@@ -114,7 +114,7 @@ export default function ArtistPage() {
             <dl className="mt-14 grid grid-cols-2 gap-8 border-t border-white/10 pt-8 sm:grid-cols-4">
               {[
                 { k: 'Genre', v: artist.genre },
-                { k: 'Origin', v: artist.origin },
+                ...(artist.origin ? [{ k: 'Origin', v: artist.origin }] : []),
                 ...(artist.formed ? [{ k: 'Formed', v: artist.formed }] : []),
                 { k: 'Signed', v: artist.since },
                 { k: 'Releases', v: String(discography.length) },

@@ -43,7 +43,8 @@ export type Artist = {
   name: string;
   accent: string;
   genre: string;
-  origin: string;
+  /** Where the act is from, when the label has said. */
+  origin?: string;
   /** The year the label signed them — not the year they started. */
   since: string;
   /**
@@ -67,6 +68,35 @@ export type Artist = {
 };
 
 const roster: Artist[] = [
+  {
+    slug: 'leadglass',
+    name: 'LEADGLASS',
+    accent: '#7FB2C0',
+    genre: 'Doom Soul / Industrial trip-hop',
+    since: '2026',
+    tagline: 'Doom Soul for the things that survive the fire.',
+    bio: [
+      'LEADGLASS is a five-piece Doom Soul band built around weight, restraint and fractured beauty.',
+      'Blending industrial trip-hop, cinematic art rock, chamber instrumentation and dark soul, the group combines massive live drums, distorted melodic bass, baritone guitar, prepared piano, analog electronics and low strings around the unmistakable contralto of vocalist Ruth Calder.',
+      'It began with a simple idea: heaviness does not require volume, and darkness does not require spectacle.',
+      'Rather than building constant walls of sound, LEADGLASS works through subtraction, silence and sudden expansion. Songs can become extremely heavy without ever tipping into conventional metal.',
+      'Calder’s unusually low contralto moves between intimate spoken phrasing and controlled, powerful melodic performances — the emotion comes from restraint, from breath and from the weight of the words rather than from spectacular delivery.',
+      'Around her, Miles Harrow’s sparse baritone guitar, Owen Kells’ distorted bass and analog electronics, Iona Mercer’s chamber arrangements and Daniel Rook’s monumental percussion make music that feels mechanical and deeply human at once.',
+      'The writing follows the same philosophy. Everyday objects become emotional evidence: a door, a key, a glass, an empty room or a light left burning can carry more weight than a conventional declaration.',
+      'LEADGLASS does not pursue darkness as an aesthetic exercise, and it is not interested in romanticising damage. Its songs examine what remains after it — including the uncomfortable distinction between what happened to us and the choices we made while it was happening.',
+      'Heavy without becoming metal, cinematic without becoming orchestral excess, intimate without becoming fragile: the result is music built around gravity, tension and consequence.',
+    ],
+    traits: ['Weight through subtraction', 'A contralto close to speech', 'Objects as evidence'],
+    members: [
+      { name: 'Ruth Calder', role: 'Vocals, prepared piano' },
+      { name: 'Miles Harrow', role: 'Baritone guitar, noise' },
+      { name: 'Owen Kells', role: 'Bass, analog electronics' },
+      { name: 'Iona Mercer', role: 'Cello, viola, keyboards' },
+      { name: 'Daniel Rook', role: 'Drums, percussion' },
+    ],
+    links: [{ label: 'Bandcamp', href: 'https://kineticdistro.bandcamp.com' }],
+    featured: true,
+  },
   {
     slug: 'grafenberg',
     name: 'Grafenberg',
@@ -602,6 +632,40 @@ export type Release = {
 };
 
 export const releases: Release[] = [
+  {
+    slug: 'nothing-here-was-an-accident',
+    catalog: 'KD-010',
+    title: 'Nothing Here Was an Accident',
+    artistSlugs: ['leadglass'],
+    artistDisplay: 'LEADGLASS',
+    date: '2026-09-25',
+    format: 'Digital · 10 tracks',
+    type: 'Album',
+    blurb:
+      'The debut LEADGLASS album: a ten-track narrative about memory, choice, destruction and personal responsibility, carried by Ruth Calder’s contralto.',
+    tracklist: [
+      'All the Teeth in Heaven',
+      'The House Keeps Score',
+      'Mercy Engine',
+      'Everybody Looks Good Leaving',
+      'Saint Automatic',
+      'The Weight of Open Doors',
+      'Beautiful Things With Teeth',
+      'I Was Here Before the Fire',
+      'Nothing Here Was an Accident',
+      'Leave One Burning',
+    ],
+    notes: [
+      'The first LEADGLASS album is a ten-track narrative about memory, choice, destruction and personal responsibility.',
+      'It begins with a narrator counting the lives she could have lived, and moves through abandoned rooms, machines, open doors, fire and the stories people build around their own damage. By the final track she no longer needs to count those alternate lives.',
+      'It is not a conventional story with characters and plot. Its continuity comes through recurring objects and ideas: rooms remember, machines keep running, doors stay open, fire destroys without becoming a beginning, and light turns gradually from something observed into something deliberately left burning.',
+      'Claustrophobic industrial trip-hop opens the record and expands into cinematic Doom Soul. The House Keeps Score treats memory as architecture; Mercy Engine tries to automate forgiveness; Saint Automatic is the most explicitly industrial piece here, about routine and obedience and the moment a system stops telling people what happens next.',
+      'The Weight of Open Doors is the monumental centre: freedom turning out to be heavier than confinement, because choice removes the possibility of blaming the lock. I Was Here Before the Fire refuses to let destruction become the beginning of an identity.',
+      'The title track is the album’s central statement, separating circumstance from habit, fear and conscious choice. Leave One Burning closes quietly, back where the record opened: nothing destroyed, nothing denied, one light left on.',
+    ],
+    listenUrl: 'https://kineticdistro.bandcamp.com',
+    featured: true,
+  },
   {
     slug: 'the-house-beyond-the-water',
     catalog: 'KD-009',

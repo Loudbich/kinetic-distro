@@ -164,6 +164,10 @@
       "url": "/covers/chrome-syndicate-dreams-1000.webp",
       "srcset": "/covers/chrome-syndicate-dreams-700.webp 700w, /covers/chrome-syndicate-dreams-1000.webp 1000w"
     },
+    "nothingherewasanaccident": {
+      "url": "/covers/nothing-here-was-an-accident-1500.webp",
+      "srcset": "/covers/nothing-here-was-an-accident-700.webp 700w, /covers/nothing-here-was-an-accident-1000.webp 1000w, /covers/nothing-here-was-an-accident-1500.webp 1500w"
+    },
     "redveinsonthedancefloor": {
       "url": "/covers/red-veins-on-the-dancefloor-1000.webp",
       "srcset": "/covers/red-veins-on-the-dancefloor-700.webp 700w, /covers/red-veins-on-the-dancefloor-1000.webp 1000w"
@@ -244,6 +248,7 @@
     "broken-shaman": "/artists/broken-shaman.webp",
     "chromabone": "/artists/chromabone.webp",
     "grafenberg": "/artists/grafenberg.webp",
+    "leadglass": "/artists/leadglass.webp",
     "lykke": "/artists/lykke.webp",
     "nosfera-disco-club": "/artists/nosfera-disco-club.webp",
     "nyla-corvey": "/artists/nyla-corvey.webp",

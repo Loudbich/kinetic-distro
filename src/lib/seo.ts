@@ -175,7 +175,7 @@ const countryOf = (origin: string) => {
 };
 
 export const artistEntity = (artist: Artist, { deep = false } = {}) => {
-  const country = countryOf(artist.origin);
+  const country = artist.origin ? countryOf(artist.origin) : undefined;
   const discography = releasesForArtist(artist.slug);
 
   const entity: Record<string, unknown> = {
