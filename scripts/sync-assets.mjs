@@ -241,7 +241,7 @@ async function syncCovers(titles) {
     // The folder is tried after the file, because a record is often filed in a
     // folder named after it while the file keeps whatever the artwork was
     // exported as — `01 - Nothing here was an accident/Artwork_Nhwaa.webp`.
-    const folder = dirname(file.rel).split(/[\/]/).pop();
+    const folder = dirname(file.rel).split(/[\\/]/).pop();
     const candidates = [
       ...titleCandidates(file.name),
       ...(folder && folder !== '.' ? titleCandidates(folder + extname(file.name)) : []),
