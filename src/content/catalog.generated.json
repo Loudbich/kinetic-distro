@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T20:59:58.963Z",
+  "generatedAt": "2026-09-24T21:07:46.361Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 676,
@@ -303,7 +303,7 @@
           "date": "2026-07-27",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 307
+          "plays": 308
         },
         {
           "id": "2393008854",
@@ -1768,7 +1768,7 @@
           "date": "2026-07-16",
           "durationSec": 268,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 353
+          "plays": 354
         },
         {
           "id": "2383694124",
