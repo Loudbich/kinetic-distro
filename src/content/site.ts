@@ -918,6 +918,12 @@ export const vinyl: Record<string, string> = {
  * store.
  */
 export const streaming: Record<string, { label: string; href: string }[]> = {
+  'memory-flowers': [{ label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLIaIuJlaw8J0' }],
+  'gilded-rituals': [{ label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLOolWnIiYlic' }],
+  'dance-like-you-survived': [{ label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLCC0NX7PHYaI' }],
+  'afterimage': [{ label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLC6ptCERY5y0' }],
+  'what-the-system-missed': [{ label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLKmXFnjyREWU' }],
+  'after-the-unmaking': [{ label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLcEuttAveQwA' }],
   'the-house-beyond-the-water': [
     { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLSdJslgAOEng' },
   ],
@@ -929,6 +935,7 @@ export const streaming: Record<string, { label: string; href: string }[]> = {
     },
   ],
   'no-saints-no-proof': [
+    { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLLeTRsbTijQE' },
     { label: 'Spotify', href: 'https://open.spotify.com/album/1Rc7HhHY8dFrqlrQePv1TZ' },
     { label: 'Apple Music', href: 'https://music.apple.com/album/1838489546' },
     { label: 'Deezer', href: 'https://www.deezer.com/album/818044871' },
