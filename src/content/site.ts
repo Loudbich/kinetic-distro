@@ -638,7 +638,7 @@ export const releases: Release[] = [
     title: 'Nothing Here Was an Accident',
     artistSlugs: ['leadglass'],
     artistDisplay: 'LEADGLASS',
-    date: '2026-09-25',
+    date: '2026-10-02',
     format: 'Digital · 10 tracks',
     type: 'Album',
     blurb:

@@ -104,7 +104,8 @@ export default function ReleasePage() {
             <Reveal delay={200}>
               <dl className="mt-10 grid grid-cols-2 gap-8 border-t border-white/10 pt-8 sm:grid-cols-3">
                 {[
-                  { k: 'Released', v: fmtDate(release.date) },
+                  // A date still ahead is not a release that happened.
+                { k: release.upcoming ? 'Release date' : 'Released', v: fmtDate(release.date) },
                   { k: 'Format', v: release.format },
                   { k: 'Catalogue', v: release.catalog },
                 ].map((m) => (
