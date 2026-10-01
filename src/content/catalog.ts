@@ -346,8 +346,17 @@ const derived: Release[] = mergePlaylists(
  * prerendered, so a date read at render time would be frozen at whatever it was
  * when the HTML was written. The nightly job rebuilds, so a record stops being
  * upcoming on its release day without anyone touching it.
+ *
+ * Paris, not UTC, and not the machine's clock: the build runs on a UTC runner,
+ * so between midnight and 02:00 local a record out that day still read as
+ * upcoming. The label's day is the one that counts.
  */
-const BUILD_DATE = new Date().toISOString().slice(0, 10);
+const BUILD_DATE = new Intl.DateTimeFormat('en-CA', {
+  timeZone: 'Europe/Paris',
+  year: 'numeric',
+  month: '2-digit',
+  day: '2-digit',
+}).format(new Date());
 
 const curated: Release[] = releases.map((r) => ({
   ...r,

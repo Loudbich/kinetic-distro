@@ -30,6 +30,13 @@ export type SetAttribution = {
 };
 
 export const setAttributions: SetAttribution[] = [
+  {
+    // LEADGLASS's debut, hosted on the label account with no showcase playlist
+    // to derive the credit from.
+    id: '2307832398',
+    title: 'Nothing here was an accident',
+    artistSlugs: ['leadglass'],
+  },
   // Label showcase copies of records under a retired name. The sync only
   // recognises a showcase as a duplicate when its "Artist - " prefix names a
   // roster artist; once the name left the roster these surfaced as records of

@@ -663,7 +663,8 @@ export const releases: Release[] = [
       'The Weight of Open Doors is the monumental centre: freedom turning out to be heavier than confinement, because choice removes the possibility of blaming the lock. I Was Here Before the Fire refuses to let destruction become the beginning of an identity.',
       'The title track is the album’s central statement, separating circumstance from habit, fear and conscious choice. Leave One Burning closes quietly, back where the record opened: nothing destroyed, nothing denied, one light left on.',
     ],
-    listenUrl: 'https://kineticdistro.bandcamp.com',
+    streamUrl: 'https://soundcloud.com/grafenbergmusik/sets/nothing-here-was-an-accident',
+    listenUrl: 'https://soundcloud.com/grafenbergmusik/sets/nothing-here-was-an-accident',
     featured: true,
   },
   {
@@ -888,6 +889,8 @@ export const withheldArtwork = new Set<string>([]);
  * worse than the shop front, which is what an absent entry falls back to.
  */
 export const bandcamp: Record<string, string> = {
+  'nothing-here-was-an-accident':
+    'https://kineticdistro.bandcamp.com/album/nothing-here-was-an-accident',
   'after-the-unmaking': 'https://kineticdistro.bandcamp.com/album/after-the-unmaking',
   'the-last-transmission': 'https://kineticdistro.bandcamp.com/album/the-last-transmission',
   'the-house-beyond-the-water':
@@ -918,6 +921,15 @@ export const vinyl: Record<string, string> = {
  * store.
  */
 export const streaming: Record<string, { label: string; href: string }[]> = {
+  'nothing-here-was-an-accident': [
+    { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLeugs2jR1DFc' },
+  ],
+  'erebion-s-dominion': [
+    { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLLrSiE-rmVso' },
+  ],
+  'the-last-transmission': [
+    { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLFVuABVc5j4k' },
+  ],
   'memory-flowers': [{ label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLIaIuJlaw8J0' }],
   'gilded-rituals': [{ label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLOolWnIiYlic' }],
   'dance-like-you-survived': [{ label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLCC0NX7PHYaI' }],
@@ -941,6 +953,7 @@ export const streaming: Record<string, { label: string; href: string }[]> = {
     { label: 'Deezer', href: 'https://www.deezer.com/album/818044871' },
   ],
   'the-error-gospel': [
+    { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLfwx-JrZDe7A' },
     { label: 'Spotify', href: 'https://open.spotify.com/album/3qVJ5DKNUxGIkeIjgLXZQW' },
     { label: 'Apple Music', href: 'https://music.apple.com/album/1859408397' },
     { label: 'Deezer', href: 'https://www.deezer.com/album/872363392' },
@@ -953,9 +966,11 @@ export const streaming: Record<string, { label: string; href: string }[]> = {
     { label: 'Apple Music', href: 'https://music.apple.com/album/1880794723' },
   ],
   'love-and-venom-taste-the-same': [
+    { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLKvCbnL1laQ8' },
     { label: 'Apple Music', href: 'https://music.apple.com/album/1880799064' },
   ],
   'the-hush-beneath-the-static-kinetic-resonance-remaster': [
+    { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLG4TVW17DV78' },
     { label: 'Apple Music', href: 'https://music.apple.com/album/1886228843' },
   ],
 };

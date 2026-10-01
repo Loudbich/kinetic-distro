@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-01T11:33:43.108Z",
+  "generatedAt": "2026-10-01T22:13:53.871Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
-  "trackCount": 676,
-  "playlistCount": 74,
+  "trackCount": 686,
+  "playlistCount": 75,
   "failures": [],
   "artists": {
     "grafenberg": {
@@ -13,11 +13,91 @@
       "profileUrl": "https://soundcloud.com/grafenbergmusik",
       "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:50014017/sounds.rss",
       "displayName": "Kinetic Distro",
-      "avatar": "https://i1.sndcdn.com/avatars-giGEZGyeQXGUIEjn-2zR8Gw-t500x500.jpg",
+      "avatar": "https://i1.sndcdn.com/avatars-F5ZsAb8I6c5tLec6-XTSwBQ-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 346,
-      "latestDate": "2026-09-20",
+      "trackCount": 356,
+      "latestDate": "2026-10-01",
       "tracks": [
+        {
+          "id": "2411552355",
+          "title": "All the Teeth in Heaven",
+          "url": "https://soundcloud.com/grafenbergmusik/all-the-teeth-in-heaven-1",
+          "date": "2026-10-01",
+          "durationSec": 314,
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t500x500.jpg"
+        },
+        {
+          "id": "2411552352",
+          "title": "The weight of open doors",
+          "url": "https://soundcloud.com/grafenbergmusik/the-weight-of-open-doors-6",
+          "date": "2026-10-01",
+          "durationSec": 316,
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t500x500.jpg"
+        },
+        {
+          "id": "2411552349",
+          "title": "Nothing here was an accident",
+          "url": "https://soundcloud.com/grafenbergmusik/nothing-here-was-an-accident-9",
+          "date": "2026-10-01",
+          "durationSec": 382,
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t500x500.jpg"
+        },
+        {
+          "id": "2411552346",
+          "title": "Leave one burning",
+          "url": "https://soundcloud.com/grafenbergmusik/leave-one-burning-10",
+          "date": "2026-10-01",
+          "durationSec": 339,
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t500x500.jpg"
+        },
+        {
+          "id": "2411552343",
+          "title": "I was here before the fire",
+          "url": "https://soundcloud.com/grafenbergmusik/i-was-here-before-the-fire-8",
+          "date": "2026-10-01",
+          "durationSec": 259,
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t500x500.jpg"
+        },
+        {
+          "id": "2411552340",
+          "title": "The house keeps score",
+          "url": "https://soundcloud.com/grafenbergmusik/the-house-keeps-score-2",
+          "date": "2026-10-01",
+          "durationSec": 297,
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t500x500.jpg"
+        },
+        {
+          "id": "2411552337",
+          "title": "Beautiful things with teeth",
+          "url": "https://soundcloud.com/grafenbergmusik/beautiful-things-with-teeth-7",
+          "date": "2026-10-01",
+          "durationSec": 301,
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t500x500.jpg"
+        },
+        {
+          "id": "2411552334",
+          "title": "Everybody looks good leaving",
+          "url": "https://soundcloud.com/grafenbergmusik/everybody-looks-good-leaving-4",
+          "date": "2026-10-01",
+          "durationSec": 259,
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t500x500.jpg"
+        },
+        {
+          "id": "2411552331",
+          "title": "Saint automatic",
+          "url": "https://soundcloud.com/grafenbergmusik/saint-automatic-5",
+          "date": "2026-10-01",
+          "durationSec": 234,
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t500x500.jpg"
+        },
+        {
+          "id": "2411552328",
+          "title": "Mercy engine",
+          "url": "https://soundcloud.com/grafenbergmusik/mercy-engine-3",
+          "date": "2026-10-01",
+          "durationSec": 219,
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t500x500.jpg"
+        },
         {
           "id": "2404109157",
           "title": "Nyla Corvey - Where The Light Used To Live (Chromabone Remix)",
@@ -33,86 +113,6 @@
           "date": "2026-09-18",
           "durationSec": 294,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
-        },
-        {
-          "id": "2402962809",
-          "title": "I learned to move without disturbing the order",
-          "url": "https://soundcloud.com/grafenbergmusik/i-learned-to-move-without-disturbing-the-order-9",
-          "date": "2026-09-18",
-          "durationSec": 284,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
-        },
-        {
-          "id": "2402962806",
-          "title": "The world didnt change, my access did",
-          "url": "https://soundcloud.com/grafenbergmusik/the-world-didnt-change-my-access-did-2",
-          "date": "2026-09-18",
-          "durationSec": 328,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
-        },
-        {
-          "id": "2402962803",
-          "title": "What feels natural to me no longer matches the world",
-          "url": "https://soundcloud.com/grafenbergmusik/what-feels-natural-to-me-no-longer-matches-the-world-6",
-          "date": "2026-09-18",
-          "durationSec": 303,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
-        },
-        {
-          "id": "2402962800",
-          "title": "The constant state [Bonus song]",
-          "url": "https://soundcloud.com/grafenbergmusik/the-constant-state-bonus-song-11",
-          "date": "2026-09-18",
-          "durationSec": 292,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
-        },
-        {
-          "id": "2402962797",
-          "title": "I no longer brace for what comes next",
-          "url": "https://soundcloud.com/grafenbergmusik/i-no-longer-brace-for-what-comes-next-5",
-          "date": "2026-09-18",
-          "durationSec": 315,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
-        },
-        {
-          "id": "2402962794",
-          "title": "What emerged when everything fell silent",
-          "url": "https://soundcloud.com/grafenbergmusik/what-emerged-when-everything-fell-silent-1",
-          "date": "2026-09-18",
-          "durationSec": 347,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
-        },
-        {
-          "id": "2402962791",
-          "title": "Some thresholds opened without being touched",
-          "url": "https://soundcloud.com/grafenbergmusik/some-thresholds-opened-without-being-touched-3",
-          "date": "2026-09-18",
-          "durationSec": 279,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
-        },
-        {
-          "id": "2402962788",
-          "title": "And nothing needed to be added after that",
-          "url": "https://soundcloud.com/grafenbergmusik/and-nothing-needed-to-be-added-after-that-10",
-          "date": "2026-09-18",
-          "durationSec": 278,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
-        },
-        {
-          "id": "2402962785",
-          "title": "Nothing that broke me was wasted",
-          "url": "https://soundcloud.com/grafenbergmusik/nothing-that-broke-me-was-wasted-4",
-          "date": "2026-09-18",
-          "durationSec": 278,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
-        },
-        {
-          "id": "2402962782",
-          "title": "The light didnt arrive, it was always there",
-          "url": "https://soundcloud.com/grafenbergmusik/the-light-didnt-arrive-it-was-always-there-8",
-          "date": "2026-09-18",
-          "durationSec": 328,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
         }
       ],
       "topTracks": [
@@ -123,7 +123,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2901
+          "plays": 2903
         },
         {
           "id": "2360407937",
@@ -141,7 +141,7 @@
           "date": "2026-07-14",
           "durationSec": 272,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2725
+          "plays": 2730
         },
         {
           "id": "2347189916",
@@ -150,7 +150,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3134
+          "plays": 3135
         },
         {
           "id": "2164031784",
@@ -159,7 +159,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 39697
+          "plays": 39703
         },
         {
           "id": "2347189913",
@@ -177,7 +177,7 @@
           "date": "2026-06-25",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 2520
+          "plays": 2521
         },
         {
           "id": "2340339800",
@@ -195,7 +195,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 780
+          "plays": 895
         },
         {
           "id": "2402962791",
@@ -204,7 +204,7 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 676
+          "plays": 756
         },
         {
           "id": "2369060990",
@@ -213,7 +213,7 @@
           "date": "2026-07-27",
           "durationSec": 261,
           "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 532
+          "plays": 533
         },
         {
           "id": "2361904973",
@@ -267,7 +267,7 @@
           "date": "2026-08-28",
           "durationSec": 227,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 346
+          "plays": 348
         },
         {
           "id": "2360372885",
@@ -294,7 +294,7 @@
           "date": "2026-08-28",
           "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 322
+          "plays": 323
         },
         {
           "id": "2393008854",
@@ -303,7 +303,7 @@
           "date": "2026-09-02",
           "durationSec": 262,
           "artwork": "https://i1.sndcdn.com/artworks-st4wyqXqSNlAIaIv-k3SIwQ-t1080x1080.jpg",
-          "plays": 319
+          "plays": 320
         },
         {
           "id": "2369061005",
@@ -330,7 +330,7 @@
           "date": "2026-08-28",
           "durationSec": 284,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 302
+          "plays": 303
         },
         {
           "id": "2390185515",
@@ -339,7 +339,7 @@
           "date": "2026-08-28",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 299
+          "plays": 300
         },
         {
           "id": "2253911936",
@@ -348,7 +348,7 @@
           "date": "2026-01-25",
           "durationSec": 287,
           "artwork": "https://i1.sndcdn.com/artworks-BnpYLteh1Ug9HChN-zVdzgg-large.png",
-          "plays": 939
+          "plays": 940
         },
         {
           "id": "2361904979",
@@ -388,6 +388,33 @@
         }
       ],
       "playlists": [
+        {
+          "id": "2307832398",
+          "title": "Nothing here was an accident",
+          "url": "https://soundcloud.com/grafenbergmusik/sets/nothing-here-was-an-accident",
+          "date": "2026-10-01",
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "NOTHING HERE WAS AN ACCIDENT\nThe debut album by LEADGLASS\n\nThere are records that tell you what happened.\n\nThis one asks what part of it you chose.\n\nNothing Here Was an Accident is the first full-length statement from LEADGLASS, a five-piece band built around a sound they describe as Doom Soul.\n\nIt is heavy without becoming metal. Cinematic without becoming orchestral excess. Intimate without becoming fragile.\n\nAt the centre is Ruth Calder, whose unusually low contralto moves between spoken intimacy, restrained menace and controlled melodic force. Around her, Miles Harrow’s baritone guitar, Owen Kells’ distorted bass and analog electronics, Iona Mercer’s cello, viola and keyboards, and Daniel Rook’s massive live drums create music that feels both mechanical and deeply human.\n\nThe album unfolds as a sequence of emotional rooms.\n\nAll the Teeth in Heaven opens the door.\n\nThe House Keeps Score remembers everything.\n\nMercy Engine tries to automate pain.\n\nEverybody Looks Good Leaving strips heartbreak of its mythology.\n\nSaint Automatic turns routine into machinery.\n\nThe Weight of Open Doors discovers that freedom can be heavier than confinement.\n\nBeautiful Things With Teeth lets desire back into the room.\n\nI Was Here Before the Fire refuses to let destruction become identity.\n\nThen the title track arrives.\n\nNothing Here Was an Accident is the record’s central reckoning: the moment when circumstance, fear, habit, survival and choice finally stop pretending to be the same thing.\n\nIts defining line is simple:\n\n“I signed my name beneath decisions I pretended were weather.”\n\nBy the final track, Leave One Burning, there is nothing left to prove.\n\nThe album ends where it began: with lights, rooms, memory and another possible life.\n\nBut the counting has stopped.\n\nLEADGLASS does not romanticise damage.\n\nIt studies what remains after it.\n\nThe objects left behind.\nThe rooms that remember.\nThe machines that keep running.\nThe doors that stay open.\nThe choices nobody sees you make.\n\nNothing Here Was an Accident is about living long enough to understand that surviving something and choosing it are not the same thing.\n\nAnd neither are you.\n\nLEADGLASS\nRuth Calder — vocals, prepared piano\nMiles Harrow — baritone guitar, noise\nOwen Kells — bass, analog electronics\nIona Mercer — cello, viola, keyboards\nDaniel Rook — drums, percussion\n\nDoom Soul for the things that survive the fire.",
+          "tracklist": [
+            "All the Teeth in Heaven",
+            "The house keeps score",
+            "Mercy engine",
+            "Everybody looks good leaving",
+            "Saint automatic",
+            "The weight of open doors",
+            "Beautiful things with teeth",
+            "I was here before the fire",
+            "Nothing here was an accident",
+            "Leave one burning"
+          ],
+          "freeDownload": false,
+          "credit": null,
+          "creditSource": "unresolved",
+          "isMirror": false
+        },
         {
           "id": "2300981067",
           "title": "After the unmaking",
@@ -1669,7 +1696,7 @@
           "date": "2026-07-16",
           "durationSec": 319,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2624
+          "plays": 2626
         },
         {
           "id": "2394037353",
@@ -1678,7 +1705,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 2455
+          "plays": 2457
         },
         {
           "id": "2388231858",
@@ -1687,7 +1714,7 @@
           "date": "2026-08-25",
           "durationSec": 378,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 1845
+          "plays": 1848
         },
         {
           "id": "2348797784",
@@ -1705,7 +1732,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1154
+          "plays": 1157
         },
         {
           "id": "2355716957",
@@ -1777,7 +1804,7 @@
           "date": "2026-07-08",
           "durationSec": 267,
           "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 304
+          "plays": 305
         },
         {
           "id": "2355716945",
@@ -1795,7 +1822,7 @@
           "date": "2026-09-03",
           "durationSec": 253,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 305
+          "plays": 308
         },
         {
           "id": "2388231867",
@@ -1804,7 +1831,7 @@
           "date": "2026-08-25",
           "durationSec": 299,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 296
+          "plays": 297
         },
         {
           "id": "2278322270",
@@ -1813,7 +1840,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3721
+          "plays": 3723
         },
         {
           "id": "2274189833",
@@ -1831,7 +1858,7 @@
           "date": "2026-09-03",
           "durationSec": 197,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 268
+          "plays": 274
         },
         {
           "id": "2383694118",
@@ -1885,7 +1912,7 @@
           "date": "2026-08-25",
           "durationSec": 281,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 252
+          "plays": 253
         },
         {
           "id": "2355716963",
@@ -1930,7 +1957,7 @@
           "date": "2026-08-25",
           "durationSec": 222,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 232
+          "plays": 233
         }
       ],
       "playlists": [
@@ -2673,7 +2700,7 @@
           "date": "2026-04-09",
           "durationSec": 255,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 578
+          "plays": 579
         },
         {
           "id": "2299293842",
@@ -3413,7 +3440,7 @@
           "date": "2026-04-09",
           "durationSec": 409,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 1475
+          "plays": 1476
         },
         {
           "id": "2285999498",
