@@ -80,6 +80,10 @@
       "url": "/covers/the-last-transmission-1500.webp",
       "srcset": "/covers/the-last-transmission-700.webp 700w, /covers/the-last-transmission-1000.webp 1000w, /covers/the-last-transmission-1500.webp 1500w"
     },
+    "goldenhourbroadcast": {
+      "url": "/covers/golden-hour-broadcast-1500.webp",
+      "srcset": "/covers/golden-hour-broadcast-700.webp 700w, /covers/golden-hour-broadcast-1000.webp 1000w, /covers/golden-hour-broadcast-1500.webp 1500w"
+    },
     "blackchromereanimations": {
       "url": "/covers/black-chrome-reanimations-1000.webp",
       "srcset": "/covers/black-chrome-reanimations-700.webp 700w, /covers/black-chrome-reanimations-1000.webp 1000w"

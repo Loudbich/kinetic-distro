@@ -889,6 +889,7 @@ export const withheldArtwork = new Set<string>([]);
  * worse than the shop front, which is what an absent entry falls back to.
  */
 export const bandcamp: Record<string, string> = {
+  'golden-hour-broadcast': 'https://kineticdistro.bandcamp.com/album/golden-hour-broadcast',
   'nothing-here-was-an-accident':
     'https://kineticdistro.bandcamp.com/album/nothing-here-was-an-accident',
   'after-the-unmaking': 'https://kineticdistro.bandcamp.com/album/after-the-unmaking',

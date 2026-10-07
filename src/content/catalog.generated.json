@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-07T11:43:32.231Z",
+  "generatedAt": "2026-10-07T21:21:08.546Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
-  "trackCount": 686,
-  "playlistCount": 75,
+  "trackCount": 698,
+  "playlistCount": 76,
   "failures": [],
   "artists": {
     "grafenberg": {
@@ -123,7 +123,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2926
+          "plays": 2928
         },
         {
           "id": "2360407937",
@@ -141,7 +141,7 @@
           "date": "2026-07-14",
           "durationSec": 272,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2744
+          "plays": 2746
         },
         {
           "id": "2347189916",
@@ -150,7 +150,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3147
+          "plays": 3148
         },
         {
           "id": "2402962785",
@@ -159,7 +159,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1426
+          "plays": 1433
         },
         {
           "id": "2164031784",
@@ -168,7 +168,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 39781
+          "plays": 39789
         },
         {
           "id": "2402962791",
@@ -177,7 +177,7 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1334
+          "plays": 1337
         },
         {
           "id": "2402962797",
@@ -186,7 +186,7 @@
           "date": "2026-09-18",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1356
+          "plays": 1364
         },
         {
           "id": "2347189901",
@@ -195,7 +195,7 @@
           "date": "2026-06-25",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 2525
+          "plays": 2526
         },
         {
           "id": "2347189913",
@@ -213,7 +213,7 @@
           "date": "2026-07-27",
           "durationSec": 261,
           "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 542
+          "plays": 544
         },
         {
           "id": "2361904973",
@@ -231,7 +231,7 @@
           "date": "2026-09-20",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-71b4KDAWnIcWd7pr-JusIAA-t1080x1080.jpg",
-          "plays": 412
+          "plays": 483
         },
         {
           "id": "2360372882",
@@ -366,7 +366,7 @@
           "date": "2026-08-28",
           "durationSec": 249,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 292
+          "plays": 295
         },
         {
           "id": "2253911936",
@@ -1588,104 +1588,104 @@
       "displayName": "Broken Shaman",
       "avatar": "https://i1.sndcdn.com/avatars-y5Zaxy3rGvq3Llke-UUQOzQ-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 208,
-      "latestDate": "2026-09-03",
+      "trackCount": 220,
+      "latestDate": "2026-10-07",
       "tracks": [
         {
-          "id": "2394037353",
-          "title": "Ghosts in the System",
-          "url": "https://soundcloud.com/broken_shaman/ghosts-in-the-system-9",
-          "date": "2026-09-03",
-          "durationSec": 243,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t500x500.jpg"
-        },
-        {
-          "id": "2394037350",
-          "title": "Neon Rebirth Protocol",
-          "url": "https://soundcloud.com/broken_shaman/neon-rebirth-protocol-6",
-          "date": "2026-09-03",
-          "durationSec": 202,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t500x500.jpg"
-        },
-        {
-          "id": "2394037347",
-          "title": "Fracture Protocol",
-          "url": "https://soundcloud.com/broken_shaman/fracture-protocol-7",
-          "date": "2026-09-03",
-          "durationSec": 197,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t500x500.jpg"
-        },
-        {
-          "id": "2394037344",
-          "title": "Dominion of the Void",
-          "url": "https://soundcloud.com/broken_shaman/dominion-of-the-void-8",
-          "date": "2026-09-03",
-          "durationSec": 256,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t500x500.jpg"
-        },
-        {
-          "id": "2394037341",
-          "title": "Shadow Returns",
-          "url": "https://soundcloud.com/broken_shaman/shadow-returns-1",
-          "date": "2026-09-03",
-          "durationSec": 253,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t500x500.jpg"
-        },
-        {
-          "id": "2394037338",
-          "title": "Devil on credit",
-          "url": "https://soundcloud.com/broken_shaman/devil-on-credit-4",
-          "date": "2026-09-03",
-          "durationSec": 302,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t500x500.jpg"
-        },
-        {
-          "id": "2394037335",
-          "title": "Eerie Gospel",
-          "url": "https://soundcloud.com/broken_shaman/eerie-gospel-2",
-          "date": "2026-09-03",
+          "id": "2414936676",
+          "title": "Sunday soul food",
+          "url": "https://soundcloud.com/broken_shaman/sunday-soul-food-7",
+          "date": "2026-10-07",
           "durationSec": 204,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t500x500.jpg"
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
         },
         {
-          "id": "2394037332",
-          "title": "Ashes of the Signal",
-          "url": "https://soundcloud.com/broken_shaman/ashes-of-the-signal-5",
-          "date": "2026-09-03",
-          "durationSec": 229,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t500x500.jpg"
+          "id": "2414936673",
+          "title": "Nineties never die",
+          "url": "https://soundcloud.com/broken_shaman/nineties-never-die-5",
+          "date": "2026-10-07",
+          "durationSec": 314,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
         },
         {
-          "id": "2394037329",
-          "title": "Final Transmission",
-          "url": "https://soundcloud.com/broken_shaman/final-transmission-10",
-          "date": "2026-09-03",
-          "durationSec": 156,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t500x500.jpg"
+          "id": "2414936670",
+          "title": "Cassette tape saints",
+          "url": "https://soundcloud.com/broken_shaman/cassette-tape-saints-4",
+          "date": "2026-10-07",
+          "durationSec": 315,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
         },
         {
-          "id": "2394037326",
-          "title": "Ritual Overdrive",
-          "url": "https://soundcloud.com/broken_shaman/ritual-overdrive-3",
-          "date": "2026-09-03",
-          "durationSec": 201,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t500x500.jpg"
+          "id": "2414936667",
+          "title": "Like a soldier",
+          "url": "https://soundcloud.com/broken_shaman/like-a-soldier-11",
+          "date": "2026-10-07",
+          "durationSec": 243,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
         },
         {
-          "id": "2388231879",
-          "title": "AI SLOP V Domination",
-          "url": "https://soundcloud.com/broken_shaman/ai-slop-v-domination-5",
-          "date": "2026-08-25",
+          "id": "2414936664",
+          "title": "Black velvet funeral radio",
+          "url": "https://soundcloud.com/broken_shaman/black-velvet-funeral-radio-12",
+          "date": "2026-10-07",
+          "durationSec": 269,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936661",
+          "title": "Sunlight on the asphalt",
+          "url": "https://soundcloud.com/broken_shaman/sunlight-on-the-asphalt-1",
+          "date": "2026-10-07",
+          "durationSec": 291,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936658",
+          "title": "Golden hour broadcast",
+          "url": "https://soundcloud.com/broken_shaman/golden-hour-broadcast-8",
+          "date": "2026-10-07",
+          "durationSec": 277,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936652",
+          "title": "Chrome rims, corner stores",
+          "url": "https://soundcloud.com/broken_shaman/chrome-rims-corner-stores-3",
+          "date": "2026-10-07",
           "durationSec": 280,
-          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t500x500.jpg"
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
         },
         {
-          "id": "2388231876",
-          "title": "AI SLOP IV Global meltdown",
-          "url": "https://soundcloud.com/broken_shaman/ai-slop-iv-global-meltdown-4",
-          "date": "2026-08-25",
-          "durationSec": 236,
-          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t500x500.jpg"
+          "id": "2414936649",
+          "title": "More reasons to love Broken Shaman",
+          "url": "https://soundcloud.com/broken_shaman/more-reasons-to-love-broken-shaman-10",
+          "date": "2026-10-07",
+          "durationSec": 277,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936646",
+          "title": "Backyard symphony",
+          "url": "https://soundcloud.com/broken_shaman/backyard-symphony-2",
+          "date": "2026-10-07",
+          "durationSec": 306,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936643",
+          "title": "Late night basketball",
+          "url": "https://soundcloud.com/broken_shaman/late-night-basketball-9",
+          "date": "2026-10-07",
+          "durationSec": 196,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936640",
+          "title": "Low rider daydreams",
+          "url": "https://soundcloud.com/broken_shaman/low-rider-daydreams-6",
+          "date": "2026-10-07",
+          "durationSec": 251,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
         }
       ],
       "topTracks": [
@@ -1696,7 +1696,7 @@
           "date": "2026-07-16",
           "durationSec": 319,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2654
+          "plays": 2656
         },
         {
           "id": "2394037353",
@@ -1705,7 +1705,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 2482
+          "plays": 2483
         },
         {
           "id": "2388231858",
@@ -1714,7 +1714,7 @@
           "date": "2026-08-25",
           "durationSec": 378,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 1871
+          "plays": 1872
         },
         {
           "id": "2394037335",
@@ -1723,7 +1723,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1201
+          "plays": 1203
         },
         {
           "id": "2348797784",
@@ -1804,7 +1804,7 @@
           "date": "2026-09-03",
           "durationSec": 253,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 332
+          "plays": 333
         },
         {
           "id": "2355716969",
@@ -1822,7 +1822,7 @@
           "date": "2026-08-25",
           "durationSec": 299,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 314
+          "plays": 316
         },
         {
           "id": "2355716945",
@@ -1840,7 +1840,7 @@
           "date": "2026-09-03",
           "durationSec": 197,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 298
+          "plays": 299
         },
         {
           "id": "2278322270",
@@ -1849,7 +1849,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3734
+          "plays": 3735
         },
         {
           "id": "2274189833",
@@ -1858,7 +1858,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3479
+          "plays": 3481
         },
         {
           "id": "2388231879",
@@ -1867,7 +1867,7 @@
           "date": "2026-08-25",
           "durationSec": 281,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 275
+          "plays": 277
         },
         {
           "id": "2355716966",
@@ -1894,7 +1894,7 @@
           "date": "2026-08-18",
           "durationSec": 232,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
-          "plays": 258
+          "plays": 259
         },
         {
           "id": "2361904934",
@@ -1912,7 +1912,7 @@
           "date": "2026-08-25",
           "durationSec": 222,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 251
+          "plays": 254
         },
         {
           "id": "2361904946",
@@ -1930,7 +1930,7 @@
           "date": "2026-08-25",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 247
+          "plays": 250
         },
         {
           "id": "2355716963",
@@ -1961,6 +1961,37 @@
         }
       ],
       "playlists": [
+        {
+          "id": "2310734589",
+          "title": "Golden hour broadcast",
+          "url": "https://soundcloud.com/broken_shaman/sets/golden-hour-broadcast",
+          "date": "2026-10-07",
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "trackCount": 12,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Golden Hour Broadcast is Broken Shaman’s tribute to the golden pulse of 90s hip-hop.\nBuilt as a warm, dusty and deeply human homage to the spirit of Wu-Tang Clan and Cypress Hill, the album smells like orange bud, sensimilla, sun-heated concrete, worn cassette tapes and speakers pushed too loud at the end of a summer day.\nThis is not nostalgia for nostalgia’s sake.\nIt is a celebration of a distant era that was never truly forgotten.\nA time before everything became algorithmic.\nA time when human connection was still the engine of culture.\nWhen music travelled through hands, cars, bedrooms, basements, street corners and late-night conversations.\nWhen a beat could define a whole afternoon, and a voice on tape could become part of your life forever.\nAcross the album, Broken Shaman reconnects with that energy: boom bap drums, smoky grooves, dusty soul, street wisdom, backyard memories, low rider daydreams, Sunday food, old records, basketball courts, static, sunlight and scars.\nGolden Hour Broadcast is both inspired by the past and determined to inspire the present.\nIt is a major chapter in the Broken Shaman story: warmer, looser, more human, more alive.\nAn album made for old souls, true heads, survivors, beat lovers and everyone who still believes hip-hop can carry memory, joy, pain and light at the same time.\nBroken Shaman is proud of this one.\nGood listening to all lovers of hip-hop.",
+          "tracklist": [
+            "Sunlight on the asphalt",
+            "Backyard symphony",
+            "Chrome rims, corner stores",
+            "Cassette tape saints",
+            "Nineties never die",
+            "Low rider daydreams",
+            "Sunday soul food",
+            "Golden hour broadcast",
+            "Late night basketball",
+            "More reasons to love Broken Shaman",
+            "Like a soldier",
+            "Black velvet funeral radio"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
         {
           "id": "2293668225",
           "title": "The last transmission",
@@ -3413,7 +3444,7 @@
           "date": "2026-03-18",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 758
+          "plays": 759
         },
         {
           "id": "2299826672",
@@ -4059,7 +4090,7 @@
           "date": "2026-02-15",
           "durationSec": 269,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 228
+          "plays": 229
         },
         {
           "id": "2266921844",
