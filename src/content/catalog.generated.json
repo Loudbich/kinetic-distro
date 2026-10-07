@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T21:21:08.546Z",
+  "generatedAt": "2026-10-07T21:22:19.528Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 698,
@@ -231,7 +231,7 @@
           "date": "2026-09-20",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-71b4KDAWnIcWd7pr-JusIAA-t1080x1080.jpg",
-          "plays": 483
+          "plays": 484
         },
         {
           "id": "2360372882",
