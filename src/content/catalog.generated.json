@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T11:07:38.763Z",
+  "generatedAt": "2026-10-11T11:21:55.216Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 698,
@@ -123,7 +123,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2952
+          "plays": 2957
         },
         {
           "id": "2360407937",
@@ -132,7 +132,7 @@
           "date": "2026-07-14",
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2868
+          "plays": 2871
         },
         {
           "id": "2360372888",
@@ -141,7 +141,7 @@
           "date": "2026-07-14",
           "durationSec": 272,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2753
+          "plays": 2754
         },
         {
           "id": "2347189916",
@@ -150,7 +150,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3153
+          "plays": 3156
         },
         {
           "id": "2402962785",
@@ -159,16 +159,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1453
-        },
-        {
-          "id": "2164031784",
-          "title": "Order Eats the Sun",
-          "url": "https://soundcloud.com/grafenbergmusik/order-eats-the-sun-3",
-          "date": "2025-09-03",
-          "durationSec": 353,
-          "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 39823
+          "plays": 1458
         },
         {
           "id": "2402962797",
@@ -177,7 +168,16 @@
           "date": "2026-09-18",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1404
+          "plays": 1417
+        },
+        {
+          "id": "2164031784",
+          "title": "Order Eats the Sun",
+          "url": "https://soundcloud.com/grafenbergmusik/order-eats-the-sun-3",
+          "date": "2025-09-03",
+          "durationSec": 353,
+          "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
+          "plays": 39839
         },
         {
           "id": "2402962791",
@@ -186,7 +186,7 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1355
+          "plays": 1357
         },
         {
           "id": "2347189901",
@@ -195,7 +195,7 @@
           "date": "2026-06-25",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 2526
+          "plays": 2527
         },
         {
           "id": "2347189913",
@@ -204,7 +204,7 @@
           "date": "2026-06-25",
           "durationSec": 334,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 2151
+          "plays": 2152
         },
         {
           "id": "2404109157",
@@ -213,7 +213,7 @@
           "date": "2026-09-20",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-71b4KDAWnIcWd7pr-JusIAA-t1080x1080.jpg",
-          "plays": 771
+          "plays": 880
         },
         {
           "id": "2369060990",
@@ -222,7 +222,7 @@
           "date": "2026-07-27",
           "durationSec": 261,
           "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 549
+          "plays": 550
         },
         {
           "id": "2361904973",
@@ -258,7 +258,7 @@
           "date": "2026-08-28",
           "durationSec": 227,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 357
+          "plays": 358
         },
         {
           "id": "2360372885",
@@ -294,7 +294,7 @@
           "date": "2026-09-02",
           "durationSec": 262,
           "artwork": "https://i1.sndcdn.com/artworks-st4wyqXqSNlAIaIv-k3SIwQ-t1080x1080.jpg",
-          "plays": 320
+          "plays": 322
         },
         {
           "id": "2369061005",
@@ -348,7 +348,16 @@
           "date": "2026-08-28",
           "durationSec": 249,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 295
+          "plays": 296
+        },
+        {
+          "id": "2411552355",
+          "title": "All the Teeth in Heaven",
+          "url": "https://soundcloud.com/grafenbergmusik/all-the-teeth-in-heaven-1",
+          "date": "2026-10-01",
+          "durationSec": 314,
+          "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
+          "plays": 298
         },
         {
           "id": "2361904988",
@@ -376,15 +385,6 @@
           "durationSec": 311,
           "artwork": "https://i1.sndcdn.com/artworks-WC8zu7AAgTgZo2um-LJBSNA-t1080x1080.jpg",
           "plays": 286
-        },
-        {
-          "id": "2367370433",
-          "title": "The floor is skin",
-          "url": "https://soundcloud.com/grafenbergmusik/the-floor-is-skin-8",
-          "date": "2026-07-24",
-          "durationSec": 307,
-          "artwork": "https://i1.sndcdn.com/artworks-8JGHr9egqwqHzPAy-qNST9w-t1080x1080.jpg",
-          "plays": 285
         }
       ],
       "playlists": [
@@ -1696,7 +1696,7 @@
           "date": "2026-07-16",
           "durationSec": 319,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2659
+          "plays": 2663
         },
         {
           "id": "2394037353",
@@ -1705,7 +1705,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 2500
+          "plays": 2507
         },
         {
           "id": "2388231858",
@@ -1723,16 +1723,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1214
-        },
-        {
-          "id": "2348797784",
-          "title": "Primordial transmission",
-          "url": "https://soundcloud.com/broken_shaman/primordial-transmission-1",
-          "date": "2026-06-27",
-          "durationSec": 269,
-          "artwork": "https://i1.sndcdn.com/artworks-XNVCn0fql7yCy4Vj-NFjrEA-t1080x1080.jpg",
-          "plays": 1630
+          "plays": 1219
         },
         {
           "id": "2361904940",
@@ -1741,7 +1732,7 @@
           "date": "2026-07-16",
           "durationSec": 318,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 396
+          "plays": 400
         },
         {
           "id": "2361904943",
@@ -1759,7 +1750,7 @@
           "date": "2026-04-01",
           "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
-          "plays": 4247
+          "plays": 4248
         },
         {
           "id": "2383694124",
@@ -1777,7 +1768,7 @@
           "date": "2026-09-03",
           "durationSec": 253,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 336
+          "plays": 339
         },
         {
           "id": "2388231867",
@@ -1795,25 +1786,7 @@
           "date": "2026-09-03",
           "durationSec": 197,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 304
-        },
-        {
-          "id": "2355716957",
-          "title": "Piano in the snow",
-          "url": "https://soundcloud.com/broken_shaman/piano-in-the-snow-5",
-          "date": "2026-07-08",
-          "durationSec": 168,
-          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 602
-        },
-        {
-          "id": "2278322270",
-          "title": "Funeral suit",
-          "url": "https://soundcloud.com/broken_shaman/funeral-suit-7",
-          "date": "2026-03-05",
-          "durationSec": 263,
-          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3740
+          "plays": 306
         },
         {
           "id": "2388231879",
@@ -1825,13 +1798,40 @@
           "plays": 283
         },
         {
+          "id": "2278322270",
+          "title": "Funeral suit",
+          "url": "https://soundcloud.com/broken_shaman/funeral-suit-7",
+          "date": "2026-03-05",
+          "durationSec": 263,
+          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
+          "plays": 3741
+        },
+        {
           "id": "2274189833",
           "title": "In the same body",
           "url": "https://soundcloud.com/broken_shaman/in-the-same-body-9",
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3483
+          "plays": 3487
+        },
+        {
+          "id": "2348797784",
+          "title": "Primordial transmission",
+          "url": "https://soundcloud.com/broken_shaman/primordial-transmission-1",
+          "date": "2026-06-27",
+          "durationSec": 269,
+          "artwork": "https://i1.sndcdn.com/artworks-XNVCn0fql7yCy4Vj-NFjrEA-t1080x1080.jpg",
+          "plays": 1630
+        },
+        {
+          "id": "2355716957",
+          "title": "Piano in the snow",
+          "url": "https://soundcloud.com/broken_shaman/piano-in-the-snow-5",
+          "date": "2026-07-08",
+          "durationSec": 168,
+          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
+          "plays": 605
         },
         {
           "id": "2383694118",
@@ -1843,6 +1843,15 @@
           "plays": 259
         },
         {
+          "id": "2388231864",
+          "title": "AI SLOP I Kiss the ring",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-i-kiss-the-ring-1",
+          "date": "2026-08-25",
+          "durationSec": 222,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 261
+        },
+        {
           "id": "2361904934",
           "title": "After the impact",
           "url": "https://soundcloud.com/broken_shaman/after-the-impact-10",
@@ -1852,22 +1861,13 @@
           "plays": 258
         },
         {
-          "id": "2388231864",
-          "title": "AI SLOP I Kiss the ring",
-          "url": "https://soundcloud.com/broken_shaman/ai-slop-i-kiss-the-ring-1",
-          "date": "2026-08-25",
-          "durationSec": 222,
-          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 258
-        },
-        {
           "id": "2388231873",
           "title": "AI SLOP II More human than human",
           "url": "https://soundcloud.com/broken_shaman/ai-slop-ii-more-human-than-human-2",
           "date": "2026-08-25",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 255
+          "plays": 256
         },
         {
           "id": "2361904946",
@@ -1894,7 +1894,7 @@
           "date": "2026-08-18",
           "durationSec": 283,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
-          "plays": 236
+          "plays": 237
         },
         {
           "id": "2383694121",
@@ -1951,13 +1951,13 @@
           "plays": 220
         },
         {
-          "id": "2361904928",
-          "title": "Cold fire ritual",
-          "url": "https://soundcloud.com/broken_shaman/cold-fire-ritual-8",
-          "date": "2026-07-16",
-          "durationSec": 310,
-          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 217
+          "id": "2278322267",
+          "title": "Sunday again",
+          "url": "https://soundcloud.com/broken_shaman/sunday-again-10",
+          "date": "2026-03-05",
+          "durationSec": 267,
+          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
+          "plays": 3282
         }
       ],
       "playlists": [
@@ -2722,7 +2722,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2139
+          "plays": 2143
         },
         {
           "id": "2299293830",
@@ -2731,7 +2731,7 @@
           "date": "2026-04-09",
           "durationSec": 255,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 581
+          "plays": 582
         },
         {
           "id": "2299293842",
@@ -3125,7 +3125,7 @@
           "date": "2026-01-08",
           "durationSec": 252,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 2201
+          "plays": 2202
         },
         {
           "id": "2244072161",
@@ -3435,7 +3435,7 @@
           "date": "2026-03-18",
           "durationSec": 312,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1079
+          "plays": 1080
         },
         {
           "id": "2285999489",
@@ -3480,7 +3480,7 @@
           "date": "2026-03-18",
           "durationSec": 328,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1533
+          "plays": 1534
         },
         {
           "id": "2285999477",
@@ -3510,6 +3510,15 @@
           "plays": 1499
         },
         {
+          "id": "2285999495",
+          "title": "All the Sparks Beneath Your Bones",
+          "url": "https://soundcloud.com/vein-mirror/all-the-sparks-beneath-your-bones-7",
+          "date": "2026-03-18",
+          "durationSec": 307,
+          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
+          "plays": 376
+        },
+        {
           "id": "2285999486",
           "title": "Shine Until It Breaks",
           "url": "https://soundcloud.com/vein-mirror/shine-until-it-breaks-4",
@@ -3517,15 +3526,6 @@
           "durationSec": 348,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
           "plays": 410
-        },
-        {
-          "id": "2285999495",
-          "title": "All the Sparks Beneath Your Bones",
-          "url": "https://soundcloud.com/vein-mirror/all-the-sparks-beneath-your-bones-7",
-          "date": "2026-03-18",
-          "durationSec": 307,
-          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 375
         },
         {
           "id": "2299826684",
@@ -4093,6 +4093,15 @@
           "plays": 229
         },
         {
+          "id": "2266921847",
+          "title": "Iron Halos - Blood on the Canvas",
+          "url": "https://soundcloud.com/unmade_scores/iron-halos-blood-on-the-canvas-3",
+          "date": "2026-02-15",
+          "durationSec": 245,
+          "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
+          "plays": 293
+        },
+        {
           "id": "2266921844",
           "title": "Last Corner - Light If I Fall Tonight",
           "url": "https://soundcloud.com/unmade_scores/last-corner-light-if-i-fall-tonight-9",
@@ -4100,15 +4109,6 @@
           "durationSec": 234,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
           "plays": 266
-        },
-        {
-          "id": "2266921847",
-          "title": "Iron Halos - Blood on the Canvas",
-          "url": "https://soundcloud.com/unmade_scores/iron-halos-blood-on-the-canvas-3",
-          "date": "2026-02-15",
-          "durationSec": 245,
-          "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 290
         },
         {
           "id": "2266921862",
