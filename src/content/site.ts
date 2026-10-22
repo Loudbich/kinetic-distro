@@ -922,6 +922,9 @@ export const vinyl: Record<string, string> = {
  * store.
  */
 export const streaming: Record<string, { label: string; href: string }[]> = {
+  'golden-hour-broadcast': [
+    { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLG0Nr9otJHak' },
+  ],
   'nothing-here-was-an-accident': [
     { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLeugs2jR1DFc' },
   ],
