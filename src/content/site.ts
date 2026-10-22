@@ -635,6 +635,8 @@ export type Release = {
    * one, "Buy on Bandcamp" falls back to the label's shop front.
    */
   bandcampUrl?: string;
+  /** A video for this record — see the `video` table below. */
+  videoUrl?: string;
   /** Streaming pages for this exact record — see the `streaming` table below. */
   streamingLinks?: { label: string; href: string }[];
   listenUrl: string;
@@ -945,6 +947,16 @@ export const withheldArtwork = new Set<string>([]);
  * about had to go and find it again. Only verified URLs belong here: a 404 is
  * worse than the shop front, which is what an absent entry falls back to.
  */
+/**
+ * A video for a record, keyed by release slug.
+ *
+ * One video, not a playlist: this is what the release page plays in place, and
+ * an album's playlist belongs in `streaming` as a link out instead.
+ */
+export const video: Record<string, string> = {
+  'the-scale-of-everything': 'https://www.youtube.com/watch?v=MfngCo1Xbsg',
+};
+
 export const bandcamp: Record<string, string> = {
   'the-scale-of-everything': 'https://kineticdistro.bandcamp.com/album/the-scale-of-everything',
   'golden-hour-broadcast': 'https://kineticdistro.bandcamp.com/album/golden-hour-broadcast',

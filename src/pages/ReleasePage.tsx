@@ -4,6 +4,7 @@ import { artists, getArtist } from '../content/site';
 import { allReleases, findRelease } from '../content/catalog';
 import Cover from '../components/Cover';
 import Player from '../components/Player';
+import VideoPlayer from '../components/VideoPlayer';
 import Reveal from '../components/Reveal';
 import Seo from '../components/Seo';
 import { releaseSeo } from '../lib/seo';
@@ -126,6 +127,18 @@ export default function ReleasePage() {
                   accent={accent}
                   variant="set"
                   className="mt-10"
+                />
+              )}
+
+              {release.videoUrl && (
+                <VideoPlayer
+                  url={release.videoUrl}
+                  title={release.title}
+                  accent={accent}
+                  poster={release.image}
+                  posterSrcset={release.imageSrcset}
+                  seed={release.slug}
+                  className={release.streamUrl ? 'mt-4' : 'mt-10'}
                 />
               )}
 
