@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-22T17:25:10.254Z",
+  "generatedAt": "2026-10-22T19:34:49.518Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
-  "trackCount": 698,
+  "trackCount": 699,
   "playlistCount": 76,
   "failures": [],
   "artists": {
@@ -13,11 +13,19 @@
       "profileUrl": "https://soundcloud.com/grafenbergmusik",
       "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:50014017/sounds.rss",
       "displayName": "Kinetic Distro",
-      "avatar": "https://i1.sndcdn.com/avatars-jykZxNXG0A95TqNJ-EcUvRg-t500x500.jpg",
+      "avatar": "https://i1.sndcdn.com/avatars-aJICzXqEBMyGtqIH-NJD2Pg-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 356,
-      "latestDate": "2026-10-01",
+      "trackCount": 357,
+      "latestDate": "2026-10-22",
       "tracks": [
+        {
+          "id": "2424205323",
+          "title": "Every restless road comes back to you",
+          "url": "https://soundcloud.com/grafenbergmusik/every-restless-road-comes-back",
+          "date": "2026-10-22",
+          "durationSec": 212,
+          "artwork": "https://i1.sndcdn.com/artworks-jq0auDQQDBKp5d73-OeJN8w-t500x500.jpg"
+        },
         {
           "id": "2411552355",
           "title": "All the Teeth in Heaven",
@@ -105,14 +113,6 @@
           "date": "2026-09-20",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-71b4KDAWnIcWd7pr-JusIAA-t500x500.jpg"
-        },
-        {
-          "id": "2402962812",
-          "title": "I didnt lose the world, I outgrew its timing",
-          "url": "https://soundcloud.com/grafenbergmusik/i-didnt-lose-the-world-i-outgrew-its-timing-7",
-          "date": "2026-09-18",
-          "durationSec": 294,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t500x500.jpg"
         }
       ],
       "topTracks": [
@@ -132,7 +132,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2997
+          "plays": 2998
         },
         {
           "id": "2360372888",
@@ -150,7 +150,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1528
+          "plays": 1529
         },
         {
           "id": "2402962797",
@@ -177,7 +177,7 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1389
+          "plays": 1390
         },
         {
           "id": "2404109157",
@@ -204,7 +204,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3178
+          "plays": 3179
         },
         {
           "id": "2411552355",
@@ -213,7 +213,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 400
+          "plays": 401
         },
         {
           "id": "2390185518",
@@ -1696,7 +1696,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 2541
+          "plays": 2542
         },
         {
           "id": "2388231858",
@@ -2731,7 +2731,7 @@
           "date": "2026-04-09",
           "durationSec": 255,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 589
+          "plays": 590
         },
         {
           "id": "2299293842",
@@ -3444,7 +3444,7 @@
           "date": "2026-03-18",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 772
+          "plays": 773
         },
         {
           "id": "2299826672",
@@ -3588,7 +3588,7 @@
           "date": "2026-04-09",
           "durationSec": 328,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 266
+          "plays": 267
         },
         {
           "id": "2299826663",

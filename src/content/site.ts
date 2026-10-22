@@ -69,6 +69,25 @@ export type Artist = {
 
 const roster: Artist[] = [
   {
+    slug: 'amari-vellane',
+    name: 'Amari Vellane',
+    accent: '#C98A4B',
+    genre: 'Experimental pop / Funk',
+    since: '2026',
+    tagline: 'The song does not have to obey the room.',
+    bio: [
+      'Some artists begin with a genre. Amari Vellane begins with scale.',
+      'His voice is the first clue: low, dry, raspy and remarkably controlled. It rarely fights for attention. It does not need to. Around it, songs expand, fracture, descend, mutate and occasionally refuse to behave like songs at all.',
+      'It is deeply physical music made with unusual restraint — immediate without becoming disposable, experimental without hiding behind abstraction, danceable without surrendering to dance music convention, pop without accepting pop’s usual architecture.',
+      'Influences from generations of ambitious pop, funk, soul, club music and experimental electronics can be felt without ever being impersonated.',
+      'Amari is interested in inheritance, not nostalgia. In rhythm, not formulas. In magnitude, not volume.',
+      'The idea underneath all of it: the song does not have to obey the room. The room can be taught to obey the song.',
+    ],
+    traits: ['Scale before genre', 'A voice that never pushes', 'Rhythm over formula'],
+    links: [{ label: 'Bandcamp', href: 'https://kineticdistro.bandcamp.com' }],
+    featured: true,
+  },
+  {
     slug: 'leadglass',
     name: 'LEADGLASS',
     accent: '#7FB2C0',
@@ -633,6 +652,30 @@ export type Release = {
 
 export const releases: Release[] = [
   {
+    slug: 'the-scale-of-everything',
+    catalog: 'KD-011',
+    title: 'The Scale of Everything',
+    artistSlugs: ['amari-vellane'],
+    artistDisplay: 'Amari Vellane',
+    date: '2026-11-13',
+    format: 'Digital',
+    type: 'Album',
+    blurb:
+      'The debut album by Amari Vellane — deeply physical music made with unusual restraint, built on scale rather than genre.',
+    notes: [
+      'Some artists begin with a genre. Amari Vellane begins with scale.',
+      'The Scale of Everything is built on a contradiction: deeply physical music made with unusual restraint. Immediate without becoming disposable, experimental without hiding behind abstraction, danceable without surrendering to dance music convention, pop without accepting pop’s usual architecture.',
+      'The opening Sheba Electric establishes Amari’s world through rhythm, tension and enormous negative space. From there the record moves through restless roads, red dust, empty windows, damaged machinery, a finite Earth and crooked royalty.',
+      'Its most radical stretch arrives late. On Gravity Has Bad Manners the production seems to sink physically beneath the listener before violently reversing direction. The Future Has No Chorus removes the expected centre of a pop song entirely, letting a recurring idea migrate through the arrangement until the listener has learned a hook that was never formally presented. On We Were the Weather, competing rhythmic pressures accumulate until everything aligns into a single overwhelming movement.',
+      'These are not production tricks. They reveal the central idea: the song does not have to obey the room. The room can be taught to obey the song.',
+      'The album closes by letting Amari enter music outside his own world. Hollow Saints reimagines material originating elsewhere in the Kinetic Distro universe, while the bonus track Mercy in Blackwater transforms VEIN//MIRROR through Amari’s own vocabulary.',
+      'There are records designed to announce a promising new artist. This one sounds more interested in establishing the measurement by which everything after it will be judged.',
+    ],
+    streamUrl: 'https://soundcloud.com/grafenbergmusik/every-restless-road-comes-back',
+    listenUrl: 'https://soundcloud.com/grafenbergmusik/every-restless-road-comes-back',
+    featured: true,
+  },
+  {
     slug: 'nothing-here-was-an-accident',
     catalog: 'KD-010',
     title: 'Nothing Here Was an Accident',
@@ -889,6 +932,7 @@ export const withheldArtwork = new Set<string>([]);
  * worse than the shop front, which is what an absent entry falls back to.
  */
 export const bandcamp: Record<string, string> = {
+  'the-scale-of-everything': 'https://kineticdistro.bandcamp.com/album/the-scale-of-everything',
   'golden-hour-broadcast': 'https://kineticdistro.bandcamp.com/album/golden-hour-broadcast',
   'nothing-here-was-an-accident':
     'https://kineticdistro.bandcamp.com/album/nothing-here-was-an-accident',
@@ -922,6 +966,9 @@ export const vinyl: Record<string, string> = {
  * store.
  */
 export const streaming: Record<string, { label: string; href: string }[]> = {
+  'the-scale-of-everything': [
+    { label: 'YouTube', href: 'https://www.youtube.com/watch?v=MfngCo1Xbsg' },
+  ],
   'golden-hour-broadcast': [
     { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLG0Nr9otJHak' },
   ],

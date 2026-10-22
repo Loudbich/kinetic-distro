@@ -1,5 +1,9 @@
 {
   "covers": {
+    "thescaleofeverything": {
+      "url": "/covers/the-scale-of-everything-1500.webp",
+      "srcset": "/covers/the-scale-of-everything-700.webp 700w, /covers/the-scale-of-everything-1000.webp 1000w, /covers/the-scale-of-everything-1500.webp 1500w"
+    },
     "solarbazaarrituals": {
       "url": "/covers/solar-bazaar-rituals-1000.webp",
       "srcset": "/covers/solar-bazaar-rituals-700.webp 700w, /covers/solar-bazaar-rituals-1000.webp 1000w"
@@ -248,6 +252,7 @@
     }
   },
   "portraits": {
+    "amari-vellane": "/artists/amari-vellane.webp",
     "anatolian-mirage": "/artists/anatolian-mirage.webp",
     "broken-shaman": "/artists/broken-shaman.webp",
     "chromabone": "/artists/chromabone.webp",
@@ -266,6 +271,20 @@
     "logo-seul": "/logo-seul.webp"
   },
   "carousel": {
+    "amari-vellane": {
+      "wide": {
+        "url": "/carousel/amari-vellane-3840.webp",
+        "width": 3840,
+        "height": 1608,
+        "srcset": "/carousel/amari-vellane-768.webp 768w, /carousel/amari-vellane-1280.webp 1280w, /carousel/amari-vellane-1920.webp 1920w, /carousel/amari-vellane-2560.webp 2560w, /carousel/amari-vellane-3840.webp 3840w"
+      },
+      "mobile": {
+        "url": "/carousel/amari-vellane-mobile-941.webp",
+        "width": 941,
+        "height": 1672,
+        "srcset": "/carousel/amari-vellane-mobile-640.webp 640w, /carousel/amari-vellane-mobile-941.webp 941w"
+      }
+    },
     "anatolian-mirage": {
       "wide": {
         "url": "/carousel/anatolian-mirage-3840.webp",
