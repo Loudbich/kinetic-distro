@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T09:58:36.595Z",
+  "generatedAt": "2026-10-24T09:27:21.353Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 699,
@@ -123,7 +123,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2998
+          "plays": 2999
         },
         {
           "id": "2360407937",
@@ -132,7 +132,7 @@
           "date": "2026-07-14",
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2906
+          "plays": 2907
         },
         {
           "id": "2360372888",
@@ -141,7 +141,7 @@
           "date": "2026-07-14",
           "durationSec": 272,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2778
+          "plays": 2782
         },
         {
           "id": "2402962785",
@@ -150,7 +150,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1533
+          "plays": 1542
         },
         {
           "id": "2402962797",
@@ -159,7 +159,7 @@
           "date": "2026-09-18",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1460
+          "plays": 1471
         },
         {
           "id": "2164031784",
@@ -168,7 +168,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 39984
+          "plays": 39990
         },
         {
           "id": "2402962791",
@@ -177,7 +177,7 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1392
+          "plays": 1393
         },
         {
           "id": "2404109157",
@@ -186,7 +186,7 @@
           "date": "2026-09-20",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-71b4KDAWnIcWd7pr-JusIAA-t1080x1080.jpg",
-          "plays": 999
+          "plays": 1000
         },
         {
           "id": "2369060990",
@@ -195,7 +195,7 @@
           "date": "2026-07-27",
           "durationSec": 261,
           "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 571
+          "plays": 575
         },
         {
           "id": "2347189916",
@@ -204,7 +204,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3180
+          "plays": 3184
         },
         {
           "id": "2411552355",
@@ -315,15 +315,6 @@
           "plays": 286
         },
         {
-          "id": "2367370433",
-          "title": "The floor is skin",
-          "url": "https://soundcloud.com/grafenbergmusik/the-floor-is-skin-8",
-          "date": "2026-07-24",
-          "durationSec": 307,
-          "artwork": "https://i1.sndcdn.com/artworks-8JGHr9egqwqHzPAy-qNST9w-t1080x1080.jpg",
-          "plays": 286
-        },
-        {
           "id": "2390185536",
           "title": "She was part of the system (feat. Nyla Corvey)",
           "url": "https://soundcloud.com/grafenbergmusik/she-was-part-of-the-system-feat-nyla-vey-3",
@@ -384,6 +375,15 @@
           "date": "2026-09-02",
           "durationSec": 301,
           "artwork": "https://i1.sndcdn.com/artworks-st4wyqXqSNlAIaIv-k3SIwQ-t1080x1080.jpg",
+          "plays": 260
+        },
+        {
+          "id": "2386792758",
+          "title": "PULSE OF THE DAMAGED CORE [Remastered]",
+          "url": "https://soundcloud.com/grafenbergmusik/da801d4e-4fe2-46d7-a06d-13b5abaf9978",
+          "date": "2026-08-23",
+          "durationSec": 312,
+          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t1080x1080.jpg",
           "plays": 260
         }
       ],
@@ -1696,7 +1696,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 2542
+          "plays": 2545
         },
         {
           "id": "2388231858",
@@ -1723,7 +1723,7 @@
           "date": "2026-10-07",
           "durationSec": 196,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1322
+          "plays": 1325
         },
         {
           "id": "2414936652",
@@ -1732,7 +1732,7 @@
           "date": "2026-10-07",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1298
+          "plays": 1299
         },
         {
           "id": "2394037335",
@@ -1741,7 +1741,16 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1245
+          "plays": 1251
+        },
+        {
+          "id": "2394037347",
+          "title": "Fracture Protocol",
+          "url": "https://soundcloud.com/broken_shaman/fracture-protocol-7",
+          "date": "2026-09-03",
+          "durationSec": 197,
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "plays": 357
         },
         {
           "id": "2383694124",
@@ -1753,22 +1762,13 @@
           "plays": 356
         },
         {
-          "id": "2394037347",
-          "title": "Fracture Protocol",
-          "url": "https://soundcloud.com/broken_shaman/fracture-protocol-7",
-          "date": "2026-09-03",
-          "durationSec": 197,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 351
-        },
-        {
           "id": "2394037341",
           "title": "Shadow Returns",
           "url": "https://soundcloud.com/broken_shaman/shadow-returns-1",
           "date": "2026-09-03",
           "durationSec": 253,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 347
+          "plays": 348
         },
         {
           "id": "2388231867",
@@ -1786,7 +1786,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3784
+          "plays": 3786
         },
         {
           "id": "2388231879",
@@ -1822,7 +1822,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3516
+          "plays": 3517
         },
         {
           "id": "2383694118",
@@ -1957,7 +1957,7 @@
           "date": "2026-04-01",
           "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
-          "plays": 4281
+          "plays": 4282
         }
       ],
       "playlists": [
@@ -2722,7 +2722,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2182
+          "plays": 2184
         },
         {
           "id": "2299293830",
@@ -2731,7 +2731,7 @@
           "date": "2026-04-09",
           "durationSec": 255,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 590
+          "plays": 591
         },
         {
           "id": "2299293842",
@@ -3116,7 +3116,7 @@
           "date": "2026-02-06",
           "durationSec": 265,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
-          "plays": 2749
+          "plays": 2750
         },
         {
           "id": "2244072179",
@@ -3125,7 +3125,7 @@
           "date": "2026-01-08",
           "durationSec": 252,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 2204
+          "plays": 2205
         },
         {
           "id": "2244072161",
@@ -3435,7 +3435,7 @@
           "date": "2026-03-18",
           "durationSec": 312,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1083
+          "plays": 1084
         },
         {
           "id": "2285999489",
@@ -3444,7 +3444,16 @@
           "date": "2026-03-18",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 774
+          "plays": 775
+        },
+        {
+          "id": "2285999492",
+          "title": "Rust Beneath the Halo",
+          "url": "https://soundcloud.com/vein-mirror/rust-beneath-the-halo-1",
+          "date": "2026-03-18",
+          "durationSec": 354,
+          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
+          "plays": 1058
         },
         {
           "id": "2299826672",
@@ -3454,15 +3463,6 @@
           "durationSec": 409,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
           "plays": 1486
-        },
-        {
-          "id": "2285999492",
-          "title": "Rust Beneath the Halo",
-          "url": "https://soundcloud.com/vein-mirror/rust-beneath-the-halo-1",
-          "date": "2026-03-18",
-          "durationSec": 354,
-          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1057
         },
         {
           "id": "2285999480",
@@ -3483,15 +3483,6 @@
           "plays": 519
         },
         {
-          "id": "2285999483",
-          "title": "The Horizon Made of Broken Steel",
-          "url": "https://soundcloud.com/vein-mirror/the-horizon-made-of-broken-steel-9",
-          "date": "2026-03-18",
-          "durationSec": 414,
-          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1202
-        },
-        {
           "id": "2285999477",
           "title": "Light That Bleeds So Softly",
           "url": "https://soundcloud.com/vein-mirror/light-that-bleeds-so-softly-8",
@@ -3499,6 +3490,15 @@
           "durationSec": 409,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
           "plays": 1211
+        },
+        {
+          "id": "2285999483",
+          "title": "The Horizon Made of Broken Steel",
+          "url": "https://soundcloud.com/vein-mirror/the-horizon-made-of-broken-steel-9",
+          "date": "2026-03-18",
+          "durationSec": 414,
+          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
+          "plays": 1202
         },
         {
           "id": "2299826675",
@@ -3516,7 +3516,7 @@
           "date": "2026-03-18",
           "durationSec": 307,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 378
+          "plays": 379
         },
         {
           "id": "2285999501",
@@ -3796,7 +3796,7 @@
           "date": "2026-01-30",
           "durationSec": 243,
           "artwork": "https://i1.sndcdn.com/artworks-EWdfztFfmRIOB5p6-N4T9zg-large.png",
-          "plays": 240
+          "plays": 241
         },
         {
           "id": "2256974597",
