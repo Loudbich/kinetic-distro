@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T09:27:21.353Z",
+  "generatedAt": "2026-10-25T09:45:13.116Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 699,
@@ -123,7 +123,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2999
+          "plays": 3001
         },
         {
           "id": "2360407937",
@@ -132,16 +132,7 @@
           "date": "2026-07-14",
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2907
-        },
-        {
-          "id": "2360372888",
-          "title": "The Weight of the Unspoken",
-          "url": "https://soundcloud.com/grafenbergmusik/the-weight-of-the-unspoken-8",
-          "date": "2026-07-14",
-          "durationSec": 272,
-          "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2782
+          "plays": 2909
         },
         {
           "id": "2402962785",
@@ -150,7 +141,16 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1542
+          "plays": 1547
+        },
+        {
+          "id": "2360372888",
+          "title": "The Weight of the Unspoken",
+          "url": "https://soundcloud.com/grafenbergmusik/the-weight-of-the-unspoken-8",
+          "date": "2026-07-14",
+          "durationSec": 272,
+          "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
+          "plays": 2783
         },
         {
           "id": "2402962797",
@@ -159,16 +159,7 @@
           "date": "2026-09-18",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1471
-        },
-        {
-          "id": "2164031784",
-          "title": "Order Eats the Sun",
-          "url": "https://soundcloud.com/grafenbergmusik/order-eats-the-sun-3",
-          "date": "2025-09-03",
-          "durationSec": 353,
-          "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 39990
+          "plays": 1484
         },
         {
           "id": "2402962791",
@@ -177,7 +168,16 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1393
+          "plays": 1394
+        },
+        {
+          "id": "2164031784",
+          "title": "Order Eats the Sun",
+          "url": "https://soundcloud.com/grafenbergmusik/order-eats-the-sun-3",
+          "date": "2025-09-03",
+          "durationSec": 353,
+          "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
+          "plays": 40001
         },
         {
           "id": "2404109157",
@@ -186,7 +186,7 @@
           "date": "2026-09-20",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-71b4KDAWnIcWd7pr-JusIAA-t1080x1080.jpg",
-          "plays": 1000
+          "plays": 1001
         },
         {
           "id": "2369060990",
@@ -195,7 +195,7 @@
           "date": "2026-07-27",
           "durationSec": 261,
           "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 575
+          "plays": 577
         },
         {
           "id": "2347189916",
@@ -204,7 +204,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3184
+          "plays": 3185
         },
         {
           "id": "2411552355",
@@ -213,7 +213,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 402
+          "plays": 406
         },
         {
           "id": "2390185518",
@@ -288,15 +288,6 @@
           "plays": 300
         },
         {
-          "id": "2361904973",
-          "title": "Steel horizon",
-          "url": "https://soundcloud.com/grafenbergmusik/steel-horizon-1",
-          "date": "2026-07-16",
-          "durationSec": 459,
-          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 518
-        },
-        {
           "id": "2382989844",
           "title": "Lotusfire Horizon",
           "url": "https://soundcloud.com/grafenbergmusik/lotusfire-horizon-12",
@@ -340,6 +331,15 @@
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
           "plays": 278
+        },
+        {
+          "id": "2361904973",
+          "title": "Steel horizon",
+          "url": "https://soundcloud.com/grafenbergmusik/steel-horizon-1",
+          "date": "2026-07-16",
+          "durationSec": 459,
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "plays": 518
         },
         {
           "id": "2390185527",
@@ -1696,7 +1696,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 2545
+          "plays": 2546
         },
         {
           "id": "2388231858",
@@ -1705,7 +1705,7 @@
           "date": "2026-08-25",
           "durationSec": 378,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 1897
+          "plays": 1901
         },
         {
           "id": "2361904949",
@@ -1714,7 +1714,7 @@
           "date": "2026-07-16",
           "durationSec": 319,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2684
+          "plays": 2687
         },
         {
           "id": "2414936643",
@@ -1723,7 +1723,7 @@
           "date": "2026-10-07",
           "durationSec": 196,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1325
+          "plays": 1520
         },
         {
           "id": "2414936652",
@@ -1732,7 +1732,7 @@
           "date": "2026-10-07",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1299
+          "plays": 1468
         },
         {
           "id": "2394037335",
@@ -1768,7 +1768,7 @@
           "date": "2026-09-03",
           "durationSec": 253,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 348
+          "plays": 349
         },
         {
           "id": "2388231867",
@@ -1786,7 +1786,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3786
+          "plays": 3787
         },
         {
           "id": "2388231879",
@@ -1822,7 +1822,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3517
+          "plays": 3520
         },
         {
           "id": "2383694118",
@@ -1879,13 +1879,13 @@
           "plays": 220
         },
         {
-          "id": "2278322267",
-          "title": "Sunday again",
-          "url": "https://soundcloud.com/broken_shaman/sunday-again-10",
-          "date": "2026-03-05",
-          "durationSec": 267,
-          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3310
+          "id": "2388231861",
+          "title": "AI SLOP VII Training data",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-vii-training-data-7",
+          "date": "2026-08-25",
+          "durationSec": 332,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 219
         },
         {
           "id": "2394037350",
@@ -1897,13 +1897,13 @@
           "plays": 218
         },
         {
-          "id": "2388231861",
-          "title": "AI SLOP VII Training data",
-          "url": "https://soundcloud.com/broken_shaman/ai-slop-vii-training-data-7",
-          "date": "2026-08-25",
-          "durationSec": 332,
-          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 218
+          "id": "2278322267",
+          "title": "Sunday again",
+          "url": "https://soundcloud.com/broken_shaman/sunday-again-10",
+          "date": "2026-03-05",
+          "durationSec": 267,
+          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
+          "plays": 3310
         },
         {
           "id": "2383694094",
@@ -1957,7 +1957,7 @@
           "date": "2026-04-01",
           "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
-          "plays": 4282
+          "plays": 4283
         }
       ],
       "playlists": [
@@ -2722,7 +2722,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2184
+          "plays": 2189
         },
         {
           "id": "2299293830",
@@ -3116,7 +3116,7 @@
           "date": "2026-02-06",
           "durationSec": 265,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
-          "plays": 2750
+          "plays": 2752
         },
         {
           "id": "2244072179",
@@ -3218,13 +3218,13 @@
           "plays": 278
         },
         {
-          "id": "2261397662",
-          "title": "Neon zombies",
-          "url": "https://soundcloud.com/nosfera_disco_club/neon-zombies-6",
-          "date": "2026-02-06",
-          "durationSec": 286,
-          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
-          "plays": 255
+          "id": "2244072173",
+          "title": "Bloodlights on main floor",
+          "url": "https://soundcloud.com/nosfera_disco_club/bloodlights-on-main-floor-1",
+          "date": "2026-01-08",
+          "durationSec": 187,
+          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
+          "plays": 346
         },
         {
           "id": "2261397632",
@@ -3236,15 +3236,6 @@
           "plays": 209
         },
         {
-          "id": "2244072173",
-          "title": "Bloodlights on main floor",
-          "url": "https://soundcloud.com/nosfera_disco_club/bloodlights-on-main-floor-1",
-          "date": "2026-01-08",
-          "durationSec": 187,
-          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 344
-        },
-        {
           "id": "2242136909",
           "title": "Neon bone parade",
           "url": "https://soundcloud.com/nosfera_disco_club/neon-bone-parade",
@@ -3252,6 +3243,15 @@
           "durationSec": 199,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
           "plays": 258
+        },
+        {
+          "id": "2261397662",
+          "title": "Neon zombies",
+          "url": "https://soundcloud.com/nosfera_disco_club/neon-zombies-6",
+          "date": "2026-02-06",
+          "durationSec": 286,
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
+          "plays": 255
         }
       ],
       "playlists": [
@@ -3507,7 +3507,7 @@
           "date": "2026-04-09",
           "durationSec": 335,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 1503
+          "plays": 1504
         },
         {
           "id": "2285999495",
@@ -3796,7 +3796,7 @@
           "date": "2026-01-30",
           "durationSec": 243,
           "artwork": "https://i1.sndcdn.com/artworks-EWdfztFfmRIOB5p6-N4T9zg-large.png",
-          "plays": 241
+          "plays": 242
         },
         {
           "id": "2256974597",
@@ -3805,7 +3805,7 @@
           "date": "2026-01-30",
           "durationSec": 237,
           "artwork": "https://i1.sndcdn.com/artworks-EWdfztFfmRIOB5p6-N4T9zg-large.png",
-          "plays": 140
+          "plays": 141
         },
         {
           "id": "2256974591",
@@ -4081,7 +4081,7 @@
           "date": "2026-02-15",
           "durationSec": 245,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 299
+          "plays": 300
         },
         {
           "id": "2266921853",
