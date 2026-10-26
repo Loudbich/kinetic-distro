@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T09:45:13.116Z",
+  "generatedAt": "2026-10-26T10:59:37.825Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 699,
@@ -123,7 +123,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 3001
+          "plays": 3004
         },
         {
           "id": "2360407937",
@@ -132,7 +132,7 @@
           "date": "2026-07-14",
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2909
+          "plays": 2910
         },
         {
           "id": "2402962785",
@@ -141,7 +141,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1547
+          "plays": 1556
         },
         {
           "id": "2360372888",
@@ -150,7 +150,7 @@
           "date": "2026-07-14",
           "durationSec": 272,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2783
+          "plays": 2785
         },
         {
           "id": "2402962797",
@@ -159,7 +159,7 @@
           "date": "2026-09-18",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1484
+          "plays": 1486
         },
         {
           "id": "2402962791",
@@ -168,7 +168,7 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1394
+          "plays": 1395
         },
         {
           "id": "2164031784",
@@ -177,7 +177,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40001
+          "plays": 40015
         },
         {
           "id": "2404109157",
@@ -195,7 +195,7 @@
           "date": "2026-07-27",
           "durationSec": 261,
           "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 577
+          "plays": 578
         },
         {
           "id": "2347189916",
@@ -204,7 +204,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3185
+          "plays": 3187
         },
         {
           "id": "2411552355",
@@ -213,7 +213,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 406
+          "plays": 410
         },
         {
           "id": "2390185518",
@@ -222,7 +222,7 @@
           "date": "2026-08-28",
           "durationSec": 227,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 359
+          "plays": 361
         },
         {
           "id": "2390185524",
@@ -231,7 +231,7 @@
           "date": "2026-08-28",
           "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 333
+          "plays": 334
         },
         {
           "id": "2393008854",
@@ -285,7 +285,7 @@
           "date": "2026-08-28",
           "durationSec": 249,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 300
+          "plays": 301
         },
         {
           "id": "2382989844",
@@ -324,6 +324,15 @@
           "plays": 279
         },
         {
+          "id": "2390185527",
+          "title": "The system offers a deal (feat. Nyla Corvey)",
+          "url": "https://soundcloud.com/grafenbergmusik/the-system-offers-a-deal-feat-nyla-vey-7",
+          "date": "2026-08-28",
+          "durationSec": 254,
+          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
+          "plays": 278
+        },
+        {
           "id": "2369060999",
           "title": "A sky without birds (second memory)",
           "url": "https://soundcloud.com/grafenbergmusik/a-sky-without-birds-second-memory-11",
@@ -331,24 +340,6 @@
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
           "plays": 278
-        },
-        {
-          "id": "2361904973",
-          "title": "Steel horizon",
-          "url": "https://soundcloud.com/grafenbergmusik/steel-horizon-1",
-          "date": "2026-07-16",
-          "durationSec": 459,
-          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 518
-        },
-        {
-          "id": "2390185527",
-          "title": "The system offers a deal (feat. Nyla Corvey)",
-          "url": "https://soundcloud.com/grafenbergmusik/the-system-offers-a-deal-feat-nyla-vey-7",
-          "date": "2026-08-28",
-          "durationSec": 254,
-          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 277
         },
         {
           "id": "2393008863",
@@ -367,6 +358,15 @@
           "durationSec": 249,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
           "plays": 268
+        },
+        {
+          "id": "2361904973",
+          "title": "Steel horizon",
+          "url": "https://soundcloud.com/grafenbergmusik/steel-horizon-1",
+          "date": "2026-07-16",
+          "durationSec": 459,
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "plays": 518
         },
         {
           "id": "2393008869",
@@ -1696,25 +1696,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 2546
-        },
-        {
-          "id": "2388231858",
-          "title": "AI SLOP VI The cure",
-          "url": "https://soundcloud.com/broken_shaman/ai-slop-vi-the-cure-6",
-          "date": "2026-08-25",
-          "durationSec": 378,
-          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 1901
-        },
-        {
-          "id": "2361904949",
-          "title": "Silent voltage",
-          "url": "https://soundcloud.com/broken_shaman/silent-voltage-9",
-          "date": "2026-07-16",
-          "durationSec": 319,
-          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2687
+          "plays": 2557
         },
         {
           "id": "2414936643",
@@ -1723,7 +1705,7 @@
           "date": "2026-10-07",
           "durationSec": 196,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1520
+          "plays": 2405
         },
         {
           "id": "2414936652",
@@ -1732,7 +1714,25 @@
           "date": "2026-10-07",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1468
+          "plays": 2280
+        },
+        {
+          "id": "2388231858",
+          "title": "AI SLOP VI The cure",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-vi-the-cure-6",
+          "date": "2026-08-25",
+          "durationSec": 378,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 1906
+        },
+        {
+          "id": "2361904949",
+          "title": "Silent voltage",
+          "url": "https://soundcloud.com/broken_shaman/silent-voltage-9",
+          "date": "2026-07-16",
+          "durationSec": 319,
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "plays": 2701
         },
         {
           "id": "2394037335",
@@ -1741,7 +1741,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1251
+          "plays": 1257
         },
         {
           "id": "2394037347",
@@ -1759,7 +1759,7 @@
           "date": "2026-08-18",
           "durationSec": 287,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
-          "plays": 356
+          "plays": 357
         },
         {
           "id": "2394037341",
@@ -1777,7 +1777,7 @@
           "date": "2026-08-25",
           "durationSec": 299,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 333
+          "plays": 334
         },
         {
           "id": "2278322270",
@@ -1786,7 +1786,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3787
+          "plays": 3789
         },
         {
           "id": "2388231879",
@@ -1804,7 +1804,7 @@
           "date": "2026-08-25",
           "durationSec": 222,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 296
+          "plays": 297
         },
         {
           "id": "2388231873",
@@ -1822,7 +1822,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3520
+          "plays": 3525
         },
         {
           "id": "2383694118",
@@ -1903,7 +1903,7 @@
           "date": "2026-03-05",
           "durationSec": 267,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3310
+          "plays": 3312
         },
         {
           "id": "2383694094",
@@ -1942,6 +1942,15 @@
           "plays": 197
         },
         {
+          "id": "2414936676",
+          "title": "Sunday soul food",
+          "url": "https://soundcloud.com/broken_shaman/sunday-soul-food-7",
+          "date": "2026-10-07",
+          "durationSec": 204,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 193
+        },
+        {
           "id": "2383694100",
           "title": "Data seduction",
           "url": "https://soundcloud.com/broken_shaman/data-seduction-6",
@@ -1949,15 +1958,6 @@
           "durationSec": 249,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
           "plays": 193
-        },
-        {
-          "id": "2294824532",
-          "title": "Afterimage",
-          "url": "https://soundcloud.com/broken_shaman/afterimage-6",
-          "date": "2026-04-01",
-          "durationSec": 226,
-          "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
-          "plays": 4283
         }
       ],
       "playlists": [
@@ -2722,7 +2722,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2189
+          "plays": 2192
         },
         {
           "id": "2299293830",
@@ -3173,13 +3173,13 @@
           "plays": 296
         },
         {
-          "id": "2261397626",
-          "title": "Flesh & velvet",
-          "url": "https://soundcloud.com/nosfera_disco_club/flesh-velvet-4",
+          "id": "2261397656",
+          "title": "Blood moon boogie",
+          "url": "https://soundcloud.com/nosfera_disco_club/blood-moon-boogie-9",
           "date": "2026-02-06",
-          "durationSec": 259,
+          "durationSec": 215,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
-          "plays": 304
+          "plays": 371
         },
         {
           "id": "2244072182",
@@ -3191,13 +3191,13 @@
           "plays": 342
         },
         {
-          "id": "2261397656",
-          "title": "Blood moon boogie",
-          "url": "https://soundcloud.com/nosfera_disco_club/blood-moon-boogie-9",
+          "id": "2261397626",
+          "title": "Flesh & velvet",
+          "url": "https://soundcloud.com/nosfera_disco_club/flesh-velvet-4",
           "date": "2026-02-06",
-          "durationSec": 215,
+          "durationSec": 259,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
-          "plays": 370
+          "plays": 304
         },
         {
           "id": "2261397653",
@@ -3435,7 +3435,7 @@
           "date": "2026-03-18",
           "durationSec": 312,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1084
+          "plays": 1085
         },
         {
           "id": "2285999489",
@@ -3444,7 +3444,7 @@
           "date": "2026-03-18",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 775
+          "plays": 776
         },
         {
           "id": "2285999492",
@@ -4099,7 +4099,7 @@
           "date": "2026-02-15",
           "durationSec": 234,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 267
+          "plays": 270
         },
         {
           "id": "2266921862",
