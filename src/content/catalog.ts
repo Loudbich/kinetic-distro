@@ -326,7 +326,7 @@ const derived: Release[] = mergePlaylists(
       streamUrl: playlist.url,
       vinylUrl: vinyl[slugify(playlist.title) || `set-${playlist.id}`],
       bandcampUrl: bandcamp[slugify(playlist.title) || `set-${playlist.id}`],
-      videoUrl: video[slugify(playlist.title) || `set-${playlist.id}`],
+      videos: video[slugify(playlist.title) || `set-${playlist.id}`],
       streamingLinks: streaming[slugify(playlist.title) || `set-${playlist.id}`],
       image:
         coverFor(playlist.title)?.url ??
@@ -381,7 +381,7 @@ const curated: Release[] = releases.map((r) => ({
   tracklist: r.tracklist ?? syncedByTitle.get(norm(r.title))?.tracklist,
   vinylUrl: r.vinylUrl ?? vinyl[r.slug],
   bandcampUrl: r.bandcampUrl ?? bandcamp[r.slug],
-  videoUrl: r.videoUrl ?? video[r.slug],
+  videos: r.videos ?? video[r.slug],
   streamingLinks: r.streamingLinks ?? streaming[r.slug],
 }));
 

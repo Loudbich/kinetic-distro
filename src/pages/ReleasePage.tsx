@@ -130,17 +130,18 @@ export default function ReleasePage() {
                 />
               )}
 
-              {release.videoUrl && (
+              {release.videos?.map((v, i) => (
                 <VideoPlayer
-                  url={release.videoUrl}
-                  title={release.title}
+                  key={v.href}
+                  url={v.href}
+                  title={v.title}
                   accent={accent}
                   poster={release.image}
                   posterSrcset={release.imageSrcset}
-                  seed={release.slug}
-                  className={release.streamUrl ? 'mt-4' : 'mt-10'}
+                  seed={`${release.slug}-${i}`}
+                  className={release.streamUrl || i > 0 ? 'mt-4' : 'mt-10'}
                 />
-              )}
+              ))}
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <a

@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-06T12:53:10.616Z",
+  "generatedAt": "2026-11-06T17:28:22.384Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
-  "trackCount": 699,
-  "playlistCount": 76,
+  "trackCount": 700,
+  "playlistCount": 77,
   "failures": [],
   "artists": {
     "grafenberg": {
@@ -15,9 +15,17 @@
       "displayName": "Kinetic Distro",
       "avatar": "https://i1.sndcdn.com/avatars-aJICzXqEBMyGtqIH-NJD2Pg-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 357,
-      "latestDate": "2026-10-22",
+      "trackCount": 358,
+      "latestDate": "2026-11-06",
       "tracks": [
+        {
+          "id": "2433397947",
+          "title": "The future has no chorus",
+          "url": "https://soundcloud.com/grafenbergmusik/amari-vellane-the-future-has",
+          "date": "2026-11-06",
+          "durationSec": 231,
+          "artwork": "https://i1.sndcdn.com/artworks-VuXSbKaL09865DY3-lo3i0w-t500x500.jpg"
+        },
         {
           "id": "2424205323",
           "title": "Every restless road comes back to you",
@@ -105,14 +113,6 @@
           "date": "2026-10-01",
           "durationSec": 219,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t500x500.jpg"
-        },
-        {
-          "id": "2404109157",
-          "title": "Nyla Corvey - Where The Light Used To Live (Chromabone Remix)",
-          "url": "https://soundcloud.com/grafenbergmusik/nyla-corvey-where-the-light",
-          "date": "2026-09-20",
-          "durationSec": 273,
-          "artwork": "https://i1.sndcdn.com/artworks-71b4KDAWnIcWd7pr-JusIAA-t500x500.jpg"
         }
       ],
       "topTracks": [
@@ -123,7 +123,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1599
+          "plays": 1600
         },
         {
           "id": "2402962797",
@@ -141,7 +141,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40190
+          "plays": 40191
         },
         {
           "id": "2402962791",
@@ -168,7 +168,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 471
+          "plays": 473
         },
         {
           "id": "2360372876",
@@ -195,7 +195,7 @@
           "date": "2026-07-14",
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2929
+          "plays": 2931
         },
         {
           "id": "2369060990",
@@ -213,7 +213,7 @@
           "date": "2026-08-28",
           "durationSec": 227,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 377
+          "plays": 379
         },
         {
           "id": "2347189916",
@@ -231,7 +231,7 @@
           "date": "2026-08-28",
           "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 342
+          "plays": 345
         },
         {
           "id": "2393008854",
@@ -249,7 +249,7 @@
           "date": "2026-08-28",
           "durationSec": 284,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 316
+          "plays": 319
         },
         {
           "id": "2390185521",
@@ -258,7 +258,7 @@
           "date": "2026-08-28",
           "durationSec": 249,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 315
+          "plays": 317
         },
         {
           "id": "2390185515",
@@ -267,7 +267,7 @@
           "date": "2026-08-28",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 312
+          "plays": 314
         },
         {
           "id": "2390185542",
@@ -276,7 +276,7 @@
           "date": "2026-08-28",
           "durationSec": 253,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 291
+          "plays": 293
         },
         {
           "id": "2390185527",
@@ -285,7 +285,7 @@
           "date": "2026-08-28",
           "durationSec": 254,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 289
+          "plays": 291
         },
         {
           "id": "2390185536",
@@ -294,7 +294,7 @@
           "date": "2026-08-28",
           "durationSec": 230,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 288
+          "plays": 290
         },
         {
           "id": "2382989844",
@@ -321,7 +321,7 @@
           "date": "2026-08-28",
           "durationSec": 249,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 277
+          "plays": 279
         },
         {
           "id": "2393008863",
@@ -388,6 +388,25 @@
         }
       ],
       "playlists": [
+        {
+          "id": "2325477471",
+          "title": "The scale of everything",
+          "url": "https://soundcloud.com/grafenbergmusik/sets/the-scale-of-everything",
+          "date": "2026-11-13",
+          "artwork": "https://i1.sndcdn.com/artworks-nC1WbGz92Lzltt2y-nz94BQ-t1080x1080.jpg",
+          "trackCount": 2,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "AMARI VELLANE — THE SCALE OF EVERYTHING\n\nThe debut album.\n\nA low, dry, raspy voice at the centre of twelve songs that refuse to stay inside one shape.\n\n*The Scale of Everything* introduces Amari Vellane through high-pop, psychedelic rhythm, fractured funk, post-punk tension and experimental electronic music, but its real identity lies in architecture rather than genre.\n\nEvery track follows its own law.\n\n*Sheba Electric* opens the record with controlled voltage.  \n*Every Restless Road Comes*, *Red Dust Where It Fell* and *Leave One Clear Window* widen the horizon.  \n*Mercy Engine*, *No Second Earth* and *A Crooked King* expose the weight underneath it.\n\nThen the album changes shape.\n\n*Gravity Has Bad Manners* turns physical descent into rhythm.  \n*The Future Has No Chorus* dismantles the conventional pop payoff.  \n*We Were the Weather* transforms competing rhythmic pressure into collective movement.\n\nThe final tracks push Amari beyond his own catalogue, closing with reinterpretations connected to the wider Kinetic Distro universe.\n\nThis is not an album built around one genre.\n\nIt is built around **presence, rhythm, scale and control**.\n\n**AMARI VELLANE**  \n*THE SCALE OF EVERYTHING*\n\nReleased by Kinetic Distro.",
+          "tracklist": [
+            "Every restless road comes back to you",
+            "The future has no chorus"
+          ],
+          "freeDownload": false,
+          "credit": null,
+          "creditSource": "unresolved",
+          "isMirror": false
+        },
         {
           "id": "2307832398",
           "title": "Nothing here was an accident",
@@ -1696,7 +1715,7 @@
           "date": "2026-10-07",
           "durationSec": 196,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2649
+          "plays": 2651
         },
         {
           "id": "2394037353",
@@ -1714,7 +1733,7 @@
           "date": "2026-10-07",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2455
+          "plays": 2457
         },
         {
           "id": "2388231858",
@@ -1732,7 +1751,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1274
+          "plays": 1275
         },
         {
           "id": "2414936670",
@@ -1741,7 +1760,7 @@
           "date": "2026-10-07",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1256
+          "plays": 1257
         },
         {
           "id": "2361904949",
@@ -1786,7 +1805,7 @@
           "date": "2026-08-25",
           "durationSec": 299,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 343
+          "plays": 345
         },
         {
           "id": "2388231864",
@@ -1795,7 +1814,7 @@
           "date": "2026-08-25",
           "durationSec": 222,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 333
+          "plays": 334
         },
         {
           "id": "2388231879",
@@ -1822,7 +1841,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3807
+          "plays": 3808
         },
         {
           "id": "2383694118",
@@ -1957,7 +1976,7 @@
           "date": "2026-10-07",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 194
+          "plays": 195
         }
       ],
       "playlists": [
@@ -2722,7 +2741,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2215
+          "plays": 2216
         },
         {
           "id": "2299293830",
@@ -3116,7 +3135,7 @@
           "date": "2026-02-06",
           "durationSec": 265,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
-          "plays": 2759
+          "plays": 2761
         },
         {
           "id": "2244072179",

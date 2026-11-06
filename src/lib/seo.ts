@@ -262,6 +262,9 @@ export const albumEntity = (release: Release, { deep = false } = {}) => {
   // overwrite this one, leaving every album with a single link.
   const elsewhere = [
     ...(release.streamingLinks?.map((l) => l.href) ?? []),
+    // Every video the record has, not just the first: each is a page about
+    // this release, and declaring one of two leaves the other unconnected.
+    ...(release.videos?.map((v) => v.href) ?? []),
     release.streamUrl,
     release.listenUrl?.startsWith('http') ? release.listenUrl : undefined,
   ].filter(Boolean) as string[];

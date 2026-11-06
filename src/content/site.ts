@@ -635,8 +635,8 @@ export type Release = {
    * one, "Buy on Bandcamp" falls back to the label's shop front.
    */
   bandcampUrl?: string;
-  /** A video for this record — see the `video` table below. */
-  videoUrl?: string;
+  /** Videos for this record, newest first — see the `video` table below. */
+  videos?: { title: string; href: string }[];
   /** Streaming pages for this exact record — see the `streaming` table below. */
   streamingLinks?: { label: string; href: string }[];
   listenUrl: string;
@@ -687,8 +687,8 @@ export const releases: Release[] = [
       'The album closes by letting Amari enter music outside his own world. Hollow Saints reimagines material originating elsewhere in the Kinetic Distro universe, while the bonus track Mercy in Blackwater transforms VEIN//MIRROR through Amari’s own vocabulary.',
       'There are records designed to announce a promising new artist. This one sounds more interested in establishing the measurement by which everything after it will be judged.',
     ],
-    streamUrl: 'https://soundcloud.com/grafenbergmusik/every-restless-road-comes-back',
-    listenUrl: 'https://soundcloud.com/grafenbergmusik/every-restless-road-comes-back',
+    streamUrl: 'https://soundcloud.com/grafenbergmusik/sets/the-scale-of-everything',
+    listenUrl: 'https://soundcloud.com/grafenbergmusik/sets/the-scale-of-everything',
     featured: true,
   },
   {
@@ -948,13 +948,20 @@ export const withheldArtwork = new Set<string>([]);
  * worse than the shop front, which is what an absent entry falls back to.
  */
 /**
- * A video for a record, keyed by release slug.
+ * Videos for a record, keyed by release slug and listed newest first.
  *
- * One video, not a playlist: this is what the release page plays in place, and
- * an album's playlist belongs in `streaming` as a link out instead.
+ * A list, not one video: a record can trail several singles before it lands,
+ * and the newer one should not push the earlier off the page. Single videos
+ * only — an album's playlist belongs in `streaming` as a link out instead.
  */
-export const video: Record<string, string> = {
-  'the-scale-of-everything': 'https://www.youtube.com/watch?v=MfngCo1Xbsg',
+export const video: Record<string, { title: string; href: string }[]> = {
+  'the-scale-of-everything': [
+    { title: 'The Future Has No Chorus', href: 'https://www.youtube.com/watch?v=e1Fpzptf47w' },
+    {
+      title: 'Every Restless Road Comes Back to You',
+      href: 'https://www.youtube.com/watch?v=MfngCo1Xbsg',
+    },
+  ],
 };
 
 export const bandcamp: Record<string, string> = {
@@ -992,9 +999,6 @@ export const vinyl: Record<string, string> = {
  * store.
  */
 export const streaming: Record<string, { label: string; href: string }[]> = {
-  'the-scale-of-everything': [
-    { label: 'YouTube', href: 'https://www.youtube.com/watch?v=MfngCo1Xbsg' },
-  ],
   'golden-hour-broadcast': [
     { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLG0Nr9otJHak' },
   ],

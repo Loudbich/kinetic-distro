@@ -31,6 +31,13 @@ export type SetAttribution = {
 
 export const setAttributions: SetAttribution[] = [
   {
+    // The album, filling up on the label account one single at a time, with no
+    // showcase playlist to derive the credit from.
+    id: '2325477471',
+    title: 'The scale of everything',
+    artistSlugs: ['amari-vellane'],
+  },
+  {
     // LEADGLASS's debut, hosted on the label account with no showcase playlist
     // to derive the credit from.
     id: '2307832398',

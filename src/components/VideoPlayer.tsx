@@ -21,7 +21,7 @@ import Cover from './Cover';
 type Props = {
   /** A watch URL, a youtu.be link or a bare id — whatever the label pasted. */
   url: string;
-  /** Named in the button and the iframe title, for screen readers. */
+  /** The song, named in the button, the caption and the iframe title. */
   title: string;
   accent: string;
   /** The record's sleeve, used as the facade. */
@@ -87,7 +87,9 @@ export default function VideoPlayer({
               <path d="M8 5v14l11-7z" />
             </svg>
           </span>
-          <span className="label text-center">Watch the video · loads YouTube</span>
+          <span className="label max-w-[85%] text-center text-balance">
+            {title} · loads YouTube
+          </span>
         </span>
       </button>
     );
