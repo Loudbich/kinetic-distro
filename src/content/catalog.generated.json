@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T11:40:23.306Z",
+  "generatedAt": "2026-11-08T11:52:49.351Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 710,
@@ -123,7 +123,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1603
+          "plays": 1604
         },
         {
           "id": "2402962797",
@@ -132,7 +132,7 @@
           "date": "2026-09-18",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1498
+          "plays": 1499
         },
         {
           "id": "2164031784",
@@ -141,7 +141,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40220
+          "plays": 40236
         },
         {
           "id": "2402962791",
@@ -168,7 +168,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 473
+          "plays": 477
         },
         {
           "id": "2360372876",
@@ -177,7 +177,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 3036
+          "plays": 3040
         },
         {
           "id": "2360372888",
@@ -195,16 +195,7 @@
           "date": "2026-07-27",
           "durationSec": 261,
           "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 592
-        },
-        {
-          "id": "2360407937",
-          "title": "VEIN//MIRROR - Through the Veins of the Dying Sky [Chromabone\"s Terminal Aurora Transmission]",
-          "url": "https://soundcloud.com/grafenbergmusik/vein-mirror-through-the-veins",
-          "date": "2026-07-14",
-          "durationSec": 387,
-          "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2932
+          "plays": 593
         },
         {
           "id": "2390185518",
@@ -216,13 +207,22 @@
           "plays": 379
         },
         {
+          "id": "2360407937",
+          "title": "VEIN//MIRROR - Through the Veins of the Dying Sky [Chromabone\"s Terminal Aurora Transmission]",
+          "url": "https://soundcloud.com/grafenbergmusik/vein-mirror-through-the-veins",
+          "date": "2026-07-14",
+          "durationSec": 387,
+          "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
+          "plays": 2934
+        },
+        {
           "id": "2347189916",
           "title": "When the Gravity Breaks Inside Me",
           "url": "https://soundcloud.com/grafenbergmusik/when-the-gravity-breaks-inside-me-1",
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3204
+          "plays": 3207
         },
         {
           "id": "2390185524",
@@ -258,7 +258,7 @@
           "date": "2026-08-28",
           "durationSec": 249,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 317
+          "plays": 318
         },
         {
           "id": "2390185515",
@@ -384,7 +384,7 @@
           "date": "2026-09-18",
           "durationSec": 294,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 252
+          "plays": 255
         }
       ],
       "playlists": [
@@ -1742,7 +1742,7 @@
           "date": "2026-10-07",
           "durationSec": 196,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2652
+          "plays": 2653
         },
         {
           "id": "2394037353",
@@ -1760,7 +1760,7 @@
           "date": "2026-10-07",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2460
+          "plays": 2461
         },
         {
           "id": "2388231858",
@@ -1778,7 +1778,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1278
+          "plays": 1281
         },
         {
           "id": "2414936670",
@@ -1787,16 +1787,7 @@
           "date": "2026-10-07",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1265
-        },
-        {
-          "id": "2361904949",
-          "title": "Silent voltage",
-          "url": "https://soundcloud.com/broken_shaman/silent-voltage-9",
-          "date": "2026-07-16",
-          "durationSec": 319,
-          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2723
+          "plays": 1273
         },
         {
           "id": "2394037347",
@@ -1814,7 +1805,7 @@
           "date": "2026-08-18",
           "durationSec": 287,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
-          "plays": 358
+          "plays": 361
         },
         {
           "id": "2394037341",
@@ -1824,6 +1815,15 @@
           "durationSec": 253,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
           "plays": 353
+        },
+        {
+          "id": "2361904949",
+          "title": "Silent voltage",
+          "url": "https://soundcloud.com/broken_shaman/silent-voltage-9",
+          "date": "2026-07-16",
+          "durationSec": 319,
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "plays": 2723
         },
         {
           "id": "2388231867",
@@ -1841,7 +1841,7 @@
           "date": "2026-08-25",
           "durationSec": 222,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 336
+          "plays": 338
         },
         {
           "id": "2388231879",
@@ -1877,7 +1877,7 @@
           "date": "2026-08-18",
           "durationSec": 232,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
-          "plays": 265
+          "plays": 266
         },
         {
           "id": "2274189833",
@@ -1886,7 +1886,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3546
+          "plays": 3549
         },
         {
           "id": "2383694112",
@@ -1970,6 +1970,15 @@
           "plays": 213
         },
         {
+          "id": "2278322267",
+          "title": "Sunday again",
+          "url": "https://soundcloud.com/broken_shaman/sunday-again-10",
+          "date": "2026-03-05",
+          "durationSec": 267,
+          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
+          "plays": 3321
+        },
+        {
           "id": "2388231870",
           "title": "AI SLOP III Sloppier than ever",
           "url": "https://soundcloud.com/broken_shaman/ai-slop-iii-sloppier-than-ever-3",
@@ -1979,13 +1988,13 @@
           "plays": 209
         },
         {
-          "id": "2278322267",
-          "title": "Sunday again",
-          "url": "https://soundcloud.com/broken_shaman/sunday-again-10",
-          "date": "2026-03-05",
+          "id": "2355716948",
+          "title": "Requiem for a shaman who couldnt cry",
+          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
+          "date": "2026-07-08",
           "durationSec": 267,
-          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3317
+          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
+          "plays": 419
         },
         {
           "id": "2383694109",
@@ -1995,15 +2004,6 @@
           "durationSec": 245,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
           "plays": 197
-        },
-        {
-          "id": "2355716948",
-          "title": "Requiem for a shaman who couldnt cry",
-          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
-          "date": "2026-07-08",
-          "durationSec": 267,
-          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 417
         }
       ],
       "playlists": [
@@ -2768,7 +2768,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2218
+          "plays": 2220
         },
         {
           "id": "2299293830",
@@ -2777,7 +2777,7 @@
           "date": "2026-04-09",
           "durationSec": 255,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 601
+          "plays": 602
         },
         {
           "id": "2299293842",
@@ -2795,7 +2795,7 @@
           "date": "2026-04-09",
           "durationSec": 325,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 177
+          "plays": 179
         },
         {
           "id": "2277808448",
@@ -3490,7 +3490,7 @@
           "date": "2026-03-18",
           "durationSec": 312,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1099
+          "plays": 1101
         },
         {
           "id": "2285999489",
@@ -3499,7 +3499,7 @@
           "date": "2026-03-18",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 787
+          "plays": 790
         },
         {
           "id": "2285999492",
@@ -3526,7 +3526,7 @@
           "date": "2026-04-09",
           "durationSec": 409,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 1489
+          "plays": 1490
         },
         {
           "id": "2285999498",
@@ -3535,7 +3535,7 @@
           "date": "2026-03-18",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 528
+          "plays": 530
         },
         {
           "id": "2285999495",
@@ -3544,7 +3544,7 @@
           "date": "2026-03-18",
           "durationSec": 307,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 389
+          "plays": 390
         },
         {
           "id": "2285999477",
@@ -3562,7 +3562,7 @@
           "date": "2026-04-09",
           "durationSec": 335,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 1504
+          "plays": 1506
         },
         {
           "id": "2285999483",
@@ -3571,7 +3571,7 @@
           "date": "2026-03-18",
           "durationSec": 414,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1203
+          "plays": 1204
         },
         {
           "id": "2285999501",
@@ -3601,6 +3601,15 @@
           "plays": 201
         },
         {
+          "id": "2299826693",
+          "title": "The Glow That Learns Your Silence",
+          "url": "https://soundcloud.com/vein-mirror/the-glow-that-learns-your-silence-5",
+          "date": "2026-04-09",
+          "durationSec": 370,
+          "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
+          "plays": 264
+        },
+        {
           "id": "2299826690",
           "title": "Your Name in the Light That Shivers",
           "url": "https://soundcloud.com/vein-mirror/your-name-in-the-light-that-shivers-7",
@@ -3617,15 +3626,6 @@
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
           "plays": 241
-        },
-        {
-          "id": "2299826693",
-          "title": "The Glow That Learns Your Silence",
-          "url": "https://soundcloud.com/vein-mirror/the-glow-that-learns-your-silence-5",
-          "date": "2026-04-09",
-          "durationSec": 370,
-          "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 263
         },
         {
           "id": "2299826669",
@@ -3860,7 +3860,7 @@
           "date": "2026-01-30",
           "durationSec": 243,
           "artwork": "https://i1.sndcdn.com/artworks-EWdfztFfmRIOB5p6-N4T9zg-large.png",
-          "plays": 249
+          "plays": 251
         },
         {
           "id": "2256974597",
@@ -4109,7 +4109,7 @@
           "date": "2026-02-15",
           "durationSec": 245,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 308
+          "plays": 311
         },
         {
           "id": "2266921853",
@@ -4118,7 +4118,7 @@
           "date": "2026-02-15",
           "durationSec": 269,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 234
+          "plays": 236
         },
         {
           "id": "2266921862",
@@ -4127,7 +4127,7 @@
           "date": "2026-02-15",
           "durationSec": 234,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 249
+          "plays": 250
         },
         {
           "id": "2266921844",
@@ -4136,7 +4136,7 @@
           "date": "2026-02-15",
           "durationSec": 234,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 273
+          "plays": 274
         },
         {
           "id": "2266921856",
