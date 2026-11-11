@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-10T13:24:51.815Z",
+  "generatedAt": "2026-11-11T12:38:59.213Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 710,
@@ -123,7 +123,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1609
+          "plays": 1610
         },
         {
           "id": "2402962797",
@@ -141,7 +141,7 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1406
+          "plays": 1411
         },
         {
           "id": "2164031784",
@@ -150,7 +150,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40263
+          "plays": 40272
         },
         {
           "id": "2404109157",
@@ -162,13 +162,22 @@
           "plays": 1011
         },
         {
+          "id": "2433850758",
+          "title": "Someone I remember loving",
+          "url": "https://soundcloud.com/grafenbergmusik/someone-i-remember-loving-3",
+          "date": "2026-11-07",
+          "durationSec": 231,
+          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
+          "plays": 754
+        },
+        {
           "id": "2411552355",
           "title": "All the Teeth in Heaven",
           "url": "https://soundcloud.com/grafenbergmusik/all-the-teeth-in-heaven-1",
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 485
+          "plays": 486
         },
         {
           "id": "2360372876",
@@ -189,13 +198,13 @@
           "plays": 2809
         },
         {
-          "id": "2433850758",
-          "title": "Someone I remember loving",
-          "url": "https://soundcloud.com/grafenbergmusik/someone-i-remember-loving-3",
-          "date": "2026-11-07",
-          "durationSec": 231,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 546
+          "id": "2390185518",
+          "title": "She refuses (feat. Nehir Sedef)",
+          "url": "https://soundcloud.com/grafenbergmusik/she-refuses-feat-nehir-sedef-9",
+          "date": "2026-08-28",
+          "durationSec": 227,
+          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
+          "plays": 380
         },
         {
           "id": "2369060990",
@@ -207,13 +216,13 @@
           "plays": 594
         },
         {
-          "id": "2390185518",
-          "title": "She refuses (feat. Nehir Sedef)",
-          "url": "https://soundcloud.com/grafenbergmusik/she-refuses-feat-nehir-sedef-9",
+          "id": "2390185524",
+          "title": "The city watches her leave (feat. Nehir Sedef)",
+          "url": "https://soundcloud.com/grafenbergmusik/the-city-watches-her-leave-feat-nehir-sedef-2",
           "date": "2026-08-28",
-          "durationSec": 227,
+          "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 379
+          "plays": 345
         },
         {
           "id": "2360407937",
@@ -225,22 +234,13 @@
           "plays": 2937
         },
         {
-          "id": "2390185524",
-          "title": "The city watches her leave (feat. Nehir Sedef)",
-          "url": "https://soundcloud.com/grafenbergmusik/the-city-watches-her-leave-feat-nehir-sedef-2",
-          "date": "2026-08-28",
-          "durationSec": 226,
-          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 345
-        },
-        {
           "id": "2347189916",
           "title": "When the Gravity Breaks Inside Me",
           "url": "https://soundcloud.com/grafenbergmusik/when-the-gravity-breaks-inside-me-1",
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3215
+          "plays": 3216
         },
         {
           "id": "2393008854",
@@ -348,7 +348,7 @@
           "date": "2026-09-02",
           "durationSec": 301,
           "artwork": "https://i1.sndcdn.com/artworks-st4wyqXqSNlAIaIv-k3SIwQ-t1080x1080.jpg",
-          "plays": 261
+          "plays": 262
         },
         {
           "id": "2386792758",
@@ -1742,7 +1742,7 @@
           "date": "2026-10-07",
           "durationSec": 196,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2659
+          "plays": 2661
         },
         {
           "id": "2394037353",
@@ -1751,7 +1751,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 2606
+          "plays": 2609
         },
         {
           "id": "2414936652",
@@ -1760,7 +1760,7 @@
           "date": "2026-10-07",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2465
+          "plays": 2466
         },
         {
           "id": "2388231858",
@@ -1769,7 +1769,16 @@
           "date": "2026-08-25",
           "durationSec": 378,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 1917
+          "plays": 1918
+        },
+        {
+          "id": "2414936670",
+          "title": "Cassette tape saints",
+          "url": "https://soundcloud.com/broken_shaman/cassette-tape-saints-4",
+          "date": "2026-10-07",
+          "durationSec": 315,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 1289
         },
         {
           "id": "2394037335",
@@ -1779,15 +1788,6 @@
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
           "plays": 1288
-        },
-        {
-          "id": "2414936670",
-          "title": "Cassette tape saints",
-          "url": "https://soundcloud.com/broken_shaman/cassette-tape-saints-4",
-          "date": "2026-10-07",
-          "durationSec": 315,
-          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1287
         },
         {
           "id": "2383694124",
@@ -1832,7 +1832,7 @@
           "date": "2026-08-25",
           "durationSec": 222,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 342
+          "plays": 346
         },
         {
           "id": "2361904949",
@@ -1862,15 +1862,6 @@
           "plays": 283
         },
         {
-          "id": "2278322270",
-          "title": "Funeral suit",
-          "url": "https://soundcloud.com/broken_shaman/funeral-suit-7",
-          "date": "2026-03-05",
-          "durationSec": 263,
-          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3820
-        },
-        {
           "id": "2383694118",
           "title": "Neural overdrive",
           "url": "https://soundcloud.com/broken_shaman/neural-overdrive-9",
@@ -1880,13 +1871,22 @@
           "plays": 266
         },
         {
+          "id": "2278322270",
+          "title": "Funeral suit",
+          "url": "https://soundcloud.com/broken_shaman/funeral-suit-7",
+          "date": "2026-03-05",
+          "durationSec": 263,
+          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
+          "plays": 3820
+        },
+        {
           "id": "2274189833",
           "title": "In the same body",
           "url": "https://soundcloud.com/broken_shaman/in-the-same-body-9",
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3554
+          "plays": 3556
         },
         {
           "id": "2383694112",
@@ -1976,7 +1976,7 @@
           "date": "2026-03-05",
           "durationSec": 267,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3322
+          "plays": 3323
         },
         {
           "id": "2388231870",
@@ -1994,7 +1994,7 @@
           "date": "2026-07-08",
           "durationSec": 267,
           "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 426
+          "plays": 428
         },
         {
           "id": "2383694109",
@@ -2768,7 +2768,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2226
+          "plays": 2230
         },
         {
           "id": "2299293830",
@@ -2822,7 +2822,7 @@
           "date": "2026-03-05",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 643
+          "plays": 644
         },
         {
           "id": "2299293857",
@@ -2849,7 +2849,16 @@
           "date": "2026-03-05",
           "durationSec": 311,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 238
+          "plays": 239
+        },
+        {
+          "id": "2277808430",
+          "title": "Crown of the Warm Machine",
+          "url": "https://soundcloud.com/anatolian_mirage/crown-of-the-warm-machine-1",
+          "date": "2026-03-05",
+          "durationSec": 370,
+          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
+          "plays": 320
         },
         {
           "id": "2299293848",
@@ -2888,13 +2897,31 @@
           "plays": 165
         },
         {
-          "id": "2277808430",
-          "title": "Crown of the Warm Machine",
-          "url": "https://soundcloud.com/anatolian_mirage/crown-of-the-warm-machine-1",
+          "id": "2277808451",
+          "title": "The Serpent Who Learned to Pray",
+          "url": "https://soundcloud.com/anatolian_mirage/the-serpent-who-learned-to-pray-2",
           "date": "2026-03-05",
-          "durationSec": 370,
+          "durationSec": 287,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 319
+          "plays": 170
+        },
+        {
+          "id": "2277808445",
+          "title": "Nine Colored Silence",
+          "url": "https://soundcloud.com/anatolian_mirage/nine-colored-silence-7",
+          "date": "2026-03-05",
+          "durationSec": 307,
+          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
+          "plays": 262
+        },
+        {
+          "id": "2277808442",
+          "title": "Velvet Sun Empire",
+          "url": "https://soundcloud.com/anatolian_mirage/velvet-sun-empire-3",
+          "date": "2026-03-05",
+          "durationSec": 298,
+          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
+          "plays": 196
         },
         {
           "id": "2299293854",
@@ -2913,33 +2940,6 @@
           "durationSec": 203,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
           "plays": 229
-        },
-        {
-          "id": "2277808451",
-          "title": "The Serpent Who Learned to Pray",
-          "url": "https://soundcloud.com/anatolian_mirage/the-serpent-who-learned-to-pray-2",
-          "date": "2026-03-05",
-          "durationSec": 287,
-          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 169
-        },
-        {
-          "id": "2277808445",
-          "title": "Nine Colored Silence",
-          "url": "https://soundcloud.com/anatolian_mirage/nine-colored-silence-7",
-          "date": "2026-03-05",
-          "durationSec": 307,
-          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 261
-        },
-        {
-          "id": "2277808442",
-          "title": "Velvet Sun Empire",
-          "url": "https://soundcloud.com/anatolian_mirage/velvet-sun-empire-3",
-          "date": "2026-03-05",
-          "durationSec": 298,
-          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 195
         },
         {
           "id": "2277808439",
@@ -3201,6 +3201,15 @@
           "plays": 2219
         },
         {
+          "id": "2244072158",
+          "title": "Velvet fangs",
+          "url": "https://soundcloud.com/nosfera_disco_club/velvet-fangs-5",
+          "date": "2026-01-08",
+          "durationSec": 212,
+          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
+          "plays": 285
+        },
+        {
           "id": "2261397647",
           "title": "Purgatory discotheque",
           "url": "https://soundcloud.com/nosfera_disco_club/purgatory-discotheque-12",
@@ -3208,15 +3217,6 @@
           "durationSec": 227,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
           "plays": 411
-        },
-        {
-          "id": "2244072158",
-          "title": "Velvet fangs",
-          "url": "https://soundcloud.com/nosfera_disco_club/velvet-fangs-5",
-          "date": "2026-01-08",
-          "durationSec": 212,
-          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 282
         },
         {
           "id": "2261397626",
@@ -3237,6 +3237,15 @@
           "plays": 343
         },
         {
+          "id": "2244072173",
+          "title": "Bloodlights on main floor",
+          "url": "https://soundcloud.com/nosfera_disco_club/bloodlights-on-main-floor-1",
+          "date": "2026-01-08",
+          "durationSec": 187,
+          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
+          "plays": 349
+        },
+        {
           "id": "2261397659",
           "title": "Dance of the undead",
           "url": "https://soundcloud.com/nosfera_disco_club/dance-of-the-undead-3",
@@ -3253,15 +3262,6 @@
           "durationSec": 215,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
           "plays": 372
-        },
-        {
-          "id": "2244072173",
-          "title": "Bloodlights on main floor",
-          "url": "https://soundcloud.com/nosfera_disco_club/bloodlights-on-main-floor-1",
-          "date": "2026-01-08",
-          "durationSec": 187,
-          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 347
         },
         {
           "id": "2242136909",
@@ -3289,6 +3289,15 @@
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
           "plays": 209
+        },
+        {
+          "id": "2244072170",
+          "title": "Hellcycle",
+          "url": "https://soundcloud.com/nosfera_disco_club/hellcycle-7",
+          "date": "2026-01-08",
+          "durationSec": 203,
+          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
+          "plays": 202
         },
         {
           "id": "2244072167",
@@ -3490,7 +3499,7 @@
           "date": "2026-03-18",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 793
+          "plays": 794
         },
         {
           "id": "2285999504",
@@ -3535,7 +3544,7 @@
           "date": "2026-03-18",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 532
+          "plays": 533
         },
         {
           "id": "2285999495",
@@ -3544,7 +3553,7 @@
           "date": "2026-03-18",
           "durationSec": 307,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 391
+          "plays": 392
         },
         {
           "id": "2285999477",
@@ -3553,7 +3562,7 @@
           "date": "2026-03-18",
           "durationSec": 409,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1215
+          "plays": 1217
         },
         {
           "id": "2299826675",
@@ -3607,7 +3616,7 @@
           "date": "2026-04-09",
           "durationSec": 393,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 224
+          "plays": 225
         },
         {
           "id": "2299826666",
@@ -3890,15 +3899,6 @@
           "plays": 121
         },
         {
-          "id": "2256974588",
-          "title": "Falling Without You",
-          "url": "https://soundcloud.com/lykke-657587232/falling-without-you-3",
-          "date": "2026-01-30",
-          "durationSec": 249,
-          "artwork": "https://i1.sndcdn.com/artworks-EWdfztFfmRIOB5p6-N4T9zg-large.png",
-          "plays": 89
-        },
-        {
           "id": "2256974585",
           "title": "After The Glow",
           "url": "https://soundcloud.com/lykke-657587232/after-the-glow-8",
@@ -4112,15 +4112,6 @@
           "plays": 315
         },
         {
-          "id": "2266921862",
-          "title": "Southpaw Ritual - Round After Round",
-          "url": "https://soundcloud.com/unmade_scores/southpaw-ritual-round-after-round-8",
-          "date": "2026-02-15",
-          "durationSec": 234,
-          "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 251
-        },
-        {
           "id": "2266921853",
           "title": "Final count avenue - Stand Back Up Final Round",
           "url": "https://soundcloud.com/unmade_scores/final-count-avenue-stand-back-up-final-round-10",
@@ -4128,6 +4119,15 @@
           "durationSec": 269,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
           "plays": 237
+        },
+        {
+          "id": "2266921862",
+          "title": "Southpaw Ritual - Round After Round",
+          "url": "https://soundcloud.com/unmade_scores/southpaw-ritual-round-after-round-8",
+          "date": "2026-02-15",
+          "durationSec": 234,
+          "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
+          "plays": 252
         },
         {
           "id": "2266921844",
