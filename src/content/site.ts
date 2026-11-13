@@ -687,8 +687,8 @@ export const releases: Release[] = [
       'The album closes by letting Amari enter music outside his own world. Hollow Saints reimagines material originating elsewhere in the Kinetic Distro universe, while the bonus track Mercy in Blackwater transforms VEIN//MIRROR through Amari’s own vocabulary.',
       'There are records designed to announce a promising new artist. This one sounds more interested in establishing the measurement by which everything after it will be judged.',
     ],
-    streamUrl: 'https://soundcloud.com/grafenbergmusik/sets/the-scale-of-everything',
-    listenUrl: 'https://soundcloud.com/grafenbergmusik/sets/the-scale-of-everything',
+    streamUrl: 'https://soundcloud.com/grafenbergmusik/sets/the-scale-of-everything-1',
+    listenUrl: 'https://soundcloud.com/grafenbergmusik/sets/the-scale-of-everything-1',
     featured: true,
   },
   {
@@ -965,6 +965,8 @@ export const video: Record<string, { title: string; href: string }[]> = {
 };
 
 export const bandcamp: Record<string, string> = {
+  'everything-we-never-lived':
+    'https://kineticdistro.bandcamp.com/album/everything-we-never-lived',
   'the-scale-of-everything': 'https://kineticdistro.bandcamp.com/album/the-scale-of-everything',
   'golden-hour-broadcast': 'https://kineticdistro.bandcamp.com/album/golden-hour-broadcast',
   'nothing-here-was-an-accident':
@@ -999,6 +1001,12 @@ export const vinyl: Record<string, string> = {
  * store.
  */
 export const streaming: Record<string, { label: string; href: string }[]> = {
+  'the-scale-of-everything': [
+    { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLIoIoI4G62Io' },
+  ],
+  'everything-we-never-lived': [
+    { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLLz1iXDgTQ8A' },
+  ],
   'golden-hour-broadcast': [
     { label: 'YouTube', href: 'https://www.youtube.com/playlist?list=PLG0Nr9otJHak' },
   ],

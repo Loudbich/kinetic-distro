@@ -33,9 +33,23 @@ export const setAttributions: SetAttribution[] = [
   {
     // The album, filling up on the label account one single at a time, with no
     // showcase playlist to derive the credit from.
-    id: '2325477471',
-    title: 'The scale of everything',
+    id: '2328687660',
+    title: 'THE SCALE OF EVERYTHING',
     artistSlugs: ['amari-vellane'],
+  },
+  {
+    // The first upload, emptied when the record was re-uploaded on release
+    // day. Hidden so it cannot surface as a record of its own.
+    id: '2325477471',
+    title: 'The scale of everything (first upload, now empty)',
+    artistSlugs: null,
+  },
+  {
+    // Residual Bloom's second album, on the label account with no showcase
+    // playlist to derive the credit from.
+    id: '2325882498',
+    title: 'Everything we never lived',
+    artistSlugs: ['residual-bloom'],
   },
   {
     // LEADGLASS's debut, hosted on the label account with no showcase playlist
