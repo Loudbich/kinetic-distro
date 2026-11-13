@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-12T13:41:54.145Z",
+  "generatedAt": "2026-11-13T13:00:25.939Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
-  "trackCount": 710,
-  "playlistCount": 78,
+  "trackCount": 719,
+  "playlistCount": 79,
   "failures": [],
   "artists": {
     "grafenberg": {
@@ -15,9 +15,97 @@
       "displayName": "Kinetic Distro",
       "avatar": "https://i1.sndcdn.com/avatars-zs9BdY9sVfx5BaT6-ekzuIQ-t500x500.jpg",
       "alsoCredits": [],
-      "trackCount": 368,
-      "latestDate": "2026-11-07",
+      "trackCount": 377,
+      "latestDate": "2026-11-13",
       "tracks": [
+        {
+          "id": "2437336989",
+          "title": "Hollow saints",
+          "url": "https://soundcloud.com/grafenbergmusik/hollow-saints-11",
+          "date": "2026-11-13",
+          "durationSec": 262,
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t500x500.jpg"
+        },
+        {
+          "id": "2437336986",
+          "title": "Mercy engine",
+          "url": "https://soundcloud.com/grafenbergmusik/mercy-engine-5",
+          "date": "2026-11-13",
+          "durationSec": 225,
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t500x500.jpg"
+        },
+        {
+          "id": "2437336983",
+          "title": "We were the weather",
+          "url": "https://soundcloud.com/grafenbergmusik/we-were-the-weather-10",
+          "date": "2026-11-13",
+          "durationSec": 229,
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t500x500.jpg"
+        },
+        {
+          "id": "2437336980",
+          "title": "Red dust where it fell",
+          "url": "https://soundcloud.com/grafenbergmusik/red-dust-where-it-fell-3",
+          "date": "2026-11-13",
+          "durationSec": 225,
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t500x500.jpg"
+        },
+        {
+          "id": "2437336977",
+          "title": "The future has no chorus",
+          "url": "https://soundcloud.com/grafenbergmusik/the-future-has-no-chorus-9",
+          "date": "2026-11-13",
+          "durationSec": 231,
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t500x500.jpg"
+        },
+        {
+          "id": "2437336974",
+          "title": "A crooked king",
+          "url": "https://soundcloud.com/grafenbergmusik/a-crooked-king-7",
+          "date": "2026-11-13",
+          "durationSec": 179,
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t500x500.jpg"
+        },
+        {
+          "id": "2437336971",
+          "title": "Every restless road comes back to you",
+          "url": "https://soundcloud.com/grafenbergmusik/every-restless-road-comes-back-to-you-2",
+          "date": "2026-11-13",
+          "durationSec": 212,
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t500x500.jpg"
+        },
+        {
+          "id": "2437336968",
+          "title": "Leave one clear window",
+          "url": "https://soundcloud.com/grafenbergmusik/leave-one-clear-window-4",
+          "date": "2026-11-13",
+          "durationSec": 227,
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t500x500.jpg"
+        },
+        {
+          "id": "2437336965",
+          "title": "No second earth",
+          "url": "https://soundcloud.com/grafenbergmusik/no-second-earth-6",
+          "date": "2026-11-13",
+          "durationSec": 213,
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t500x500.jpg"
+        },
+        {
+          "id": "2437336962",
+          "title": "Sheba electric",
+          "url": "https://soundcloud.com/grafenbergmusik/sheba-electric-1",
+          "date": "2026-11-13",
+          "durationSec": 304,
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t500x500.jpg"
+        },
+        {
+          "id": "2437336959",
+          "title": "Gravity has bad manners",
+          "url": "https://soundcloud.com/grafenbergmusik/gravity-has-bad-manners-8",
+          "date": "2026-11-13",
+          "durationSec": 278,
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t500x500.jpg"
+        },
         {
           "id": "2433850770",
           "title": "The house behind my eyes",
@@ -25,94 +113,6 @@
           "date": "2026-11-07",
           "durationSec": 207,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t500x500.jpg"
-        },
-        {
-          "id": "2433850767",
-          "title": "False sunlight",
-          "url": "https://soundcloud.com/grafenbergmusik/false-sunlight-4",
-          "date": "2026-11-07",
-          "durationSec": 257,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t500x500.jpg"
-        },
-        {
-          "id": "2433850764",
-          "title": "Borrowed weather",
-          "url": "https://soundcloud.com/grafenbergmusik/borrowed-weather-2",
-          "date": "2026-11-07",
-          "durationSec": 204,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t500x500.jpg"
-        },
-        {
-          "id": "2433850761",
-          "title": "We invented childhood",
-          "url": "https://soundcloud.com/grafenbergmusik/we-invented-childhood-6",
-          "date": "2026-11-07",
-          "durationSec": 170,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t500x500.jpg"
-        },
-        {
-          "id": "2433850758",
-          "title": "Someone I remember loving",
-          "url": "https://soundcloud.com/grafenbergmusik/someone-i-remember-loving-3",
-          "date": "2026-11-07",
-          "durationSec": 230,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t500x500.jpg"
-        },
-        {
-          "id": "2433850755",
-          "title": "The summer I never had",
-          "url": "https://soundcloud.com/grafenbergmusik/the-summer-i-never-had-1",
-          "date": "2026-11-07",
-          "durationSec": 304,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t500x500.jpg"
-        },
-        {
-          "id": "2433850752",
-          "title": "Your name was never there",
-          "url": "https://soundcloud.com/grafenbergmusik/your-name-was-never-there-8",
-          "date": "2026-11-07",
-          "durationSec": 147,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t500x500.jpg"
-        },
-        {
-          "id": "2433850749",
-          "title": "You knew",
-          "url": "https://soundcloud.com/grafenbergmusik/you-knew-7",
-          "date": "2026-11-07",
-          "durationSec": 181,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t500x500.jpg"
-        },
-        {
-          "id": "2433850746",
-          "title": "Everything we never lived",
-          "url": "https://soundcloud.com/grafenbergmusik/everything-we-never-lived-9",
-          "date": "2026-11-07",
-          "durationSec": 227,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t500x500.jpg"
-        },
-        {
-          "id": "2433850743",
-          "title": "I remember tomorrow",
-          "url": "https://soundcloud.com/grafenbergmusik/i-remember-tomorrow-10",
-          "date": "2026-11-07",
-          "durationSec": 124,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t500x500.jpg"
-        },
-        {
-          "id": "2433397947",
-          "title": "The future has no chorus",
-          "url": "https://soundcloud.com/grafenbergmusik/amari-vellane-the-future-has",
-          "date": "2026-11-06",
-          "durationSec": 231,
-          "artwork": "https://i1.sndcdn.com/artworks-VuXSbKaL09865DY3-lo3i0w-t500x500.jpg"
-        },
-        {
-          "id": "2424205323",
-          "title": "Every restless road comes back to you",
-          "url": "https://soundcloud.com/grafenbergmusik/every-restless-road-comes-back",
-          "date": "2026-10-22",
-          "durationSec": 212,
-          "artwork": "https://i1.sndcdn.com/artworks-jq0auDQQDBKp5d73-OeJN8w-t500x500.jpg"
         }
       ],
       "topTracks": [
@@ -123,7 +123,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1611
+          "plays": 1616
         },
         {
           "id": "2402962797",
@@ -132,7 +132,7 @@
           "date": "2026-09-18",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1505
+          "plays": 1506
         },
         {
           "id": "2402962791",
@@ -150,7 +150,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40288
+          "plays": 40299
         },
         {
           "id": "2404109157",
@@ -168,7 +168,7 @@
           "date": "2026-11-07",
           "durationSec": 231,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 944
+          "plays": 992
         },
         {
           "id": "2411552355",
@@ -177,7 +177,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 490
+          "plays": 492
         },
         {
           "id": "2360372876",
@@ -186,7 +186,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 3048
+          "plays": 3051
         },
         {
           "id": "2390185518",
@@ -195,7 +195,7 @@
           "date": "2026-08-28",
           "durationSec": 227,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 380
+          "plays": 382
         },
         {
           "id": "2360372888",
@@ -204,16 +204,7 @@
           "date": "2026-07-14",
           "durationSec": 272,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2809
-        },
-        {
-          "id": "2369060990",
-          "title": "Last human FM",
-          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
-          "date": "2026-07-27",
-          "durationSec": 261,
-          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 594
+          "plays": 2812
         },
         {
           "id": "2390185524",
@@ -222,7 +213,7 @@
           "date": "2026-08-28",
           "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 346
+          "plays": 347
         },
         {
           "id": "2360407937",
@@ -231,7 +222,7 @@
           "date": "2026-07-14",
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2939
+          "plays": 2941
         },
         {
           "id": "2393008854",
@@ -241,6 +232,15 @@
           "durationSec": 262,
           "artwork": "https://i1.sndcdn.com/artworks-st4wyqXqSNlAIaIv-k3SIwQ-t1080x1080.jpg",
           "plays": 330
+        },
+        {
+          "id": "2369060990",
+          "title": "Last human FM",
+          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
+          "date": "2026-07-27",
+          "durationSec": 261,
+          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
+          "plays": 594
         },
         {
           "id": "2347189916",
@@ -258,7 +258,7 @@
           "date": "2026-08-28",
           "durationSec": 284,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 321
+          "plays": 324
         },
         {
           "id": "2390185521",
@@ -267,7 +267,7 @@
           "date": "2026-08-28",
           "durationSec": 249,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 319
+          "plays": 321
         },
         {
           "id": "2390185515",
@@ -276,7 +276,7 @@
           "date": "2026-08-28",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 315
+          "plays": 317
         },
         {
           "id": "2390185542",
@@ -285,7 +285,7 @@
           "date": "2026-08-28",
           "durationSec": 253,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 296
+          "plays": 299
         },
         {
           "id": "2390185536",
@@ -294,7 +294,7 @@
           "date": "2026-08-28",
           "durationSec": 230,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 292
+          "plays": 293
         },
         {
           "id": "2390185527",
@@ -303,7 +303,7 @@
           "date": "2026-08-28",
           "durationSec": 254,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 291
+          "plays": 293
         },
         {
           "id": "2382989844",
@@ -389,6 +389,34 @@
       ],
       "playlists": [
         {
+          "id": "2328687660",
+          "title": "THE SCALE OF EVERYTHING",
+          "url": "https://soundcloud.com/grafenbergmusik/sets/the-scale-of-everything-1",
+          "date": "2026-11-13",
+          "artwork": "https://i1.sndcdn.com/artworks-72znZyeQhrnzqnSL-3SNYCw-t1080x1080.jpg",
+          "trackCount": 11,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "AMARI VELLANE — THE SCALE OF EVERYTHING\n\nThe debut album.\n\nA low, dry, raspy voice at the centre of twelve songs that refuse to stay inside one shape.\n\nThe Scale of Everything introduces Amari Vellane through high-pop, psychedelic rhythm, fractured funk, post-punk tension and experimental electronic music, but its real identity lies in architecture rather than genre.\n\nEvery track follows its own law.\n\nSheba Electric opens the record with controlled voltage.  \nEvery Restless Road Comes, Red Dust Where It Fell and Leave One Clear Window widen the horizon.  \nMercy Engine, No Second Earth and A Crooked King expose the weight underneath it.\n\nThen the album changes shape.\n\nGravity Has Bad Manners turns physical descent into rhythm.  \nThe Future Has No Chorus dismantles the conventional pop payoff.  \nWe Were the Weather transforms competing rhythmic pressure into collective movement.\n\nThe final tracks push Amari beyond his own catalogue, closing with reinterpretations connected to the wider Kinetic Distro universe.\n\nThis is not an album built around one genre.\n\nIt is built around presence, rhythm, scale and control.\n\n\nReleased by Kinetic Distro.",
+          "tracklist": [
+            "Sheba electric",
+            "Every restless road comes back to you",
+            "Red dust where it fell",
+            "Leave one clear window",
+            "Mercy engine",
+            "No second earth",
+            "A crooked king",
+            "Gravity has bad manners",
+            "The future has no chorus",
+            "We were the weather",
+            "Hollow saints"
+          ],
+          "freeDownload": false,
+          "credit": null,
+          "creditSource": "unresolved",
+          "isMirror": false
+        },
+        {
           "id": "2325882498",
           "title": "Everything we never lived",
           "url": "https://soundcloud.com/grafenbergmusik/sets/everything-we-never-lived",
@@ -421,14 +449,11 @@
           "url": "https://soundcloud.com/grafenbergmusik/sets/the-scale-of-everything",
           "date": "2026-11-13",
           "artwork": "https://i1.sndcdn.com/artworks-nC1WbGz92Lzltt2y-nz94BQ-t1080x1080.jpg",
-          "trackCount": 2,
+          "trackCount": 0,
           "isAlbum": true,
           "setType": "album",
           "description": "AMARI VELLANE — THE SCALE OF EVERYTHING\n\nThe debut album.\n\nA low, dry, raspy voice at the centre of twelve songs that refuse to stay inside one shape.\n\n*The Scale of Everything* introduces Amari Vellane through high-pop, psychedelic rhythm, fractured funk, post-punk tension and experimental electronic music, but its real identity lies in architecture rather than genre.\n\nEvery track follows its own law.\n\n*Sheba Electric* opens the record with controlled voltage.  \n*Every Restless Road Comes*, *Red Dust Where It Fell* and *Leave One Clear Window* widen the horizon.  \n*Mercy Engine*, *No Second Earth* and *A Crooked King* expose the weight underneath it.\n\nThen the album changes shape.\n\n*Gravity Has Bad Manners* turns physical descent into rhythm.  \n*The Future Has No Chorus* dismantles the conventional pop payoff.  \n*We Were the Weather* transforms competing rhythmic pressure into collective movement.\n\nThe final tracks push Amari beyond his own catalogue, closing with reinterpretations connected to the wider Kinetic Distro universe.\n\nThis is not an album built around one genre.\n\nIt is built around **presence, rhythm, scale and control**.\n\n**AMARI VELLANE**  \n*THE SCALE OF EVERYTHING*\n\nReleased by Kinetic Distro.",
-          "tracklist": [
-            "Every restless road comes back to you",
-            "The future has no chorus"
-          ],
+          "tracklist": [],
           "freeDownload": false,
           "credit": null,
           "creditSource": "unresolved",
@@ -1742,7 +1767,7 @@
           "date": "2026-10-07",
           "durationSec": 196,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2665
+          "plays": 2666
         },
         {
           "id": "2394037353",
@@ -1778,7 +1803,7 @@
           "date": "2026-10-07",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1296
+          "plays": 1297
         },
         {
           "id": "2394037335",
@@ -1787,7 +1812,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1290
+          "plays": 1291
         },
         {
           "id": "2383694124",
@@ -1796,7 +1821,7 @@
           "date": "2026-08-18",
           "durationSec": 287,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
-          "plays": 362
+          "plays": 363
         },
         {
           "id": "2394037341",
@@ -1823,7 +1848,7 @@
           "date": "2026-08-25",
           "durationSec": 299,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 355
+          "plays": 356
         },
         {
           "id": "2388231864",
@@ -1832,16 +1857,7 @@
           "date": "2026-08-25",
           "durationSec": 222,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 346
-        },
-        {
-          "id": "2361904949",
-          "title": "Silent voltage",
-          "url": "https://soundcloud.com/broken_shaman/silent-voltage-9",
-          "date": "2026-07-16",
-          "durationSec": 319,
-          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2728
+          "plays": 349
         },
         {
           "id": "2388231879",
@@ -1850,7 +1866,16 @@
           "date": "2026-08-25",
           "durationSec": 281,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 308
+          "plays": 313
+        },
+        {
+          "id": "2361904949",
+          "title": "Silent voltage",
+          "url": "https://soundcloud.com/broken_shaman/silent-voltage-9",
+          "date": "2026-07-16",
+          "durationSec": 319,
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "plays": 2730
         },
         {
           "id": "2388231873",
@@ -1859,7 +1884,7 @@
           "date": "2026-08-25",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 284
+          "plays": 286
         },
         {
           "id": "2383694118",
@@ -1877,7 +1902,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3820
+          "plays": 3821
         },
         {
           "id": "2274189833",
@@ -1886,7 +1911,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3556
+          "plays": 3557
         },
         {
           "id": "2383694112",
@@ -1979,15 +2004,6 @@
           "plays": 209
         },
         {
-          "id": "2355716948",
-          "title": "Requiem for a shaman who couldnt cry",
-          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
-          "date": "2026-07-08",
-          "durationSec": 267,
-          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 430
-        },
-        {
           "id": "2278322267",
           "title": "Sunday again",
           "url": "https://soundcloud.com/broken_shaman/sunday-again-10",
@@ -1995,6 +2011,15 @@
           "durationSec": 267,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
           "plays": 3324
+        },
+        {
+          "id": "2355716948",
+          "title": "Requiem for a shaman who couldnt cry",
+          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
+          "date": "2026-07-08",
+          "durationSec": 267,
+          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
+          "plays": 430
         },
         {
           "id": "2383694109",
@@ -3162,7 +3187,7 @@
           "date": "2026-02-06",
           "durationSec": 265,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
-          "plays": 2764
+          "plays": 2765
         },
         {
           "id": "2244072179",
@@ -3171,7 +3196,7 @@
           "date": "2026-01-08",
           "durationSec": 252,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 2210
+          "plays": 2211
         },
         {
           "id": "2244072161",
@@ -3583,13 +3608,22 @@
           "plays": 1204
         },
         {
+          "id": "2299826693",
+          "title": "The Glow That Learns Your Silence",
+          "url": "https://soundcloud.com/vein-mirror/the-glow-that-learns-your-silence-5",
+          "date": "2026-04-09",
+          "durationSec": 370,
+          "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
+          "plays": 270
+        },
+        {
           "id": "2285999486",
           "title": "Shine Until It Breaks",
           "url": "https://soundcloud.com/vein-mirror/shine-until-it-breaks-4",
           "date": "2026-03-18",
           "durationSec": 348,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 417
+          "plays": 418
         },
         {
           "id": "2285999501",
@@ -3598,16 +3632,7 @@
           "date": "2026-03-18",
           "durationSec": 313,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 370
-        },
-        {
-          "id": "2299826693",
-          "title": "The Glow That Learns Your Silence",
-          "url": "https://soundcloud.com/vein-mirror/the-glow-that-learns-your-silence-5",
-          "date": "2026-04-09",
-          "durationSec": 370,
-          "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 268
+          "plays": 371
         },
         {
           "id": "2299826690",
@@ -3890,15 +3915,6 @@
           "plays": 78
         },
         {
-          "id": "2256974591",
-          "title": "Stay Until The Morning",
-          "url": "https://soundcloud.com/lykke-657587232/stay-until-the-morning-2",
-          "date": "2026-01-30",
-          "durationSec": 275,
-          "artwork": "https://i1.sndcdn.com/artworks-EWdfztFfmRIOB5p6-N4T9zg-large.png",
-          "plays": 121
-        },
-        {
           "id": "2256974585",
           "title": "After The Glow",
           "url": "https://soundcloud.com/lykke-657587232/after-the-glow-8",
@@ -4109,7 +4125,7 @@
           "date": "2026-02-15",
           "durationSec": 245,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 315
+          "plays": 316
         },
         {
           "id": "2266921862",
@@ -4118,7 +4134,7 @@
           "date": "2026-02-15",
           "durationSec": 234,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 253
+          "plays": 254
         },
         {
           "id": "2266921853",
@@ -4127,7 +4143,7 @@
           "date": "2026-02-15",
           "durationSec": 269,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 238
+          "plays": 239
         },
         {
           "id": "2266921844",
