@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T22:00:49.054Z",
+  "generatedAt": "2026-11-14T12:05:36.319Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 719,
@@ -132,7 +132,7 @@
           "date": "2026-09-18",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1507
+          "plays": 1508
         },
         {
           "id": "2402962791",
@@ -150,7 +150,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40304
+          "plays": 40313
         },
         {
           "id": "2404109157",
@@ -168,7 +168,7 @@
           "date": "2026-11-07",
           "durationSec": 231,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 997
+          "plays": 1001
         },
         {
           "id": "2411552355",
@@ -177,7 +177,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 494
+          "plays": 496
         },
         {
           "id": "2360372876",
@@ -186,7 +186,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 3052
+          "plays": 3053
         },
         {
           "id": "2390185518",
@@ -216,15 +216,6 @@
           "plays": 350
         },
         {
-          "id": "2360407937",
-          "title": "VEIN//MIRROR - Through the Veins of the Dying Sky [Chromabone\"s Terminal Aurora Transmission]",
-          "url": "https://soundcloud.com/grafenbergmusik/vein-mirror-through-the-veins",
-          "date": "2026-07-14",
-          "durationSec": 387,
-          "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2941
-        },
-        {
           "id": "2393008854",
           "title": "The house beyond the water",
           "url": "https://soundcloud.com/grafenbergmusik/the-house-beyond-the-water-1",
@@ -234,22 +225,13 @@
           "plays": 330
         },
         {
-          "id": "2369060990",
-          "title": "Last human FM",
-          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
-          "date": "2026-07-27",
-          "durationSec": 261,
-          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 594
-        },
-        {
-          "id": "2347189916",
-          "title": "When the Gravity Breaks Inside Me",
-          "url": "https://soundcloud.com/grafenbergmusik/when-the-gravity-breaks-inside-me-1",
-          "date": "2026-06-25",
-          "durationSec": 350,
-          "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3218
+          "id": "2360407937",
+          "title": "VEIN//MIRROR - Through the Veins of the Dying Sky [Chromabone\"s Terminal Aurora Transmission]",
+          "url": "https://soundcloud.com/grafenbergmusik/vein-mirror-through-the-veins",
+          "date": "2026-07-14",
+          "durationSec": 387,
+          "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
+          "plays": 2942
         },
         {
           "id": "2390185539",
@@ -270,6 +252,15 @@
           "plays": 323
         },
         {
+          "id": "2347189916",
+          "title": "When the Gravity Breaks Inside Me",
+          "url": "https://soundcloud.com/grafenbergmusik/when-the-gravity-breaks-inside-me-1",
+          "date": "2026-06-25",
+          "durationSec": 350,
+          "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
+          "plays": 3219
+        },
+        {
           "id": "2390185515",
           "title": "The system learns to feel (feat. Nehir Sedef)",
           "url": "https://soundcloud.com/grafenbergmusik/the-system-learns-to-feel-feat-nehir-sedef-4",
@@ -277,6 +268,15 @@
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
           "plays": 319
+        },
+        {
+          "id": "2369060990",
+          "title": "Last human FM",
+          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
+          "date": "2026-07-27",
+          "durationSec": 261,
+          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
+          "plays": 597
         },
         {
           "id": "2390185542",
@@ -1769,7 +1769,7 @@
           "date": "2026-10-07",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2466
+          "plays": 2467
         },
         {
           "id": "2388231858",
@@ -1787,7 +1787,7 @@
           "date": "2026-10-07",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1299
+          "plays": 1301
         },
         {
           "id": "2394037335",
@@ -1814,7 +1814,7 @@
           "date": "2026-09-03",
           "durationSec": 253,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 360
+          "plays": 361
         },
         {
           "id": "2394037347",
@@ -1841,7 +1841,7 @@
           "date": "2026-08-25",
           "durationSec": 222,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 350
+          "plays": 352
         },
         {
           "id": "2388231879",
@@ -1859,7 +1859,7 @@
           "date": "2026-07-16",
           "durationSec": 319,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2733
+          "plays": 2734
         },
         {
           "id": "2388231873",
@@ -1868,7 +1868,7 @@
           "date": "2026-08-25",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 286
+          "plays": 287
         },
         {
           "id": "2383694118",
@@ -1877,7 +1877,7 @@
           "date": "2026-08-18",
           "durationSec": 232,
           "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
-          "plays": 266
+          "plays": 267
         },
         {
           "id": "2278322270",
@@ -1886,7 +1886,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3824
+          "plays": 3825
         },
         {
           "id": "2274189833",
@@ -1895,7 +1895,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3557
+          "plays": 3558
         },
         {
           "id": "2383694112",
@@ -1988,6 +1988,15 @@
           "plays": 209
         },
         {
+          "id": "2355716948",
+          "title": "Requiem for a shaman who couldnt cry",
+          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
+          "date": "2026-07-08",
+          "durationSec": 267,
+          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
+          "plays": 432
+        },
+        {
           "id": "2278322267",
           "title": "Sunday again",
           "url": "https://soundcloud.com/broken_shaman/sunday-again-10",
@@ -1995,15 +2004,6 @@
           "durationSec": 267,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
           "plays": 3325
-        },
-        {
-          "id": "2355716948",
-          "title": "Requiem for a shaman who couldnt cry",
-          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
-          "date": "2026-07-08",
-          "durationSec": 267,
-          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 430
         },
         {
           "id": "2383694109",
@@ -2777,7 +2777,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2230
+          "plays": 2233
         },
         {
           "id": "2299293830",
@@ -2807,15 +2807,6 @@
           "plays": 265
         },
         {
-          "id": "2277808448",
-          "title": "Thorn Feather Waltz",
-          "url": "https://soundcloud.com/anatolian_mirage/thorn-feather-waltz-10",
-          "date": "2026-03-05",
-          "durationSec": 291,
-          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 762
-        },
-        {
           "id": "2299293836",
           "title": "Fractal Göbek",
           "url": "https://soundcloud.com/anatolian_mirage/fractal-gobek-2",
@@ -2823,6 +2814,15 @@
           "durationSec": 283,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
           "plays": 312
+        },
+        {
+          "id": "2277808448",
+          "title": "Thorn Feather Waltz",
+          "url": "https://soundcloud.com/anatolian_mirage/thorn-feather-waltz-10",
+          "date": "2026-03-05",
+          "durationSec": 291,
+          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
+          "plays": 762
         },
         {
           "id": "2277808418",
@@ -3192,15 +3192,6 @@
           "plays": 865
         },
         {
-          "id": "2261397650",
-          "title": "Séance in Red",
-          "url": "https://soundcloud.com/nosfera_disco_club/seance-in-red-7",
-          "date": "2026-02-06",
-          "durationSec": 210,
-          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
-          "plays": 351
-        },
-        {
           "id": "2244072176",
           "title": "The last red glow",
           "url": "https://soundcloud.com/nosfera_disco_club/the-last-red-glow-9",
@@ -3208,6 +3199,15 @@
           "durationSec": 187,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
           "plays": 2219
+        },
+        {
+          "id": "2261397650",
+          "title": "Séance in Red",
+          "url": "https://soundcloud.com/nosfera_disco_club/seance-in-red-7",
+          "date": "2026-02-06",
+          "durationSec": 210,
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
+          "plays": 351
         },
         {
           "id": "2244072158",
@@ -3517,7 +3517,7 @@
           "date": "2026-03-18",
           "durationSec": 312,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1103
+          "plays": 1104
         },
         {
           "id": "2285999492",
@@ -3562,7 +3562,7 @@
           "date": "2026-03-18",
           "durationSec": 307,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 393
+          "plays": 394
         },
         {
           "id": "2285999477",
@@ -3598,16 +3598,7 @@
           "date": "2026-04-09",
           "durationSec": 370,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 270
-        },
-        {
-          "id": "2285999486",
-          "title": "Shine Until It Breaks",
-          "url": "https://soundcloud.com/vein-mirror/shine-until-it-breaks-4",
-          "date": "2026-03-18",
-          "durationSec": 348,
-          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 418
+          "plays": 271
         },
         {
           "id": "2285999501",
@@ -3617,6 +3608,15 @@
           "durationSec": 313,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
           "plays": 371
+        },
+        {
+          "id": "2285999486",
+          "title": "Shine Until It Breaks",
+          "url": "https://soundcloud.com/vein-mirror/shine-until-it-breaks-4",
+          "date": "2026-03-18",
+          "durationSec": 348,
+          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
+          "plays": 418
         },
         {
           "id": "2299826690",
@@ -4109,7 +4109,7 @@
           "date": "2026-02-15",
           "durationSec": 245,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 316
+          "plays": 317
         },
         {
           "id": "2266921862",
@@ -4118,7 +4118,7 @@
           "date": "2026-02-15",
           "durationSec": 234,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 254
+          "plays": 255
         },
         {
           "id": "2266921853",
