@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T12:40:31.994Z",
+  "generatedAt": "2026-11-16T13:33:01.103Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 719,
@@ -123,7 +123,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1622
+          "plays": 1623
         },
         {
           "id": "2402962797",
@@ -141,7 +141,7 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1415
+          "plays": 1417
         },
         {
           "id": "2164031784",
@@ -150,7 +150,16 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40324
+          "plays": 40332
+        },
+        {
+          "id": "2433850758",
+          "title": "Someone I remember loving",
+          "url": "https://soundcloud.com/grafenbergmusik/someone-i-remember-loving-3",
+          "date": "2026-11-07",
+          "durationSec": 231,
+          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
+          "plays": 1016
         },
         {
           "id": "2404109157",
@@ -162,22 +171,13 @@
           "plays": 1012
         },
         {
-          "id": "2433850758",
-          "title": "Someone I remember loving",
-          "url": "https://soundcloud.com/grafenbergmusik/someone-i-remember-loving-3",
-          "date": "2026-11-07",
-          "durationSec": 231,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 1012
-        },
-        {
           "id": "2411552355",
           "title": "All the Teeth in Heaven",
           "url": "https://soundcloud.com/grafenbergmusik/all-the-teeth-in-heaven-1",
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 500
+          "plays": 504
         },
         {
           "id": "2360372876",
@@ -186,7 +186,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 3056
+          "plays": 3066
         },
         {
           "id": "2390185518",
@@ -195,7 +195,7 @@
           "date": "2026-08-28",
           "durationSec": 227,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 383
+          "plays": 384
         },
         {
           "id": "2390185524",
@@ -213,7 +213,7 @@
           "date": "2026-07-14",
           "durationSec": 272,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2820
+          "plays": 2821
         },
         {
           "id": "2393008854",
@@ -240,7 +240,7 @@
           "date": "2026-08-28",
           "durationSec": 249,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 323
+          "plays": 324
         },
         {
           "id": "2360407937",
@@ -267,7 +267,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3220
+          "plays": 3221
         },
         {
           "id": "2390185542",
@@ -276,16 +276,7 @@
           "date": "2026-08-28",
           "durationSec": 253,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 299
-        },
-        {
-          "id": "2369060990",
-          "title": "Last human FM",
-          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
-          "date": "2026-07-27",
-          "durationSec": 261,
-          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 598
+          "plays": 300
         },
         {
           "id": "2390185536",
@@ -303,7 +294,7 @@
           "date": "2026-08-28",
           "durationSec": 254,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 294
+          "plays": 295
         },
         {
           "id": "2382989844",
@@ -313,6 +304,15 @@
           "durationSec": 311,
           "artwork": "https://i1.sndcdn.com/artworks-WC8zu7AAgTgZo2um-LJBSNA-t1080x1080.jpg",
           "plays": 287
+        },
+        {
+          "id": "2369060990",
+          "title": "Last human FM",
+          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
+          "date": "2026-07-27",
+          "durationSec": 261,
+          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
+          "plays": 599
         },
         {
           "id": "2390185530",
@@ -1787,7 +1787,7 @@
           "date": "2026-10-07",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1306
+          "plays": 1307
         },
         {
           "id": "2394037335",
@@ -1796,7 +1796,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1293
+          "plays": 1295
         },
         {
           "id": "2383694124",
@@ -1859,7 +1859,7 @@
           "date": "2026-07-16",
           "durationSec": 319,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2735
+          "plays": 2736
         },
         {
           "id": "2388231873",
@@ -1886,7 +1886,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3825
+          "plays": 3828
         },
         {
           "id": "2274189833",
@@ -1895,7 +1895,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3565
+          "plays": 3566
         },
         {
           "id": "2383694112",
@@ -1979,6 +1979,15 @@
           "plays": 213
         },
         {
+          "id": "2355716948",
+          "title": "Requiem for a shaman who couldnt cry",
+          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
+          "date": "2026-07-08",
+          "durationSec": 267,
+          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
+          "plays": 435
+        },
+        {
           "id": "2388231870",
           "title": "AI SLOP III Sloppier than ever",
           "url": "https://soundcloud.com/broken_shaman/ai-slop-iii-sloppier-than-ever-3",
@@ -1986,15 +1995,6 @@
           "durationSec": 216,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
           "plays": 209
-        },
-        {
-          "id": "2355716948",
-          "title": "Requiem for a shaman who couldnt cry",
-          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
-          "date": "2026-07-08",
-          "durationSec": 267,
-          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 432
         },
         {
           "id": "2278322267",
@@ -2777,7 +2777,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2235
+          "plays": 2237
         },
         {
           "id": "2299293830",
@@ -2807,15 +2807,6 @@
           "plays": 265
         },
         {
-          "id": "2299293836",
-          "title": "Fractal Göbek",
-          "url": "https://soundcloud.com/anatolian_mirage/fractal-gobek-2",
-          "date": "2026-04-09",
-          "durationSec": 283,
-          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 312
-        },
-        {
           "id": "2277808448",
           "title": "Thorn Feather Waltz",
           "url": "https://soundcloud.com/anatolian_mirage/thorn-feather-waltz-10",
@@ -2823,6 +2814,15 @@
           "durationSec": 291,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
           "plays": 764
+        },
+        {
+          "id": "2299293836",
+          "title": "Fractal Göbek",
+          "url": "https://soundcloud.com/anatolian_mirage/fractal-gobek-2",
+          "date": "2026-04-09",
+          "durationSec": 283,
+          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
+          "plays": 312
         },
         {
           "id": "2277808418",
@@ -3174,15 +3174,6 @@
           "plays": 2766
         },
         {
-          "id": "2244072179",
-          "title": "Nocturnal charm",
-          "url": "https://soundcloud.com/nosfera_disco_club/nocturnal-charm-6",
-          "date": "2026-01-08",
-          "durationSec": 252,
-          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 2211
-        },
-        {
           "id": "2244072161",
           "title": "Chrome incantation",
           "url": "https://soundcloud.com/nosfera_disco_club/chrome-incantation-3",
@@ -3192,13 +3183,22 @@
           "plays": 865
         },
         {
+          "id": "2244072179",
+          "title": "Nocturnal charm",
+          "url": "https://soundcloud.com/nosfera_disco_club/nocturnal-charm-6",
+          "date": "2026-01-08",
+          "durationSec": 252,
+          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
+          "plays": 2211
+        },
+        {
           "id": "2244072176",
           "title": "The last red glow",
           "url": "https://soundcloud.com/nosfera_disco_club/the-last-red-glow-9",
           "date": "2026-01-08",
           "durationSec": 187,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 2220
+          "plays": 2222
         },
         {
           "id": "2261397650",
@@ -3219,15 +3219,6 @@
           "plays": 285
         },
         {
-          "id": "2261397647",
-          "title": "Purgatory discotheque",
-          "url": "https://soundcloud.com/nosfera_disco_club/purgatory-discotheque-12",
-          "date": "2026-02-06",
-          "durationSec": 227,
-          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
-          "plays": 411
-        },
-        {
           "id": "2261397626",
           "title": "Flesh & velvet",
           "url": "https://soundcloud.com/nosfera_disco_club/flesh-velvet-4",
@@ -3244,6 +3235,15 @@
           "durationSec": 237,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
           "plays": 343
+        },
+        {
+          "id": "2261397647",
+          "title": "Purgatory discotheque",
+          "url": "https://soundcloud.com/nosfera_disco_club/purgatory-discotheque-12",
+          "date": "2026-02-06",
+          "durationSec": 227,
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
+          "plays": 414
         },
         {
           "id": "2244072173",
@@ -3508,7 +3508,7 @@
           "date": "2026-03-18",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 802
+          "plays": 813
         },
         {
           "id": "2285999504",
@@ -3517,7 +3517,7 @@
           "date": "2026-03-18",
           "durationSec": 312,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1108
+          "plays": 1118
         },
         {
           "id": "2285999492",
@@ -3526,7 +3526,7 @@
           "date": "2026-03-18",
           "durationSec": 354,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1067
+          "plays": 1071
         },
         {
           "id": "2285999480",
@@ -3535,7 +3535,7 @@
           "date": "2026-03-18",
           "durationSec": 328,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1553
+          "plays": 1559
         },
         {
           "id": "2299826672",
@@ -3580,7 +3580,7 @@
           "date": "2026-04-09",
           "durationSec": 335,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 1506
+          "plays": 1507
         },
         {
           "id": "2285999483",
@@ -3598,7 +3598,7 @@
           "date": "2026-04-09",
           "durationSec": 370,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 271
+          "plays": 272
         },
         {
           "id": "2285999501",
