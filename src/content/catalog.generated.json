@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T13:57:04.448Z",
+  "generatedAt": "2026-11-21T13:24:25.221Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 719,
@@ -123,7 +123,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1631
+          "plays": 1634
         },
         {
           "id": "2402962797",
@@ -150,7 +150,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40371
+          "plays": 40382
         },
         {
           "id": "2433850764",
@@ -159,7 +159,7 @@
           "date": "2026-11-07",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 1064
+          "plays": 1081
         },
         {
           "id": "2433850758",
@@ -168,7 +168,7 @@
           "date": "2026-11-07",
           "durationSec": 231,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 1026
+          "plays": 1028
         },
         {
           "id": "2404109157",
@@ -177,7 +177,7 @@
           "date": "2026-09-20",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-71b4KDAWnIcWd7pr-JusIAA-t1080x1080.jpg",
-          "plays": 1015
+          "plays": 1016
         },
         {
           "id": "2411552355",
@@ -186,7 +186,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 522
+          "plays": 523
         },
         {
           "id": "2360372876",
@@ -195,7 +195,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 3086
+          "plays": 3090
         },
         {
           "id": "2390185518",
@@ -204,7 +204,7 @@
           "date": "2026-08-28",
           "durationSec": 227,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 389
+          "plays": 390
         },
         {
           "id": "2390185524",
@@ -222,7 +222,7 @@
           "date": "2026-09-02",
           "durationSec": 262,
           "artwork": "https://i1.sndcdn.com/artworks-st4wyqXqSNlAIaIv-k3SIwQ-t1080x1080.jpg",
-          "plays": 331
+          "plays": 332
         },
         {
           "id": "2390185539",
@@ -270,15 +270,6 @@
           "plays": 305
         },
         {
-          "id": "2360407937",
-          "title": "VEIN//MIRROR - Through the Veins of the Dying Sky [Chromabone\"s Terminal Aurora Transmission]",
-          "url": "https://soundcloud.com/grafenbergmusik/vein-mirror-through-the-veins",
-          "date": "2026-07-14",
-          "durationSec": 387,
-          "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2951
-        },
-        {
           "id": "2390185527",
           "title": "The system offers a deal (feat. Nyla Corvey)",
           "url": "https://soundcloud.com/grafenbergmusik/the-system-offers-a-deal-feat-nyla-vey-7",
@@ -297,13 +288,22 @@
           "plays": 298
         },
         {
+          "id": "2360407937",
+          "title": "VEIN//MIRROR - Through the Veins of the Dying Sky [Chromabone\"s Terminal Aurora Transmission]",
+          "url": "https://soundcloud.com/grafenbergmusik/vein-mirror-through-the-veins",
+          "date": "2026-07-14",
+          "durationSec": 387,
+          "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
+          "plays": 2952
+        },
+        {
           "id": "2347189916",
           "title": "When the Gravity Breaks Inside Me",
           "url": "https://soundcloud.com/grafenbergmusik/when-the-gravity-breaks-inside-me-1",
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3228
+          "plays": 3232
         },
         {
           "id": "2390185530",
@@ -324,15 +324,6 @@
           "plays": 274
         },
         {
-          "id": "2369060990",
-          "title": "Last human FM",
-          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
-          "date": "2026-07-27",
-          "durationSec": 261,
-          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 604
-        },
-        {
           "id": "2393008869",
           "title": "Your name beneath the waves",
           "url": "https://soundcloud.com/grafenbergmusik/your-name-beneath-the-waves-7",
@@ -340,6 +331,15 @@
           "durationSec": 301,
           "artwork": "https://i1.sndcdn.com/artworks-st4wyqXqSNlAIaIv-k3SIwQ-t1080x1080.jpg",
           "plays": 263
+        },
+        {
+          "id": "2369060990",
+          "title": "Last human FM",
+          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
+          "date": "2026-07-27",
+          "durationSec": 261,
+          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
+          "plays": 604
         },
         {
           "id": "2386792758",
@@ -360,22 +360,22 @@
           "plays": 258
         },
         {
-          "id": "2402962812",
-          "title": "I didnt lose the world, I outgrew its timing",
-          "url": "https://soundcloud.com/grafenbergmusik/i-didnt-lose-the-world-i-outgrew-its-timing-7",
-          "date": "2026-09-18",
-          "durationSec": 294,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 257
-        },
-        {
           "id": "2411552334",
           "title": "Everybody looks good leaving",
           "url": "https://soundcloud.com/grafenbergmusik/everybody-looks-good-leaving-4",
           "date": "2026-10-01",
           "durationSec": 259,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 256
+          "plays": 257
+        },
+        {
+          "id": "2402962812",
+          "title": "I didnt lose the world, I outgrew its timing",
+          "url": "https://soundcloud.com/grafenbergmusik/i-didnt-lose-the-world-i-outgrew-its-timing-7",
+          "date": "2026-09-18",
+          "durationSec": 294,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
+          "plays": 258
         },
         {
           "id": "2402962803",
@@ -1751,7 +1751,7 @@
           "date": "2026-10-07",
           "durationSec": 196,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2680
+          "plays": 2681
         },
         {
           "id": "2394037353",
@@ -1760,7 +1760,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 2616
+          "plays": 2619
         },
         {
           "id": "2414936652",
@@ -1769,7 +1769,7 @@
           "date": "2026-10-07",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2476
+          "plays": 2477
         },
         {
           "id": "2388231858",
@@ -1778,7 +1778,7 @@
           "date": "2026-08-25",
           "durationSec": 378,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 1927
+          "plays": 1928
         },
         {
           "id": "2414936670",
@@ -1787,7 +1787,7 @@
           "date": "2026-10-07",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1331
+          "plays": 1345
         },
         {
           "id": "2394037335",
@@ -1814,7 +1814,7 @@
           "date": "2026-09-03",
           "durationSec": 197,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 358
+          "plays": 359
         },
         {
           "id": "2388231864",
@@ -1823,7 +1823,7 @@
           "date": "2026-08-25",
           "durationSec": 222,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 358
+          "plays": 361
         },
         {
           "id": "2388231867",
@@ -1832,7 +1832,7 @@
           "date": "2026-08-25",
           "durationSec": 299,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 356
+          "plays": 357
         },
         {
           "id": "2388231879",
@@ -1841,7 +1841,7 @@
           "date": "2026-08-25",
           "durationSec": 281,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 315
+          "plays": 317
         },
         {
           "id": "2388231873",
@@ -1850,16 +1850,7 @@
           "date": "2026-08-25",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 287
-        },
-        {
-          "id": "2361904949",
-          "title": "Silent voltage",
-          "url": "https://soundcloud.com/broken_shaman/silent-voltage-9",
-          "date": "2026-07-16",
-          "durationSec": 319,
-          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2745
+          "plays": 288
         },
         {
           "id": "2278322270",
@@ -1868,7 +1859,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3840
+          "plays": 3842
         },
         {
           "id": "2274189833",
@@ -1877,7 +1868,16 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3575
+          "plays": 3576
+        },
+        {
+          "id": "2361904949",
+          "title": "Silent voltage",
+          "url": "https://soundcloud.com/broken_shaman/silent-voltage-9",
+          "date": "2026-07-16",
+          "durationSec": 319,
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "plays": 2747
         },
         {
           "id": "2394037350",
@@ -1895,7 +1895,7 @@
           "date": "2026-08-25",
           "durationSec": 332,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 224
+          "plays": 225
         },
         {
           "id": "2355716948",
@@ -1904,7 +1904,7 @@
           "date": "2026-07-08",
           "durationSec": 267,
           "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 444
+          "plays": 447
         },
         {
           "id": "2388231870",
@@ -1913,7 +1913,7 @@
           "date": "2026-08-25",
           "durationSec": 216,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 209
+          "plays": 210
         },
         {
           "id": "2414936676",
@@ -1949,7 +1949,7 @@
           "date": "2026-08-25",
           "durationSec": 237,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 188
+          "plays": 189
         },
         {
           "id": "2414936646",
@@ -1968,15 +1968,6 @@
           "durationSec": 243,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
           "plays": 170
-        },
-        {
-          "id": "2278322267",
-          "title": "Sunday again",
-          "url": "https://soundcloud.com/broken_shaman/sunday-again-10",
-          "date": "2026-03-05",
-          "durationSec": 267,
-          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3332
         },
         {
           "id": "2414936649",
@@ -2013,6 +2004,15 @@
           "durationSec": 277,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
           "plays": 163
+        },
+        {
+          "id": "2278322267",
+          "title": "Sunday again",
+          "url": "https://soundcloud.com/broken_shaman/sunday-again-10",
+          "date": "2026-03-05",
+          "durationSec": 267,
+          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
+          "plays": 3333
         }
       ],
       "playlists": [
@@ -2777,7 +2777,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2250
+          "plays": 2252
         },
         {
           "id": "2299293830",
@@ -3189,7 +3189,7 @@
           "date": "2026-01-08",
           "durationSec": 259,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 866
+          "plays": 867
         },
         {
           "id": "2244072176",
@@ -3198,7 +3198,7 @@
           "date": "2026-01-08",
           "durationSec": 187,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 2223
+          "plays": 2224
         },
         {
           "id": "2244072158",
@@ -3565,15 +3565,6 @@
           "plays": 395
         },
         {
-          "id": "2299826675",
-          "title": "Stained Glass in the Mouth of the Sky",
-          "url": "https://soundcloud.com/vein-mirror/stained-glass-in-the-mouth-of-the-sky-9",
-          "date": "2026-04-09",
-          "durationSec": 335,
-          "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 1507
-        },
-        {
           "id": "2285999477",
           "title": "Light That Bleeds So Softly",
           "url": "https://soundcloud.com/vein-mirror/light-that-bleeds-so-softly-8",
@@ -3581,6 +3572,15 @@
           "durationSec": 409,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
           "plays": 1217
+        },
+        {
+          "id": "2299826675",
+          "title": "Stained Glass in the Mouth of the Sky",
+          "url": "https://soundcloud.com/vein-mirror/stained-glass-in-the-mouth-of-the-sky-9",
+          "date": "2026-04-09",
+          "durationSec": 335,
+          "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
+          "plays": 1507
         },
         {
           "id": "2285999483",
