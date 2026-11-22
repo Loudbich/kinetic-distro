@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-21T13:24:25.221Z",
+  "generatedAt": "2026-11-22T13:15:50.626Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 719,
@@ -123,7 +123,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1634
+          "plays": 1637
         },
         {
           "id": "2402962797",
@@ -150,7 +150,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40382
+          "plays": 40393
         },
         {
           "id": "2433850764",
@@ -159,7 +159,7 @@
           "date": "2026-11-07",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 1081
+          "plays": 1173
         },
         {
           "id": "2433850758",
@@ -168,7 +168,7 @@
           "date": "2026-11-07",
           "durationSec": 231,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 1028
+          "plays": 1098
         },
         {
           "id": "2404109157",
@@ -186,7 +186,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 523
+          "plays": 526
         },
         {
           "id": "2360372876",
@@ -195,7 +195,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 3090
+          "plays": 3091
         },
         {
           "id": "2390185518",
@@ -222,7 +222,7 @@
           "date": "2026-09-02",
           "durationSec": 262,
           "artwork": "https://i1.sndcdn.com/artworks-st4wyqXqSNlAIaIv-k3SIwQ-t1080x1080.jpg",
-          "plays": 332
+          "plays": 333
         },
         {
           "id": "2390185539",
@@ -252,15 +252,6 @@
           "plays": 322
         },
         {
-          "id": "2360372888",
-          "title": "The Weight of the Unspoken",
-          "url": "https://soundcloud.com/grafenbergmusik/the-weight-of-the-unspoken-8",
-          "date": "2026-07-14",
-          "durationSec": 272,
-          "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2832
-        },
-        {
           "id": "2390185542",
           "title": "She accepts (feat. Nehir Sedef)",
           "url": "https://soundcloud.com/grafenbergmusik/she-accepts-feat-nehir-sedef-8",
@@ -268,6 +259,15 @@
           "durationSec": 253,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
           "plays": 305
+        },
+        {
+          "id": "2360372888",
+          "title": "The Weight of the Unspoken",
+          "url": "https://soundcloud.com/grafenbergmusik/the-weight-of-the-unspoken-8",
+          "date": "2026-07-14",
+          "durationSec": 272,
+          "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
+          "plays": 2832
         },
         {
           "id": "2390185527",
@@ -294,7 +294,7 @@
           "date": "2026-07-14",
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2952
+          "plays": 2954
         },
         {
           "id": "2347189916",
@@ -333,15 +333,6 @@
           "plays": 263
         },
         {
-          "id": "2369060990",
-          "title": "Last human FM",
-          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
-          "date": "2026-07-27",
-          "durationSec": 261,
-          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
-          "plays": 604
-        },
-        {
           "id": "2386792758",
           "title": "PULSE OF THE DAMAGED CORE [Remastered]",
           "url": "https://soundcloud.com/grafenbergmusik/da801d4e-4fe2-46d7-a06d-13b5abaf9978",
@@ -349,6 +340,15 @@
           "durationSec": 312,
           "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t1080x1080.jpg",
           "plays": 261
+        },
+        {
+          "id": "2402962812",
+          "title": "I didnt lose the world, I outgrew its timing",
+          "url": "https://soundcloud.com/grafenbergmusik/i-didnt-lose-the-world-i-outgrew-its-timing-7",
+          "date": "2026-09-18",
+          "durationSec": 294,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
+          "plays": 258
         },
         {
           "id": "2386792749",
@@ -369,13 +369,13 @@
           "plays": 257
         },
         {
-          "id": "2402962812",
-          "title": "I didnt lose the world, I outgrew its timing",
-          "url": "https://soundcloud.com/grafenbergmusik/i-didnt-lose-the-world-i-outgrew-its-timing-7",
-          "date": "2026-09-18",
-          "durationSec": 294,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 258
+          "id": "2369060990",
+          "title": "Last human FM",
+          "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
+          "date": "2026-07-27",
+          "durationSec": 261,
+          "artwork": "https://i1.sndcdn.com/artworks-6QiEz7l1SqznhzQL-RDNSPQ-t1080x1080.jpg",
+          "plays": 606
         },
         {
           "id": "2402962803",
@@ -1751,7 +1751,7 @@
           "date": "2026-10-07",
           "durationSec": 196,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2681
+          "plays": 2682
         },
         {
           "id": "2394037353",
@@ -1787,7 +1787,7 @@
           "date": "2026-10-07",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1345
+          "plays": 1350
         },
         {
           "id": "2394037335",
@@ -1797,6 +1797,15 @@
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
           "plays": 1299
+        },
+        {
+          "id": "2388231864",
+          "title": "AI SLOP I Kiss the ring",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-i-kiss-the-ring-1",
+          "date": "2026-08-25",
+          "durationSec": 222,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 365
         },
         {
           "id": "2394037341",
@@ -1817,15 +1826,6 @@
           "plays": 359
         },
         {
-          "id": "2388231864",
-          "title": "AI SLOP I Kiss the ring",
-          "url": "https://soundcloud.com/broken_shaman/ai-slop-i-kiss-the-ring-1",
-          "date": "2026-08-25",
-          "durationSec": 222,
-          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 361
-        },
-        {
           "id": "2388231867",
           "title": "HUMAN SLOP",
           "url": "https://soundcloud.com/broken_shaman/human-slop-8",
@@ -1841,7 +1841,7 @@
           "date": "2026-08-25",
           "durationSec": 281,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 317
+          "plays": 323
         },
         {
           "id": "2388231873",
@@ -1859,7 +1859,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3842
+          "plays": 3848
         },
         {
           "id": "2274189833",
@@ -1868,7 +1868,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3576
+          "plays": 3578
         },
         {
           "id": "2361904949",
@@ -1877,7 +1877,7 @@
           "date": "2026-07-16",
           "durationSec": 319,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2747
+          "plays": 2751
         },
         {
           "id": "2394037350",
@@ -1904,7 +1904,7 @@
           "date": "2026-07-08",
           "durationSec": 267,
           "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 447
+          "plays": 449
         },
         {
           "id": "2388231870",
@@ -2012,7 +2012,7 @@
           "date": "2026-03-05",
           "durationSec": 267,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3333
+          "plays": 3334
         }
       ],
       "playlists": [
@@ -2795,7 +2795,7 @@
           "date": "2026-04-09",
           "durationSec": 325,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 207
+          "plays": 211
         },
         {
           "id": "2299293842",
@@ -2834,15 +2834,6 @@
           "plays": 644
         },
         {
-          "id": "2299293857",
-          "title": "Çölün Gözleri",
-          "url": "https://soundcloud.com/anatolian_mirage/colun-gozleri-4",
-          "date": "2026-04-09",
-          "durationSec": 253,
-          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 237
-        },
-        {
           "id": "2299293839",
           "title": "Sixth Saz Dimension",
           "url": "https://soundcloud.com/anatolian_mirage/sixth-saz-dimension-7",
@@ -2877,6 +2868,15 @@
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
           "plays": 197
+        },
+        {
+          "id": "2299293857",
+          "title": "Çölün Gözleri",
+          "url": "https://soundcloud.com/anatolian_mirage/colun-gozleri-4",
+          "date": "2026-04-09",
+          "durationSec": 253,
+          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
+          "plays": 237
         },
         {
           "id": "2299293848",
@@ -3219,15 +3219,6 @@
           "plays": 414
         },
         {
-          "id": "2261397626",
-          "title": "Flesh & velvet",
-          "url": "https://soundcloud.com/nosfera_disco_club/flesh-velvet-4",
-          "date": "2026-02-06",
-          "durationSec": 259,
-          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
-          "plays": 305
-        },
-        {
           "id": "2244072182",
           "title": "Ritual in red",
           "url": "https://soundcloud.com/nosfera_disco_club/ritual-in-red-4",
@@ -3262,6 +3253,15 @@
           "durationSec": 215,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
           "plays": 372
+        },
+        {
+          "id": "2261397626",
+          "title": "Flesh & velvet",
+          "url": "https://soundcloud.com/nosfera_disco_club/flesh-velvet-4",
+          "date": "2026-02-06",
+          "durationSec": 259,
+          "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
+          "plays": 305
         },
         {
           "id": "2242136909",
@@ -3508,7 +3508,7 @@
           "date": "2026-03-18",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 824
+          "plays": 829
         },
         {
           "id": "2285999504",
@@ -3544,16 +3544,7 @@
           "date": "2026-04-09",
           "durationSec": 409,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 1490
-        },
-        {
-          "id": "2285999498",
-          "title": "The Rust That Learns Your Skin",
-          "url": "https://soundcloud.com/vein-mirror/the-rust-that-learns-your-skin-3",
-          "date": "2026-03-18",
-          "durationSec": 329,
-          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 535
+          "plays": 1491
         },
         {
           "id": "2285999495",
@@ -3565,13 +3556,13 @@
           "plays": 395
         },
         {
-          "id": "2285999477",
-          "title": "Light That Bleeds So Softly",
-          "url": "https://soundcloud.com/vein-mirror/light-that-bleeds-so-softly-8",
+          "id": "2285999498",
+          "title": "The Rust That Learns Your Skin",
+          "url": "https://soundcloud.com/vein-mirror/the-rust-that-learns-your-skin-3",
           "date": "2026-03-18",
-          "durationSec": 409,
+          "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1217
+          "plays": 535
         },
         {
           "id": "2299826675",
@@ -3580,7 +3571,16 @@
           "date": "2026-04-09",
           "durationSec": 335,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
-          "plays": 1507
+          "plays": 1510
+        },
+        {
+          "id": "2285999477",
+          "title": "Light That Bleeds So Softly",
+          "url": "https://soundcloud.com/vein-mirror/light-that-bleeds-so-softly-8",
+          "date": "2026-03-18",
+          "durationSec": 409,
+          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
+          "plays": 1217
         },
         {
           "id": "2285999483",
@@ -4136,7 +4136,7 @@
           "date": "2026-02-15",
           "durationSec": 234,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 274
+          "plays": 275
         },
         {
           "id": "2266921856",
