@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T13:15:50.626Z",
+  "generatedAt": "2026-11-23T15:52:55.173Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 719,
@@ -123,7 +123,7 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1637
+          "plays": 1639
         },
         {
           "id": "2402962797",
@@ -132,7 +132,7 @@
           "date": "2026-09-18",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1509
+          "plays": 1513
         },
         {
           "id": "2402962791",
@@ -141,7 +141,7 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1419
+          "plays": 1424
         },
         {
           "id": "2164031784",
@@ -150,7 +150,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40393
+          "plays": 40401
         },
         {
           "id": "2433850764",
@@ -159,7 +159,7 @@
           "date": "2026-11-07",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 1173
+          "plays": 1181
         },
         {
           "id": "2433850758",
@@ -168,7 +168,7 @@
           "date": "2026-11-07",
           "durationSec": 231,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 1098
+          "plays": 1267
         },
         {
           "id": "2404109157",
@@ -186,7 +186,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 526
+          "plays": 532
         },
         {
           "id": "2360372876",
@@ -195,7 +195,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 3091
+          "plays": 3094
         },
         {
           "id": "2390185518",
@@ -213,7 +213,7 @@
           "date": "2026-08-28",
           "durationSec": 226,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 353
+          "plays": 354
         },
         {
           "id": "2393008854",
@@ -240,7 +240,7 @@
           "date": "2026-08-28",
           "durationSec": 249,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 327
+          "plays": 328
         },
         {
           "id": "2390185515",
@@ -249,7 +249,7 @@
           "date": "2026-08-28",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 322
+          "plays": 324
         },
         {
           "id": "2390185542",
@@ -261,15 +261,6 @@
           "plays": 305
         },
         {
-          "id": "2360372888",
-          "title": "The Weight of the Unspoken",
-          "url": "https://soundcloud.com/grafenbergmusik/the-weight-of-the-unspoken-8",
-          "date": "2026-07-14",
-          "durationSec": 272,
-          "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2832
-        },
-        {
           "id": "2390185527",
           "title": "The system offers a deal (feat. Nyla Corvey)",
           "url": "https://soundcloud.com/grafenbergmusik/the-system-offers-a-deal-feat-nyla-vey-7",
@@ -279,13 +270,22 @@
           "plays": 299
         },
         {
+          "id": "2360372888",
+          "title": "The Weight of the Unspoken",
+          "url": "https://soundcloud.com/grafenbergmusik/the-weight-of-the-unspoken-8",
+          "date": "2026-07-14",
+          "durationSec": 272,
+          "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
+          "plays": 2835
+        },
+        {
           "id": "2390185536",
           "title": "She was part of the system (feat. Nyla Corvey)",
           "url": "https://soundcloud.com/grafenbergmusik/she-was-part-of-the-system-feat-nyla-vey-3",
           "date": "2026-08-28",
           "durationSec": 230,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 298
+          "plays": 299
         },
         {
           "id": "2360407937",
@@ -294,7 +294,7 @@
           "date": "2026-07-14",
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2954
+          "plays": 2956
         },
         {
           "id": "2347189916",
@@ -303,7 +303,7 @@
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3232
+          "plays": 3234
         },
         {
           "id": "2390185530",
@@ -333,30 +333,12 @@
           "plays": 263
         },
         {
-          "id": "2386792758",
-          "title": "PULSE OF THE DAMAGED CORE [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/da801d4e-4fe2-46d7-a06d-13b5abaf9978",
-          "date": "2026-08-23",
-          "durationSec": 312,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t1080x1080.jpg",
-          "plays": 261
-        },
-        {
           "id": "2402962812",
           "title": "I didnt lose the world, I outgrew its timing",
           "url": "https://soundcloud.com/grafenbergmusik/i-didnt-lose-the-world-i-outgrew-its-timing-7",
           "date": "2026-09-18",
           "durationSec": 294,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 258
-        },
-        {
-          "id": "2386792749",
-          "title": "ZERO CHURCH ARCHITECTURE [Remastered]",
-          "url": "https://soundcloud.com/grafenbergmusik/fff09f55-8d54-4b9c-b2ae-c3c3354fc70e",
-          "date": "2026-08-23",
-          "durationSec": 298,
-          "artwork": "https://i1.sndcdn.com/artworks-nL7GN3hWW1qVVjTq-ZiTzvw-t1080x1080.jpg",
           "plays": 258
         },
         {
@@ -369,6 +351,15 @@
           "plays": 257
         },
         {
+          "id": "2402962803",
+          "title": "What feels natural to me no longer matches the world",
+          "url": "https://soundcloud.com/grafenbergmusik/what-feels-natural-to-me-no-longer-matches-the-world-6",
+          "date": "2026-09-18",
+          "durationSec": 304,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
+          "plays": 255
+        },
+        {
           "id": "2369060990",
           "title": "Last human FM",
           "url": "https://soundcloud.com/grafenbergmusik/last-human-fm-1",
@@ -378,13 +369,22 @@
           "plays": 606
         },
         {
-          "id": "2402962803",
-          "title": "What feels natural to me no longer matches the world",
-          "url": "https://soundcloud.com/grafenbergmusik/what-feels-natural-to-me-no-longer-matches-the-world-6",
+          "id": "2402962794",
+          "title": "What emerged when everything fell silent",
+          "url": "https://soundcloud.com/grafenbergmusik/what-emerged-when-everything-fell-silent-1",
           "date": "2026-09-18",
-          "durationSec": 304,
+          "durationSec": 348,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 255
+          "plays": 240
+        },
+        {
+          "id": "2402962806",
+          "title": "The world didnt change, my access did",
+          "url": "https://soundcloud.com/grafenbergmusik/the-world-didnt-change-my-access-did-2",
+          "date": "2026-09-18",
+          "durationSec": 329,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
+          "plays": 239
         }
       ],
       "playlists": [
@@ -1751,7 +1751,7 @@
           "date": "2026-10-07",
           "durationSec": 196,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2682
+          "plays": 2684
         },
         {
           "id": "2394037353",
@@ -1769,7 +1769,7 @@
           "date": "2026-10-07",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2477
+          "plays": 2478
         },
         {
           "id": "2388231858",
@@ -1787,7 +1787,7 @@
           "date": "2026-10-07",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1350
+          "plays": 1352
         },
         {
           "id": "2394037335",
@@ -1796,7 +1796,7 @@
           "date": "2026-09-03",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 1299
+          "plays": 1309
         },
         {
           "id": "2388231864",
@@ -1859,7 +1859,7 @@
           "date": "2026-03-05",
           "durationSec": 263,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3848
+          "plays": 3849
         },
         {
           "id": "2274189833",
@@ -1868,7 +1868,7 @@
           "date": "2026-02-26",
           "durationSec": 186,
           "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3578
+          "plays": 3581
         },
         {
           "id": "2361904949",
@@ -1877,7 +1877,7 @@
           "date": "2026-07-16",
           "durationSec": 319,
           "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2751
+          "plays": 2754
         },
         {
           "id": "2394037350",
@@ -1889,6 +1889,15 @@
           "plays": 231
         },
         {
+          "id": "2355716948",
+          "title": "Requiem for a shaman who couldnt cry",
+          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
+          "date": "2026-07-08",
+          "durationSec": 267,
+          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
+          "plays": 452
+        },
+        {
           "id": "2388231861",
           "title": "AI SLOP VII Training data",
           "url": "https://soundcloud.com/broken_shaman/ai-slop-vii-training-data-7",
@@ -1896,15 +1905,6 @@
           "durationSec": 332,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
           "plays": 225
-        },
-        {
-          "id": "2355716948",
-          "title": "Requiem for a shaman who couldnt cry",
-          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
-          "date": "2026-07-08",
-          "durationSec": 267,
-          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 449
         },
         {
           "id": "2388231870",
@@ -1988,15 +1988,6 @@
           "plays": 169
         },
         {
-          "id": "2294824532",
-          "title": "Afterimage",
-          "url": "https://soundcloud.com/broken_shaman/afterimage-6",
-          "date": "2026-04-01",
-          "durationSec": 226,
-          "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
-          "plays": 4312
-        },
-        {
           "id": "2414936658",
           "title": "Golden hour broadcast",
           "url": "https://soundcloud.com/broken_shaman/golden-hour-broadcast-8",
@@ -2004,6 +1995,15 @@
           "durationSec": 277,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
           "plays": 163
+        },
+        {
+          "id": "2294824532",
+          "title": "Afterimage",
+          "url": "https://soundcloud.com/broken_shaman/afterimage-6",
+          "date": "2026-04-01",
+          "durationSec": 226,
+          "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
+          "plays": 4312
         },
         {
           "id": "2278322267",
@@ -2777,16 +2777,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2252
-        },
-        {
-          "id": "2299293830",
-          "title": "Microtonic Sandstorm",
-          "url": "https://soundcloud.com/anatolian_mirage/microtonic-sandstorm-9",
-          "date": "2026-04-09",
-          "durationSec": 255,
-          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 606
+          "plays": 2253
         },
         {
           "id": "2299293827",
@@ -2795,7 +2786,16 @@
           "date": "2026-04-09",
           "durationSec": 325,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 211
+          "plays": 213
+        },
+        {
+          "id": "2299293830",
+          "title": "Microtonic Sandstorm",
+          "url": "https://soundcloud.com/anatolian_mirage/microtonic-sandstorm-9",
+          "date": "2026-04-09",
+          "durationSec": 255,
+          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
+          "plays": 608
         },
         {
           "id": "2299293842",
@@ -3270,7 +3270,7 @@
           "date": "2026-01-05",
           "durationSec": 199,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 260
+          "plays": 261
         },
         {
           "id": "2261397650",
@@ -3508,7 +3508,7 @@
           "date": "2026-03-18",
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 829
+          "plays": 831
         },
         {
           "id": "2285999504",
@@ -3535,7 +3535,7 @@
           "date": "2026-03-18",
           "durationSec": 354,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1076
+          "plays": 1077
         },
         {
           "id": "2299826672",
@@ -3580,7 +3580,7 @@
           "date": "2026-03-18",
           "durationSec": 409,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1217
+          "plays": 1218
         },
         {
           "id": "2285999483",
@@ -4109,7 +4109,7 @@
           "date": "2026-02-15",
           "durationSec": 245,
           "artwork": "https://i1.sndcdn.com/artworks-EHyXsUtVBuxPva9B-ZK6fFw-large.png",
-          "plays": 320
+          "plays": 321
         },
         {
           "id": "2266921862",
