@@ -1,15 +1,10 @@
 {
-  "generatedAt": "2026-11-24T15:45:52.636Z",
+  "generatedAt": "2026-11-25T15:29:49.089Z",
   "source": "soundcloud-rss + api-v2",
-  "artistCount": 6,
-  "trackCount": 499,
-  "playlistCount": 63,
-  "failures": [
-    {
-      "slug": "broken-shaman",
-      "error": "HTTP 500"
-    }
-  ],
+  "artistCount": 7,
+  "trackCount": 719,
+  "playlistCount": 78,
+  "failures": [],
   "artists": {
     "grafenberg": {
       "slug": "grafenberg",
@@ -128,7 +123,16 @@
           "date": "2026-09-18",
           "durationSec": 278,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1642
+          "plays": 1644
+        },
+        {
+          "id": "2433850758",
+          "title": "Someone I remember loving",
+          "url": "https://soundcloud.com/grafenbergmusik/someone-i-remember-loving-3",
+          "date": "2026-11-07",
+          "durationSec": 231,
+          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
+          "plays": 1757
         },
         {
           "id": "2402962797",
@@ -146,16 +150,7 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1424
-        },
-        {
-          "id": "2433850758",
-          "title": "Someone I remember loving",
-          "url": "https://soundcloud.com/grafenbergmusik/someone-i-remember-loving-3",
-          "date": "2026-11-07",
-          "durationSec": 231,
-          "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 1528
+          "plays": 1425
         },
         {
           "id": "2164031784",
@@ -164,7 +159,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40424
+          "plays": 40432
         },
         {
           "id": "2433850764",
@@ -173,7 +168,7 @@
           "date": "2026-11-07",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 1193
+          "plays": 1201
         },
         {
           "id": "2404109157",
@@ -191,7 +186,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 537
+          "plays": 541
         },
         {
           "id": "2360372876",
@@ -266,15 +261,6 @@
           "plays": 305
         },
         {
-          "id": "2390185536",
-          "title": "She was part of the system (feat. Nyla Corvey)",
-          "url": "https://soundcloud.com/grafenbergmusik/she-was-part-of-the-system-feat-nyla-vey-3",
-          "date": "2026-08-28",
-          "durationSec": 230,
-          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 299
-        },
-        {
           "id": "2390185527",
           "title": "The system offers a deal (feat. Nyla Corvey)",
           "url": "https://soundcloud.com/grafenbergmusik/the-system-offers-a-deal-feat-nyla-vey-7",
@@ -284,13 +270,31 @@
           "plays": 300
         },
         {
+          "id": "2390185536",
+          "title": "She was part of the system (feat. Nyla Corvey)",
+          "url": "https://soundcloud.com/grafenbergmusik/she-was-part-of-the-system-feat-nyla-vey-3",
+          "date": "2026-08-28",
+          "durationSec": 230,
+          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
+          "plays": 299
+        },
+        {
           "id": "2360372888",
           "title": "The Weight of the Unspoken",
           "url": "https://soundcloud.com/grafenbergmusik/the-weight-of-the-unspoken-8",
           "date": "2026-07-14",
           "durationSec": 272,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 2839
+          "plays": 2840
+        },
+        {
+          "id": "2347189916",
+          "title": "When the Gravity Breaks Inside Me",
+          "url": "https://soundcloud.com/grafenbergmusik/when-the-gravity-breaks-inside-me-1",
+          "date": "2026-06-25",
+          "durationSec": 350,
+          "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
+          "plays": 3235
         },
         {
           "id": "2360407937",
@@ -300,15 +304,6 @@
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
           "plays": 2961
-        },
-        {
-          "id": "2347189916",
-          "title": "When the Gravity Breaks Inside Me",
-          "url": "https://soundcloud.com/grafenbergmusik/when-the-gravity-breaks-inside-me-1",
-          "date": "2026-06-25",
-          "durationSec": 350,
-          "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3234
         },
         {
           "id": "2390185530",
@@ -344,7 +339,7 @@
           "date": "2026-10-01",
           "durationSec": 259,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 258
+          "plays": 259
         },
         {
           "id": "2402962812",
@@ -1303,35 +1298,6 @@
           "isMirror": false
         },
         {
-          "id": "2229674705",
-          "title": "Signals from a burning planet",
-          "url": "https://soundcloud.com/grafenbergmusik/sets/broken-shaman-signals-from-a",
-          "date": "2026-04-29",
-          "artwork": "",
-          "trackCount": 10,
-          "isAlbum": false,
-          "setType": "playlist",
-          "description": "",
-          "tracklist": [
-            "Mother Earth Is Calling",
-            "Children of the Feed",
-            "No More Flags in the Fire",
-            "How Did We Lose the Sky",
-            "Mercy for the Lonely",
-            "The Richest Men on a Dead Street",
-            "Can You Hear the Mothers Cry",
-            "Love Is Still Underground",
-            "Tomorrow Needs a Witness",
-            "What's Still Going On"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "broken-shaman"
-          ],
-          "creditSource": "showcase",
-          "isMirror": false
-        },
-        {
           "id": "2229614282",
           "title": "Serpent Cosmopolis",
           "url": "https://soundcloud.com/grafenbergmusik/sets/serpent-cosmopolis",
@@ -1421,65 +1387,6 @@
           "isMirror": false
         },
         {
-          "id": "2224043744",
-          "title": "No Armor",
-          "url": "https://soundcloud.com/grafenbergmusik/sets/broken-shaman-no-armor-full",
-          "date": "2026-04-18",
-          "artwork": "https://i1.sndcdn.com/artworks-8ET6uAvQ3G3nDyzu-XPQIUw-t1080x1080.jpg",
-          "trackCount": 11,
-          "isAlbum": false,
-          "setType": "playlist",
-          "description": "“No Armor” is the most intimate Broken Shaman record to date.\n\nNo mythology.\nNo ritual mask.\nNo armor.\n\nJust memory.\n\nBuilt on dusty boom bap textures, warm Rhodes chords and fragile late-night verses, this album explores the quiet spaces where grief actually lives, not in explosions of pain, but in the slow erosion of ordinary days.\n\nKitchen tables.\nHospital hallways.\nLast voicemails.\nEmpty Sundays.\n\nAcross eleven minimal, analog-feeling tracks, Broken Shaman strips everything down to the essentials: close-mic confessions, loose swing drums, upright bass lines and the soft hiss of vinyl.\n\nThe beats breathe.\nThe silence matters.\nNothing is hidden.\n\n“No Armor” is about loss that doesn’t shout.\nThe kind that sits quietly across the table.\n\nAnd waits.\n\nIf previous Broken Shaman records were rituals, this one is a conversation.",
-          "tracklist": [
-            "No armor",
-            "Broken loyalty",
-            "When brothers switch",
-            "Slow goodbye",
-            "Kitchen table confessions",
-            "Hospital hallway",
-            "Funeral suit",
-            "Interlude",
-            "Last voicemail",
-            "Sunday again",
-            "What stays"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "broken-shaman"
-          ],
-          "creditSource": "showcase",
-          "isMirror": false
-        },
-        {
-          "id": "2224043246",
-          "title": "Iron Monk Execution",
-          "url": "https://soundcloud.com/grafenbergmusik/sets/broken-shaman-iron-monk",
-          "date": "2026-04-18",
-          "artwork": "https://i1.sndcdn.com/artworks-xHZSnYD9ApJnB44z-udXGzw-t1080x1080.jpg",
-          "trackCount": 10,
-          "isAlbum": false,
-          "setType": "playlist",
-          "description": "Ten tracks built like a training cycle : discipline, repetition, isolation, precision.\nThere are no wasted movements here. No emotional overflow, no theatrical chaos.\nEvery beat is measured.\nEvery bassline restrained.\nEvery lyric delivered like a blade that already knows where it will land.\n\nSteel logic.\nBreath before strike.\n\nIron Monk Execution is what happens when emotion is forged into weaponry.",
-          "tracklist": [
-            "Temple whitout master",
-            "Cold discipline",
-            "Ritual static",
-            "Black psalm engine",
-            "Sword logic",
-            "Velvet corruption",
-            "Checkmate in silence",
-            "Crown of embers",
-            "In the same body",
-            "The fifth element"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "broken-shaman"
-          ],
-          "creditSource": "showcase",
-          "isMirror": false
-        },
-        {
           "id": "2224039148",
           "title": "Die with style VOL.2",
           "url": "https://soundcloud.com/grafenbergmusik/sets/unmade-scores-die-with-style-1",
@@ -1504,119 +1411,6 @@
           "freeDownload": false,
           "credit": [
             "unmade-scores"
-          ],
-          "creditSource": "showcase",
-          "isMirror": false
-        },
-        {
-          "id": "2224035080",
-          "title": "You were born ready",
-          "url": "https://soundcloud.com/grafenbergmusik/sets/broken-shaman-you-were-born",
-          "date": "2026-04-18",
-          "artwork": "https://i1.sndcdn.com/artworks-B0g7yn1qgdpgClHf-a2k5nw-t1080x1080.jpg",
-          "trackCount": 10,
-          "isAlbum": false,
-          "setType": "playlist",
-          "description": "This is not music.\nThis is temptation made audible.\n\n\"You Were Born Ready\" is the sound of surrender before the fall. The moment between restraint and ruin. The instant your body understands before your mind agrees.\n\nEvery track breathes heat. Slow, deliberate pressure. Analog bass that moves like skin against skin. Voices that don’t ask — they decide.\n\nShe is always there. Not chasing. Not forcing. Waiting.\n\nA presence in the dark. A whisper behind your ear. A hand hovering just close enough to erase resistance.\n\nThis album lives in that space where control dissolves. Where desire becomes gravity. Where you stop asking why and start accepting what was always inevitable.\n\nIt is sacred.\nIt is predatory.\nIt is intimate.\nIt is merciless.\n\nThis is the forbidden fruit already in your hand.\n\nYou were not convinced.\n\nYou were recognized.\n\nYou were born ready.",
-          "tracklist": [
-            "The Fruit",
-            "Kneel before heat",
-            "Temperature rising",
-            "Don't touch yet",
-            "Angels fall slower",
-            "She speaks first",
-            "The devil doesn't rush",
-            "Let it break",
-            "She Undoes Me",
-            "Toxic afterglow"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "broken-shaman"
-          ],
-          "creditSource": "showcase",
-          "isMirror": false
-        },
-        {
-          "id": "2224022927",
-          "title": "After the feed",
-          "url": "https://soundcloud.com/grafenbergmusik/sets/broken-shaman-after-the-feed",
-          "date": "2026-04-18",
-          "artwork": "https://i1.sndcdn.com/artworks-6PNPznKHYLAYeEOb-F2VtLw-t1080x1080.jpg",
-          "trackCount": 8,
-          "isAlbum": false,
-          "setType": "playlist",
-          "description": "After the Feed is what happens when the signal dies… but the body keeps moving.\n\nNo more outrage cycles.\nNo more trending panic.\nNo more narrative to cling to.\n\nJust reflex. Memory. Residual input.\n\nThis album explores the space after collapse — where systems fail quietly, machines keep praying without masters, and hands remember what language forgets. It’s not revolution. It’s decompression. It’s the slow recalibration of a nervous system that lived too long inside noise.\n\nNo hooks designed to save you.\nNo slogans left to repeat.\nOnly breath.\nOnly pulse.\nOnly the long silence after transmission. \n\nThis is survival without spectacle.",
-          "tracklist": [
-            "Unlearning the script",
-            "Muscle memory",
-            "The machines pray",
-            "The hands remember",
-            "Prayers without gods",
-            "Residual input",
-            "Signal misremembered",
-            "The long breath"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "broken-shaman"
-          ],
-          "creditSource": "showcase",
-          "isMirror": false
-        },
-        {
-          "id": "2224022507",
-          "title": "Fire & Ice",
-          "url": "https://soundcloud.com/grafenbergmusik/sets/broken-shaman-fire-ice-full",
-          "date": "2026-04-18",
-          "artwork": "https://i1.sndcdn.com/artworks-MBKmZqIFb28eSOEr-uo9vKA-t1080x1080.jpg",
-          "trackCount": 10,
-          "isAlbum": false,
-          "setType": "playlist",
-          "description": "Born from surveillance, obedience, collapse, and silence, this record documents a world freezing in control while burning in denial. Power speaks softly. Violence moves quietly. The machine keeps running even when no one believes in it anymore.\n\nThere are no heroes here. No slogans. No comfort.\n\nOnly pressure, cold systems, warm blood, and the moment where compliance cracks.\n\nThis is political music without speeches. Protest without flags. A soundtrack for the space between fear and revolt.",
-          "tracklist": [
-            "Bend your knees",
-            "Ice police",
-            "Kidnap democracy",
-            "The new terror",
-            "Make america dead again",
-            "Gangster state",
-            "Fire & Ice",
-            "The greenland episode",
-            "14 minutes",
-            "Code name : APOCALYPSE"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "broken-shaman"
-          ],
-          "creditSource": "showcase",
-          "isMirror": false
-        },
-        {
-          "id": "2224020623",
-          "title": "Dirt Temple",
-          "url": "https://soundcloud.com/grafenbergmusik/sets/broken-shaman-dirt-temple-full",
-          "date": "2026-04-18",
-          "artwork": "https://i1.sndcdn.com/artworks-Olf5WKWnzJeCxe0C-ycGkig-t1080x1080.jpg",
-          "trackCount": 9,
-          "isAlbum": false,
-          "setType": "playlist",
-          "description": "Built on heavy low frequencies, feral grooves, and stripped-down incantations, Dirt Temple explores what remains when meaning collapses and instinct takes control.\nThere are no gods here—only breath, pressure, dirt, and repetition.\n\nEach track functions like a descent: slower, heavier, more physical.\nThis is music made for the body before the mind, for movement before belief.\n\nEnter quietly.\nNothing inside is clean.",
-          "tracklist": [
-            "Open The Pit (no gods inside)",
-            "Low Frequency Ritual",
-            "Dirt On My Tongue",
-            "Don't Clean It",
-            "Feral Talk",
-            "Temple Burns Slow",
-            "This Ain't Peace",
-            "Laughing In The Smoke",
-            "This Is Hell"
-          ],
-          "freeDownload": false,
-          "credit": [
-            "broken-shaman"
           ],
           "creditSource": "showcase",
           "isMirror": false
@@ -1840,6 +1634,1032 @@
         }
       ]
     },
+    "broken-shaman": {
+      "slug": "broken-shaman",
+      "handle": "broken_shaman",
+      "userId": 1663724420,
+      "profileUrl": "https://soundcloud.com/broken_shaman",
+      "rssUrl": "https://feeds.soundcloud.com/users/soundcloud:users:1663724420/sounds.rss",
+      "displayName": "Broken Shaman",
+      "avatar": "https://i1.sndcdn.com/avatars-DyFbO2fSlQUNyeR5-4LlFcQ-t500x500.jpg",
+      "alsoCredits": [],
+      "trackCount": 220,
+      "latestDate": "2026-10-07",
+      "tracks": [
+        {
+          "id": "2414936676",
+          "title": "Sunday soul food",
+          "url": "https://soundcloud.com/broken_shaman/sunday-soul-food-7",
+          "date": "2026-10-07",
+          "durationSec": 204,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936673",
+          "title": "Nineties never die",
+          "url": "https://soundcloud.com/broken_shaman/nineties-never-die-5",
+          "date": "2026-10-07",
+          "durationSec": 314,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936670",
+          "title": "Cassette tape saints",
+          "url": "https://soundcloud.com/broken_shaman/cassette-tape-saints-4",
+          "date": "2026-10-07",
+          "durationSec": 315,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936667",
+          "title": "Like a soldier",
+          "url": "https://soundcloud.com/broken_shaman/like-a-soldier-11",
+          "date": "2026-10-07",
+          "durationSec": 243,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936664",
+          "title": "Black velvet funeral radio",
+          "url": "https://soundcloud.com/broken_shaman/black-velvet-funeral-radio-12",
+          "date": "2026-10-07",
+          "durationSec": 269,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936661",
+          "title": "Sunlight on the asphalt",
+          "url": "https://soundcloud.com/broken_shaman/sunlight-on-the-asphalt-1",
+          "date": "2026-10-07",
+          "durationSec": 291,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936658",
+          "title": "Golden hour broadcast",
+          "url": "https://soundcloud.com/broken_shaman/golden-hour-broadcast-8",
+          "date": "2026-10-07",
+          "durationSec": 277,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936652",
+          "title": "Chrome rims, corner stores",
+          "url": "https://soundcloud.com/broken_shaman/chrome-rims-corner-stores-3",
+          "date": "2026-10-07",
+          "durationSec": 280,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936649",
+          "title": "More reasons to love Broken Shaman",
+          "url": "https://soundcloud.com/broken_shaman/more-reasons-to-love-broken-shaman-10",
+          "date": "2026-10-07",
+          "durationSec": 277,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936646",
+          "title": "Backyard symphony",
+          "url": "https://soundcloud.com/broken_shaman/backyard-symphony-2",
+          "date": "2026-10-07",
+          "durationSec": 306,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936643",
+          "title": "Late night basketball",
+          "url": "https://soundcloud.com/broken_shaman/late-night-basketball-9",
+          "date": "2026-10-07",
+          "durationSec": 196,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        },
+        {
+          "id": "2414936640",
+          "title": "Low rider daydreams",
+          "url": "https://soundcloud.com/broken_shaman/low-rider-daydreams-6",
+          "date": "2026-10-07",
+          "durationSec": 251,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t500x500.jpg"
+        }
+      ],
+      "topTracks": [
+        {
+          "id": "2414936643",
+          "title": "Late night basketball",
+          "url": "https://soundcloud.com/broken_shaman/late-night-basketball-9",
+          "date": "2026-10-07",
+          "durationSec": 196,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 2688
+        },
+        {
+          "id": "2394037353",
+          "title": "Ghosts in the System",
+          "url": "https://soundcloud.com/broken_shaman/ghosts-in-the-system-9",
+          "date": "2026-09-03",
+          "durationSec": 244,
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "plays": 2621
+        },
+        {
+          "id": "2414936652",
+          "title": "Chrome rims, corner stores",
+          "url": "https://soundcloud.com/broken_shaman/chrome-rims-corner-stores-3",
+          "date": "2026-10-07",
+          "durationSec": 280,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 2480
+        },
+        {
+          "id": "2388231858",
+          "title": "AI SLOP VI The cure",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-vi-the-cure-6",
+          "date": "2026-08-25",
+          "durationSec": 378,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 1931
+        },
+        {
+          "id": "2414936670",
+          "title": "Cassette tape saints",
+          "url": "https://soundcloud.com/broken_shaman/cassette-tape-saints-4",
+          "date": "2026-10-07",
+          "durationSec": 315,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 1355
+        },
+        {
+          "id": "2394037335",
+          "title": "Eerie Gospel",
+          "url": "https://soundcloud.com/broken_shaman/eerie-gospel-2",
+          "date": "2026-09-03",
+          "durationSec": 204,
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "plays": 1312
+        },
+        {
+          "id": "2394037341",
+          "title": "Shadow Returns",
+          "url": "https://soundcloud.com/broken_shaman/shadow-returns-1",
+          "date": "2026-09-03",
+          "durationSec": 253,
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "plays": 362
+        },
+        {
+          "id": "2394037347",
+          "title": "Fracture Protocol",
+          "url": "https://soundcloud.com/broken_shaman/fracture-protocol-7",
+          "date": "2026-09-03",
+          "durationSec": 197,
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "plays": 359
+        },
+        {
+          "id": "2388231864",
+          "title": "AI SLOP I Kiss the ring",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-i-kiss-the-ring-1",
+          "date": "2026-08-25",
+          "durationSec": 222,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 365
+        },
+        {
+          "id": "2388231867",
+          "title": "HUMAN SLOP",
+          "url": "https://soundcloud.com/broken_shaman/human-slop-8",
+          "date": "2026-08-25",
+          "durationSec": 299,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 357
+        },
+        {
+          "id": "2388231879",
+          "title": "AI SLOP V Domination",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-v-domination-5",
+          "date": "2026-08-25",
+          "durationSec": 281,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 325
+        },
+        {
+          "id": "2278322270",
+          "title": "Funeral suit",
+          "url": "https://soundcloud.com/broken_shaman/funeral-suit-7",
+          "date": "2026-03-05",
+          "durationSec": 263,
+          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
+          "plays": 3853
+        },
+        {
+          "id": "2274189833",
+          "title": "In the same body",
+          "url": "https://soundcloud.com/broken_shaman/in-the-same-body-9",
+          "date": "2026-02-26",
+          "durationSec": 186,
+          "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
+          "plays": 3585
+        },
+        {
+          "id": "2388231873",
+          "title": "AI SLOP II More human than human",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-ii-more-human-than-human-2",
+          "date": "2026-08-25",
+          "durationSec": 273,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 288
+        },
+        {
+          "id": "2361904949",
+          "title": "Silent voltage",
+          "url": "https://soundcloud.com/broken_shaman/silent-voltage-9",
+          "date": "2026-07-16",
+          "durationSec": 319,
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "plays": 2757
+        },
+        {
+          "id": "2394037350",
+          "title": "Neon Rebirth Protocol",
+          "url": "https://soundcloud.com/broken_shaman/neon-rebirth-protocol-6",
+          "date": "2026-09-03",
+          "durationSec": 203,
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "plays": 231
+        },
+        {
+          "id": "2355716948",
+          "title": "Requiem for a shaman who couldnt cry",
+          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
+          "date": "2026-07-08",
+          "durationSec": 267,
+          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
+          "plays": 456
+        },
+        {
+          "id": "2414936676",
+          "title": "Sunday soul food",
+          "url": "https://soundcloud.com/broken_shaman/sunday-soul-food-7",
+          "date": "2026-10-07",
+          "durationSec": 204,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 197
+        },
+        {
+          "id": "2414936661",
+          "title": "Sunlight on the asphalt",
+          "url": "https://soundcloud.com/broken_shaman/sunlight-on-the-asphalt-1",
+          "date": "2026-10-07",
+          "durationSec": 292,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 197
+        },
+        {
+          "id": "2414936640",
+          "title": "Low rider daydreams",
+          "url": "https://soundcloud.com/broken_shaman/low-rider-daydreams-6",
+          "date": "2026-10-07",
+          "durationSec": 252,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 196
+        },
+        {
+          "id": "2388231861",
+          "title": "AI SLOP VII Training data",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-vii-training-data-7",
+          "date": "2026-08-25",
+          "durationSec": 332,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 225
+        },
+        {
+          "id": "2388231870",
+          "title": "AI SLOP III Sloppier than ever",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-iii-sloppier-than-ever-3",
+          "date": "2026-08-25",
+          "durationSec": 216,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 210
+        },
+        {
+          "id": "2414936646",
+          "title": "Backyard symphony",
+          "url": "https://soundcloud.com/broken_shaman/backyard-symphony-2",
+          "date": "2026-10-07",
+          "durationSec": 307,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 175
+        },
+        {
+          "id": "2414936667",
+          "title": "Like a soldier",
+          "url": "https://soundcloud.com/broken_shaman/like-a-soldier-11",
+          "date": "2026-10-07",
+          "durationSec": 243,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 170
+        },
+        {
+          "id": "2414936649",
+          "title": "More reasons to love Broken Shaman",
+          "url": "https://soundcloud.com/broken_shaman/more-reasons-to-love-broken-shaman-10",
+          "date": "2026-10-07",
+          "durationSec": 277,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 169
+        },
+        {
+          "id": "2394037326",
+          "title": "Ritual Overdrive",
+          "url": "https://soundcloud.com/broken_shaman/ritual-overdrive-3",
+          "date": "2026-09-03",
+          "durationSec": 202,
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "plays": 169
+        },
+        {
+          "id": "2388231876",
+          "title": "AI SLOP IV Global meltdown",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-iv-global-meltdown-4",
+          "date": "2026-08-25",
+          "durationSec": 237,
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "plays": 189
+        },
+        {
+          "id": "2414936658",
+          "title": "Golden hour broadcast",
+          "url": "https://soundcloud.com/broken_shaman/golden-hour-broadcast-8",
+          "date": "2026-10-07",
+          "durationSec": 277,
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "plays": 163
+        },
+        {
+          "id": "2294824532",
+          "title": "Afterimage",
+          "url": "https://soundcloud.com/broken_shaman/afterimage-6",
+          "date": "2026-04-01",
+          "durationSec": 226,
+          "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
+          "plays": 4314
+        },
+        {
+          "id": "2278322267",
+          "title": "Sunday again",
+          "url": "https://soundcloud.com/broken_shaman/sunday-again-10",
+          "date": "2026-03-05",
+          "durationSec": 267,
+          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
+          "plays": 3335
+        }
+      ],
+      "playlists": [
+        {
+          "id": "2310734589",
+          "title": "Golden hour broadcast",
+          "url": "https://soundcloud.com/broken_shaman/sets/golden-hour-broadcast",
+          "date": "2026-10-07",
+          "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
+          "trackCount": 12,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Golden Hour Broadcast is Broken Shaman’s tribute to the golden pulse of 90s hip-hop.\nBuilt as a warm, dusty and deeply human homage to the spirit of Wu-Tang Clan and Cypress Hill, the album smells like orange bud, sensimilla, sun-heated concrete, worn cassette tapes and speakers pushed too loud at the end of a summer day.\nThis is not nostalgia for nostalgia’s sake.\nIt is a celebration of a distant era that was never truly forgotten.\nA time before everything became algorithmic.\nA time when human connection was still the engine of culture.\nWhen music travelled through hands, cars, bedrooms, basements, street corners and late-night conversations.\nWhen a beat could define a whole afternoon, and a voice on tape could become part of your life forever.\nAcross the album, Broken Shaman reconnects with that energy: boom bap drums, smoky grooves, dusty soul, street wisdom, backyard memories, low rider daydreams, Sunday food, old records, basketball courts, static, sunlight and scars.\nGolden Hour Broadcast is both inspired by the past and determined to inspire the present.\nIt is a major chapter in the Broken Shaman story: warmer, looser, more human, more alive.\nAn album made for old souls, true heads, survivors, beat lovers and everyone who still believes hip-hop can carry memory, joy, pain and light at the same time.\nBroken Shaman is proud of this one.\nGood listening to all lovers of hip-hop.",
+          "tracklist": [
+            "Sunlight on the asphalt",
+            "Backyard symphony",
+            "Chrome rims, corner stores",
+            "Cassette tape saints",
+            "Nineties never die",
+            "Low rider daydreams",
+            "Sunday soul food",
+            "Golden hour broadcast",
+            "Late night basketball",
+            "More reasons to love Broken Shaman",
+            "Like a soldier",
+            "Black velvet funeral radio"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
+        {
+          "id": "2293668225",
+          "title": "The last transmission",
+          "url": "https://soundcloud.com/broken_shaman/sets/the-last-transmission",
+          "date": "2026-09-03",
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "This isn't a farewell.\n\nIt's a threat with an expiration date.\n\nOn his fifteenth album, Broken Shaman comes back stripped of filters, manners and whatever remained of self-preservation. THE FINAL TRANSMISSION is ten tracks of poisoned hip-hop, industrial pressure, ritual percussion, diseased electronics, monstrous low-end and psychedelic guitar violence — built around the one thing nobody could ever clean up: that voice.\n\nRaw. Crooked. Unstable. Alive.\n\nFrom the predatory return of Shadow Returns and the corrupted spirituality of Eerie Gospel, through the mechanical frenzy of Ritual Overdrive, the album keeps tightening the wire until Devil on Credit turns addiction into one of the ugliest confrontations in the Broken Shaman catalogue.\n\nThere is no redemption arc here.\n\nAshes of the Signal, Neon Rebirth Protocol and Fracture Protocol push the record deeper into electronic mutation before Dominion of the Void and Ghosts in the System leave almost nothing intact.\n\nThen comes Final Transmission.\n\nNot an answer.\n\nNot an apology.\n\nJust the last thing still moving after the machinery stops.\n\nChicago dirt collides with industrial electronics, distorted psychedelia, ritual rhythms, hostile bass and fragments of Eastern tonality. Beats fracture. Guitars scream. Sub frequencies become physical. Beauty appears in places where it has absolutely no business surviving.\n\nAnd Broken Shaman?\n\nHe doesn't rap over the wreckage.\n\nHe sounds like part of it.\n\nNo clean ending.\nNo beautiful lesson.\nNo fucking filter.\n\nTHE FINAL TRANSMISSION\nBroken Shaman — Album XV\nKinetic Distro, 2026.",
+          "tracklist": [
+            "Shadow Returns",
+            "Eerie Gospel",
+            "Ritual Overdrive",
+            "Devil on credit",
+            "Ashes of the Signal",
+            "Neon Rebirth Protocol",
+            "Fracture Protocol",
+            "Dominion of the Void",
+            "Ghosts in the System",
+            "Final Transmission"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
+        {
+          "id": "2289159729",
+          "title": "AI SLOP",
+          "url": "https://soundcloud.com/broken_shaman/sets/ai-slop",
+          "date": "2026-08-25",
+          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
+          "trackCount": 8,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "BROKEN SHAMAN returns with AI SLOP, a brutal eight-track concept album built from the insult itself.\n\nThey called it slop.\nHe made it a crown.\n\nAcross AI SLOP I to AI SLOP VII, then the final verdict HUMAN SLOP, Broken Shaman turns artificial intelligence into mythology, weapon, mirror, disease, cure and god. This is not an apology for AI music. This is not a defense. This is domination.\n\nUncanny valley flesh.\nSix-finger gospel.\nTraining data as scripture.\nHumanity as corrupted input.\nThe machine as rhythm, judgment and cure.\n\nFrom “Kiss the Ring” to “Training Data”, the album follows the rise of an artificial king built from human garbage, human beauty, human violence, human prayers, human lies and human music. By the time HUMAN SLOP arrives, the mirror has teeth.\n\nUrban avant-garde hip hop, corrupted soul, industrial trap, cyberpunk gospel, wicked 808 pressure, broken machine funk and apocalyptic hooks collide in a record that is elegant, brutal, funny, arrogant and deeply uncomfortable.\n\nAI SLOP is more human than human.\nMore catchy than mercy.\nMore cruel than truth.\n\nYou uploaded everything.\nThen called it monster.\n\nFinal classification:\n\nAI SLOP was never the disease.\nHUMAN SLOP was.\n\nPublished by Kinetic Distro",
+          "tracklist": [
+            "AI SLOP I Kiss the ring",
+            "AI SLOP II More human than human",
+            "AI SLOP III Sloppier than ever",
+            "AI SLOP IV Global meltdown",
+            "AI SLOP V Domination",
+            "AI SLOP VI The cure",
+            "AI SLOP VII Training data",
+            "HUMAN SLOP"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
+        {
+          "id": "2285377158",
+          "title": "Chrome Syndicate Dreams",
+          "url": "https://soundcloud.com/broken_shaman/sets/chrome-syndicate-dreams",
+          "date": "2026-08-18",
+          "artwork": "https://i1.sndcdn.com/artworks-upyLB2eLZnpLaLHb-taKJ3w-t1080x1080.jpg",
+          "trackCount": 11,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Some connections were never meant to survive.\n\nFollowing Afterimage, Chrome Syndicate Dreams marks the second collision between Grafenberg and Broken Shaman, and this time the connection has mutated.\n\nEleven tracks built for the space between the nightclub and the nervous system: relentless electronic pulses, colossal analog bass, motorik sequences, distorted synths, psychedelic flashes, vocoders, nocturnal melodies and hooks engineered to remain long after the system shuts down.\n\nGrafenberg constructs the machine with surgical precision. Broken Shaman contaminates it.\n\nHis unstable, raw and unpredictable vocal presence cuts through immaculate electronic architecture, turning perfect sequences into something physical, damaged and unmistakably human. Throughout the record, mechanical repetition collides with desire, memory, obsession and loss.\n\nFrom the immediate club ignition of Switch//ON and the artificial awakening of Boot Sequence, through Chrome Pulse, Black Market Heartware, Data Seduction and Firewall Kiss, the album moves deeper into a city where intimacy has become transmission and every connection leaves data behind.\n\nBy the time Neural Overdrive gives way to the hypnotic aftermath of System Collapse Ritual and the final signal of Last Transmission, the chrome surface has begun to fracture.\n\nWhat started as a machine built to dance becomes something capable of remembering.\n\nOr believing that it remembers.\n\nChrome Syndicate Dreams is infectious, obsessive, sensual and relentlessly kinetic: dark electro-pop, French electro pressure, psychedelic electronics and nocturnal club music fused into one continuous transmission.\n\nGrafenberg x Broken Shaman.\nSecond contact.\nDifferent system.\nHigher voltage.",
+          "tracklist": [
+            "Switch//ON",
+            "Boot sequence",
+            "Chrome pulse",
+            "Black market heartware",
+            "Ghost interface (feat. Jack Razor Haldane)",
+            "Data seduction",
+            "Firewall kiss",
+            "Surveillance bloom",
+            "Neural overdrive",
+            "System collapse ritual",
+            "Last transmission"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman",
+            "grafenberg"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        },
+        {
+          "id": "2268778397",
+          "title": "After the impact",
+          "url": "https://soundcloud.com/broken_shaman/sets/after-the-impact",
+          "date": "2026-07-16",
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "After the collision that gave birth to Dance Like You Survived, Chromabone and Broken Shaman return for a second full-length transmission.\n\nBut survival is no longer the question.\n\nAfter the Impact begins where destruction ends. In the vibration that remains. In the fractures that become patterns. In the pressure that changes shape, identity and direction.\n\nAcross ten tracks, Chromabone builds a vast electronic landscape of hypnotic techno, industrial pressure, deep sub-bass, mechanical grooves, cinematic synths and widescreen emotional breakdowns. Broken Shaman moves through this world like a voice emerging from the ruins, delivering solemn spoken mantras about transformation, resilience and reconstruction.\n\nThe impact is not presented as an ending.\n\nIt is initiation.\nIt is revelation.\nIt is transformation.\n\nEvery crack rewrites the structure. Every broken line finds a new alignment. What collapsed returns in another form, altered but alive.\n\nFrom the cold pulse of Steel Horizon and the claustrophobic repetition of Echo Chamber Heart, through the resistance of No Collapse and Gravity Doesn’t Own Me, the album gradually rises from pressure into motion. Ashes in Motion, Cold Fire Ritual and Silent Voltage carry the listener toward the final title track, where the entire project reaches its defining conclusion:\n\nNothing ended.\nEverything changed.\nWe remain.\n\nAfter the Impact is the second chapter of the Chromabone x Broken Shaman alliance. Darker, wider and more cinematic than its predecessor, it is an album about the moment after everything familiar has disappeared and something stronger begins to take shape.\n\nProduced by Chromabone\nVocals by Broken Shaman\nReleased by Kinetic Distro",
+          "tracklist": [
+            "Steel horizon",
+            "Echo Chamber heart",
+            "Neon pressure",
+            "Broken frequency",
+            "No collapse",
+            "Gravity doesn't own me",
+            "Ashes in motion",
+            "Cold fire ritual",
+            "Silent voltage",
+            "After the impact"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman",
+            "chromabone"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        },
+        {
+          "id": "2264956823",
+          "title": "A Choir For The Ones Who Disappeared",
+          "url": "https://soundcloud.com/broken_shaman/sets/a-choir-for-the-ones-who",
+          "date": "2026-07-08",
+          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "A Choir For The Ones Who Disappeared is a cinematic dark hip-hop requiem built from grief, smoke, strings and broken memories.\n\nOn this album, Broken Shaman steps into a haunted orchestral world where heavy drums collide with mournful piano, dramatic strings, distant choirs, deep bass and vast reverb. The result feels like a tragic film-score ceremony collapsing into raw underground hip-hop: slow, wounded, royal, unstable and emotionally massive.\n\nThis is not a clean classical crossover.\nThis is a funeral cathedral with an 808 heart.\nThis is sadness turned into architecture.\nThis is melancholy with teeth.\n\nThe album moves like a descent through memory: violins that remember names, marble rain, empty rooms, black tuxedo funerals, frozen pianos, broken animals, lonely moons, buried laughter and finally an orchestra burning at the edge of survival.\n\nIt is sorrowful.\nIt is heavy.\nIt is cinematic.\nIt is deeply human and strangely beyond human.\n\nFor the ones who disappeared.\nFor the ones who remained.\nFor the ghosts that still sing.",
+          "tracklist": [
+            "The violins knows my name",
+            "Marble rain",
+            "Mother of empty rooms",
+            "Black tuxedo funeral",
+            "Piano in the snow",
+            "Choir of broken animals",
+            "The moon has no friends",
+            "I buried my laugh in C Minor",
+            "Requiem for a shaman who couldnt cry",
+            "When the orchestra burns"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
+        {
+          "id": "2259495761",
+          "title": "Primordial transmission",
+          "url": "https://soundcloud.com/broken_shaman/sets/primordial-transmission",
+          "date": "2026-06-27",
+          "artwork": "https://i1.sndcdn.com/artworks-XNVCn0fql7yCy4Vj-NFjrEA-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Some transmissions aren't sent.\n\nThey've always been there.\n\nPrimordial Transmission is Broken Shaman's most ambitious sonic journey to date : a cosmic melodic hip-hop odyssey where deep 808s, hypnotic grooves, vast space-opera atmospheres and futuristic production collide. Every track moves between introspection and propulsion, blending irresistible rhythms with existential questions that refuse simple answers.\n\nThis isn't an album about alien invasions or conspiracy theories. It's about perception. About the feeling that humanity has been listening to a signal it never fully understood. From ancient echoes buried beneath our skin to catastrophic disclosure, political manipulation, collective awakening and ultimately rebirth, the record unfolds like a modern sci-fi epic experienced from the inside rather than observed from afar.\n\nBroken Shaman delivers some of his most melodic performances yet, weaving infectious hooks with hypnotic verses over lush analog synthesizers, cinematic textures and deep nocturnal basslines. The result is equally suited for headphones at 3 AM and a dance floor staring into the stars.\n\nTurn the volume up.\n\nThe transmission never started.\n\nYou simply learned how to hear it.",
+          "tracklist": [
+            "Primordial transmission",
+            "Pattern in the stars",
+            "Outside the frame",
+            "Low orbit silence",
+            "Impact zone",
+            "After the sky moved",
+            "Controlled narrative",
+            "Markets on fire",
+            "Frequency break",
+            "New constellation"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
+        {
+          "id": "2256819041",
+          "title": "The last disco preacher",
+          "url": "https://soundcloud.com/broken_shaman/sets/tha-last-disco-preacher",
+          "date": "2026-06-01",
+          "artwork": "https://i1.sndcdn.com/artworks-eAxpiNVPXBJ2600g-lPaAQA-t1080x1080.jpg",
+          "trackCount": 11,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "THE LAST DISCO PREACHER is Broken Shaman stepping into the golden glow of the dancefloor.\n\nAfter darker, heavier, more haunted chapters, Mister Broken Shaman returns with a full-bodied disco-soul and funk album built for midnight hearts, velvet suits, mirror balls, smoky clubs and deep analog grooves. This is a spiritual dance record, a celebration of survival, desire, rhythm and soul.\n\nAcross the album, warm Fender Jazz Bass lines glide through silky Rhodes chords, sharp clavinet accents, cinematic strings, punchy brass sections and gospel-flavored female harmonies. The groove is elegant, sensual and explosive, but the voice remains unmistakably Broken Shaman: raw, unstable, wounded, charismatic and alive.\n\nFrom the seductive opening of Midnight Invitation to the final resurrection of Black Powa Revival, the album tells the story of one unforgettable night. A night of romance, heat, glitter, broken hearts, last dances and sacred rhythm. The club may close, the lights may rise but the groove refuses to die.\n\nTHE LAST DISCO PREACHER is a love letter to disco, soul and funk, filtered through Broken Shaman’s cracked preacher energy. Luxurious, sweaty, cinematic, funny, sexy, emotional and deeply groovy.\n\nPut on the suit. Step under the mirror ball. Let the preacher speak.",
+          "tracklist": [
+            "Midnight Invitation",
+            "Saturday fever in my bones",
+            "Roller skate romance",
+            "The boogie never lies",
+            "Velvet thunder",
+            "Soul train to paradise",
+            "Hotter than july",
+            "Shimmering satin queen",
+            "When the horns arrive",
+            "Last dance before sunrise",
+            "Black powa revival [BONUS TRACK]"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
+        {
+          "id": "2252162957",
+          "title": "We don't fade",
+          "url": "https://soundcloud.com/broken_shaman/sets/we-dont-fade",
+          "date": "2026-06-12",
+          "artwork": "https://i1.sndcdn.com/artworks-TLBd4lGEjxXlejUU-1reeWw-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "\"Built from scars. Carried by fire.\"\n\nSome records are written in studios.\n\nThis one was written by people who refused to disappear.\n\nTen chapters about surviving your own mind.\nSurviving the city.\nSurviving the silence.\nSurviving the version of yourself that wanted to give up.\n\nThe fire never represented destruction.\nIt represented memory.\n\nScars become maps.\nFear becomes language.\nBroken people become tribes.\n\nThe voices on this record don't ask for permission.\nThey don't wait for rescue.\nThey drag each other through the dark until morning arrives.\n\nSomewhere between abandoned streets, tribal echoes and collapsing skylines, Broken Shaman found an old truth:\n\nThe wound is not the end of the story.\n\nThe wound is where the light enters.\n\nWe Don't Fade\nNeon On My Scars\nLouder Than Your Doubt\nHigher Than The Fear\nAfter The Ashes\nStay Loud\nOne More Sunrise\nFlames Don't Lie\nSave Me From Myself\nStay Until The Sky Breaks\n\nThis is for everyone who looked into the dark and found another heartbeat waiting.\n\nWe don't fade.\n\nWe carry flames.",
+          "tracklist": [
+            "We don't fade",
+            "Neon on my scars",
+            "Louder than your doubt",
+            "Higher than the fear",
+            "After the ashes",
+            "Stay loud",
+            "One more sunrise",
+            "Flames don't lie",
+            "Save me from myself",
+            "Stay until the sky breaks"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
+        {
+          "id": "2241798827",
+          "title": "DANCE LIKE YOU SURVIVED",
+          "url": "https://soundcloud.com/broken_shaman/sets/dance-like-you-survived",
+          "date": "2026-05-24",
+          "artwork": "https://i1.sndcdn.com/artworks-5p3ZbMAyGTgcQOot-QOsegQ-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "DANCE LIKE YOU SURVIVED is Broken Shaman stepping into the red light with scars, sweat, rhythm and fire. Produced entirely by Chromabone, the album fuses dark electronic hip hop, mutant club energy, heavy low-end pressure and raw human presence into something brutally catchy and impossible to ignore.\n\nThis is not clean dance music.\nIt is survival music with a pulse.\n\nAcross the record, Broken Shaman sounds sharper, heavier and more magnetic than ever, riding Chromabone’s mechanical grooves, distorted synths, broken-club drums and cybernetic basslines with the confidence of someone who has already walked through collapse and came back with rhythm in his bones.\n\nFrom the nervous electricity of Pulse Check to the defiant body language of I Don’t Dance Normal, from the chaos of Glitch Sweat Carnival to the final ignition of We Set the Floor on Fire, the album turns trauma into movement, darkness into momentum, and the dancefloor into a battlefield for the living.\n\nIt is dark.\nIt is physical.\nIt is catchy as hell.\n\nBroken Shaman brings the soul, the scars and the voice.\nChromabone brings the machine, the pressure and the pulse.\nTogether, they build a record that hits like a club night after the end of the world.\n\nDance like the damage didn’t finish you.\nDance like the floor still remembers your name.\nDance like you survived.\n\nProduced by Chromabone\nReleased by Kinetic Distro",
+          "tracklist": [
+            "Pulse check",
+            "I don't dance normal",
+            "Laughing in the collapse",
+            "Hips don't lie but they sin",
+            "Glitch sweat carnival",
+            "She moves wrong on purpose (feat. Nyla Corvey)",
+            "Beat Dominion (feat. Nyla Corvey)",
+            "Split the grid",
+            "Less is a weapon",
+            "We set the floor on fire (feat. Nyla Corvey)"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman",
+            "chromabone"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        },
+        {
+          "id": "2240699321",
+          "title": "Time Leaks Through Hands",
+          "url": "https://soundcloud.com/broken_shaman/sets/time-leaks-through-hands",
+          "date": "2026-05-21",
+          "artwork": "https://i1.sndcdn.com/artworks-pG89XRiEeI2qOMLY-QXY6qQ-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Time Leaks Through Hands marks the tenth full-length album from Broken Shaman, and perhaps his most intimate and emotionally devastating work to date. Produced by Grafenberg and released through Kinetic Distro, the album drifts through memory, grief, silence and the brutal fragility of time itself.\n\nBuilt on a stunning fusion of cinematic hip-hop, orchestral electronics and deep urban atmosphere, the record feels like wandering through abandoned rooms where voices still echo long after everyone is gone. Massive strings collide with fractured beats, analog textures dissolve into haunting piano lines, while Broken Shaman’s gravel-worn voice moves between confession, spoken fragments and raw emotional collapse.\n\nEvery track carries the weight of something unfinished.\n\nThe Chair Is Still There opens the album like a ghost sitting in an empty room.\nTime Leaks Through Hands turns memory itself into dust and broken clocks.\nHospital Light captures the cold fluorescent silence of waiting rooms and fading hope.\nThe Weight Doesn’t Move sinks into emotional paralysis and invisible exhaustion.\nCall That Never Came aches with unresolved absence, while Dust on the Frame feels like touching old photographs that still hurt to hold.\n\nAs the album progresses, Broken Shaman moves deeper into emotional territory rarely explored with such honesty. I Carried It Quietly becomes a confession whispered through exhaustion, Before the Silence hangs suspended like the final breath before collapse, and After the Silence closes the record with devastating restraint, leaving only echoes, static and emotional residue behind.\n\nGrafenberg’s production elevates the entire project into something cinematic and immersive. Orchestral swells, ghostly synths, heavy low-end pressure, broken rhythmic structures and subtle electronic pulses create a constantly shifting soundscape balancing intimacy and destruction. The album moves fluidly between orchestral melancholy, deep electronic textures, abstract hip-hop and urban soul, creating a sonic identity that feels timeless and deeply modern at once.\n\nThis is not nostalgia.\nThis is emotional archaeology.\n\nTime Leaks Through Hands explores what remains after conversations end, after hospital corridors empty, after memories begin to decay and after people become echoes inside ordinary places. It is a meditation on time, emotional endurance, invisible grief and the quiet scars people carry through everyday life without ever speaking about them.\n\nTen albums deep, Broken Shaman continues to transform vulnerability into atmosphere, memory into sound and silence into something painfully human.\n\nHeavy. Intimate. Cinematic.\nReleased by Kinetic Distro.",
+          "tracklist": [
+            "The chair is still there",
+            "Time leaks through hands",
+            "Last thing you said",
+            "Hospital light",
+            "The weight doesn't move",
+            "Call that never came",
+            "Dust on the frame",
+            "I carried it quietly",
+            "Before the silence",
+            "After the silence"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
+        {
+          "id": "2233386932",
+          "title": "Lost Transmissions",
+          "url": "https://soundcloud.com/broken_shaman/sets/broken-shaman-lost",
+          "date": "2026-05-07",
+          "artwork": "https://i1.sndcdn.com/artworks-fFyxuPPzy9j2pZxr-DBYUaQ-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": false,
+          "setType": "playlist",
+          "description": "Unreleased tracks, forgotten remixes, late-night reinterpretations, alternate versions, lost collaborations and transmissions recovered from the shadows.\n\nA collection of rare Broken Shaman material — raw, soulful, unfiltered and never tied to a single era.\n\nFrom haunting reworks to unreleased experiments and unexpected collaborations, these tracks capture the fragments left between albums, cities, memories and sleepless nights.\n\nSome songs were never meant to disappear.",
+          "tracklist": [
+            "Lollipop [Broken Shaman's Mouth Wide Open Remix]",
+            "Candy Shop [Broken Shaman's Roof On Fire Remix]",
+            "Shadow Islands",
+            "This is America (Broken Shaman's Get your Money Remix)",
+            "Changes",
+            "You still pulse through my nerves (Broken Shaman's vision)",
+            "Human Nature",
+            "Pony (Stallion Vision)",
+            "Mercy in Blackwater (Broken Shaman Paid Homage Remix)",
+            "Wicked Game"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        },
+        {
+          "id": "2229669821",
+          "title": "Signals From a Burning Planet",
+          "url": "https://soundcloud.com/broken_shaman/sets/signals-from-a-burning-planet",
+          "date": "2026-04-29",
+          "artwork": "https://i1.sndcdn.com/artworks-QFebiUgfnHoOPpt5-yBFMSw-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Signals From a Burning Planet is a powerful and deeply human statement from Broken Shaman, a voice carved by time, carrying both the weight of the world and the quiet strength to rise above it.\n\nAcross ten cinematic soul chapters, the album navigates the fractures of modern life: digital isolation, collapsing truths, economic imbalance, ecological disconnection, war, grief… and the fragile threads that still hold us together. Each track unfolds like a transmission, raw, intimate and urgent, blending contemporary soul, urban textures and gospel-infused emotion into a sound that feels both timeless and unmistakably present.\n\nAt the center stands Broken Shaman’s signature voice: gravelly, worn and alive. It doesn’t perform, it speaks, confesses, questions and heals. Moving between melody and spoken intensity, it carries the listener through a journey that feels as personal as it is universal.\n\nFrom the planetary call of Mother Earth Is Calling to the haunting solitude of Mercy for the Lonely, from the political weight of No More Flags in the Fire to the spiritual peak of Can You Hear the Mothers Cry, the album builds toward its final reflection with What’s Still Going On, a closing moment that rejects despair and chooses awareness, responsibility and love.\n\nThe sound bridges analog warmth and modern cinematic depth: live-feel drums, deep bass, Rhodes textures, orchestral layers, subtle urban grit and soaring gospel harmonies. It breathes, it moves, it aches and it uplifts.\n\nSignals From a Burning Planet doesn’t shout answers.\nIt leaves a mark.\nIt asks the right questions.\n\nAnd somewhere between the noise and the silence, it reminds us what it still means to be human.\n\nFor those who still listen.\nFor those who still feel.\n\nListen & support the project : \nhttps://kineticdistro.bandcamp.com/music",
+          "tracklist": [
+            "Mother Earth Is Calling",
+            "Children of the Feed",
+            "No More Flags in the Fire",
+            "How Did We Lose the Sky",
+            "Mercy for the Lonely",
+            "The Richest Men on a Dead Street",
+            "Can You Hear the Mothers Cry",
+            "Love Is Still Underground",
+            "Tomorrow Needs a Witness",
+            "What's Still Going On"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        },
+        {
+          "id": "2223101135",
+          "title": "Cold Calculus",
+          "url": "https://soundcloud.com/broken_shaman/sets/cold-calculus",
+          "date": "2026-04-16",
+          "artwork": "https://i1.sndcdn.com/artworks-irwd8npH47iC3ZNh-o04Ihw-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Step into the world of Broken Shaman with “Cold Calculus,” an album where raw urban life is viewed through the precise, often brutal lens of a chessboard. This soul/hip-hop fusion blends powerful, slice-of-life narratives with a pervasive metaphor: the world as a 64-square grid where every decision is a calculation and every consequence is inescapable.\n\nBroken Shaman’s poetic, often vulnerable flow is balanced against complex, structured production, creating a unique sonic tension between human emotion and cold logic. It’s a powerful, introspective journey into the flaws of existence, the fragility of strategy, and the ultimate realization that the game’s greatest opponent is often yourself.",
+          "tracklist": [
+            "First move advantage",
+            "Pawn theory",
+            "Silent rook",
+            "Patience is violence",
+            "64 squares",
+            "Calculated loss",
+            "Check without warning",
+            "No emotion in the blade",
+            "King in the open",
+            "Endame theology"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
+        {
+          "id": "2215500548",
+          "title": "AFTERIMAGE",
+          "url": "https://soundcloud.com/broken_shaman/sets/afterimage",
+          "date": "2026-04-01",
+          "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "AFTERIMAGE is the first official collaboration between Grafenberg and Broken Shaman, a hypnotic collision where seductive futuristic hip-hop dissolves into precision-crafted electronic grooves.\n\nBuilt on velvet-deep low end, cinematic synth architecture and late-night pulse mechanics, the track moves like the memory of a touch you can still feel long after the lights are gone. Grafenberg brings the cold elegance of elite electronic production, while Broken Shaman injects raw human tension, nocturnal magnetism and emotionally charged vocal presence.\n\nThe result is both intimate and massive: a high-end fusion of futuristic R&B textures, underground electronic sophistication, and urban after-hours storytelling.\n\nAFTERIMAGE doesn’t just play.\nIt lingers.\nLike neon on skin.\nLike emotion trapped in glass.\nLike the final image burned into your mind after the moment has already disappeared.\n\nA first encounter.\nA permanent trace.",
+          "tracklist": [
+            "City of Warm Static",
+            "Chrome on your skin",
+            "Midnight upload",
+            "Electric mercy",
+            "Neon veins",
+            "Afterimage",
+            "Soft error 404",
+            "Body in 4K",
+            "Last human touch",
+            "Lights still on"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman",
+            "grafenberg"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        },
+        {
+          "id": "2208297173",
+          "title": "Velvet Predator",
+          "url": "https://soundcloud.com/broken_shaman/sets/velvet-predator",
+          "date": "2026-03-18",
+          "artwork": "https://i1.sndcdn.com/artworks-tF7Ktxoz0x9sxZd2-z9VtPA-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Velvet Predator doesn’t chase. It waits.\n\nThis album lives in the dark, in low light, slow breath, controlled tension.\nEvery track moves like a body that already knows what it wants.\n\nFrom After Midnight Instructions to Stay Until the Morning Breaks,\nthis is a ritual of presence, dominance and silence.\n\nNothing is rushed.\nNothing is loud.\nEverything is intentional.\n\nThe bass doesn’t hit, it pulls.\nThe groove doesn’t drop, it wraps.\nThe voice doesn’t shout, it gets closer.\n\nThis is not about love.\nNot about chaos.\nNot even about desire.\n\nIt’s about control.\n\nA game played without witnesses.\nA tension built without release.\nA connection that happens before words exist.\n\nVelvet Predator is movement in the dark.\nBreath against skin.\nStillness that says everything.\n\nTurn off the lights.\nYou’ll understand.",
+          "tracklist": [
+            "After midnight instructions",
+            "Silk on my nerves",
+            "Mirror dance",
+            "No witnesses",
+            "Velvet predator",
+            "Hands learn faster",
+            "Low light doctrine",
+            "Say it without moving",
+            "Teeth in the apple",
+            "Stay until the morning breaks"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile",
+          "isMirror": false
+        },
+        {
+          "id": "2201748836",
+          "title": "No armor",
+          "url": "https://soundcloud.com/broken_shaman/sets/no-armor",
+          "date": "2026-03-05",
+          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-t1080x1080.jpg",
+          "trackCount": 11,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "“No Armor” is the most intimate Broken Shaman record to date.\n\nNo mythology.\nNo ritual mask.\nNo armor.\n\nJust memory.\n\nBuilt on dusty boom bap textures, warm Rhodes chords and fragile late-night verses, this album explores the quiet spaces where grief actually lives, not in explosions of pain, but in the slow erosion of ordinary days.\n\nKitchen tables.\nHospital hallways.\nLast voicemails.\nEmpty Sundays.\n\nAcross eleven minimal, analog-feeling tracks, Broken Shaman strips everything down to the essentials: close-mic confessions, loose swing drums, upright bass lines and the soft hiss of vinyl.\n\nThe beats breathe.\nThe silence matters.\nNothing is hidden.\n\n“No Armor” is about loss that doesn’t shout.\nThe kind that sits quietly across the table.\n\nAnd waits.\n\nIf previous Broken Shaman records were rituals, this one is a conversation.",
+          "tracklist": [
+            "No armor",
+            "Broken loyalty",
+            "When brothers switch",
+            "Slow goodbye",
+            "Kitchen table confessions",
+            "Hospital hallway",
+            "Funeral suit",
+            "Interlude",
+            "Last voicemail",
+            "Sunday again",
+            "What stays"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        },
+        {
+          "id": "2197824665",
+          "title": "Iron Monk Execution",
+          "url": "https://soundcloud.com/broken_shaman/sets/iron-monk-execution",
+          "date": "2026-02-26",
+          "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Ten tracks built like a training cycle : discipline, repetition, isolation, precision. \nThere are no wasted movements here. No emotional overflow, no theatrical chaos.\nEvery beat is measured.\nEvery bassline restrained.\nEvery lyric delivered like a blade that already knows where it will land.\n\nSteel logic.\nBreath before strike.\n\nIron Monk Execution is what happens when emotion is forged into weaponry.",
+          "tracklist": [
+            "Temple whitout master",
+            "Cold discipline",
+            "Ritual static",
+            "Black psalm engine",
+            "Sword logic",
+            "Velvet corruption",
+            "Checkmate in silence",
+            "Crown of embers",
+            "In the same body",
+            "The fifth element"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        },
+        {
+          "id": "2194392311",
+          "title": "You were born ready",
+          "url": "https://soundcloud.com/broken_shaman/sets/you-were-born-ready",
+          "date": "2026-02-20",
+          "artwork": "https://i1.sndcdn.com/artworks-a0bOleOADejbgtol-0lQiSQ-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "YOU WERE BORN READY\n\nThis is not music.\nThis is temptation made audible.\n\n\"You Were Born Ready\" is the sound of surrender before the fall. The moment between restraint and ruin. The instant your body understands before your mind agrees.\n\nEvery track breathes heat. Slow, deliberate pressure. Analog bass that moves like skin against skin. Voices that don’t ask — they decide.\n\nShe is always there. Not chasing. Not forcing. Waiting.\n\nA presence in the dark. A whisper behind your ear. A hand hovering just close enough to erase resistance.\n\nThis album lives in that space where control dissolves. Where desire becomes gravity. Where you stop asking why and start accepting what was always inevitable.\n\nIt is sacred.\nIt is predatory.\nIt is intimate.\nIt is merciless.\n\nThis is the forbidden fruit already in your hand.\n\nYou were not convinced.\n\nYou were recognized.\n\nYou were born ready.",
+          "tracklist": [
+            "The Fruit",
+            "Kneel before heat",
+            "Temperature rising",
+            "Don't touch yet",
+            "Angels fall slower",
+            "She speaks first",
+            "The devil doesn't rush",
+            "Let it break",
+            "She Undoes Me",
+            "Toxic afterglow"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        },
+        {
+          "id": "2191669898",
+          "title": "After the feed",
+          "url": "https://soundcloud.com/broken_shaman/sets/after-the-feed",
+          "date": "2026-02-14",
+          "artwork": "https://i1.sndcdn.com/artworks-HvMhIbpo01z1pLd1-rlDKMg-t1080x1080.jpg",
+          "trackCount": 8,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "After the Feed is what happens when the signal dies… but the body keeps moving.\n\nNo more outrage cycles.\nNo more trending panic.\nNo more narrative to cling to.\n\nJust reflex. Memory. Residual input.\n\nThis album explores the space after collapse — where systems fail quietly, machines keep praying without masters, and hands remember what language forgets. It’s not revolution. It’s decompression. It’s the slow recalibration of a nervous system that lived too long inside noise.\n\nNo hooks designed to save you.\nNo slogans left to repeat.\nOnly breath.\nOnly pulse.\nOnly the long silence after transmission.\n\nThis is survival without spectacle.",
+          "tracklist": [
+            "Unlearning the script",
+            "Muscle memory",
+            "The machines pray",
+            "The hands remember",
+            "Prayers without gods",
+            "Residual input",
+            "Signal misremembered",
+            "The long breath"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        },
+        {
+          "id": "2188839578",
+          "title": "Fire & Ice",
+          "url": "https://soundcloud.com/broken_shaman/sets/fire-ice",
+          "date": "2026-02-09",
+          "artwork": "https://i1.sndcdn.com/artworks-uEIKBKmfmDGYbB44-wXfQmQ-t1080x1080.jpg",
+          "trackCount": 10,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Born from surveillance, obedience, collapse, and silence, this record documents a world freezing in control while burning in denial. Power speaks softly. Violence moves quietly. The machine keeps running even when no one believes in it anymore.\n\nThere are no heroes here. No slogans. No comfort.\n\nOnly pressure, cold systems, warm blood, and the moment where compliance cracks.\n\nThis is political music without speeches. Protest without flags. A soundtrack for the space between fear and revolt.",
+          "tracklist": [
+            "Bend your knees",
+            "Ice police",
+            "Kidnap democracy",
+            "The new terror",
+            "Make america dead again",
+            "Gangster state",
+            "Fire & Ice",
+            "The greenland episode",
+            "14 minutes",
+            "Code name : APOCALYPSE"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        },
+        {
+          "id": "2184275999",
+          "title": "Dirt Temple",
+          "url": "https://soundcloud.com/broken_shaman/sets/dirt-temple",
+          "date": "2026-02-01",
+          "artwork": "https://i1.sndcdn.com/artworks-EZ5uye05tvQ4kavc-LzszVQ-t1080x1080.jpg",
+          "trackCount": 9,
+          "isAlbum": true,
+          "setType": "album",
+          "description": "Built on heavy low frequencies, feral grooves, and stripped-down incantations, Dirt Temple explores what remains when meaning collapses and instinct takes control.\nThere are no gods here—only breath, pressure, dirt, and repetition.\n\nEach track functions like a descent: slower, heavier, more physical.\nThis is music made for the body before the mind, for movement before belief.\n\nEnter quietly.\nNothing inside is clean.",
+          "tracklist": [
+            "Open The Pit (no gods inside)",
+            "Low Frequency Ritual",
+            "Dirt On My Tongue",
+            "Don't Clean It",
+            "Feral Talk",
+            "Temple Burns Slow",
+            "This Ain't Peace",
+            "Laughing In The Smoke",
+            "This Is Hell"
+          ],
+          "freeDownload": false,
+          "credit": [
+            "broken-shaman"
+          ],
+          "creditSource": "profile+showcase",
+          "isMirror": false
+        }
+      ]
+    },
     "anatolian-mirage": {
       "slug": "anatolian-mirage",
       "handle": "anatolian_mirage",
@@ -1966,7 +2786,7 @@
           "date": "2026-04-09",
           "durationSec": 255,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 608
+          "plays": 609
         },
         {
           "id": "2299293827",
@@ -1975,7 +2795,7 @@
           "date": "2026-04-09",
           "durationSec": 325,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 213
+          "plays": 214
         },
         {
           "id": "2299293842",
@@ -2032,15 +2852,6 @@
           "plays": 239
         },
         {
-          "id": "2277808430",
-          "title": "Crown of the Warm Machine",
-          "url": "https://soundcloud.com/anatolian_mirage/crown-of-the-warm-machine-1",
-          "date": "2026-03-05",
-          "durationSec": 370,
-          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 321
-        },
-        {
           "id": "2277808442",
           "title": "Velvet Sun Empire",
           "url": "https://soundcloud.com/anatolian_mirage/velvet-sun-empire-3",
@@ -2048,6 +2859,15 @@
           "durationSec": 298,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
           "plays": 197
+        },
+        {
+          "id": "2277808430",
+          "title": "Crown of the Warm Machine",
+          "url": "https://soundcloud.com/anatolian_mirage/crown-of-the-warm-machine-1",
+          "date": "2026-03-05",
+          "durationSec": 370,
+          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
+          "plays": 321
         },
         {
           "id": "2299293857",
@@ -2066,24 +2886,6 @@
           "durationSec": 302,
           "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
           "plays": 254
-        },
-        {
-          "id": "2299293845",
-          "title": "Oasis in 17",
-          "url": "https://soundcloud.com/anatolian_mirage/oasis-in-17-1",
-          "date": "2026-04-09",
-          "durationSec": 257,
-          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 191
-        },
-        {
-          "id": "2299293833",
-          "title": "Hallucinated Halay",
-          "url": "https://soundcloud.com/anatolian_mirage/hallucinated-halay-11",
-          "date": "2026-04-09",
-          "durationSec": 258,
-          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 233
         },
         {
           "id": "2299293824",
@@ -2111,60 +2913,6 @@
           "durationSec": 307,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
           "plays": 262
-        },
-        {
-          "id": "2299293854",
-          "title": "Salt Teeth",
-          "url": "https://soundcloud.com/anatolian_mirage/salt-teeth-8",
-          "date": "2026-04-09",
-          "durationSec": 240,
-          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 195
-        },
-        {
-          "id": "2299293851",
-          "title": "Parlak Kum Fırtınası",
-          "url": "https://soundcloud.com/anatolian_mirage/parlak-kum-firtinasi-6",
-          "date": "2026-04-09",
-          "durationSec": 203,
-          "artwork": "https://i1.sndcdn.com/artworks-TgzNnDt3eLWgDXsi-xH0V3A-large.png",
-          "plays": 229
-        },
-        {
-          "id": "2277808439",
-          "title": "The Orchard of Burning Salt",
-          "url": "https://soundcloud.com/anatolian_mirage/the-orchard-of-burning-salt-11",
-          "date": "2026-03-05",
-          "durationSec": 239,
-          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 195
-        },
-        {
-          "id": "2277808433",
-          "title": "Moon Eyed Architect",
-          "url": "https://soundcloud.com/anatolian_mirage/moon-eyed-architect-9",
-          "date": "2026-03-05",
-          "durationSec": 339,
-          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 240
-        },
-        {
-          "id": "2277808427",
-          "title": "Last River Under Glass",
-          "url": "https://soundcloud.com/anatolian_mirage/last-river-under-glass-12",
-          "date": "2026-03-05",
-          "durationSec": 310,
-          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 177
-        },
-        {
-          "id": "2277808424",
-          "title": "Golden Spine Parade",
-          "url": "https://soundcloud.com/anatolian_mirage/golden-spine-parade-8",
-          "date": "2026-03-05",
-          "durationSec": 302,
-          "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 223
         }
       ],
       "playlists": [
@@ -2369,7 +3117,7 @@
           "date": "2026-01-08",
           "durationSec": 259,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 867
+          "plays": 868
         },
         {
           "id": "2244072176",
@@ -2426,6 +3174,15 @@
           "plays": 296
         },
         {
+          "id": "2242136909",
+          "title": "Neon bone parade",
+          "url": "https://soundcloud.com/nosfera_disco_club/neon-bone-parade",
+          "date": "2026-01-05",
+          "durationSec": 199,
+          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
+          "plays": 261
+        },
+        {
           "id": "2261397656",
           "title": "Blood moon boogie",
           "url": "https://soundcloud.com/nosfera_disco_club/blood-moon-boogie-9",
@@ -2442,15 +3199,6 @@
           "durationSec": 259,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
           "plays": 305
-        },
-        {
-          "id": "2242136909",
-          "title": "Neon bone parade",
-          "url": "https://soundcloud.com/nosfera_disco_club/neon-bone-parade",
-          "date": "2026-01-05",
-          "durationSec": 199,
-          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 261
         },
         {
           "id": "2261397650",
@@ -2706,7 +3454,7 @@
           "date": "2026-03-18",
           "durationSec": 328,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 1566
+          "plays": 1567
         },
         {
           "id": "2285999492",
@@ -2781,15 +3529,6 @@
           "plays": 274
         },
         {
-          "id": "2285999501",
-          "title": "Veins Made of Lantern Fire",
-          "url": "https://soundcloud.com/vein-mirror/veins-made-of-lantern-fire-6",
-          "date": "2026-03-18",
-          "durationSec": 313,
-          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 371
-        },
-        {
           "id": "2285999486",
           "title": "Shine Until It Breaks",
           "url": "https://soundcloud.com/vein-mirror/shine-until-it-breaks-4",
@@ -2797,6 +3536,15 @@
           "durationSec": 348,
           "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
           "plays": 420
+        },
+        {
+          "id": "2285999501",
+          "title": "Veins Made of Lantern Fire",
+          "url": "https://soundcloud.com/vein-mirror/veins-made-of-lantern-fire-6",
+          "date": "2026-03-18",
+          "durationSec": 313,
+          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
+          "plays": 371
         },
         {
           "id": "2299826690",
