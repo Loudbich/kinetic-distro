@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T15:29:49.089Z",
+  "generatedAt": "2026-11-26T15:02:12.619Z",
   "source": "soundcloud-rss + api-v2",
   "artistCount": 7,
   "trackCount": 719,
@@ -117,22 +117,22 @@
       ],
       "topTracks": [
         {
-          "id": "2402962785",
-          "title": "Nothing that broke me was wasted",
-          "url": "https://soundcloud.com/grafenbergmusik/nothing-that-broke-me-was-wasted-4",
-          "date": "2026-09-18",
-          "durationSec": 278,
-          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1644
-        },
-        {
           "id": "2433850758",
           "title": "Someone I remember loving",
           "url": "https://soundcloud.com/grafenbergmusik/someone-i-remember-loving-3",
           "date": "2026-11-07",
           "durationSec": 231,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 1757
+          "plays": 1987
+        },
+        {
+          "id": "2402962785",
+          "title": "Nothing that broke me was wasted",
+          "url": "https://soundcloud.com/grafenbergmusik/nothing-that-broke-me-was-wasted-4",
+          "date": "2026-09-18",
+          "durationSec": 278,
+          "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
+          "plays": 1646
         },
         {
           "id": "2402962797",
@@ -150,7 +150,7 @@
           "date": "2026-09-18",
           "durationSec": 280,
           "artwork": "https://i1.sndcdn.com/artworks-dMC5glPEUe4WmyUj-fbOoLg-t1080x1080.jpg",
-          "plays": 1425
+          "plays": 1426
         },
         {
           "id": "2164031784",
@@ -159,7 +159,7 @@
           "date": "2025-09-03",
           "durationSec": 353,
           "artwork": "https://i1.sndcdn.com/artworks-RXUrV4UajAOboePZ-sIl4mA-t1080x1080.jpg",
-          "plays": 40432
+          "plays": 40438
         },
         {
           "id": "2433850764",
@@ -168,7 +168,7 @@
           "date": "2026-11-07",
           "durationSec": 204,
           "artwork": "https://i1.sndcdn.com/artworks-Wfez12Ilkn6DzkBO-xzPGUA-t1080x1080.jpg",
-          "plays": 1201
+          "plays": 1209
         },
         {
           "id": "2404109157",
@@ -177,7 +177,7 @@
           "date": "2026-09-20",
           "durationSec": 273,
           "artwork": "https://i1.sndcdn.com/artworks-71b4KDAWnIcWd7pr-JusIAA-t1080x1080.jpg",
-          "plays": 1016
+          "plays": 1018
         },
         {
           "id": "2411552355",
@@ -186,7 +186,7 @@
           "date": "2026-10-01",
           "durationSec": 314,
           "artwork": "https://i1.sndcdn.com/artworks-qSzzXgIzmsGuCWLG-e2iEKA-t1080x1080.jpg",
-          "plays": 541
+          "plays": 543
         },
         {
           "id": "2360372876",
@@ -195,7 +195,7 @@
           "date": "2026-07-14",
           "durationSec": 329,
           "artwork": "https://i1.sndcdn.com/artworks-n2KEctpveL1H1Cqz-RZy0zA-t1080x1080.jpg",
-          "plays": 3100
+          "plays": 3105
         },
         {
           "id": "2390185518",
@@ -204,7 +204,7 @@
           "date": "2026-08-28",
           "durationSec": 227,
           "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 391
+          "plays": 392
         },
         {
           "id": "2390185524",
@@ -288,13 +288,22 @@
           "plays": 2840
         },
         {
+          "id": "2390185530",
+          "title": "Something was not erased (feat. Nehir Sedef)",
+          "url": "https://soundcloud.com/grafenbergmusik/something-was-not-erased-feat-nehir-sedef-10",
+          "date": "2026-08-28",
+          "durationSec": 249,
+          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
+          "plays": 280
+        },
+        {
           "id": "2347189916",
           "title": "When the Gravity Breaks Inside Me",
           "url": "https://soundcloud.com/grafenbergmusik/when-the-gravity-breaks-inside-me-1",
           "date": "2026-06-25",
           "durationSec": 350,
           "artwork": "https://i1.sndcdn.com/artworks-ax80VKoopVRkcail-PC3p2w-large.png",
-          "plays": 3235
+          "plays": 3236
         },
         {
           "id": "2360407937",
@@ -303,16 +312,7 @@
           "date": "2026-07-14",
           "durationSec": 387,
           "artwork": "https://i1.sndcdn.com/artworks-ExASzKQ9eQECQY48-vMSqHg-t1080x1080.jpg",
-          "plays": 2961
-        },
-        {
-          "id": "2390185530",
-          "title": "Something was not erased (feat. Nehir Sedef)",
-          "url": "https://soundcloud.com/grafenbergmusik/something-was-not-erased-feat-nehir-sedef-10",
-          "date": "2026-08-28",
-          "durationSec": 249,
-          "artwork": "https://i1.sndcdn.com/artworks-4Dm7IrqMnTZoUsN6-OR0Tbw-t1080x1080.jpg",
-          "plays": 280
+          "plays": 2963
         },
         {
           "id": "2393008863",
@@ -1751,7 +1751,7 @@
           "date": "2026-10-07",
           "durationSec": 196,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 2688
+          "plays": 2690
         },
         {
           "id": "2394037353",
@@ -1760,7 +1760,7 @@
           "date": "2026-09-03",
           "durationSec": 244,
           "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 2621
+          "plays": 2626
         },
         {
           "id": "2414936652",
@@ -1787,7 +1787,7 @@
           "date": "2026-10-07",
           "durationSec": 315,
           "artwork": "https://i1.sndcdn.com/artworks-l6LyuvUr9Acrt4Ol-jmBLxQ-t1080x1080.jpg",
-          "plays": 1355
+          "plays": 1356
         },
         {
           "id": "2394037335",
@@ -1817,6 +1817,51 @@
           "plays": 359
         },
         {
+          "id": "2278322270",
+          "title": "Funeral suit",
+          "url": "https://soundcloud.com/broken_shaman/funeral-suit-7",
+          "date": "2026-03-05",
+          "durationSec": 263,
+          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
+          "plays": 3853
+        },
+        {
+          "id": "2274189833",
+          "title": "In the same body",
+          "url": "https://soundcloud.com/broken_shaman/in-the-same-body-9",
+          "date": "2026-02-26",
+          "durationSec": 186,
+          "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
+          "plays": 3587
+        },
+        {
+          "id": "2361904949",
+          "title": "Silent voltage",
+          "url": "https://soundcloud.com/broken_shaman/silent-voltage-9",
+          "date": "2026-07-16",
+          "durationSec": 319,
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "plays": 2757
+        },
+        {
+          "id": "2355716948",
+          "title": "Requiem for a shaman who couldnt cry",
+          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
+          "date": "2026-07-08",
+          "durationSec": 267,
+          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
+          "plays": 457
+        },
+        {
+          "id": "2394037350",
+          "title": "Neon Rebirth Protocol",
+          "url": "https://soundcloud.com/broken_shaman/neon-rebirth-protocol-6",
+          "date": "2026-09-03",
+          "durationSec": 203,
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "plays": 231
+        },
+        {
           "id": "2388231864",
           "title": "AI SLOP I Kiss the ring",
           "url": "https://soundcloud.com/broken_shaman/ai-slop-i-kiss-the-ring-1",
@@ -1833,69 +1878,6 @@
           "durationSec": 299,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
           "plays": 357
-        },
-        {
-          "id": "2388231879",
-          "title": "AI SLOP V Domination",
-          "url": "https://soundcloud.com/broken_shaman/ai-slop-v-domination-5",
-          "date": "2026-08-25",
-          "durationSec": 281,
-          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 325
-        },
-        {
-          "id": "2278322270",
-          "title": "Funeral suit",
-          "url": "https://soundcloud.com/broken_shaman/funeral-suit-7",
-          "date": "2026-03-05",
-          "durationSec": 263,
-          "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
-          "plays": 3853
-        },
-        {
-          "id": "2274189833",
-          "title": "In the same body",
-          "url": "https://soundcloud.com/broken_shaman/in-the-same-body-9",
-          "date": "2026-02-26",
-          "durationSec": 186,
-          "artwork": "https://i1.sndcdn.com/artworks-cjxz7IYxr6opaXc9-D6wvHw-large.png",
-          "plays": 3585
-        },
-        {
-          "id": "2388231873",
-          "title": "AI SLOP II More human than human",
-          "url": "https://soundcloud.com/broken_shaman/ai-slop-ii-more-human-than-human-2",
-          "date": "2026-08-25",
-          "durationSec": 273,
-          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 288
-        },
-        {
-          "id": "2361904949",
-          "title": "Silent voltage",
-          "url": "https://soundcloud.com/broken_shaman/silent-voltage-9",
-          "date": "2026-07-16",
-          "durationSec": 319,
-          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
-          "plays": 2757
-        },
-        {
-          "id": "2394037350",
-          "title": "Neon Rebirth Protocol",
-          "url": "https://soundcloud.com/broken_shaman/neon-rebirth-protocol-6",
-          "date": "2026-09-03",
-          "durationSec": 203,
-          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
-          "plays": 231
-        },
-        {
-          "id": "2355716948",
-          "title": "Requiem for a shaman who couldnt cry",
-          "url": "https://soundcloud.com/broken_shaman/requiem-for-a-shaman-who-couldnt-cry-9",
-          "date": "2026-07-08",
-          "durationSec": 267,
-          "artwork": "https://i1.sndcdn.com/artworks-LdRY8CtFyEDx9sQO-sRqFIg-large.png",
-          "plays": 456
         },
         {
           "id": "2414936676",
@@ -1925,22 +1907,13 @@
           "plays": 196
         },
         {
-          "id": "2388231861",
-          "title": "AI SLOP VII Training data",
-          "url": "https://soundcloud.com/broken_shaman/ai-slop-vii-training-data-7",
+          "id": "2388231879",
+          "title": "AI SLOP V Domination",
+          "url": "https://soundcloud.com/broken_shaman/ai-slop-v-domination-5",
           "date": "2026-08-25",
-          "durationSec": 332,
+          "durationSec": 281,
           "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 225
-        },
-        {
-          "id": "2388231870",
-          "title": "AI SLOP III Sloppier than ever",
-          "url": "https://soundcloud.com/broken_shaman/ai-slop-iii-sloppier-than-ever-3",
-          "date": "2026-08-25",
-          "durationSec": 216,
-          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 210
+          "plays": 325
         },
         {
           "id": "2414936646",
@@ -1979,13 +1952,13 @@
           "plays": 169
         },
         {
-          "id": "2388231876",
-          "title": "AI SLOP IV Global meltdown",
-          "url": "https://soundcloud.com/broken_shaman/ai-slop-iv-global-meltdown-4",
-          "date": "2026-08-25",
-          "durationSec": 237,
-          "artwork": "https://i1.sndcdn.com/artworks-PafASYVU3Uqfqj7G-Z2gD4w-t1080x1080.jpg",
-          "plays": 189
+          "id": "2294824532",
+          "title": "Afterimage",
+          "url": "https://soundcloud.com/broken_shaman/afterimage-6",
+          "date": "2026-04-01",
+          "durationSec": 226,
+          "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
+          "plays": 4314
         },
         {
           "id": "2414936658",
@@ -1997,15 +1970,6 @@
           "plays": 163
         },
         {
-          "id": "2294824532",
-          "title": "Afterimage",
-          "url": "https://soundcloud.com/broken_shaman/afterimage-6",
-          "date": "2026-04-01",
-          "durationSec": 226,
-          "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
-          "plays": 4314
-        },
-        {
           "id": "2278322267",
           "title": "Sunday again",
           "url": "https://soundcloud.com/broken_shaman/sunday-again-10",
@@ -2013,6 +1977,42 @@
           "durationSec": 267,
           "artwork": "https://i1.sndcdn.com/artworks-6zngeXazXaEPNP7q-LUKvxg-large.png",
           "plays": 3335
+        },
+        {
+          "id": "2394037338",
+          "title": "Devil on credit",
+          "url": "https://soundcloud.com/broken_shaman/devil-on-credit-4",
+          "date": "2026-09-03",
+          "durationSec": 303,
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "plays": 156
+        },
+        {
+          "id": "2361904940",
+          "title": "Gravity doesn't own me",
+          "url": "https://soundcloud.com/broken_shaman/gravity-doesnt-own-me-6",
+          "date": "2026-07-16",
+          "durationSec": 318,
+          "artwork": "https://i1.sndcdn.com/artworks-3fkGMNKA1JC7UD3W-oz7oOg-t1080x1080.jpg",
+          "plays": 429
+        },
+        {
+          "id": "2294824544",
+          "title": "Midnight upload",
+          "url": "https://soundcloud.com/broken_shaman/midnight-upload-3",
+          "date": "2026-04-01",
+          "durationSec": 277,
+          "artwork": "https://i1.sndcdn.com/artworks-EQ3ygBWTzm7E9qzv-vvdTCw-large.png",
+          "plays": 3784
+        },
+        {
+          "id": "2394037344",
+          "title": "Dominion of the Void",
+          "url": "https://soundcloud.com/broken_shaman/dominion-of-the-void-8",
+          "date": "2026-09-03",
+          "durationSec": 256,
+          "artwork": "https://i1.sndcdn.com/artworks-YAboBzod0fTYBr5Z-qnUtkg-t1080x1080.jpg",
+          "plays": 147
         }
       ],
       "playlists": [
@@ -2777,7 +2777,7 @@
           "date": "2026-03-05",
           "durationSec": 303,
           "artwork": "https://i1.sndcdn.com/artworks-OkyvE4OrP8RGOC4D-leK2fQ-large.png",
-          "plays": 2253
+          "plays": 2255
         },
         {
           "id": "2299293830",
@@ -3099,7 +3099,7 @@
           "date": "2026-02-06",
           "durationSec": 265,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
-          "plays": 2769
+          "plays": 2770
         },
         {
           "id": "2244072179",
@@ -3126,7 +3126,7 @@
           "date": "2026-01-08",
           "durationSec": 187,
           "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 2224
+          "plays": 2225
         },
         {
           "id": "2244072158",
@@ -3147,15 +3147,6 @@
           "plays": 414
         },
         {
-          "id": "2244072182",
-          "title": "Ritual in red",
-          "url": "https://soundcloud.com/nosfera_disco_club/ritual-in-red-4",
-          "date": "2026-01-08",
-          "durationSec": 237,
-          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
-          "plays": 343
-        },
-        {
           "id": "2244072173",
           "title": "Bloodlights on main floor",
           "url": "https://soundcloud.com/nosfera_disco_club/bloodlights-on-main-floor-1",
@@ -3172,6 +3163,15 @@
           "durationSec": 187,
           "artwork": "https://i1.sndcdn.com/artworks-AgZeZN5PDwHcoCvL-vNyk5Q-t1080x1080.jpg",
           "plays": 296
+        },
+        {
+          "id": "2244072182",
+          "title": "Ritual in red",
+          "url": "https://soundcloud.com/nosfera_disco_club/ritual-in-red-4",
+          "date": "2026-01-08",
+          "durationSec": 237,
+          "artwork": "https://i1.sndcdn.com/artworks-z9wXlSyf9e1bU1fA-ucl18g-t1080x1080.jpg",
+          "plays": 343
         },
         {
           "id": "2242136909",
@@ -3538,15 +3538,6 @@
           "plays": 420
         },
         {
-          "id": "2285999501",
-          "title": "Veins Made of Lantern Fire",
-          "url": "https://soundcloud.com/vein-mirror/veins-made-of-lantern-fire-6",
-          "date": "2026-03-18",
-          "durationSec": 313,
-          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
-          "plays": 371
-        },
-        {
           "id": "2299826690",
           "title": "Your Name in the Light That Shivers",
           "url": "https://soundcloud.com/vein-mirror/your-name-in-the-light-that-shivers-7",
@@ -3554,6 +3545,15 @@
           "durationSec": 393,
           "artwork": "https://i1.sndcdn.com/artworks-dSrAWdi5jqWkcqMY-RJctKw-large.png",
           "plays": 227
+        },
+        {
+          "id": "2285999501",
+          "title": "Veins Made of Lantern Fire",
+          "url": "https://soundcloud.com/vein-mirror/veins-made-of-lantern-fire-6",
+          "date": "2026-03-18",
+          "durationSec": 313,
+          "artwork": "https://i1.sndcdn.com/artworks-0vpXooSpeHub8E3h-b2QhYw-large.png",
+          "plays": 371
         },
         {
           "id": "2299826666",
